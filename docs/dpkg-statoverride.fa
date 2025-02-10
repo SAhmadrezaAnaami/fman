@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-statoverride` baraye tagheer dadan etela'at (owner, group, mode) file-ha va directory-ha dar database `dpkg` estefade mishavad. In be ma komak mikonad ke etela'at default file-ha ra bad az nasb kardane yek package avaz konim.
+
+⚙️ **Gozine-ha:**
+    🔹 `--update` --> 🔄 Update file-ha'i ke ghablan override shodeh and.
+    🔹 `--add user group mode filename` --> ➕ Ezafe kardan yek override jadid.
+    🔹 `--remove filename` --> ➖ Hazf kardan yek override.
+    🔹 `--list [filename]` --> 📜 List kardan override-ha, agar filename dadeh shavad, override-haye marboot be aan file namayesh dadeh mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo dpkg-statoverride --add root www-data 755 /var/www/html
+
+    🔹 Tagheer dadan owner be `root`, group be `www-data` va mode be `755` baraye directory `/var/www/html`.
+
+    $ sudo dpkg-statoverride --remove /var/www/html
+
+    🔹 Hazf override az file `/var/www/html`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-statoverride --list /etc/shadow
+
+    🔹 Namayesh override-haye file `/etc/shadow` (age override shode bashad). Agar chizi namayesh dade nashavad yani file override nashode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-statoverride` command is used to modify the ownership, group, and permissions (mode) of files and directories in the `dpkg` database. This allows you to change the default attributes of files after a package installation.
+
+⚙️ **Options:**
+    🔹 `--update` --> 🔄 Update overridden file permissions if the file exists.
+    🔹 `--add user group mode filename` --> ➕ Add a new override entry.
+    🔹 `--remove filename` --> ➖ Remove an existing override entry.
+    🔹 `--list [filename]` --> 📜 List overridden files; if a filename is provided, list overrides only for that file.
+
+🛠 **Examples:**
+
+    $ sudo dpkg-statoverride --add root www-data 755 /var/www/html
+
+    🔹 Change the owner to `root`, group to `www-data`, and mode to `755` for the directory `/var/www/html`.
+
+    $ sudo dpkg-statoverride --remove /var/www/html
+
+    🔹 Remove the override entry for the file `/var/www/html`.
+
+✅ **Simple Example:**
+
+    $ dpkg-statoverride --list /etc/shadow
+
+    🔹 Display override entries for `/etc/shadow` (if any exist). If nothing is displayed, the file has not been overridden.

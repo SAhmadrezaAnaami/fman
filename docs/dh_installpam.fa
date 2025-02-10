@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installpam` baraye nasb kardan file-haye PAM (Pluggable Authentication Modules) dar jaye dorost dar pakage Debian estefade mishavad. PAM baraye modiriat authentication dar system Linux bekar miravad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--name NAME` --> 🏷️ Estefade az NAME baraye peida kardan file-haye PAM (NAME.pam). Agar name dade nashavad, az name pakage estefade mishavad.
+    🔹 `--no-scripts` --> 🚫 Nasb file-ha bedune ejra kardan script-haye pish az nasb va pas az nasb.  
+    🔹 `--priority PRIORITY` --> 🔢 Tayeen kardan olaviat baraye service PAM dar file `/etc/pam.d`. Adad kamtar, olaviat bishtar.  
+
+🛠 **Mesal-ha:**
+    
+    $ dh_installpam
+    
+    🔹 File-haye PAM ra ba estefade az name pakage nasb mikonad.
+
+    $ dh_installpam --name login
+   
+    🔹 File-haye PAM ra ba name `login.pam` nasb mikonad.
+
+✅ **Mesal sade:**
+    
+    $ dh_installpam --priority 50
+ 
+    🔹 File-haye PAM ra nasb mikonad va olaviat service ra be 50 taeen mikonad.  
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installpam` command is used to install PAM (Pluggable Authentication Modules) configuration files into the correct location within a Debian package. PAM is used for managing authentication on Linux systems.
+
+⚙️ **Options:**
+    🔹 `--name NAME` --> 🏷️ Use NAME to find the PAM files (NAME.pam). If no name is given, the package name is used.
+    🔹 `--no-scripts` --> 🚫 Install the files without running any pre- or post-installation scripts.
+    🔹 `--priority PRIORITY` --> 🔢 Set the priority for the PAM service in the `/etc/pam.d` file. Lower number means higher priority.
+
+🛠 **Examples:**
+    
+    $ dh_installpam
+    
+    🔹 Installs PAM files using the package name.
+
+    $ dh_installpam --name login
+   
+    🔹 Installs PAM files using the name `login.pam`.
+
+✅ **Simple Example:**
+    
+    $ dh_installpam --priority 50
+ 
+    🔹 Installs PAM files and sets the service priority to 50.
+

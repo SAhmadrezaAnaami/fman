@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-apt-progress` baraye namayesh-e vaziyat-e nasb ya hazf-e bastaha (packages) ba estefade az `apt` dar hale ejra ast. In dastoor be shoma komak mikonad ta bebinid che meghdar az amal-e nasb ya hazf pish rafte ast.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--apt-options=GOZINE`  --> ⚙️ Gozine-ha ra baraye `apt` tarif mikonad. Masalan, `--apt-options='-o Dpkg::Options::=--force-confold'`
+    🔹 `--title=MATN`  --> 🏷️ Matn-e title ra baraye dialogue box tarif mikonad.
+    🔹 `--text=MATN`  --> 💬 Matn-e asli ra baraye dialogue box tarif mikonad.
+    🔹 `--info-title=MATN`  --> ℹ️ Title ra baraye box-e etela'at tarif mikonad.
+    🔹 `--info-text=MATN`  --> ℹ️ Matn ra baraye box-e etela'at tarif mikonad.
+    🔹 `--no-info`  --> 🚫 Box-e etela'at ra disable mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ debconf-apt-progress --apt-options='--force-yes' apt-get install nano
+    
+    🔹 Nasb-e `nano` ra ba estefade az `apt-get` ba gozine-ye `--force-yes` namayesh midahad.
+
+    $ debconf-apt-progress --title="Update System" --text="Dar hale update..." apt-get update
+    
+    🔹 Update system ra ba title va text makhsoos namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ debconf-apt-progress apt-get upgrade
+    
+    🔹 In dastoor update system ra ba dialogue box-e default namayesh midahad, behtarin ravesh baraye monitor kardan update system ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-apt-progress` command displays the progress of installing or removing packages using `apt`.  It helps you see how far along the installation or removal process has progressed.
+
+⚙️ **Options:**
+    🔹 `--apt-options=OPTIONS`  --> ⚙️ Defines options for `apt`. For example, `--apt-options='-o Dpkg::Options::=--force-confold'`
+    🔹 `--title=TEXT`  --> 🏷️ Defines the title text for the dialog box.
+    🔹 `--text=TEXT`  --> 💬 Defines the main text for the dialog box.
+    🔹 `--info-title=TEXT`  --> ℹ️ Defines the title for the information box.
+    🔹 `--info-text=TEXT`  --> ℹ️ Defines the text for the information box.
+    🔹 `--no-info`  --> 🚫 Disables the information box.
+
+🛠 **Examples:**
+
+    $ debconf-apt-progress --apt-options='--force-yes' apt-get install nano
+    
+    🔹 Displays the installation of `nano` using `apt-get` with the `--force-yes` option.
+
+    $ debconf-apt-progress --title="Update System" --text="Updating..." apt-get update
+    
+    🔹 Displays system updates with a custom title and text.
+
+✅ **Simple Example:**
+
+    $ debconf-apt-progress apt-get upgrade
+    
+    🔹 This command displays the system upgrade process with a default dialog box, best for monitoring system upgrades.

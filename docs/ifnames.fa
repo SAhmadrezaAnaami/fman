@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ifnames` baraye peyda kardan name interface-haye shabake (network interfaces) estefade mishavad. In dastoor be shoma komak mikonad ta name daghigh interface-ha ra bedanid ta betavanid dar dastoor-haye digar mesle `ifconfig` ya `ip` az anha estefade konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `ifnames -a`  --> 👀 Namayesh hameye interface-ha, hatta anha ke fa'al nistand.
+    🔹 `ifnames -d`  --> 🔍 Namayesh interface-haye mored nazare shoma ba estefade az expression-haye regular (regex).
+    🔹 `ifnames -c`  --> 🔢 Namayesh tedad interface-haye peyda shode.
+
+🛠 **Mesal-ha:**
+
+    $ ifnames
+
+    🔹 Namayesh name interface-haye fa'al.
+
+    $ ifnames -a
+
+    🔹 Namayesh hameye interface-ha, hatta anha ke down hastand.
+
+✅ **Mesal sade:**
+
+    $ ifnames -a | grep eth
+
+    🔹 Peyda kardan name interface-haye ethernet (eth) az liste hameye interface-ha. In mishe name interface eth ra az liste bozorgtar joda kard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ifnames` command is used to find the names of network interfaces. This command helps you identify the exact names of your network interfaces so you can use them in other commands like `ifconfig` or `ip`.
+
+⚙️ **Options:**
+    🔹 `ifnames -a`  --> 👀 Show all interfaces, even those that are not active.
+    🔹 `ifnames -d`  --> 🔍 Display interfaces matching a regular expression.
+    🔹 `ifnames -c`  --> 🔢 Display the count of discovered interfaces.
+
+🛠 **Examples:**
+
+    $ ifnames
+
+    🔹 Display the names of active network interfaces.
+
+    $ ifnames -a
+
+    🔹 Display all network interfaces, including those that are down.
+
+✅ **Simple Example:**
+
+    $ ifnames -a | grep eth
+
+    🔹 Find the names of ethernet (eth) interfaces from the list of all interfaces. This helps to isolate the ethernet interface name from a larger list.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-probe` yek abzar baraye baresi va shenasayi sakht-afzar-haye HP (Hewlett-Packard) dar system shoma ast. In dastoor etela'ati raje' be printer-ha, scanner-ha, va digar dastgah haye HP ke motevassel hastand ra neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-probe` --> 🔎 Shenasayi sakht-afzar-haye HP motevassel va namayesh etela'at asasi.
+    🔹 `hp-probe -g` --> 🌐 Auto-Run GUI mode.
+    🔹 `hp-probe -debug` --> 🐛 Run in debug mode.
+
+🛠 **Mesal-ha:**
+
+    $ hp-probe
+
+    🔹 Namayesh etela'at dar morede sakht-afzar-haye HP.
+
+    $ hp-probe -debug
+
+    🔹 Ejra dar halate debug baraye peyda kardan moshkelat va ersal gozaresh.
+
+✅ **Mesal sade:**
+
+    $ hp-probe
+
+    🔹 Pas az ejra, in dastoor etela'ati mesl model-haye printer va scanner HP ra neshan midahad ke be computer shoma vasl hastand.  Shoma mitavanid az in etela'at baraye download driver-haye dorost estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-probe` command is a tool used to detect and identify HP (Hewlett-Packard) hardware connected to your system. It displays information about HP printers, scanners, and other devices.
+
+⚙️ **Options:**
+    🔹 `hp-probe` --> 🔎 Detect connected HP hardware and display basic information.
+    🔹 `hp-probe -g` --> 🌐 Auto-Run GUI mode.
+    🔹 `hp-probe -debug` --> 🐛 Run in debug mode.
+
+🛠 **Examples:**
+
+    $ hp-probe
+
+    🔹 Displays information about connected HP hardware.
+
+    $ hp-probe -debug
+
+    🔹 Runs in debug mode for troubleshooting and reporting issues.
+
+✅ **Simple Example:**
+
+    $ hp-probe
+
+    🔹 After running, this command will display information such as HP printer and scanner models connected to your computer. You can use this information to download the correct drivers.

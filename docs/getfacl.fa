@@ -1,0 +1,74 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `getfacl` baraye didane dastresi-ha (permissions) ezafi (ACLs) rooye file-ha va pooshe-ha estefade mishavad. In dastresi-ha alave bar dastresi-haye aslie UNIX hastand (mesle rwx baraye owner, group va others). Ba `getfacl` mitoonid bebiniid ke che kasani ya goruh-haee dastresi khas be yek file ya pooshe darand.
+
+⚙️ **Gozine-ha:**
+    🔹 `getfacl file` --> 📄 Namayeshe ACL-haye file ya pooshe "file".
+    🔹 `getfacl -a file` --> 🧾 Namayeshe hameye attribute-ha ACL-ha, na faghat user va group.
+    🔹 `getfacl -d directory` --> 📂 Namayeshe default ACL-haye pooshe "directory", yaani dastresi-haee ke be file-ha va pooshe-haee ke daroonesh sakhte mishan, daddeh mishavad.
+    🔹 `getfacl -p file` --> 🖨 Namayeshe ACL-ha ba format-e sade ke beshe ba `setfacl` estefade kard (portable format).
+
+🛠 **Mesal-ha:**
+
+    $ getfacl myfile.txt
+
+    🔹 Namayeshe ACL-haye file "myfile.txt".
+
+    $ getfacl -d mydirectory
+
+    🔹 Namayeshe default ACL-haye pooshe "mydirectory".
+
+✅ **Mesal sade:**
+
+    $ getfacl important_file.txt
+    # file: important_file.txt
+    # owner: user1
+    # group: group1
+    user::rw-
+    user:user2:r--  # user2 dastresi khandan darad
+    group::r--
+    mask::r--
+    other::---
+
+    🔹 In namayesh neshun mide ke file "important_file.txt" owner-esh "user1" hast, group-esh "group1" hast, va "user2" dastresi khandan behesh darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `getfacl` command is used to display the access control lists (ACLs) of files and directories. These ACLs provide more granular permissions beyond the standard UNIX permissions (rwx for owner, group, and others).  With `getfacl`, you can see which users or groups have specific access to a file or directory.
+
+⚙️ **Options:**
+    🔹 `getfacl file` --> 📄 Displays the ACLs of the file or directory "file".
+    🔹 `getfacl -a file` --> 🧾 Displays all ACL entries, not just user and group.
+    🔹 `getfacl -d directory` --> 📂 Displays the default ACLs of the directory "directory", which are applied to new files and directories created within it.
+    🔹 `getfacl -p file` --> 🖨 Displays ACLs in a portable format, suitable for use with `setfacl`.
+
+🛠 **Examples:**
+
+    $ getfacl myfile.txt
+
+    🔹 Displays the ACLs of the file "myfile.txt".
+
+    $ getfacl -d mydirectory
+
+    🔹 Displays the default ACLs of the directory "mydirectory".
+
+✅ **Simple Example:**
+
+    $ getfacl important_file.txt
+    # file: important_file.txt
+    # owner: user1
+    # group: group1
+    user::rw-
+    user:user2:r--  # user2 has read access
+    group::r--
+    mask::r--
+    other::---
+
+    🔹 This output shows that the file "important_file.txt" is owned by "user1", belongs to the group "group1", and "user2" has read access to it.

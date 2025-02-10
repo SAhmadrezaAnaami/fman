@@ -1,0 +1,126 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `make-first-existing-target` yek dastoor nist, balke yek ravesh ya code dar makefile ast. In ravesh komak mikonad ta vaghti ke shoma yek ya chand hadaf (target) dar makefile darid, avalin hadafi ke vojud darad (file-ash hast) ra entekhab va ejra konad. In baraye mavadiey ke chand rah baraye dorost kardan barname darid mofid ast.
+
+⚙️ **Gozine-ha:**
+    Az aanjaayi ke in yek dastoor mostaghel nist, gozine khasi nadarad. Ama dar makefile, shoma mitavanid az `$(wildcard ...)` va `$(firstword ...)` estefade konid ta file-haye mojud ra peyda va entekhab konid.
+
+🛠 **Mesal-ha:**
+
+    makefile
+    PROGRAMS = program1 program2 program3
+
+    EXISTING_PROGRAM = $(firstword $(wildcard $(PROGRAMS)))
+
+    all: $(EXISTING_PROGRAM)
+
+    $(PROGRAMS):
+        @echo "Dorost kardane $@"
+        @touch $@ #Faghat file-haye moshtaghi ra dorost mikonad, dar hale vaghe dorost kardan program nist.
+
+    .PHONY: all $(PROGRAMS)
+    
+
+    🔹 In mesal, avalin file az `program1`, `program2`, ya `program3` ke vojud darad (masalan ba dastoor `touch` dorost shode) ra entekhab mikonad va aan ra misazad.
+
+    makefile
+    ifeq ($(wildcard output_file1),output_file1)
+      TARGET = output_file1
+    else ifeq ($(wildcard output_file2),output_file2)
+      TARGET = output_file2
+    else
+      TARGET = default_output
+    endif
+
+    all: $(TARGET)
+       @echo "Hadife fa'al: $(TARGET)"
+
+    output_file1 output_file2 default_output:
+       @echo "Sakhtane hadaf: $@"
+       @touch $@
+    
+    🔹Dar in mesal, agar `output_file1` vojud dashte bashad, `TARGET` barabar ba aan mishavad; dar gheyr in surat, agar `output_file2` vojud dashte bashad, `TARGET` barabar ba aan mishavad; dar gheyr in surat, `TARGET` barabar ba `default_output` mishavad.
+
+✅ **Mesal sade:**
+
+    makefile
+    FILES = file1.txt file2.txt file3.txt
+    FIRST_EXISTING = $(firstword $(wildcard $(FILES)))
+
+    all: $(FIRST_EXISTING)
+        @echo "Avalin file mojud: $(FIRST_EXISTING)"
+
+    file1.txt file2.txt file3.txt:
+        @touch $@
+
+    .PHONY: all
+    
+
+    🔹 Agar `file2.txt` ghablan vojud dashte bashad, `make all` peygham "Avalin file mojud: file2.txt" ra chap mikonad. Dar gheyr in soorat, agar hich file vojud nadashte bashad, hich filei entekhab nemishavad va hata agar file-haye digar dorost shavand, peygham chap mishavad ke hich file avalan mojud nabude.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `make-first-existing-target` isn't a direct command, but rather a technique or piece of code used within a makefile. This technique helps to select and execute the first target that exists (its file exists) when you have multiple possible targets in your makefile. This is useful in scenarios where you have several ways to build a program or achieve a goal.
+
+⚙️ **Options:**
+    Since this isn't a standalone command, it doesn't have specific options. However, within a makefile, you can utilize functions like `$(wildcard ...)` and `$(firstword ...)` to find and select existing files.
+
+🛠 **Examples:**
+
+    makefile
+    PROGRAMS = program1 program2 program3
+
+    EXISTING_PROGRAM = $(firstword $(wildcard $(PROGRAMS)))
+
+    all: $(EXISTING_PROGRAM)
+
+    $(PROGRAMS):
+        @echo "Creating $@"
+        @touch $@ #Just creates empty files for demonstration, doesn't actually build the programs
+
+    .PHONY: all $(PROGRAMS)
+    
+
+    🔹 This example selects the first existing file among `program1`, `program2`, or `program3` (e.g., created with `touch`) and builds it.
+
+    makefile
+    ifeq ($(wildcard output_file1),output_file1)
+      TARGET = output_file1
+    else ifeq ($(wildcard output_file2),output_file2)
+      TARGET = output_file2
+    else
+      TARGET = default_output
+    endif
+
+    all: $(TARGET)
+       @echo "Active target: $(TARGET)"
+
+    output_file1 output_file2 default_output:
+       @echo "Building target: $@"
+       @touch $@
+    
+    🔹 In this example, if `output_file1` exists, `TARGET` will be set to it; otherwise, if `output_file2` exists, `TARGET` will be set to it; otherwise, `TARGET` will be set to `default_output`.
+
+✅ **Simple Example:**
+
+    makefile
+    FILES = file1.txt file2.txt file3.txt
+    FIRST_EXISTING = $(firstword $(wildcard $(FILES)))
+
+    all: $(FIRST_EXISTING)
+        @echo "First existing file: $(FIRST_EXISTING)"
+
+    file1.txt file2.txt file3.txt:
+        @touch $@
+
+    .PHONY: all
+    
+
+    🔹 If `file2.txt` already exists, `make all` will print "First existing file: file2.txt". Otherwise, if no file exists, it might execute with an empty target if files are only being created for demo, which isn't ideal, which underlines the need for default targets if no target is met.

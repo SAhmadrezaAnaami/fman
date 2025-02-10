@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-disks` yek barname grafiki ast baraye modiriat disk-ha va drive-ha dar system-haye Linux ke az Gnome estefade mikonand. Shoma mitavanid partition-ha ra bebinid, format konid, mount/unmount konid, va S.M.A.R.T. status-ha ra check konid.
+
+⚙️ **Gozine-ha:**
+    🔹 az GUI estefade mikonad --> baraye karbarane tazehkar kheili rahattar ast.
+    🔹 support az LVM --> LVM(Logical Volume Management) ra hemayat mikonad.
+    🔹 check kardan S.M.A.R.T. status --> vaziat disk-ha ra barresi mikonad.
+
+🛠 **Mesal-ha:**
+    
+    $ gnome-disks
+    
+    🔹 Baz kardane barname grafiki `gnome-disks`.
+
+    $ gnome-disks /dev/sda
+    
+    🔹 Baz kardane barname grafiki `gnome-disks` va entekhab disk `/dev/sda` be soorat pishfarz.
+
+✅ **Mesal sade:**
+    
+    $ gnome-disks
+    
+    🔹 Ba ejraye in dastoor, panjereye `gnome-disks` baz mishavad va shoma mitavanid etela'ate disk-haye khod ra bebinid va anha ra modiriat konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-disks` is a graphical utility for managing disks and drives in Linux systems that use Gnome. You can view partitions, format them, mount/unmount them, and check S.M.A.R.T. statuses.
+
+⚙️ **Options:**
+    🔹 GUI Based --> Easier for beginner users.
+    🔹 LVM Support --> Supports Logical Volume Management
+    🔹 S.M.A.R.T. Status Check --> Checks Hard drive S.M.A.R.T. status.
+
+🛠 **Examples:**
+    
+    $ gnome-disks
+    
+    🔹 Opens the `gnome-disks` graphical application.
+
+    $ gnome-disks /dev/sda
+    
+    🔹 Opens the `gnome-disks` graphical application with the `/dev/sda` disk pre-selected.
+
+✅ **Simple Example:**
+    
+    $ gnome-disks
+    
+    🔹 Running this command will open the `gnome-disks` window, allowing you to view information about your disks and manage them.

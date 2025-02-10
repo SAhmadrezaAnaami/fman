@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hostname` baraye namayesh ya tagheer daadane name computer shoma estefade mishavad. Name computer shoma rooye shabakeh baraye shenasaee estefade mishe.
+
+⚙️ **Gozine-ha:**
+    🔹 `hostname` --> 🖥️ Namayesh dadane name fa'ali computer.
+    🔹 `hostname -f` --> 🌐 Namayesh dadane name kamel domain (FQDN), agar computer be domain motasel bashe.
+    🔹 `sudo hostname <name_jadid>` --> ✍️ Tagheer daadane name computer be <name_jadid> (niyaz be dastresi root darad).
+    🔹 `hostname -i` --> 📍 Namayesh dadane address IP computer.
+
+🛠 **Mesal-ha:**
+
+    $ hostname
+
+    🔹 Namayesh name computer.
+
+    $ hostname -f
+
+    🔹 Namayesh name kamel domain agar mojood bashe.
+
+    $ sudo hostname mynewhostname
+
+    🔹 Tagheer dadane name computer be "mynewhostname" (motmaen shavid ke dastresi root darid).
+
+✅ **Mesal sade:**
+
+    $ hostname
+    mycomputer
+
+    🔹 Dastoor `hostname` sade name computer "mycomputer" ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hostname` command is used to display or set the hostname of your computer. The hostname is used to identify your computer on a network.
+
+⚙️ **Options:**
+    🔹 `hostname` --> 🖥️ Display the current hostname.
+    🔹 `hostname -f` --> 🌐 Display the fully qualified domain name (FQDN), if the computer is connected to a domain.
+    🔹 `sudo hostname <new_hostname>` --> ✍️ Set the hostname to <new_hostname> (requires root access).
+    🔹 `hostname -i` --> 📍 Display the IP address(es) of the hostname.
+
+🛠 **Examples:**
+
+    $ hostname
+
+    🔹 Display the hostname.
+
+    $ hostname -f
+
+    🔹 Display the FQDN if available.
+
+    $ sudo hostname mynewhostname
+
+    🔹 Change the hostname to "mynewhostname" (ensure you have root privileges).
+
+✅ **Simple Example:**
+
+    $ hostname
+    mycomputer
+
+    🔹 The simple `hostname` command displays the computer's name, which is "mycomputer" in this case.

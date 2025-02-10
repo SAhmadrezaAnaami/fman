@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-tune` baraye tanzeemat va ayar-e kardan-e Brltty (software-e namayesh-e khat-e barjaste) estefade mishavad. Ba estefade az in dastoor, mitavanid namayeshgar-e khat-e barjaste va khosusiate aan ra motabegh ba niaz-e khod tanzeem konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`        --> ❓ Namayesh-e rahnama va etela'at-e bishtar dar mored-e dastoor.
+    🔹 `--list-drivers` --> 📝 List-e driver-haye dastras baraye namayeshgar-e khat-e barjaste ra namayesh midahad.
+    🔹 `--driver <driver>`  --> ⚙️ Entkhab-e driver-e makhsoos baraye namayeshgar. Bayad az list-e driver-ha entkhab shavad.
+    🔹 `--port <port>`  --> 📍 Moshakhas kardane port-e serial ya USB ke namayeshgar be aan vasl ast.
+    🔹 `--baud <baud>`  --> 📶 Tanzeem-e sor'at-e baud baraye ertebat-e serial (dar surati ke estefade shavad).
+    🔹 `--config <file>` --> 📄 Load-e config az yek file makhsoos.
+
+🛠 **Mesal-ha:**
+
+    $ sudo brltty-tune --list-drivers
+
+    🔹 Namayesh list-e driver-haye dastras. Shoma bayad `sudo` estefade konid chon tanzeemat bar rooye system asar migozarad.
+
+    $ sudo brltty-tune --driver alva --port /dev/ttyUSB0
+
+    🔹 Tanzeem-e Brltty baraye estefade az driver-e "alva" ba estefade az port-e USB be onvane `/dev/ttyUSB0`.
+
+✅ **Mesal sade:**
+
+    $ brltty-tune --help
+
+    🔹 In dastoor rahnama-ye kameli az gozine-ha va estefade-ye `brltty-tune` ra namayesh midahad.  Baraaye fahmidane behtare dastoor va parametrhaye an kheili mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-tune` command is used to configure and tune Brltty (a braille display software).  It allows you to customize your braille display and its features according to your needs.
+
+⚙️ **Options:**
+    🔹 `--help`        --> ❓ Display help information and more details about the command.
+    🔹 `--list-drivers` --> 📝 Show a list of available drivers for braille displays.
+    🔹 `--driver <driver>`  --> ⚙️ Select a specific driver for the display.  Must be chosen from the available list.
+    🔹 `--port <port>`  --> 📍 Specify the serial or USB port to which the display is connected.
+    🔹 `--baud <baud>`  --> 📶 Set the baud rate for serial communication (if applicable).
+    🔹 `--config <file>` --> 📄 Load configuration from a specified file.
+
+🛠 **Examples:**
+
+    $ sudo brltty-tune --list-drivers
+
+    🔹 Display the list of available drivers. You need to use `sudo` because configuration changes affect the system.
+
+    $ sudo brltty-tune --driver alva --port /dev/ttyUSB0
+
+    🔹 Configure Brltty to use the "alva" driver with the USB port at `/dev/ttyUSB0`.
+
+✅ **Simple Example:**
+
+    $ brltty-tune --help
+
+    🔹 This command will show you a complete guide with all available options and usages of `brltty-tune`. This is very helpful for understanding the command and its parameters.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nautilus` yek barname-ye modiriat file baraye Gnome desktop environment ast. Ba aan shoma mitavanid file-ha va pooshe-ha ra bibinid, baz konid, taghir dahid va moratab konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `nautilus` --> 📂 Baz kardane nautilus dar pooshe-ye shakhsi.
+    🔹 `nautilus .` --> 📍 Baz kardane nautilus dar hamin pooshe-ye فعلی ( فعلی = current ).
+    🔹 `nautilus /path/be/pooshe` --> 🗺️ Baz kardane nautilus dar yek pooshe-ye moshakhas.
+    🔹 `nautilus --browser` --> 🌐 Baz kardane nautilus dar halate browser.
+
+🛠 **Mesal-ha:**
+
+    $ nautilus
+
+    🔹 Barname-ye nautilus ra baz mikonad ba pooshe-ye khane.
+
+    $ nautilus Downloads
+
+    🔹 Pooshe-ye "Downloads" ra dar nautilus baz mikonad. Agar "Downloads" dar pooshe-ye فعلی nabashad, bayad masire kamel ra benevisid.
+
+✅ **Mesal sade:**
+
+    $ nautilus .
+
+    🔹 In dastoor nautilus ra dar hamin pooshe-ye فعلی baz mikonad. Agar shoma az terminal dar yek pooshe-ye خاص kar mikonid va mikhaid file-ha ra be surat graphical bibinid, az in dastoor estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nautilus` command is a file manager for the Gnome desktop environment. It allows you to view, open, modify, and organize files and folders.
+
+⚙️ **Options:**
+    🔹 `nautilus` --> 📂 Opens Nautilus in your home directory.
+    🔹 `nautilus .` --> 📍 Opens Nautilus in the current directory.
+    🔹 `nautilus /path/to/folder` --> 🗺️ Opens Nautilus in a specific folder.
+    🔹 `nautilus --browser` --> 🌐 Opens Nautilus in browser mode.
+
+🛠 **Examples:**
+
+    $ nautilus
+
+    🔹 Opens the Nautilus file manager with your home directory.
+
+    $ nautilus Downloads
+
+    🔹 Opens the "Downloads" folder in Nautilus.  If "Downloads" is not in the current directory, you must specify the full path.
+
+✅ **Simple Example:**
+
+    $ nautilus .
+
+    🔹 This command opens Nautilus in the current directory. If you are working in a specific folder from the terminal and want to see the files graphically, use this command.

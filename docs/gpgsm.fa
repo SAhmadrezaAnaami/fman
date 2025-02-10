@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgsm` yek dastoor az majmooe GnuPG baraye modiriyat certificate-haye X.509 va anjam amaliyat cryptography bar rooye message-ha ba estefade az certificate-ha ast. In dastoor be shoma komak mikonad ke certificate-ha ra import, export, va verify konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gpgsm --list-keys`  --> 🔑 List kardan hameye certificate-haye mojood dar key-ring shoma.
+    🔹 `gpgsm --import file.crt` --> 📥 Import kardan yek certificate az yek file.
+    🔹 `gpgsm --export -a keyid`  --> 📤 Export kardan yek certificate ba ID moshakhas be formate ASCII.
+    🔹 `gpgsm --verify file.sig` --> ✅ Verify kardan yek signature ba estefade az certificate-haye mojood.
+
+🛠 **Mesal-ha:**
+
+    $ gpgsm --list-keys
+
+    🔹 Namayesh hameye certificate-haye mojood.
+
+    $ gpgsm --import mycert.crt
+
+    🔹 Import kardan certificate az file "mycert.crt".
+
+    $ gpgsm --verify message.txt.sig
+
+    🔹 Verify kardan signature file "message.txt.sig".
+
+✅ **Mesal sade:**
+
+    $ gpgsm --list-keys | grep "example@domain.com"
+
+    🔹 Peyda kardan certificate-haye marboot be yek email address khass. In dastoor list-e certificate-ha ra neshan midahad va ba estefade az `grep` certificate-haye marboot be email address "example@domain.com" ra filter mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgsm` command is part of the GnuPG suite and is used for managing X.509 certificates and performing cryptographic operations on messages using those certificates. It helps you import, export, and verify certificates.
+
+⚙️ **Options:**
+    🔹 `gpgsm --list-keys`  --> 🔑 List all available certificates in your keyring.
+    🔹 `gpgsm --import file.crt` --> 📥 Import a certificate from a file.
+    🔹 `gpgsm --export -a keyid`  --> 📤 Export a certificate with a specific ID in ASCII format.
+    🔹 `gpgsm --verify file.sig` --> ✅ Verify a signature using available certificates.
+
+🛠 **Examples:**
+
+    $ gpgsm --list-keys
+
+    🔹 Show all available certificates.
+
+    $ gpgsm --import mycert.crt
+
+    🔹 Import certificate from file "mycert.crt".
+
+    $ gpgsm --verify message.txt.sig
+
+    🔹 Verify the signature file "message.txt.sig".
+
+✅ **Simple Example:**
+
+    $ gpgsm --list-keys | grep "example@domain.com"
+
+    🔹 Find certificates related to a specific email address.  This command lists all certificates and uses `grep` to filter certificates related to the email address "example@domain.com".

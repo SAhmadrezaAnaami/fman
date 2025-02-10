@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gatttool` baraye ertebat ba dastgah haye Bluetooth Low Energy (BLE) estefade mishavad. Ba in dastoor mitoonid etela'at ro az BLE device bekhoonid va ya behesh befrestid.  Bejoz in, mitoonid services va characteristics ro explore konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-b <address>`  --> 📍 Address MAC dastgah BLE ro moshakhas mikonad.
+    🔹 `-i <hciX>`   --> 📡 Interface Bluetooth (masalan hci0) ro moshakhas mikonad. Agar moshakhas nakonid, default ro estefade mikonad.
+    🔹 `--char-read` --> 📜 Characteristic ra az device BLE mikhanad. Characteristico bayad ba handle ya UUID moshakhas konid.
+    🔹 `--char-write-req <handle> <value>` --> ✍️ Maghadir be yek characteristic baraye device BLE mifrestad (ba estefade az request).
+    🔹 `--char-write-cmd <handle> <value>` --> 🚀 Maghadir be yek characteristic baraye device BLE mifrestad (ba estefade az command, bedoone javab).
+    🔹 `--characteristics` --> 🔎 Listi az hame characteristics haye device BLE ro neshon mide.
+    🔹 `--discover` --> 🔍 Dastgah BLE ro peyda mikonad va etela'ati dar morede services va characteristics neshon mide.
+    🔹 `--connect`  --> 🔗 Be dastgah BLE vasl mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ gatttool -b AA:BB:CC:DD:EE:FF --device=hci0 --char-read --handle=0x0015
+
+    🔹 Khoondan az characteristic ba handle `0x0015` az dastgah ba address `AA:BB:CC:DD:EE:FF`.
+
+    $ gatttool -b AA:BB:CC:DD:EE:FF --device=hci0 --char-write-req 0x0012 010203
+
+    🔹 Ferestadan maghadir `010203` be characteristic ba handle `0x0012` az dastgah ba address `AA:BB:CC:DD:EE:FF`.
+
+✅ **Mesal sade:**
+
+    $ gatttool -b AA:BB:CC:DD:EE:FF --device=hci0 --characteristics
+
+    🔹 In dastoor hame characteristics haye device BLE ba address `AA:BB:CC:DD:EE:FF` ro neshon mide, ke shamel UUID ha va handle ha mishavad. Inja mitoonid handle ha ro baraye khoondan ya neveshtan etela'at be device estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gatttool` command is used to interact with Bluetooth Low Energy (BLE) devices. It allows you to read data from, and write data to, BLE devices. You can also use it to explore services and characteristics.
+
+⚙️ **Options:**
+    🔹 `-b <address>`  --> 📍 Specifies the MAC address of the BLE device.
+    🔹 `-i <hciX>`   --> 📡 Specifies the Bluetooth interface (e.g., hci0). If not specified, it uses the default interface.
+    🔹 `--char-read` --> 📜 Reads a characteristic from the BLE device. The characteristic must be specified by handle or UUID.
+    🔹 `--char-write-req <handle> <value>` --> ✍️ Sends values to a characteristic for the BLE device (using a request).
+    🔹 `--char-write-cmd <handle> <value>` --> 🚀 Sends values to a characteristic for the BLE device (using a command, without response).
+    🔹 `--characteristics` --> 🔎 Lists all characteristics of the BLE device.
+    🔹 `--discover` --> 🔍 Discovers the BLE device and shows information about services and characteristics.
+    🔹 `--connect`  --> 🔗 Connects to the BLE device.
+
+🛠 **Examples:**
+
+    $ gatttool -b AA:BB:CC:DD:EE:FF --device=hci0 --char-read --handle=0x0015
+
+    🔹 Reads the characteristic with handle `0x0015` from the device with address `AA:BB:CC:DD:EE:FF`.
+
+    $ gatttool -b AA:BB:CC:DD:EE:FF --device=hci0 --char-write-req 0x0012 010203
+
+    🔹 Sends the values `010203` to the characteristic with handle `0x0012` of the device with address `AA:BB:CC:DD:EE:FF`.
+
+✅ **Simple Example:**
+
+    $ gatttool -b AA:BB:CC:DD:EE:FF --device=hci0 --characteristics
+
+    🔹 This command lists all characteristics of the BLE device with address `AA:BB:CC:DD:EE:FF`, including UUIDs and handles. From here, you can use the handles to read or write data to the device.

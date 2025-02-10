@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dfu-tool` baraye karkardan ba device-haye USB dar mode DFU (Device Firmware Upgrade) be kar miravad. In dastoor komak mikonad firmware ra update ya flash konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dfu-tool --list` --> 🔍 List kardan device-haye DFU motevassel.
+    🔹 `dfu-tool --download <file.bin>` --> ⬇️ Firmware ra rooye device download mikonad.
+    🔹 `dfu-tool --upload <file.bin>` --> ⬆️ Firmware ra az device upload mikonad.
+    🔹 `dfu-tool --reset` --> 🔄 Device ra reset mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dfu-tool --list
+
+    🔹 List kardan hame device-haye DFU ke motevassel hastand.
+
+    $ dfu-tool --download firmware.bin
+
+    🔹 Firmware ra az file `firmware.bin` rooye device DFU download mikonad.
+
+✅ **Mesal sade:**
+
+    $ dfu-tool --download new_firmware.bin --reset
+
+    🔹 Firmware jadid ra download mikonad va device ra reset mikonad ta firmware jadid ejra shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dfu-tool` command is used to interact with USB devices in DFU (Device Firmware Upgrade) mode.  It helps you update or flash firmware onto devices.
+
+⚙️ **Options:**
+    🔹 `dfu-tool --list` --> 🔍 List connected DFU devices.
+    🔹 `dfu-tool --download <file.bin>` --> ⬇️ Download firmware to the device.
+    🔹 `dfu-tool --upload <file.bin>` --> ⬆️ Upload firmware from the device.
+    🔹 `dfu-tool --reset` --> 🔄 Reset the device.
+
+🛠 **Examples:**
+
+    $ dfu-tool --list
+
+    🔹 List all connected DFU devices.
+
+    $ dfu-tool --download firmware.bin
+
+    🔹 Download the firmware from the `firmware.bin` file to the DFU device.
+
+✅ **Simple Example:**
+
+    $ dfu-tool --download new_firmware.bin --reset
+
+    🔹 Downloads the new firmware and resets the device so that the new firmware runs.

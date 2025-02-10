@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `h2xs` baraye sakhtane structure file-haye extension-haye Perl az file-haye header C estefade mishavad. Yani, C header file-ha ra migirad va ye seriye file-ha misazad ke baraye neveshtane extension-haye Perl asan tar bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `h2xs -A`  --> ➕ Hameye default comment-ha ra ezafe mikonad. Kheili mofid ast baraye shoru'.
+    🔹 `h2xs -n <module_name>`  --> 📦 Ye module ba name-e shoma misazad. Vaghti module jadid misazid, in kheili moheme.
+    🔹 `h2xs -O`  --> 덮 File-haye mojood ra overwrite mikonad. Mohtat bashid!
+    🔹 `h2xs -x`  --> ✂️ faghat file-haye "skeleton" ra misazad, na hameye comment-ha va karhaye ezafi.
+
+🛠 **Mesal-ha:**
+
+    $ h2xs -A -n MyModule
+
+    🔹 Ye directory ba name "MyModule" misazad va file-haye extension ra dakhelesh gharar midahad ba hameye comment-haye default.
+
+    $ h2xs -n AnotherModule
+
+    🔹 Module-e jadidi ba name "AnotherModule" misazad.
+
+✅ **Mesal sade:**
+
+    $ h2xs -n MyModule && cd MyModule && perl Makefile.PL && make && make test
+
+    🔹 Ye module misazad, mire dakhel directory-ash, va ba'd az an Makefile.PL ra run mikonad, baraye build va test kardan module.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `h2xs` command is used to create the basic structure for Perl extensions from C header files. It takes C header files and generates a set of files that make it easier to write Perl extensions.
+
+⚙️ **Options:**
+    🔹 `h2xs -A`  --> ➕ Adds all the default comments. Very useful for getting started.
+    🔹 `h2xs -n <module_name>`  --> 📦 Creates a module with the name you specify. This is crucial when creating a new module.
+    🔹 `h2xs -O`  --> 덮 Overwrites existing files. Be careful!
+    🔹 `h2xs -x`  --> ✂️ Only creates the "skeleton" files, without all the extra comments and work.
+
+🛠 **Examples:**
+
+    $ h2xs -A -n MyModule
+
+    🔹 Creates a directory named "MyModule" and places the extension files inside, including all the default comments.
+
+    $ h2xs -n AnotherModule
+
+    🔹 Creates a new module named "AnotherModule".
+
+✅ **Simple Example:**
+
+    $ h2xs -n MyModule && cd MyModule && perl Makefile.PL && make && make test
+
+    🔹 Creates a module, goes into its directory, and then runs Makefile.PL to build and test the module.

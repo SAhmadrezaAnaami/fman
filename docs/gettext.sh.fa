@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gettext.sh` yek script bash ast ke baraye tarjome-ye matn be zaban-haye mokhtalef estefade mishavad. In dastoor be shoma komak mikonad ta program-haye khod ra baraye estefade-konandegan az keshvarhaye mokhtalef mahalli (localize) konid. Yani, matn-haye program be zabane morede nazar har estefade-konande namayesh dade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-d <domainname>`  --> 🌐 Esme domain-e matn-ha ra moshakhas mikonad (masalan, `myprogram`). Domainname baraye peyda kardane file-haye tarjome bekar miravad.
+    🔹 `-e`  --> ⚠️ Agar tarjome peyda nashod, az command `echo` estefade kon. In gozine be shoma ejaze midahad ke matn-haye peyda nashode ra be tor-e pishfarz namayesh dahid.
+    🔹 `-n`  --> 🌑 Agar tarjome peyda nashod, matn-e asli ra namayesh nade. (Agar tarjome nabud, hichi namayesh nade.)
+    🔹 `-s`  --> 🤫 Saket bash. Hich payami be stdout nemifrestad. Faghat status code bar migardanad.
+
+🛠 **Mesal-ha:**
+
+    $ source gettext.sh
+    $ TEXTDOMAIN=myprogram
+    $ TEXTDOMAINDIR=/usr/share/locale
+    $ gettext "Hello, world!"
+
+    🔹 Agar "Hello, world!" dar file-haye tarjome-ye `myprogram` vojood dashte bashad, tarjome-ye aan namayesh dade mishavad.
+
+    $ source gettext.sh
+    $ gettext -d myprogram "Hello, world!"
+
+    🔹 Mesal-e digar baraye moshakhas kardane domain name be soorat mostaghim.
+
+✅ **Mesal sade:**
+
+    $ source gettext.sh
+    $ TEXTDOMAIN=testapp
+    $ gettext "This is a test message."
+
+    🔹 Agar file-haye locale/testapp/*.mo vojood dashte bashad, tarjome-ye "This is a test message." namayesh dade mishavad. Agar file-haye locale vojood nadashte bashad, khode "This is a test message." chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gettext.sh` command is a bash script used for translating text into different languages. It helps you to localize your programs for users from different countries, meaning that the text of the program is displayed in the user's preferred language.
+
+⚙️ **Options:**
+    🔹 `-d <domainname>`  --> 🌐 Specifies the text domain name (e.g., `myprogram`). The domain name is used to locate the translation files.
+    🔹 `-e`  --> ⚠️ If no translation is found, use the `echo` command. This option allows you to display untranslated text by default.
+    🔹 `-n`  --> 🌑 If no translation is found, don't display the original text. (If there is no translation, display nothing.)
+    🔹 `-s`  --> 🤫 Be silent. Sends no message to stdout. Only returns a status code.
+
+🛠 **Examples:**
+
+    $ source gettext.sh
+    $ TEXTDOMAIN=myprogram
+    $ TEXTDOMAINDIR=/usr/share/locale
+    $ gettext "Hello, world!"
+
+    🔹 If "Hello, world!" exists in the translation files for `myprogram`, its translation is displayed.
+
+    $ source gettext.sh
+    $ gettext -d myprogram "Hello, world!"
+
+    🔹 Another example for specifying the domain name directly.
+
+✅ **Simple Example:**
+
+    $ source gettext.sh
+    $ TEXTDOMAIN=testapp
+    $ gettext "This is a test message."
+
+    🔹 If locale files exist at locale/testapp/*.mo, then the translation of "This is a test message." will be displayed. If locale files don't exist, then "This is a test message." will be printed.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `m2300w` (ya'ni Samsung ML-2300W printer) be tore mostaghim yek dastoor dar system nist.  Balke esme model yek printer ast.  Dar Linux/UNIX, shoma az dastoor-haye standard printing system (mesle `lp`, `lpr`, ya GUI tools) baraye chap kardan ba in printer estefade mikonid.  Baraye setup printer, be software ya web interface makhsoos printer mohtajid.
+
+⚙️ **Gozine-ha:**
+    Chonke `m2300w` dastoor nist, gozine-ha marboot be dastoor-haye printing system hastand. Chand mesal:
+    🔹 `lp -d printer_name file.pdf` --> 🖨️ Chap file PDF ba printer moshakhas
+    🔹 `lpr file.txt` --> 📄 Chap file matni ba printer default
+    🔹 Dar GUI, gozine-ha mesle tedad copy, size kaghaz, va etc. dar dastras hastand.
+
+🛠 **Mesal-ha:**
+
+    $ lp -d Samsung_ML_2300W document.pdf
+
+    🔹 Chap file `document.pdf` ba printer Samsung ML-2300W (agar setup shode bashad).
+
+    $ lpr document.txt
+
+    🔹 Chap file `document.txt` ba estefade az printer default.
+
+✅ **Mesal sade:**
+
+    $ lp -d Samsung_ML_2300W test.txt
+
+    🔹 Agar `Samsung_ML_2300W` name printer shoma bashad, file `test.txt` chap mishavad. Agar printer setup nashode bashad, error khahad dad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `m2300w` (referring to the Samsung ML-2300W printer) isn't a direct command in the system. It is the name of a printer model. In Linux/UNIX, you would use standard printing system commands (like `lp`, `lpr`, or GUI tools) to print to this printer. You'll need printer-specific software or a web interface to set up the printer.
+
+⚙️ **Options:**
+    Since `m2300w` isn't a command, the options are related to the printing system commands. Here are some examples:
+    🔹 `lp -d printer_name file.pdf` --> 🖨️ Print a PDF file to a specified printer.
+    🔹 `lpr file.txt` --> 📄 Print a text file to the default printer.
+    🔹 In a GUI, options like number of copies, paper size, etc., are available.
+
+🛠 **Examples:**
+
+    $ lp -d Samsung_ML_2300W document.pdf
+
+    🔹 Print the `document.pdf` file to the Samsung ML-2300W printer (if it is set up).
+
+    $ lpr document.txt
+
+    🔹 Print the `document.txt` file using the default printer.
+
+✅ **Simple Example:**
+
+    $ lp -d Samsung_ML_2300W test.txt
+
+    🔹 If `Samsung_ML_2300W` is the name of your printer, the `test.txt` file will be printed. If the printer is not set up, it will result in an error.

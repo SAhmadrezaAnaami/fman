@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debpkg` baraye sakhtan (*build*) file-haye `.deb` estefade mishavad. File-haye `.deb` baraye nasb (*install*) barname-ha dar sistem-haye Debian va Ubuntu be kar miravand. In dastoor az file-haye control, data va archive baraye sakhtan pakage estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debpkg -b pooshe`  --> 📦 Sakhtan file `.deb` az directory `pooshe`
+    🔹 `debpkg -c file_control` --> 📝 Estefade az `file_control` be عنوان file control.
+    🔹 `debpkg -D`        --> 🚧 Debug mode ra fa'al mikonad.
+    🔹 `debpkg -v version` --> 🔢 Set kardane version e package.
+
+🛠 **Mesal-ha:**
+
+    $ debpkg -b mypackage
+
+    🔹 In command az directory `mypackage` file `.deb` misazad. File control va data az dakhele in directory gerefte mishavand.
+
+    $ debpkg -c control.file -b mypackage
+
+    🔹 In command az file `control.file` be عنوان file control va directory `mypackage` baraye content file `.deb` misazad.
+
+✅ **Mesal sade:**
+
+    $ debpkg -b temp
+
+    🔹 Agar directory `temp` sakhtar haye lazem ra dashte bashad (مثل `DEBIAN/control`), yek file `.deb` ba haman sakhtar misazad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debpkg` command is used to build `.deb` files, which are used for installing software on Debian and Ubuntu-based systems.  This command uses control, data, and archive files to create a package.
+
+⚙️ **Options:**
+    🔹 `debpkg -b directory` --> 📦 Build a `.deb` file from the `directory`
+    🔹 `debpkg -c control_file` --> 📝 Use `control_file` as the control file.
+    🔹 `debpkg -D`        --> 🚧 Enable debug mode.
+    🔹 `debpkg -v version` --> 🔢 Set the package version.
+
+🛠 **Examples:**
+
+    $ debpkg -b mypackage
+
+    🔹 This command builds a `.deb` file from the `mypackage` directory. It retrieves the control file and data from within this directory.
+
+    $ debpkg -c control.file -b mypackage
+
+    🔹 This command uses the file `control.file` as the control file and the `mypackage` directory for the content to build a `.deb` file.
+
+✅ **Simple Example:**
+
+    $ debpkg -b temp
+
+    🔹 If the `temp` directory has the required structure (e.g., `DEBIAN/control`), it will build a `.deb` file with the same structure.

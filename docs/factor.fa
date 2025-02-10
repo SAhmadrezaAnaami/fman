@@ -1,0 +1,72 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `factor` baraye tajziyeh adad sahih be a’daade avval (prime numbers) estefade mishavad. Yani adad ra be soorate zarbi az adadhaaye avval neshun midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `factor adad` --> 🔢 Tajziyeh adad morede nazar. Agar chand adad bedehi, hame ra tajziyeh mikonad.
+    🔹 `factor` (bedune hich gozine) --> ⌨️ Az vorudi standard (keyboard) adad migirad va tajziyeh mikonad. Ba Ctrl+D mitavani be barnamé befahmani ke vorudi tamom shode ast.
+
+🛠 **Mesal-ha:**
+
+    $ factor 12
+    12: 2 2 3
+
+    🔹 Adad 12 ra be zarb 2 * 2 * 3 tajziyeh kard.
+
+    $ factor 36 48 100
+    36: 2 2 3 3
+    48: 2 2 2 2 3
+    100: 2 2 5 5
+
+    🔹 Chand adad ra hamzaman tajziyeh mikonad.
+
+✅ **Mesal sade:**
+
+    $ factor
+    17
+    17: 17
+    25
+    25: 5 5
+    ^D
+
+    🔹 Dar in mesal, `factor` az keyboard vorudi gerefte va tajziyeh karde ast.  Ba Ctrl+D vorudi ra tamam kardim.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `factor` command is used to decompose an integer into its prime factors. It expresses the number as a product of prime numbers.
+
+⚙️ **Options:**
+    🔹 `factor number` --> 🔢 Factorizes the specified number. If you provide multiple numbers, it factorizes all of them.
+    🔹 `factor` (without any options) --> ⌨️ Reads numbers from standard input (keyboard) and factorizes them.  You can use Ctrl+D to signal the end of input.
+
+🛠 **Examples:**
+
+    $ factor 12
+    12: 2 2 3
+
+    🔹 Factorizes the number 12 into the product 2 * 2 * 3.
+
+    $ factor 36 48 100
+    36: 2 2 3 3
+    48: 2 2 2 2 3
+    100: 2 2 5 5
+
+    🔹 Factorizes multiple numbers simultaneously.
+
+✅ **Simple Example:**
+
+    $ factor
+    17
+    17: 17
+    25
+    25: 5 5
+    ^D
+
+    🔹 In this example, `factor` takes input from the keyboard and factorizes it. We terminated the input using Ctrl+D.

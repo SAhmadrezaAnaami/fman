@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-architecture` baraye gereftan etela'at dar morede memari (architecture) system Debian estefade mishavad. In dastoor be shoma komak mikonad ta bedanid system shoma az che noe memari poshtibani mikonad (masalan, amd64, i386). In etela'at baraye dorost kardan package-haye Debian va motmaen shodan az inke package-ha ba system shoma sazgar ast, mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-q[chelon]` --> ❓ Namayesh dade faghat meghdar morede nazar. Masalan, `-qDEB_BUILD_ARCH` faghat memari sakht package ra namayesh midahad.
+    🔹 `-s` --> ⚙️ Namayesh hameye moteghayyerhaye mohiti (environment variables) marboot be memari.
+    🔹 `-u` --> ⬆️ Update kardan moteghayyerhaye mohiti be surate khodkar.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-architecture -qDEB_BUILD_ARCH
+
+    🔹 Namayesh memari sakht package.
+
+    $ dpkg-architecture -s
+
+    🔹 Namayesh hameye moteghayyerhaye mohiti marboot be memari.
+
+✅ **Mesal sade:**
+
+    $ dpkg-architecture -qDEB_HOST_ARCH
+
+    🔹 Dar in mesal, `DEB_HOST_ARCH` memari system ra namayesh midahad (masalan amd64).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-architecture` command is used to determine the architecture of a Debian system. This command helps you understand which architecture your system supports (e.g., amd64, i386). This information is important for building Debian packages and ensuring that packages are compatible with your system.
+
+⚙️ **Options:**
+    🔹 `-q[field]` --> ❓ Display only the value of the specified field. For example, `-qDEB_BUILD_ARCH` displays only the package build architecture.
+    🔹 `-s` --> ⚙️ Show all environment variables related to the architecture.
+    🔹 `-u` --> ⬆️ Automatically update environment variables.
+
+🛠 **Examples:**
+
+    $ dpkg-architecture -qDEB_BUILD_ARCH
+
+    🔹 Display the package build architecture.
+
+    $ dpkg-architecture -s
+
+    🔹 Display all environment variables related to the architecture.
+
+✅ **Simple Example:**
+
+    $ dpkg-architecture -qDEB_HOST_ARCH
+
+    🔹 In this example, `DEB_HOST_ARCH` displays the host system's architecture (e.g., amd64).

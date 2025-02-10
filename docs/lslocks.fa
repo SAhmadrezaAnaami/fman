@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lslocks` baraye didan ghoofl-ha (locks) dar system Linux estefade mishavad. In dastoor neshon midahad che process-haee file-ha ya resources-ha ra ghoofl karde-and.
+
+⚙️ **Gozine-ha:**
+    🔹 `lslocks` --> 📜 Namayesh hameye ghoofl-haye system.
+    🔹 `lslocks -n` --> 👁️‍🗨️ Namayesh id-haye adadi (numerical IDs) be jaye nam-ha.
+    🔹 `lslocks -p <PID>` --> 🎯 Namayesh ghoofl-haye process ba PID moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ lslocks
+
+    🔹 Namayesh hameye ghoofl-haye fa'al dar system.
+
+    $ lslocks -p 1234
+
+    🔹 Namayesh ghoofl-haye process ba shenaseye (ID) 1234.
+
+✅ **Mesal sade:**
+
+    $ lslocks | grep my_file.txt
+
+    🔹 Peida kardan process-haee ke file `my_file.txt` ra ghoofl karde-and.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lslocks` command is used to display information about locks held on Linux systems. It shows which processes are holding locks on files or other resources.
+
+⚙️ **Options:**
+    🔹 `lslocks` --> 📜 Show all system locks.
+    🔹 `lslocks -n` --> 👁️‍🗨️ Show numerical IDs instead of names.
+    🔹 `lslocks -p <PID>` --> 🎯 Show locks held by the process with the specified PID.
+
+🛠 **Examples:**
+
+    $ lslocks
+
+    🔹 Display all active locks on the system.
+
+    $ lslocks -p 1234
+
+    🔹 Display locks held by the process with ID 1234.
+
+✅ **Simple Example:**
+
+    $ lslocks | grep my_file.txt
+
+    🔹 Find processes that are holding locks on the file `my_file.txt`.

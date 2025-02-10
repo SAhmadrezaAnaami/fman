@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzdiff` baraye moghayese kardan (compare) do ta file-e zip shode (compressed) ba estefade az format Lempel-Ziv estefade mishavad. In dastoor be shoma komak mikonad ta tafavotha (differences) ra beyn e do file-e zip shode peyda konid bedoon e inke niazi bashe har do ra az zip dar biyarid (unzip).
+
+⚙️ **Gozine-ha:**
+    🔹 `lzdiff file1.lz file2.lz` --> 📂 Moghayese do file-e Lempel-Ziv va chap kardan tafavotha
+    🔹 `lzdiff -h` --> ❓ Namayesh rahnamaye estefade az dastoor
+
+🛠 **Mesal-ha:**
+
+    $ lzdiff file1.lz file2.lz
+
+    🔹 Moghayese file1.lz ba file2.lz va namayesh tafavotha dar terminal
+
+    $ lzdiff version1.lz version2.lz > diff.txt
+
+    🔹 Save kardan tafavotha be file-e diff.txt
+
+✅ **Mesal sade:**
+
+    $ lzdiff document_v1.lz document_v2.lz
+
+    🔹 Agar document_v2.lz version jadidtari az document_v1.lz bashad, tafavotha namayesh dade mishavad ta shoma bebinid che taghirati dade shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzdiff` command is used to compare two compressed files using the Lempel-Ziv format. It helps you find the differences between two compressed files without needing to decompress them first.
+
+⚙️ **Options:**
+    🔹 `lzdiff file1.lz file2.lz` --> 📂 Compares two Lempel-Ziv files and prints the differences.
+    🔹 `lzdiff -h` --> ❓ Displays the command usage help.
+
+🛠 **Examples:**
+
+    $ lzdiff file1.lz file2.lz
+
+    🔹 Compares file1.lz with file2.lz and displays the differences in the terminal.
+
+    $ lzdiff version1.lz version2.lz > diff.txt
+
+    🔹 Saves the differences to the diff.txt file.
+
+✅ **Simple Example:**
+
+    $ lzdiff document_v1.lz document_v2.lz
+
+    🔹 If document_v2.lz is a newer version of document_v1.lz, the differences will be displayed so you can see what changes have been made.

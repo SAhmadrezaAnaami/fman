@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `btattach` baraye vasl shodan be yek port serial Bluetooth estefade mishavad. In dastoor be shoma komak mikonad ta device-haye Bluetooth-i ra ke az tareeq serial port motasel mishavand, estefade konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `btattach -B /dev/ttyS0 -s 115200` --> 📍 Vasl shodan be port serial Bluetooth ba address `/dev/ttyS0` va sor'at 115200 bps. (`-B` baraye port, `-s` baraye sor'at)
+    🔹 `btattach -P bcm43xx -B /dev/ttyACM0 -s 115200` --> 🧩 Vasl shodan ba protocol `bcm43xx` va port `/dev/ttyACM0`. (`-P` baraye protocol)
+    🔹 `btattach -d` --> 🐞 Namayesh etela'at debug baraye peyda kardan moshkelat.
+
+🛠 **Mesal-ha:**
+
+    $ sudo btattach -B /dev/rfcomm0 -s 115200
+
+    🔹 Vasl shodan be Bluetooth device az tareeq `rfcomm0` ba sor'at 115200.
+
+    $ sudo btattach -P bcm43xx -B /dev/ttyACM0 -s 9600
+
+    🔹 Vasl shodan ba protocol `bcm43xx` be port `ttyACM0` ba sor'at 9600.
+
+✅ **Mesal sade:**
+
+    $ sudo btattach -B /dev/ttyS1 -s 57600
+    
+    🔹 Ba ejra kardane in dastoor, `btattach` be port serial `ttyS1` ba sor'at 57600 motasel mishavad va Bluetooth device amade estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `btattach` command is used to attach to a Bluetooth serial port. This command helps you use Bluetooth devices that connect via serial port.
+
+⚙️ **Options:**
+    🔹 `btattach -B /dev/ttyS0 -s 115200` --> 📍 Attach to the Bluetooth serial port at `/dev/ttyS0` with a speed of 115200 bps. (`-B` for port, `-s` for speed)
+    🔹 `btattach -P bcm43xx -B /dev/ttyACM0 -s 115200` --> 🧩 Attach using the `bcm43xx` protocol and the port `/dev/ttyACM0`. (`-P` for protocol)
+    🔹 `btattach -d` --> 🐞 Show debugging information to help troubleshoot problems.
+
+🛠 **Examples:**
+
+    $ sudo btattach -B /dev/rfcomm0 -s 115200
+
+    🔹 Attach to a Bluetooth device via `rfcomm0` at a speed of 115200.
+
+    $ sudo btattach -P bcm43xx -B /dev/ttyACM0 -s 9600
+
+    🔹 Attach using the `bcm43xx` protocol to the `ttyACM0` port with a speed of 9600.
+
+✅ **Simple Example:**
+
+    $ sudo btattach -B /dev/ttyS1 -s 57600
+
+    🔹 By running this command, `btattach` connects to the serial port `ttyS1` with a speed of 57600, and the Bluetooth device becomes ready to use.

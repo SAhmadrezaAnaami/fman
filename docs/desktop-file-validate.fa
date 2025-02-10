@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `desktop-file-validate` baraye check kardane dorosti va standard boodane file-haye `.desktop` estefade mishavad. File-haye `.desktop` baraye ijade shortcut ha dar menu-ha va desktop dar Linux be kar miravand.
+
+⚙️ **Gozine-ha:**
+    🔹 `<file.desktop>`  --> 🎯 Esme file `.desktop` ke bayad check shavad.
+    🔹 `--warn-as-error`  --> 🚨 Agar khata ya warning peyda shod, an ra be عنوان error نشان بده.
+    🔹 `--version` --> ℹ️ Namayeshe version barname.
+
+🛠 **Mesal-ha:**
+
+    $ desktop-file-validate myapp.desktop
+
+    🔹 Check kardane dorosti file `myapp.desktop`.
+
+    $ desktop-file-validate --warn-as-error myapp.desktop
+
+    🔹 Agar file `myapp.desktop` error dasht, command ba error code kharej mishavad.
+
+✅ **Mesal sade:**
+
+    $ desktop-file-validate mygame.desktop
+
+    🔹 Agar file `mygame.desktop` moshkeli nadashte bashad, chizi chap nemishavad. Agar moshkeli dashte bashad, khata ya warning namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `desktop-file-validate` command is used to check the validity and standardization of `.desktop` files. `.desktop` files are used to create shortcuts in menus and on the desktop in Linux.
+
+⚙️ **Options:**
+    🔹 `<file.desktop>`  --> 🎯 The name of the `.desktop` file to be checked.
+    🔹 `--warn-as-error`  --> 🚨 Treat warnings as errors, causing the command to exit with an error code if any warnings are found.
+    🔹 `--version` --> ℹ️ Display program version.
+
+🛠 **Examples:**
+
+    $ desktop-file-validate myapp.desktop
+
+    🔹 Check the validity of the `myapp.desktop` file.
+
+    $ desktop-file-validate --warn-as-error myapp.desktop
+
+    🔹 If the `myapp.desktop` file has errors, the command will exit with an error code.
+
+✅ **Simple Example:**
+
+    $ desktop-file-validate mygame.desktop
+
+    🔹 If the `mygame.desktop` file has no issues, nothing will be printed. If there are problems, errors or warnings will be displayed.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kbxutil` baraye modiriat va kar ba keyring-haye GPG (GNU Privacy Guard) dar macOS estefade mishavad. Be shoma komak mikonad keyring-haye khod ra dar hale khoob negah darid, kelid-ha ro import ya export konid, va kelid-haye duplicate ra hazf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `kbxutil list` --> 📜 List kardan keyring-haye mojud.
+    🔹 `kbxutil repair` --> 🛠 Tamir kardan keyring-haye zarar dideh ya fasad shodeh.
+    🔹 `kbxutil import <file>` --> 🔑 Import kardan kelid-ha az yek file.
+    🔹 `kbxutil export <file>` --> 📤 Export kardan kelid-ha be yek file.
+    🔹 `kbxutil clean` --> ✨ Paak kardan kelid-haye duplicate va be dard nakhor.
+
+🛠 **Mesal-ha:**
+
+    $ kbxutil list
+
+    🔹 List kardan hameye keyring-haye mojud dar system.
+
+    $ kbxutil repair
+
+    🔹 Tamir kardan keyring-haye zarar dideh. (Ehtiatan backup begirid!)
+
+✅ **Mesal sade:**
+
+    $ kbxutil clean
+
+    🔹 Peyda kardan va hazf kardan kelid-haye tekrarie dar keyring-haye shoma, baese behtar shodan performance va kam shodan حجم mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kbxutil` command is used for managing and working with GPG (GNU Privacy Guard) keyrings on macOS. It helps you maintain your keyrings, import/export keys, and remove duplicate keys.
+
+⚙️ **Options:**
+    🔹 `kbxutil list` --> 📜 List existing keyrings.
+    🔹 `kbxutil repair` --> 🛠 Repair damaged or corrupted keyrings.
+    🔹 `kbxutil import <file>` --> 🔑 Import keys from a file.
+    🔹 `kbxutil export <file>` --> 📤 Export keys to a file.
+    🔹 `kbxutil clean` --> ✨ Clean up duplicate and unnecessary keys.
+
+🛠 **Examples:**
+
+    $ kbxutil list
+
+    🔹 List all existing keyrings on the system.
+
+    $ kbxutil repair
+
+    🔹 Repair potentially damaged keyrings. (Back up first!)
+
+✅ **Simple Example:**
+
+    $ kbxutil clean
+
+    🔹 Finds and removes duplicate keys in your keyrings, improving performance and reducing size.

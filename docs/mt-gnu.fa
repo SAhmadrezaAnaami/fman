@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mt-gnu` (maghz-e tape GNU) baraye control va modiriyat-e tape drive-ha dar system-haye Linux estefade mishavad. Ba in dastoor mitoonid tape-ha ra rewind konid, be aghab va jelo bereed, va etela'at ra rooye anha benevisid ya az anha bekhanid.
+
+⚙️ **Gozine-ha:**
+    🔹 `mt -f /dev/st0 rewind` --> ⏪ Tape ra dobare be avalesh bargardoon (rewind). `/dev/st0` esm-e tape drive ast.
+    🔹 `mt -f /dev/st0 offline` --> 🚪 Tape drive ra az system joda kon (eject).
+    🔹 `mt -f /dev/st0 fsf 1` --> ⏩ Tape ra yek file set be jelo bebar.
+    🔹 `mt -f /dev/st0 bsf 1` --> ⏪ Tape ra yek file set be aghab bebar.
+    🔹 `mt -f /dev/st0 status`  --> ℹ️  Vaziyat-e tape drive va tape daroonesh ra neshon bede.
+
+🛠 **Mesal-ha:**
+
+    $ mt -f /dev/nst0 rewind
+
+    🔹 Tape drive `/dev/nst0` ra rewind mikonad.
+
+    $ mt -f /dev/st0 offline
+
+    🔹 Tape drive `/dev/st0` ra eject mikonad.
+
+✅ **Mesal sade:**
+
+    $ mt -f /dev/st0 status
+
+    🔹 Vaziyat-e tape drive ra namayesh mide, mesle inke tape daroonesh hast ya na, va position-e konunish kojast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mt-gnu` (magnetic tape GNU) command is used to control tape drives on Linux systems. You can use it to rewind tapes, move forward and backward, write data to tapes, and read data from them.
+
+⚙️ **Options:**
+    🔹 `mt -f /dev/st0 rewind` --> ⏪ Rewind the tape to the beginning. `/dev/st0` is the device name of the tape drive.
+    🔹 `mt -f /dev/st0 offline` --> 🚪 Eject the tape from the drive.
+    🔹 `mt -f /dev/st0 fsf 1` --> ⏩ Move the tape forward by one file set.
+    🔹 `mt -f /dev/st0 bsf 1` --> ⏪ Move the tape backward by one file set.
+    🔹 `mt -f /dev/st0 status` --> ℹ️  Show the status of the tape drive and the tape inside.
+
+🛠 **Examples:**
+
+    $ mt -f /dev/nst0 rewind
+
+    🔹 Rewinds the tape drive `/dev/nst0`.
+
+    $ mt -f /dev/st0 offline
+
+    🔹 Ejects the tape drive `/dev/st0`.
+
+✅ **Simple Example:**
+
+    $ mt -f /dev/st0 status
+
+    🔹 Displays the status of the tape drive, such as whether a tape is present and its current position.

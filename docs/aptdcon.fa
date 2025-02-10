@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aptdcon` baraye modiriat dastresi be Internet az tarigh ravesh-haye apt (Advanced Package Tool) be kar miravad. Ba estefade az in dastoor, shoma mitavanid tarfik-haye dastresi ra tasim konid, mesle ijade mahdoodiat dar download ya update kardane package-ha.
+
+⚙️ **Gozine-ha:**
+    🔹 `aptdcon --available`  --> 📦 List kardane tamame package-haye ghabele dastresi baraye download va nasb.
+    🔹 `aptdcon --download-only package_name`  --> 📥 Fagat download kardane yek package be donbale ebtale nasb an.
+    🔹 `aptdcon --show package_name`  --> ℹ️ Namayesh etelaat dar morede yek package khas.
+
+🛠 **Mesal-ha:**
+
+    $ aptdcon --available
+
+    🔹 Namayesh listi az tamame package-haye ghabele dastresi.
+
+    $ aptdcon --download-only firefox
+
+    🔹 Fagat package 'firefox' ra download mikonad bedoone nasb kardane an.
+
+✅ **Mesal sade:**
+
+    $ aptdcon --show vlc
+
+    🔹 Namayesh etelaate tafsili dar morede package 'vlc' mesle version, andaze va tozihat.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aptdcon` command is used to manage internet access using APT (Advanced Package Tool) methods. Using this command, you can configure traffic access, such as creating restrictions on downloading or updating packages.
+
+⚙️ **Options:**
+    🔹 `aptdcon --available`  --> 📦 List all available packages for download and installation.
+    🔹 `aptdcon --download-only package_name`  --> 📥 Only download a specific package without installing it.
+    🔹 `aptdcon --show package_name`  --> ℹ️ Show information about a specific package.
+
+🛠 **Examples:**
+
+    $ aptdcon --available
+
+    🔹 Show a list of all available packages.
+
+    $ aptdcon --download-only firefox
+
+    🔹 Only downloads the 'firefox' package without installing it.
+
+✅ **Simple Example:**
+
+    $ aptdcon --show vlc
+
+    🔹 Shows detailed information about the 'vlc' package, such as version, size, and description.
+

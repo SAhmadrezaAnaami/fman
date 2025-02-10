@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gdbtui` yek ravash grafiki (graphical) baraye estefade az `gdb` (GNU Debugger) ast.  Ba estefade az `gdbtui`, shoma mitoonid code-e khod ra ba asani bebinid, khat be khat ejra konid va moteghayyer-ha (variables) ra barresi konid dar yek mahite terminal.  In barname komak mikonad debug kardan barname-ha asantar shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gdbtui <name_barname>`  --> 🚀 Ejra kardan `gdbtui` ba yek barname moshakhas.
+    🔹 `gdbtui -help` --> ❓ Namayesh rahnamaye `gdbtui`.
+
+🛠 **Mesal-ha:**
+
+    $ gdbtui myprogram
+
+    🔹 Ejra kardan `gdbtui` baraye barname-ye "myprogram".
+
+    $ gdbtui
+
+    🔹 Ejra kardan `gdbtui` bedune barname avaliye (mitavanid file ra dar dakhel `gdb` baz konid).
+
+✅ **Mesal sade:**
+
+    $ gdbtui a.out
+    🔹 In dastoor barname-ye `a.out` ra dar `gdbtui` baz mikonad, va shoma mitoonid az terminal-e khod barname-e khod ra debug konid ba estefade az interface-e grafiki.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gdbtui` provides a terminal user interface (TUI) for the GNU Debugger (`gdb`).  It allows you to debug programs with a visual representation of the source code, registers, and other debugging information directly within your terminal.  This makes debugging more intuitive and efficient.
+
+⚙️ **Options:**
+    🔹 `gdbtui <program_name>` --> 🚀 Run `gdbtui` with a specified program.
+    🔹 `gdbtui -help` --> ❓ Display the `gdbtui` help message.
+
+🛠 **Examples:**
+
+    $ gdbtui myprogram
+
+    🔹 Run `gdbtui` to debug the program "myprogram".
+
+    $ gdbtui
+
+    🔹 Run `gdbtui` without a program initially (you can open the file within `gdb`).
+
+✅ **Simple Example:**
+
+    $ gdbtui a.out
+    🔹 This command opens the program `a.out` in `gdbtui`, allowing you to debug your code from the terminal using the graphical interface.

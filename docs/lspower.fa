@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lspower` (agar vaghean vojood dashte bashad -- een dastoor standard nist!) baraye gereftan etela'at darbareye masraf bargh va vaz'iat-e battery dar system estefade mishavad.  Az aan jaaee ke `lspower` yek dastoor standard nist, karayee-haye aan be system-e shoma va dastoor-haee ke shoma nasb kardeh-eed bastagee darad.  Dar vaghe'iyat, system-haee hastand ke az dastoor-haee mesle `upower` ya `acpi` baraye anjam dadan kar-haye shabeeh estefade meekonand.
+
+⚙️ **Gozine-ha:**
+    (Be dalil inke `lspower` yek dastoor standard nist, gozine-ha be toreh mamool gher-ghabel pish-beenie hastand.  Ama, agar dastoor vaghean vojood dashte bashad, shayad gozine-haye zir ra dashte bashad.)
+    🔹 `-s` ya `--status`  --> 🔋 Namayesh vaz'iat-e bargh (masraf, battery, va digar etela'at).
+    🔹 `-i` ya `--info`    --> ℹ️ Namayesh etela'at-e tafseeli darbareye battery va masraf-e bargh.
+    🔹 `-h` ya `--help`    --> ❓ Namayesh rahnama baraye estefade az dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ lspower
+    
+    🔹 Agar `lspower` vaghean vojood dashte bashad, vaz'iat-e sadeh-ye masraf bargh ra namayesh meedahad.
+
+    $ lspower -s
+    
+    🔹 Agar `-s` ya `--status` vojood dashte bashad, etela'at-e bishtar darbareye vaz'iat-e bargh ra namayesh meedahad.
+
+✅ **Mesal sade:**
+
+    $ lspower -i | grep capacity
+
+    🔹  Eetela'at-e battery ra meegyrad va ba dastoor `grep` capacity-e aan ra peyda meekonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lspower` command (if it actually exists -- it's not a standard command!) is used to retrieve information about power consumption and battery status on a system. Since `lspower` is not a standard utility, its functionalities depend on your specific system and the tools you have installed. Systems often use commands like `upower` or `acpi` to achieve similar functionality.
+
+⚙️ **Options:**
+    (Because `lspower` is not a standard command, its options are typically unpredictable.  However, if the command exists on your system, it *might* have the following options.)
+    🔹 `-s` or `--status`  --> 🔋 Display the power status (consumption, battery, and other information).
+    🔹 `-i` or `--info`    --> ℹ️ Display detailed information about the battery and power consumption.
+    🔹 `-h` or `--help`    --> ❓ Display help information about using the command.
+
+🛠 **Examples:**
+
+    $ lspower
+    
+    🔹  If `lspower` exists, it will display a simple power status.
+
+    $ lspower -s
+    
+    🔹 If `-s` or `--status` exist, it shows more details about power status.
+
+✅ **Simple Example:**
+
+    $ lspower -i | grep capacity
+
+    🔹 Gets battery info and uses `grep` to find its capacity.

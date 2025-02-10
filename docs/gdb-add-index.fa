@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdb-add-index` baraye sakhtan yek index baraye te سرعت bakhshidan be load shodan file-haye debug dar GDB estefade mishavad. In dastoor be shoma komak mikonad ta GDB be sorat sari'tar etela'ate debug ra load konad, be khosus agar file-haye debug bozorg bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `gdb-add-index FILE`  --> 📄 Sakhtan index baraye file morede nazar.
+    🔹 `gdb-add-index --help` --> ℹ️ Namayesh rahnamaye dastoor.
+    🔹 `gdb-add-index --verbose` --> 📢 Namayesh peygham-haye tafsili dar hale sakhtane index.
+
+🛠 **Mesal-ha:**
+
+    $ gdb-add-index myprogram
+
+    🔹 Sakhtan index baraye file "myprogram".
+
+    $ gdb-add-index --verbose myprogram
+
+    🔹 Sakhtan index baraye file "myprogram" ba namayesh peygham-haye tafsili.
+
+✅ **Mesal sade:**
+
+    $ gdb-add-index application
+
+    🔹 Bad az ejraye in dastoor, yek file ba pasvand ".gdb-index" dar kenar file asli "application" sakhte mishavad. GDB az in file baraye load kardan sari'tare etela'ate debug estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdb-add-index` command is used to create an index to speed up the loading of debug files in GDB.  This command helps GDB load debug information faster, especially if the debug files are large.
+
+⚙️ **Options:**
+    🔹 `gdb-add-index FILE`  --> 📄 Create an index for the specified file.
+    🔹 `gdb-add-index --help` --> ℹ️ Display the command help.
+    🔹 `gdb-add-index --verbose` --> 📢 Display detailed messages while creating the index.
+
+🛠 **Examples:**
+
+    $ gdb-add-index myprogram
+
+    🔹 Create an index for the file "myprogram".
+
+    $ gdb-add-index --verbose myprogram
+
+    🔹 Create an index for the file "myprogram" with detailed messages displayed.
+
+✅ **Simple Example:**
+
+    $ gdb-add-index application
+
+    🔹 After running this command, a file with the extension ".gdb-index" is created next to the original "application" file. GDB uses this file to load debug information faster.

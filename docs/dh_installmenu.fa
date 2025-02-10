@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installmenu` baraye nasb kardan file-haye menu (manand .desktop file-ha) dar ja-haye dorost dar sistam Debian estefade mishavad. In dastoor joz'i az majmooe `debhelper` ast va baraye asan kardan farayand sakht package-haye Debian be kar miravad. Agar shoma dar hale sakht package-i hastid ke niaz be menu entry dar desktop environment darad, `dh_installmenu` komak mikonad ke in kar be dorosti anjam shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n` ya `--no-scripts`  --> 🚫 Script-haye `postinst` va `postrm` ra ejra nakond.  
+    🔹 `-p package` ya `--package=package` --> 📦 File-ha ra dar package-e moshakhas nasb kon.  
+    🔹 `--list-missing` --> 🔍 List file-haye menu ke nistand va eshtebah daran.  
+    🔹 `--sourcedir dir` --> 📁 Pooshe-ye manba' ra baraye file-haye menu moshakhas kon.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installmenu
+    🔹 Nasb file-haye menu az `debian/package/DEBIAN/menu` be ja-haye monaseb dar file system.
+
+    $ dh_installmenu -p mypackage
+    🔹 Nasb file-haye menu faghat baraye package `mypackage`.
+
+✅ **Mesal sade:**
+
+    $ dh_installmenu --list-missing
+    🔹 Agar file menu-e gomshode ya eshtebahi vojod dashte bashad, list mikonad. In komak mikonad ta motmaen shavid ke hameye menu entry-ha dorost setup shodeand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installmenu` command is used to install menu files (like .desktop files) to the correct locations in a Debian system. This command is part of the `debhelper` suite and simplifies the process of building Debian packages. If you're building a package that needs a menu entry in the desktop environment, `dh_installmenu` helps ensure this is done correctly.
+
+⚙️ **Options:**
+    🔹 `-n` or `--no-scripts` --> 🚫 Do not run `postinst` and `postrm` scripts.
+    🔹 `-p package` or `--package=package` --> 📦 Install files only for the specified package.
+    🔹 `--list-missing` --> 🔍 List menu files that are missing or have errors.
+    🔹 `--sourcedir dir` --> 📁 Specify the source directory for menu files.
+
+🛠 **Examples:**
+
+    $ dh_installmenu
+    🔹 Install menu files from `debian/package/DEBIAN/menu` to the appropriate locations in the file system.
+
+    $ dh_installmenu -p mypackage
+    🔹 Install menu files only for the package `mypackage`.
+
+✅ **Simple Example:**
+
+    $ dh_installmenu --list-missing
+    🔹 Lists any missing or erroneous menu files. This helps ensure that all menu entries are set up correctly.

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `findrule` yek dastoor farzi (hypothetical) ast. Dar UNIX/Linux, barname-haye rastkari (debugging) va analiz-e code manande `gdb`, `lldb`, ya static analyzers baraye peyda kardan va check kardan rule-ha dar code estefade mishavand. Agar `findrule` yek dastoor khassi bashad, barname-haye balatar (manual pages) bayad baraye an dastoor dar dastras bashand. Dar in tashrih, farz mikonim `findrule` dastoorist baraye jostejoo-ye rule-haye khass dar file-haye config ya source code.
+
+⚙️ **Gozine-ha:**
+    🔹 `findrule -n <esm-rule>`  --> 🏷️ Jostejoo baraye rule ba esm
+    🔹 `findrule -f <file>`  --> 📂 Jostejoo dar file khass
+    🔹 `findrule -r <regex>`  --> 🔍 Jostejoo ba estefade az regex
+    🔹 `findrule -v`  --> 🗣️ Namayesh etela'at bishtar (verbose mode)
+
+🛠 **Mesal-ha:**
+
+    $ findrule -n firewall_rule
+    
+    🔹 Jostejoo baraye rule ba esm "firewall_rule" dar hameye file-haye config.
+
+    $ findrule -f /etc/iptables/rules.v4 -n ACCEPT_SSH
+
+    🔹 Jostejoo dar file `/etc/iptables/rules.v4` baraye rule "ACCEPT_SSH".
+
+    $ findrule -r '.*:.*ERROR.*' -f /var/log/syslog
+
+    🔹 Jostejoo dar file syslog baraye rule-ha ya khat-ha shamel "ERROR".
+
+✅ **Mesal sade:**
+
+    $ findrule -n 'admin_access' -f /etc/apache2/apache2.conf
+
+    🔹 In dastoor rule-hayee ke shamel `admin_access` dar file apache2.conf hastand ra peyda mikonad va namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `findrule` command is a hypothetical command. In UNIX/Linux, debugging and code analysis tools like `gdb`, `lldb`, or static analyzers are used to find and check rules in code. If `findrule` is a specific command, relevant manual pages should be available for that command. In this description, we assume `findrule` is a command used to search for specific rules in configuration files or source code.
+
+⚙️ **Options:**
+    🔹 `findrule -n <rule-name>`  --> 🏷️ Search for rule by name
+    🔹 `findrule -f <file>`  --> 📂 Search in a specific file
+    🔹 `findrule -r <regex>`  --> 🔍 Search using regular expressions
+    🔹 `findrule -v`  --> 🗣️ Enable verbose mode
+
+🛠 **Examples:**
+
+    $ findrule -n firewall_rule
+
+    🔹 Search for a rule named "firewall_rule" in all config files.
+
+    $ findrule -f /etc/iptables/rules.v4 -n ACCEPT_SSH
+
+    🔹 Search in the file `/etc/iptables/rules.v4` for the rule "ACCEPT_SSH".
+
+    $ findrule -r '.*:.*ERROR.*' -f /var/log/syslog
+
+    🔹 Search in the syslog file for rules or lines containing "ERROR".
+
+✅ **Simple Example:**
+
+    $ findrule -n 'admin_access' -f /etc/apache2/apache2.conf
+
+    🔹 This command finds and displays rules containing `admin_access` in the apache2.conf file.

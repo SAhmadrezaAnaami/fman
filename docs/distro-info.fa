@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `distro-info` baraye gereftan etela'at darbareye version-e distro-ye Linux-e shoma be kar mirevad. In etela'at shamel esm-e distro, version, va etela'at darbareye release-haye mokhtalef (mesle LTS) mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `distro-info --version`  --> 🔢 Namayesh version-e khode `distro-info`.
+    🔹 `distro-info --name`     --> 🏷️ Namayesh esm-e distro.
+    🔹 `distro-info --id`       --> 🆔 Namayesh ID distro.
+    🔹 `distro-info --codename`  --> 🔑 Namayesh codename release.
+    🔹 `distro-info --release [TYPE]` --> 🗓️ Namayesh release (Default: current, momken ast LTS, next, oldstable bashad).
+
+🛠 **Mesal-ha:**
+
+    $ distro-info --version
+
+    🔹 Namayesh version-e `distro-info` command.
+
+    $ distro-info --codename
+
+    🔹 Namayesh codename current release.
+
+✅ **Mesal sade:**
+
+    $ distro-info --release lts
+
+    🔹 Namayesh version-e LTS (Long Term Support) distro. Agar LTS vojood nadashte bashad, hich chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `distro-info` command is used to retrieve information about your Linux distribution version. This information includes the distribution name, version, and information about different releases (such as LTS).
+
+⚙️ **Options:**
+    🔹 `distro-info --version`  --> 🔢 Display the version of `distro-info` itself.
+    🔹 `distro-info --name`     --> 🏷️ Display the distribution name.
+    🔹 `distro-info --id`       --> 🆔 Display the distribution ID.
+    🔹 `distro-info --codename`  --> 🔑 Display the release codename.
+    🔹 `distro-info --release [TYPE]` --> 🗓️ Display the release version (Default: current, can be LTS, next, oldstable).
+
+🛠 **Examples:**
+
+    $ distro-info --version
+
+    🔹 Display the version of the `distro-info` command.
+
+    $ distro-info --codename
+
+    🔹 Display codename of the current release.
+
+✅ **Simple Example:**
+
+    $ distro-info --release lts
+
+    🔹 Display the LTS (Long Term Support) version of the distribution. If an LTS version is not available, nothing will be displayed.

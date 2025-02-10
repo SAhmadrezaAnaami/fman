@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fprintd-list` baraye namayesh device-haye angoosht-negar (fingerprint) ke fprintd (Fingerprint Authentication Daemon) shenasayi karde ast, estefade mishavad. Ba estefade az in dastoor, shoma mitavanid etela'ati dar morede device-haye fingerprint dastrasi dashte bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khassi baraye in dastoor voojood nadarad. Faghat ba name dastoor (`fprintd-list`) seda zade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ fprintd-list
+
+    🔹 Namayesh listi az device-haye fingerprint shenasayi shode.
+
+    $ sudo fprintd-list
+
+    🔹 Agar dastoor be dastresi administrator niaz dashte bashad.
+
+✅ **Mesal sade:**
+
+    $ fprintd-list
+    list_devices result: Success
+    no devices found
+
+    🔹 Agar hich device fingerprint peyda nashavad, payame "no devices found" ra neshan midahad. Agar device voojood dashte bashad, etela'ate an device ra neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fprintd-list` command is used to display the fingerprint devices that fprintd (Fingerprint Authentication Daemon) has detected. By using this command, you can access information about the available fingerprint devices.
+
+⚙️ **Options:**
+    🔹 There are no specific options for this command. It is simply called by its name (`fprintd-list`).
+
+🛠 **Examples:**
+
+    $ fprintd-list
+
+    🔹 Displays a list of detected fingerprint devices.
+
+    $ sudo fprintd-list
+
+    🔹 If the command requires administrator privileges.
+
+✅ **Simple Example:**
+
+    $ fprintd-list
+    list_devices result: Success
+    no devices found
+
+    🔹 If no fingerprint devices are found, it shows the message "no devices found". If a device exists, it will display the device information.

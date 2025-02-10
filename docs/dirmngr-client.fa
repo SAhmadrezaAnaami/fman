@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dirmngr-client` baraye ertebat ba daemon `dirmngr` (yek menejere certificate) estefade mishavad. Shoma mitavanid az an baraye anjam dadan amaliat haye mokhtalef mantegh be download certificate az internet, gereftane list CRL va ... estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`  --> ℹ️ Namayesh version `dirmngr-client`.
+    🔹 `--help`     --> ❓ Namayesh rahnamaye estefade.
+    🔹 `--load-keys` --> 🔑 Load kardan koliye clavy-haye mojood dar `~/.gnupg/pubring.kbx` be dirmngr.
+    🔹 `--homedir <path>` --> 🏠 Moshakhas kardane directory gnupg.
+
+🛠 **Mesal-ha:**
+
+    $ dirmngr-client --version
+
+    🔹 Namayesh version barnameh.
+
+    $ dirmngr-client --load-keys
+
+    🔹 Load kardan koleye clavy-haye mojood be dirmngr.
+
+✅ **Mesal sade:**
+
+    $ dirmngr-client --help | less
+
+    🔹 Rahnamaye dastoor `dirmngr-client` ra namayesh dade va ba estefade az `less` mitavanid an ra safhe be safhe bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dirmngr-client` command is used to communicate with the `dirmngr` daemon (a certificate manager).  You can use it to perform various operations like downloading certificates from the internet, fetching CRL lists, and more.
+
+⚙️ **Options:**
+    🔹 `--version`  --> ℹ️ Display the `dirmngr-client` version.
+    🔹 `--help`     --> ❓ Display usage help.
+    🔹 `--load-keys` --> 🔑 Load all keys present in `~/.gnupg/pubring.kbx` into dirmngr.
+    🔹 `--homedir <path>` --> 🏠 Specify the gnupg directory.
+
+🛠 **Examples:**
+
+    $ dirmngr-client --version
+
+    🔹 Show the program version.
+
+    $ dirmngr-client --load-keys
+
+    🔹 Load all available keys into dirmngr.
+
+✅ **Simple Example:**
+
+    $ dirmngr-client --help | less
+
+    🔹 Displays the `dirmngr-client` help manual and allows you to view it page by page using `less`.

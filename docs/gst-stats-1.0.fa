@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-stats-1.0` baraye chap kardane etela'at marboot be amalkarde GStreamer pipeline estefade mishavad. In dastoor be shoma komak mikonad ta moshkelate amalkardi ra peyda konid va baraye behbood onha amal konid.  Be zaban sade, etela'at stat ra az yek pipeline fa'al GStreamer migirad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnama baraye estefade az dastoor.
+    🔹 `--gst-debug-level=LEVEL`  --> 🐞 Set kardane sathe debug GStreamer (0-9, default: 0). Baraye etela'at bishtar debug estefade mishavad.
+    🔹 `--version` --> ℹ️ Namayesh version GStreamer.
+
+🛠 **Mesal-ha:**
+
+    $ gst-stats-1.0
+    
+    🔹 Chap kardane etela'at amalkarde pipeline pishfarz. (Agar yek pipeline fa'al GStreamer dar hale ejra bashad).
+
+    $ gst-stats-1.0 --gst-debug-level=3
+    
+    🔹 Chap kardane etela'at amalkarde pipeline ba sathe debug 3.
+
+✅ **Mesal sade:**
+
+    $ gst-launch-1.0 videotestsrc ! fakesink &
+    [1] 12345
+    $ gst-stats-1.0
+    
+    🔹 Chap kardane etela'at marboot be yek pipeline sade videotestsrc ke dar background ejra mishavad. `gst-launch-1.0` yek pipeline GStreamer ra ejra mikonad, `&` an ra dar background ejra mikonad, va `gst-stats-1.0` etela'at amalkarde an pipeline ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-stats-1.0` command is used to print statistics about a running GStreamer pipeline. It helps you identify performance bottlenecks and troubleshoot issues. Simply put, it retrieves statistical information from an active GStreamer pipeline.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help for the command.
+    🔹 `--gst-debug-level=LEVEL`  --> 🐞 Set GStreamer debug level (0-9, default: 0). Used for more detailed debugging information.
+    🔹 `--version` --> ℹ️ Display GStreamer version.
+
+🛠 **Examples:**
+
+    $ gst-stats-1.0
+    
+    🔹 Prints the performance statistics of the default pipeline (if there's a running GStreamer pipeline).
+
+    $ gst-stats-1.0 --gst-debug-level=3
+    
+    🔹 Prints the pipeline performance statistics with debug level 3.
+
+✅ **Simple Example:**
+
+    $ gst-launch-1.0 videotestsrc ! fakesink &
+    [1] 12345
+    $ gst-stats-1.0
+    
+    🔹 Prints information about a simple videotestsrc pipeline running in the background. `gst-launch-1.0` runs a GStreamer pipeline, `&` makes it run in the background, and `gst-stats-1.0` prints performance statistics of the pipeline.

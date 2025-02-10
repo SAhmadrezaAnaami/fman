@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nautilus-autorun-software` baraye ejraye otomatik narmafzar az rooye CD-ha, DVD-ha, ya USB drive-ha vaghti ke vared mishavand, be kar mirevad. In dastoor aksaran dar mohite grafikie Nautilus (file manager-e Gnome) estefade mishavad.  Agar file `autorun.inf` dar device mojud bashad, in dastoor amal mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`  --> ℹ️ Namayesh version-e barnamé.
+    🔹 `--help`     --> ❓ Namayesh rahnamaye estefade az dastoor.
+    🔹 `[device]`   --> 💾 Esm ya address device ra moshakhas mikonad (masalan `/media/cdrom`). Agar moshakhas nashavad, be tore pishfarz az device-haye vared shode jadid estefade mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ nautilus-autorun-software /media/cdrom
+    
+    🔹 Ejdade file `autorun.inf` dar device `/media/cdrom`.
+
+    $ nautilus-autorun-software
+    
+    🔹 Montazer mimanad ta yek device jadid vared shavad va file `autorun.inf` dar an device ra ejra konad.
+
+✅ **Mesal sade:**
+
+    $ nautilus-autorun-software /dev/sdb1
+
+    🔹 Agar device `/dev/sdb1` yek file `autorun.inf` dashte bashad, nautilus-autorun-software talash mikonad ke an ra ejra konad.  In obuman dar USB flash drive-ha dide mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nautilus-autorun-software` command is used to automatically run software from CDs, DVDs, or USB drives when they are inserted. It's typically used within the Nautilus graphical environment (the Gnome file manager). It relies on the presence of an `autorun.inf` file on the device.
+
+⚙️ **Options:**
+    🔹 `--version`  --> ℹ️ Display the program's version.
+    🔹 `--help`     --> ❓ Display help information about using the command.
+    🔹 `[device]`   --> 💾 Specifies the device name or address (e.g., `/media/cdrom`). If not specified, it defaults to using newly inserted devices.
+
+🛠 **Examples:**
+
+    $ nautilus-autorun-software /media/cdrom
+    
+    🔹 Executes the `autorun.inf` file located on the device `/media/cdrom`.
+
+    $ nautilus-autorun-software
+    
+    🔹 Waits for a new device to be inserted and attempts to execute the `autorun.inf` file on that device.
+
+✅ **Simple Example:**
+
+    $ nautilus-autorun-software /dev/sdb1
+
+    🔹 If the device `/dev/sdb1` contains an `autorun.inf` file, `nautilus-autorun-software` will attempt to execute it. This is commonly seen with USB flash drives.

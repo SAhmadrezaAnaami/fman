@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `install-printerdriver` baraye nasb-e driver-haye chapgar (printer) dar system-e shoma be kar miravad. In dastoor asan tarin rahe nasb-e chapgarha ra faraham mikonad, khososan vaghti driver-haye lazem ra darid ya mikhahid az repository-haye system estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-ha.
+    🔹 `--ppd <file>` --> 📄 Nasb-e chapgar ba estefade az file PPD. File PPD tarif mikonad ke chapgar chegoned kar mikonad.
+    🔹 `--list-devices` --> 🖥️ List kardan chapgarhaye dastras baraye nasb.
+    🔹 `--auto` --> 🤖 Talash baraye nasb-e otomatick driver baraye chapgarhayi ke system shenasayi karde.
+
+🛠 **Mesal-ha:**
+
+    $ install-printerdriver --list-devices
+
+    🔹 List kardan hame chapgarhaye dastras baraye nasb.
+
+    $ install-printerdriver --ppd /path/to/printer.ppd
+
+    🔹 Nasb-e chapgar ba estefade az file PPD. Lotfan jaye `/path/to/printer.ppd` ra ba address-e dorost-e file PPD avaz konid.
+
+✅ **Mesal sade:**
+
+    $ install-printerdriver --auto
+
+    🔹 Dastoor talash mikonad ta be soorat otomatick driver-e monaseb baraye chapgarhaye shenasayi shode ra nasb konad. Agar chand chapgar dashte bashid, system driver-haye monaseb baraye hame anha ra nasb mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `install-printerdriver` command is used to install printer drivers on your system. It provides a simple way to install printers, especially when you have the necessary drivers or want to use system repositories.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Show command help and options.
+    🔹 `--ppd <file>` --> 📄 Install the printer using a PPD file. The PPD file defines how the printer operates.
+    🔹 `--list-devices` --> 🖥️ List available printers for installation.
+    🔹 `--auto` --> 🤖 Attempt to automatically install drivers for printers detected by the system.
+
+🛠 **Examples:**
+
+    $ install-printerdriver --list-devices
+
+    🔹 List all available printers for installation.
+
+    $ install-printerdriver --ppd /path/to/printer.ppd
+
+    🔹 Install the printer using a PPD file. Replace `/path/to/printer.ppd` with the correct path to the PPD file.
+
+✅ **Simple Example:**
+
+    $ install-printerdriver --auto
+
+    🔹 The command attempts to automatically install the appropriate drivers for detected printers. If you have multiple printers, the system installs drivers suitable for all of them.

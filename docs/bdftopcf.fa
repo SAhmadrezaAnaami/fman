@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bdftopcf` yek dastoor baraye tabdil font-haye bitmap (ke ba format BD-f hastand) be font-haye PCF (Portable Compiled Format) ast. Font-haye PCF baraye system-haye X Window estefade mishavand va size kamtari darand va zoodtar load mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `bdftopcf -o <file.pcf> <file.bdf>`  --> 💾  Save kardan natije be yek file makhsoos.
+    🔹 `bdftopcf -p <size> <file.bdf>`  --> ➕  Ezafe kardan property DPI (dots per inch) be font. Size ra be meghdare DPI deghat konid (masalan, 75 ya 100).
+    🔹 `bdftopcf -l`  --> 🧾  Namayesh license font.
+    🔹 `bdftopcf -t`  --> ⏱️  Ezafe kardan timestamp be file PCF.
+
+🛠 **Mesal-ha:**
+
+    $ bdftopcf myfont.bdf > myfont.pcf
+
+    🔹 Tabdil file `myfont.bdf` be `myfont.pcf`.
+
+    $ bdftopcf -o outputfont.pcf inputfont.bdf
+
+    🔹 Tabdil `inputfont.bdf` be `outputfont.pcf` ba estefade az gozine `-o` baraye save kardan.
+
+✅ **Mesal sade:**
+
+    $ bdftopcf -p 75 myfont.bdf > myfont.pcf
+
+    🔹 Tabdil `myfont.bdf` be `myfont.pcf` va ezafe kardan DPI 75 be font.  In baraye behtar namayesh dadan font dar screen estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bdftopcf` command is used to convert bitmap fonts (in BDF format) to PCF (Portable Compiled Format) fonts. PCF fonts are used in the X Window System and are smaller and load faster.
+
+⚙️ **Options:**
+    🔹 `bdftopcf -o <file.pcf> <file.bdf>`  --> 💾  Save the output to a specific file.
+    🔹 `bdftopcf -p <size> <file.bdf>`  --> ➕  Add the DPI (dots per inch) property to the font. The size should be the DPI value (e.g., 75 or 100).
+    🔹 `bdftopcf -l`  --> 🧾  Display the font license.
+    🔹 `bdftopcf -t`  --> ⏱️  Add a timestamp to the PCF file.
+
+🛠 **Examples:**
+
+    $ bdftopcf myfont.bdf > myfont.pcf
+
+    🔹 Convert the file `myfont.bdf` to `myfont.pcf`.
+
+    $ bdftopcf -o outputfont.pcf inputfont.bdf
+
+    🔹 Convert `inputfont.bdf` to `outputfont.pcf` using the `-o` option to save the output.
+
+✅ **Simple Example:**
+
+    $ bdftopcf -p 75 myfont.bdf > myfont.pcf
+
+    🔹 Convert `myfont.bdf` to `myfont.pcf` and add a DPI of 75 to the font. This is useful for displaying the font better on the screen.
+

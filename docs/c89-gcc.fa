@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `c89-gcc` baraye tabdil kardan (compile) code-haye zaban C, ke ba standard C89 neveshte shodeand, be barnameye ejraee (executable) estefade mishavad. In dastoor version ghadimi-tari az zaban C ra hemayat mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `c89-gcc -o [esme-barname] [esme-file.c]` --> 📝 Tabdil file `.c` be barnameye ejraee ba esme moshakhas.
+    🔹 `c89-gcc -Wall [esme-file.c]` --> ⚠️ Namayesh hameye khatar-ha va etela'at ehtemali dar code.
+    🔹 `c89-gcc -g [esme-file.c]` --> 🐛 Ezafe kardane etela'at debug baraye eslahe asan-tar.
+
+🛠 **Mesal-ha:**
+
+    $ c89-gcc -o barname main.c
+
+    🔹 Tabdil file `main.c` be barnameye ejraee ba esme `barname`.
+
+    $ c89-gcc -Wall main.c
+
+    🔹 Tabdil file `main.c` va namayesh hameye khatar-ha.
+
+✅ **Mesal sade:**
+
+    $ c89-gcc -o hello hello.c
+    $ ./hello
+
+    🔹 Aval code `hello.c` tabdil mishe, bad barnameye ejraee `hello` ejra mishe va natije chap mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `c89-gcc` command is used to compile C language code, written according to the C89 standard, into an executable program. This command supports an older version of the C language.
+
+⚙️ **Options:**
+    🔹 `c89-gcc -o [program-name] [file-name.c]` --> 📝 Compile the `.c` file into an executable program with a specific name.
+    🔹 `c89-gcc -Wall [file-name.c]` --> ⚠️ Display all warnings and potential issues in the code.
+    🔹 `c89-gcc -g [file-name.c]` --> 🐛 Add debugging information for easier debugging.
+
+🛠 **Examples:**
+
+    $ c89-gcc -o program main.c
+
+    🔹 Compile the `main.c` file into an executable program named `program`.
+
+    $ c89-gcc -Wall main.c
+
+    🔹 Compile the `main.c` file and display all warnings.
+
+✅ **Simple Example:**
+
+    $ c89-gcc -o hello hello.c
+    $ ./hello
+
+    🔹 First, the `hello.c` code is compiled, then the executable program `hello` is run, and the result is printed.

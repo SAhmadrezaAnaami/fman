@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lp_solve` yek hal-konandeye barname-rizi khatti (linear programming solver) ast. In dastoor baraye peyda kardane behtarin javab baraye masael-e behine-sazi (optimization) ke dar aan ha hameye moadele-ha va naamoadelat khatti hastand, estefade mishavad. Yani, shoma yek seri mahdudiyat (constraints) darid va mikhahid yek hadef (objective) ra bishtar ya kamtar konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lp_solve model.lp` --> 📝 Hal-e masale az yek file ba pasvand `lp`.
+    🔹 `lp_solve -S model.lp` --> 🤫 Namayesh nadadan peygham haye ziyadi dar hale hal.
+    🔹 `lp_solve -v value model.lp` --> 📊 Set kardane yek value avaliye baraye yek motaghayer (variable).
+    🔹 `lp_solve -scale model.lp` --> ⚖️ Scale kardane masale baraye behtar shodan deghat hal.
+
+🛠 **Mesal-ha:**
+
+    $ lp_solve masale.lp
+
+    🔹 Hal kardane masale-e `masale.lp` va chap kardane javab dar terminal.
+
+    $ lp_solve -S masale.lp > javab.txt
+
+    🔹 Hal kardane masale-e `masale.lp`,  save kardane javab dar file `javab.txt`, va namayesh nadadan etela'ate ziyadi dar terminal.
+
+✅ **Mesal sade:**
+
+    $ lp_solve example.lp
+
+    🔹 Agar file `example.lp` tarif karde bashad ke chegone yek function hadaf ra ba mahdoodiyat-ha behine konim, in command javab-e behine ra peyda va namayesh midahad.  Masalan, agar `example.lp` be ma beguyad ke cheghadr az har mahsul bayad tolid konim ta bishtarin daramad ra dashte bashim ba tavajjoh be mahdoodiyat-haye dastoressi be manabe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lp_solve` command is a linear programming solver.  It is used to find the best solution to optimization problems where all equations and inequalities are linear.  Essentially, you have a set of constraints and want to maximize or minimize an objective.
+
+⚙️ **Options:**
+    🔹 `lp_solve model.lp` --> 📝 Solve the problem from a file with the `.lp` extension.
+    🔹 `lp_solve -S model.lp` --> 🤫 Suppress verbose output during solving.
+    🔹 `lp_solve -v value model.lp` --> 📊 Set an initial value for a variable.
+    🔹 `lp_solve -scale model.lp` --> ⚖️ Scale the problem to improve solving accuracy.
+
+🛠 **Examples:**
+
+    $ lp_solve problem.lp
+
+    🔹 Solve the problem `problem.lp` and print the solution to the terminal.
+
+    $ lp_solve -S problem.lp > solution.txt
+
+    🔹 Solve the problem `problem.lp`, save the solution to the file `solution.txt`, and suppress verbose output to the terminal.
+
+✅ **Simple Example & Explanation:**
+
+    $ lp_solve example.lp
+
+    🔹 If the file `example.lp` defines how to optimize an objective function subject to constraints, this command finds and displays the optimal solution. For example, if `example.lp` tells us how much of each product to produce to maximize revenue, given resource availability constraints.

@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzma` baraye moteghayyer kardan (compress) ya baz kardan (decompress) file-ha estefade mishavad. `lzma` yek ravesh moteghayyer kardane file-ha ast ke nesbat be ravesh-haye dige, file-ha ra bishtar moteghayyer mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzma -z filename`  --> 📦 File-ra moteghayyer mikonad (compress) va pasvand ".lzma" ra ezafe mikonad.
+    🔹 `lzma -d filename.lzma` --> 🔓 File-ra baz mikonad (decompress).
+    🔹 `lzma -k filename`  --> 💾 File asli ra bad az compress kardan hefz mikonad (keep).
+    🔹 `lzma -f filename`  --> 🔨 Agar file ba hamin name ghablan vojood dashte bashad, be zor dorost mikonad (force).
+    🔹 `lzma -l[0-9] filename` --> 🗜️ Sathe compress-ra moshakhas mikonad (az 0 ta 9, 9 bishtarin compress).
+
+🛠 **Mesal-ha:**
+
+    $ lzma -z myfile.txt
+
+    🔹 File "myfile.txt" ra compress mikonad va file "myfile.txt.lzma" ra dorost mikonad.
+
+    $ lzma -d myfile.txt.lzma
+
+    🔹 File "myfile.txt.lzma" ra baz mikonad va file "myfile.txt" ra dorost mikonad.
+
+✅ **Mesal sade:**
+
+    $ lzma -zk myfile.txt
+
+    🔹 File "myfile.txt" ra compress mikonad, file "myfile.txt.lzma" ra dorost mikonad va file asli "myfile.txt" ra hefz mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzma` command is used to compress or decompress files.  `lzma` is a compression method that usually results in higher compression ratios compared to other methods.
+
+⚙️ **Options:**
+    🔹 `lzma -z filename`  --> 📦 Compresses the file and adds the ".lzma" extension.
+    🔹 `lzma -d filename.lzma` --> 🔓 Decompresses the file.
+    🔹 `lzma -k filename`  --> 💾 Keeps (preserves) the original file after compression.
+    🔹 `lzma -f filename`  --> 🔨 Forces compression, even if a file with the same name already exists.
+    🔹 `lzma -l[0-9] filename` --> 🗜️ Specifies the compression level (from 0 to 9, 9 being the highest compression).
+
+🛠 **Examples:**
+
+    $ lzma -z myfile.txt
+
+    🔹 Compresses the file "myfile.txt" and creates the file "myfile.txt.lzma".
+
+    $ lzma -d myfile.txt.lzma
+
+    🔹 Decompresses the file "myfile.txt.lzma" and creates the file "myfile.txt".
+
+✅ **Simple Example:**
+
+    $ lzma -zk myfile.txt
+
+    🔹 Compresses the file "myfile.txt", creates "myfile.txt.lzma", and keeps the original "myfile.txt".
+

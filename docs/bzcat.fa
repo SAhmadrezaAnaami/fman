@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzcat` baraye chap kardane file-haye `bzip2` shode be shekle sade (standard output) estefade mishavad. Yani file-haye zipeede shode ro baz mikone va mohtaviyate anha ro neshoon mide, bedune inke file asli ro tagheer bede.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzcat file.bz2` --> 📤 Chap kardane mohtaviyate file `file.bz2`.
+    🔹 `bzcat file1.bz2 file2.bz2` --> 📃 Chap kardane mohtaviyate chand file be tartib.
+    🔹 `bzcat --help` --> ❓ Namayeshe rahnamaye dastoor.
+    🔹 `bzcat --version` --> ℹ️ Namayeshe version-e `bzcat`.
+
+🛠 **Mesal-ha:**
+
+    $ bzcat myfile.bz2
+
+    🔹 Chap kardane mohtaviyate file `myfile.bz2` dar terminal.
+
+    $ bzcat file1.bz2 file2.bz2 > combined_file.txt
+
+    🔹 Chap kardane mohtaviyate `file1.bz2` va `file2.bz2` va zakhire kardane anha dar `combined_file.txt`.
+
+✅ **Mesal sade:**
+
+    $ bzcat logfile.bz2 | grep "error"
+
+    🔹 Chap kardane mohtaviyate `logfile.bz2` va estefade az `grep` baraye jostojooye khat-haie ke dar anha "error" vojood darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzcat` command is used to print `bzip2` compressed files to standard output. It essentially decompresses the files and displays their contents without modifying the original compressed file.
+
+⚙️ **Options:**
+    🔹 `bzcat file.bz2` --> 📤 Prints the content of `file.bz2`.
+    🔹 `bzcat file1.bz2 file2.bz2` --> 📃 Prints the content of multiple files sequentially.
+    🔹 `bzcat --help` --> ❓ Displays the command's help information.
+    🔹 `bzcat --version` --> ℹ️ Displays the version of `bzcat`.
+
+🛠 **Examples:**
+
+    $ bzcat myfile.bz2
+
+    🔹 Prints the content of `myfile.bz2` to the terminal.
+
+    $ bzcat file1.bz2 file2.bz2 > combined_file.txt
+
+    🔹 Prints the content of `file1.bz2` and `file2.bz2` and saves it to `combined_file.txt`.
+
+✅ **Simple Example:**
+
+    $ bzcat logfile.bz2 | grep "error"
+
+    🔹 Prints the content of `logfile.bz2` and uses `grep` to search for lines containing "error".

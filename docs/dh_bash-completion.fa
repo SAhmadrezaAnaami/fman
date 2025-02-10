@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_bash-completion` baraye sakhtan file-haye `bash-completion` baraye dastoorat-e barname-haye shoma estefade mishavad. In dastoor komak mikonad ta karbaran betavanand ba tab zadan (tab completion) dastoorat-e shoma ra asan tar estefade konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--no-guessing`  --> 🤔 Agar kompile nashode bashad, file-haye takmil shodan ra tagheer nadah.
+    🔹 `--default-package-name` --> 📦 Esme default package ra moshakhas mikonad. Agar moshakhas nashavad, az `$PACKAGE` estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_bash-completion
+
+    🔹 Sakhtan file-haye `bash-completion` dar directory-haye monaseb.
+
+    $ dh_bash-completion --no-guessing
+
+    🔹 Sakhtan file-haye `bash-completion` be sharti ke ghablan kompile shode bashand.
+
+✅ **Mesal sade:**
+
+    Dar file `debian/rules` khod, ghat'e `dh_bash-completion` ra dar ghat'e `install` ezafe konid.
+    In komak mikonad ke dar vaghte build, file-haye `bash-completion` sakhte shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_bash-completion` command is used to generate `bash-completion` files for your programs' commands. This allows users to more easily use your commands with tab completion.
+
+⚙️ **Options:**
+    🔹 `--no-guessing`  --> 🤔 Do not modify completion files if they don't already exist.
+    🔹 `--default-package-name` --> 📦 Specifies the default package name. If not specified, it defaults to the `$PACKAGE` variable.
+
+🛠 **Examples:**
+
+    $ dh_bash-completion
+
+    🔹 Generate `bash-completion` files in the appropriate directories.
+
+    $ dh_bash-completion --no-guessing
+
+    🔹 Generate `bash-completion` files only if they already exist.
+
+✅ **Simple Example:**
+
+    In your `debian/rules` file, add `dh_bash-completion` to your `install` target.
+    This will make sure that `bash-completion` files are generated at build time.

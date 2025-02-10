@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `networkctl` baraye control va didan vaziat (status) network dar systemd estefade mishavad. Ba in dastoor, mitavanid etela'at raje' be interface-haye network, link-ha, va network configuration ra bebinid va anha ra modiriyat konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `networkctl status` --> 📝 Namayesh vaziat kolli network va hame interface-ha.
+    🔹 `networkctl list`   --> 📜 List kardan hameye interface-haye network va vaziat anha.
+    🔹 `networkctl show [interface]` --> 👀 Namayesh etela'at kamel dar mored yek interface khas. (be jaye [interface] name interface ra benevisid, mesl-e `eth0`).
+    🔹 `networkctl renew [interface]` --> 🔄 Daryaft dobare address IP baraye yek interface az DHCP.
+
+🛠 **Mesal-ha:**
+
+    $ networkctl status
+
+    🔹 Namayesh vaziat kolli network system.
+
+    $ networkctl list
+
+    🔹 List kardan hameye interface-haye network.
+
+    $ networkctl show eth0
+
+    🔹 Namayesh etela'at kamel dar mored interface `eth0`.
+
+✅ **Mesal sade:**
+
+    $ networkctl status wlan0
+
+    🔹 Namayesh vaziat interface wireless `wlan0`, mesl address IP, gateway, DNS server-ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `networkctl` command is used to control and view the status of network interfaces managed by systemd. It allows you to inspect and manage network configuration, links, and interfaces.
+
+⚙️ **Options:**
+    🔹 `networkctl status` --> 📝 Show the overall network status and all interfaces.
+    🔹 `networkctl list`   --> 📜 List all network interfaces and their status.
+    🔹 `networkctl show [interface]` --> 👀 Show detailed information about a specific interface. (Replace [interface] with the interface name, e.g., `eth0`).
+    🔹 `networkctl renew [interface]` --> 🔄 Renew the IP address for an interface from DHCP.
+
+🛠 **Examples:**
+
+    $ networkctl status
+
+    🔹 Show the overall network status of the system.
+
+    $ networkctl list
+
+    🔹 List all network interfaces.
+
+    $ networkctl show eth0
+
+    🔹 Show detailed information about the `eth0` interface.
+
+✅ **Simple Example:**
+
+    $ networkctl status wlan0
+
+    🔹 Display the status of the wireless interface `wlan0`, including IP address, gateway, and DNS servers.

@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `check-language-support` baraye check kardane zaban-haye nasb shode va dast-ras dar nizam-e shoma estefade mishavad. In dastoor be shoma komak mikonad ta motmaen shavid ke zaban-e mored-e nazar-e shoma baraye namayesh va vared kardan matn dorost kar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `check-language-support`  -->  📝 Namayesh zaban-haye nasb shode va etela'at asli.
+    🔹 `check-language-support [zaban]` --> 🔎 Check kardan support baraye zaban-e moshakhas (masalan, `fa` baraye Farsi).
+    🔹 `check-language-support --install [zaban]` --> 📥 Nasb pakage-haye lazem baraye zaban-e moshakhas. (Needs root permissions / sudo)
+
+🛠 **Mesal-ha:**
+
+    $ check-language-support
+
+    🔹 Namayesh listi az zaban-haye nasb shode va etela'at support.
+
+    $ check-language-support fa
+
+    🔹 Check kardan support baraye zaban-e Farsi (Persian).
+
+    $ sudo check-language-support --install fa
+
+    🔹 Nasb pakage-haye lazem baraye support kardan zaban-e Farsi (Persian). (Requires administrative rights)
+
+✅ **Mesal sade:**
+
+    $ check-language-support fr
+    ℹ️ Language code: fr
+    ✅ Already installed: language-pack-fr language-pack-gnome-fr
+    ⚠️ But the following packages are missing: aspell-fr myspell-fr ispell-fr
+
+    🔹 In natije-ye bala, zaban-e French nasb shode, amma ba'zi pakage-haye ezafe (mesle spell-checker) kam hastand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `check-language-support` command is used to check the installed and available language support on your system. This command helps you ensure that your desired language is properly supported for displaying and inputting text.
+
+⚙️ **Options:**
+    🔹 `check-language-support`  -->  📝 Display installed languages and basic information.
+    🔹 `check-language-support [language]` --> 🔎 Check support for a specific language (e.g., `en` for English).
+    🔹 `check-language-support --install [language]` --> 📥 Install necessary packages for a specific language. (Needs root permissions / sudo)
+
+🛠 **Examples:**
+
+    $ check-language-support
+
+    🔹 Display a list of installed languages and support information.
+
+    $ check-language-support en
+
+    🔹 Check support for the English language.
+
+    $ sudo check-language-support --install en
+
+    🔹 Install necessary packages to support the English language. (Requires administrative rights)
+
+✅ **Simple Example:**
+
+    $ check-language-support de
+    ℹ️ Language code: de
+    ✅ Already installed: language-pack-de language-pack-gnome-de
+    ⚠️ But the following packages are missing: aspell-de myspell-de ispell-de
+
+    🔹 In the above output, the German language is installed, but some additional packages (like spell-checkers) are missing.

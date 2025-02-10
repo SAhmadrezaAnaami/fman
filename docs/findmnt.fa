@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `findmnt` baraye peyda kardane list-e mount point-ha (jay-haee ke drayv-ha ya partition-ha mount shode-and) va etela'at darbare-ye aanha be kar mirevad. In dastoor nesbat be dastoor `mount` sade-tar va raahat-tar ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `findmnt`                -->  📁 List-e hameye mount point-ha.
+    🔹 `findmnt /boot`          -->  📍 Peyda kardane etela'at darbare-ye mount point `/boot`.
+    🔹 `findmnt -t ext4`        -->  🔍 List-e mount point-hayee ke file system-e `ext4` daarand.
+    🔹 `findmnt -n`             -->  🚫 Faqat mount point-ha ra namayesh midahad, bedune header.
+    🔹 `findmnt -r`             -->  🔄 Namayesh etela'at be surate recursive (dar pooshe-haye dakheli ham).
+
+🛠 **Mesal-ha:**
+
+    $ findmnt
+    
+    🔹 Namayesh list-e kamele mount point-ha ba etela'at mofid.
+
+    $ findmnt /home
+    
+    🔹 Namayesh etela'at makhsus be mount point `/home`.
+
+✅ **Mesal sade:**
+
+    $ findmnt -t vfat
+    
+    🔹  List-e mount point-hayee ke file system-e `vfat` (mesle USB flash drive) daarand ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `findmnt` command is used to find a list of mount points (locations where drives or partitions are mounted) and information about them.  It offers a simpler and more user-friendly alternative to the `mount` command for querying mount information.
+
+⚙️ **Options:**
+    🔹 `findmnt`                -->  📁 List all mount points.
+    🔹 `findmnt /boot`          -->  📍 Find information about the `/boot` mount point.
+    🔹 `findmnt -t ext4`        -->  🔍 List mount points with the `ext4` file system.
+    🔹 `findmnt -n`             -->  🚫 Display only mount points, without headers.
+    🔹 `findmnt -r`             -->  🔄 Display information recursively (including subdirectories).
+
+🛠 **Examples:**
+
+    $ findmnt
+    
+    🔹 Displays the complete list of mount points with useful information.
+
+    $ findmnt /home
+    
+    🔹 Displays information specific to the `/home` mount point.
+
+✅ **Simple Example:**
+
+    $ findmnt -t vfat
+    
+    🔹 Shows a list of mount points that use the `vfat` file system (like a USB flash drive).

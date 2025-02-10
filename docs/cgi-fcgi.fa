@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cgi-fcgi` baraye ejra kardane barname-haye CGI (Common Gateway Interface) be soorate FastCGI estefade mishavad. FastCGI ser'at va amniyat ra behtar mikonad nesbat be CGI sade. Yani, be jaye ejra kardane har barname CGI baraye har darkhaste jadid, FastCGI yek barname ra faqat yek bar ejra mikonad va darkhast-ha ra be aan mifrestad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-bind`: 🔗 Goosh dadan be yek port ya soket baraye darkhast-ha. Mesal: `-bind /tmp/myapp.sock` ya `-bind :9000`.
+    🔹 `-connect`: 🔌 Ettesal be yek server FastCGI ke rooye yek port ya soket goosh midehad. Mesal: `-connect /tmp/myapp.sock` ya `-connect 127.0.0.1:9000`.
+    🔹 `-n`: 🔢 Tedade farzand-haye process-haye CGI ra moshakhas mikonad. Yani chand barname CGI be soorate hamzaman ejra shavad.
+    🔹 `-idle-timeout`: ⏳ Vaghti ke barname CGI hich darkhasti nadarad, che moddat zaman sabr konim ghabl az bastan aan.
+
+🛠 **Mesal-ha:**
+
+    $ cgi-fcgi -bind :9000 -n 5 /var/www/myapp.cgi
+
+    🔹 Eejad server FastCGI rooye port 9000 ba 5 process.
+
+    $ cgi-fcgi -connect /tmp/myapp.sock /var/www/myapp.cgi
+
+    🔹 Ettesal be server FastCGI az tarigh soket.
+
+✅ **Mesal sade:**
+
+    $ cgi-fcgi -bind :8080 /var/www/my_simple_app.cgi
+
+    🔹 Ra'e andazi server FastCGI rooye port 8080 baraye barname `my_simple_app.cgi`.  Har darkhast be in port be barname ferestade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cgi-fcgi` command is used to run CGI (Common Gateway Interface) programs as FastCGI applications. FastCGI provides better performance and security compared to traditional CGI. Instead of starting a new CGI process for each request, FastCGI keeps the application running and forwards requests to it.
+
+⚙️ **Options:**
+    🔹 `-bind`: 🔗 Listen on a port or socket for incoming requests. Example: `-bind /tmp/myapp.sock` or `-bind :9000`.
+    🔹 `-connect`: 🔌 Connect to a FastCGI server listening on a port or socket. Example: `-connect /tmp/myapp.sock` or `-connect 127.0.0.1:9000`.
+    🔹 `-n`: 🔢 Specifies the number of child CGI processes to run concurrently.
+    🔹 `-idle-timeout`: ⏳ How long to wait before closing a CGI application if it is idle (no requests are received).
+
+🛠 **Examples:**
+
+    $ cgi-fcgi -bind :9000 -n 5 /var/www/myapp.cgi
+
+    🔹 Start a FastCGI server on port 9000 with 5 processes.
+
+    $ cgi-fcgi -connect /tmp/myapp.sock /var/www/myapp.cgi
+
+    🔹 Connect to a FastCGI server via socket.
+
+✅ **Simple Example:**
+
+    $ cgi-fcgi -bind :8080 /var/www/my_simple_app.cgi
+
+    🔹 Launches a FastCGI server on port 8080 for the `my_simple_app.cgi` application. Every request to this port is sent to the application.

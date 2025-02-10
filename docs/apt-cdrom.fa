@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-cdrom` baraye ezafe kardan CD-ROM ya DVD be manabe (sources) dastrasi narm افزار (software) dar system estefade mishavad. Ba estefade az in dastoor, shoma mitavanid narm افزار-haye rooye CD-ROM ra mesle manabe online nasb konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `apt-cdrom add` --> ➕ Ezafe kardan yek CD-ROM jadid be list manabe.
+    🔹 `apt-cdrom ident` --> 🆔 Namayesh dadane etela'at CD-ROM baraye shenasaee.
+    🔹 `apt-cdrom -d directory` --> 📁 Specify kardane pooshe (directory) jadid baraye mount kardane CD-ROM.
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt-cdrom add
+
+    🔹 Ezafe kardane CD-ROM be list manabe. Az shoma khaste mishavad ke CD-ROM ra vared konid.
+
+    $ apt-cdrom ident
+
+    🔹 Namayesh dadane etela'at CD-ROM.
+
+✅ **Mesal sade:**
+
+    $ sudo apt-cdrom add
+    
+    🔹 Ba ejra kardane in dastoor, system shoma CD-ROM ra scan mikonad va آن ra be list manabe ezafe mikonad, ta shoma بتونید narm افزار-haye rooye CD-ROM ra نصب konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-cdrom` command is used to add a CD-ROM or DVD to the list of software sources on your system. Using this command, you can install software from CD-ROMs just like from online repositories.
+
+⚙️ **Options:**
+    🔹 `apt-cdrom add` --> ➕ Add a new CD-ROM to the sources list.
+    🔹 `apt-cdrom ident` --> 🆔 Display CD-ROM identification information.
+    🔹 `apt-cdrom -d directory` --> 📁 Specify a new mount point directory for the CD-ROM.
+
+🛠 **Examples:**
+
+    $ sudo apt-cdrom add
+
+    🔹 Adds the CD-ROM to the sources list. You will be prompted to insert the CD-ROM.
+
+    $ apt-cdrom ident
+
+    🔹 Displays the CD-ROM identification information.
+
+✅ **Simple Example:**
+
+    $ sudo apt-cdrom add
+    
+    🔹 By running this command, your system scans the CD-ROM and adds it to the list of software sources, so you can install software from the CD-ROM.

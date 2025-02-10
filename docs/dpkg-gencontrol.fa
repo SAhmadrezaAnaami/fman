@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-gencontrol` baraye dorost kardane `control file` baraye pakage-haye Debian estefade mishavad. In file etela'ati ra dar morede pakage (name, version, dependencies) zakhire mikonad. In dastoor obdatan dar script-haye sakht (build scripts) estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v`  --> 📢 Namayesh dadane etela’at bishtar dar morede amaliyat.
+    🔹 `-p` *package* --> 📦 Esme package ra moshakhas mikonad. Agar naiaid, az `debian/control` khande mishavad.
+    🔹 `-s` --> 📝 Sakhtane file `source/control` bejaye `binary/control`.
+    🔹 `-t` *architecture* --> 🏛 Moshakhas kardane architecture baraye package.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-gencontrol -v -p mypackage
+
+    🔹 Dorost kardane `control file` baraye pakage ba name `mypackage` ba etela’ate bishtar.
+
+    $ dpkg-gencontrol -s
+
+    🔹 Dorost kardane file `source/control`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-gencontrol
+
+    🔹 Agar file `debian/control` vojood dashte bashad, `control file` ra bar asas an misazad. Ehtiaj nist name package ra dasti vared konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-gencontrol` command is used to generate a Debian package `control file`. This file stores information about the package (name, version, dependencies). It's typically used in build scripts.
+
+⚙️ **Options:**
+    🔹 `-v`  --> 📢 Display verbose output during the operation.
+    🔹 `-p` *package* --> 📦 Specify the package name. If not provided, it's read from `debian/control`.
+    🔹 `-s` --> 📝 Generate a `source/control` file instead of a `binary/control`.
+    🔹 `-t` *architecture* --> 🏛 Specify the architecture for the package.
+
+🛠 **Examples:**
+
+    $ dpkg-gencontrol -v -p mypackage
+
+    🔹 Generates a `control file` for the package named `mypackage` with verbose output.
+
+    $ dpkg-gencontrol -s
+
+    🔹 Generates a `source/control` file.
+
+✅ **Simple Example:**
+
+    $ dpkg-gencontrol
+
+    🔹 If a `debian/control` file exists, it will create the `control file` based on its content. No need to manually specify the package name.

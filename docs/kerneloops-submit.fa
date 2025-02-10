@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kerneloops-submit` baraye ersal gozaresh-haye khata (error reports) az هسته (kernel) Linux be server Kerneloops estefade mishavad. In komak mikonad ta توسعه دهندگان (developers) moshkelat ra peyda va rafa konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`  --> ℹ️ Namayesh version program.
+    🔹 `--help`     --> 🆘 Namayesh rahnama (help) estefade az dastoor.
+    🔹 `--no-dmesg` --> 🚫 Gozaresh dmesg ra ersal nakonid.
+    🔹 `--comment "matn"` --> 💬 Ezafe kardan yek tozih (comment) be gozaresh.
+
+🛠 **Mesal-ha:**
+
+    $ kerneloops-submit
+
+    🔹 Ersal gozaresh-e akharin crash be server Kerneloops.
+
+    $ kerneloops-submit --comment "In crash dar hengame nasb drayver grafik رخ داد."
+
+    🔹 Ersal gozaresh crash ba yek tozih.
+
+✅ **Mesal sade:**
+
+    $ sudo kerneloops-submit
+
+    🔹 Ersal gozaresh be Kerneloops. estefade az `sudo` lazem ast chon barresi file-haye systemi niaz be dastresi root darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kerneloops-submit` command is used to submit kernel oops reports to the Kerneloops server. This helps developers identify and fix kernel problems.
+
+⚙️ **Options:**
+    🔹 `--version`  --> ℹ️ Show program's version number and exit.
+    🔹 `--help`     --> 🆘 Show help message and exit.
+    🔹 `--no-dmesg` --> 🚫 Do not include the dmesg output in the report.
+    🔹 `--comment "text"` --> 💬 Add a comment to the report.
+
+🛠 **Examples:**
+
+    $ kerneloops-submit
+
+    🔹 Submit the latest kernel crash report to the Kerneloops server.
+
+    $ kerneloops-submit --comment "This crash occurred during graphics driver installation."
+
+    🔹 Submit crash report with a comment.
+
+✅ **Simple Example:**
+
+    $ sudo kerneloops-submit
+
+    🔹 Submit the report to Kerneloops. Using `sudo` is often necessary because accessing system files requires root privileges.

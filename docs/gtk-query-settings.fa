@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk-query-settings` baraye gereftan va namayesh dadane tanzimat (settings) GTK (GIMP Toolkit) estefade mishavad. GTK yek majmooe az ketabkhane-ha baraye sakhtane interface-haye karbari grafiki (graphical user interfaces) ast. Az in dastoor mitoonid baraye didane chegoonegi tanzimat GTK rooye system-e shoma estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--gtk-module`  --> 🧩 Load kardan module haye GTK.
+    🔹 `--name` `[name]` --> 🏷️  Faghat settings-e khas ba in esm ra namayesh bede.
+    🔹 `--recursive` --> 🔄 Namayesh dadane hameye settings ba tafsil.
+    🔹 `--include-defaults` --> ➕ Shamel shodan meghdarhaye default dar khrooji.
+
+🛠 **Mesal-ha:**
+
+    $ gtk-query-settings
+    
+    🔹 Namayesh dadane hameye settings-haye GTK.
+
+    $ gtk-query-settings --name gtk-theme-name
+    
+    🔹 Namayesh dadane tanzimate gtk-theme-name.
+
+✅ **Mesal sade:**
+
+    $ gtk-query-settings | grep gtk-theme-name
+    
+    🔹 Peyda kardan meghdare `gtk-theme-name` az beine hameye settings-haye GTK. Ba estefade az `grep` search mikonim dar natije.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk-query-settings` command is used to retrieve and display GTK (GIMP Toolkit) settings. GTK is a set of libraries for creating graphical user interfaces. You can use this command to see how GTK is configured on your system.
+
+⚙️ **Options:**
+    🔹 `--gtk-module`  --> 🧩 Load GTK modules.
+    🔹 `--name` `[name]` --> 🏷️  Show only specific settings with the given name.
+    🔹 `--recursive` --> 🔄 Show all settings recursively.
+    🔹 `--include-defaults` --> ➕ Include default values in the output.
+
+🛠 **Examples:**
+
+    $ gtk-query-settings
+    
+    🔹 Show all GTK settings.
+
+    $ gtk-query-settings --name gtk-theme-name
+    
+    🔹 Show the settings for gtk-theme-name.
+
+✅ **Simple Example:**
+
+    $ gtk-query-settings | grep gtk-theme-name
+    
+    🔹 Find the value of `gtk-theme-name` from all the GTK settings. We use `grep` to search the output.
+

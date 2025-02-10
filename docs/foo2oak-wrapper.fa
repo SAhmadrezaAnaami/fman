@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2oak-wrapper` yek poshte-neveshte (wrapper) baraye `foo2oak` ast, ke baraye tabdil dade-haye file foo2zjs be file-haye banaye Oak estefade mishavad. In dastoor, karbar ra qader misazad ke tabdile sade-tari az format foo2zjs be format Oak anjam dahad. Be tor kholase, in dastoor baraye asan kardan kar ba file-haye foo2zjs va tabdil anha be Oak estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--debug`  --> 🐛Chap kardan peygham haye debug baraye kashf khata.
+    🔹 `--version`  --> ℹ️ Namayesh version barname.
+    🔹 `--help`  --> ❓Namayesh rahnamaye estefade az dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ foo2oak-wrapper file.foo2zjs > file.oak
+
+    🔹 Tabdil file `file.foo2zjs` be file Oak va zakhire an dar `file.oak`.
+
+    $ foo2oak-wrapper --debug file.foo2zjs > file.oak
+
+    🔹 Tabdil file `file.foo2zjs` be file Oak ba chap kardan peygham haye debug.
+
+✅ **Mesal sade:**
+
+    $ foo2oak-wrapper input.foo2zjs > output.oak
+
+    🔹 Dastoor `foo2oak-wrapper` file `input.foo2zjs` ra migirad, an ra be format Oak tabdil mikonad va dar file `output.oak` zakhire mikonad. Agar khataee rukh bedahad, peygham haye khata chap mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2oak-wrapper` command is a wrapper script for `foo2oak`, which is used to convert foo2zjs files to Oak build files. This wrapper simplifies the conversion process from foo2zjs to the Oak format. In short, this command is used to make it easier to work with foo2zjs files and convert them to Oak.
+
+⚙️ **Options:**
+    🔹 `--debug`  --> 🐛 Print debug messages for troubleshooting.
+    🔹 `--version`  --> ℹ️ Display the program's version.
+    🔹 `--help`  --> ❓ Display help information about the command's usage.
+
+🛠 **Examples:**
+
+    $ foo2oak-wrapper file.foo2zjs > file.oak
+
+    🔹 Converts the file `file.foo2zjs` to an Oak file and saves it as `file.oak`.
+
+    $ foo2oak-wrapper --debug file.foo2zjs > file.oak
+
+    🔹 Converts the file `file.foo2zjs` to an Oak file while printing debug messages.
+
+✅ **Simple Example:**
+
+    $ foo2oak-wrapper input.foo2zjs > output.oak
+
+    🔹 The `foo2oak-wrapper` command takes the `input.foo2zjs` file, converts it to the Oak format, and saves it in the `output.oak` file. If any errors occur, error messages will be printed.

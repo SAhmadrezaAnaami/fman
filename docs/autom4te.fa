@@ -1,0 +1,45 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autom4te` yek dastoor dakheli dar `autoconf` ast.  An chand barnameh ra moratab mikonad ta `autoconf` be tore dorost kar konad.  Shoma oboore `autom4te` ro mostaghiman estefade nemikonid.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozineh mostaghim baraye karbar nist. In dastoor az tarigh `autoconf` ejra mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ autoconf
+
+    🔹 `autom4te` be tore khodkar dar hale ejra autoconf fa'al mishavad va barnameh ra amade mikonad.
+
+✅ **Mesal sade:**
+
+    $ autoconf --trace=autom4te foo.ac
+
+    🔹 Barresi konid ke autoconf chegoneh `autom4te` ra farakhani mikonad. In mesal natije-ye ejraye `autom4te` ro namayesh nemide, balkeh faghat neshan mideh ke `autoconf` az on estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autom4te` command is an internal command of `autoconf`. It arranges several programs to let `autoconf` work correctly. You will not use `autom4te` directly.
+
+⚙️ **Options:**
+    🔹 There are no direct user-level options. This command is executed via `autoconf`.
+
+🛠 **Examples:**
+
+    $ autoconf
+
+    🔹 `autom4te` runs automatically as part of the autoconf process to prepare programs.
+
+✅ **Simple Example:**
+
+    $ autoconf --trace=autom4te foo.ac
+
+    🔹 See how autoconf calls `autom4te`. This example doesn't show the output of `autom4te`, but rather shows how `autoconf` utilizes it.
+

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-name` baraye tabdil dadan esm-e yek file be esm-e pakage Debian estefade mishavad. In dastoor kheili vaghta tooye script-ha baraye dorost kardan file-haye .deb be soorate khodkar be kar mire.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnama va estelahat dastoor.
+    🔹 `--version`  --> ℹ️ Namayesh version-e `dpkg-name`.
+    🔹 `-d directory` --> 📁  Avaz kardan directory ke bayad esm file azash khande shavad. Agar ghabel dastresi nabashad az directory-e konooni estefade mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-name myfile.txt
+    myfile
+
+    🔹 Tabdil esm file `myfile.txt` be esm package `myfile`.
+
+    $ dpkg-name -d /tmp myfile.txt
+    myfile
+
+    🔹 Tabdil esm file `myfile.txt` dar directory `/tmp` be esm package `myfile`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-name my_great_package.tar.gz
+    my-great-package
+
+    🔹 Esme file `my_great_package.tar.gz` ro tabdil mikone be `my-great-package`, ke format standard baraye esm package Debian ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-name` command is used to convert a filename into a Debian package name.  It's often used in scripts to automatically generate .deb files.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help information.
+    🔹 `--version`  --> ℹ️ Display the version of `dpkg-name`.
+    🔹 `-d directory` --> 📁  Change to directory and read filename. If inaccessible falls back to the current directory.
+
+🛠 **Examples:**
+
+    $ dpkg-name myfile.txt
+    myfile
+
+    🔹 Converts the filename `myfile.txt` into the package name `myfile`.
+
+    $ dpkg-name -d /tmp myfile.txt
+    myfile
+
+    🔹 Converts the filename `myfile.txt` located in the `/tmp` directory into the package name `myfile`.
+
+✅ **Simple Example:**
+
+    $ dpkg-name my_great_package.tar.gz
+    my-great-package
+
+    🔹 Converts the filename `my_great_package.tar.gz` to `my-great-package`, which is a standard format for Debian package names.

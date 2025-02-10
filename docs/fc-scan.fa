@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-scan` baraye gardesh dar file-ha va peyda kardan font-ha estefade mishavad.  In dastoor be shoma komak mikonad font-haye mojood ra dar system-e khod peyda konid va etela'ati darbareye anha kasb konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-scan --format="%{family}\n"` --> 🖋️ Namayesh esm-e family-e font-ha faghat.
+    🔹 `fc-scan /path/be/pooshe/font-ha` --> 📁 Scan kardan yek pooshe-ye moshakhas baraye font-ha.
+    🔹 `fc-scan --verbose` --> 🗣️ Namayesh etela'at bishtar darbareye font-ha (path, features, va...).
+
+🛠 **Mesal-ha:**
+
+    $ fc-scan
+
+    🔹 List kardan hameye font-haye system ba etela'at-e default.
+
+    $ fc-scan /usr/share/fonts
+
+    🔹 Scan kardan poosheye `/usr/share/fonts` baraye font-ha.
+
+✅ **Mesal sade:**
+
+    $ fc-scan | grep "Arial"
+
+    🔹 Peyda kardan font-haye Arial dar khorooji `fc-scan`.  Az `grep` baraye filter kardan natije estefade shodeh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-scan` command is used to scan files and locate fonts.  This tool helps you find the available fonts on your system and gather information about them.
+
+⚙️ **Options:**
+    🔹 `fc-scan --format="%{family}\n"` --> 🖋️ Display only the font family names.
+    🔹 `fc-scan /path/to/fonts/directory` --> 📁 Scan a specific directory for fonts.
+    🔹 `fc-scan --verbose` --> 🗣️ Display more detailed information about the fonts (path, features, etc.).
+
+🛠 **Examples:**
+
+    $ fc-scan
+
+    🔹 List all fonts in the system with default information.
+
+    $ fc-scan /usr/share/fonts
+
+    🔹 Scan the `/usr/share/fonts` directory for fonts.
+
+✅ **Simple Example:**
+
+    $ fc-scan | grep "Arial"
+
+    🔹 Find Arial fonts in the `fc-scan` output.  `grep` is used to filter the result.

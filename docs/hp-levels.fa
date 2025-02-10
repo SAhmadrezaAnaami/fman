@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-levels` baraye namayesh dadan sathe joher (ink) dar printer-haye HP estefade mishavad. In dastoor be shoma komak mikonad ta az meghdare joher baghi mande dar cartridge-haye khod etela' peyda konid. Agar `hplip` roye system shoma nasb shode bashad, in dastoor kar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-h`  --> ℹ️ Namayesh rahnamaye dastoor (help) va gozine-ha.
+    🔹 `--debug` --> 🐛 Namayesh etela'at debug baraye peyda kardane moshkelat.
+
+🛠 **Mesal-ha:**
+
+    $ hp-levels
+
+    🔹 Namayesh sathe joher baraye hameye printer-haye HP nasb shode.
+
+    $ hp-levels --debug
+
+    🔹 Namayesh etela'at debug baraye peyda kardane moshkelat momken.
+
+✅ **Mesal sade:**
+
+    $ hp-levels
+
+    🔹 Agar printer shoma sathe joher ra neshan nadahad, ehtemalan printer shoma hamahang nist ya `hplip` dorost nasb nashode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-levels` command is used to display the ink levels for HP printers.  This command allows you to see the remaining ink levels in your cartridges. It requires `hplip` to be installed on your system.
+
+⚙️ **Options:**
+    🔹 `-h`  --> ℹ️ Display the help message and options.
+    🔹 `--debug` --> 🐛 Display debug information for troubleshooting.
+
+🛠 **Examples:**
+
+    $ hp-levels
+
+    🔹 Display ink levels for all installed HP printers.
+
+    $ hp-levels --debug
+
+    🔹 Display debug information to help troubleshoot potential issues.
+
+✅ **Simple Example:**
+
+    $ hp-levels
+
+    🔹 If your printer is not showing ink levels, it may not be compatible or `hplip` might not be installed correctly.
+

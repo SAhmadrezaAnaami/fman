@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-extracttemplates` baraye extract kardane template-ha az package-haye Debian estefade mishavad. In dastoor be shoma komak mikonad ta config file-haye package-ha ra be dast avarid, ke baraye taghir dadan ya custom kardane anha be kar miayand. 
+
+⚙️ **Gozine-ha:**
+    🔹 `-t file` --> 📄 File-i ke template-ha az an extract mishavand. Agar specify nashavad, az standard input khande mishavad.
+    🔹 `-o directory` --> 📂 Directory-i ke file-haye extract shode dar an zakhire mishavand. Agar specify nashavad, dar current directory zakhire mishavand.
+    🔹 `-m mode` --> ⚙️  Mode file-haye extract shode (masalan, 644). Default an 644 ast.
+    🔹 `-u user` --> 👤 User-i ke owner file-haye extract shode khahad bood.
+    🔹 `-g group` --> 👥 Group-i ke group owner file-haye extract shode khahad bood.
+
+🛠 **Mesal-ha:**
+
+    $ apt-extracttemplates -t package.deb -o tmp/
+    
+    🔹 Extract kardane template-ha az file `package.deb` va zakhire anha dar directory `tmp/`.
+
+    $ apt-extracttemplates < package.deb
+    
+    🔹 Extract kardane template-ha az standard input (package.deb) va zakhire anha dar current directory.
+
+✅ **Mesal sade:**
+
+    $ apt-extracttemplates -t mypackage.deb -o extracted_templates/
+    
+    🔹 In dastoor template-haye dakhel file `mypackage.deb` ra extract mikonad va dar pooshe `extracted_templates/` zakhire mikonad. In baraye didan va taghir dadan template-haye config package ghabl az install kardane an besiar mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-extracttemplates` command is used to extract templates from Debian packages. It helps you retrieve configuration files from packages, allowing you to modify or customize them.
+
+⚙️ **Options:**
+    🔹 `-t file` --> 📄 The file from which to extract the templates. If not specified, it reads from standard input.
+    🔹 `-o directory` --> 📂 The directory where the extracted files will be saved. If not specified, it saves to the current directory.
+    🔹 `-m mode` --> ⚙️ The mode of the extracted files (e.g., 644). The default is 644.
+    🔹 `-u user` --> 👤 The user who will be the owner of the extracted files.
+    🔹 `-g group` --> 👥 The group that will be the group owner of the extracted files.
+
+🛠 **Examples:**
+
+    $ apt-extracttemplates -t package.deb -o tmp/
+    
+    🔹 Extract templates from the file `package.deb` and save them in the `tmp/` directory.
+
+    $ apt-extracttemplates < package.deb
+    
+    🔹 Extract templates from standard input (package.deb) and save them in the current directory.
+
+✅ **Simple Example:**
+
+    $ apt-extracttemplates -t mypackage.deb -o extracted_templates/
+    
+    🔹 This command extracts the templates inside the `mypackage.deb` file and saves them in the `extracted_templates/` folder. This is very useful for viewing and modifying a package's config templates before installing it.

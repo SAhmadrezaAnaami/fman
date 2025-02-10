@@ -1,0 +1,72 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `l2ping` baraye check kardane vasl boodan (connectivity) dastgah-ha az tarigh Bluetooth estefade mishavad. Yani mishe ba in dastoor, az vasl boodan ya naboodan Bluetooth devices motmaen shod.
+
+⚙️ **Gozine-ha:**
+    🔹 `l2ping -c [tedad]`  --> 🔢  Ersale tedad moshakhas ping be device.
+    🔹 `l2ping -i [taakhire zamani]` --> ⏳ Taakhire zamani bein har ping ra moshakhas mikonad (be soorate saniye).
+    🔹 `l2ping -s [size packet]`  --> 📦  Size packet data ra moshakhas mikonad.
+    🔹 `l2ping -t [Hadsaghar zaman ping]` --> ⏱️  Hadsaghar zaman ping baraie tamam shodan ping.
+
+🛠 **Mesal-ha:**
+
+    $ l2ping AA:BB:CC:DD:EE:FF
+
+    🔹 Check kardane vasl boodan device ba address Bluetooth AA:BB:CC:DD:EE:FF .
+
+    $ l2ping -c 5 AA:BB:CC:DD:EE:FF
+
+    🔹 Ersale 5 ta ping be device ba address Bluetooth AA:BB:CC:DD:EE:FF .
+
+✅ **Mesal sade:**
+
+    $ l2ping -c 3 00:11:22:33:44:55
+    Ping: 00:11:22:33:44:55 from 00:00:00:00:00:00 (data size 44) ...
+    0 bytes from 00:11:22:33:44:55 id 0 time 5.067ms
+    Ping: 00:11:22:33:44:55 from 00:00:00:00:00:00 (data size 44) ...
+    0 bytes from 00:11:22:33:44:55 id 1 time 7.342ms
+    Ping: 00:11:22:33:44:55 from 00:00:00:00:00:00 (data size 44) ...
+    0 bytes from 00:11:22:33:44:55 id 2 time 6.989ms
+    3 transmitted, 3 received, 0% loss
+
+    🔹 Ersale 3 ping be address Bluetooth 00:11:22:33:44:55 va namayesh etela'at vasl boodan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `l2ping` command is used to check the connectivity of devices via Bluetooth. It allows you to verify if a Bluetooth device is reachable.
+
+⚙️ **Options:**
+    🔹 `l2ping -c [count]` --> 🔢 Send a specific number of pings to the device.
+    🔹 `l2ping -i [interval]` --> ⏳ Set the time interval between pings (in seconds).
+    🔹 `l2ping -s [packet size]` --> 📦 Set the size of the data packet.
+    🔹 `l2ping -t [Timeout]` --> ⏱️ Set the timeout until the ping fails.
+
+🛠 **Examples:**
+
+    $ l2ping AA:BB:CC:DD:EE:FF
+
+    🔹 Check connectivity of the device with Bluetooth address AA:BB:CC:DD:EE:FF.
+
+    $ l2ping -c 5 AA:BB:CC:DD:EE:FF
+
+    🔹 Send 5 pings to the device with Bluetooth address AA:BB:CC:DD:EE:FF.
+
+✅ **Simple Example:**
+
+    $ l2ping -c 3 00:11:22:33:44:55
+    Ping: 00:11:22:33:44:55 from 00:00:00:00:00:00 (data size 44) ...
+    0 bytes from 00:11:22:33:44:55 id 0 time 5.067ms
+    Ping: 00:11:22:33:44:55 from 00:00:00:00:00:00 (data size 44) ...
+    0 bytes from 00:11:22:33:44:55 id 1 time 7.342ms
+    Ping: 00:11:22:33:44:55 from 00:00:00:00:00:00 (data size 44) ...
+    0 bytes from 00:11:22:33:44:55 id 2 time 6.989ms
+    3 transmitted, 3 received, 0% loss
+
+    🔹 Sends 3 pings to the Bluetooth address 00:11:22:33:44:55 and displays the connectivity information.

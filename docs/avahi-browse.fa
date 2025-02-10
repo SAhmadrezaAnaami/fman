@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-browse` baraye peyda kardane service-haye mojood dar shabakeye mahallie shoma (LAN) estefade mishavad.  In dastoor service-haye rooye shabake ro ke az Avahi estefade mikonan neshoon mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `avahi-browse -t _http._tcp` --> 🌐  Faghat service-haye HTTP TCP ro peyda mikone.  
+    🔹 `avahi-browse -r _printer._tcp` --> 🖨️  Etela’at bishtar dar morede yek service printer khass ro neshoon mide.
+    🔹 `avahi-browse --all`         --> 🔍  Hameye service-haye mojood ro neshoon mide.
+    🔹 `avahi-browse -v`            --> 💬  Namayeshe etela'ate bishtar (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ avahi-browse _ssh._tcp
+
+    🔹 Peyda kardane service-haye SSH TCP rooye shabake.
+
+    $ avahi-browse -rt _http._tcp
+
+    🔹 Peyda kardane hameye service-haye HTTP TCP be soorate real-time (ba update).
+
+✅ **Mesal sade:**
+
+    $ avahi-browse _afpovertcp._tcp
+
+    🔹 Peida kardane service Apple Filing Protocol (AFP) rooye TCP. Agar hich chizi neshoon nade, yani hich service AFP rooye shabake nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-browse` command is used to discover services available on your local network (LAN). It displays network services that are using Avahi for service discovery.
+
+⚙️ **Options:**
+    🔹 `avahi-browse -t _http._tcp` --> 🌐  Only finds HTTP TCP services.
+    🔹 `avahi-browse -r _printer._tcp` --> 🖨️  Shows more detailed information about a specific printer service.
+    🔹 `avahi-browse --all`         --> 🔍  Shows all available services.
+    🔹 `avahi-browse -v`            --> 💬  Verbose mode (shows more information).
+
+🛠 **Examples:**
+
+    $ avahi-browse _ssh._tcp
+
+    🔹 Discover SSH TCP services on the network.
+
+    $ avahi-browse -rt _http._tcp
+
+    🔹 Discover all HTTP TCP services in real-time (with updates).
+
+✅ **Simple Example:**
+
+    $ avahi-browse _afpovertcp._tcp
+
+    🔹 Find Apple Filing Protocol (AFP) services over TCP. If nothing is displayed, no AFP services are available on the network.

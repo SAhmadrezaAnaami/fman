@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fmt` baraye behtar kardan shekle namayeshe matn dar file-ha estefade mishavad. Yani, khat-ha ra moratab mikonad ta ziadi toolani ya kootah nabashand va ghashangtar be nazar beresand.
+
+⚙️ **Gozine-ha:**
+    🔹 `fmt -w ARZ` --> 📏 Arze khat ra moshakhas mikonad (arz = width).  Be tore pishfarz arz 75 character ast.
+    🔹 `fmt -c`     --> 💬 Comment-ha ra moratab mikonad.
+    🔹 `fmt -s`     --> ✂️ Faqat khat-ha ra be ham vasl mikonad (split ya fill nemikonad).
+
+🛠 **Mesal-ha:**
+
+    $ fmt file.txt
+
+    🔹 File `file.txt` ra moratab mikonad va natije ra dar terminal chap mikonad.
+
+    $ fmt -w 60 file.txt > formatted_file.txt
+
+    🔹 File `file.txt` ra ba arze 60 character moratab mikonad va natije ra dar `formatted_file.txt` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ fmt -s input.txt
+
+    🔹 Agar `input.txt` shamel khat-haee باشد ke kamtar az arz pishfarz (75) ast, `fmt` anha ra be ham vasl mikonad ta yek khat bolandtar tashkil shavad, amma khat-haee ke toolani hastand ra nemeshkanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fmt` command is used to format text files to improve their readability.  It adjusts line lengths to prevent them from being too long or too short, making the text visually appealing.
+
+⚙️ **Options:**
+    🔹 `fmt -w WIDTH` --> 📏 Specifies the maximum line width. The default width is 75 characters.
+    🔹 `fmt -c`      --> 💬 Formats comments.
+    🔹 `fmt -s`      --> ✂️ Only joins lines together (does not split or fill lines).
+
+🛠 **Examples:**
+
+    $ fmt file.txt
+
+    🔹 Formats `file.txt` and prints the output to the terminal.
+
+    $ fmt -w 60 file.txt > formatted_file.txt
+
+    🔹 Formats `file.txt` with a line width of 60 characters and saves the output to `formatted_file.txt`.
+
+✅ **Simple Example:**
+
+    $ fmt -s input.txt
+
+    🔹 If `input.txt` contains lines that are shorter than the default width (75), `fmt` joins them together to form a longer line, but it does not break lines that are already too long.
+

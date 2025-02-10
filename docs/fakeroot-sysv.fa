@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fakeroot-sysv` baraye ejra kardane dastoorha ba hesab-e karbari (user account) `root` e ijadi (fake) be kar miravad. In dastoor be barname-ha eza-e dastrasi-haye `root` e dorughin midahad, bedune inke vaghe'an dastrasi-haye `root` e asli ra daryaft konand. In baraye sakhtane pakej-ha (packages) ya ejra kardane barname-haee ke dastrasi-haye `root` lazem darand, vali shoma nemikhahid be onha dastrasi-haye `root` e asli bedahid, mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v` --> 📢 Namayesh dadan peygham-haye bishtar (verbose) dar morede an che ke `fakeroot-sysv` anjam midahad.
+    🔹 `-s <file>` --> 💾 Zakhire va bazgardani etela'at `fakeroot` az yek file. In be shoma ejaze midahad ke "fake root" ra dar neshasthaye mokhtalef hefz konid.
+    🔹 `-i <file>` --> 📦 Bazgardani etela'at `fakeroot` az yek file be hesabe emroozin (import).
+
+🛠 **Mesal-ha:**
+
+    $ fakeroot-sysv dpkg-buildpackage -uc -us
+
+    🔹 In dastoor pakej `dpkg-buildpackage` ra ba dastrasi-haye `root` e dorughin ejra mikonad.
+
+    $ fakeroot-sysv -s savefile.dat tar -cvzf myarchive.tar.gz /path/to/files
+
+    🔹 In dastoor file `tar` ra ba dastrasi-haye `root` e dorughin ejra mikonad va etela'at `fakeroot` ra dar file `savefile.dat` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ fakeroot-sysv bash
+
+    🔹 In dastoor yek shell `bash` ra ba dastrasi-haye `root` e dorughin baz mikonad. Shoma mitavanid dastoorha ra dar shell ejra konid ke be nazar miresad ba dastrasi `root` ejra mishavand, vali dar vaghe' dar hesab-e karbari shoma ejra mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fakeroot-sysv` command is used to run commands with a fake `root` user account. It gives programs the illusion of having `root` privileges without actually granting real `root` access. This is useful for building packages or running programs that require `root` privileges, but you don't want to give them real `root` access.
+
+⚙️ **Options:**
+    🔹 `-v` --> 📢 Display more verbose messages about what `fakeroot-sysv` is doing.
+    🔹 `-s <file>` --> 💾 Save and restore `fakeroot` information from a file. This allows you to persist the "fake root" across different sessions.
+    🔹 `-i <file>` --> 📦 Import `fakeroot` information from a file.
+
+🛠 **Examples:**
+
+    $ fakeroot-sysv dpkg-buildpackage -uc -us
+
+    🔹 This command runs the `dpkg-buildpackage` package builder with fake `root` privileges.
+
+    $ fakeroot-sysv -s savefile.dat tar -cvzf myarchive.tar.gz /path/to/files
+
+    🔹 This command runs the `tar` command with fake `root` privileges and saves the `fakeroot` information to the file `savefile.dat`.
+
+✅ **Simple Example:**
+
+    $ fakeroot-sysv bash
+
+    🔹 This command opens a `bash` shell with fake `root` privileges. You can run commands within the shell that appear to be executed with `root` privileges, but are actually being executed under your normal user account.

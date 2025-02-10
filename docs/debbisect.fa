@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debbisect` baraye peyda kardane taghirati (changes) dar pakejhaye Debian ke baes moshkel shodeand (buggy behavior) be kar miravad. In dastoor shoma ra komak mikonad ta be sorat khodkar az tarighe gerftan teste-ha va barresi kardan anha, be taghirati ke baese bug shodeand beresid. Dar vaghe, yek noe "binary search" rooye tarikhcheye taghirate package anjam midehad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debbisect start`  --> 🏁 Aghaz kardan process bisect.
+    🔹 `debbisect good`  --> 👍 E'lam kardan yek version az package khub kar mikonad (bug nist).
+    🔹 `debbisect bad`   --> 👎 E'lam kardan yek version az package kharab ast (bug darad).
+    🔹 `debbisect reset` --> 🔄 Bazgardandan be vaziyate avalie bisect.
+    🔹 `debbisect skip`  --> ⏩ Az in version gozashtan (age nemitavanid test konid).
+    🔹 `debbisect visualize` --> 📊 Namayeshe grafiki az process bisect.
+
+🛠 **Mesal-ha:**
+
+    $ debbisect start 5.0 5.2   
+
+    🔹 Aghaz kardan bisect bayne vershnhaye 5.0 va 5.2.
+
+    $ debbisect good 5.0
+
+    🔹 E'lam kardan version 5.0 khub kar mikonad.
+
+    $ debbisect bad 5.2
+
+    🔹 E'lam kardan version 5.2 moshkel darad.
+
+✅ **Mesal sade:**
+
+    $ debbisect reset
+
+    🔹 Tamame etela'ate bisect pak shode va az aval shoru mishavad. Az in dastoor vaghti estefade konid ke mikhahid az aval shoru konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debbisect` command is used to find the changes in Debian packages that introduced a buggy behavior. It helps you automatically narrow down the problematic change by performing tests and indicating whether a version is "good" or "bad."  Essentially, it performs a "binary search" on the package's history of changes.
+
+⚙️ **Options:**
+    🔹 `debbisect start`  --> 🏁 Start the bisect process.
+    🔹 `debbisect good`  --> 👍 Declare a package version as working correctly (no bug).
+    🔹 `debbisect bad`   --> 👎 Declare a package version as broken (bug present).
+    🔹 `debbisect reset` --> 🔄 Reset the bisect state to the beginning.
+    🔹 `debbisect skip`  --> ⏩ Skip this version (if you cannot test it).
+    🔹 `debbisect visualize` --> 📊 Visualize the bisect process graphically.
+
+🛠 **Examples:**
+
+    $ debbisect start 5.0 5.2
+
+    🔹 Start the bisect process between versions 5.0 and 5.2.
+
+    $ debbisect good 5.0
+
+    🔹 Declare version 5.0 as working correctly.
+
+    $ debbisect bad 5.2
+
+    🔹 Declare version 5.2 as having the bug.
+
+✅ **Simple Example:**
+
+    $ debbisect reset
+
+    🔹 Clears all bisect information and starts over from the beginning. Use this when you want to restart the process.

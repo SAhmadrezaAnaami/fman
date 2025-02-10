@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fwupdate` baraye update kardan ya tagheer dadane firmware device-ha estefade mishavad. Firmware barname-haye asasi hastand ke sakht-afzar (hardware) ra control mikonand. In dastoor obdat kardan (update) firmware device-ha ra asan mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `fwupdate --list`  --> 📜 List kardan device-haye ghabele update.
+    🔹 `fwupdate <device> <firmware_file>` --> ⬆️ Update kardane firmware yek device moshakhas ba estefade az yek file.
+    🔹 `fwupdate --verbose` --> 📢 Namayeshe etela'ate bishtar dar morede process update.
+
+🛠 **Mesal-ha:**
+
+    $ fwupdate --list
+
+    🔹 List kardan hameye device-haye ghabele update.
+
+    $ fwupdate /dev/sda firmware.bin
+
+    🔹 Update kardane firmware device `/dev/sda` ba estefade az file `firmware.bin`.
+
+✅ **Mesal sade:**
+
+    $ fwupdate --verbose /dev/sdb new_firmware.img
+
+    🔹 Update kardane device `/dev/sdb` ba file `new_firmware.img` va namayeshe etela'ate bishtar dar morede process update.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fwupdate` command is used to update or modify the firmware of devices. Firmware are essential programs that control hardware. This command simplifies the process of updating device firmware.
+
+⚙️ **Options:**
+    🔹 `fwupdate --list` --> 📜 List updatable devices.
+    🔹 `fwupdate <device> <firmware_file>` --> ⬆️ Update the firmware of a specific device using a file.
+    🔹 `fwupdate --verbose` --> 📢 Display more information about the update process.
+
+🛠 **Examples:**
+
+    $ fwupdate --list
+
+    🔹 List all devices that can be updated.
+
+    $ fwupdate /dev/sda firmware.bin
+
+    🔹 Update the firmware of the device `/dev/sda` using the `firmware.bin` file.
+
+✅ **Simple Example:**
+
+    $ fwupdate --verbose /dev/sdb new_firmware.img
+
+    🔹 Update the device `/dev/sdb` with the file `new_firmware.img` and display more information about the update process.
+

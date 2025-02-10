@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `build-rdeps` baraye peyda kardan va nasb kardan hameye package-haye Debian ke be yek package khass (morede nazar) motakhiyas hastand, estefade mishavad. Yani hameye package-hayee ke be on package-e shoma ehtiyaj darand ra peyda mikonad va nasb mikonad. In baraye developers va kasi ke mikhad az dependencies-e inverse yek package etelaa dashte bashad kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `build-rdeps package-name` --> 📦 Nasb hameye  dependencies-e inverse (recursive dependencies) package morede nazar.
+    🔹 `build-rdeps -h`  --> ℹ️ Namayesh rahnama va komake dastoor.
+    🔹 `build-rdeps -n`  --> 🚫 Faghat list kardan package-ha bedune nasb kardan. (dry run)
+
+🛠 **Mesal-ha:**
+
+    $ build-rdeps gedit
+
+    🔹 Nasb hameye package-hayee ke be gedit depend (motakhiyas) hastand.
+
+    $ build-rdeps -n gedit
+
+    🔹 List kardan package-hayee ke be gedit depend hastand, vali nasb nemikonad.
+
+✅ **Mesal sade:**
+
+    $ build-rdeps my-package
+
+    🔹 Agar package-e "my-package" nasb nashode bashad, dastoor tamam package-hayee ke be "my-package" depend hastand ra az repository-e Debian download va nasb mikonad. In kheili mofid ast agar shoma dar hale test ya debug kardan package-e khodeton bashid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `build-rdeps` command is used to find and install all Debian packages that depend on a specific package.  It essentially finds all packages that require your specified package and installs them. This is particularly useful for developers and anyone who needs to know about the reverse dependencies of a package.
+
+⚙️ **Options:**
+    🔹 `build-rdeps package-name` --> 📦 Install all reverse dependencies (recursive dependencies) of the specified package.
+    🔹 `build-rdeps -h`  --> ℹ️ Display help and usage information.
+    🔹 `build-rdeps -n`  --> 🚫 Only list the packages without installing them (dry run).
+
+🛠 **Examples:**
+
+    $ build-rdeps gedit
+
+    🔹 Install all packages that depend on gedit.
+
+    $ build-rdeps -n gedit
+
+    🔹 List the packages that depend on gedit, but do not install them.
+
+✅ **Simple Example:**
+
+    $ build-rdeps my-package
+
+    🔹 If the package "my-package" is not installed, the command will download and install all packages from the Debian repository that depend on "my-package". This is useful if you are testing or debugging your own package.

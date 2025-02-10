@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-validate` baraye check kardane dorosti va format-e font cache file-ha estefade mishavad. Font cache file-ha baraye sari'tar kardan dastresi be font-ha tavasote system amale ijad mishavand. In dastoor komak mikonad ta motmaen shavid ke in file-ha zarar nadideand va dorost kar mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-validate [file]` --> 🎯 Check kardan yek file font cache khas. Agar file zekr nashavad, tamam file haye configuration ra check mikonad.
+    🔹 `-v` / `--verbose`   --> 📣 Namayesh dadan etela'at bishtar dar morede natije check kardan.
+    🔹 `-q` / `--quiet`     --> 🤫 Faghat namayesh dadane error-ha va warning-ha.
+
+🛠 **Mesal-ha:**
+
+    $ fc-validate
+
+    🔹 Check kardan hameye font cache file-haye default dar system.
+
+    $ fc-validate /path/be/fontcachefile
+
+    🔹 Check kardan yek file font cache khas ke dar masire `/path/be/fontcachefile` gharar darad.
+
+    $ fc-validate -v /path/be/fontcachefile
+
+    🔹 Check kardan file font cache ba etela'ate bishtar.
+
+✅ **Mesal sade:**
+
+    $ fc-validate -q
+
+    🔹 Faghat error-ha va warning-ha ra namayesh midahad agar font cache file-ha moshkeli dashte bashand. agar chizi namayesh dade nashavad yani hamechi doroste.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-validate` command is used to check the validity and format of font cache files. Font cache files are created by the operating system to speed up font access. This command helps to ensure that these files are not corrupted and are functioning correctly.
+
+⚙️ **Options:**
+    🔹 `fc-validate [file]` --> 🎯 Check a specific font cache file. If no file is specified, it checks all configuration files.
+    🔹 `-v` / `--verbose`   --> 📣 Display more information about the validation results.
+    🔹 `-q` / `--quiet`     --> 🤫 Only display errors and warnings.
+
+🛠 **Examples:**
+
+    $ fc-validate
+
+    🔹 Check all default font cache files in the system.
+
+    $ fc-validate /path/to/fontcachefile
+
+    🔹 Check a specific font cache file located at `/path/to/fontcachefile`.
+
+    $ fc-validate -v /path/to/fontcachefile
+
+    🔹 Check the font cache file with verbose output.
+
+✅ **Simple Example:**
+
+    $ fc-validate -q
+
+    🔹 Only displays errors and warnings if there are any issues with the font cache files. If nothing is displayed, it means everything is ok.

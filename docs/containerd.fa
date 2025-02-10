@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Containerd yek runtime container ast ke baraye ejra va modiriyate container-ha rooye yek system Linux ya Windows estefade mishavad. Mesle yek zir-sakhteman asli (core infrastructure) baraye system-haye container dar nazar gerefte mishavad. Baraye mesal, Kubernetes az containerd baraye ejraye container-ha estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `ctr images pull <image_name>` --> 📦 Gereftan (download) yek tasvir (image) az yek registry container.
+    🔹 `ctr run <image_name> <container_name>` --> 🚀 Eejad va ejraye yek container az rooye yek tasvir.
+    🔹 `ctr containers ls` --> 📝 List kardane hameye container-haye fa'al.
+    🔹 `ctr task kill <container_name>` --> 🔪 Koshtan (terminate) yek container ejra shode.
+
+🛠 **Mesal-ha:**
+
+    $ ctr images pull docker.io/library/nginx:latest
+
+    🔹 Gereftane tasvir nginx az Docker Hub.
+
+    $ ctr run --rm docker.io/library/nginx:latest nginx-test
+
+    🔹 Eejad va ejraye yek container nginx ba name "nginx-test" va hazf kardane an bad az tamam shodan.
+
+✅ **Mesal sade:**
+
+    $ ctr containers ls
+
+    🔹 Namayesh hameye container-haye fa'al dar system. Shoma mitavanid container-haee ra bebinid ke dar hale ejra hastand, hamra ba ID va status-haye anha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    Containerd is a container runtime used to execute and manage containers on a Linux or Windows system. It's considered a core infrastructure component for container systems. For example, Kubernetes uses containerd to run containers.
+
+⚙️ **Options:**
+    🔹 `ctr images pull <image_name>` --> 📦 Pull (download) an image from a container registry.
+    🔹 `ctr run <image_name> <container_name>` --> 🚀 Create and run a container from an image.
+    🔹 `ctr containers ls` --> 📝 List all active containers.
+    🔹 `ctr task kill <container_name>` --> 🔪 Kill (terminate) a running container.
+
+🛠 **Examples:**
+
+    $ ctr images pull docker.io/library/nginx:latest
+
+    🔹 Pulls the nginx image from Docker Hub.
+
+    $ ctr run --rm docker.io/library/nginx:latest nginx-test
+
+    🔹 Creates and runs an nginx container named "nginx-test" and removes it after it finishes.
+
+✅ **Simple Example:**
+
+    $ ctr containers ls
+
+    🔹 Displays all active containers on the system. You can see the containers that are running, along with their IDs and statuses.

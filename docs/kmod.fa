@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kmod` baraye modiriyat module-haye hasteye Linux (Linux kernel modules) estefade mishavad. Module-ha code-haye ezafi hastand ke mitavanand be h هسته ezafe shavand ta functionality ra behtar konand. ba `kmod` mitavan module-ha ra list kard, load kard, ya remove kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `kmod list`  --> 📜 List kardane hameye module-haye load shode.
+    🔹 `kmod insert <module_name>` --> ➕ Load kardane yek module be هسته.
+    🔹 `kmod remove <module_name>` --> ➖ Remove kardane yek module az هسته.
+    🔹 `kmod info <module_name>` --> ℹ️ Namayeshe etela'at dar morede yek module.
+
+🛠 **Mesal-ha:**
+
+    $ kmod list
+
+    🔹 Namayeshe hameye module-haye فعّal.
+
+    $ kmod insert example_module
+
+    🔹 Load kardane module به name 'example_module'.
+
+    $ kmod remove example_module
+
+    🔹 Remove kardane module 'example_module' az هسته.
+
+✅ **Mesal sade:**
+
+    $ kmod list | grep usb
+
+    🔹 Peida kardane module-haye مرتبط با usb dar list module-haye فعّal. In komak mikonad ta bebinim aya module usb correctly load shode ast ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kmod` command is used for managing Linux kernel modules. Modules are pieces of code that can be loaded into the kernel to extend its functionality. With `kmod`, you can list, insert (load), or remove modules from the kernel.
+
+⚙️ **Options:**
+    🔹 `kmod list`  --> 📜 List all currently loaded kernel modules.
+    🔹 `kmod insert <module_name>` --> ➕ Load a kernel module.
+    🔹 `kmod remove <module_name>` --> ➖ Remove a kernel module.
+    🔹 `kmod info <module_name>` --> ℹ️ Show information about a specific module.
+
+🛠 **Examples:**
+
+    $ kmod list
+
+    🔹 Show all currently active modules.
+
+    $ kmod insert example_module
+
+    🔹 Load the module named 'example_module'.
+
+    $ kmod remove example_module
+
+    🔹 Remove the module 'example_module' from the kernel.
+
+✅ **Simple Example:**
+
+    $ kmod list | grep usb
+
+    🔹 Find modules related to USB from the list of active modules. This helps to verify if the USB module is loaded correctly.

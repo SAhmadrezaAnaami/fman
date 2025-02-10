@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzop` baraye compress kardan (feshorde sazi) file-ha estefade mishavad, mesle `gzip` vali az algorithm-e LZO estefade mikonad ke sare'tar ast. Baaz kardan file-haye `lzop` shode ham ba in dastoor anjam mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzop -o <file>` --> 💾 Save kardan file compress shode ba name `<file>`.
+    🔹 `lzop -d <file.lzo>` --> 📦 Baaz kardan file `.lzo` (decompress kardan).
+    🔹 `lzop -k <file>` --> ➕ Asl-e file ra negah midarad (delete nemikonad).
+    🔹 `lzop -v <file>` --> 🗣️ Namayesh etela'ate bishtar dar morede compress shodan.
+
+🛠 **Mesal-ha:**
+
+    $ lzop file.txt
+
+    🔹 Compress kardan `file.txt` va sakhtan `file.txt.lzo`.
+
+    $ lzop -d file.txt.lzo
+
+    🔹 Baaz kardan `file.txt.lzo` va sakhtan `file.txt`.
+
+✅ **Mesal sade:**
+
+    $ lzop -k file.txt
+
+    🔹 `file.txt` ra compress mikonad va `file.txt.lzo` ra misazad, vali `file.txt` asl-e khodash ra negah midarad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzop` command is used to compress files, similar to `gzip`, but it uses the LZO algorithm, which is faster.  Decompressing `lzop` files is also done using this command.
+
+⚙️ **Options:**
+    🔹 `lzop -o <file>` --> 💾 Save the compressed file with the name `<file>`.
+    🔹 `lzop -d <file.lzo>` --> 📦 Decompress the `.lzo` file.
+    🔹 `lzop -k <file>` --> ➕ Keep the original file (do not delete it).
+    🔹 `lzop -v <file>` --> 🗣️ Show more information about the compression process (verbose mode).
+
+🛠 **Examples:**
+
+    $ lzop file.txt
+
+    🔹 Compress `file.txt` and create `file.txt.lzo`.
+
+    $ lzop -d file.txt.lzo
+
+    🔹 Decompress `file.txt.lzo` and create `file.txt`.
+
+✅ **Simple Example:**
+
+    $ lzop -k file.txt
+
+    🔹 Compress `file.txt` and create `file.txt.lzo`, but keep the original `file.txt`.

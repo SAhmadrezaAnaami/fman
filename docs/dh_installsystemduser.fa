@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installsystemduser` baraye nasb kardan file-haye service systemd baraye service-haye karbari (user services) dar bastahaye Debian estefade mishavad. In dastoor karhaye lazem ra anjam midahad ta service-haye karbari be dorosti pas az nasb bast dar system karbar fa'al shavand. Agar shoma yek barname darid ke bayad be onvane yek service karbar dar systemd ejra shavad, in dastoor kheyli mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name=FILENAME` --> 📝 Esme file .service ra tayin mikonad. Agar tayin nashavad, esm az esme bastah girafte mishavad.
+    🔹 `--no-enable` --> 🚫 Az fa'al kardane otomatike service dar vaghte nasb jologiri mikonad.  Shoma mitavanid service ra dastooran ba `systemctl --user enable` fa'al konid.
+    🔹 `--error-handler=COMMAND` --> 🚨 Dastoori ra tayin mikonad ke dar sorate khata ejra mishavad. In baraye loggiri ya tamdidane khata mofeed ast.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installsystemduser --name=my-awesome-app.service
+
+    🔹 In dastoor file `my-awesome-app.service` ra nasb mikonad va service karbari ra fa'al mikonad.
+
+    $ dh_installsystemduser --no-enable
+
+    🔹 In dastoor file .service ra nasb mikonad, vali service ra fa'al nemikonad.  Karbar bayad service ra khodash ba `systemctl --user enable` fa'al konad.
+
+✅ **Mesal sade:**
+
+    $ dh_installsystemduser
+
+    🔹 Agar esme file .service hamnam ba esme bastah bashad (baraye mesal `package-name.service`), in dastoor be sadeghi an ra nasb va fa'al mikonad (agar `--no-enable` estefade nashode bashad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installsystemduser` command is used to install systemd service files for user services in Debian packages. It performs the necessary actions to ensure that user services are properly enabled in the user's system after package installation.  If you have an application that needs to run as a user service under systemd, this command is very useful.
+
+⚙️ **Options:**
+    🔹 `--name=FILENAME` --> 📝 Specifies the name of the .service file. If not specified, the name is derived from the package name.
+    🔹 `--no-enable` --> 🚫 Prevents automatic enabling of the service during installation. You can manually enable the service using `systemctl --user enable`.
+    🔹 `--error-handler=COMMAND` --> 🚨 Specifies a command to execute in case of an error. This is useful for logging or handling errors gracefully.
+
+🛠 **Examples:**
+
+    $ dh_installsystemduser --name=my-awesome-app.service
+
+    🔹 This command installs the `my-awesome-app.service` file and enables the user service.
+
+    $ dh_installsystemduser --no-enable
+
+    🔹 This command installs the .service file, but does not enable the service. The user must enable the service manually using `systemctl --user enable`.
+
+✅ **Simple Example:**
+
+    $ dh_installsystemduser
+
+    🔹 If the name of the .service file matches the package name (e.g., `package-name.service`), this command simply installs and enables it (unless `--no-enable` is used).

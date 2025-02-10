@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `groff` baraye tabdil kardane matn-haye sade (ke ba dastoor zaban-e mark-up neveshte shode-and) be format-haye motefavet mesle PDF, PostScript, ya hatta namayesh dar terminal estefade mishavad.  In dastoor bishter baraye dorost kardane safahat-e rahnamaye (man pages) UNIX/Linux estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `groff -T ps file.troff`  --> 📄 Tabdil file `file.troff` be PostScript.
+    🔹 `groff -T pdf file.troff > file.pdf`  --> 🖨️ Tabdil file `file.troff` be PDF.
+    🔹 `groff -man file.man` --> 👨‍💻 Format kardane file `file.man` be shekl safhe-ye rahnamaye UNIX.  `man` macro package ro estefade mikone.
+    🔹 `groff -help` --> ❓ Namayesh rahnamaye kamel baraye dastoor `groff`.
+
+🛠 **Mesal-ha:**
+
+    $ groff -T ps my_document.troff > my_document.ps
+
+    🔹 In dastoor file `my_document.troff` ra be file PostScript tabdil mikonad va dar file `my_document.ps` zakhire mikonad.
+
+    $ groff -T pdf my_document.troff | evince -
+
+    🔹 In dastoor file `my_document.troff` ra be PDF tabdil mikonad va be program `evince` (ya har PDF viewer dige) miferestad ta namayesh dade shavad.
+
+✅ **Mesal sade:**
+
+    $ groff -man man_page.txt | less
+
+    🔹 In dastoor file `man_page.txt` ra be shekl safhe rahnamaye UNIX format mikonad va natije ra be `less` miferestad ta namayesh dade shavad. In baraye didane pishnevis-e safhe rahnamatoon ghabl az install kardanesh khoobe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `groff` command is used to format plain text files (often written with a markup language) into various output formats such as PDF, PostScript, or even for display in the terminal. It is frequently used for creating UNIX/Linux manual pages.
+
+⚙️ **Options:**
+    🔹 `groff -T ps file.troff`  --> 📄 Convert the file `file.troff` to PostScript.
+    🔹 `groff -T pdf file.troff > file.pdf`  --> 🖨️ Convert the file `file.troff` to PDF.
+    🔹 `groff -man file.man` --> 👨‍💻 Format the file `file.man` as a UNIX manual page, using the `man` macro package.
+    🔹 `groff -help` --> ❓ Display the full help information for the `groff` command.
+
+🛠 **Examples:**
+
+    $ groff -T ps my_document.troff > my_document.ps
+
+    🔹 This command converts the `my_document.troff` file to a PostScript file and saves it to `my_document.ps`.
+
+    $ groff -T pdf my_document.troff | evince -
+
+    🔹 This command converts the `my_document.troff` file to PDF format and pipes the output to the `evince` program (or any other PDF viewer) to be displayed.
+
+✅ **Simple Example:**
+
+    $ groff -man man_page.txt | less
+
+    🔹 This command formats the `man_page.txt` file as a UNIX manual page and pipes the output to `less` for viewing. This is useful for previewing a man page before installing it.

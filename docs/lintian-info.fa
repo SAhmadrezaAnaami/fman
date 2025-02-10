@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lintian-info` baraye gereftan etela'at darbareye check-haye Lintian va taghyeer-ati ke anjam midahad be kar miravad. Lintian yek barname ast baraye baresi package-haye Debian va motmaen shodan az inke standard-ha ra ra'ayat mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `lintian-info --tags tag_name` --> 🏷️ Etela'at raje' be yek taghyeer khas (tag).
+    🔹 `lintian-info --all-tags` --> 📚 List hameye tag-haye mojud va tashrih kutahi az har kodam.
+    🔹 `lintian-info --display-profiles` --> ⚙️ Namayesh profile-haye mojud baraye baresi package-ha.
+    🔹 `lintian-info --verbose` --> 📢 Etela'at bishtari raje' be har taghyeer namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ lintian-info --tags pedantic
+    
+    🔹 Namayesh etela'at raje' be taghyeer "pedantic".
+
+    $ lintian-info --all-tags | less
+    
+    🔹 List hameye tag-haye Lintian ba estefade az `less` baraye safhe-bandi.
+
+✅ **Mesal sade:**
+
+    $ lintian-info --tags maintainer-script-uses-dh_make
+    
+    🔹 Etela'at raje' be taghyeer "maintainer-script-uses-dh_make" ra namayesh midahad ke neshan midahad maintainer script az `dh_make` estefade karde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lintian-info` command is used to retrieve information about Lintian checks and the tags they generate. Lintian is a tool used to check Debian packages for compliance with standards.
+
+⚙️ **Options:**
+    🔹 `lintian-info --tags tag_name` --> 🏷️ Get information about a specific Lintian tag.
+    🔹 `lintian-info --all-tags` --> 📚 List all available Lintian tags with a short description of each.
+    🔹 `lintian-info --display-profiles` --> ⚙️ Display available profiles for package checking.
+    🔹 `lintian-info --verbose` --> 📢 Show more detailed information about each tag.
+
+🛠 **Examples:**
+
+    $ lintian-info --tags pedantic
+    
+    🔹 Show information about the "pedantic" tag.
+
+    $ lintian-info --all-tags | less
+    
+    🔹 List all Lintian tags using `less` for pagination.
+
+✅ **Simple Example:**
+
+    $ lintian-info --tags maintainer-script-uses-dh_make
+    
+    🔹 Displays information about the "maintainer-script-uses-dh_make" tag, indicating that the maintainer script uses `dh_make`.

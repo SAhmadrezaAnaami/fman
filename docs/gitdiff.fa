@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `git diff` baraye didane tagheerat beine do ta commit, branch, ya file estefade mishavad. In dastoor be shoma neshon midahad ke che khotooti ezafe shode, kam shode ya tagheer karde ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `git diff` --> 📝 Namayeshe tagheerat dar directory-e kari ba akharin commit.
+    🔹 `git diff --staged` --> 📦 Namayeshe tagheerati ke baraye commit ba `git add` amade shode and.
+    🔹 `git diff branch1 branch2` --> 🌿 Namayeshe tagheerat beine do ta branch.
+    🔹 `git diff commit1 commit2 file.txt` --> 📄 Namayeshe tagheerat dar yek file khass beine do ta commit.
+
+🛠 **Mesal-ha:**
+
+    $ git diff
+
+    🔹 Namayeshe tagheerati ke hanooz commit nashode and.
+
+    $ git diff --staged
+
+    🔹 Namayeshe tagheerati ke baraye commit amade shode and.
+
+✅ **Mesal sade:**
+
+    $ git diff HEAD^ HEAD
+
+    🔹 Tagheerat beine akharin commit va commit-e ghabli ra neshon midahad. Az `HEAD^` baraye eshare be commit-e ghabli estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `git diff` command is used to see the differences between two commits, branches, or files. It shows you what lines have been added, removed, or modified.
+
+⚙️ **Options:**
+    🔹 `git diff` --> 📝 Show changes in the working directory compared to the last commit.
+    🔹 `git diff --staged` --> 📦 Show changes that have been staged for commit using `git add`.
+    🔹 `git diff branch1 branch2` --> 🌿 Show differences between two branches.
+    🔹 `git diff commit1 commit2 file.txt` --> 📄 Show differences in a specific file between two commits.
+
+🛠 **Examples:**
+
+    $ git diff
+
+    🔹 Shows changes that haven't been committed yet.
+
+    $ git diff --staged
+
+    🔹 Shows changes that are staged for the next commit.
+
+✅ **Simple Example:**
+
+    $ git diff HEAD^ HEAD
+
+    🔹 Shows the changes between the last commit and its parent commit. `HEAD^` is used to refer to the parent commit.
+

@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nisdomainname` baraye namayesh ya ta’een name domain NIS (Network Information Service) estefade mishavad. Agar bedune gozine-ha ejra shavad, name domain NIS فعلی ra chap میکonad. Agar ba yek name domain ejra shavad, name domain NIS ra ta’een میکonad (نیازمند دسترسی مدیر (root) hastید).
+
+⚙️ **Gozine-ha:**
+    🔹 No gozine khas. Dastoor aslan gozine-ha nadarad.
+
+🛠 **Mesal-ha:**
+
+    $ nisdomainname
+
+    🔹 Namayesh name domain NIS فعلی.
+
+    $ sudo nisdomainname example.com
+
+    🔹 Ta’een name domain NIS be "example.com" (نیازمند دسترسی مدیر).
+
+✅ **Mesal sade:**
+
+    $ nisdomainname
+    example.net
+    $
+
+    🔹 Dastoor name domain NIS ra chap میکonad. Dar inja, "example.net" name domain NIS ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nisdomainname` command is used to display or set the NIS (Network Information Service) domain name.  When run without arguments, it prints the current NIS domain name. When run with a domain name argument, it sets the NIS domain name (requires root privileges).
+
+⚙️ **Options:**
+    🔹 No specific options. The command does not accept options.
+
+🛠 **Examples:**
+
+    $ nisdomainname
+
+    🔹 Displays the current NIS domain name.
+
+    $ sudo nisdomainname example.com
+
+    🔹 Sets the NIS domain name to "example.com" (requires root privileges).
+
+✅ **Simple Example & Explanation:**
+
+    $ nisdomainname
+    example.net
+    $
+
+    🔹 The command prints the NIS domain name. In this case, "example.net" is the NIS domain name.
+

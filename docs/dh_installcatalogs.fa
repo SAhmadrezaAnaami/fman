@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installcatalogs` baraye sabte file-haye `*.cat` (catalog) dar package build shode estefade mishavad. In dastoor be shoma komak mikonad ta etela'at software ra be soorate dorost dar narm afzar-haye nasb va managment package sabt konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir pooshe` --> 📁 Moshakhas kardane pooshei ke file-haye `*.cat` az aanja gerefte mishavand. Agar moshakhas nashavad, az pooshe `debian` estefade mishavad.
+    🔹 `--name package` --> 📦 Moshakhas kardane name packagei ke file-haye catalog be aan ta'allogh darand. Be soorate pishfarz, az name package binary estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installcatalogs
+
+    🔹 Dar hale pishfarz, file-haye `*.cat` ra az pooshe `debian` entekhab va dar package nasb mikonad.
+
+    $ dh_installcatalogs --sourcedir src/catalogs
+
+    🔹 File-haye `*.cat` ra az pooshe `src/catalogs` entekhab va dar package nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installcatalogs --name mypackage
+
+    🔹 File-haye `*.cat` ra dar package-i ba name `mypackage` sabt mikonad. In dar vaght-i mohem ast ke shoma chand package binary dar yek source package darid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installcatalogs` command is used to register `*.cat` (catalog) files in the built package. This command helps you to properly register software information in installation software and package management.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory` --> 📁 Specifies the directory from which `*.cat` files are taken. If not specified, the `debian` directory is used.
+    🔹 `--name package` --> 📦 Specifies the name of the package to which the catalog files belong. By default, the binary package name is used.
+
+🛠 **Examples:**
+
+    $ dh_installcatalogs
+
+    🔹 By default, selects `*.cat` files from the `debian` directory and installs them in the package.
+
+    $ dh_installcatalogs --sourcedir src/catalogs
+
+    🔹 Selects `*.cat` files from the `src/catalogs` directory and installs them in the package.
+
+✅ **Simple Example:**
+
+    $ dh_installcatalogs --name mypackage
+
+    🔹 Registers `*.cat` files in a package named `mypackage`. This is important when you have multiple binary packages in one source package.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh` (Disk Health) yek dastoor nist ke be soorat pishfarz dar system-haye Unix/Linux vojud dashte bashe. Momkene yek dastoor sakhsiye bashad ya ghabeliyat'haee ra az dastoor'haye digar be ham vasl karde bashe baraye namayesh etela'ate behdashte disk.  Be manie digar, aslan dar dastoorhaye asli system nist.
+
+⚙️ **Gozine-ha:**
+    Chun `dh` yek dastoor standart nist, gozine-haye khas nadarad. Amma agar yek script ya dastoor sakhsiye bashad, gozine-hayesh moteghayer ast.  Dar inja, baraye mesal chand gozine farzi mi-zanim:
+
+    🔹 `dh -s`  --> 🚀 Namayesh etela'ate sade va kholase (masalan, meghdare fazaye khoole disk).
+    🔹 `dh -d`  --> 🩺 Namayesh etela'ate tafsili az vaz'e behdashte disk (masalan, SMART data).
+    🔹 `dh -h`  --> ℹ️ Namayesh rahnama va komak dastoor (help).
+
+🛠 **Mesal-ha:**
+
+    $ dh
+
+    🔹 Ejra dastoor `dh` (agar vojud dashte bashad) ba behtarain halat pishfarz.
+
+    $ dh -s
+
+    🔹 Namayesh etela'ate sade az vaz'e disk.
+
+✅ **Mesal sade:**
+
+    $ dh -s
+
+    🔹 Agar natije be surat "Disk OK" ya "90% free" namayesh dade shavad, yani disk dar vaz'e khoobi ast va 90 darsad fazaye khooli darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh` (Disk Health) command is not a standard Unix/Linux command. It might be a custom script or an alias that combines functionalities from other commands to display disk health information.  In other words, it is not part of the system's core utilities.
+
+⚙️ **Options:**
+    Since `dh` is not a standard command, it doesn't have predefined options. However, if it's a custom script or alias, the options can vary. Here are some hypothetical examples:
+
+    🔹 `dh -s`  --> 🚀 Show simple and concise information (e.g., disk free space).
+    🔹 `dh -d`  --> 🩺 Show detailed disk health status (e.g., SMART data).
+    🔹 `dh -h`  --> ℹ️ Show help/usage information.
+
+🛠 **Examples:**
+
+    $ dh
+
+    🔹 Execute the `dh` command (if it exists) with its default behavior.
+
+    $ dh -s
+
+    🔹 Display simple disk status information.
+
+✅ **Simple Example:**
+
+    $ dh -s
+
+    🔹 If the output displays "Disk OK" or "90% free," it means the disk is in good condition with 90 percent of its space available.

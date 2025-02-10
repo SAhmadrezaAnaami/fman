@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzmore` mesle dastoor `more` ast, vali baraye file-haye zipl شده ba `bzip2` kar mikonad. Yani file-haye `.bz2` ra baz mikonad va safhe be safhe namayesh midahad. Agar file-e shoma compress shode nabashad, `bzmore` mesle `more` kar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzmore +<number> <file>`  --> 🔢 Az khatte `<number>` shoru be namayesh kon.
+    🔹 `bzmore -d <file>`       --> 📂 File ra az hale compress darbiavar (decompress) va namayesh بده (faqat dar memory, file asli taghir nemikonad).
+    🔹 `bzmore -f`              --> ⏩ Agar file gheyre zipl bud, fori namayesh bede, hata age esme file akharesh `.bz2` bashe.
+
+🛠 **Mesal-ha:**
+
+    $ bzmore myfile.bz2
+
+    🔹 File `myfile.bz2` ra safhe be safhe namayesh midehad.
+
+    $ bzmore +100 logfile.bz2
+
+    🔹 File `logfile.bz2` ra az khatte 100 shoru be namayesh midehad.
+
+✅ **Mesal sade:**
+
+    $ bzmore bigfile.bz2
+
+    🔹 Age `bigfile.bz2` file-e bozorgi bashe, `bzmore` be shoma komak mikonad anra safhe be safhe bekhanid be jaye inke hameye file yek ja namayesh dade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzmore` command is similar to the `more` command, but it's designed to work with files compressed using `bzip2`. It allows you to view `.bz2` files page by page. If the file is not compressed, `bzmore` behaves like the regular `more` command.
+
+⚙️ **Options:**
+    🔹 `bzmore +<number> <file>`  --> 🔢 Start displaying the file from line `<number>`.
+    🔹 `bzmore -d <file>`       --> 📂 Decompress the file (only in memory) and display it. The original file remains unchanged.
+    🔹 `bzmore -f`              --> ⏩ Force display even if the file is uncompressed, even if the filename ends with `.bz2`.
+
+🛠 **Examples:**
+
+    $ bzmore myfile.bz2
+
+    🔹 Displays the contents of `myfile.bz2` page by page.
+
+    $ bzmore +100 logfile.bz2
+
+    🔹 Starts displaying `logfile.bz2` from line 100.
+
+✅ **Simple Example & Explanation:**
+
+    $ bzmore bigfile.bz2
+
+    🔹 If `bigfile.bz2` is a large file, `bzmore` helps you read it page by page instead of displaying the entire file at once.

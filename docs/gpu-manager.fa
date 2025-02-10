@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpu-manager` baraye modiriyat va kontrol kart grafiki (GPU) dar sistem-haye Linux estefade mishavad. In dastoor be shoma komak mikonad ta driver-haye sahih ra nasb konid va behtarin performanro az GPU begirid, be khosos baraye bazi-ha va barname-haye sangin.
+
+⚙️ **Gozine-ha:**
+    🔹 `gpu-manager --list-devices` --> 🔍 List kardan hame device-haye GPU dar system.
+    🔹 `gpu-manager --install-driver <driver-name>` --> ⚙️ Nasb kardan yek driver moshakhas baraye GPU.
+    🔹 `gpu-manager --uninstall-driver` --> 🗑️ Hazf kardan driver-haye nasb shode GPU.
+    🔹 `gpu-manager --check-status` --> ✅ Check kardan vaziat (status) GPU va driver-haye nasb shode.
+
+🛠 **Mesal-ha:**
+
+    $ gpu-manager --list-devices
+
+    🔹 List hameye device-haye GPU.
+
+    $ gpu-manager --install-driver nvidia-driver-535
+
+    🔹 Nasb driver Nvidia ba version 535.
+
+✅ **Mesal sade:**
+
+    $ gpu-manager --check-status
+
+    🔹 Check mikonad ke driver GPU dorost nasb shode va GPU be dorosti kar mikonad ya na. Agar problem bashe, peyghami neshun mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpu-manager` command is used to manage and control graphics cards (GPUs) on Linux systems. It helps you install the correct drivers and optimize GPU performance, especially for gaming and resource-intensive applications.
+
+⚙️ **Options:**
+    🔹 `gpu-manager --list-devices` --> 🔍 List all GPU devices in the system.
+    🔹 `gpu-manager --install-driver <driver-name>` --> ⚙️ Install a specific driver for the GPU.
+    🔹 `gpu-manager --uninstall-driver` --> 🗑️ Uninstall the currently installed GPU driver.
+    🔹 `gpu-manager --check-status` --> ✅ Check the status of the GPU and installed drivers.
+
+🛠 **Examples:**
+
+    $ gpu-manager --list-devices
+
+    🔹 Lists all GPU devices.
+
+    $ gpu-manager --install-driver nvidia-driver-535
+
+    🔹 Installs the Nvidia driver version 535.
+
+✅ **Simple Example:**
+
+    $ gpu-manager --check-status
+
+    🔹 Checks if the GPU driver is correctly installed and if the GPU is working properly. If there's a problem, it displays a message.

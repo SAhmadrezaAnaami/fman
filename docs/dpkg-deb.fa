@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-deb` baraye dorost kardan, baz kardan va modiriyat kardan file-haye `.deb` (Debian package) estefade mishavad. File-haye `.deb` baraye nasb kardan narmafzar dar system-haye Debian va Ubuntu be kar miravand. In dastoor bishtar baraye sakhtan ya baz kardan package-ha be soorate manual estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg-deb -b <directory> <file.deb>`  --> 📦 Sakhtan yek file `.deb` az yek directory.
+    🔹 `dpkg-deb -x <file.deb> <directory>`  --> 📂 Baz kardan file `.deb` va extract kardane an be yek directory.
+    🔹 `dpkg-deb -I <file.deb>`  --> ℹ️ Namayesh etela'at darbareye package (mesle name, version, dependencies).
+    🔹 `dpkg-deb --contents <file.deb>` --> 📃 List kardane file-haye dakhele package.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-deb -b mypackage mypackage.deb
+
+    🔹 Sakhtan yek package `.deb` az directory "mypackage" va save kardane an be name "mypackage.deb".
+
+    $ dpkg-deb -x mypackage.deb extracted_package
+
+    🔹 Baz kardan file "mypackage.deb" va extract kardane hameye file-ha dar directory "extracted_package".
+
+✅ **Mesal sade:**
+
+    $ dpkg-deb -I mypackage.deb
+
+    🔹 Namayesh etela'ati mesle name package, version va etela'ate digar darbareye package "mypackage.deb".
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-deb` command is used to create, unpack, and manage `.deb` (Debian package) files. `.deb` files are used for installing software on Debian and Ubuntu-based systems. This command is primarily used for manually building or inspecting packages.
+
+⚙️ **Options:**
+    🔹 `dpkg-deb -b <directory> <file.deb>`  --> 📦 Build a `.deb` file from a directory.
+    🔹 `dpkg-deb -x <file.deb> <directory>`  --> 📂 Extract a `.deb` file and unpack it into a directory.
+    🔹 `dpkg-deb -I <file.deb>`  --> ℹ️ Show information about the package (e.g., name, version, dependencies).
+    🔹 `dpkg-deb --contents <file.deb>` --> 📃 List the files contained within the package.
+
+🛠 **Examples:**
+
+    $ dpkg-deb -b mypackage mypackage.deb
+
+    🔹 Creates a `.deb` package from the "mypackage" directory and saves it as "mypackage.deb".
+
+    $ dpkg-deb -x mypackage.deb extracted_package
+
+    🔹 Extracts the contents of the "mypackage.deb" file into the "extracted_package" directory.
+
+✅ **Simple Example:**
+
+    $ dpkg-deb -I mypackage.deb
+
+    🔹 Displays information such as the package name, version, and other details about the "mypackage.deb" package.

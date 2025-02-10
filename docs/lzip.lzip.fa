@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzip` baraye moteghassed kardan (compress) ya baz kardan (decompress) file-ha estefade mishavad. `lzip.lzip` neshan dahande in ast ke file ya pooshe ba estefade az `lzip` moteghassed shode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzip -d file.lzip`  --> 🔓 Baz kardan file `file.lzip`
+    🔹 `lzip -k file`  --> 🧱 Moteghassed kardan `file` va negah dashtane asle file (keep)
+    🔹 `lzip -z file`  --> 🧱 Moteghassed kardan `file` (hamoon `lzip file` ham mishe)
+    🔹 `lzip -o output file` --> 💾 Moshakhas kardane esme file khorooji
+
+🛠 **Mesal-ha:**
+
+    $ lzip file.txt
+
+    🔹 File `file.txt` moteghassed mishe va mishe `file.txt.lz`.
+
+    $ lzip -d file.txt.lz
+
+    🔹 File `file.txt.lz` baz mishe va mishe `file.txt`.
+
+✅ **Mesal sade:**
+
+    $ lzip -k file.txt
+
+    🔹 `file.txt` moteghassed mishe be `file.txt.lz`, vali `file.txt` ham pak nemishe va mimone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzip` command is used to compress or decompress files. `lzip.lzip` indicates that a file or directory has been compressed using `lzip`.
+
+⚙️ **Options:**
+    🔹 `lzip -d file.lzip`  --> 🔓 Decompress `file.lzip`
+    🔹 `lzip -k file`  --> 🧱 Compress `file` and keep the original file
+    🔹 `lzip -z file`  --> 🧱 Compress `file` (same as `lzip file`)
+    🔹 `lzip -o output file` --> 💾 Specify the output file name
+
+🛠 **Examples:**
+
+    $ lzip file.txt
+
+    🔹 Compresses `file.txt` and creates `file.txt.lz`.
+
+    $ lzip -d file.txt.lz
+
+    🔹 Decompresses `file.txt.lz` and creates `file.txt`.
+
+✅ **Simple Example:**
+
+    $ lzip -k file.txt
+
+    🔹 `file.txt` is compressed to `file.txt.lz`, but the original `file.txt` is not deleted and remains.

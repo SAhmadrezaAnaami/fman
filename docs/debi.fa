@@ -1,0 +1,61 @@
+Okay, I will generate a man page for a (fictional) command called `debi`. This command will relate to Debian package management (since that's suggested by the name), even though it's a made-up command.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debi` baraye modiriyate bastahaye Debian (Debian packages) be kar miravad.  Shoma mitavanid ba estefade az in dastoor, bastaharo nasb, hazf, ya update konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `debi nasb <esm-baste>`  --> 📦 Nasbe yek baste jadid.  Be jaye `<esm-baste>` , name baste ra benevisid.
+    🔹 `debi hazf <esm-baste>`  --> 🗑️ Hazfe yek baste az system.
+    🔹 `debi update`           --> 🔄 Gereftan akharin etela'at az repo ha.
+    🔹 `debi search <kalame-kelidi>` --> 🔍 Jostojoo kardan bastahaye Debian bar asase kalame kelidi.
+
+🛠 **Mesal-ha:**
+
+    $ debi nasb firefox
+
+    🔹 Nasbe barnameye Firefox.
+
+    $ debi hazf libreoffice
+
+    🔹 Hazfe barnameye LibreOffice.
+
+✅ **Mesal sade:**
+
+    $ debi update
+
+    🔹 In dastoor liste bastahaye daste res dar repo haro gerefte va system ro amadeye update mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debi` command is used for managing Debian packages. You can use it to install, remove, or update packages on your system.
+
+⚙️ **Options:**
+    🔹 `debi install <package-name>` --> 📦 Install a new package.  Replace `<package-name>` with the actual package name.
+    🔹 `debi remove <package-name>`  --> 🗑️ Remove a package from the system.
+    🔹 `debi update`            --> 🔄 Get the latest package information from the repositories.
+    🔹 `debi search <keyword>`    --> 🔍 Search for Debian packages based on a keyword.
+
+🛠 **Examples:**
+
+    $ debi install firefox
+
+    🔹 Installs the Firefox browser.
+
+    $ debi remove libreoffice
+
+    🔹 Removes the LibreOffice suite.
+
+✅ **Simple Example:**
+
+    $ debi update
+
+    🔹 This command fetches the latest package lists from the repositories and prepares the system for updates.
+

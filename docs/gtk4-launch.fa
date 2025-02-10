@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk4-launch` baraye ejra kardane barname-haye grafikie ke ba GTK 4 neveshte shode‌اند estefade mishavad. In dastoor barname ra ba environment-e dorost baraye GTK 4 ejra mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtk4-launch [name.desktop]` --> 🚀 Ejdra kardan barname az file `.desktop`. Agar name file ra nadehid, `gtk4-launch` barname'i ke ba GTK 4 sakhte shode ra az beine hameye barname-ha peida mikonad va ejra mikonad.
+    🔹 `gtk4-launch --list` --> 🔍 List kardane hameye file-haye `.desktop` ke `gtk4-launch` mitavanad peida konad.
+    🔹 `gtk4-launch --help` --> ℹ️ Namayeshe rahnama va gozine-haye digar.
+
+🛠 **Mesal-ha:**
+
+    $ gtk4-launch myapp.desktop
+
+    🔹 Ejdra kardan barname'i ke file `.desktop` an `myapp.desktop` ast.
+
+    $ gtk4-launch
+
+    🔹 Agar faghat `gtk4-launch` ra bekar bebarid, barname'i ke avalin barname'i ke ba GTK 4 neveshte shode bashad ra ejra mikonad.
+
+✅ **Mesal sade:**
+
+    $ gtk4-launch --list
+
+    🔹 In dastoor hameye file-haye `.desktop` ke mitavanand ba `gtk4-launch` ejra shavand ra list mikonad. Az in dastoor mitavanid estefade konid ta bedanid che barname-haee ra mitavanid ba in dastoor ejra konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk4-launch` command is used to launch graphical applications built with GTK 4.  It ensures the application is run with the correct environment for GTK 4.
+
+⚙️ **Options:**
+    🔹 `gtk4-launch [name.desktop]` --> 🚀 Launch an application from its `.desktop` file. If no filename is given, `gtk4-launch` will attempt to find and launch any GTK 4 application.
+    🔹 `gtk4-launch --list` --> 🔍 List all `.desktop` files that `gtk4-launch` can find.
+    🔹 `gtk4-launch --help` --> ℹ️ Display help information and other options.
+
+🛠 **Examples:**
+
+    $ gtk4-launch myapp.desktop
+
+    🔹 Launch the application whose `.desktop` file is `myapp.desktop`.
+
+    $ gtk4-launch
+
+    🔹 If you simply run `gtk4-launch`, it will launch the first GTK 4 application it finds.
+
+✅ **Simple Example:**
+
+    $ gtk4-launch --list
+
+    🔹 This command lists all the `.desktop` files that can be launched with `gtk4-launch`. This is useful to see what applications can be launched with this tool.

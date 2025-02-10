@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mklayout` baraye dorost kardane layout keyboard baraye GRUB (bootloader) estefade mishavad. Yani vaghti ke computer shoma start mishe va GRUB miad, mitoonid az keyboard ba layout khasi estefade konid. In dastoor layout keyboard ro az X11 migire va be formati tabdil mikone ke GRUB befahme.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ℹ️ Namayesh rahnamaye dastoor.
+    🔹 `-o, --output=FILE`  --> 📤 File-i ke layout keyboard dar aan zakhire mishe.  Esm file bayad ba ".gkb" tamoom she.
+    🔹 `--with-xkbmap=XKB_MAP` --> 🗺️ Estefade az yek XKB map khas (masalan 'us' baraye layout keyboard amricaee). Agar in gozine dade nashe, az XKB map default estefade mishe.
+
+🛠 **Mesal-ha:**
+    $ grub-mklayout -o /boot/grub/my_keyboard.gkb
+
+    🔹  In dastoor layout keyboard default ro migire va dar file "/boot/grub/my_keyboard.gkb" zakhire mikone.
+
+    $ grub-mklayout --with-xkbmap=fr -o /boot/grub/french.gkb
+
+    🔹  In dastoor layout keyboard faransevi (fr) ro migire va dar file "/boot/grub/french.gkb" zakhire mikone.
+
+✅ **Mesal sade:**
+
+    $ grub-mklayout --with-xkbmap=de -o /boot/grub/german.gkb
+   
+    🔹  Layout keyboard Almanee dorost mishe va dar file `/boot/grub/german.gkb` zakhire mishe.  Bad az an, shoma mitoonid in file ro dar configuration GRUB khodetoon estefade konid ta vaghti ke computer boot mishe, keyboardetoon layout Almanee dashte bashe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mklayout` command is used to generate a keyboard layout file for GRUB (the bootloader). This allows you to use a specific keyboard layout when interacting with the GRUB menu during system startup. It typically converts keyboard layouts from X11 format into a format usable by GRUB.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ℹ️ Display help information about the command.
+    🔹 `-o, --output=FILE`  --> 📤 The file where the keyboard layout will be saved.  The filename should usually end with ".gkb".
+    🔹 `--with-xkbmap=XKB_MAP` --> 🗺️ Use a specific XKB map (e.g., 'us' for the US keyboard layout). If this option isn't provided, the default XKB map is used.
+
+🛠 **Examples:**
+    $ grub-mklayout -o /boot/grub/my_keyboard.gkb
+
+    🔹 This command retrieves the default keyboard layout and saves it to the file "/boot/grub/my_keyboard.gkb".
+
+    $ grub-mklayout --with-xkbmap=fr -o /boot/grub/french.gkb
+
+    🔹 This command retrieves the French (fr) keyboard layout and saves it to the file "/boot/grub/french.gkb".
+
+✅ **Simple Example:**
+
+    $ grub-mklayout --with-xkbmap=de -o /boot/grub/german.gkb
+
+    🔹 A German keyboard layout is created and saved to the file `/boot/grub/german.gkb`.  Afterwards, you can configure GRUB to use this file, so your keyboard will use the German layout during boot.

@@ -1,0 +1,97 @@
+OK. I will create a user-friendly man page for the `ed` command, following all your instructions regarding structure, formatting, Finglish, and emojis.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ed` yek dastoor-e virayeshgar-e matni (text editor) ghadimi dar Unix/Linux ast. Baraye virayesh file-ha az tarigh-e terminal estefade mishavad. Kar kardan ba `ed` nesbat be virayeshgarhaye jadid mesle `nano` ya `vim` sakhttare, vali baraye script-ha va karhaye sade khub ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `ed filename`  --> 📝 Baz kardane yek file baraye virayesh.
+    🔹 `.`             --> 📍 Dar `ed`, noghte (.) be maanaaye khat-e fa'ali ast ke daran hastid.
+    🔹 `,p`            --> 📃 Chap kardane hameye khat-ha.
+    🔹 `w`             --> 💾 Zakhire kardane taghirat be file.
+    🔹 `q`             --> 👋 Kharooj az `ed`. Agar taghirati zakhire nashode bashad, peygham midahad.
+    🔹 `1,$s/old/new/g` --> 🔄 Jayeghozini hameye "old" ba "new" dar hameye khat-ha.
+
+🛠 **Mesal-ha:**
+
+    $ ed myfile.txt
+
+    🔹 Baz kardane file `myfile.txt` ba `ed`.
+
+    ,p
+
+    🔹 Chap kardane hameye matn-e file.
+
+    w
+
+    🔹 Zakhire kardane taghirat.
+
+    q
+
+    🔹 Kharooj az virayeshgar.
+
+✅ **Mesal sade:**
+
+    $ ed newfile.txt
+    a
+    Salam Donya!
+    .
+    ,p
+    Salam Donya!
+    w
+    14
+    q
+
+    🔹 Ijad va virayesh yek file jadid ba `ed`. Dastoor `a` (append) baraye ezafe kardane matn be file ast. Noghte (.) payane vared kardane matn ra neshon midahad.  `w` file ra zakhire mikonad va `q` az `ed` kharej mishavad.  `14` tedad horoofi ast ke dar file zakhire shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ed` command is a classic line-oriented text editor in Unix/Linux. It is used to edit files through the terminal.  Working with `ed` can be more challenging compared to modern editors like `nano` or `vim`, but it's useful for scripting and simple tasks.
+
+⚙️ **Options:**
+    🔹 `ed filename`  --> 📝 Open a file for editing.
+    🔹 `.`             --> 📍 In `ed`, the dot (.) represents the current line.
+    🔹 `,p`            --> 📃 Print all lines.
+    🔹 `w`             --> 💾 Save changes to the file.
+    🔹 `q`             --> 👋 Quit `ed`.  It will prompt if changes haven't been saved.
+    🔹 `1,$s/old/new/g` --> 🔄 Replace all occurrences of "old" with "new" on all lines.
+
+🛠 **Examples:**
+
+    $ ed myfile.txt
+
+    🔹 Opens the file `myfile.txt` with `ed`.
+
+    ,p
+
+    🔹 Prints the entire content of the file.
+
+    w
+
+    🔹 Saves the changes.
+
+    q
+
+    🔹 Exits the editor.
+
+✅ **Simple Example:**
+
+    $ ed newfile.txt
+    a
+    Hello World!
+    .
+    ,p
+    Hello World!
+    w
+    14
+    q
+
+    🔹 Creates and edits a new file with `ed`. The `a` (append) command is used to add text to the file. The dot (.) indicates the end of the input. `w` saves the file, and `q` quits `ed`. `14` is the number of characters written to the file.
+

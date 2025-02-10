@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gamma4scanimage` baraye ta'yin meghdare gamma baraye scan image az dastgahhaye scanner estefade mishavad. Gamma balance rangha ro rooye scan ta'sir mizare va ba in dastoor mitavan an ra behtar kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `--gamma float`  --> 🌈 Ta'yin meghdare gamma. Meghdar bayad yek adad ashaar dar rangeh mored nazar bashad.
+    🔹 `--red float`   --> ❤️ Ta'yin meghdare gamma baraye rang ghermez.
+    🔹 `--green float` --> 💚 Ta'yin meghdare gamma baraye rang sabz.
+    🔹 `--blue float`  --> 💙 Ta'yin meghdare gamma baraye rang abi.
+    🔹 `--help`        --> ℹ️ Namayesh rahnama va etela'at estefade.
+
+🛠 **Mesal-ha:**
+
+    $ gamma4scanimage --gamma 2.2
+
+    🔹 Ta'yin meghdare gamma baraye hameye rangha be 2.2
+
+    $ gamma4scanimage --red 1.8 --green 2.0 --blue 2.2
+
+    🔹 Ta'yin meghdare gamma joda baraye ranghaye ghermez, sabz va abi.
+
+✅ **Mesal sade:**
+
+    $ gamma4scanimage --gamma 1.0
+
+    🔹 Ta'yin meghdare gamma baraye hameye rangha be 1.0. In meghdar hich taghiri dar rangha ijad nemikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gamma4scanimage` command is used to set the gamma value for scanning images from scanner devices. Gamma affects the color balance on the scan, and this command helps to improve it.
+
+⚙️ **Options:**
+    🔹 `--gamma float`  --> 🌈 Sets the gamma value. The value should be a decimal number within the acceptable range.
+    🔹 `--red float`   --> ❤️ Sets the gamma value for the red color.
+    🔹 `--green float` --> 💚 Sets the gamma value for the green color.
+    🔹 `--blue float`  --> 💙 Sets the gamma value for the blue color.
+    🔹 `--help`        --> ℹ️ Displays help information and usage instructions.
+
+🛠 **Examples:**
+
+    $ gamma4scanimage --gamma 2.2
+
+    🔹 Sets the gamma value for all colors to 2.2
+
+    $ gamma4scanimage --red 1.8 --green 2.0 --blue 2.2
+
+    🔹 Sets the gamma values separately for the red, green, and blue colors.
+
+✅ **Simple Example:**
+
+    $ gamma4scanimage --gamma 1.0
+
+    🔹 Sets the gamma value for all colors to 1.0. This value does not make any changes in colors.

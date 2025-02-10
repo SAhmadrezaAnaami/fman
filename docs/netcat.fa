@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `netcat` (ya `nc`) mesle yek asaab-keshi Swiss baraye shabake ast. Mishe azash baraye baz kardane ertebat-ha, ferestadan-e data, va goosh dadan be port-ha estefade kard. Kheili karbordi baraye test kardane shabake, debug kardane, ya hatta transfer-e file-haye sade.
+
+⚙️ **Gozine-ha:**
+    🔹 `nc -l -p <port>`  --> 👂 Goosh dade be yek port-e khass baraye ertebat-ha-ye dakheli.
+    🔹 `nc <host> <port>`  --> 🔗 Ejad-e ertebat be yek host va port-e khass.
+    🔹 `nc -v`  --> 🗣️ Namayesh-e etela'at-e bishtar (verbose) dar mored-e amal-e dastoor.
+    🔹 `nc -z <host> <port>` --> 🔎 Check kardane inke aya yek port baz hast ya na, bedune ferestadan-e data.
+
+🛠 **Mesal-ha:**
+
+    $ nc -l -p 1234
+    
+    🔹 Goosh dade be port-e 1234 baraye ertebat.
+
+    $ nc google.com 80
+    GET / HTTP/1.0
+    
+    🔹 Ejad-e ertebat be google.com dar port-e 80 va ferestadan-e yek request-e HTTP sade.
+
+✅ **Mesal sade:**
+
+    $ nc -z localhost 22
+    Connection to localhost 22 port [tcp/*] succeeded!
+
+    🔹 Check mikonad aya port-e 22 (SSH) dar localhost baz hast ya na. Agar "succeeded!" chap shod, yani baz ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `netcat` (or `nc`) command is like a Swiss Army knife for networking. It can be used to open connections, send data, and listen on ports. It's very useful for network testing, debugging, or even simple file transfers.
+
+⚙️ **Options:**
+    🔹 `nc -l -p <port>`  --> 👂 Listen on a specific port for incoming connections.
+    🔹 `nc <host> <port>`  --> 🔗 Establish a connection to a specific host and port.
+    🔹 `nc -v`  --> 🗣️ Show more detailed (verbose) information about the command's operation.
+    🔹 `nc -z <host> <port>` --> 🔎 Check if a port is open without sending any data.
+
+🛠 **Examples:**
+
+    $ nc -l -p 1234
+    
+    🔹 Listens on port 1234 for connections.
+
+    $ nc google.com 80
+    GET / HTTP/1.0
+    
+    🔹 Connects to google.com on port 80 and sends a simple HTTP request.
+
+✅ **Simple Example:**
+
+    $ nc -z localhost 22
+    Connection to localhost 22 port [tcp/*] succeeded!
+
+    🔹 Checks if port 22 (SSH) is open on localhost. If "succeeded!" is printed, it means the port is open.

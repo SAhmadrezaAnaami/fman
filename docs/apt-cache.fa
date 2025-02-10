@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-cache` baraye jostojo, gereftan etela’at, va modiriyat cache package-ha dar sistem-haye Debian va Ubuntu estefade mishavad. In dastoor be shoma komak mikonad ta package-ha ra peyda konid, etela’ati dar mored anha kasb konid, va m مطمئن شوید که cache shoma moratab ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `apt-cache search [esm]`  --> 🔎 Jostojooye package-ha ba estefade az esm ya description.
+    🔹 `apt-cache show [esm_package]` --> 📜 Namayesh etela’at kamel dar morede yek package khass.
+    🔹 `apt-cache policy [esm_package]` --> 🚦 Namayesh version-haye nasb shode va mojood yek package va avvaliyat anha.
+    🔹 `apt-cache depends [esm_package]`  --> 🔗 Namayesh dependency-haye yek package.
+
+🛠 **Mesal-ha:**
+
+    $ apt-cache search python3
+
+    🔹 Jostojooye hameye package-haye mortabet ba python3.
+
+    $ apt-cache show firefox
+
+    🔹 Namayesh etela’at kamel dar morede package firefox.
+
+✅ **Mesal sade:**
+
+    $ apt-cache policy git
+
+    🔹 Version-haye nasb shode va mojood git ra namayesh midahad, be hamrah avvaliyat anha baraye nasb.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-cache` command is used for searching, getting information, and managing the package cache on Debian and Ubuntu based systems. It helps you find packages, get details about them, and ensure your cache is up-to-date.
+
+⚙️ **Options:**
+    🔹 `apt-cache search [name]` --> 🔎 Search for packages using a name or description.
+    🔹 `apt-cache show [package_name]` --> 📜 Show detailed information about a specific package.
+    🔹 `apt-cache policy [package_name]` --> 🚦 Show installed and available versions of a package and their priorities.
+    🔹 `apt-cache depends [package_name]` --> 🔗 Show the dependencies of a package.
+
+🛠 **Examples:**
+
+    $ apt-cache search python3
+
+    🔹 Search for all packages related to python3.
+
+    $ apt-cache show firefox
+
+    🔹 Show complete information about the firefox package.
+
+✅ **Simple Example:**
+
+    $ apt-cache policy git
+
+    🔹 Displays the installed and available versions of git, along with their installation priority.

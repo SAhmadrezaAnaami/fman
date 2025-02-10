@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hardening-check` yek abzar baraye baresi amniyati-e system-e shoma ast. In dastoor config-ha va setting-haye mokhtalef-ra check mikonad ta motmaen shavad ke system-e shoma az nazar amniyati dar vaziyate khobi gharar darad. In dastoor be shoma komak mikonad nokate zaef-ra peyda konid va behtar amniyat-e system-e khod-ra ta'min konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hardening-check` --> 🔎 Check kardan system ba estandardhaye pishfarz.
+    🔹 `hardening-check --all` --> 💯 Check kardan hameye test-ha, hata anha ke tol mikeshnd.
+    🔹 `hardening-check --report=report.txt` --> 📝 Save kardan natije-ha dar yek file ba name 'report.txt'.
+    🔹 `hardening-check --only=test1,test2` --> ✅ Faghat run kardan test-haye moshakhas (masalan: test1, test2).
+    🔹 `hardening-check --skip=test3,test4` --> 🚫 Skip kardan test-haye moshakhas (masalan: test3, test4).
+
+🛠 **Mesal-ha:**
+
+    $ hardening-check
+
+    🔹 Baresi amniyati system ba estandardhaye pishfarz.
+
+    $ hardening-check --all --report=full_report.txt
+
+    🔹 Run kardan hameye test-ha va save kardan natije-ha dar file `full_report.txt`.
+
+✅ **Mesal sade:**
+
+    $ hardening-check --only=ssh,firewall
+
+    🔹 Faghat test-haye marboot be `ssh` va `firewall` run mishavand. In komak mikonad agar bekhahid faghat yek ghesmat-e system-ra baresi konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hardening-check` command is a tool for assessing the security posture of your system. It checks various configurations and settings to ensure your system meets security best practices.  This command helps you identify potential weaknesses and improve the overall security of your system.
+
+⚙️ **Options:**
+    🔹 `hardening-check` --> 🔎 Check the system against default security standards.
+    🔹 `hardening-check --all` --> 💯 Run all tests, including those that might take longer.
+    🔹 `hardening-check --report=report.txt` --> 📝 Save the results to a file named 'report.txt'.
+    🔹 `hardening-check --only=test1,test2` --> ✅ Run only the specified tests (e.g., test1, test2).
+    🔹 `hardening-check --skip=test3,test4` --> 🚫 Skip the specified tests (e.g., test3, test4).
+
+🛠 **Examples:**
+
+    $ hardening-check
+
+    🔹 Perform a security check of the system using default standards.
+
+    $ hardening-check --all --report=full_report.txt
+
+    🔹 Run all tests and save the results to the file `full_report.txt`.
+
+✅ **Simple Example:**
+
+    $ hardening-check --only=ssh,firewall
+
+    🔹 Only the tests related to `ssh` and `firewall` are run. This is useful if you want to focus on a specific area of the system.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `driverless-fax` baraye ersal va daryaft fax az tarigh terminal, bedoon niaz be nasb driver-haye khas estefade mishavad. In dastoor az protocol-haye standard interneti mesle IPP (Internet Printing Protocol) baraye ertebat ba device fax estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `driverless-fax send --recipient <shomare-fax> <file>` --> 📤 Ersal yek file be yek shomare fax moshakhas.
+    🔹 `driverless-fax receive` --> 📥 Daryaft fax-haye vared shode (agar device fax ghabeliat daryaft ro dashte bashe).
+    🔹 `driverless-fax list-devices` --> 🔎 List kardan device haye fax-e dastras dar shabake.
+    🔹 `driverless-fax --help` --> ❓ Namayesh rahnamaye dastoor va gozine-haye digar.
+
+🛠 **Mesal-ha:**
+
+    $ driverless-fax send --recipient 123456789 mydocument.pdf
+
+    🔹 Ersal file `mydocument.pdf` be shomare fax `123456789`.
+
+    $ driverless-fax receive
+
+    🔹 Daryaft fax-haye vared shode va zakhire anha.
+
+✅ **Mesal sade:**
+
+    $ driverless-fax list-devices
+
+    🔹  Liste device haye fax-e dastras dar shabake ra namayesh midahad. Shoma mitoonid az in list baraye moshakhas kardan device mored nazar dar zaman ersal ya daryaft estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `driverless-fax` command is used to send and receive faxes from the terminal without needing specific drivers. It uses standard internet protocols like IPP (Internet Printing Protocol) to communicate with fax devices.
+
+⚙️ **Options:**
+    🔹 `driverless-fax send --recipient <fax-number> <file>` --> 📤 Send a file to a specific fax number.
+    🔹 `driverless-fax receive` --> 📥 Receive incoming faxes (if the fax device supports receiving).
+    🔹 `driverless-fax list-devices` --> 🔎 List available fax devices on the network.
+    🔹 `driverless-fax --help` --> ❓ Display command help and other options.
+
+🛠 **Examples:**
+
+    $ driverless-fax send --recipient 123456789 mydocument.pdf
+
+    🔹 Sends the file `mydocument.pdf` to the fax number `123456789`.
+
+    $ driverless-fax receive
+
+    🔹 Receives incoming faxes and saves them.
+
+✅ **Simple Example:**
+
+    $ driverless-fax list-devices
+
+    🔹 Displays a list of available fax devices on the network. You can use this list to specify the desired device when sending or receiving faxes.

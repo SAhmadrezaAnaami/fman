@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lprm` baraye hazf kardan (remove) kar-ha az saf-e chap (print queue) estefade mishavad. Shoma mitavanid yek ya chand kar ra ba estefade az shomareye kar (job number) hazf konid. Agar shoma modir (administrator) bashid, mitavanid kare digaran ra niz hazf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lprm [shomare-kar...]` --> 🗑️ Hazf kardane karha az saf-e chap ba shomareye moshakhas.
+    🔹 `lprm -` --> 🚫 Hazf kardane kare fa'al (active job). (Faghat baraye modiran mojaz ast.)
+
+🛠 **Mesal-ha:**
+
+    $ lprm 123
+
+    🔹 Hazf kardane kari ke shomareye an 123 ast az saf-e chap.
+
+    $ lprm 123 456 789
+
+    🔹 Hazf kardane karhaii ba shomareye 123, 456, va 789 az saf-e chap.
+
+✅ **Mesal sade:**
+
+    $ lprm 
+
+    🔹  Agar shomarei dade nashavad, kare fa'al shoma hazf mishavad. Agar kare fa'al nadashte bashid, hich kari anjam nemishavad va peyghami dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lprm` command is used to remove jobs from the print queue. You can remove one or more jobs by specifying their job numbers. If you are an administrator, you can remove other users' jobs as well.
+
+⚙️ **Options:**
+    🔹 `lprm [job_number...]` --> 🗑️ Removes specific jobs from the print queue by their job numbers.
+    🔹 `lprm -` --> 🚫 Removes the currently active job. (Only permitted for administrators).
+
+🛠 **Examples:**
+
+    $ lprm 123
+
+    🔹 Removes the job with job number 123 from the print queue.
+
+    $ lprm 123 456 789
+
+    🔹 Removes jobs with job numbers 123, 456, and 789 from the print queue.
+
+✅ **Simple Example:**
+
+    $ lprm
+
+    🔹 If no job number is given, your currently active job is removed. If you have no active job, nothing happens, and no error message is shown.

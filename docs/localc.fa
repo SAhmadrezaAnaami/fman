@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `localc` yek mashin hesab sade dar terminal ast. Ba estefade az in dastoor, shoma mitavanid mohasebat riazi ra be asani anjam dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `localc 'expression'` --> ➕➖➗✖️ Mohasebeye yek expression riazi. Bayad expression ra dar dakhel '' gharar dahid.
+    🔹 `localc` --> ⌨️ Baz kardane yek mashin hesab interactive.
+
+🛠 **Mesal-ha:**
+
+    $ localc '2 + 2'
+
+    🔹 Natije-ye 2 + 2 ra chap mikonad.
+
+    $ localc '3 * (4 + 5)'
+
+    🔹 Natije-ye 3 * (4 + 5) ra chap mikonad.
+
+    $ localc
+
+    🔹 Mashin hesab interactive ra baz mikonad. Dar in halat mitavanid expression-ha ra vared konid va natije ra bebinid.
+
+✅ **Mesal sade:**
+
+    $ localc '10 / 2'
+
+    🔹 Natije-ye taghsim 10 bar 2 chap mishavad (5.0).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `localc` command is a simple calculator in the terminal. Using this command, you can easily perform mathematical calculations.
+
+⚙️ **Options:**
+    🔹 `localc 'expression'` --> ➕➖➗✖️ Calculate a mathematical expression. You must enclose the expression in ''.
+    🔹 `localc` --> ⌨️ Opens an interactive calculator.
+
+🛠 **Examples:**
+
+    $ localc '2 + 2'
+
+    🔹 Prints the result of 2 + 2.
+
+    $ localc '3 * (4 + 5)'
+
+    🔹 Prints the result of 3 * (4 + 5).
+
+    $ localc
+
+    🔹 Opens an interactive calculator. In this mode, you can enter expressions and see the result.
+
+✅ **Simple Example:**
+
+    $ localc '10 / 2'
+
+    🔹 Prints the result of dividing 10 by 2 (5.0).

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk4-encode-symbolic-svg` baraye tabdil dadan file-haye SVG be format-e symbolic baraye estefade dar theme-haye GTK4 be kar miravad. In dastoor SVG ra mikhanad va yek version-e optimized az an ra baraye estefade be عنوان yek icon-e symbolic tahvil midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--input=FILE.svg`  --> 📁 File SVG-i ke bayad encode shavad ra moshakhas mikonad.
+    🔹 `--output=FILE.xml` --> 💾 Esme file kharoji ra moshakhas mikonad. Agar zekr nashavad, kharoji dar stdout chap mishavad.
+    🔹 `--version`        --> ℹ️  Version-e `gtk4-encode-symbolic-svg` ra namayesh midahad.
+    🔹 `--help`           --> ❓ Rahnamayi estefade az dastoor ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gtk4-encode-symbolic-svg --input=application-x-gedit-symbolic.svg --output=application-x-gedit-symbolic.xml
+
+    🔹  File `application-x-gedit-symbolic.svg` ra encode mikonad va natije ra dar `application-x-gedit-symbolic.xml` zakhire mikonad.
+
+    $ gtk4-encode-symbolic-svg --input=zoom-in-symbolic.svg
+
+    🔹 File `zoom-in-symbolic.svg` ra encode mikonad va kharoji ra dar terminal chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ gtk4-encode-symbolic-svg --input=my-icon.svg > my-icon-symbolic.xml
+
+    🔹 File `my-icon.svg` ra encode mikonad va kharoji ra be file `my-icon-symbolic.xml` redirect mikonad. In yek rah-e asan baraye zakhire kardan natije dar yek file ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk4-encode-symbolic-svg` command is used to convert SVG files to a symbolic format for use in GTK4 themes. It reads an SVG and outputs an optimized version for use as a symbolic icon.
+
+⚙️ **Options:**
+    🔹 `--input=FILE.svg`  --> 📁 Specifies the SVG file to encode.
+    🔹 `--output=FILE.xml` --> 💾 Specifies the output file name. If not specified, output is printed to stdout.
+    🔹 `--version`        --> ℹ️  Displays the version of `gtk4-encode-symbolic-svg`.
+    🔹 `--help`           --> ❓ Displays usage help.
+
+🛠 **Examples:**
+
+    $ gtk4-encode-symbolic-svg --input=application-x-gedit-symbolic.svg --output=application-x-gedit-symbolic.xml
+
+    🔹 Encodes the `application-x-gedit-symbolic.svg` file and saves the result to `application-x-gedit-symbolic.xml`.
+
+    $ gtk4-encode-symbolic-svg --input=zoom-in-symbolic.svg
+
+    🔹 Encodes the `zoom-in-symbolic.svg` file and prints the output to the terminal.
+
+✅ **Simple Example:**
+
+    $ gtk4-encode-symbolic-svg --input=my-icon.svg > my-icon-symbolic.xml
+
+    🔹 Encodes the `my-icon.svg` file and redirects the output to the `my-icon-symbolic.xml` file. This is a convenient way to save the result to a file.

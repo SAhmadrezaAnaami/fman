@@ -1,0 +1,53 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ld` (linker) baraye vasl kardane file-haye object (ke az code source ba compiler sakhte shode) be yek file executable estefade mishavad. Yani, barname-haye shoma ke az chand ta file tashkil shodan, ba in dastoor be yek file khele executable tabdil mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `ld -o <esme_file>`  --> 📝 Esme file executable-e khorooji ro moshakhas mikone.
+    🔹 `ld -l<library>`  --> 📚 Library haye lazem ro link mikone (masalan, `-lm` baraye math library).
+    🔹 `ld -L<directory>` --> 📂 Be `ld` mige ke library-ha ro dar kodom pooshe-ha begarde.
+    🔹 `ld -r`           --> 📦 File object e qabel e link e dobare misaze (relocatable object file).
+
+🛠 **Mesal-ha:**
+
+    $ ld -o myprogram main.o function.o
+    🔹 Do ta file object (`main.o` va `function.o`) ro vasl mikone va yek file executable be esme `myprogram` misaze.
+
+    $ ld -o myprogram main.o -lm
+    🔹 File object `main.o` ro ba math library link mikone va file executable `myprogram` ro misaze.
+
+✅ **Mesal sade:**
+
+    $ ld -o hello hello.o
+    🔹 File object `hello.o` ro be yek file executable be esme `hello` tabdil mikone. Agar error dad, shayad library-haye standard lazem bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ld` (linker) command is used to combine object files (created from source code by a compiler) into a single executable file.  Essentially, it takes multiple files that make up your program and links them together into one runnable file.
+
+⚙️ **Options:**
+    🔹 `ld -o <filename>`   --> 📝 Specifies the output executable file name.
+    🔹 `ld -l<library>`   --> 📚 Links the specified library (e.g., `-lm` for the math library).
+    🔹 `ld -L<directory>`  --> 📂 Tells `ld` where to search for libraries.
+    🔹 `ld -r`             --> 📦 Creates a relocatable object file suitable for further linking.
+
+🛠 **Examples:**
+
+    $ ld -o myprogram main.o function.o
+    🔹 Links two object files (`main.o` and `function.o`) and creates an executable file named `myprogram`.
+
+    $ ld -o myprogram main.o -lm
+    🔹 Links the `main.o` object file with the math library and creates an executable file named `myprogram`.
+
+✅ **Simple Example:**
+
+    $ ld -o hello hello.o
+    🔹 Creates an executable file named `hello` from the object file `hello.o`. If you get errors, you may need to link standard libraries.
+

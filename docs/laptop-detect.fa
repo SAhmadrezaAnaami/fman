@@ -1,0 +1,53 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `laptop-detect` baraye inke motmaen shim shoma az laptop estefade mikonid ya na be kar mirevad. Age rooye laptop ejra beshe, yek paigham chap mikone.  
+
+⚙️ **Gozine-ha:**
+    🔹 Heech gozine khas nadare. Tool sadeyeist.
+
+🛠 **Mesal-ha:**
+
+    $ laptop-detect
+    
+    🔹 Agar rooye laptop ejra beshe, yek paigham chap mikone. Agar rooye desktop ejra beshe, hichi chap nemikone (yani output nadare).
+    
+    $ laptop-detect && echo "Shoma az laptop estefade mikonid."
+    
+    🔹 Agar `laptop-detect` ba movafaghiat ejra beshe (yani rooye laptop bashe), paigham "Shoma az laptop estefade mikonid." chap mishe.
+
+✅ **Mesal sade:**
+
+    $ laptop-detect || echo "Shoma az desktop estefade mikonid."
+
+    🔹 Agar `laptop-detect` ba movafaghiat ejra nashe (yani rooye desktop bashe), paigham "Shoma az desktop estefade mikonid." chap mishe.  Az `||` baraye ejraye dastoor dovom dar surati ke dastoor aval movafagh nashode estefade mikonim.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `laptop-detect` command is used to determine if the system is running on a laptop. If it detects a laptop, it prints a message.
+
+⚙️ **Options:**
+    🔹 It doesn't have specific options. It's a straightforward tool.
+
+🛠 **Examples:**
+
+    $ laptop-detect
+    
+    🔹 If run on a laptop, it prints a message to the terminal. If run on a desktop, it prints nothing (no output).
+
+    $ laptop-detect && echo "You are using a laptop."
+    
+    🔹 If `laptop-detect` runs successfully (i.e., it's on a laptop), the message "You are using a laptop." is printed.
+
+✅ **Simple Example:**
+
+    $ laptop-detect || echo "You are using a desktop."
+
+    🔹 If `laptop-detect` fails (i.e., it's on a desktop), the message "You are using a desktop." is printed. We use `||` to execute the second command only if the first command fails.
+

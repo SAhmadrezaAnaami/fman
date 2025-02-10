@@ -1,0 +1,45 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nm-connection-editor` baraye baz kardane ye panjere graphique (GUI) baraye modiriyat kardan etesalate shabake (network connections) estefade mishavad. Shoma mitavanid etesalate jadid eijad konid, etesalate mojood ra tagheer dahid, ya anha ra hazf konid. In barname baraye karbarani ke rahati interface graphique ra tarjih midahand kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 Heech gozine khasi nist. Dastoor sade ast.
+
+🛠 **Mesal-ha:**
+
+    $ nm-connection-editor
+
+    🔹 Panjere editor etesalate shabake ra baz mikonad.
+
+✅ **Mesal sade:**
+
+    $ nm-connection-editor &
+
+    🔹 Dastoor ra dar pas-zamine (background) ejra mikonad ta terminal ra azad negah darad.  Amper-sand (&) dar akhar dastoor yani inke dastoor dar background run beshe va terminal dige montazer tamam shodanesh namooneh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nm-connection-editor` command opens a graphical user interface (GUI) for managing network connections. You can create new connections, modify existing ones, or delete them. This tool is especially helpful for users who prefer the convenience of a graphical interface.
+
+⚙️ **Options:**
+    🔹 This command doesn't have specific options. It's straightforward.
+
+🛠 **Examples:**
+
+    $ nm-connection-editor
+
+    🔹 Opens the network connections editor window.
+
+✅ **Simple Example:**
+
+    $ nm-connection-editor &
+
+    🔹 Runs the command in the background, keeping the terminal free. The ampersand (&) at the end means the command runs in the background and the terminal doesn't wait for it to finish.
+

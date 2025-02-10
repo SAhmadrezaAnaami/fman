@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `file-roller` baraye baz kardan, sakhtan, va tagheer dadan file-haye zip shode (archive) estefade mishavad. In barname mesle yek sandogh baraye file-haye ziadi ast ke ba ham jam shodeand ta fazaye kamtari begirand ya rahattar share shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--extract-to=PATH`  --> 📤 File-haye dakhele archive ra dar yek poosheye moshakhas baz mikonad (extract mikonad).  Agar `PATH` ra nadeed, dar haman directory-ye fa'ali ke hastid baz mishavad.
+    🔹 `--add-to=ARCHIVE`  --> ➕ File-haye entekhab shode ra be yek archive ezafe mikonad.  Agar `ARCHIVE` vojood nadashte bashad, yek archive jadid misazad.
+    🔹 `--help` --> ❓ Namayeshe rahnamaye dastoor `file-roller`.
+
+🛠 **Mesal-ha:**
+
+    $ file-roller archive.zip
+
+    🔹 Baz kardane file-e `archive.zip` ba estefade az barnameye `file-roller`.
+
+    $ file-roller --extract-to=/tmp archive.tar.gz
+
+    🔹 Baz kardane file-e `archive.tar.gz` dar poosheye `/tmp`.
+
+✅ **Mesal sade:**
+
+    $ file-roller --add-to=my_archive.zip file1.txt file2.txt
+
+    🔹 File-haye `file1.txt` va `file2.txt` be archive-e `my_archive.zip` ezafe mishavand.  Agar `my_archive.zip` vojood nadashte bashad, yek archive jadid ba in nam sakhte mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `file-roller` command is used to open, create, and modify archive files (like zip files).  It acts as a container for multiple files, allowing them to be compressed for smaller size or easier sharing.
+
+⚙️ **Options:**
+    🔹 `--extract-to=PATH`  --> 📤 Extracts the files from the archive to a specified directory `PATH`. If `PATH` is not provided, it extracts to the current working directory.
+    🔹 `--add-to=ARCHIVE`  --> ➕ Adds selected files to an archive.  If `ARCHIVE` doesn't exist, it creates a new archive.
+    🔹 `--help` --> ❓ Displays the help message for the `file-roller` command.
+
+🛠 **Examples:**
+
+    $ file-roller archive.zip
+
+    🔹 Opens the `archive.zip` file using the `file-roller` application.
+
+    $ file-roller --extract-to=/tmp archive.tar.gz
+
+    🔹 Extracts the contents of `archive.tar.gz` into the `/tmp` directory.
+
+✅ **Simple Example:**
+
+    $ file-roller --add-to=my_archive.zip file1.txt file2.txt
+
+    🔹 Adds the files `file1.txt` and `file2.txt` to the archive `my_archive.zip`. If `my_archive.zip` does not exist, a new archive with that name is created.

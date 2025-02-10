@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-shell` barnameye asli (core) grafiki dar GNOME desktop environment ast. Masooliyat namayeshe panjere-ha, panel-ha, dastoorha, va digar komponent haye UI ra dar GNOME desktop environment darad.  Bezabane sade tar, ghalb va maghz GNOME hamin `gnome-shell` ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`      --> ℹ️ Namayeshe version `gnome-shell` nasb shode.
+    🔹 `--replace`      --> 🔄 Eejade yek instance tazeye `gnome-shell`, jaygozine instance ghadimi mishavad (baraye debug kardan mofid ast).
+    🔹 `--display=DISPLAY` --> 🖥️  Entkhabhe display (maslan :0, :1) ke `gnome-shell` rooye an ejra shavad.
+    🔹 `--mode=MODE`    --> 🚦 Ejraye `gnome-shell` dar yek mode khas (maslan, `user` ya `lock`).
+
+🛠 **Mesal-ha:**
+
+    $ gnome-shell --version
+
+    🔹 Namayeshe version `gnome-shell`
+
+    $ gnome-shell --replace &
+
+    🔹 Eejade yek instance tazeye `gnome-shell` dar background. Agar moshkeli dar system pish amad baraye test kardan mofid ast.
+
+✅ **Mesal sade:**
+
+    $ gnome-shell &
+
+    🔹 `gnome-shell` ra ejra mikonad. Agar ghablan ejra nashode bashad, GNOME desktop environment ra shoru mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-shell` is the core graphical shell of the GNOME desktop environment. It is responsible for managing windows, panels, application launching, and other UI elements within the GNOME desktop environment. Simply put, `gnome-shell` is the heart and brain of GNOME.
+
+⚙️ **Options:**
+    🔹 `--version`      --> ℹ️  Displays the installed version of `gnome-shell`.
+    🔹 `--replace`      --> 🔄 Creates a new instance of `gnome-shell`, replacing the existing one (useful for debugging).
+    🔹 `--display=DISPLAY` --> 🖥️ Selects the display (e.g., :0, :1) on which `gnome-shell` should run.
+    🔹 `--mode=MODE`    --> 🚦  Runs `gnome-shell` in a specific mode (e.g., `user` or `lock`).
+
+🛠 **Examples:**
+
+    $ gnome-shell --version
+
+    🔹 Displays the version of `gnome-shell`
+
+    $ gnome-shell --replace &
+
+    🔹 Creates a new instance of `gnome-shell` in the background. Useful for testing if issues arise in the system.
+
+✅ **Simple Example:**
+
+    $ gnome-shell &
+
+    🔹 Runs `gnome-shell`. If it's not already running, it starts the GNOME desktop environment.

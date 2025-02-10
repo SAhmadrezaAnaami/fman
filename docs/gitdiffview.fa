@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gitdiffview` baraye didan taghirat dar git repository estefade mishavad. In dastoor be shoma komak mikonad ke taghirat ra dar file-ha va stageshode va nashode bebinid. Ba estefade az in dastoor, mitavanid taghirat ra ghabl az commit kardan check konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `git diff`      --> 📝 Namayesh taghirate stag nashode (unstage shode)
+    🔹 `git diff --staged` --> 📦 Namayesh taghirate stage shode
+    🔹 `git diff HEAD`  --> 🔍 Namayesh taghirat az akharin commit
+    🔹 `git diff branch1 branch2` --> 🌳 Moghayese taghirat bein do shakh
+
+🛠 **Mesal-ha:**
+
+    $ git diff
+
+    🔹 Namayesh taghirati ke hanuz stage nashode and.
+
+    $ git diff --staged
+
+    🔹 Namayesh taghirati ke stage shode and vali hanuz commit nashode and.
+
+✅ **Mesal sade:**
+
+    $ git diff README.md
+
+    🔹 Namayesh taghirati ke dar file README.md ijad shode va hanuz stage nashode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gitdiffview` command is used to view changes in a git repository. It helps you see modifications in both staged and unstaged files. This command allows you to check changes before committing.
+
+⚙️ **Options:**
+    🔹 `git diff`             --> 📝 Show unstaged changes
+    🔹 `git diff --staged`    --> 📦 Show staged changes
+    🔹 `git diff HEAD`        --> 🔍 Show changes since the last commit
+    🔹 `git diff branch1 branch2` --> 🌳 Compare changes between two branches
+
+🛠 **Examples:**
+
+    $ git diff
+
+    🔹 Display changes that have not been staged.
+
+    $ git diff --staged
+
+    🔹 Display changes that have been staged but not yet committed.
+
+✅ **Simple Example:**
+
+    $ git diff README.md
+
+    🔹 Display changes made to the README.md file that are not yet staged.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `iecset` baraye tagheer daadan ya negaah daashtan parametrhaaye hardware monitor dar linux estefaade mishavad. In dastoor be shomaa ejazeh meedahad keh sensorhaaye temperature, voltage va speed fan ra kontrol konid. In dastoor bishtar bar rooye systemhaaye embeded estefaade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `iecset get` --> 🔍 Gereftan meghdar parametrhaa az device
+    🔹 `iecset set ADDRESS VALUE` --> ✍️ Set kardan yek meghdar baraye yek address khass
+    🔹 `iecset detect` --> 🕵️ Peidaa kardan device haye mojud
+
+🛠 **Mesal-ha:**
+
+    $ iecset get 0x20
+
+    🔹 Gereftan meghdare address 0x20.
+
+    $ iecset set 0x30 0x05
+
+    🔹 Set kardan meghdare 0x05 baraye address 0x30.
+
+✅ **Mesal sade:**
+
+    $ iecset detect
+
+    🔹 List kardan hameye device haye mojud keh iecset mitavanad ba anha rabete bargharar konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `iecset` command is used to read and set hardware monitor parameters in Linux. It allows you to control temperature sensors, voltages, and fan speeds. This command is more commonly used in embedded systems.
+
+⚙️ **Options:**
+    🔹 `iecset get` --> 🔍 Get the value of parameters from the device
+    🔹 `iecset set ADDRESS VALUE` --> ✍️ Set a specific value at a given address.
+    🔹 `iecset detect` --> 🕵️ Detect available devices
+
+🛠 **Examples:**
+
+    $ iecset get 0x20
+
+    🔹 Get the value at address 0x20.
+
+    $ iecset set 0x30 0x05
+
+    🔹 Set the value 0x05 at address 0x30.
+
+✅ **Simple Example:**
+
+    $ iecset detect
+
+    🔹 List all devices that `iecset` can communicate with.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `jq` yek abzar command-line ast baraye process kardan file-haye JSON. Ba `jq`, shoma mitavanid etela'at ra az JSON extract konid, taghir dahid, va moratab konid.  Mesle `sed` ya `awk` baraye JSON kar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `jq '.' file.json`   --> 👀 Namayesh kole file JSON.
+    🔹 `jq '.key' file.json` --> 🔑 Extract kardan value az yek key khass.
+    🔹 `jq '.[]' file.json`  --> 🔄 Iteration ruye array-ha.
+    🔹 `jq '. | keys' file.json` --> 🗝️ Namayesh hameye key-haye yek object.
+    🔹 `jq '.[] | .name' file.json` --> 🏷️ Extract kardan field `name` az har object dar yek array.
+
+🛠 **Mesal-ha:**
+
+    $ jq '.' data.json
+
+    🔹 Namayesh kole file `data.json` dar terminal.
+
+    $ jq '.users[0].name' data.json
+
+    🔹 Extract kardan `name` az avalin user dar array `users` dar file `data.json`.
+
+✅ **Mesal sade:**
+
+    $ jq '.[] | .age | sort' data.json
+
+    🔹 Agar `data.json` shamel list-e object-ha ba field `age` bashad, in dastoor `age`-haye hameye object-ha ra extract mikonad va moratab mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `jq` command is a command-line tool for processing JSON files. With `jq`, you can extract, transform, and filter data from JSON.  It works like `sed` or `awk` but for JSON.
+
+⚙️ **Options:**
+    🔹 `jq '.' file.json`   --> 👀 Display the entire JSON file.
+    🔹 `jq '.key' file.json` --> 🔑 Extract the value associated with a specific key.
+    🔹 `jq '.[]' file.json`  --> 🔄 Iterate over elements in an array.
+    🔹 `jq '. | keys' file.json` --> 🗝️ Display all the keys in a JSON object.
+    🔹 `jq '.[] | .name' file.json` --> 🏷️ Extract the `name` field from each object in an array.
+
+🛠 **Examples:**
+
+    $ jq '.' data.json
+
+    🔹 Displays the entire `data.json` file in the terminal.
+
+    $ jq '.users[0].name' data.json
+
+    🔹 Extracts the `name` of the first user in the `users` array in the `data.json` file.
+
+✅ **Simple Example:**
+
+    $ jq '.[] | .age | sort' data.json
+
+    🔹 If `data.json` contains a list of objects with an `age` field, this command extracts the ages from all objects and sorts them.

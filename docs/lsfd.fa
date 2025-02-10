@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsof` baraye liste kardan file-haye baz shode estefade mishavad. Yani, neshon midahad kodam process-ha kodam file-ha ra baz karde-and. Az in dastoor mitavanid baraye peyda kardan process-haye mohem ke file-haye khasi ra dar hale estefade hastand estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsof -i`  --> 🌐 Liste kardan soket-haye interneti baz shode (port-ha)
+    🔹 `lsof -u user_name`  --> 👤 Liste kardan file-haye baz shode tavasote yek karbar khas
+    🔹 `lsof /path/to/file`  --> 📁 Liste kardan process-haye baz karde yek file ya directory khasi ra
+    🔹 `lsof -p PID` --> 🔍 Liste kardan file-haye baz shode tavasote process ba ID moshakhas
+
+🛠 **Mesal-ha:**
+
+    $ lsof
+
+    🔹 Namayesh hameye file-haye baz shode tavasote hameye process-ha.
+
+    $ lsof -i :80
+
+    🔹 Namayesh process-hayei ke be port 80 gosh midahand (web server-ha).
+
+    $ lsof /var/log/syslog
+
+    🔹 Namayesh process-hayei ke file `/var/log/syslog` ra baz karde-and.
+
+✅ **Mesal sade:**
+
+    $ lsof -u root
+
+    🔹 Liste hameye file-haye baz shode tavasote karbare `root` neshon dade mishavad. In komak mikonad be didan che chiz-haii dar hale ejra ba dastrasi haye `root` ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsof` command lists open files. Essentially, it shows which processes have which files open. You can use it to find processes locking important files or listening on specific network ports.
+
+⚙️ **Options:**
+    🔹 `lsof -i`  --> 🌐 List open internet sockets (ports)
+    🔹 `lsof -u user_name`  --> 👤 List files opened by a specific user
+    🔹 `lsof /path/to/file`  --> 📁 List processes that have a specific file or directory open
+    🔹 `lsof -p PID` --> 🔍 List files opened by the process with the specified ID
+
+🛠 **Examples:**
+
+    $ lsof
+
+    🔹 Shows all open files by all processes.
+
+    $ lsof -i :80
+
+    🔹 Shows processes listening on port 80 (web servers).
+
+    $ lsof /var/log/syslog
+
+    🔹 Shows processes that have the file `/var/log/syslog` open.
+
+✅ **Simple Example:**
+
+    $ lsof -u root
+
+    🔹 Lists all files opened by the `root` user. This helps to see what is running with `root` privileges.

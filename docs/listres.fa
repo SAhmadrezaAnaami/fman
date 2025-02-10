@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `listres` baraye didane resource-haye X server (mesle font-ha va rang-ha) estefade mishavad. In dastoor etela'at ra az X server migirad va aan ra namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-all`  --> 👀 Namayesh hameye resource-ha, hata anha ke default hastand.
+    🔹 `-fonts`  --> 🖋️ Fagat list font-ha ra namayesh bede.
+    🔹 `-colors` --> 🎨 Fagat list rang-ha ra namayesh bede.
+    🔹 `-display <hostname>:<displaynumber>` --> 🖥️ Be yek X display khass vasl sho. Agar display ghabel dastras nabashad, az in estefade konid.
+
+🛠 **Mesal-ha:**
+
+    $ listres
+
+    🔹 Namayesh resource-haye X server default.
+
+    $ listres -all -fonts
+
+    🔹 Namayesh hameye font-ha, hata font-haye default.
+
+✅ **Mesal sade:**
+
+    $ listres -fonts | grep "Times"
+
+    🔹 List hameye font-haye X server ra namayesh mide ke dar nameshoon "Times" darand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `listres` command is used to list X server resources, such as fonts and colors. It retrieves information from the X server and displays it.
+
+⚙️ **Options:**
+    🔹 `-all`  --> 👀 Display all resources, including defaults.
+    🔹 `-fonts`  --> 🖋️ Only list fonts.
+    🔹 `-colors` --> 🎨 Only list colors.
+    🔹 `-display <hostname>:<displaynumber>` --> 🖥️ Connect to a specific X display. Use this if the default display is not accessible.
+
+🛠 **Examples:**
+
+    $ listres
+
+    🔹 Display the default X server resources.
+
+    $ listres -all -fonts
+
+    🔹 Display all fonts, including default fonts.
+
+✅ **Simple Example:**
+
+    $ listres -fonts | grep "Times"
+
+    🔹 Lists all X server fonts that contain "Times" in their name.
+

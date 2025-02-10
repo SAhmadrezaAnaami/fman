@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installmime` baraye sabt kardane file-haye MIME (Multipurpose Internet Mail Extensions) dar directory-haye system estefade mishavad. In dastoor etela'at ra az file-haye `debian/mime.install` mikhwanad va file-haye MIME ra dar jaye monaseb install mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n` --> 🚫 Install nakardan file-ha, faghat emtehan kardane karha
+    🔹 `--name-match` --> 🔤 Faghat file-haee ke ba name haye moshakhas motabeqat darand install shavad.
+    🔹 `--no-scripts` --> 📜 Script-haye `postinst` va `postrm` ra ejra nakonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installmime
+
+    🔹 File-haye MIME ra az `debian/mime.install` be directory-haye system install mikonad.
+
+    $ dh_installmime --name-match="*.txt"
+
+    🔹 Faghat file-haye MIME ba pasvand ".txt" ra install mikonad.
+
+✅ **Mesal sade:**
+
+    Agar shoma yek file dashte bashid be name `debian/mime.install` ke dar an line zir vojood darad:
+
+    text/plain  usr/share/mime/packages/
+
+    Ba ejraye `dh_installmime`, dastoor file-haye `text/plain` ra be directory `usr/share/mime/packages/` install khahad kard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installmime` command is used to register MIME (Multipurpose Internet Mail Extensions) files into system directories. This command reads information from `debian/mime.install` files and installs the MIME files in the appropriate locations.
+
+⚙️ **Options:**
+    🔹 `-n` --> 🚫 Do not actually install the files, just test the actions.
+    🔹 `--name-match` --> 🔤 Only install files that match the specified names.
+    🔹 `--no-scripts` --> 📜 Do not run the `postinst` and `postrm` scripts.
+
+🛠 **Examples:**
+
+    $ dh_installmime
+
+    🔹 Installs MIME files from `debian/mime.install` to system directories.
+
+    $ dh_installmime --name-match="*.txt"
+
+    🔹 Only installs MIME files with the ".txt" extension.
+
+✅ **Simple Example:**
+
+    If you have a file named `debian/mime.install` containing the following line:
+
+    text/plain  usr/share/mime/packages/
+
+    By running `dh_installmime`, the command will install `text/plain` files to the `usr/share/mime/packages/` directory.

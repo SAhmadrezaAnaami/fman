@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-atb` baraye tabdil matn-ha be khatte braille baraye dastgah-haye braille estefade mishavad. In dastoor be BRLTTY komak mikonad ta matn-ha ra be shekl-e dorost baraye nahobinayan namayesh dahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-ha
+    🔹 `--version`  --> ℹ️ Namayesh version-e `brltty-atb`
+    🔹 `-l <zaban>` --> 🌐 Entkhab zabane braille (masalan, `en` baraye English)
+    🔹 `-t <type>` --> ⌨️ Type terminal ra moshakhas mikonad (masalan, `dumb`)
+
+🛠 **Mesal-ha:**
+
+    $ echo "Hello World" | brltty-atb
+
+    🔹 Tabdil matn "Hello World" be khatte braille va namayesh an dar terminal
+
+    $ brltty-atb -l fr < file.txt
+
+    🔹 Tabdil contents file.txt be khatte braille ba zabane faransevi.
+
+✅ **Mesal sade:**
+
+    $ echo "Salam Donya" | brltty-atb -l fa
+
+    🔹 Matn "Salam Donya" be braille farsi tabdil shode va dar terminal namayesh dade mishavad. Agar `-l fa` ezafe nashavad, braille default (engilisi) estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-atb` command converts text to braille for braille displays. It assists BRLTTY in properly displaying text for visually impaired users.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display command help and options.
+    🔹 `--version`  --> ℹ️ Display the version of `brltty-atb`.
+    🔹 `-l <language>` --> 🌐 Specify the braille language (e.g., `en` for English).
+    🔹 `-t <type>` --> ⌨️  Specify the terminal type (e.g., `dumb`).
+
+🛠 **Examples:**
+
+    $ echo "Hello World" | brltty-atb
+
+    🔹 Converts the text "Hello World" to braille and displays it in the terminal.
+
+    $ brltty-atb -l fr < file.txt
+
+    🔹 Converts the contents of file.txt to braille using the French language.
+
+✅ **Simple Example:**
+
+    $ echo "Hello World" | brltty-atb -l en
+
+    🔹 The text "Hello World" is converted to English braille and displayed in the terminal. Omitting `-l en` will result in the default braille (often English) being used.

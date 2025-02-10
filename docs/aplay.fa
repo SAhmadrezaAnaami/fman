@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aplay` baraye pakhsh kardan (play) file-haye sedayi (audio files) az command line estefade mishavad. Misle file-haye `wav`, `mp3` va digar format-ha.
+
+⚙️ **Gozine-ha:**
+    🔹 `aplay -l`  --> 🎤 List kardan device-haye sedayi mojood (audio devices available).
+    🔹 `aplay -D hw:0,0 file.wav`  --> 🔊 Pakhsh file ba entekhabe device khas (playing file on specific device). "hw:0,0" eshare be device va subdevice mikonad.
+    🔹 `aplay -c 1 file.wav`  --> 🎧 Pakhsh file ba yek channel (mono).
+    🔹 `aplay -t raw -f S16_LE -r 44100 file.raw` --> 🎼  Pakhsh file-haye raw ba format moshakhas (playing raw files with a specific format)
+
+🛠 **Mesal-ha:**
+
+    $ aplay file.wav
+
+    🔹 Pakhsh file sedayi `file.wav` ba device pishfarz (default).
+
+    $ aplay -D hw:1,0 another_file.wav
+
+    🔹 Pakhsh file sedayi `another_file.wav` az device shomare 1, subdevice 0.
+
+✅ **Mesal sade:**
+
+    $ aplay -l
+
+    🔹 List kardan hame device-haye sedayi ke system shoma mishnasad. In dastoor baraye peida kardan name dorost device baraye estefade ba flag `-D` mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aplay` command is used to play audio files from the command line. It supports various formats such as `wav`, `mp3`, and more.
+
+⚙️ **Options:**
+    🔹 `aplay -l`  --> 🎤 List available audio devices.
+    🔹 `aplay -D hw:0,0 file.wav`  --> 🔊 Play the file on a specific audio device. "hw:0,0" refers to a specific device and subdevice.
+    🔹 `aplay -c 1 file.wav`  --> 🎧 Play the file in mono (one channel).
+    🔹 `aplay -t raw -f S16_LE -r 44100 file.raw` --> 🎼  Play raw audio files with a specified format.
+
+🛠 **Examples:**
+
+    $ aplay file.wav
+
+    🔹 Play the audio file `file.wav` using the default audio device.
+
+    $ aplay -D hw:1,0 another_file.wav
+
+    🔹 Play the audio file `another_file.wav` from device number 1, subdevice 0.
+
+✅ **Simple Example:**
+
+    $ aplay -l
+
+    🔹 Lists all audio devices recognized by your system. This is useful for finding the correct device name to use with the `-D` flag.

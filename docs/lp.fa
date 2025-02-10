@@ -1,0 +1,67 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lp` baraye chap kardane (print) file-ha be rooye printer estefade mishavad.  Ya'ni, shoma mitavanid ba estefade az in dastoor, yek file ra be printer befrestid ta chap shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lp filename` --> 🖨️ Chap kardane file ba name "filename" ba estefade az printer pishfarz.
+    🔹 `lp -d printername filename` --> 🎯 Chap kardane file ba name "filename" be rooye printer moshakhas shode ba name "printername".
+    🔹 `lp -n number filename` --> 🔢 Chap kardane file "filename" be tedad "number" nushe (copies).
+    🔹 `lp -o option=value filename` --> ⚙️  E'mal kardane gozine-haye ezafe baraye chap, mesle andaze kaghaz ya rang.
+
+🛠 **Mesal-ha:**
+
+    $ lp myfile.txt
+
+    🔹 Chap kardane file "myfile.txt" ba estefade az printer pishfarz.
+
+    $ lp -d HP_LaserJet myfile.txt
+
+    🔹 Chap kardane file "myfile.txt" be rooye printeri ba name "HP_LaserJet".
+
+    $ lp -n 3 myfile.txt
+
+    🔹 Chap kardane 3 nushe (copies) az file "myfile.txt" ba estefade az printer pishfarz.
+
+✅ **Mesal sade:**
+
+    $ lp -o media=A4 myfile.txt
+
+    🔹 Chap kardane file "myfile.txt" ba andazeye kaghaz A4.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lp` command is used to print files to a printer.  In other words, you can use this command to send a file to the printer for printing.
+
+⚙️ **Options:**
+    🔹 `lp filename` --> 🖨️ Print the file named "filename" using the default printer.
+    🔹 `lp -d printername filename` --> 🎯 Print the file named "filename" to the printer specified with the name "printername".
+    🔹 `lp -n number filename` --> 🔢 Print the file "filename" with "number" copies.
+    🔹 `lp -o option=value filename` --> ⚙️ Apply extra printing options, such as paper size or color.
+
+🛠 **Examples:**
+
+    $ lp myfile.txt
+
+    🔹 Print the file "myfile.txt" using the default printer.
+
+    $ lp -d HP_LaserJet myfile.txt
+
+    🔹 Print the file "myfile.txt" to a printer named "HP_LaserJet".
+
+    $ lp -n 3 myfile.txt
+
+    🔹 Print 3 copies of the file "myfile.txt" using the default printer.
+
+✅ **Simple Example:**
+
+    $ lp -o media=A4 myfile.txt
+
+    🔹 Print the file "myfile.txt" with paper size A4.
+

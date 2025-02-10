@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-scanpackages` baraye dorost kardane file `Packages` az yek directory (pooshe) az file-haye Debian package (.deb) estefade mishavad. In file `Packages` rooye repository Debian estefade mishavad ta etela'at package-ha ro moratab kone va dastrasi be onha ro asan tar kone. Asasan, yek fehrest az hameye package-ha va version haye anha dar yek pooshe misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-m`  --> 📝 Ezafe kardane yek payam ehtiyati agar archive-ha missing bashand (Archive Missing).
+    🔹 `-a archive_override` --> 📦  Estefade az `archive_override` baraye jaygozin kardane field "Archive" dar file `Packages`.
+    🔹 `-e directory`  --> 📂  Scan kardane pooshe `directory` baraye file-haye .deb (Be jaye pooshe kari konooni).
+    🔹 `-k key` --> 🔑  Ezafe kardane field `key` ba value `yes` be record har package. Baraye dorost kardane repository ha-ye authenticated estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-scanpackages . /dev/null
+
+    🔹  File `Packages` ro az file-haye .deb dar pooshe kari konooni misazad, va output ro be `/dev/null` mifreste ta dar terminal namayesh dade nashe.
+
+    $ dpkg-scanpackages -m dists/stable > dists/stable/Packages
+
+    🔹  File `Packages` ro az file-haye .deb dar pooshe `dists/stable` misazad, va payam ehtiyati ro agar file missing bashe ezafe mikone, va natije ro dar file `dists/stable/Packages` zakhire mikone.
+
+✅ **Mesal sade:**
+
+    $ dpkg-scanpackages -a override . > Packages
+
+    🔹 In dastoor file `Packages` ro az hameye .deb file-ha dar current directory misazad va field "Archive" ro ba estefade az file "override" jaygozin mikone. Natije dar file `Packages` zakhire mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-scanpackages` command creates a `Packages` file from a directory of Debian package (.deb) files. This `Packages` file is used in Debian repositories to index package information and make them easily accessible. Essentially, it generates a list of all packages and their versions in a directory.
+
+⚙️ **Options:**
+    🔹 `-m`  --> 📝 Adds a warning message if archives are missing (Archive Missing).
+    🔹 `-a archive_override` --> 📦 Uses `archive_override` to override the "Archive" field in the `Packages` file.
+    🔹 `-e directory`  --> 📂 Scans the `directory` for .deb files (instead of the current working directory).
+    🔹 `-k key` --> 🔑 Adds a field `key` with the value `yes` to each package record. Used for creating authenticated repositories.
+
+🛠 **Examples:**
+
+    $ dpkg-scanpackages . /dev/null
+
+    🔹 Creates a `Packages` file from .deb files in the current working directory, and sends the output to `/dev/null` to suppress terminal output.
+
+    $ dpkg-scanpackages -m dists/stable > dists/stable/Packages
+
+    🔹 Creates a `Packages` file from .deb files in the `dists/stable` directory, adds a warning message for missing files, and saves the result in the `dists/stable/Packages` file.
+
+✅ **Simple Example:**
+
+    $ dpkg-scanpackages -a override . > Packages
+
+    🔹 This command creates a `Packages` file from all .deb files in the current directory and overrides the "Archive" field using the "override" file. The result is stored in the `Packages` file.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-genchanges` baraye dorost kardane file `.changes` az etela'at pakej Debian estefade mishavad. In file baraye upload kardane taghirat be repository Debian ya PPA (Personal Package Archive) estefade mishavad. Asasan etela'at ra dar morede taghirat be pakej moratab mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-b`  --> 📦 Sakhtane pakej binary, ya'ni pakeji ke baraye install kardane barname ast.
+    🔹 `-c<file>`  --> 📝 Estefade az file taghirat (<file>) be jaye `debian/changelog`.
+    🔹 `-g`  --> ➕ Shamel shodan file-haye sakhte shode az `debian/dirs` dar list file-ha.
+    🔹 `-q`  --> 🤫 Sedaye kamtar; faghat error-ha namayesh dade mishavand.
+    🔹 `-sa`  --> 📂 Hamrah kardane source package (code asli) ba file `.changes`.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-genchanges -b
+
+    🔹 Sakhtane file `.changes` baraye pakej binary.
+
+    $ dpkg-genchanges -c changes.txt -sa
+
+    🔹 Estefade az `changes.txt` be jaye `debian/changelog` va hamrah kardane source package.
+
+✅ **Mesal sade:**
+
+    $ dpkg-genchanges
+
+    🔹 Agar dastoor bedune hich gozine-yei ejra shavad, file `.changes` ra bar asase `debian/changelog` misazad, va include nemikonad source package ra.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-genchanges` command is used to generate a `.changes` file from the information in a Debian package. This file is used for uploading changes to a Debian repository or PPA (Personal Package Archive). It essentially organizes information about the changes to a package.
+
+⚙️ **Options:**
+    🔹 `-b`  --> 📦 Build binary package, meaning the package that is used to install the program.
+    🔹 `-c<file>`  --> 📝 Use the changelog file (<file>) instead of `debian/changelog`.
+    🔹 `-g`  --> ➕ Include files generated from `debian/dirs` in the files list.
+    🔹 `-q`  --> 🤫 Be more quiet; only display errors.
+    🔹 `-sa`  --> 📂 Include the source package (original code) with the `.changes` file.
+
+🛠 **Examples:**
+
+    $ dpkg-genchanges -b
+
+    🔹 Build a `.changes` file for a binary package.
+
+    $ dpkg-genchanges -c changes.txt -sa
+
+    🔹 Use `changes.txt` instead of `debian/changelog` and include the source package.
+
+✅ **Simple Example:**
+
+    $ dpkg-genchanges
+
+    🔹 If the command is run without any options, it will generate a `.changes` file based on `debian/changelog`, and does not include the source package.

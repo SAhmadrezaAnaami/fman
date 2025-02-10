@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_usrlocal` baraye ezafe kardane file-ha az `/usr/local` be package Debian estefade mishavad. In dastoor dar vaghte sakhte package ha, file-haye nasb shode dar `/usr/local` ra dar package ezafe mikonad, pas az an nagarani nabashid ke file-haye khosusi az dast beravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir directory` --> 📁 Masiir asli file-ha dar `/usr/local`. Agar ghabeliat dasterasi nadashte bashad, az `/usr/local` estefade mishavad.
+    🔹 `--destdir directory` --> 🎯 Masiir dar package baraye gozashtan file-ha. Be soorat pishfarz, haman masiir asli dar nazar gerefte mishavad.
+    🔹 `--no-include-dirs` --> 🚫 Directory-ha ra dar package dar nazar nagir. Faghat file-ha ezafe mishavand.
+
+🛠 **Mesal-ha:**
+
+    $ dh_usrlocal --sourcedir=tmp/usrlocal --destdir=opt/mysoftware
+
+    🔹 File-ha az `tmp/usrlocal` be `opt/mysoftware` dar package ezafe mishavand.
+
+    $ dh_usrlocal --no-include-dirs
+
+    🔹 Faghat file-ha, bedune directory-ha, dar package ezafe mishavand.
+
+✅ **Mesal sade:**
+
+    $ dh_usrlocal
+
+    🔹 File-ha va directory-ha az `/usr/local` be package ba haman address-ha ezafe mishavand. In yek rahe asaan baraye ezafe kardane hameye chizhaee ast ke dar `/usr/local` nasb kardeid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_usrlocal` command is used to add files from `/usr/local` to a Debian package. This command, during package building, adds the files installed in `/usr/local` into the package, so you don't have to worry about losing personal files.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory` --> 📁 The original path of the files in `/usr/local`. If not accessible, it defaults to `/usr/local`.
+    🔹 `--destdir directory` --> 🎯 Path within the package to place the files. By default, it is the same as the original path.
+    🔹 `--no-include-dirs` --> 🚫 Do not include directories in the package. Only files are added.
+
+🛠 **Examples:**
+
+    $ dh_usrlocal --sourcedir=tmp/usrlocal --destdir=opt/mysoftware
+
+    🔹 Files from `tmp/usrlocal` are added to `opt/mysoftware` within the package.
+
+    $ dh_usrlocal --no-include-dirs
+
+    🔹 Only files, without directories, are added to the package.
+
+✅ **Simple Example:**
+
+    $ dh_usrlocal
+
+    🔹 Files and directories from `/usr/local` are added to the package with the same addresses. This is an easy way to add everything you've installed in `/usr/local`.

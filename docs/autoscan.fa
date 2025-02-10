@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autoscan` baraye jostojo va peida kardan otomatike device-ha va service-ha dar yek shabake (network) be kar miravad. In dastoor be shoma komak mikonad ta device-ha va service-haye mojud ra bedune dastkari ziad peida konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `autoscan -t [IP address]`  --> 🎯 Scan kardan ye IP address khass.
+    🔹 `autoscan -p [port number]` --> 🚪 Scan kardan port-e khass.
+    🔹 `autoscan -r [IP range]`   --> 🌐 Scan kardan yek range IP address.
+
+🛠 **Mesal-ha:**
+
+    $ autoscan
+    
+    🔹 Shorooe scan baraye device-ha va service-ha dar shabake mahali (local network).
+
+    $ autoscan -t 192.168.1.10
+    
+    🔹 Scan kardan faghat IP address 192.168.1.10.
+
+✅ **Mesal sade:**
+
+    $ autoscan -p 80,443
+    
+    🔹 Scan kardan port-haye 80 va 443 baraye device-ha va service-ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autoscan` command is used for automatically discovering devices and services on a network. It helps you quickly identify available devices and services without extensive manual configuration.
+
+⚙️ **Options:**
+    🔹 `autoscan -t [IP address]`  --> 🎯 Scan a specific IP address.
+    🔹 `autoscan -p [port number]` --> 🚪 Scan a specific port number.
+    🔹 `autoscan -r [IP range]`   --> 🌐 Scan a range of IP addresses.
+
+🛠 **Examples:**
+
+    $ autoscan
+    
+    🔹 Start scanning for devices and services on the local network.
+
+    $ autoscan -t 192.168.1.10
+    
+    🔹 Scan only the IP address 192.168.1.10.
+
+✅ **Simple Example:**
+
+    $ autoscan -p 80,443
+    
+    🔹 Scan ports 80 and 443 for devices and services.

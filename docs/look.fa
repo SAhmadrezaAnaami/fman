@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `look` baraye peyda kardan kalamat dar file-haye dictionary (dictionary files) estefade mishavad. Yani, kalamat ro az tooye file-e dictionary peyda mikone ke ba harfi ke shoma vared mikonid shoru beshe. Agar file-e dictionary ro moshakhas nakonid, az `/usr/share/dict/words` estefade mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `look [gozine-ha] kalame [file]` --> Dastoor asli ba gozine-ha, kalame, va file (ekhtiari).
+    🔹 `look -a kalame [file]`  --> 👀 Hameye file-haye dictionary ro check mikone.
+    🔹 `look -f kalame [file]`  --> 👓 Faghat az nazare character-haye avaliye motabeghat mide (case-insensitive). Yani, "Kalame" va "kalame" ro barabar migire.
+    🔹 `look -t character jadakonande kalame [file]` --> ✂️ Character-i ke be عنوان jadakonande estefade mishe ro moshakhas mikone.
+
+🛠 **Mesal-ha:**
+
+    $ look salam
+
+    🔹 Peyda kardan kalamat shoru shode ba "salam" dar file dictionary pishfarz.
+
+    $ look -f salam /usr/share/dict/words
+
+    🔹 Peyda kardan kalamat shoru shode ba "salam" (case-insensitive) dar file dictionary `/usr/share/dict/words`.
+
+✅ **Mesal sade:**
+
+    $ look app appleDictionary.txt
+
+    🔹 Kalamat shoru shode ba "app" ro az file `appleDictionary.txt` peyda mikone va namayesh mide. Agar kalamat peyda nashod, hichi namayesh nemide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `look` command is used to find words in dictionary files that begin with a specified string. If no file is specified, it uses `/usr/share/dict/words` by default.
+
+⚙️ **Options:**
+    🔹 `look [options] string [file]` -->  The basic command with options, string, and file (optional).
+    🔹 `look -a string [file]` --> 👀 Checks all system dictionary files.
+    🔹 `look -f string [file]` --> 👓 Matches only on initial characters (case-insensitive). For instance, "Word" and "word" are treated as the same.
+    🔹 `look -t char string [file]` --> ✂️ Specifies a character to be used as a word delimiter.
+
+🛠 **Examples:**
+
+    $ look hello
+
+    🔹 Finds words starting with "hello" in the default dictionary file.
+
+    $ look -f hello /usr/share/dict/words
+
+    🔹 Finds words starting with "hello" (case-insensitive) in the dictionary file `/usr/share/dict/words`.
+
+✅ **Simple Example:**
+
+    $ look app appleDictionary.txt
+
+    🔹  Finds and displays words starting with "app" from the `appleDictionary.txt` file. If no matches are found, nothing is displayed.

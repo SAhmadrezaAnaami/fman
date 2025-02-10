@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `localedef` baraye sakhtan ya update kardan locale binary az source definition file estefade mishavad. Locale binary file etela'at locale ro dar format binary zakhire mikonad va baraye estefade az locale dar barname-ha lazem ast. Locale tarif mikonad ke barname-ha chegone bayad text, tarikh, zaman, va format-haye dige ro namayesh bedahand.
+
+⚙️ **Gozine-ha:**
+    🔹 `-c`  --> 🚧 Faghat warning-ha ro namayesh bede va sakhtane locale ro edame bede. Agar error vojood dashte bashe baz ham try mikone locale ro dorost kone.
+    🔹 `-f charmap`  --> 🗺️  `charmap` ro baraye encoding estefade kon.  Agar in gozine dade nashe, `iconv` baraye convert kardane character set be utf-8 estefade mishavad.
+    🔹 `-i inputfile` --> 📥 File input locale definition ro moshakhas mikonad.  Agar in gozine zekr nashode bashad, az `stdin` mikhanad.
+
+🛠 **Mesal-ha:**
+
+    $ localedef -c -f UTF-8 -i fa_IR fa_IR.UTF-8
+
+    🔹  Locale `fa_IR.UTF-8` ro az file `fa_IR` ba estefade az encoding `UTF-8` misazad. Warning-ha ro namayesh midahad vali sakhte locale ro edame midahad.
+
+    $ localedef -f ISO-8859-1 -i en_US en_US.ISO-8859-1
+
+    🔹  Locale `en_US.ISO-8859-1` ro az file `en_US` ba estefade az encoding `ISO-8859-1` misazad.
+
+✅ **Mesal sade:**
+
+    $ localedef -v -c -f UTF-8 fa_IR.UTF-8 < fa_IR
+
+    🔹  Locale `fa_IR.UTF-8` ra ba estefade az data-haye dakhel `fa_IR` misazad, encoding ro `UTF-8` gharar midahad, va warning-ha ro neshon midahad. `-v` (verbose) etela'at bishtari dar morede farayand neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `localedef` command is used to create or update a locale binary from a source definition file.  The locale binary file stores locale information in a binary format, necessary for applications to use the locale. A locale defines how programs should display text, dates, times, and other formats.
+
+⚙️ **Options:**
+    🔹 `-c`  --> 🚧 Display warnings only and continue locale creation.  It attempts to create the locale even if errors are present.
+    🔹 `-f charmap`  --> 🗺️ Use `charmap` for encoding. If this option is not provided, `iconv` will be used to convert the character set to UTF-8.
+    🔹 `-i inputfile` --> 📥 Specifies the input locale definition file. If this option is not given, it reads from `stdin`.
+
+🛠 **Examples:**
+
+    $ localedef -c -f UTF-8 -i fa_IR fa_IR.UTF-8
+
+    🔹 Creates the `fa_IR.UTF-8` locale from the `fa_IR` file using the `UTF-8` encoding. Displays warnings but continues locale creation.
+
+    $ localedef -f ISO-8859-1 -i en_US en_US.ISO-8859-1
+
+    🔹 Creates the `en_US.ISO-8859-1` locale from the `en_US` file using the `ISO-8859-1` encoding.
+
+✅ **Simple Example:**
+
+    $ localedef -v -c -f UTF-8 fa_IR.UTF-8 < fa_IR
+
+    🔹 Creates the `fa_IR.UTF-8` locale using data from the `fa_IR` file, sets the encoding to `UTF-8`, and shows warnings. `-v` (verbose) shows more information about the process.

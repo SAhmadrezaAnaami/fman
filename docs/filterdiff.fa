@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `filterdiff` baraye pak kardane ya entekhab kardane patch-ha az yek file diff (manande output git diff) estefade mishavad. In dastoor be shoma komak mikonad ta taghirati ke nemikhahid dar patch bashand ra hazf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--exclude=[pattern]` --> 🚫 Patch-hayi ke file name-shoon ba [pattern] motabeghat darad ra hazf kon.
+    🔹 `--include=[pattern]` --> ✅ Faghat patch-hayi ke file name-shoon ba [pattern] motabeghat darad ra negah dar.
+    🔹 `--add-prefix=[prefix]` --> ➕ [prefix] ra be hameye path-haye file ezafe kon.
+    🔹 `--strip=[number]` --> ✂️ [number] ta az avale path-ha kam kon.
+
+🛠 **Mesal-ha:**
+
+    $ filterdiff --exclude='*.txt' input.diff > output.diff
+
+    🔹 Hameye taghirat marboot be file-haye ba pasvand `.txt` ra az `input.diff` hazf mikonad va dar `output.diff` zakhire mikonad.
+
+    $ filterdiff --include='src/' input.diff > output.diff
+
+    🔹 Faghat taghirati ke dar directory `src/` vojood darand ra az `input.diff` negah midarad va dar `output.diff` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ filterdiff --add-prefix='a/' --strip=1 input.diff > output.diff
+
+    🔹 Aval `a/` ra be hameye path-ha ezafe mikonad, bad yek directory az avale path-ha kam mikonad, va natije ra dar `output.diff` zakhire mikonad. In dar vaghe komak mikonad ta path-haye dakhele patch ra ba structure directory jadid motabegh konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `filterdiff` command is used to filter or exclude patches from a diff file (like the output of `git diff`).  It allows you to remove unwanted changes from a patch.
+
+⚙️ **Options:**
+    🔹 `--exclude=[pattern]` --> 🚫 Exclude patches where the filename matches [pattern].
+    🔹 `--include=[pattern]` --> ✅ Only keep patches where the filename matches [pattern].
+    🔹 `--add-prefix=[prefix]` --> ➕ Add [prefix] to all file paths.
+    🔹 `--strip=[number]` --> ✂️ Remove [number] leading components from file paths.
+
+🛠 **Examples:**
+
+    $ filterdiff --exclude='*.txt' input.diff > output.diff
+
+    🔹 Excludes all changes related to `.txt` files from `input.diff` and saves the result to `output.diff`.
+
+    $ filterdiff --include='src/' input.diff > output.diff
+
+    🔹 Only keeps changes that are located in the `src/` directory from `input.diff` and saves the result to `output.diff`.
+
+✅ **Simple Example:**
+
+    $ filterdiff --add-prefix='a/' --strip=1 input.diff > output.diff
+
+    🔹 First adds the prefix `a/` to all file paths, then removes one leading directory component, and saves the result to `output.diff`. This effectively adjusts the paths within the patch to match a new directory structure.

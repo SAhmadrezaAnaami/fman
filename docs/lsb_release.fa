@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsb_release` baraye peyda kardan etela'at dar morede pakhsh (distribution) Linux shoma, mesle esm va version estefade mishavad.  Be zaboon sade, mige shoma az che distroye Linux estefade mikonid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsb_release -a`  --> 📜 Namayesh hameye etela'at (version, description, ID, va digar chiz-ha).
+    🔹 `lsb_release -d`  --> 📝 Fagat description distro ro neshon mide.
+    🔹 `lsb_release -v`  --> 🔢 Fagat version distro ro neshon mide.
+    🔹 `lsb_release -i`  --> 🆔 Fagat ID (identification) distro ro neshon mide.
+
+🛠 **Mesal-ha:**
+
+    $ lsb_release -a
+
+    🔹 Namayesh hameye etela'at distro.
+
+    $ lsb_release -d
+
+    🔹 Fagat description distro ro neshon mide.  Meslan: "Description: Ubuntu 20.04.3 LTS"
+
+✅ **Mesal sade:**
+
+    $ lsb_release
+
+    🔹 Agar bedune gozine ejra beshe, etela'at asasi distro ro neshon mide (meslan version).  Age etela'at kam bood az `-a` estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsb_release` command is used to display information about your Linux distribution, such as its name and version. Simply put, it tells you which Linux distro you are using.
+
+⚙️ **Options:**
+    🔹 `lsb_release -a`  --> 📜 Show all information (version, description, ID, and other things).
+    🔹 `lsb_release -d`  --> 📝 Only show the distribution's description.
+    🔹 `lsb_release -v`  --> 🔢 Only show the distribution's version.
+    🔹 `lsb_release -i`  --> 🆔 Only show the distribution's ID (identification).
+
+🛠 **Examples:**
+
+    $ lsb_release -a
+
+    🔹 Shows all the distribution's information.
+
+    $ lsb_release -d
+
+    🔹 Only shows the distribution's description. For example: "Description: Ubuntu 20.04.3 LTS"
+
+✅ **Simple Example:**
+
+    $ lsb_release
+
+    🔹 If executed without any options, it shows basic distribution information (like the version). If the information is limited, use `-a`.

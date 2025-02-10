@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `boltctl` baraye modiriyat vasile-ha (device) va etesalat Thunderbolt dar Linux estefade mishavad. Ba in dastoor mitavanid etesalat jadid ra tasdiq (authorize) konid, etela'at vasile-ha ra bebinid va vaz'iyat amniyati (security) ra tagheer dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `boltctl list` --> 📃 List kardan hameye vasile-haye Thunderbolt motevasel shode.
+    🔹 `boltctl authorize <UUID>` --> ✅ Eejazeye etesal dadan be yek vasile ba UUID moshakhas.  `UUID` ra az `boltctl list` peyda konid.
+    🔹 `boltctl forget <UUID>` --> 🗑️  Az yade bordan yek vasile ra ba UUID moshakhas.
+    🔹 `boltctl policy` --> 🛡️  Namayesh dadane siyasat dastresi (access policy) fa'al.
+    🔹 `boltctl power` --> ⚡️  Khamoosh (power off) kardane vasile-ye Thunderbolt.
+
+🛠 **Mesal-ha:**
+
+    $ boltctl list
+
+    🔹 List kardan hameye vasile-haye motevasel.
+
+    $ boltctl authorize 0000-0000-0000-0000
+
+    🔹 Eejazeye etesal dadan be vasile ba UUID `0000-0000-0000-0000`.
+
+✅ **Mesal sade:**
+
+    $ boltctl list | grep "My Device"
+
+    🔹 Peyda kardan UUID vasile-ye "My Device" dar list natije `boltctl list` (ba estefade az dastoor `grep`).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `boltctl` command is used to manage Thunderbolt devices and connections in Linux.  You can authorize new connections, view device information, and change security settings.
+
+⚙️ **Options:**
+    🔹 `boltctl list` --> 📃 List all connected Thunderbolt devices.
+    🔹 `boltctl authorize <UUID>` --> ✅ Authorize a device with the specified UUID to connect. Find the `UUID` using `boltctl list`.
+    🔹 `boltctl forget <UUID>` --> 🗑️ Forget a device with the specified UUID.
+    🔹 `boltctl policy` --> 🛡️ Display the current access policy.
+    🔹 `boltctl power` --> ⚡️ Power off the Thunderbolt device.
+
+🛠 **Examples:**
+
+    $ boltctl list
+
+    🔹 List all connected devices.
+
+    $ boltctl authorize 0000-0000-0000-0000
+
+    🔹 Authorize the device with UUID `0000-0000-0000-0000`.
+
+✅ **Simple Example:**
+
+    $ boltctl list | grep "My Device"
+
+    🔹 Find the UUID of "My Device" in the output of `boltctl list` (using the `grep` command).

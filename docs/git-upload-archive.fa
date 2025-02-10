@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `git-upload-archive` baraye service-e `git upload-archive` be kar miravad. In dastoor file-haye archive ra az taraf-e client migirad va anha ra extract mikonad. Obiatan, in dastoor baraye karbar-ha be tore mostaghim nist va dar vagheh az taraf-e `git fetch-pack` ya `git archive` dar taraf-e server seda zade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ℹ️ Namayesh rahnamaye dastoor
+    🔹 `--stateless-rpc` --> 📡 Estefade az protocol stateless RPC. Dar server-haie ke az HTTP estefade mikonand mohem ast.
+
+🛠 **Mesal-ha:**
+
+    $ git upload-archive --stateless-rpc < input.tar
+
+    🔹 In mesal data archive ra az voroodie standard migirad va an ra extract mikonad, az protocol stateless RPC estefadeh mikonad.
+
+    $ git upload-archive --help
+
+    🔹 In mesal rahnamaye dastoor ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    Dar aksar mavaghe, karbar be tore mostaghim az in dastoor estefade nemikonad. Be jash, `git fetch-pack` ya `git archive` dar taraf-e server in dastoor ra seda mizand ta file-haye archive ra manage konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `git-upload-archive` command is used to service `git upload-archive` requests. It receives archive files from the client side and extracts them. Generally, this command is not intended for direct user interaction and is called by `git fetch-pack` or `git archive` on the server side.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ℹ️ Display the command's help information.
+    🔹 `--stateless-rpc` --> 📡 Use the stateless RPC protocol.  Important for servers using HTTP.
+
+🛠 **Examples:**
+
+    $ git upload-archive --stateless-rpc < input.tar
+
+    🔹 This example receives archive data from standard input and extracts it, utilizing the stateless RPC protocol.
+
+    $ git upload-archive --help
+
+    🔹 This example displays the command's help information.
+
+✅ **Simple Example:**
+
+    In most cases, users do not directly use this command. Instead, `git fetch-pack` or `git archive` calls this command on the server-side to manage archive files during operations like fetching or archiving.

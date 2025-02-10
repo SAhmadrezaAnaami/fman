@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mk_modmap` baraye dorost kardane yek file modmap baraye xmodmap be kar miravad. In dastoor etela'at keyboard ra az X server migirad va yek file ra ba estelahate lazem baraye taghir dadane raftare keyboard misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mk_modmap -verbose` --> 🗣️ Namayesh peygham-haye bishtar dar hale ejra.
+    🔹 `mk_modmap -output filename` --> 📤 Save natije be yek file khass be jaye stdout.
+
+🛠 **Mesal-ha:**
+
+    $ mk_modmap
+
+    🔹 Sakhte yek file modmap dar stdout.
+
+    $ mk_modmap -output .Xmodmap
+
+    🔹 Sakhte yek file modmap be name .Xmodmap dar directory hoom.
+
+✅ **Mesal sade:**
+
+    $ mk_modmap > .Xmodmap
+
+    🔹 In command file modmap ra misazad va natije ra dar yek file be name ".Xmodmap" save mikonad. Baad az an, mitavanid `xmodmap .Xmodmap` ra ejra konid ta taghirat ra amal konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mk_modmap` command is used to create a modmap file for xmodmap. This command retrieves keyboard information from the X server and generates a file with the necessary terms to modify the keyboard behavior.
+
+⚙️ **Options:**
+    🔹 `mk_modmap -verbose` --> 🗣️ Display more messages during execution.
+    🔹 `mk_modmap -output filename` --> 📤 Save the output to a specific file instead of stdout.
+
+🛠 **Examples:**
+
+    $ mk_modmap
+
+    🔹 Generates a modmap file to standard output.
+
+    $ mk_modmap -output .Xmodmap
+
+    🔹 Generates a modmap file named .Xmodmap in the home directory.
+
+✅ **Simple Example:**
+
+    $ mk_modmap > .Xmodmap
+
+    🔹 This command creates a modmap file and saves the output to a file named ".Xmodmap". After that, you can run `xmodmap .Xmodmap` to apply the changes.

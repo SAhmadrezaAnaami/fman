@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `eqn` baraye format-bandi dastoor-haye riyazi (equations) dar file-haye matni estefade mishavad. In dastoor be shoma komak mikonad ta dastoor-haye پیچیده riyazi ra be shekle ghabele chapi dar biavarid. obaratan ra az terminal ya az dakhel file-ha mikhwanad va khorooji ra be zabane troff ya eqn migozarad.
+
+⚙️ **Gozine-ha:**
+    🔹 `eqn -d xy`  --> ✏️ Tagheer dadane delimiter haye estefade shode baraye neshane gozari dastoor haye riyazi. Be soorate pishfarz, delimiter-ha `.` va `.` hastand. Dar in mesal `x` va `y` جایگزین delimiter ha mishavand.
+    🔹 `eqn -f font` --> ✒️ Estefade az yek font khass baraye dastoor-haye riyazi.
+    🔹 `eqn -r`      --> 🔄 Faal kardane auto-sizing. In gozine komak mikonad ta size e ajza be toore otomatik ba ham muratab shavand.
+    🔹 `eqn -T name`  --> 🖥️ Pasand kardane khorooji baraye yek device e khass (name).
+
+🛠 **Mesal-ha:**
+
+    $ eqn file.eqn | troff -ms
+
+    🔹 اجرا کردن eqn bar rooye file.eqn و سپس فرستادن خروجی به troff برای پردازش و تولید خروجی نهایی.
+
+    $ eqn -d '$ $' equation.txt | troff -ms
+
+    🔹 در این مثال، از `$` به عنوان delimiter استفاده شده است. دستور `eqn` معادله‌های موجود در `equation.txt` را پردازش کرده و خروجی را به `troff` ارسال می‌کند.
+
+✅ **Mesal sade:**
+
+    $ eqn -T ps equation.eqn > equation.ps
+
+    🔹 در اینجا، با استفاده از `-T ps` مشخص می‌کنیم که خروجی برای چاپگرهای PostScript بهینه شود. دستور `eqn` فایل `equation.eqn` را پردازش کرده و خروجی را در فایل `equation.ps` ذخیره می‌کند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `eqn` command is used to format mathematical equations in text files. It helps you to create complex mathematical expressions in a printable format. It reads equations from the terminal or specified files and outputs the result in troff or eqn language.
+
+⚙️ **Options:**
+    🔹 `eqn -d xy`  --> ✏️ Change the delimiters used to mark mathematical equations. By default, the delimiters are `.` and `.` . In this example, `x` and `y` replace the delimiters.
+    🔹 `eqn -f font` --> ✒️ Use a specific font for the mathematical equations.
+    🔹 `eqn -r`      --> 🔄 Enable auto-sizing. This option helps to automatically align sizes of the components.
+    🔹 `eqn -T name`  --> 🖥️ Prepare the output for a specific device (name).
+
+🛠 **Examples:**
+
+    $ eqn file.eqn | troff -ms
+
+    🔹 Execute eqn on file.eqn and then pipe the output to troff for processing and final output generation.
+
+    $ eqn -d '$ $' equation.txt | troff -ms
+
+    🔹 In this example, `$` is used as the delimiter. The `eqn` command processes the equations in `equation.txt` and sends the output to `troff`.
+
+✅ **Simple Example:**
+
+    $ eqn -T ps equation.eqn > equation.ps
+
+    🔹 Here, `-T ps` specifies that the output should be optimized for PostScript printers. The `eqn` command processes the file `equation.eqn` and saves the output to the file `equation.ps`.

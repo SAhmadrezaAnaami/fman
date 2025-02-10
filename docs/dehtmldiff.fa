@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dehtmldiff` baraye moghayese va namayesh taghirat bein do ta file HTML estefade mishavad.  In dastoor taghirat ra be shekle HTML mark mikonad ta didane fargh-ha asan tar shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--output-type=inline`  --> 📝 Taghirat ra dar haman file asli HTML mark mikonad.
+    🔹 `--chars`  --> 🔡 Taghirat dar character level ra neshon midahad (bejoz kalame ya khat).
+    🔹 `--words`  --> 🔑 Taghirat dar word level ra neshon midahad (default).
+    🔹 `--split`  --> ✂️ Namayesh taghirat dar do stolon joda baraye behtar didane fargh-ha.
+
+🛠 **Mesal-ha:**
+
+    $ dehtmldiff file1.html file2.html > diff.html
+
+    🔹 In dastoor file1.html va file2.html ra moghayese mikonad va natije ra dar file diff.html zakhire mikonad.
+
+    $ dehtmldiff --output-type=inline file1.html file2.html
+
+    🔹 In dastoor taghirat ra dar file1.html mark mikonad.
+
+✅ **Mesal sade:**
+
+    $ dehtmldiff old.html new.html
+
+    🔹 HTML diff bein `old.html` va `new.html` ra dar terminal namayesh midahad. Shoma mitavanid in ra redirect konid be yek file HTML digar (`> diff.html`) baraye didane behtar dar browser.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dehtmldiff` command is used to compare and display the differences between two HTML files. It marks the changes in HTML format, making it easier to see the differences.
+
+⚙️ **Options:**
+    🔹 `--output-type=inline`  --> 📝 Marks the changes directly in the original HTML file.
+    🔹 `--chars`  --> 🔡 Shows changes at the character level (instead of word or line).
+    🔹 `--words`  --> 🔑 Shows changes at the word level (default).
+    🔹 `--split`  --> ✂️ Displays changes in two separate columns for better comparison.
+
+🛠 **Examples:**
+
+    $ dehtmldiff file1.html file2.html > diff.html
+
+    🔹 This command compares file1.html and file2.html and saves the result in the diff.html file.
+
+    $ dehtmldiff --output-type=inline file1.html file2.html
+
+    🔹 This command marks the changes directly in the file1.html.
+
+✅ **Simple Example:**
+
+    $ dehtmldiff old.html new.html
+
+    🔹 Displays the HTML diff between `old.html` and `new.html` in the terminal. You can redirect this to another HTML file (`> diff.html`) for easier viewing in a browser.

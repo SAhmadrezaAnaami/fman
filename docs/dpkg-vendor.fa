@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-vendor` baraye peyda kardan etela'at marboot be tolid konande (vendor) narm افزارhaye Debian است. Yani معلوم میکنه این بسته نرم افزاری از طرف کدوم شرکت یا سازمان ارائه شده.
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg-vendor --derives-from VENDOR` --> 🔍 چیک میکنه آیا تولیدکننده یک پکیج از یک تولید کننده خاص مشتق شده یا نه.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-vendor --print-vendor
+    
+    🔹 چاپ اسم تولید کننده سیستم
+
+    $ dpkg-vendor --derives-from Debian
+    
+    🔹  بررسی اینکه آیا این سیستم از Debian مشتق شده یا نه
+
+✅ **Mesal sade:**
+
+    $ dpkg-vendor --print-vendor
+    Debian
+    
+    🔹 این دستور نشون میده که سیستم عامل شما از Debian استفاده میکنه.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-vendor` command is used to retrieve information related to the vendor of Debian software packages. It essentially identifies the company or organization that provides the software package.
+
+⚙️ **Options:**
+    🔹 `dpkg-vendor --derives-from VENDOR` --> 🔍 Checks if the package vendor derives from a specific VENDOR.
+
+🛠 **Examples:**
+
+    $ dpkg-vendor --print-vendor
+    
+    🔹 Prints the name of the system vendor.
+
+    $ dpkg-vendor --derives-from Debian
+    
+    🔹 Checks if the current system derives from Debian.
+
+✅ **Simple Example:**
+
+    $ dpkg-vendor --print-vendor
+    Debian
+    
+    🔹 This command shows that your operating system uses Debian.

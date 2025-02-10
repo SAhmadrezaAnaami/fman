@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk-builder-tool` baraye check kardane file-haye `GtkBuilder` (ke baraye tarrahi UI estefade mishan) az nazar error va eshtebahat be kar mire. In tool komak mikone ke UI dorost va bedoon moshkel kar kone. 
+
+⚙️ **Gozine-ha:**
+    🔹 `gtk-builder-tool validate FILENAME`  --> 🔍 File `FILENAME` ro az nazar doros boodan check mikone.
+    🔹 `gtk-builder-tool simplify FILENAME`  --> ✨ File `FILENAME` ro sade mikone va size-esh ro kam mikone.
+    🔹 `gtk-builder-tool inspect FILENAME`  --> 🕵️‍♀️ Element-haye dakhele file `FILENAME` ro neshun mide va etela'ati dar moredeshun mide.
+
+🛠 **Mesal-ha:**
+
+    $ gtk-builder-tool validate my_window.ui
+
+    🔹 File `my_window.ui` ro check mikone ke moshkeli nadashte bashe.
+
+    $ gtk-builder-tool simplify my_window.ui > my_window_simplified.ui
+
+    🔹 File `my_window.ui` ro sade mikone va natije ro too `my_window_simplified.ui` zakhire mikone.
+
+✅ **Mesal sade:**
+
+    $ gtk-builder-tool validate my_window.ui
+    my_window.ui:42:3: warning: Property “visible” is deprecated and shouldn't be used anymore.
+
+    🔹 Age `gtk-builder-tool` warning ya error peyda kone, mesle bala neshun mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk-builder-tool` command is used to validate `GtkBuilder` files (used for UI design) for errors and inconsistencies. This tool helps ensure that the UI works correctly and without issues.
+
+⚙️ **Options:**
+    🔹 `gtk-builder-tool validate FILENAME`  --> 🔍 Checks the `FILENAME` file for validity.
+    🔹 `gtk-builder-tool simplify FILENAME`  --> ✨ Simplifies the `FILENAME` file and reduces its size.
+    🔹 `gtk-builder-tool inspect FILENAME`  --> 🕵️‍♂️ Inspects the elements inside the `FILENAME` file and provides information about them.
+
+🛠 **Examples:**
+
+    $ gtk-builder-tool validate my_window.ui
+
+    🔹 Checks the `my_window.ui` file for any issues.
+
+    $ gtk-builder-tool simplify my_window.ui > my_window_simplified.ui
+
+    🔹 Simplifies the `my_window.ui` file and saves the result to `my_window_simplified.ui`.
+
+✅ **Simple Example:**
+
+    $ gtk-builder-tool validate my_window.ui
+    my_window.ui:42:3: warning: Property “visible” is deprecated and shouldn't be used anymore.
+
+    🔹 If `gtk-builder-tool` finds any warnings or errors, it will display them as shown above.

@@ -1,0 +1,46 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `bashbug` yek dastoor nist ke be soorat pishfarz dar distro-haye Linux ya Unix vojud dashte bashe. Ehtemalan yek dastoor ya script-e khosoosi hast ke shoma sakhteed ya download kardeed. Baraye etela'at bishtar, bayad manba' ya code-e asli-e aan ra bebinid. Dar kol, agar yek dastoor ya script bash bashad, baraye anjam-e amali khass neveshte shode ast.
+
+⚙️ **Gozine-ha:**
+    Chun `bashbug` yek dastoor standard nist, gozine-haye khas-i nadarad magar inke dar script-e asli tarif shode bashand. Agar script ra khodetan neveshte-id, mitavanid gozine-ha ra ba estefade az `getopts` daroon-e script tarif konid. Dar gheir in surat, bayad code-e script ra check konid ta az gozine-haye dastres motale' shavid.
+
+🛠 **Mesal-ha:**
+
+    $ bashbug  
+    🔹 Run kardan script ya dastoor `bashbug` ba estefade az gozine-haye pishfarz (agar tarif shode bashand).
+
+    $ bashbug --help
+    🔹 Ehtemalan namayesh rahnamayi baraye dastoor agar `--help` dar script tarif shode bashad.
+
+✅ **Mesal sade:**
+
+    $ ./bashbug
+    🔹  Run kardan script `bashbug` az rahe directory-e jari. Agar `bashbug` executable nabashad, bayad dastoor `chmod +x bashbug` ra ghablan ejra konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `bashbug` is not a standard command found in most Linux or Unix distributions. It is likely a custom command or script that you have created or downloaded. To understand its purpose and usage, you need to examine its source or code. Generally, if it's a Bash script, it is written to perform a specific task.
+
+⚙️ **Options:**
+    Since `bashbug` is not a standard command, it doesn't have predefined options unless specified within the script. If you wrote the script, you can define options using `getopts` within the script. Otherwise, you need to check the script's code to learn about the available options.
+
+🛠 **Examples:**
+
+    $ bashbug
+    🔹 Run the `bashbug` script or command with default options (if defined).
+
+    $ bashbug --help
+    🔹 Possibly display help information for the command if `--help` is defined in the script.
+
+✅ **Simple Example:**
+
+    $ ./bashbug
+    🔹 Running the `bashbug` script from the current directory. If `bashbug` is not executable, you may need to run `chmod +x bashbug` beforehand.

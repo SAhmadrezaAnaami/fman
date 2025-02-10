@@ -1,0 +1,67 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lcf` (LoCation Finder) baraye peyda kardane file-ha va directory-ha bar asase name, size, ya tarikh dar system estefade mishavad. In dastoor komak mikone be tore sari' file-haye morede nazar ra peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lcf -n <name>` --> 🏷️ Peyda kardane file-ha ya directory-ha ba esme moshakhas.
+    🔹 `lcf -s <size>` --> ⚖️ Peyda kardane file-ha ba size moshakhas (misal: 1MB, 2GB). Agar adad tanha vared shavad, be bayte dar nazar gerefte mishavad.
+    🔹 `lcf -t <type>` --> 📁 Peyda kardane file-ha ya directory-ha ba type moshakhas (file, dir).
+    🔹 `lcf -p <path>` --> 📍 Shoru kardane jostojo az yek masire khas.
+
+🛠 **Mesal-ha:**
+
+    $ lcf -n myfile.txt
+
+    🔹 Peyda kardane file-i ba name "myfile.txt" dar hameye system.
+
+    $ lcf -s 10MB -t file
+
+    🔹 Peyda kardane hameye file-ha ba size 10 megabyte.
+
+    $ lcf -p /home/user/documents -n report.pdf
+
+    🔹 Jostojo baraye file "report.pdf" faghat dar pooshe "/home/user/documents".
+
+✅ **Mesal sade:**
+
+    $ lcf -n important_file.txt
+
+    🔹 Agar "important_file.txt" dar system vojood dashte bashad, `lcf` masir-e an ra namayesh midahad. Dar gheir in soorat, chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lcf` (LoCation Finder) command is used to locate files and directories based on name, size, or type within the system. It helps you quickly find specific files.
+
+⚙️ **Options:**
+    🔹 `lcf -n <name>` --> 🏷️ Find files or directories with a specific name.
+    🔹 `lcf -s <size>` --> ⚖️ Find files with a specific size (e.g., 1MB, 2GB). If only a number is entered, it's considered bytes.
+    🔹 `lcf -t <type>` --> 📁 Find files or directories with a specific type (file, dir).
+    🔹 `lcf -p <path>` --> 📍 Start the search from a specific path.
+
+🛠 **Examples:**
+
+    $ lcf -n myfile.txt
+
+    🔹 Find a file named "myfile.txt" throughout the entire system.
+
+    $ lcf -s 10MB -t file
+
+    🔹 Find all files with a size of 10 megabytes.
+
+    $ lcf -p /home/user/documents -n report.pdf
+
+    🔹 Search for the file "report.pdf" only within the "/home/user/documents" directory.
+
+✅ **Simple Example:**
+
+    $ lcf -n important_file.txt
+
+    🔹 If "important_file.txt" exists on the system, `lcf` will display its path. Otherwise, nothing will be shown.
+

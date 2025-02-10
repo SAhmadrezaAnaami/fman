@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `join-dctrl` baraye vasl kardane do ta file az noe `debian control file` be ham be kar mirevad. In dastoor asasan baraye sakhtane ya taghir dadane repository-haye Debian estefade mishavad. Yani etela'at package-ha ra az chand ja jam' mikonad va yek file noskhe-ye kamel misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--field <field>`  --> 🔑 Field-i ke bar asase aan vasl shodan anjam mishavad ra moshakhas mikonad (default: Package).
+    🔹 `--empty`       --> 🕳️ Agar field-i dar file dovvom nabud, aan ra be file aval ezafe mikonad.
+    🔹 `--add`         --> ➕ Field-haye jadid az file dovvom be file aval ezafe mishavad.
+    🔹 `--delete <field>` --> 🗑️ Field-i ke bayad hazf shavad ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ join-dctrl file1 file2
+
+    🔹 Vasl kardane `file1` va `file2` bar asase `field` pishfarz (Package).
+
+    $ join-dctrl --field Version file1 file2
+
+    🔹 Vasl kardane `file1` va `file2` bar asase `field` `Version`.
+
+✅ **Mesal sade:**
+
+    $ join-dctrl --add file1 file2 > file_jadid
+
+    🔹 Field-haye jadid az `file2` be `file1` ezafe mishavad va dar `file_jadid` zakhire mishavad.  Agar `file_jadid` ghabeliat neveshtan nadashte bashad, khata midehad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `join-dctrl` command is used to join two `debian control file` files together.  It's primarily used for building or modifying Debian repositories, effectively aggregating package information from multiple sources into a single, comprehensive file.
+
+⚙️ **Options:**
+    🔹 `--field <field>`  --> 🔑 Specifies the field on which to join the files (default: Package).
+    🔹 `--empty`       --> 🕳️ Adds fields from the first file to the second if they don't exist in the second.
+    🔹 `--add`         --> ➕ Adds new fields from the second file to the first.
+    🔹 `--delete <field>` --> 🗑️ Specifies a field to delete.
+
+🛠 **Examples:**
+
+    $ join-dctrl file1 file2
+
+    🔹 Joins `file1` and `file2` based on the default field (Package).
+
+    $ join-dctrl --field Version file1 file2
+
+    🔹 Joins `file1` and `file2` based on the `Version` field.
+
+✅ **Simple Example:**
+
+    $ join-dctrl --add file1 file2 > file_jadid
+
+    🔹 Adds new fields from `file2` to `file1` and saves the result in `file_jadid`. If `file_jadid` doesn't have write permission it returns an error.

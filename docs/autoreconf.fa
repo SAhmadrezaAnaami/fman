@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autoreconf` baraye sakhtan ya update kardan file-haye configure script (mesle `configure`) dar project-haye software estefade mishavad. In kar be developer-ha komak mikonad ke project-haye khod ra rooye system-haye mokhtalef compile va install konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `autoreconf -i`  --> 📦 Copy kardan file-haye supporti agar mojood nabashand.
+    🔹 `autoreconf -f`  --> 🔄 Force kardan update hata agar file-ha tagheer nakarde bashand.
+    🔹 `autoreconf -v`  --> 🗣️ Namayesh dadan etela'at bishtar dar morede chigoonegi kar kardan dastoor.
+    🔹 `autoreconf -s`  --> 🤫 Silent mode, yani kamtar etela'at chap shavad.
+
+🛠 **Mesal-ha:**
+
+    $ autoreconf
+    
+    🔹 Sakhtan ya update kardan configure script ba estefade az file-haye `configure.ac` ya `configure.in`.
+
+    $ autoreconf -i
+    
+    🔹 Copy kardan file-haye lazem agar mojood nabashand va update kardan configure script.
+
+✅ **Mesal sade:**
+
+    $ autoreconf -fiv
+    
+    🔹 Force kardan update, copy kardan file-haye supporti agar nabashand, va namayesh dadan etela'at bishtar dar morede chigoonegi kar kardan dastoor.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autoreconf` command is used to generate or update the configuration scripts (like `configure`) for software projects.  This helps developers compile and install their projects on various systems.
+
+⚙️ **Options:**
+    🔹 `autoreconf -i`  --> 📦 Copy missing support files, if they don't exist.
+    🔹 `autoreconf -f`  --> 🔄 Force an update even if files haven't changed.
+    🔹 `autoreconf -v`  --> 🗣️ Verbose mode, showing more information about how the command works.
+    🔹 `autoreconf -s`  --> 🤫 Silent mode, reducing the amount of output.
+
+🛠 **Examples:**
+
+    $ autoreconf
+    
+    🔹 Generate or update the configuration scripts using `configure.ac` or `configure.in` files.
+
+    $ autoreconf -i
+    
+    🔹 Copy necessary support files if they are missing and update the configuration scripts.
+
+✅ **Simple Example:**
+
+    $ autoreconf -fiv
+    
+    🔹 Force an update, copy missing support files, and provide verbose output about the command's operation.
+

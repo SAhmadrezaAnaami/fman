@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `airscan-discover` baraye peyda kardane scanner-haye shabake (network) estefade mishavad ke az protocol-haye eSCL va WSD estefade mikonand. In dastoor be shoma komak mikonad ta scanner-haye mojood ra dar shabakeye khod peyda konid va az anha dar barname-haye scan estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `airscan-discover --verbose`  --> 🗣️ Namayesh dadan etela'at bishtar dar morede scanner-haye peyda shode.
+    🔹 `airscan-discover --timeout=<modat>` --> ⏳ Ta'een kardane modat zamani baraye jostojoo (be soorat saniye). Agar modat ra ta'een nakonid, az modat zamani pishfarz estefade mishavad.
+    🔹 `airscan-discover --jostojoo-ye-khass <address>` --> 🎯 Faghat donbale yek address IP khass begard.
+
+🛠 **Mesal-ha:**
+
+    $ airscan-discover
+
+    🔹 Scanner-haye mojood dar shabake ra peyda mikonad.
+
+    $ airscan-discover --verbose
+
+    🔹 Scanner-haye mojood ra ba etela'ate bishtar namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ airscan-discover --timeout=5
+
+    🔹 Be modate 5 saniye dar shabake donbale scanner-ha migardad va nataayej ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `airscan-discover` command is used to find network scanners that use the eSCL and WSD protocols. This command helps you discover available scanners on your network and use them in scanning applications.
+
+⚙️ **Options:**
+    🔹 `airscan-discover --verbose`  --> 🗣️ Display more detailed information about the discovered scanners.
+    🔹 `airscan-discover --timeout=<duration>` --> ⏳ Specify the timeout duration for the search (in seconds). If you don't specify a duration, the default timeout is used.
+    🔹 `airscan-discover --address <address>` --> 🎯 Only search for a specific IP address.
+
+🛠 **Examples:**
+
+    $ airscan-discover
+
+    🔹 Discovers available scanners on the network.
+
+    $ airscan-discover --verbose
+
+    🔹 Displays available scanners with more detailed information.
+
+✅ **Simple Example:**
+
+    $ airscan-discover --timeout=5
+
+    🔹 Searches the network for scanners for 5 seconds and displays the results.
+

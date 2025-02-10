@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gprof` yek abzare barname-nevisi ast ke baraye tahlil va behbood performance (kaarkard) barname-haye C, C++, va Fortran estefade mishavad. In dastoor etela'ati darbareye moddat zaman gerefte shodeh tooste function-ha dar barname va function-hayei ke az har function seda zade shodeh and ra neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gprof image` --> 📊 Namayesh dade-haye profile-e asli az file `gmon.out`  (ya az filei ke ba `-o` moshakhas shodeh).
+    🔹 `gprof -b image` --> 🧱 Hazf etela'ati ke motaleq be function-haye built-in hastand az khoruji (output).
+    🔹 `gprof -p image` --> 📈 Namayesh dade-haye profile faqat az negah function-ha (flat profile).
+    🔹 `gprof -q image` --> 📞 Namayesh dade-haye profile faqat az negah graph call (call graph).
+    🔹 `gprof -o output-file image` --> 💾 Save khoruji (output) be yek file digar be jaye standard output.
+
+🛠 **Mesal-ha:**
+
+    $ gcc -pg -o myprogram myprogram.c
+    $ ./myprogram
+    $ gprof myprogram
+
+    🔹 Compile (tarjomeh), ejra va tahlil yek barname sade.
+
+    $ gprof -p myprogram > flat_profile.txt
+
+    🔹 Zakhireh (save) khoruji flat profile dar yek file.
+
+✅ **Mesal sade:**
+
+    $ gprof myprogram | less
+
+    🔹 Estefade az `less` baraye safhe-bandi khoruji toolani `gprof`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gprof` command is a programming tool used to analyze and improve the performance of C, C++, and Fortran programs. It provides information about the amount of time spent in each function within the program and the functions called by each function.
+
+⚙️ **Options:**
+    🔹 `gprof image` --> 📊 Display the profile data from the `gmon.out` file (or a file specified with `-o`).
+    🔹 `gprof -b image` --> 🧱 Suppress the printing of information about built-in functions.
+    🔹 `gprof -p image` --> 📈 Display only the flat profile data (function-level profiling).
+    🔹 `gprof -q image` --> 📞 Display only the call graph data (call graph profiling).
+    🔹 `gprof -o output-file image` --> 💾 Save the output to a file instead of standard output.
+
+🛠 **Examples:**
+
+    $ gcc -pg -o myprogram myprogram.c
+    $ ./myprogram
+    $ gprof myprogram
+
+    🔹 Compile, run, and analyze a simple program.
+
+    $ gprof -p myprogram > flat_profile.txt
+
+    🔹 Save the flat profile output to a file.
+
+✅ **Simple Example:**
+
+    $ gprof myprogram | less
+
+    🔹 Use `less` to paginate the lengthy output of `gprof`.

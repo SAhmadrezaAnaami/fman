@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `google-chrome` yek barname browser baraye gardesh dar internet ast. Ba in dastoor, shoma mitavanid Chrome ra az terminal baz konid va URL-ha ya option-haye mokhtalef ra be aan pass bedahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `google-chrome URL` --> 🌐 Baz kardane yek safhe web khass.
+    🔹 `google-chrome --new-window URL` --> 🖼 Baz kardane URL dar yek panjere jadid.
+    🔹 `google-chrome --incognito URL` --> 🕵️‍♀️ Baz kardane URL dar halate makhfi (Incognito).
+    🔹 `google-chrome --version` --> ℹ️ Namayeshe version Google Chrome.
+
+🛠 **Mesal-ha:**
+
+    $ google-chrome
+    
+    🔹 Baz kardane Google Chrome be soorate normal.
+
+    $ google-chrome https://www.example.com
+    
+    🔹 Baz kardane safhe web https://www.example.com dar Google Chrome.
+
+    $ google-chrome --new-window https://www.example.com
+    
+    🔹 Baz kardane safhe web https://www.example.com dar yek panjere jadid.
+
+✅ **Mesal sade:**
+
+    $ google-chrome --version
+    
+    🔹 Namayeshe version Google Chrome nasb shode dar system. Mesal: `Google Chrome 114.0.5735.198`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `google-chrome` is a web browser application.  This command allows you to launch Chrome from the terminal and pass it specific URLs or options.
+
+⚙️ **Options:**
+    🔹 `google-chrome URL` --> 🌐 Open a specific web page.
+    🔹 `google-chrome --new-window URL` --> 🖼 Open the URL in a new window.
+    🔹 `google-chrome --incognito URL` --> 🕵️‍♀️ Open the URL in Incognito mode.
+    🔹 `google-chrome --version` --> ℹ️ Display the Google Chrome version.
+
+🛠 **Examples:**
+
+    $ google-chrome
+    
+    🔹 Launch Google Chrome normally.
+
+    $ google-chrome https://www.example.com
+    
+    🔹 Open the web page https://www.example.com in Google Chrome.
+
+    $ google-chrome --new-window https://www.example.com
+    
+    🔹 Open the web page https://www.example.com in a new window.
+
+✅ **Simple Example:**
+
+    $ google-chrome --version
+    
+    🔹 Displays the installed Google Chrome version. Example: `Google Chrome 114.0.5735.198`.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debrepro` baraye dorost kardan yek repository mahali (local) Debian az file-haye `.deb` estefade mishavad. In dastoor be shoma komak mikonad ke package-haye Debian ra be soorate mahali modiriyat konid, bedoone niaz be internet baraye install ya update kardan anha.
+
+⚙️ **Gozine-ha:**
+    🔹 `debrepro -s <pooshe>` --> 📁  Moshakhas kardan pooshe-e asli baraye repository.  
+    🔹 `debrepro -d <pakhsh>` --> 📦  Moshakhas kardan pakhsh (distribution), mesle 'stable', 'testing', ya 'unstable'.  
+    🔹 `debrepro -c <component>` --> 🧩  Moshakhas kardan component, mesle 'main', 'contrib', ya 'non-free'.
+    🔹 `debrepro -p <pooshe-deb-ha>` --> 📂  Moshakhas kardan pooshe-i ke file-haye .deb dar an gharar darand.
+
+🛠 **Mesal-ha:**
+
+    $ debrepro -s ./myrepo -d stable -c main -p ./debs
+
+    🔹  In dastoor yek repository Debian mahali dar pooshe `./myrepo` misazad, az file-haye `.deb` dar pooshe `./debs` estefade mikonad, va an ra ba pakhsh 'stable' va component 'main' taghsim-bandi mikonad.
+
+    $ debrepro -s /var/www/html/debian -d testing -c contrib -p /tmp/new_debs
+
+    🔹  In dastoor yek repository Debian mahali dar `/var/www/html/debian` misazad, az file-haye `.deb` dar `/tmp/new_debs` estefade mikonad, va an ra ba pakhsh 'testing' va component 'contrib' taghsim-bandi mikonad.
+
+✅ **Mesal sade:**
+
+    $ debrepro -s ./myrepo -d stable -c main -p ./debs && apt update
+
+    🔹  Aval yek repository mahali Debian misazad va bad az an, dastoor `apt update` ra ejra mikonad ta system az package-haye jadid dar repository mahali aagah shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debrepro` command is used to create a local Debian repository from `.deb` files. It helps you manage Debian packages locally, without needing an internet connection to install or update them.
+
+⚙️ **Options:**
+    🔹 `debrepro -s <directory>` --> 📁  Specify the base directory for the repository.
+    🔹 `debrepro -d <distribution>` --> 📦  Specify the distribution, such as 'stable', 'testing', or 'unstable'.
+    🔹 `debrepro -c <component>` --> 🧩  Specify the component, such as 'main', 'contrib', or 'non-free'.
+    🔹 `debrepro -p <deb-files-directory>` --> 📂  Specify the directory where the .deb files are located.
+
+🛠 **Examples:**
+
+    $ debrepro -s ./myrepo -d stable -c main -p ./debs
+
+    🔹  This command creates a local Debian repository in the `./myrepo` directory, using the `.deb` files located in the `./debs` directory, and categorizes it with the 'stable' distribution and 'main' component.
+
+    $ debrepro -s /var/www/html/debian -d testing -c contrib -p /tmp/new_debs
+
+    🔹  This command creates a local Debian repository in `/var/www/html/debian`, using the `.deb` files located in `/tmp/new_debs`, and categorizes it with the 'testing' distribution and 'contrib' component.
+
+✅ **Simple Example:**
+
+    $ debrepro -s ./myrepo -d stable -c main -p ./debs && apt update
+
+    🔹  First, it creates a local Debian repository, and then it runs the `apt update` command to make the system aware of the new packages in the local repository.

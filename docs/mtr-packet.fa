@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mtr-packet` yek abzar baraye test kardan etesal shabake (network connectivity) ast. Mesle `traceroute` va `ping` amal mikonad, amma etela'at bishtari dar morede har hop (marhale dar masir) neshan midahad. `mtr-packet` be shoma komak mikonad moshkelat etesal ra peyda konid, bekhosos vaghti ke moshkel daran dar yek hop khasi az masir be samte maqsad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mtr-packet [host]` -->  🚀 Asasi tarin shekl estefade, `mtr-packet` ra ba host morede nazar ejra mikonad.
+    🔹 `mtr-packet -r [host]` --> 📊 Gozaresh ra dar shekl raw (text) chap mikonad, baraye zakhire kardan ya process kardan monaseb ast.
+    🔹 `mtr-packet -n [host]` --> 📍 Az talash baraye peyda kardan esm host (hostname resolution) khod dari mikonad, ke mitavanad sari'tar bashad.
+    🔹 `mtr-packet -i [seconds] [host]` --> ⏱️ Faasele zamani bein har ping ra moshakhas mikonad (defult 1 sanie ast).
+
+🛠 **Mesal-ha:**
+
+    $ mtr-packet google.com
+
+    🔹 Aghaz kardan test etesal be google.com. Etela'at har hop dar masir be google.com neshan dade mishavad.
+
+    $ mtr-packet -r 8.8.8.8
+
+    🔹 Gozaresh ra be shekle raw az test be IP address 8.8.8.8 chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ mtr-packet -n example.com
+
+    🔹 Test be example.com ra bedune hostname resolution aghaz mikonad, ke mitavanad sari'tar bashad agar faghat IP address mohem bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mtr-packet` command is a network diagnostic tool that combines the functionality of `traceroute` and `ping`. It provides more detailed information about each hop in the path to a destination, helping you identify network connectivity issues, especially those occurring at a specific hop.
+
+⚙️ **Options:**
+    🔹 `mtr-packet [host]` --> 🚀 Basic usage, runs `mtr-packet` on the specified host.
+    🔹 `mtr-packet -r [host]` --> 📊 Prints the raw report format, suitable for saving or processing.
+    🔹 `mtr-packet -n [host]` --> 📍 Avoids attempting to resolve hostnames, which can speed up the process.
+    🔹 `mtr-packet -i [seconds] [host]` --> ⏱️ Sets the interval between pings in seconds (default is 1 second).
+
+🛠 **Examples:**
+
+    $ mtr-packet google.com
+
+    🔹 Starts a connectivity test to google.com. Shows information about each hop in the path to google.com.
+
+    $ mtr-packet -r 8.8.8.8
+
+    🔹 Prints the raw report format for the test to IP address 8.8.8.8.
+
+✅ **Simple Example:**
+
+    $ mtr-packet -n example.com
+
+    🔹 Starts the test to example.com without hostname resolution, which can be faster if you only care about the IP address.

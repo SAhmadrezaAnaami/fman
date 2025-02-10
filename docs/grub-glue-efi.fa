@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-glue-efi` yek dastoor komaki baraye sakhtane file-haye EFI image az yek file GRUB EFI core image ast. In dastoor be shoma komak mikonad ta GRUB ra baraye UEFI system-ha ra andaze-bandi va dorost konid. Yani, `grub-glue-efi` chizi chosbande ast ke GRUB ra be UEFI systemetan michosbanad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--dest-path=MASIR`  --> 📁 Masiir ya mahale zakhire shodan file khorooji EFI image ra moshakhas mikonad.  
+    🔹 `--core-image=FILE`  --> 💾 File asli GRUB EFI core image ra moshakhas mikonad. In file mesle ghalb-e GRUB baraye UEFI shoma ast.
+    🔹 `--modules=MODULE1,MODULE2,...` --> 🧩 Module haye ezafi GRUB ke bayad shamel shavand ra moshakhas mikonad. Mesle afzudani ha ke GRUB ra ghavi tar mikonand.
+
+🛠 **Mesal-ha:**
+
+    $ grub-glue-efi --dest-path=grubx64.efi --core-image=core.img --modules="normal linux boot chain"
+
+    🔹 In dastoor file `core.img` ra ba module-haye "normal linux boot chain" be ham michosbanad va yek file EFI ba name `grubx64.efi` dar haman directory misazad.
+
+    $ grub-glue-efi --dest-path=/boot/efi/EFI/myos/grubx64.efi --core-image=core.img
+
+    🔹 In dastoor file `core.img` ra be masire `/boot/efi/EFI/myos/grubx64.efi` michosbanad, ke oboore behtare be pooshe EFI systeme shoma mide.
+
+✅ **Mesal sade:**
+
+    $ grub-glue-efi --dest-path=grubx64.efi --core-image=core.img
+
+    🔹 In dastoor yek file EFI misazad ke UEFI mitavand GRUB ra load konad, bad az an GRUB system amel ra load mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-glue-efi` command is a utility for creating EFI image files from a GRUB EFI core image file. It helps you package and prepare GRUB for UEFI systems. Basically, `grub-glue-efi` is a "glue" that attaches GRUB to your UEFI system.
+
+⚙️ **Options:**
+    🔹 `--dest-path=PATH`  --> 📁 Specifies the destination path where the resulting EFI image file will be saved.
+    🔹 `--core-image=FILE`  --> 💾 Specifies the GRUB EFI core image file. This file is like the heart of GRUB for your UEFI setup.
+    🔹 `--modules=MODULE1,MODULE2,...` --> 🧩 Specifies additional GRUB modules to include. These are like plugins that enhance GRUB's capabilities.
+
+🛠 **Examples:**
+
+    $ grub-glue-efi --dest-path=grubx64.efi --core-image=core.img --modules="normal linux boot chain"
+
+    🔹 This command glues the `core.img` with the "normal linux boot chain" modules together and creates an EFI file named `grubx64.efi` in the current directory.
+
+    $ grub-glue-efi --dest-path=/boot/efi/EFI/myos/grubx64.efi --core-image=core.img
+
+    🔹 This command glues the `core.img` to the path `/boot/efi/EFI/myos/grubx64.efi`, offering a cleaner path to your system's EFI folder.
+
+✅ **Simple Example:**
+
+    $ grub-glue-efi --dest-path=grubx64.efi --core-image=core.img
+
+    🔹 This command creates an EFI file that UEFI can load to start GRUB, which in turn loads the operating system.

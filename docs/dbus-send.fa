@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbus-send` baraye ferestadan payam be service-haye DBus estefade mishavad. DBus yek system-e communication bein process-ha ast, ke barname-ha mitavanand ba ham digar sohbat konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--system`  --> 💻 Estefade az system bus (baraye service-haye system)
+    🔹 `--session` --> 👤 Estefade az session bus (baraye barname-haye user)
+    🔹 `--type=method_call` --> 📞 Specify type payam, mesl method call
+    🔹 `--dest=NAME` --> 🎯 Specify name service ke behesh payam ferestade mishe.
+    🔹 `signature` `value` --> 📝 Parametr-ha baraye method call.
+
+🛠 **Mesal-ha:**
+
+    $ dbus-send --session --dest=org.mpris.MediaPlayer2.spotify \
+                 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+    🔹 Play/pause kardane Spotify (ya har media player dige ke az MPRIS estefade mikone).
+
+    $ dbus-send --session --type=method_call \
+                 --dest=org.freedesktop.Notifications \
+                 /org/freedesktop/Notifications \
+                 org.freedesktop.Notifications.ShowNotification \
+                 string:"app_name" string:"replaces_id" string:"app_icon" string:"summary" string:"body" array string:[] dict string variant:{} int32:5000
+
+    🔹 Namayesh dadane yek notification rooye desktop.
+
+✅ **Mesal sade:**
+
+    $ dbus-send --session --dest=org.example.Service /org/example/Object org.example.Interface.Method string:"Hello"
+
+    🔹 Ferestadane yek payam ba type string be service `org.example.Service`, object path `/org/example/Object`, va interface `org.example.Interface`, dar session bus.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbus-send` command is used to send messages to DBus services. DBus is a system for inter-process communication, allowing applications to talk to each other.
+
+⚙️ **Options:**
+    🔹 `--system`  --> 💻 Use the system bus (for system services)
+    🔹 `--session` --> 👤 Use the session bus (for user applications)
+    🔹 `--type=method_call` --> 📞 Specify the message type, such as a method call.
+    🔹 `--dest=NAME` --> 🎯 Specify the name of the service to send the message to.
+    🔹 `signature` `value` --> 📝 Parameters for the method call.
+
+🛠 **Examples:**
+
+    $ dbus-send --session --dest=org.mpris.MediaPlayer2.spotify \
+                 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+    🔹 Play/pauses Spotify (or any other media player that uses MPRIS).
+
+    $ dbus-send --session --type=method_call \
+                 --dest=org.freedesktop.Notifications \
+                 /org/freedesktop/Notifications \
+                 org.freedesktop.Notifications.ShowNotification \
+                 string:"app_name" string:"replaces_id" string:"app_icon" string:"summary" string:"body" array string:[] dict string variant:{} int32:5000
+
+    🔹 Display a desktop notification.
+
+✅ **Simple Example:**
+
+    $ dbus-send --session --dest=org.example.Service /org/example/Object org.example.Interface.Method string:"Hello"
+
+    🔹 Sends a string message to the service `org.example.Service`, object path `/org/example/Object`, and interface `org.example.Interface` on the session bus.

@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `memusagestat` baraye didan etela'at estefade az hafize RAM va swap memory dar system-e shoma estefade mishavad.  In dastoor be shoma komak mikonad ke bedanid cheghadr az hafize shoma por ast va cheghadr az hafize swap estefade shode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `memusagestat` -->  📊 Namayesh etela'at asasi raje be estefade az hafize.
+    🔹 `memusagestat -h` --> ℹ️ Namayesh komak (help) baraye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ memusagestat
+
+    🔹 Namayesh etela'at default raje be estefade az hafize.
+
+    $ memusagestat -h
+
+    🔹 Namayesh rahnamayi baraye dastoor `memusagestat`.
+
+✅ **Mesal sade:**
+
+    $ memusagestat
+
+    🔹 In dastoor etela'ati mesl meghdare total hafize, meghdare estefade shode, meghdare azad va meghdare buffered/cached ra namayesh midahad.  Az in etela'at mitavanid baraye tashkhis moshkelat karayi system estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `memusagestat` command is used to view memory (RAM) and swap memory usage statistics on your system. This command helps you understand how much of your memory is being used and how much swap space is being utilized.
+
+⚙️ **Options:**
+    🔹 `memusagestat` --> 📊 Display basic memory usage information.
+    🔹 `memusagestat -h` --> ℹ️ Display help information for the command.
+
+🛠 **Examples:**
+
+    $ memusagestat
+
+    🔹 Display default memory usage information.
+
+    $ memusagestat -h
+
+    🔹 Display help information for the `memusagestat` command.
+
+✅ **Simple Example:**
+
+    $ memusagestat
+
+    🔹 This command will show information such as total memory, used memory, free memory, and buffered/cached memory. You can use this information to troubleshoot performance issues on your system.
+

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ipcs` etela'at raje' be vasayel ertebati bein process-ha (IPC) dar system, mesle shared memory, message queues va semaphore-ha neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `ipcs -q`  --> ✉️ Namayesh message queue-ha
+    🔹 `ipcs -m`  --> 🧠 Namayesh shared memory segment-ha
+    🔹 `ipcs -s`  --> 🚦 Namayesh semaphore-ha
+    🔹 `ipcs -a`  --> 👁️‍🗨️ Namayesh hameye vasayel IPC
+
+🛠 **Mesal-ha:**
+
+    $ ipcs
+
+    🔹 Namayesh etela'at kholase raje' be hameye vasayel IPC
+
+    $ ipcs -m
+
+    🔹 Namayesh etela'at raje' be shared memory segment-ha
+
+✅ **Mesal sade:**
+
+    $ ipcs -q
+
+    🔹 Message queue-haye fa'al dar system ra ba etela'at mored niaz neshan midahad, mesle ID va owner-ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ipcs` command displays information about inter-process communication (IPC) facilities in the system, such as shared memory, message queues, and semaphores.
+
+⚙️ **Options:**
+    🔹 `ipcs -q`  --> ✉️ Show message queues
+    🔹 `ipcs -m`  --> 🧠 Show shared memory segments
+    🔹 `ipcs -s`  --> 🚦 Show semaphores
+    🔹 `ipcs -a`  --> 👁️‍🗨️ Show all IPC facilities
+
+🛠 **Examples:**
+
+    $ ipcs
+
+    🔹 Displays summary information about all IPC facilities
+
+    $ ipcs -m
+
+    🔹 Displays information about shared memory segments
+
+✅ **Simple Example:**
+
+    $ ipcs -q
+
+    🔹 Shows the active message queues in the system with relevant information such as their ID and owner.

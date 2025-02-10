@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-menulst2cfg` baraye tabdil dadan file-haye `menu.lst` (ke ghadimi hastand) be formati ke ba `grub.cfg` (format jadid) sazgar bashad, estefade mishavad. Yani file-haye config-e GRUB ra az format-e ghadimi be jadid tabdil mikonad. Agar az GRUB legacy estefade mikonid va mikhahid be GRUB2 beravid, in dastoor kheili be dard bokhor ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--output=FILE`  --> 📤 File-e khoruji ra moshakhas mikonad. Yani natijeye tabdil be koja zakhire shavad. Age file-e khoruji ra nagoyid, dastoor natije ra dar safe namayesh chap mikonad (standard output).
+    🔹 `--device-map=FILE` --> 🗺️ File device map ra moshakhas mikonad. Agar device map-e khassi darid, mitavanid address-e aan ra inja bedahid.
+    🔹 `--grub-mkconfig=FILE` --> ⚙️ Dastoore `grub-mkconfig` ra be عنوان dastoor asli entekhab mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ grub-menulst2cfg /boot/grub/menu.lst > /boot/grub/grub.cfg
+
+    🔹 In mesal file `/boot/grub/menu.lst` ra be format `grub.cfg` tabdil mikonad va dar `/boot/grub/grub.cfg` zakhire mikonad.
+
+    $ grub-menulst2cfg --output=/tmp/grub.cfg /boot/grub/menu.lst
+
+    🔹 In mesal file `/boot/grub/menu.lst` ra be format `grub.cfg` tabdil mikonad va dar `/tmp/grub.cfg` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-menulst2cfg /boot/grub/menu.lst
+
+    🔹 Agar file khorouji moshakhas nashavad natije dar terminal chap mishavad. shoma mitavanid natijeye chap shode ra copy va dar file `grub.cfg` paste konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-menulst2cfg` command is used to convert older `menu.lst` files into a format compatible with `grub.cfg`, the new configuration format for GRUB2. It essentially migrates GRUB configuration files from the legacy format to the modern GRUB2 format. This is useful when migrating from GRUB legacy to GRUB2.
+
+⚙️ **Options:**
+    🔹 `--output=FILE`  --> 📤 Specifies the output file. This determines where the converted configuration will be saved. If no output file is specified, the command prints the output to standard output (the terminal).
+    🔹 `--device-map=FILE` --> 🗺️ Specifies the device map file. If you have a custom device map, you can specify its location here.
+    🔹 `--grub-mkconfig=FILE` --> ⚙️ Specifies the alternative grub-mkconfig tool.
+
+🛠 **Examples:**
+
+    $ grub-menulst2cfg /boot/grub/menu.lst > /boot/grub/grub.cfg
+
+    🔹 This example converts the `/boot/grub/menu.lst` file to `grub.cfg` format and saves it to `/boot/grub/grub.cfg`.
+
+    $ grub-menulst2cfg --output=/tmp/grub.cfg /boot/grub/menu.lst
+
+    🔹 This example converts the `/boot/grub/menu.lst` file to `grub.cfg` format and saves it to `/tmp/grub.cfg`.
+
+✅ **Simple Example:**
+
+    $ grub-menulst2cfg /boot/grub/menu.lst
+
+    🔹 If no output file is specified, the converted configuration is printed to the terminal. You can then copy and paste this output into your `grub.cfg` file.

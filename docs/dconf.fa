@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dconf` baraye tagheer dadan ayar-ha (settings) dar GNOME desktop estefade mishavad.  In dastoor be shoma emkan mideh ke ayar-haye mokhtalef barname-ha va system ra tagheer bedehid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dconf read <path>`  --> 🔍 Khoondan yek ayar khas az path mored nazar.
+    🔹 `dconf write <path> <value>` --> ✍️ Neveshtan yek ayar jadid ya tagheer ayare ghabli dar path mored nazar.
+    🔹 `dconf reset <path>` --> 🔄 Bazgardandan ayar be halate pishfarz dar path mored nazar.
+    🔹 `dconf update` --> ⬆️ Update kardane dconf database.
+
+🛠 **Mesal-ha:**
+
+    $ dconf read /org/gnome/desktop/interface/gtk-theme
+
+    🔹 Khoondan theme GTK estefade shode dar system.
+
+    $ dconf write /org/gnome/desktop/interface/gtk-theme "'Adwaita'"
+
+    🔹 Tagheer dadane theme GTK be Adwaita.
+
+✅ **Mesal sade:**
+
+    $ dconf read /org/gnome/desktop/interface/icon-theme
+
+    🔹 Namayesh dadane name theme icon estefade shode. Agar natije chizi mesle "Papirus" bashad, yani system shoma az theme icon Papirus estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dconf` command is used to manage settings in the GNOME desktop environment.  It allows you to read, write, and reset configuration settings for various applications and the system itself.
+
+⚙️ **Options:**
+    🔹 `dconf read <path>` --> 🔍 Read a specific setting from the specified path.
+    🔹 `dconf write <path> <value>` --> ✍️ Write a new setting or modify an existing one at the specified path.
+    🔹 `dconf reset <path>` --> 🔄 Reset a setting to its default value at the specified path.
+    🔹 `dconf update` --> ⬆️ Update the dconf database.
+
+🛠 **Examples:**
+
+    $ dconf read /org/gnome/desktop/interface/gtk-theme
+
+    🔹 Read the currently used GTK theme.
+
+    $ dconf write /org/gnome/desktop/interface/gtk-theme "'Adwaita'"
+
+    🔹 Change the GTK theme to Adwaita.
+
+✅ **Simple Example:**
+
+    $ dconf read /org/gnome/desktop/interface/icon-theme
+
+    🔹 Displays the name of the currently used icon theme. If the output is something like "Papirus", it means your system is using the Papirus icon theme.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apport-collect` baraye jam'avari etela'at dar morede crash-ha va moshkelat barname-ha estefade mishavad. In etela'at be developer-ha komak mikonad ta moshkelat ra peyda va hal konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `apport-collect -p <esm-e-package>`  --> 📦 Jam'avari etela'at baraye yek package khass. Esme package bayad dorost vared shavad.
+    🔹 `apport-collect <PID>` --> 🆔 Jam'avari etela'at baraye yek process ba PID moshakhas. PID ra az dastoor `ps` ya `top` mitavan gereft.
+    🔹 `apport-collect` --> 🐞 Dar soorate run shodan bad az crash, etela'at crash ra jam'avari mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ apport-collect -p firefox
+
+    🔹 Jam'avari etela'at baraye package "firefox".
+
+    $ apport-collect 1234
+
+    🔹 Jam'avari etela'at baraye processi ke PID-ash 1234 ast.
+
+✅ **Mesal sade:**
+
+    $ apport-collect
+
+    🔹 Agar be tore mostaghim bad az crash barname run shavad, etela'ate crash ra jam'avari mikonad va baraye developers mifrestad ta moshkel ra hal konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apport-collect` command is used to collect information about crashes and program problems.  This information helps developers find and fix the issues.
+
+⚙️ **Options:**
+    🔹 `apport-collect -p <package-name>` --> 📦 Collect information for a specific package. The package name must be entered correctly.
+    🔹 `apport-collect <PID>` --> 🆔 Collect information for a process with a specific PID. The PID can be obtained from the `ps` or `top` commands.
+    🔹 `apport-collect` --> 🐞 If run directly after a crash, it collects crash information.
+
+🛠 **Examples:**
+
+    $ apport-collect -p firefox
+
+    🔹 Collect information for the "firefox" package.
+
+    $ apport-collect 1234
+
+    🔹 Collect information for the process whose PID is 1234.
+
+✅ **Simple Example:**
+
+    $ apport-collect
+
+    🔹 If run directly after a program crash, it collects the crash information and sends it to developers to help resolve the issue.

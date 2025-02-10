@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `cpp` yek dastoor baraye run kardane C preprocessor ast. In dastoor ghabl az compile shodan, code ra barresi va dastoorat preprocessor ra ejra mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cpp -E file.c`  --> 📜 Namayesh khorooji preprocessor be stdout (standard output)  
+    🔹 `cpp -D NAME`   --> 🏷️ Tarif kardan yek macro ba name `NAME`  
+    🔹 `cpp -D NAME=VALUE` --> 📊 Tarif kardan yek macro ba name `NAME` va meghdar `VALUE`  
+    🔹 `cpp -I directory` --> 📂 Ezafe kardane directory baraye gashtan header file-ha  
+    🔹 `cpp -undef NAME`  --> ❌ Hazf kardane macro ba name `NAME`  
+
+🛠 **Mesal-ha:**
+    
+    $ cpp -E hello.c
+    
+    🔹 Run kardane preprocessor rooye file `hello.c` va chap kardane natije.
+
+    $ cpp -D DEBUG -E hello.c
+    
+    🔹 Run kardane preprocessor rooye `hello.c` ba macro `DEBUG` tarif shode.
+
+✅ **Mesal sade:**
+    
+    $ cpp -D VERSION=1.2.3 -E hello.c | grep VERSION
+ 
+    🔹 Run kardane preprocessor ba macro `VERSION` va estefade az `grep` baraye peyda kardane khat-haee ke `VERSION` dar anha vojood darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `cpp` is a command to run the C preprocessor.  This command examines the code and executes preprocessor directives before compilation.
+
+⚙️ **Options:**
+    🔹 `cpp -E file.c`  --> 📜 Display preprocessor output to stdout (standard output)
+    🔹 `cpp -D NAME`   --> 🏷️ Define a macro with the name `NAME`
+    🔹 `cpp -D NAME=VALUE` --> 📊 Define a macro with the name `NAME` and value `VALUE`
+    🔹 `cpp -I directory` --> 📂 Add a directory to search for header files
+    🔹 `cpp -undef NAME`  --> ❌ Remove the macro with the name `NAME`
+
+🛠 **Examples:**
+    
+    $ cpp -E hello.c
+    
+    🔹 Run the preprocessor on the file `hello.c` and print the result.
+
+    $ cpp -D DEBUG -E hello.c
+    
+    🔹 Run the preprocessor on `hello.c` with the macro `DEBUG` defined.
+
+✅ **Simple Example:**
+    
+    $ cpp -D VERSION=1.2.3 -E hello.c | grep VERSION
+ 
+    🔹 Run the preprocessor with the macro `VERSION` and use `grep` to find the lines containing `VERSION`.

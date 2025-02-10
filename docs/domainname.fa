@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `domainname` baraye namayesh ya ta'yin name domain system shoma (DNS) estefade mishavad. Agar domainname ta'yin nashode bashad, natijeh momken ast `(none)` bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `domainname`  --> 💻 Namayesh name domain system.
+    🔹 `domainname -f` --> 🌐 Namayesh fully qualified domain name (FQDN) agar mojood bashad. Agar mojood nabashad, host name ra namayesh midahad.
+    🔹 `domainname [NAME]` --> ✍️ Ta'yin name domain system be [NAME]. In dastoor niaz be dastresi root darad.
+
+🛠 **Mesal-ha:**
+
+    $ domainname
+
+    🔹 Namayesh name domain system فعلی
+
+    $ domainname -f
+
+    🔹 Namayesh FQDN agar mojood bashad.
+
+✅ **Mesal sade:**
+
+    $ sudo domainname example.com
+
+    🔹 Ta'yin name domain be "example.com".  Baraye ta'yin دائمی name domain, bayad config file-haye network system ra ویرایش konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `domainname` command is used to display or set your system's Domain Name System (DNS) domain name. If the domain name is not set, the output may be `(none)`.
+
+⚙️ **Options:**
+    🔹 `domainname`  --> 💻 Display the system's domain name.
+    🔹 `domainname -f` --> 🌐 Display the fully qualified domain name (FQDN) if available. If not available, it displays the hostname.
+    🔹 `domainname [NAME]` --> ✍️ Set the system's domain name to [NAME]. This command requires root access.
+
+🛠 **Examples:**
+
+    $ domainname
+
+    🔹 Display the current system's domain name.
+
+    $ domainname -f
+
+    🔹 Display the FQDN if available.
+
+✅ **Simple Example:**
+
+    $ sudo domainname example.com
+
+    🔹 Set the domain name to "example.com".  To permanently set the domain name, you need to edit the system's network configuration files.

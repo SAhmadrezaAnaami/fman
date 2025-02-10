@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `recode` baraye tabdil dadeh-ha az yek encoding (code-gozari) be yek encoding-e digar estefade mishavad. Masalan, az UTF-8 be ASCII ya az ISO-8859-1 be UTF-8. In dastoor kheili be dard mikhore vaghti shoma file-haee darid ke ba code-gozari-haye mokhtalef neveshte shode-and va shoma mikhaid hame-ye anha ro yek dast konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `recode UTF-8..LATIN1 file.txt`  --> 🔄 Tabdil file.txt az LATIN1 be UTF-8.
+    🔹 `recode -l`  --> ℹ️ List kardan hameye encoding-haye poshtibani shode.
+    🔹 `recode -d`  --> 🔍 Show dadan path haye pishfarz baraye share directory ha va aliases.
+    🔹 `recode -q`  --> 🤫 Sedaye khataharo kam mikone (Quiet mode).
+    🔹 `recode -f`  --> 💪 Majboor mikone tabdil ro hata age mumkene dadeha az bayn beran.
+
+🛠 **Mesal-ha:**
+
+    $ recode LATIN1..UTF-8 myfile.txt
+
+    🔹 Tabdil file `myfile.txt` az encoding LATIN1 be UTF-8.
+
+    $ recode windows-1252..utf-8 anotherfile.txt
+
+    🔹 Tabdil file `anotherfile.txt` az encoding Windows-1252 be UTF-8.
+
+✅ **Mesal sade:**
+
+    $ recode -l | grep utf8
+
+    🔹 Peida kardan hameye encoding haee ke dar onha "utf8" vojood dare.  In komak mikone encoding-haye mesle "utf-8", "utf8mb4" va gheire ro peida konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `recode` command is used to convert data from one encoding to another. For example, from UTF-8 to ASCII or from ISO-8859-1 to UTF-8. It's very useful when you have files written in different encodings and you want to unify them.
+
+⚙️ **Options:**
+    🔹 `recode UTF-8..LATIN1 file.txt`  --> 🔄 Convert file.txt from LATIN1 to UTF-8.
+    🔹 `recode -l`  --> ℹ️ List all supported encodings.
+    🔹 `recode -d`  --> 🔍 Display the default path for share directories and aliases.
+    🔹 `recode -q`  --> 🤫 Reduce error output (Quiet mode).
+    🔹 `recode -f`  --> 💪 Force the conversion even if data loss is possible.
+
+🛠 **Examples:**
+
+    $ recode LATIN1..UTF-8 myfile.txt
+
+    🔹 Convert the file `myfile.txt` from LATIN1 encoding to UTF-8.
+
+    $ recode windows-1252..utf-8 anotherfile.txt
+
+    🔹 Convert the file `anotherfile.txt` from Windows-1252 encoding to UTF-8.
+
+✅ **Simple Example:**
+
+    $ recode -l | grep utf8
+
+    🔹 Find all encodings that contain "utf8". This helps you find encodings like "utf-8", "utf8mb4", etc.

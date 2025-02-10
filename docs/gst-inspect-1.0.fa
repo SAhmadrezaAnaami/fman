@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-inspect-1.0` baraye didan etela'at dar morede GStreamer plugin-ha va element-ha estefade mishavad.  Shoma mitavanid etela'ati mesle esm, tashrih, properti-ha, va signal-ha ra dar morede yek plugin ya element khas bebinid.  Be zabane sade, in dastoor be shoma komak mikonad ta bedanid har component dar GStreamer che kari anjam midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gst-inspect-1.0 --version`  --> ℹ️  Namayesh version GStreamer.
+    🔹 `gst-inspect-1.0 PLUGIN_YA_ELEMENT_NAME` --> 🔍  Namayesh etela'ate kamel dar morede yek plugin ya element khas.  Be jaye `PLUGIN_YA_ELEMENT_NAME` , esme plugin ya element ra benevisid (masalan `v4l2src` ya `oggdemux`).
+    🔹 `gst-inspect-1.0 --gst-debug-help` --> 🐛  Namayesh option-ha baraye debug kardan GStreamer.
+    🔹 `gst-inspect-1.0 --help` --> ❓  Namayesh rahnamaye kamel dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ gst-inspect-1.0 --version
+
+    🔹 Namayesh version GStreamer ke shoma darid.
+
+    $ gst-inspect-1.0 v4l2src
+
+    🔹 Namayesh etela'ate kamel dar morede element `v4l2src` (video input az webcam ya device digar).  Shamel properti-ha, signal-ha, va capability-ha mishavad.
+
+✅ **Mesal sade:**
+
+    $ gst-inspect-1.0 autoaudiosink
+
+    🔹  In dastoor etela'ate `autoaudiosink` element ra namayesh midahad. `autoaudiosink` be GStreamer komak mikonad be tore khodkar behtarin output audio ra baraye system shoma entekhab konad. Shoma properti-haee mesle `device` ra khahidoo did.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-inspect-1.0` command is used to display information about GStreamer plugins and elements. You can view details like name, description, properties, and signals for a specific plugin or element. Simply put, this tool helps you understand what each component in GStreamer does.
+
+⚙️ **Options:**
+    🔹 `gst-inspect-1.0 --version`  --> ℹ️  Show the GStreamer version.
+    🔹 `gst-inspect-1.0 PLUGIN_OR_ELEMENT_NAME` --> 🔍  Display detailed information about a specific plugin or element. Replace `PLUGIN_OR_ELEMENT_NAME` with the name of the plugin or element (e.g., `v4l2src` or `oggdemux`).
+    🔹 `gst-inspect-1.0 --gst-debug-help` --> 🐛  Show options for debugging GStreamer.
+    🔹 `gst-inspect-1.0 --help` --> ❓  Show the complete command help.
+
+🛠 **Examples:**
+
+    $ gst-inspect-1.0 --version
+
+    🔹 Show the version of GStreamer you have installed.
+
+    $ gst-inspect-1.0 v4l2src
+
+    🔹 Display detailed information about the `v4l2src` element (video input from a webcam or other device). Includes properties, signals, and capabilities.
+
+✅ **Simple Example:**
+
+    $ gst-inspect-1.0 autoaudiosink
+
+    🔹 This command displays information about the `autoaudiosink` element. `autoaudiosink` helps GStreamer automatically choose the best audio output for your system. You will see properties such as `device`.

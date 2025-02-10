@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-match` baraye peyda kardane behtarin font ba tavajjoh be khaste-haye shoma estefade mishavad. Yani agar shoma yek font-e khassi ra bekhahid, in dastoor yek font ke besyar shabihesh bashad ra peyda mikonad. Agar shoma esme font ya style khassi ra bedanid, mitavanid az `fc-match` estefade konid ta font-e monaseb ra baraye barname-haye grafiki ya neveshtari peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-match "font name"`  --> 🔍 Peyda kardane font ba name mored nazar.
+    🔹 `fc-match -s "font name"` --> 📜 Namayesh font-haye shabih be tartib az behtarin entekhab.
+    🔹 `fc-match -v "font name"` --> 👀 Namayesh etela'ate bishtar darbareye font-e entekhab shode.
+
+🛠 **Mesal-ha:**
+
+    $ fc-match "Arial"
+
+    🔹 Peyda kardane behtarin font ke be "Arial" shabih bashad.
+
+    $ fc-match -s "sans-serif"
+
+    🔹 Namayesh listi az font-haye sans-serif moratab shode az behtarin entekhab.
+
+✅ **Mesal sade:**
+
+    $ fc-match "B Nazanin:bold"
+
+    🔹 Agar font "B Nazanin Bold" dar dastres nabashad, `fc-match` nazdik tarin font-e bolde digar ra peyda mikonad va etela'at an ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-match` command is used to find the best matching font according to your specified requirements. If you need a specific font, this command finds a font that closely resembles it. If you know a font name or a specific style, you can use `fc-match` to find the appropriate font for graphic or text-based applications.
+
+⚙️ **Options:**
+    🔹 `fc-match "font name"`  --> 🔍 Find the best matching font for the given font name.
+    🔹 `fc-match -s "font name"` --> 📜 Display a list of similar fonts sorted by best match.
+    🔹 `fc-match -v "font name"` --> 👀 Show verbose information about the selected font.
+
+🛠 **Examples:**
+
+    $ fc-match "Arial"
+
+    🔹 Find the best matching font similar to "Arial".
+
+    $ fc-match -s "sans-serif"
+
+    🔹 Display a sorted list of sans-serif fonts, starting with the best match.
+
+✅ **Simple Example:**
+
+    $ fc-match "B Nazanin:bold"
+
+    🔹 If the "B Nazanin Bold" font is unavailable, `fc-match` finds the closest available bold font and prints its information.

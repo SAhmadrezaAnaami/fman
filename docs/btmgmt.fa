@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `btmgmt` baraye modiriyat dastgah haye Bluetooth az tarighe command line estefade mishavad. Ba an mishavad dastgah ra setup kard, connection ha ra control kard, va etela'at Bluetooth ra did.
+
+⚙️ **Gozine-ha:**
+    🔹 `btmgmt info`        --> ℹ️  Namayesh etela'at asasi device Bluetooth (address, version, name).
+    🔹 `btmgmt power on`    --> 💡 Roshan kardan dastgah Bluetooth.
+    🔹 `btmgmt power off`   --> 🔌 Khamosh kardan dastgah Bluetooth.
+    🔹 `btmgmt discoverable on` --> 📡 Dastgah ra ghabele peyda kardan mikonad baraye dastgah haye digar Bluetooth.
+    🔹 `btmgmt connect <address>`  --> 🔗 Eijad etesal be yek dastgah ba address moshakhas.
+    🔹 `btmgmt disconnect <address>` --> 💔 Ghat'e etesal az yek dastgah ba address moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ btmgmt info
+    → Namayesh etela'at device Bluetooth.
+
+    $ btmgmt power on
+    → Roshan kardan adaptor Bluetooth.
+
+    $ btmgmt discoverable on
+    → Enable discoverability (visible to other Bluetooth devices)
+
+    $ btmgmt connect XX:XX:XX:XX:XX:XX
+    → Connect be device ba MAC address XX:XX:XX:XX:XX:XX.
+
+✅ **Mesal sade:**
+
+    $ btmgmt power on; btmgmt info
+    → Roshan kardan Bluetooth va foran etela'ate an ra namayesh dadan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `btmgmt` command is a command-line tool for managing Bluetooth devices. It can be used to configure devices, control connections, and view Bluetooth information.
+
+⚙️ **Options:**
+    🔹 `btmgmt info`        --> ℹ️  Display basic Bluetooth device information (address, version, name).
+    🔹 `btmgmt power on`    --> 💡 Turn on the Bluetooth device.
+    🔹 `btmgmt power off`   --> 🔌 Turn off the Bluetooth device.
+    🔹 `btmgmt discoverable on` --> 📡 Make the device discoverable by other Bluetooth devices.
+    🔹 `btmgmt connect <address>`  --> 🔗 Establish a connection to a device with the specified address.
+    🔹 `btmgmt disconnect <address>` --> 💔 Disconnect from a device with the specified address.
+
+🛠 **Examples:**
+
+    $ btmgmt info
+    → Show Bluetooth device information.
+
+    $ btmgmt power on
+    → Turn on the Bluetooth adapter.
+
+    $ btmgmt discoverable on
+    → Enable discoverability (visible to other Bluetooth devices)
+
+    $ btmgmt connect XX:XX:XX:XX:XX:XX
+    → Connect to the device with MAC address XX:XX:XX:XX:XX:XX.
+
+✅ **Simple Example:**
+
+    $ btmgmt power on; btmgmt info
+    → Turn on Bluetooth and immediately display its information.

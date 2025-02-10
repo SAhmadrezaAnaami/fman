@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzegrep` mesle `grep` aml mikonad, ama baraye file-haye `bzip2` shode (ya’ni file-haye zíp shode ba `bzip2`) be kar miravad.  Be jaye inke shoma aval file ra az zíp dar biyavarid, `bzegrep` mostaghiman darun file zíp shode donbale kalame ya pattern migardad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzegrep "kalame" file.bz2`  --> 🔎 Donbale "kalame" dar file.bz2 migardad.
+    🔹 `bzegrep -i "kalame" file.bz2` --> 🔤 Donbale "kalame" (bozorgi va kouchiki huroof mohem nist) dar file.bz2 migardad.
+    🔹 `bzegrep -c "kalame" file.bz2` --> 🔢 Tedade khat-haee ke "kalame" ra darand, neshan midahad.
+    🔹 `bzegrep -l "kalame" file.bz2` --> 📃 Esme file-haee ke "kalame" dar anha peyda shode ast ra chap mikonad (agar chand file bashad).
+
+🛠 **Mesal-ha:**
+
+    $ bzegrep "error" logfile.bz2
+
+    🔹 Dar file zíp shodeye `logfile.bz2` donbale kalameye "error" migardad.
+
+    $ bzegrep -i "warning" data.bz2
+
+    🔹 Dar file zíp shodeye `data.bz2` donbale kalameye "warning" (bedune tavajoh be bozorgi ya kouchiki huroof) migardad.
+
+✅ **Mesal sade:**
+
+    $ bzegrep -c "success" archive.bz2
+
+    🔹 Tedade khat-haee dar file `archive.bz2` ke kalame "success" dar anha vojood darad ra neshan midahad. In be shoma komak mikonad ke be tore sari’ bedanid chand bar yek etefaghe mofaghiat amiz dar yek log file zíp shode rokh dade ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzegrep` command works like `grep`, but it's designed to search inside `bzip2` compressed files directly. Instead of having to decompress the file first, `bzegrep` allows you to search for a word or pattern within the compressed file.
+
+⚙️ **Options:**
+    🔹 `bzegrep "word" file.bz2`  --> 🔎 Searches for "word" within file.bz2.
+    🔹 `bzegrep -i "word" file.bz2` --> 🔤 Searches for "word" (case-insensitive) within file.bz2.
+    🔹 `bzegrep -c "word" file.bz2` --> 🔢 Shows the count of lines containing "word".
+    🔹 `bzegrep -l "word" file.bz2` --> 📃 Prints the names of files containing "word" (if multiple files are searched).
+
+🛠 **Examples:**
+
+    $ bzegrep "error" logfile.bz2
+
+    🔹 Searches for the word "error" within the compressed file `logfile.bz2`.
+
+    $ bzegrep -i "warning" data.bz2
+
+    🔹 Searches for the word "warning" (case-insensitive) within the compressed file `data.bz2`.
+
+✅ **Simple Example:**
+
+    $ bzegrep -c "success" archive.bz2
+
+    🔹 Shows the number of lines in the `archive.bz2` file that contain the word "success". This helps you quickly determine how many times a successful event occurred in a compressed log file.

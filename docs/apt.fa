@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt` (Advanced Package Tool) yek abzar ghavi baraye modiriat pakage-ha (software-ha) dar sistem-haye Debian va Ubuntu ast. Ba `apt` mitavanid narmafzar-ha ra nasb (install), hazf (remove), va update konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `apt update`      --> 🔄 Fehrest-e pakage-ha ra az manabe online update mikonad.  
+    🔹 `apt upgrade`     --> ⬆️ Pakage-haye nasb shode ra be akharin version update mikonad.
+    🔹 `apt install [package-name]` --> ✅ Yek pakage jadid ra nasb mikonad.
+    🔹 `apt remove [package-name]`  --> 🗑️ Yek pakage ra hazf mikonad, ama config file-ha ra negah midarad.
+    🔹 `apt purge [package-name]`   --> 💣 Yek pakage ra ba hameye config file-hash hazf mikonad.
+    🔹 `apt search [keyword]`       --> 🔍 Dar fehrest-e pakage-ha baraye kalameye kelidi jostojo mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt update
+
+    🔹 Update kardan list-e package-ha az repository-ha
+
+    $ sudo apt install vlc
+
+    🔹 Nasb kardan package 'vlc'
+
+✅ **Mesal sade:**
+
+    $ apt search python3
+
+    🔹 List-e package-hayi ke python3 dar esm ya tashrihashon dare ra neshon mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt` (Advanced Package Tool) command is a powerful tool for managing packages (software) in Debian and Ubuntu-based systems.  With `apt`, you can install, remove, and update software.
+
+⚙️ **Options:**
+    🔹 `apt update`      --> 🔄 Updates the package list from online sources.
+    🔹 `apt upgrade`     --> ⬆️ Upgrades installed packages to the latest version.
+    🔹 `apt install [package-name]` --> ✅ Installs a new package.
+    🔹 `apt remove [package-name]`  --> 🗑️ Removes a package, but keeps the configuration files.
+    🔹 `apt purge [package-name]`   --> 💣 Removes a package along with all its configuration files.
+    🔹 `apt search [keyword]`       --> 🔍 Searches the package list for a keyword.
+
+🛠 **Examples:**
+
+    $ sudo apt update
+
+    🔹 Update the package list from repositories.
+
+    $ sudo apt install vlc
+
+    🔹 Install the 'vlc' package.
+
+✅ **Simple Example & Explanation:**
+
+    $ apt search python3
+
+    🔹 Shows a list of packages that have 'python3' in their name or description.

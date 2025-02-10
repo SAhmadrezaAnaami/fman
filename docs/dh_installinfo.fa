@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installinfo` baraye sabt etela'at package dar file `.installinfo` estefade mishavad. In etela'at be modiriat package komak mikonad va betore makhsos dar system-haye Debian estefade mishavad. Basically, in dastoor komak mikonad ta etela'at dorost dar bareye package-haye shoma sabt shavad dar vaghte nasb.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p package`  --> 📦 Faghat etela'at baraye in package ra sabt kon. Agar zyad package dashte bashid mohem ast.
+    🔹 `-n`        --> 🚫 File `.installinfo` ra nasaz. Faghat test kon chizaro ke sakhte mishod.
+    🔹 `--sourcedir dir` --> 📂 Az in pooshe baraye gereftan file-haye asl estefade kon. Bejaye pooshe `debian` asli.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installinfo
+    🔹 Etela'at ra baraye hameye package-ha dar `debian/packages` sabt mikonad.
+
+    $ dh_installinfo -p mypackage
+    🔹 Faghat etela'at ra baraye package "mypackage" sabt mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installinfo -n
+    🔹 Nashun midahad che file-haye `.installinfo` sakhte mishodand bedoone inke file-i sakhte shavad. Baraye check kardane dorosti khub ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installinfo` command is used to record package information into a `.installinfo` file. This information helps in package management and is specifically used in Debian-based systems. Essentially, this command helps ensure that correct information about your packages is recorded during installation.
+
+⚙️ **Options:**
+    🔹 `-p package`  --> 📦 Only record information for this specific package. Important if you have multiple packages.
+    🔹 `-n`        --> 🚫 Do not create the `.installinfo` file. Only test what would be created.
+    🔹 `--sourcedir dir` --> 📂 Use this directory to locate the source files. Instead of the default `debian` directory.
+
+🛠 **Examples:**
+
+    $ dh_installinfo
+    🔹 Records information for all packages in `debian/packages`.
+
+    $ dh_installinfo -p mypackage
+    🔹 Only records information for the "mypackage" package.
+
+✅ **Simple Example:**
+
+    $ dh_installinfo -n
+    🔹 Shows what `.installinfo` files would be created without actually creating them. Good for checking correctness.

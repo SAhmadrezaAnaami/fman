@@ -1,0 +1,74 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chattr` baraye tagheer ya ezafe kardane attribute-haye khas be file-ha va directory-ha estefade mishavad. In attribute-ha mitavanand rooye dastresi, tagheerat, ya backup gereftan az file-ha taasir bezarand.  Be zaban sade, in dastoor baraye mohafezat az file-ha ya tagheer raftar-haye khas anha be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `chattr +i filename` --> 🔒 File ra "immutable" mikonad, yani hichkas nemitoone tagheerash bede, hatta root.
+    🔹 `chattr -i filename` --> 🔓 "Immutable" boodan file ra bardasht mikonad, ta tagheer pazir shavad.
+    🔹 `chattr +a filename` --> 📝 File ra "append-only" mikonad; faghat ezafe kardan be akharash momken ast, hazf kardan ya tagheer dadan ghesmathaye digar nemishavad.
+    🔹 `chattr -a filename` --> 🚫 "Append-only" boodan file ra bardasht mikonad.
+    🔹 `chattr +A filename` --> ⏰ Zaman dastresi file ra update nemikonad, baraye behineh sazi.
+    🔹 `chattr -R`         --> 🔄 Be soorate recursive rooye hameye file-ha va directory-ha dar yek directory kar mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ chattr +i myfile.txt
+
+    🔹 File "myfile.txt" digar tagheer pazir nist.
+
+    $ chattr -i myfile.txt
+
+    🔹 File "myfile.txt" baz ham tagheer pazir shod.
+
+    $ chattr +a logfile.log
+
+    🔹 Faghat mitavanid chizi be entehaaye "logfile.log" ezafe konid.
+
+✅ **Mesal sade:**
+
+    $ chattr +i important.txt
+    $ rm important.txt
+    rm: cannot remove 'important.txt': Operation not permitted
+
+    🔹 File "important.txt" ba dastoor `chattr +i` mohafezat shode, va hata ba dastoor `rm` ham hazf nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chattr` command is used to change or add specific attributes to files and directories. These attributes can affect access, modification, or backups of files. In simple terms, this command protects files or changes their specific behaviors.
+
+⚙️ **Options:**
+    🔹 `chattr +i filename` --> 🔒 Makes the file "immutable," meaning no one can change it, not even root.
+    🔹 `chattr -i filename` --> 🔓 Removes the "immutable" attribute from the file, making it modifiable.
+    🔹 `chattr +a filename` --> 📝 Makes the file "append-only"; only appending to the end is possible; deleting or modifying other parts is not allowed.
+    🔹 `chattr -a filename` --> 🚫 Removes the "append-only" attribute from the file.
+    🔹 `chattr +A filename` --> ⏰ Does not update the file's access time, for optimization.
+    🔹 `chattr -R`         --> 🔄 Operates recursively on all files and directories within a directory.
+
+🛠 **Examples:**
+
+    $ chattr +i myfile.txt
+
+    🔹 The file "myfile.txt" is no longer modifiable.
+
+    $ chattr -i myfile.txt
+
+    🔹 The file "myfile.txt" is once again modifiable.
+
+    $ chattr +a logfile.log
+
+    🔹 You can only append to the end of "logfile.log."
+
+✅ **Simple Example:**
+
+    $ chattr +i important.txt
+    $ rm important.txt
+    rm: cannot remove 'important.txt': Operation not permitted
+
+    🔹 The file "important.txt" is protected with `chattr +i`, and even the `rm` command cannot delete it.

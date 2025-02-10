@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsblk` baraye didan list-e block device-ha (mesl HDD, SSD, USB drives) dar system-e shoma be kar miravad. In dastoor etela'ati mesl name device, size, va mount point anha ra neshon midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsblk`     --> 💻 Namayesh device-haye block be soorate derakhti (tree)
+    🔹 `lsblk -a`  --> 👀 Namayesh hameye device-ha, hata anha ke empty hastand.
+    🔹 `lsblk -f`  --> 🗂️ Namayesh etela'at file system mesl UUID va LABEL.
+    🔹 `lsblk -p`  --> 📍 Namayesh path-haye kamel device-ha.
+    🔹 `lsblk -m`  --> 💾 Namayesh etela'at permission va ownership.
+
+🛠 **Mesal-ha:**
+
+    $ lsblk
+
+    🔹 Namayesh yek list az device-haye block ba etela'at asasi.
+
+    $ lsblk -f
+
+    🔹 Namayesh device-haye block ba etela'at file system.
+
+✅ **Mesal sade:**
+
+    $ lsblk -a | grep sda
+
+    🔹 Peyda kardan etela'at marboot be device "sda" az hame device ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsblk` command is used to list information about block devices (like HDD, SSD, USB drives) in your system. It displays information like device name, size, and mount point.
+
+⚙️ **Options:**
+    🔹 `lsblk`     --> 💻 Display block devices in a tree-like format.
+    🔹 `lsblk -a`  --> 👀 Show all devices, including empty ones.
+    🔹 `lsblk -f`  --> 🗂️ Display filesystem information such as UUID and LABEL.
+    🔹 `lsblk -p`  --> 📍 Show full device paths.
+    🔹 `lsblk -m`  --> 💾 Show permissions and ownership information.
+
+🛠 **Examples:**
+
+    $ lsblk
+
+    🔹 Displays a list of block devices with basic information.
+
+    $ lsblk -f
+
+    🔹 Displays block devices with filesystem information.
+
+✅ **Simple Example:**
+
+    $ lsblk -a | grep sda
+
+    🔹 Find information about the "sda" device from all devices.
+

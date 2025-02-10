@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aseqnet` (Agar Server Equal Net) yek dastoor baraye kar ba shabake dar Linux ast. In dastoor be shoma komak mikonad ta server-haye mosavi ra dar shabake peyda konid va etela'ati darbareye anha kasb konid. In barname bevizhe baraye modirane system va afzayesh amniat shabake mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `aseqnet -i <interface>` --> 🌐  Entkhab interface shabake baraye jostojo. Agar interface moshakhas nashavad, `aseqnet` az hameye interface-ha estefade mikonad.
+    🔹 `aseqnet -t <timeout>` --> ⏳  Ta'een zaman-e entezar baraye javab az server-ha. Zaman-e pishfarz 5 sanieh ast.
+    🔹 `aseqnet -v` --> 📢  Namayesh etela'ate bishtar va tafsili dar mored server-haye yaft shode.
+    🔹 `aseqnet -h` --> ℹ️  Namayesh rahnamaye estefade az dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ aseqnet -i eth0
+
+    🔹 Jostojo baraye server-haye mosavi dar interface `eth0`.
+
+    $ aseqnet -t 10
+
+    🔹 Jostojo baraye server-haye mosavi ba zaman-e entezar 10 sanieh.
+
+✅ **Mesal sade:**
+
+    $ aseqnet -i wlan0 -v
+
+    🔹  Jostojo dar interface `wlan0` ba etela'ate bishtar darbareye server-haye yaft shode. In komak mikonad ta etela'ate tafsili mesle versio va digar khosusiat ra bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aseqnet` (Agar Server Equal Net) command is a tool for network analysis in Linux. It helps you discover equal servers on the network and gather information about them.  This program is particularly useful for system administrators and enhancing network security.
+
+⚙️ **Options:**
+    🔹 `aseqnet -i <interface>` --> 🌐 Select the network interface to use for the search. If no interface is specified, `aseqnet` uses all available interfaces.
+    🔹 `aseqnet -t <timeout>` --> ⏳ Set the timeout period for waiting for responses from servers. The default timeout is 5 seconds.
+    🔹 `aseqnet -v` --> 📢 Display more verbose and detailed information about the servers found.
+    🔹 `aseqnet -h` --> ℹ️ Display the help message for the command.
+
+🛠 **Examples:**
+
+    $ aseqnet -i eth0
+
+    🔹 Search for equal servers on the `eth0` interface.
+
+    $ aseqnet -t 10
+
+    🔹 Search for equal servers with a timeout of 10 seconds.
+
+✅ **Simple Example:**
+
+    $ aseqnet -i wlan0 -v
+
+    🔹  Search on the `wlan0` interface with more detailed information about discovered servers. This allows you to see detailed information, such as the version and other properties.

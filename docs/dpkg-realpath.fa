@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-realpath` baraye peyda kardane masire aslie (canonical path) yek file ya pooshe (directory) dar system Debian estefade mishavad. Agar file ya pooshe yek linke namayeshi (symbolic link) bashad, in dastoor masire asli ra peyda mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-s` ya `--stat` --> 📜 Namayeshe etela'ate file mesle `stat` vali ba masire asli (real path).
+    🔹 `-q` ya `--quiet` --> 🤫 Hich payami chap nakon, faghat codeye voroodi ra bargardan. agar file peyda nashavad, codeye voroodi gheire sefr khahad bood.
+    🔹 `--help` --> ℹ️ Namayeshe rahnamaye estefade az dastoor.
+    🔹 `--version` --> 📦 Namayeshe versiyone dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-realpath /usr/bin/python3
+
+    🔹 Namayeshe masire aslie file python3.
+
+    $ dpkg-realpath -s /usr/bin/python3
+
+    🔹 Namayeshe etela'ate file python3 ba estefade az masire asli.
+
+✅ **Mesal sade:**
+
+    $ dpkg-realpath /usr/share/man/man1/ls.1.gz
+    /usr/share/man/man1/ls.1.gz
+
+    🔹 Dar in mesal, masire aslie file `ls.1.gz` namayesh dade shode. Agar file yek symbolic link bood, masire asli chappe mishod.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-realpath` command is used to find the canonical path (real path) of a file or directory in a Debian system. If the file or directory is a symbolic link, this command resolves it to its actual location.
+
+⚙️ **Options:**
+    🔹 `-s` or `--stat` --> 📜 Display file information like `stat`, but using the real path.
+    🔹 `-q` or `--quiet` --> 🤫 Suppress all output; only return an exit code.  A non-zero exit code indicates that the file does not exist.
+    🔹 `--help` --> ℹ️ Display help information about the command.
+    🔹 `--version` --> 📦 Display the version of the command.
+
+🛠 **Examples:**
+
+    $ dpkg-realpath /usr/bin/python3
+
+    🔹 Shows the real path of the python3 file.
+
+    $ dpkg-realpath -s /usr/bin/python3
+
+    🔹 Shows file information for python3 using the real path.
+
+✅ **Simple Example:**
+
+    $ dpkg-realpath /usr/share/man/man1/ls.1.gz
+    /usr/share/man/man1/ls.1.gz
+
+    🔹 In this example, the real path of the `ls.1.gz` file is displayed. If the file were a symbolic link, the command would output the resolved path.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_prep` baraye amadeh kardan pakage-haye Debian ghabl az sakhtan anha be kar miravad. In dastoor file-haye lazem ra dar pooshe-ye `debian/` check mikonad va motmaen mishavad ke hame chiz amade bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--with <helper>`  --> 🤝 Estefade az helper-haye ezafi baraye amade sazi. Misal: `--with python3`
+    🔹 `--list`           --> 📃 List kardan helper-haye dastras.
+    🔹 `--no-scripts`   --> 🚫 Ejra nakardan script-haye `debian/rules`.
+
+🛠 **Mesal-ha:**
+
+    $ dh_prep
+
+    🔹 Amadeh sazi pakage ba estefade az setting-haye default.
+
+    $ dh_prep --with python3
+
+    🔹 Amadeh sazi pakage ba estefade az helper python3.
+
+✅ **Mesal sade:**
+
+    $ dh_prep
+
+    🔹 In dastoor file-haye `debian/control`, `debian/rules` va digar file-haye configuration ra check mikonad va pooshe-haye temporari ra misazad agar niaz bashad, ghabl az inke pakage sakhte shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_prep` command is used to prepare Debian packages before they are built. This command checks the necessary files in the `debian/` directory and ensures that everything is ready for the build process.
+
+⚙️ **Options:**
+    🔹 `--with <helper>`  --> 🤝 Use additional helpers for preparation. Example: `--with python3`
+    🔹 `--list`           --> 📃 List available helpers.
+    🔹 `--no-scripts`   --> 🚫 Do not execute `debian/rules` scripts.
+
+🛠 **Examples:**
+
+    $ dh_prep
+
+    🔹 Prepare the package using default settings.
+
+    $ dh_prep --with python3
+
+    🔹 Prepare the package using the python3 helper.
+
+✅ **Simple Example:**
+
+    $ dh_prep
+
+    🔹 This command checks files like `debian/control`, `debian/rules`, and other configuration files and creates temporary directories if needed before the package is built.

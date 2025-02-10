@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hostid` yek shomareye shenasayiye unik (unique identifier) baraye systeme shoma chap mikonad. In shomare baraye license-ha va barname-haye khasi ke be yek shenaseye masnoo'i (hardware identifier) niaz darand, estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `hostid`  -->  💻 Chap kardane shenaseye host be shekle hexadecimal.
+    🔹 `hostid --help` -->  ℹ️ Namayeshe rahnamaye dastoor.
+    🔹 `hostid --version` -->  📦 Namayeshe version-e barnameye `hostid`.
+
+🛠 **Mesal-ha:**
+
+    $ hostid
+
+    🔹 Chap kardane shenaseye host. Misali az khروجی: 5a2f9b8e
+
+    $ hostid --version
+
+    🔹 Namayeshe version-e dastoor `hostid`.
+
+✅ **Mesal sade:**
+
+    $ hostid
+    5a2f9b8e
+
+    🔹 Dastoor `hostid` faghat yek shomare chap mikonad. In shomare baraye har system unik ast va baraye shenasayiye aan system dar license-ha va nagarm افزارها estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hostid` command prints the numeric identifier (hostid) for the current system. This number is often used for software licensing or other applications that require a hardware identifier.
+
+⚙️ **Options:**
+    🔹 `hostid`  -->  💻 Prints the host identifier as a hexadecimal number.
+    🔹 `hostid --help` -->  ℹ️ Displays help information about the command.
+    🔹 `hostid --version` -->  📦 Displays the version of the `hostid` utility.
+
+🛠 **Examples:**
+
+    $ hostid
+
+    🔹 Prints the host identifier. Example output: 5a2f9b8e
+
+    $ hostid --version
+
+    🔹 Displays the version of the `hostid` command.
+
+✅ **Simple Example & Explanation:**
+
+    $ hostid
+    5a2f9b8e
+
+    🔹 The `hostid` command simply prints a number. This number is unique to the system and is used to identify it for licensing or other software purposes.

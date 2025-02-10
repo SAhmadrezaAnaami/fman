@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `loffice` baraye ejra kardan LibreOffice, yek suite office baz-matn va raygan, estefade mishavad. Shoma mitavanid barnamehaye mokhtalef LibreOffice ra ba in dastoor baz konid, mesle Writer (baraye neveshtan), Calc (baraye hesabdari), va Impress (baraye araye).
+
+⚙️ **Gozine-ha:**
+    🔹 `loffice --writer`  --> 📝 Baz kardan Writer (barnameh neveshtari)
+    🔹 `loffice --calc`  --> 🧮 Baz kardan Calc (barnameh hesabdari)
+    🔹 `loffice --impress` --> 🖼️ Baz kardan Impress (barnameh araye)
+    🔹 `loffice file.odt`  --> 📂 Baz kardan yek file khas ba LibreOffice.  Agar file `odt` bashad ba Writer baz mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ loffice --writer
+
+    🔹 Baz kardan barnameh Writer.
+
+    $ loffice --calc my_data.ods
+
+    🔹 Baz kardan file `my_data.ods` ba barnameh Calc.  Age file mojood nabashe, Calc baz mishe vali file jadid baz nemishe.
+
+✅ **Mesal sade:**
+
+    $ loffice report.odt
+
+    🔹 Agar file `report.odt` mojood bashad, Writer an ra baz mikonad. Agar file mojood nabashad, Writer baz mishavad vali file jadidi ijad nemishavad.
+
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `loffice` command is used to launch LibreOffice, a free and open-source office suite. You can use this command to open various LibreOffice applications, such as Writer (for word processing), Calc (for spreadsheets), and Impress (for presentations).
+
+⚙️ **Options:**
+    🔹 `loffice --writer`  --> 📝 Open Writer (word processor)
+    🔹 `loffice --calc`  --> 🧮 Open Calc (spreadsheet application)
+    🔹 `loffice --impress` --> 🖼️ Open Impress (presentation application)
+    🔹 `loffice file.odt`  --> 📂 Open a specific file with LibreOffice. If the file is `.odt`, it will open with Writer.
+
+🛠 **Examples:**
+
+    $ loffice --writer
+
+    🔹 Opens the Writer application.
+
+    $ loffice --calc my_data.ods
+
+    🔹 Opens the `my_data.ods` file with the Calc application. If file doesn't exist, Calc opens without creating the file.
+
+✅ **Simple Example:**
+
+    $ loffice report.odt
+
+    🔹 If `report.odt` exists, Writer opens it. If the file does not exist, Writer opens without creating a new file.

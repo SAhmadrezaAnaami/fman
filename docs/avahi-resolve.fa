@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-resolve` baraye tabdil name-haye service Avahi be address IP estefade mishavad. Yani, komak mikonad ke address IP yek service ra az name-ash peyda konid, be jaye inke bekhahید khodetoon IP ra be yad dashte bashid. Avahi yek systeme, mesle Bonjour dar macOS, ke dastgah-ha mitoonan khodeshoon ro dar shabake moarefi konan.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 📍 Faghat IP address ra chap mikonad, bedune chizi dige.
+    🔹 `-p`  --> 🔑 Be jaye IP address, faghat hostname ra chap mikonad.
+    🔹 `-v`  --> 🗣️ Eteela'ate bishtari dar morede chigozare chap mikonad (verbose mode).
+    🔹 `--address` `NAME` --> 🎯 Name service ra ke mikhahid resolve konid moshakhas mikonad.
+    🔹 `--service` `TYPE DOMAIN NAME` --> 📡 Name service, type va domain service ra ke mikhahid resolve konid moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ avahi-resolve --name mycomputer.local
+
+    🔹 Address IP dastgah ba name "mycomputer.local" ra namayesh midahad.
+
+    $ avahi-resolve --service _http._tcp local
+
+    🔹 Tamame address-haye HTTP service ra dar domain "local" namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ avahi-resolve --name printer.local -n
+
+    🔹 Faghat IP address printer ra chap mikonad, heech chize ezafi nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-resolve` command is used to resolve Avahi service names to IP addresses.  Essentially, it helps you find the IP address of a service by its name, instead of having to remember the IP directly. Avahi is a system, like Bonjour on macOS, that lets devices announce themselves on a network.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 📍 Only print the IP address, nothing else.
+    🔹 `-p`  --> 🔑 Print only the hostname, instead of the IP address.
+    🔹 `-v`  --> 🗣️ Print more detailed information about the process (verbose mode).
+    🔹 `--address` `NAME` --> 🎯 Specifies the service name to resolve.
+    🔹 `--service` `TYPE DOMAIN NAME` --> 📡 Specifies the service name, type, and domain to resolve.
+
+🛠 **Examples:**
+
+    $ avahi-resolve --name mycomputer.local
+
+    🔹 Displays the IP address of the device named "mycomputer.local".
+
+    $ avahi-resolve --service _http._tcp local
+
+    🔹 Displays all HTTP service addresses in the "local" domain.
+
+✅ **Simple Example:**
+
+    $ avahi-resolve --name printer.local -n
+
+    🔹 Only prints the IP address of the printer, nothing extra.

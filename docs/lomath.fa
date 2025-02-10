@@ -1,0 +1,112 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lomath` baraye hesab kardane khoshkidegiye (dryness) zamin az etela'ate hava shenasi (weather data) estefade mishe. In dastoor bakhshi az ketabkhane-ye (library) `Landlab` hast ke baraye model saziye (modeling) satahe zamin (land surface) sakhte shode.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine-ye mostaghim az command line nist. `lomath` aksaran darune yek barname-ye python estefade mishe. Baraye taghire raftare `lomath`, bayad parametrhaye dakheliye aan ra dar barname-ye python taghir bedahid.
+
+🛠 **Mesal-ha:**
+    Chon `lomath` be shekle mostaghim az command line estefade nemishe, mesal-haye zir neshan midahand chetor mishe aan ra dar python be kar bord.
+
+    python
+    from landlab.components import LomathEtAl
+    from landlab import RasterModelGrid
+    import numpy as np
+
+    # Sakhte yek grid
+    grid = RasterModelGrid((10, 10), xy_spacing=10.0)
+
+    # Sakhte field baraye gereftegiye khak (soil moisture)
+    soil_moisture = grid.add_zeros('node', 'soil_moisture')
+    soil_moisture[:] = 0.2 # Yek meghdar avaliye
+
+    # Sakhte component Lomath
+    lomath = LomathEtAl(grid)
+
+    # Ejraye component
+    dt = 3600.0  # time step (1 hour)
+    lomath.run_one_step(dt)
+
+    # Chap kardane meghdare jadide gereftegiye khak
+    print(grid['node']['soil_moisture'])
+    
+
+    🔹 In mesal yek grid misaze, soil moisture ra behesh ezafe mikone, va bad `LomathEtAl` ra ejra mikone ta soil moisture ra update kone.
+
+    python
+    # Taghire parameterha
+    lomath = LomathEtAl(grid, soil_erodibility=0.001, infiltration_capacity=0.01)
+    
+
+    🔹 In mesal neshun mide chetor mishe parametrhaye `soil_erodibility` va `infiltration_capacity` ra taghir dad.
+
+✅ **Mesal sade:**
+
+    python
+    # Ejraye lomath baraye chand time step
+    for i in range(10):
+        lomath.run_one_step(dt)
+        print(f"Time step {i+1}: {np.mean(grid['node']['soil_moisture'])}")
+    
+
+    🔹 In mesal `lomath` ra baraye 10 time step ejra mikone va har dafe miyangine (average) soil moisture ra chap mikone. In be shoma neshan mide chetor soil moisture dar tol zaman taghir mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lomath` command is used to calculate soil dryness based on weather data. It's part of the `Landlab` library, designed for modeling land surface processes.
+
+⚙️ **Options:**
+    🔹 There are no direct command-line options for `lomath`.  `lomath` is primarily used within a Python program. To modify the behavior of `lomath`, you need to adjust its internal parameters within the Python code.
+
+🛠 **Examples:**
+    Since `lomath` isn't directly used from the command line, the examples below demonstrate how to use it in Python.
+
+    python
+    from landlab.components import LomathEtAl
+    from landlab import RasterModelGrid
+    import numpy as np
+
+    # Create a grid
+    grid = RasterModelGrid((10, 10), xy_spacing=10.0)
+
+    # Create a field for soil moisture
+    soil_moisture = grid.add_zeros('node', 'soil_moisture')
+    soil_moisture[:] = 0.2  # An initial value
+
+    # Create the Lomath component
+    lomath = LomathEtAl(grid)
+
+    # Run the component
+    dt = 3600.0  # time step (1 hour)
+    lomath.run_one_step(dt)
+
+    # Print the updated soil moisture values
+    print(grid['node']['soil_moisture'])
+    
+
+    🔹 This example creates a grid, adds soil moisture to it, and then runs `LomathEtAl` to update the soil moisture values.
+
+    python
+    # Modifying parameters
+    lomath = LomathEtAl(grid, soil_erodibility=0.001, infiltration_capacity=0.01)
+    
+
+    🔹 This example shows how to change the `soil_erodibility` and `infiltration_capacity` parameters.
+
+✅ **Simple Example & Explanation:**
+
+    python
+    # Run lomath for several time steps
+    for i in range(10):
+        lomath.run_one_step(dt)
+        print(f"Time step {i+1}: {np.mean(grid['node']['soil_moisture'])}")
+    
+
+    🔹 This example runs `lomath` for 10 time steps and prints the average soil moisture each time. This shows you how soil moisture changes over time.

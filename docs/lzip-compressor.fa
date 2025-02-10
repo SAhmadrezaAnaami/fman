@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzip-compressor` (ya be soorat sade `lzip`) baraye feshoordan va baz kardan file-ha ba estefade az format lzip be kar miravad. In format, ke be `lz` khotm mishavad, feshoordegi balayi darad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzip -k file`  --> 💾 File asli ra hefz mikonad (keep).
+    🔹 `lzip -d file.lz` --> 🔓 File feshoorde shode ra baz mikonad (decompress).
+    🔹 `lzip -9 file`  --> 💪 Feshoordegi ziad ba estefade az algoritm haye behtar (level 9). Zaman bishtari migirad.
+    🔹 `lzip -o file`  --> ✍️ File badi ra overwrite mikonad agar mojood bashad (overwrite).
+
+🛠 **Mesal-ha:**
+
+    $ lzip file.txt
+
+    🔹 File `file.txt` ra feshoorde mikonad va file `file.txt.lz` ra misazad.
+
+    $ lzip -d file.txt.lz
+
+    🔹 File `file.txt.lz` ra baz mikonad va file `file.txt` ra dorost mikonad.
+
+✅ **Mesal sade:**
+
+    $ lzip -k file.txt
+
+    🔹 File `file.txt` ra feshoorde mikonad vali file asli (`file.txt`) ra hefz mikonad.  In gozine baraye ehteraz az az dast dadan data mohem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzip-compressor` command (or simply `lzip`) is used to compress and decompress files using the lzip format. This format, which ends in `.lz`, provides high compression ratios.
+
+⚙️ **Options:**
+    🔹 `lzip -k file`  --> 💾 Keeps the original file.
+    🔹 `lzip -d file.lz` --> 🔓 Decompresses the lzip file.
+    🔹 `lzip -9 file`  --> 💪 Compresses with maximum compression (level 9). Takes longer.
+    🔹 `lzip -o file`  --> ✍️ Overwrites the output file if it already exists.
+
+🛠 **Examples:**
+
+    $ lzip file.txt
+
+    🔹 Compresses `file.txt` and creates `file.txt.lz`.
+
+    $ lzip -d file.txt.lz
+
+    🔹 Decompresses `file.txt.lz` and recreates `file.txt`.
+
+✅ **Simple Example:**
+
+    $ lzip -k file.txt
+
+    🔹 Compresses `file.txt` but keeps the original `file.txt` file.  This option is important to avoid data loss.

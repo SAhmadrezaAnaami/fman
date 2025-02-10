@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `git-deborig` baraye sakhtan ya update kardan branch-haye git az version control system Debian estefade mishavad. Be zabane sade, in dastoor komak mikonad ta code Debian ra be repository git khodetan vared konid va moratab negah دارید.
+
+⚙️ **Gozine-ha:**
+    🔹 `git-deborig create <esm-e-branch>`  --> ➕ Yek branch jadid misazad ba code Debian az upstream.
+    🔹 `git-deborig update <esm-e-branch>`  --> 🔄 Branch mojood ra ba akharin taghirat Debian update mikonad.
+    🔹 `git-deborig --help`  --> ℹ️ Rahnamayi kamel ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ git-deborig create debian/unstable
+
+    🔹 Yek branch jadid ba name `debian/unstable` az code Debian dar shakh-e `unstable` misazad.
+
+    $ git-deborig update debian/unstable
+
+    🔹 Branch `debian/unstable` ra ba akharin taghirat Debian update mikonad.
+
+✅ **Mesal sade:**
+
+    $ git-deborig create debian/experimental
+
+    🔹  In dastoor yek branch jadid misazad bar asase source code Debian az distribution `experimental`.  Bad az an, mitavanid taghirat Debian ra dar git repository khodetan dashte باشید.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `git-deborig` command is used to create or update Git branches from the Debian version control system.  Simply put, this command helps you import Debian code into your Git repository and keep it up-to-date.
+
+⚙️ **Options:**
+    🔹 `git-deborig create <branch-name>`  --> ➕ Creates a new branch with Debian code from upstream.
+    🔹 `git-deborig update <branch-name>`  --> 🔄 Updates an existing branch with the latest Debian changes.
+    🔹 `git-deborig --help`  --> ℹ️ Displays complete help information.
+
+🛠 **Examples:**
+
+    $ git-deborig create debian/unstable
+
+    🔹 Creates a new branch named `debian/unstable` from Debian code in the `unstable` branch.
+
+    $ git-deborig update debian/unstable
+
+    🔹 Updates the `debian/unstable` branch with the latest Debian changes.
+
+✅ **Simple Example:**
+
+    $ git-deborig create debian/experimental
+
+    🔹 This command creates a new branch based on the Debian source code from the `experimental` distribution. Afterwards, you can maintain Debian changes within your Git repository.

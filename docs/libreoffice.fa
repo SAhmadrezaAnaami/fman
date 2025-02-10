@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `libreoffice` baraye baz kardan barnam-haye office (mesle Writer, Calc, Impress) dar Linux estefade mishavad. Ba in dastoor mitoonid file-haye mokhtalef mesle .doc, .xls, .ppt ro baz konid va edit konid.  Agar bekhayid yek file khass ro baz konid, esm file ro bad az `libreoffice` benevisid.
+
+⚙️ **Gozine-ha:**
+    🔹 `libreoffice --writer` --> 📝 Baz kardan barnam-e Writer (baraye neveshtan matn)
+    🔹 `libreoffice --calc`   --> 📊 Baz kardan barnam-e Calc (baraye jadval-ha va hesab-ketab)
+    🔹 `libreoffice --impress` --> 🎬 Baz kardan barnam-e Impress (baraye dorost kardan presentation)
+    🔹 `libreoffice --help`    --> ℹ️ Namayesh rahnamayi dastoor `libreoffice`
+
+🛠 **Mesal-ha:**
+
+    $ libreoffice
+    🔹 Baz kardan safhe asli LibreOffice ke shoma mitoonid az oonja barnam-haye mokhtalef ro entekhab konid.
+
+    $ libreoffice myfile.odt
+    🔹 Baz kardan file `myfile.odt` ba barnam-e Writer agar `odt` format matni bashad.
+
+✅ **Mesal sade:**
+
+    $ libreoffice --calc mydata.xlsx
+    🔹 Baz kardan file `mydata.xlsx` ba barnam-e Calc baraye virayesh jadval-ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `libreoffice` command is used to open LibreOffice applications (like Writer, Calc, Impress) in Linux. You can open and edit various file types like .doc, .xls, and .ppt with this command. If you want to open a specific file, type the file name after `libreoffice`.
+
+⚙️ **Options:**
+    🔹 `libreoffice --writer` --> 📝 Open the Writer application (for text documents)
+    🔹 `libreoffice --calc`   --> 📊 Open the Calc application (for spreadsheets)
+    🔹 `libreoffice --impress` --> 🎬 Open the Impress application (for presentations)
+    🔹 `libreoffice --help`    --> ℹ️ Show the help information for the `libreoffice` command.
+
+🛠 **Examples:**
+
+    $ libreoffice
+    🔹 Opens the main LibreOffice window where you can choose different applications.
+
+    $ libreoffice myfile.odt
+    🔹 Opens the file `myfile.odt` with the Writer application if `odt` is a text document format.
+
+✅ **Simple Example:**
+
+    $ libreoffice --calc mydata.xlsx
+    🔹 Opens the file `mydata.xlsx` with the Calc application for editing spreadsheets.

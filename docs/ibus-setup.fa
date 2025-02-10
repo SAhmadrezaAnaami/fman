@@ -1,0 +1,46 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ibus-setup` baraye tanzeemat va modiriyat IBus (Intelligent Input Bus) be kar miravad. IBus yek framework baraye vared kardane zaban-haye mokhtalef, mesle farsi, arabi, chini va gheire dar Linux ast. Ba `ibus-setup`, mitoonid keyboard layout-haye jadid ezafe konid, hotkey ha ro taghir bedid va dige tanzeemat IBus ro anjam bedid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ibus-setup` --> ⚙️ Baz kardane safheye tanzeemate IBus. (Gui ro baz mikone)
+    🔹 Hich gozineye command line nist. Hameye tanzeemat az tarighe graphic interface anjam mishe.
+
+🛠 **Mesal-ha:**
+
+    $ ibus-setup
+
+    🔹 In dastoor barnameye tanzeemate IBus ro baz mikone. Az oonja mitoonid keyboard layout-haye farsi ro ezafe konid ya hotkey haro taghir bedid.
+
+✅ **Mesal sade:**
+
+    $ ibus-setup
+
+    🔹 Ba ejraye in dastoor, GUI (Graphical User Interface) IBus baz mishe ke mitoonid IBus ro be rahati tanzeem konid, masalan zaban-haye varedi ro ezafe ya hazf konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ibus-setup` command is used to configure and manage IBus (Intelligent Input Bus). IBus is an input method framework that allows users to enter various languages, such as Persian, Arabic, Chinese, and others, on Linux systems. With `ibus-setup`, you can add new keyboard layouts, change hotkeys, and modify other IBus settings.
+
+⚙️ **Options:**
+    🔹 `ibus-setup` --> ⚙️ Opens the IBus settings panel (launches the GUI).
+    🔹 There are no command-line options for this command. All configurations are done through the graphical interface.
+
+🛠 **Examples:**
+
+    $ ibus-setup
+
+    🔹 This command opens the IBus settings program. From there, you can add Persian keyboard layouts or change hotkeys.
+
+✅ **Simple Example & Explanation:**
+
+    $ ibus-setup
+
+    🔹 Running this command launches the IBus GUI (Graphical User Interface), which allows you to easily configure IBus, such as adding or removing input languages.

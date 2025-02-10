@@ -1,0 +1,80 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `add-patch` (ya `git add -p`) yek rahe entekhabi baraye ezafe kardane taghirat az file-ha be staging area dar Git ast.  In dastoor be shoma ejazeh midahad ke har change ra be surat joda-joda (patch) check konid va entekhab konid ke aya an change bayad ezafe shavad ya na.
+
+⚙️ **Gozine-ha:**
+    🔹 `git add -p` --> 🧩 Shoru'e marahele entekhabi ezafe kardane taghirat (interactive patching).
+    🔹 `git add --patch <file>` --> 🎯 Ezafe kardane taghirat be surat entekhabi faghat dar yek file khass.
+    🔹 `s` --> ✂️ Split kardane yek change bozorgtar be change-haye koochaktar. (dar hale interactive patching)
+    🔹 `y` --> ✅ Ezafe kardane in change. (dar hale interactive patching)
+    🔹 `n` --> ❌ Az ezafe kardane in change gozashtan. (dar hale interactive patching)
+    🔹 `q` --> 👋 Kharej shodan az hale interactive patching.
+
+🛠 **Mesal-ha:**
+
+    $ git add -p
+
+    🔹 Shoru'e interactive patching baraye hameye file-hayi ke taghir karde and.
+
+    $ git add --patch myfile.txt
+
+    🔹 Shoru'e interactive patching faghat baraye file `myfile.txt`.
+
+✅ **Mesal sade:**
+
+    $ git add -p
+    diff --git a/myfile.txt b/myfile.txt
+    index 1234567..89abcdef 100644
+    --- a/myfile.txt
+    +++ b/myfile.txt
+    @@ -1,2 +1,3 @@
+     This is line 1.
+     This is line 2.
+    +This is line 3.
+    Stage this patch [y/n/q/a/d/?] ?
+
+    🔹 Dar in mesal, shoma mitavanid ba zadan `y` line 3 ra ezafe konid, ya ba zadan `n` az an begzarid, ya `q` bezanid ta az interactive patching kharej shavid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `add-patch` command (or `git add -p`) provides an interactive way to selectively add changes from files to the Git staging area. It allows you to review each change (patch) individually and choose whether to add it or not.
+
+⚙️ **Options:**
+    🔹 `git add -p` --> 🧩 Starts the interactive patching process for adding changes.
+    🔹 `git add --patch <file>` --> 🎯 Interactively add changes only within a specific file.
+    🔹 `s` --> ✂️ Split a larger change into smaller changes. (during interactive patching)
+    🔹 `y` --> ✅ Stage this change. (during interactive patching)
+    🔹 `n` --> ❌ Do not stage this change. (during interactive patching)
+    🔹 `q` --> 👋 Quit the interactive patching process.
+
+🛠 **Examples:**
+
+    $ git add -p
+
+    🔹 Starts interactive patching for all modified files.
+
+    $ git add --patch myfile.txt
+
+    🔹 Starts interactive patching only for the file `myfile.txt`.
+
+✅ **Simple Example:**
+
+    $ git add -p
+    diff --git a/myfile.txt b/myfile.txt
+    index 1234567..89abcdef 100644
+    --- a/myfile.txt
+    +++ b/myfile.txt
+    @@ -1,2 +1,3 @@
+     This is line 1.
+     This is line 2.
+    +This is line 3.
+    Stage this patch [y/n/q/a/d/?] ?
+
+    🔹 In this example, you can add line 3 by pressing `y`, skip it by pressing `n`, or exit interactive patching by pressing `q`.

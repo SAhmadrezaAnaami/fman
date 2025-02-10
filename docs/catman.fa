@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `catman` baraye sakhtan (generate) ya format kardan safe-haye rahnamaye dastoorat (man pages) be shekl-e moratab va ghabl-e khandan estefade mishavad. In dastoor asasan baraye enteshar (publish) safe-haye man dar format-haye mokhtalef be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `catman -w`  --> 🌐 Namayesh masir-e kamel-e safe-ye man be jaye neshan dadan khod-e safe-ye man.
+    🔹 `catman -d`  --> 📁 Eijad-e directory-haye lazeme baraye safe-haye man agar directory mojood nabashad.
+    🔹 `catman -n`  --> 🔄 Faqat safe-haye man-e tazeh-sakhte shode (newly created) ya tagheer-karde ra bazsazi mikonad (rebuild).
+
+🛠 **Mesal-ha:**
+
+    $ catman
+
+    🔹 Safe-haye man-e defalt ra format va update mikonad.
+
+    $ catman -w ls
+
+    🔹 Masir-e safe-ye man baraye dastoor `ls` ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ catman -n
+
+    🔹 Feqat safe-haye man-i ke az akharin dafe-ye اجرا tagheer karde and ra update mikonad, in kar sarat-e kar ra balatar mibarad agar safe-haye ziadi bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `catman` command is used to generate or format manual pages (man pages) in a structured and readable format. This command is primarily used to publish man pages in various formats.
+
+⚙️ **Options:**
+    🔹 `catman -w`  --> 🌐 Display the full path of the man page instead of showing the man page itself.
+    🔹 `catman -d`  --> 📁 Create necessary directories for the man pages if the directories do not exist.
+    🔹 `catman -n`  --> 🔄 Rebuild only newly created or changed man pages.
+
+🛠 **Examples:**
+
+    $ catman
+
+    🔹 Format and update the default man pages.
+
+    $ catman -w ls
+
+    🔹 Print the path of the man page for the `ls` command.
+
+✅ **Simple Example:**
+
+    $ catman -n
+
+    🔹 Update only those man pages that have changed since the last run, speeding up the process if there are many man pages.

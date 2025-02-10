@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lpr` baraye chap kardane file-ha estefade mishavad. Yani yek file ra mifreste be printer ta chap shavad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `lpr filename` --> 🖨️ Chap kardane yek file ba name `filename`.
+    🔹 `lpr -P printername filename` --> 🎯 Chap kardane file ba estefade az yek printer khass ba name `printername`.
+    🔹 `lpr -# numcopies filename` --> 🔢 Chap kardane `numcopies` copy az file.
+
+🛠 **Mesal-ha:**
+    
+    $ lpr document.txt
+    
+    🔹 Chap kardane file `document.txt` ba printer pishfarz.
+
+    $ lpr -P hplaserjet report.pdf
+    
+    🔹 Chap kardane file `report.pdf` ba printeri ke name aan `hplaserjet` ast.
+
+✅ **Mesal sade:**
+    
+    $ lpr -# 2 resume.txt
+    
+    🔹 Chap kardane 2 copy az file `resume.txt` ba printer pishfarz.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lpr` command is used to print files. It sends a file to the printer to be printed.
+
+⚙️ **Options:**
+    🔹 `lpr filename` --> 🖨️ Prints the file named `filename`.
+    🔹 `lpr -P printername filename` --> 🎯 Prints the file using a specific printer named `printername`.
+    🔹 `lpr -# numcopies filename` --> 🔢 Prints `numcopies` copies of the file.
+
+🛠 **Examples:**
+    
+    $ lpr document.txt
+    
+    🔹 Prints the `document.txt` file using the default printer.
+
+    $ lpr -P hplaserjet report.pdf
+    
+    🔹 Prints the `report.pdf` file using the printer named `hplaserjet`.
+
+✅ **Simple Example:**
+    
+    $ lpr -# 2 resume.txt
+    
+    🔹 Prints 2 copies of the `resume.txt` file using the default printer.
+

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2slx` baraye tabdil file-haye printer PCL (Printer Command Language) be format PDF (Portable Document Format) ya PS (PostScript) estefade mishavad.  In dastoor asosan baraye printer-haye ke az driver-haye foo2zjs estefade mikonand mofid ast. Yani, age printer-e shoma natively PDF ya PS ra poshtibani nemikone, `foo2slx` mitune komak kone.
+
+⚙️ **Gozine-ha:**
+    🔹 `foo2slx -s PAGE_SIZE` --> 📄 Andaze safhe ro tayin mikone (masalan, A4, Letter).
+    🔹 `foo2slx -r RESOLUTION` --> 🎯 Deghat chap ro tayin mikone (masalan, 300dpi, 600dpi).
+    🔹 `foo2slx -o OUTPUT_FILE` --> 💾 Esme file-e khoruji ro tayin mikone. Age esm ro nadeed, be soorate `stdout` chap mikone.
+    🔹 `foo2slx -p` --> 🖨  File PS misaze (be jaye PDF).
+    🔹 `foo2slx -g` --> 🎨  File PDF/PS rangist (rangi). Default siyah va sefide.
+
+🛠 **Mesal-ha:**
+
+    $ foo2slx < input.pcl > output.pdf
+
+    🔹 Tabdil file `input.pcl` be `output.pdf` ba settings default.
+
+    $ foo2slx -s A4 -r 300 < input.pcl | lpr
+
+    🔹 Tabdil file `input.pcl` be PS ba andaze A4 va deghate 300dpi va chap an ba estefade az `lpr`.
+
+✅ **Mesal sade:**
+
+    $ foo2slx -o output.pdf < input.pcl
+
+    🔹 File PCL ba name `input.pcl` ra be file PDF ba name `output.pdf` tabdil mikonad va save mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2slx` command is used to convert printer PCL (Printer Command Language) files to PDF (Portable Document Format) or PS (PostScript) format. This command is primarily useful for printers that use foo2zjs drivers.  In other words, if your printer does not natively support PDF or PS, `foo2slx` can help.
+
+⚙️ **Options:**
+    🔹 `foo2slx -s PAGE_SIZE` --> 📄 Sets the page size (e.g., A4, Letter).
+    🔹 `foo2slx -r RESOLUTION` --> 🎯 Sets the print resolution (e.g., 300dpi, 600dpi).
+    🔹 `foo2slx -o OUTPUT_FILE` --> 💾 Sets the output file name. If not specified, prints to `stdout`.
+    🔹 `foo2slx -p` --> 🖨 Creates a PS file (instead of PDF).
+    🔹 `foo2slx -g` --> 🎨 Creates a color PDF/PS file. The default is black and white.
+
+🛠 **Examples:**
+
+    $ foo2slx < input.pcl > output.pdf
+
+    🔹 Converts the `input.pcl` file to `output.pdf` with default settings.
+
+    $ foo2slx -s A4 -r 300 < input.pcl | lpr
+
+    🔹 Converts the `input.pcl` file to PS with A4 size and 300dpi resolution and prints it using `lpr`.
+
+✅ **Simple Example:**
+
+    $ foo2slx -o output.pdf < input.pcl
+
+    🔹 Converts a PCL file named `input.pcl` to a PDF file named `output.pdf` and saves it.

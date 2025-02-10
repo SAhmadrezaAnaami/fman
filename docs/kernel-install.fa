@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kernel-install` baraye nasb kardan va modiriat kardan هسته (kernel) dar system-e shoma estefade mishavad. In dastoor be shoma komak mikonad ta هسته-haye jadid ra be راحتی nasb konid va bootloader ra moratab konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `kernel-install add <version> <kernel_image>` --> ➕ Ezafe kardan yek هسته jadid ba نسخه (version) va tasvir (image).
+    🔹 `kernel-install remove <version>`             --> ➖ Hazf kardan yek هسته ba نسخه (version).
+    🔹 `kernel-install list`                                --> 📜 Namayesh list-e هسته-haye nasb shode.
+
+🛠 **Mesal-ha:**
+
+    $ kernel-install add 5.18.0 /boot/vmlinuz-5.18.0
+    
+    🔹 Nasb kardane هسته ba نسخه 5.18.0.
+
+    $ kernel-install remove 5.17.0
+    
+    🔹 Hazf kardane هسته ba نسخه 5.17.0.
+
+✅ **Mesal sade:**
+
+    $ kernel-install list
+    
+    🔹 Namayesh hameye هسته-haye nasb shode dar system. In komak mikonad ta bedanid kodam هسته-ha dar system shoma vojud darand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kernel-install` command is used to install and manage kernel images on your system. This tool helps you easily install new kernels and configure the bootloader automatically.
+
+⚙️ **Options:**
+    🔹 `kernel-install add <version> <kernel_image>` --> ➕ Add a new kernel with the specified version and image.
+    🔹 `kernel-install remove <version>`             --> ➖ Remove a kernel with the specified version.
+    🔹 `kernel-install list`                                --> 📜 Display a list of installed kernels.
+
+🛠 **Examples:**
+
+    $ kernel-install add 5.18.0 /boot/vmlinuz-5.18.0
+    
+    🔹 Installs a kernel with version 5.18.0.
+
+    $ kernel-install remove 5.17.0
+    
+    🔹 Removes a kernel with version 5.17.0.
+
+✅ **Simple Example:**
+
+    $ kernel-install list
+    
+    🔹 Shows all installed kernels on the system. This helps you identify which kernels are available on your system.

@@ -1,0 +1,78 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-mark` baraye tagheer daadan ya neshaneh gozari kardan package-ha dar system-e `APT` (Advanced Package Tool) estefade mishavad. In dastoor be shoma komak mikonad ke package-ha ra be عنوان auto-installed neshaneh gozari konid ya az auto-install bardarid, ya anha ra hold konid ta update nashavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `apt-mark hold <package_name>`  --> 🔒 Package ra hold mikonad (az update shodan jologiri mikonad).
+    🔹 `apt-mark unhold <package_name>`  --> 🔓 Hold ra az package bardarid.
+    🔹 `apt-mark auto <package_name>`  --> 🚗 Package ra be عنوان auto-installed neshaneh gozari mikonad.  یعنی اگر dependency کسی نباشه پاک میشه.
+    🔹 `apt-mark manual <package_name>`  --> ✋ Package ra be عنوان manually installed neshaneh gozari mikonad.  یعنی همیشه نصب بمونه.
+    🔹 `apt-mark showauto`  --> 🚗 List-e package-haye auto-installed ra namayesh midahad.
+    🔹 `apt-mark showhold`  --> 🔒 List-e package-haye hold shode ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt-mark hold apache2
+
+    🔹 Package `apache2` ra hold mikonad.
+
+    $ sudo apt-mark unhold apache2
+
+    🔹 Hold ra az package `apache2` bardarid.
+
+    $ sudo apt-mark auto libjpeg-turbo8
+
+    🔹 Package `libjpeg-turbo8` ra be عنوان auto-installed neshaneh gozari mikonad.
+
+    $ sudo apt-mark manual vlc
+
+    🔹 Package `vlc` ra be عنوان manually installed neshaneh gozari mikonad.
+
+✅ **Mesal sade:**
+
+    $ apt-mark showhold
+
+    🔹 List-e package-haye hold shode ra namayesh midahad, agar hich package hold nashode bashad, chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-mark` command is used to change or mark package settings in the `APT` (Advanced Package Tool) system. This command allows you to mark packages as auto-installed or remove them from auto-installation, or to put them on hold to prevent updates.
+
+⚙️ **Options:**
+    🔹 `apt-mark hold <package_name>`  --> 🔒 Put a package on hold (prevents updates).
+    🔹 `apt-mark unhold <package_name>`  --> 🔓 Remove the hold from a package.
+    🔹 `apt-mark auto <package_name>`  --> 🚗 Mark a package as auto-installed.  This means it can be removed if it's no longer a dependency.
+    🔹 `apt-mark manual <package_name>`  --> ✋ Mark a package as manually installed. This means it will always stay installed.
+    🔹 `apt-mark showauto`  --> 🚗 Show a list of auto-installed packages.
+    🔹 `apt-mark showhold`  --> 🔒 Show a list of packages on hold.
+
+🛠 **Examples:**
+
+    $ sudo apt-mark hold apache2
+
+    🔹 Puts the `apache2` package on hold.
+
+    $ sudo apt-mark unhold apache2
+
+    🔹 Removes the hold from the `apache2` package.
+
+    $ sudo apt-mark auto libjpeg-turbo8
+
+    🔹 Marks the `libjpeg-turbo8` package as auto-installed.
+
+    $ sudo apt-mark manual vlc
+
+    🔹 Marks the `vlc` package as manually installed.
+
+✅ **Simple Example:**
+
+    $ apt-mark showhold
+
+    🔹 Displays a list of packages currently on hold. If no packages are on hold, nothing is displayed.

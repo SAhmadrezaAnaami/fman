@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `envsubst` baraye jaigozini moteghayyerhaye mohiti (environment variables) dar matnha ya file-ha estefade mishavad. Yani, moteghayyerha ro ba meghdare asli khodeshoon avaz mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `envsubst`  -->  🔁 Jaigozini moteghayyerha az environment فعلی.
+    🔹 `envsubst 'VARS'` --> 📌  Faghat moteghayyerhaye list shode dar 'VARS' ra jaigozin mikonad. Agar `VARS` khali bashad, hich jaigozini anjam nemishavad.
+    🔹 `envsubst < input_file > output_file`  --> 📤  Az file voroodi bekhan va dar file khorooji save kon. Agar file khorooji dade nashode bashad, natije dar terminal chap mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ export NAME="Ali"
+    $ echo "Hello, $NAME!" | envsubst
+    
+    🔹 Chap mikone: Hello, Ali!
+
+    $ cat template.txt
+    Hello, $NAME! You are $AGE years old.
+    $ export NAME="Reza"
+    $ export AGE="30"
+    $ envsubst < template.txt
+    
+    🔹 Chap mikone: Hello, Reza! You are 30 years old.
+
+✅ **Mesal sade:**
+
+    $ echo "The value of PATH is: $PATH" | envsubst
+    
+    🔹 Chap mikone meghdare PATH az system shoma. Agar PATH set nashode bashad, hich jaigozini anjam nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `envsubst` command substitutes environment variables in a string or file. It replaces environment variables with their actual values.
+
+⚙️ **Options:**
+    🔹 `envsubst`  --> 🔁 Substitutes variables from the current environment.
+    🔹 `envsubst 'VARS'` --> 📌 Only substitutes the variables listed in 'VARS'. If `VARS` is empty, no substitution occurs.
+    🔹 `envsubst < input_file > output_file`  --> 📤 Reads from an input file and saves to an output file. If the output file isn't given, the result is printed to the terminal.
+
+🛠 **Examples:**
+
+    $ export NAME="Ali"
+    $ echo "Hello, $NAME!" | envsubst
+    
+    🔹 Prints: Hello, Ali!
+
+    $ cat template.txt
+    Hello, $NAME! You are $AGE years old.
+    $ export NAME="Reza"
+    $ export AGE="30"
+    $ envsubst < template.txt
+    
+    🔹 Prints: Hello, Reza! You are 30 years old.
+
+✅ **Simple Example:**
+
+    $ echo "The value of PATH is: $PATH" | envsubst
+    
+    🔹 Prints the value of PATH from your system. If PATH is not set, no substitution occurs.

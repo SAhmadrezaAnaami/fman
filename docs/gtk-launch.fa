@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk-launch` baraye ejra kardane barname-haye grafiki (Graphical Applications) ba estefade az .desktop file-hast. In dastoor be shoma komak mikonad barname-ha ra ba name-shoon (name) ejra konid bedune inke niyaz bashe masire kameleshoon (complete path) ra bedoonid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtk-launch --version` --> ℹ️  Namayeshe version `gtk-launch`.
+    🔹 `gtk-launch [NAME]`   --> 🚀  Eejra kardane barname ba name [NAME] az file .desktop.
+    🔹 `gtk-launch [FILENAME]` --> 📂  Eejra kardane barname az file .desktop moshakhas [FILENAME].
+
+🛠 **Mesal-ha:**
+
+    $ gtk-launch firefox
+
+    🔹 Eejra kardane barname Firefox, agar yek file .desktop baraye Firefox vojood dashte bashe.
+
+    $ gtk-launch org.gnome.Nautilus.desktop
+
+    🔹 Eejra kardane file .desktop moshakhas baraye barname Nautilus.
+
+✅ **Mesal sade:**
+
+    $ gtk-launch gedit
+
+    🔹 Agar file .desktop baraye Gedit vojood dashte bashe, Gedit baz mishavad. Dar vaghe, `gtk-launch` be donbale file .desktop ba name "gedit" migardad va barname ra ejra mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk-launch` command is used to launch graphical applications using their .desktop files. It allows you to start applications by their name instead of needing to know their complete path.
+
+⚙️ **Options:**
+    🔹 `gtk-launch --version` --> ℹ️  Display the version of `gtk-launch`.
+    🔹 `gtk-launch [NAME]`   --> 🚀  Launch the application with the name [NAME] using its .desktop file.
+    🔹 `gtk-launch [FILENAME]` --> 📂  Launch the application using the specified .desktop file [FILENAME].
+
+🛠 **Examples:**
+
+    $ gtk-launch firefox
+
+    🔹 Launches the Firefox application, assuming a .desktop file exists for Firefox.
+
+    $ gtk-launch org.gnome.Nautilus.desktop
+
+    🔹 Launches the specified .desktop file for the Nautilus application.
+
+✅ **Simple Example:**
+
+    $ gtk-launch gedit
+
+    🔹 If a .desktop file exists for Gedit, Gedit will be launched. `gtk-launch` effectively searches for a .desktop file named "gedit" and executes the associated application.

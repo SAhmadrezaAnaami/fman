@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `containerd-shim-runc-v1` yek barname (process) ast ke container-ha ra dar system shoma modiriyat mikonad, vaghti az `containerd` be عنوان runtime container estefade mikonid.  Be zabane sade, in yek vasete bein `containerd` va `runc` ast.  `containerd` darkhaste ejra-ye container ra midehad, va `containerd-shim-runc-v1` az `runc` estefade mikonad ta container ra dorost konad va modiriyat konad.  Agar container be tamam shavad, `containerd-shim-runc-v1` natije ra be `containerd` bazmigardanad.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine mostaghimi baraye ejra ya configure kardan `containerd-shim-runc-v1` vojood nadarad.  In barname be tore khodkar az tarigh `containerd` modiriyat mishavad.  Ama shoma mitavanid configure `containerd` ra tagheer bedahid ta raftare `containerd-shim-runc-v1` ra tagheer dahid.
+    🔹 Check kardan version: `containerd-shim-runc-v1 --version` --> 🧾 Namayesh versione shim.
+
+🛠 **Mesal-ha:**
+
+    $ ps aux | grep containerd-shim-runc-v1
+
+    🔹 In dastoor hameye process-haye `containerd-shim-runc-v1` ra ke dar hale ejra hastand namayesh midahad. Az in dastoor mitavanid estefade konid ta check konid aya shim dorost kar mikonad ya na.
+
+    $ journalctl -u containerd | grep shim
+
+    🔹 In dastoor log-haye `containerd` ra baresi mikonad ta peyda konad har goone error ya warning raje be `containerd-shim-runc-v1`.
+
+✅ **Mesal sade:**
+
+    Farz konid yek container ra ba `docker run` ejra mikonid.  Dar poshte parde, `docker` az `containerd` estefade mikonad.  `containerd` yek `containerd-shim-runc-v1` instance baraye an container ijad mikonad.  In shim container ra modiriyat mikonad. Agar container crash konad, shim `containerd` ra khabar mikonad. Shoma be tore mostaghim ba `containerd-shim-runc-v1` kar nemikonid, vali in yek ghesmat mohem az sistem container-e shoma ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `containerd-shim-runc-v1` is a process that manages containers on your system when you are using `containerd` as your container runtime. Simply put, it acts as a bridge between `containerd` and `runc`. `containerd` requests the execution of a container, and `containerd-shim-runc-v1` utilizes `runc` to create and manage the container. When the container finishes, `containerd-shim-runc-v1` returns the result to `containerd`.
+
+⚙️ **Options:**
+    🔹 There are no direct options for running or configuring `containerd-shim-runc-v1`. It's managed automatically by `containerd`. However, you can configure `containerd` to indirectly influence the behavior of `containerd-shim-runc-v1`.
+    🔹 Check version: `containerd-shim-runc-v1 --version` --> 🧾 Shows the shim version.
+
+🛠 **Examples:**
+
+    $ ps aux | grep containerd-shim-runc-v1
+
+    🔹 This command displays all running `containerd-shim-runc-v1` processes.  You can use it to check if the shim is running correctly.
+
+    $ journalctl -u containerd | grep shim
+
+    🔹 This command examines the `containerd` logs to find any errors or warnings related to `containerd-shim-runc-v1`.
+
+✅ **Simple Example:**
+
+    Imagine you run a container with `docker run`. Under the hood, `docker` uses `containerd`. `containerd` creates a `containerd-shim-runc-v1` instance for that container. This shim manages the container. If the container crashes, the shim notifies `containerd`. You don't directly interact with `containerd-shim-runc-v1`, but it's an important part of your container system.

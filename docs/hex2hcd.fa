@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hex2hcd` baraye tabdil kardan file-haye hexadecimal be format HCD (Hewlett-Packard Configuration Database) estefade mishavad. In dastoor be shoma komak mikonad ta etela'at ra az format hexadecimal be format HP be asani taghir dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hex2hcd <file.hex> <file.hcd>`  --> 🔄 Tabdil file HEX be file HCD.
+    🔹 `hex2hcd -v`  --> 📢 Namayesh version dastoor.
+    🔹 `hex2hcd -h`  --> ❓ Namayesh komak va rahnamayi dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ hex2hcd input.hex output.hcd
+
+    🔹 Tabdil file `input.hex` be file `output.hcd`.
+
+    $ hex2hcd -v
+
+    🔹 Namayesh version dastoor `hex2hcd`.
+
+✅ **Mesal sade:**
+
+    $ hex2hcd firmware.hex firmware.hcd
+
+    🔹 File `firmware.hex` be file `firmware.hcd` tabdil mishavad, ke mitavanad baraye update kardan dastgah HP estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hex2hcd` command is used to convert hexadecimal files to the HCD (Hewlett-Packard Configuration Database) format. This tool helps you easily transform information from a hexadecimal format to an HP configuration file.
+
+⚙️ **Options:**
+    🔹 `hex2hcd <file.hex> <file.hcd>`  --> 🔄 Converts a HEX file to an HCD file.
+    🔹 `hex2hcd -v`  --> 📢 Displays the version of the command.
+    🔹 `hex2hcd -h`  --> ❓ Shows help and usage instructions for the command.
+
+🛠 **Examples:**
+
+    $ hex2hcd input.hex output.hcd
+
+    🔹 Converts the file `input.hex` to the file `output.hcd`.
+
+    $ hex2hcd -v
+
+    🔹 Displays the version of the `hex2hcd` command.
+
+✅ **Simple Example:**
+
+    $ hex2hcd firmware.hex firmware.hcd
+
+    🔹 The file `firmware.hex` is converted to `firmware.hcd`, which can then be used to update an HP device.

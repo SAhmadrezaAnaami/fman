@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deb-systemd-invoke` baraye ejra kardane service-haye systemd dar hengame nasb ya hazf pakage-haye debian (`.deb`) be kar miravad. Yani vaghti shoma yek pakage nasb mikonid ya hazf mikonid, in dastoor otomatik service-haye marboote ra restart mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--quiet` --> 🤫 Seda-ye kamtar, faghat khata-ha ra neshon midahad.
+    🔹 `--no-block` --> 🏃🏼‍♀️ Command ra be sorate async ejra mikonad (don't wait for completion).
+    🔹 `--ignore-missing` --> 🙈 Age file-haye service vojood nadashte bashand, eshkali nadarad va edame midahad.
+
+🛠 **Mesal-ha:**
+
+    $ deb-systemd-invoke restart apache2
+
+    🔹 Service apache2 ra restart mikonad.
+
+    $ deb-systemd-invoke enable my-new-service
+
+    🔹 Service `my-new-service` ra dar hengame boot fa'al mikonad.
+
+✅ **Mesal sade:**
+
+    $ deb-systemd-invoke --quiet restart nginx
+
+    🔹 Service nginx ra restart mikonad va faghat agar khataee rokh bedahad, payami neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deb-systemd-invoke` command is used to trigger systemd service operations during Debian package (`.deb`) installation or removal.  This means when you install or remove a package, this command automatically restarts relevant services.
+
+⚙️ **Options:**
+    🔹 `--quiet` --> 🤫 Less output, only shows errors.
+    🔹 `--no-block` --> 🏃🏼‍♀️ Run the command asynchronously (don't wait for completion).
+    🔹 `--ignore-missing` --> 🙈 If service files are missing, ignore the error and continue.
+
+🛠 **Examples:**
+
+    $ deb-systemd-invoke restart apache2
+
+    🔹 Restarts the apache2 service.
+
+    $ deb-systemd-invoke enable my-new-service
+
+    🔹 Enables the `my-new-service` service to start on boot.
+
+✅ **Simple Example:**
+
+    $ deb-systemd-invoke --quiet restart nginx
+
+    🔹 Restarts the nginx service and only displays output if an error occurs.

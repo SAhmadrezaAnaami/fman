@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `namecheck` baraye baresi kardan esm-haye karbari (usernames) dar platform-haye mokhtalef online (mesle social media, domain-ha va gheireh) be kar miravad. Ba estefade az in dastoor, shoma mitavanid be asani bebinid aya yek esm-e khas dar chand site-e mokhtalef gheire ghabele dastras ast ya na.
+
+⚙️ **Gozine-ha:**
+    🔹 `namecheck username`  -->  🔍 Baresi esm-e karbari dar hameye platform-haye pishfarz.
+    🔹 `namecheck --only <platform1,platform2,...> username`  -->  🎯 Baresi esm-e karbari faghat dar platform-haye entekhab shode.
+    🔹 `namecheck --available username`  -->  ✅ Faghat platform-hayei ra namayesh midahad ke esm-e karbari dar anha dastras ast.
+
+🛠 **Mesal-ha:**
+
+    $ namecheck javad123
+
+    🔹 Baresi esm-e karbari "javad123" dar hameye platform-haye pishfarz.
+
+    $ namecheck --only twitter,facebook,instagram javad123
+
+    🔹 Baresi esm-e karbari "javad123" faghat dar Twitter, Facebook, va Instagram.
+
+✅ **Mesal sade:**
+
+    $ namecheck --available javad123
+
+    🔹 Namayesh platform-hayei ke esm-e karbari "javad123" dar anha hanooz gerefte nashodeh va dastras ast. Agar hich natijeyi namayesh dade nashavad, yani esm-e karbari dar hich platform-e dastrasi dastras nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `namecheck` command is used to check the availability of usernames across various online platforms (such as social media, domains, etc.).  Using this command, you can easily see if a specific username is unavailable on different sites.
+
+⚙️ **Options:**
+    🔹 `namecheck username`  -->  🔍 Check the username on all default platforms.
+    🔹 `namecheck --only <platform1,platform2,...> username`  -->  🎯 Check the username only on the specified platforms.
+    🔹 `namecheck --available username`  -->  ✅ Show only platforms where the username is available.
+
+🛠 **Examples:**
+
+    $ namecheck javad123
+
+    🔹 Check the username "javad123" on all default platforms.
+
+    $ namecheck --only twitter,facebook,instagram javad123
+
+    🔹 Check the username "javad123" only on Twitter, Facebook, and Instagram.
+
+✅ **Simple Example:**
+
+    $ namecheck --available javad123
+
+    🔹 Displays the platforms where the username "javad123" is still available. If no output is shown, it means the username is not available on any supported platform.

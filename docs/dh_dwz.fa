@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_dwz` baraye sakhtan va nasb-e `*.dwz` file-ha baraye Debian estefade mishavad. `*.dwz` file-ha version-haye compressed va optimize shode az debug symbols baraye package-ha hastand.  In dastoor ghaleb-an dar process-e sakht-e package-ha estefade mishavad ta size-e download baraye debug symbols kamtar shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir directory` --> 📁 Directory-e source code ra moshakhas mikonad. Agar moshakhas nashavad, az current directory estefade mishavad.
+    🔹 `--destdir directory` --> 🎯 Directory-e maqsad baraye file-haye `*.dwz` sakhte shode ra moshakhas mikonad. Default be `/usr/lib/debug/.dwz` ast.
+    🔹 `--name package-name` --> 🏷️ Esme package ra moshakhas mikonad. Agar moshakhas nashavad, az esme directory-e source estefade mishavad.
+    🔹 `--compress-level level` --> 🗜️ Sathe compression (az 1 ta 9) ra baraye file-haye `*.dwz` moshakhas mikonad. Sathe balatar compression be size kamtar منجر mishavad, ama zaman-e compression bishtar mishavad.
+    🔹 `--help` --> ❓ Rahnamayi dastoor ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_dwz --sourcedir src --destdir deb/dwz
+    
+    🔹 Sakhtan file-haye `*.dwz` az source code dar directory `src` va zakhire-ye anha dar directory `deb/dwz`.
+
+    $ dh_dwz --name mypackage --compress-level 9
+    
+    🔹 Sakhtan file-haye `*.dwz` ba esme `mypackage` va sathe compression 9.
+
+✅ **Mesal sade:**
+
+    $ dh_dwz
+    
+    🔹 Agar hich gozine-i dade nashavad, `dh_dwz` file-haye `*.dwz` ra az current directory ba settings-e default misazad. Agar directory current, directory source code-e package bashad, debug symbol-haye aan package compressed va dar `/usr/lib/debug/.dwz` zakhire mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_dwz` command is used to create and install `*.dwz` files for Debian packages. `*.dwz` files are compressed and optimized versions of debug symbols for packages. It's typically used during the package build process to reduce the download size for debug symbols.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory` --> 📁 Specifies the source code directory. If not specified, the current directory is used.
+    🔹 `--destdir directory` --> 🎯 Specifies the destination directory for the generated `*.dwz` files. The default is `/usr/lib/debug/.dwz`.
+    🔹 `--name package-name` --> 🏷️ Specifies the package name. If not specified, the source directory name is used.
+    🔹 `--compress-level level` --> 🗜️ Specifies the compression level (from 1 to 9) for the `*.dwz` files. Higher compression levels result in smaller file sizes but longer compression times.
+    🔹 `--help` --> ❓ Displays the command help.
+
+🛠 **Examples:**
+
+    $ dh_dwz --sourcedir src --destdir deb/dwz
+    
+    🔹 Creates `*.dwz` files from the source code in the `src` directory and saves them in the `deb/dwz` directory.
+
+    $ dh_dwz --name mypackage --compress-level 9
+    
+    🔹 Creates `*.dwz` files with the name `mypackage` and a compression level of 9.
+
+✅ **Simple Example:**
+
+    $ dh_dwz
+    
+    🔹 If no options are given, `dh_dwz` creates `*.dwz` files from the current directory with default settings. If the current directory is the source code directory of a package, the debug symbols for that package will be compressed and stored in `/usr/lib/debug/.dwz`.

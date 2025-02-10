@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dmesg` baraye didan peygham haye system, mesle error ha ya khabarhaye sakht afzari, estefade mishavad. In peygham ha dar "kernel ring buffer" zakhire mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `dmesg | less` --> 📜 Peygham ha ra safhe be safhe bebinid (baraye matn haye toolani).
+    🔹 `dmesg -c` --> 🧹 Peygham ha ra chap konid va az buffer pak konid.
+    🔹 `dmesg -w` --> ⏳ Montazer peygham haye jadid bemanid.
+    🔹 `dmesg -l level` --> ❗ Faqat peygham haye ba daraje ahamiyat `level` ya balatar ra namayesh dahid. Masalan, `dmesg -l err` faqat error ha ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ dmesg
+
+    🔹 Namayesh hameye peygham haye kernel.
+
+    $ dmesg | grep "error"
+
+    🔹 Peyda kardan khatahaye dakhele peygham haye kernel.
+
+✅ **Mesal sade:**
+
+    $ dmesg | grep "USB"
+
+    🔹 In dastoor hameye peygham haye marboot be dastgah haye USB ra neshon midahad. Baraye mesal, vaghti ke yek USB jadid vasl mikonid, mitavanid peygham haye marboot be shenakhtane aan ra dar khrooji bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dmesg` command is used to view system messages, such as hardware errors and device information. These messages are stored in the kernel ring buffer.
+
+⚙️ **Options:**
+    🔹 `dmesg | less` --> 📜 View messages page by page (for long outputs).
+    🔹 `dmesg -c` --> 🧹 Print messages and clear the buffer.
+    🔹 `dmesg -w` --> ⏳ Wait for new messages to appear.
+    🔹 `dmesg -l level` --> ❗ Only display messages with a severity level of `level` or higher. For example, `dmesg -l err` shows only error messages.
+
+🛠 **Examples:**
+
+    $ dmesg
+
+    🔹 Display all kernel messages.
+
+    $ dmesg | grep "error"
+
+    🔹 Find errors within the kernel messages.
+
+✅ **Simple Example:**
+
+    $ dmesg | grep "USB"
+
+    🔹 This command displays all messages related to USB devices. For example, when you plug in a new USB device, you can see the messages related to its recognition in the output.

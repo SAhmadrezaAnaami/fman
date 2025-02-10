@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-typefind-1.0` baraye peyda kardan va shenasayi kardane no'e file multimedia (mesle video ya audio) estefade mishavad. In dastoor az GStreamer estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gst-typefind-1.0 [FILENAME]`  --> 📂 File-e morede nazar ro shenasayi mikonad.
+    🔹 `gst-typefind-1.0 --help`     --> ❓ Rahnamayi command ro neshon mide.
+    🔹 `gst-typefind-1.0 --version`  --> ℹ️ Version barname ro neshon mide.
+
+🛠 **Mesal-ha:**
+
+    $ gst-typefind-1.0 video.mp4
+
+    🔹 No'e file `video.mp4` ro peyda mikonad va neshon mide.
+
+    $ gst-typefind-1.0 music.ogg
+
+    🔹 No'e file `music.ogg` ro peyda mikonad va neshon mide.
+
+✅ **Mesal sade:**
+
+    $ gst-typefind-1.0 myfile.avi
+    video/x-msvideo
+
+    🔹 In neshon mide ke file `myfile.avi` yek file video ba format AVI ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-typefind-1.0` command is used to determine and identify the type of a multimedia file (like video or audio). This command uses GStreamer.
+
+⚙️ **Options:**
+    🔹 `gst-typefind-1.0 [FILENAME]`  --> 📂 Identifies the type of the specified file.
+    🔹 `gst-typefind-1.0 --help`     --> ❓ Shows the command's help information.
+    🔹 `gst-typefind-1.0 --version`  --> ℹ️ Shows the program's version.
+
+🛠 **Examples:**
+
+    $ gst-typefind-1.0 video.mp4
+
+    🔹 Finds and displays the file type of `video.mp4`.
+
+    $ gst-typefind-1.0 music.ogg
+
+    🔹 Finds and displays the file type of `music.ogg`.
+
+✅ **Simple Example:**
+
+    $ gst-typefind-1.0 myfile.avi
+    video/x-msvideo
+
+    🔹 This shows that the file `myfile.avi` is a video file with the AVI format.

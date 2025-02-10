@@ -1,0 +1,51 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `m2300w-wrapper` yek dastoor ya package narmafzari ast baraye rah andazi va control-e printer-haye Samsung M2300W dar system-haye Linux. In komak mikonad ta printer be dorosti kar konad va shoma betavanid chaph konid.
+
+⚙️ **Gozine-ha:**
+    🔹  Be tore mostaghim dar terminal estefade nemishavad.  In yek wrapper script ast ke dar posht-e sahne kar mikonad.  
+    🔹  Baraye estefade az printer, bayad driver-haye munasib va PPD file ra install konid. (PPD file tarif mikonad che tor printer shoma kar mikonad).
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt install printer-driver-splix  
+    
+    🔹  Install kardane driver-haye lazem baraye printer-haye Samsung. (Dar Debian/Ubuntu)
+
+    $ sudo systemctl restart cups  
+    
+    🔹  Restart kardane service CUPS (Common Unix Printing System) baraye shenakhtane printer.
+
+✅ **Mesal sade:**
+
+    Ba'd az install kardane driver-ha, bayad az system setting-haye Linux (mesle Ubuntu) printer-e khod ra ezafe konid va model Samsung M2300W ra entekhab konid.  `m2300w-wrapper` dar posht-e sahne kar mikonad ta komak konad chaph be dorosti anjam shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `m2300w-wrapper` is a command or software package used to enable and control Samsung M2300W printers on Linux systems. It helps the printer to function correctly and allows you to print.
+
+⚙️ **Options:**
+    🔹 It's generally not used directly from the terminal. It is a wrapper script that works in the background.
+    🔹 To use the printer, you need to install the appropriate drivers and PPD file (PPD file defines how your printer works).
+
+🛠 **Examples:**
+
+    $ sudo apt install printer-driver-splix
+    
+    🔹 Installing necessary drivers for Samsung printers. (On Debian/Ubuntu)
+
+    $ sudo systemctl restart cups
+    
+    🔹 Restarting the CUPS (Common Unix Printing System) service to recognize the printer.
+
+✅ **Simple Example:**
+
+    After installing the drivers, you need to add your printer via the Linux system settings (such as in Ubuntu) and select the Samsung M2300W model. `m2300w-wrapper` works in the background to help ensure printing works correctly.
+

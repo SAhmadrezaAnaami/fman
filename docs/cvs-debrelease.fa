@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cvs-debrelease` baraye sakhtane package DEB az repository CVS estefade mishavad. In dastoor karhaie ra anjam midahad ke baraye montasher kardane yek version az barnamye CVS be format Debian lazem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnama (help) va kharj shodan.
+    🔹 `--version` --> ℹ️ Namayesh version va kharj shodan.
+    🔹 `--destdir=directory` --> 📁 Moshakhas kardane directory baraye gharar dadane file DEB sakhte shode. Agar moshakhas nashavad, file dar directory jari gharar migirad.
+    🔹 `--update-changelog` --> 📝 Update file `debian/changelog` ba estefade az loghaye CVS.
+    🔹 `--sign` --> 🔑 Ba estefade az `gpg`, package DEB ra emza kon.
+
+🛠 **Mesal-ha:**
+
+    $ cvs-debrelease
+
+    🔹 Sakhtane yek package DEB az repository CVS dar directory jari.
+
+    $ cvs-debrelease --destdir=/tmp
+
+    🔹 Sakhtane package DEB va gharar dadane an dar directory `/tmp`.
+
+    $ cvs-debrelease --update-changelog
+
+    🔹 Update kardane `debian/changelog` az loghaye CVS ghabl az sakhtane package DEB.
+
+✅ **Mesal sade:**
+
+    $ cvs-debrelease --sign
+
+    🔹 Sakhtane package DEB va emza kardane an ba estefade az gpg baraye etminan az sahih budane an.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cvs-debrelease` command is used to create a DEB package from a CVS repository. This command performs the steps necessary to release a version of a CVS program in Debian format.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help message and exit.
+    🔹 `--version` --> ℹ️ Display version information and exit.
+    🔹 `--destdir=directory` --> 📁 Specify the directory to place the built DEB file. If not specified, the file will be placed in the current directory.
+    🔹 `--update-changelog` --> 📝 Update the `debian/changelog` file using CVS logs.
+    🔹 `--sign` --> 🔑 Sign the DEB package using `gpg`.
+
+🛠 **Examples:**
+
+    $ cvs-debrelease
+
+    🔹 Creates a DEB package from the CVS repository in the current directory.
+
+    $ cvs-debrelease --destdir=/tmp
+
+    🔹 Creates the DEB package and places it in the `/tmp` directory.
+
+    $ cvs-debrelease --update-changelog
+
+    🔹 Updates the `debian/changelog` file from the CVS logs before building the DEB package.
+
+✅ **Simple Example:**
+
+    $ cvs-debrelease --sign
+
+    🔹 Creates the DEB package and signs it using gpg to ensure its authenticity.

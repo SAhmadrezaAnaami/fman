@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `delpart` (delete partition) baraye pak kardan yek ghesmat az hard drive (partition) estefade mishavad.  **Ehtiat!** Pak kardan yek partition hameye data-haye dakhel aan ra az beyn mibarad!  Oba'at avval bayad disk-i ke partition rooye aan gharar darad ra entekhab konid.  In dastoor ob'atan dar boot loader-ha ya environment-haye khas mesle GRUB estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `delpart DISK PARTITION` -->  🗑️ Pak kardan partition moshakhas shode az disk moshakhas shode. `DISK` shomareh disk va `PARTITION` shomareh partition ast.  **Ehtiat:** eshtebah dar shomareh disk ya partition mitavanad be az dast raftane data منجر شود!
+    🔹 `delpart` (bedoon gozine) --> ⚠️ ممکن است yek menu ya wizard ra baz konad ke be shoma komak konad partition mored nazar ra entekhab konid (dependent bar environment).  **Ehtiat:**  Hameshe az etela'ate dorost اطمینان حاصل konid.
+
+🛠 **Mesal-ha:**
+
+    $ delpart 1 3
+
+    🔹 Pak kardan partition shomareh 3 az disk shomareh 1.  **Ehtiat:**  Qabl az ejra, az backup اطمینان حاصل konid.
+
+    $ delpart
+
+    🔹 Baz kardan yek menu baraye entekhab va pak kardan partition (agar boot loader ya environment poshtibani konad).
+
+✅ **Mesal sade:**
+
+    $ delpart 0 2
+
+    🔹  Pak kardan partition shomareh 2 az disk shomareh 0.  **Ehtiat:** Pas az ejra, dade-haye dakhel partition ghabel bazgasht nistand!
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `delpart` (delete partition) command is used to delete a hard drive partition. **Caution!** Deleting a partition will erase all data within it!  You must first typically select the disk on which the partition resides. This command is typically used within boot loaders or specialized environments like GRUB.
+
+⚙️ **Options:**
+    🔹 `delpart DISK PARTITION` --> 🗑️ Delete the specified partition from the specified disk. `DISK` is the disk number and `PARTITION` is the partition number. **Caution:** Mistakes in the disk or partition number can lead to data loss!
+    🔹 `delpart` (without options) --> ⚠️ May open a menu or wizard to help you select the partition you want to delete (environment dependent). **Caution:** Always verify the information is correct.
+
+🛠 **Examples:**
+
+    $ delpart 1 3
+
+    🔹 Delete partition number 3 from disk number 1. **Caution:** Make sure you have a backup before running this command.
+
+    $ delpart
+
+    🔹 Open a menu to select and delete a partition (if the boot loader or environment supports it).
+
+✅ **Simple Example:**
+
+    $ delpart 0 2
+
+    🔹 Delete partition number 2 from disk number 0. **Caution:** After execution, the data within the partition is unrecoverable!

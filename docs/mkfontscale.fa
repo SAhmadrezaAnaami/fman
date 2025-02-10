@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mkfontscale` baraye dorost kardane file-e `fonts.scale` az rooye font-ha dar yek directory (pooshe) estefade mishavad. In file baraye sari’tar kardan load shodan font-ha tavasote X server be kar mirevad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mkfontscale -b` --> 🔨 Ba’si mishe file-e `fonts.scale` dorost beshe hata agar directory font-e khali bashe.
+    🔹 `mkfontscale -s` --> 🔍 Scan-e directory-ha-ye ziadi mikone. Momkene baraye network file system-ha mofid bashe.
+    🔹 `mkfontscale -v` --> 🗣️ Debug message-ha ro chap mikone. Baraye fahmidan chera chizi dorost kar nemikone mofide.
+
+🛠 **Mesal-ha:**
+
+    $ mkfontscale
+
+    🔹 File-e `fonts.scale` ro dar directory-e fe’li dorost mikone.
+
+    $ mkfontscale /usr/share/fonts/truetype
+
+    🔹 File-e `fonts.scale` ro dar pooshe-ye `/usr/share/fonts/truetype` dorost mikone.
+
+✅ **Mesal sade:**
+
+    $ mkfontscale && xset fp rehash
+
+    🔹 Aval file-e `fonts.scale` ro dorost mikone va ba’d `xset fp rehash` ro ejra mikone ta X server az taghirat font اطلاع پیدا کنه.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mkfontscale` command is used to create the `fonts.scale` file from fonts in a directory. This file is used to speed up font loading by the X server.
+
+⚙️ **Options:**
+    🔹 `mkfontscale -b` --> 🔨 Forces the creation of the `fonts.scale` file even if the font directory is empty.
+    🔹 `mkfontscale -s` --> 🔍 Performs a more thorough directory scan, which may be useful for network file systems.
+    🔹 `mkfontscale -v` --> 🗣️ Prints debugging messages. Useful for understanding why something isn't working correctly.
+
+🛠 **Examples:**
+
+    $ mkfontscale
+
+    🔹 Creates the `fonts.scale` file in the current directory.
+
+    $ mkfontscale /usr/share/fonts/truetype
+
+    🔹 Creates the `fonts.scale` file in the `/usr/share/fonts/truetype` directory.
+
+✅ **Simple Example:**
+
+    $ mkfontscale && xset fp rehash
+
+    🔹 First creates the `fonts.scale` file, then runs `xset fp rehash` so that the X server is aware of the font changes.

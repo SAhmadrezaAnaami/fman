@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpg-connect-agent` baraye ertebat ba GnuPG agent be kar miravad. Agent masool-e modiriyat-e kelid-ha va anjam-e amal-e shafraveshi (cryptographic operations) ast. In dastoor be shoma ejaze midahad ke be agent dastoor bedahid, kelid-ha ra list konid, ya amal-e shafraveshi ra anjam dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--dastoor <dastoor>`  --> 📝 Eersal-e yek dastoor be agent va daryaft-e javab.
+    🔹 `--kargar <number>`   --> 🎯 Mosakhkhas kardan-e shomare-ye agent-i ke bayad be aan vasl shavad.
+    🔹 `--safhe <filename>` --> 💾 Zakhire-ye javab-e agent dar yek file.
+
+🛠 **Mesal-ha:**
+
+    $ gpg-connect-agent "kelid list kon" /bye
+
+    🔹 Eersal-e dastoor "kelid list kon" be agent va namayesh-e javab dar terminal.  "/bye" baraye bastan-e ertebat be kar miravad.
+
+    $ gpg-connect-agent --dastoor "ping" --safhe javab.txt /bye
+
+    🔹 Eersal-e dastoor "ping" be agent va zakhire-ye javab dar file `javab.txt`.
+
+✅ **Mesal sade:**
+
+    $ gpg-connect-agent "version" /bye
+
+    🔹 Ba eersal-e dastoor "version", versiyon-e GnuPG agent namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpg-connect-agent` command is used to communicate with the GnuPG agent. The agent is responsible for managing keys and performing cryptographic operations.  This command allows you to send commands to the agent, list keys, or perform cryptographic operations.
+
+⚙️ **Options:**
+    🔹 `--command <command>`  --> 📝 Send a command to the agent and receive a response.
+    🔹 `--agent-fd <number>`   --> 🎯 Specify the file descriptor number of the agent to connect to.
+    🔹 `--output <filename>` --> 💾 Save the agent's response to a file.
+
+🛠 **Examples:**
+
+    $ gpg-connect-agent "keylist" /bye
+
+    🔹 Sends the "keylist" command to the agent and displays the response in the terminal. "/bye" is used to close the connection.
+
+    $ gpg-connect-agent --command "ping" --output response.txt /bye
+
+    🔹 Sends the "ping" command to the agent and saves the response to the file `response.txt`.
+
+✅ **Simple Example & Explanation:**
+
+    $ gpg-connect-agent "version" /bye
+
+    🔹 By sending the "version" command, the version of the GnuPG agent is displayed.

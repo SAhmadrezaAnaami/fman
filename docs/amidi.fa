@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `amidi` baraye ferestadan va gereftan payam-haye System Exclusive (SysEx) MIDI az dastgah-haye MIDI estefade mishavad. In dastoor be shoma komak mikonad ta be dastgah-haye MIDI dastoor bedahid ya etela'at az anha daryaft konid, mesle update kardan firmware ya taghir dadan parameter-haye yek synthesizer.
+
+⚙️ **Gozine-ha:**
+    🔹 `amidi -l`  --> 📜 List kardan hameye port-haye MIDI ke dar system shoma vojood darand.
+    🔹 `amidi -p <port>` --> 📍 Entkhab kardan port-e MIDI morede nazar baraye ersal ya daryaft.  <port> bayad ba yek az list-e ke az `amidi -l` gerefte mishavad jaigozin shavad.
+    🔹 `amidi -s <file>` --> 📤 Eersal payam-haye SysEx az yek file.  File bayad formate hex dashte bashad.
+    🔹 `amidi -r <file>` --> 📥 Daryaft payam-haye SysEx va zakhire kardan anha dar yek file.
+
+🛠 **Mesal-ha:**
+
+    $ amidi -l
+
+    🔹 List kardan hameye port-haye MIDI mojood.
+
+    $ amidi -p hw:1,0 -s my_sysex_file.hex
+
+    🔹 Eersal payam-haye SysEx az file "my_sysex_file.hex" be port MIDI "hw:1,0".
+
+    $ amidi -p hw:1,0 -r received_sysex.hex
+
+    🔹 Daryaft payam-haye SysEx az port MIDI "hw:1,0" va zakhire kardan anha dar file "received_sysex.hex".
+
+✅ **Mesal sade:**
+
+    $ amidi -p virtual -s patch_data.syx
+
+    🔹  Eersal data-ye patch az file `patch_data.syx` (ba farze inke format hex ast) be port MIDI `virtual`. In mishe baraye load kardan sounds jadid be synthesizer-e shoma estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `amidi` command is used to send and receive System Exclusive (SysEx) MIDI messages from MIDI devices. It helps you to control MIDI devices or receive data from them, such as updating firmware or changing synthesizer parameters.
+
+⚙️ **Options:**
+    🔹 `amidi -l`  --> 📜 List all MIDI ports available on your system.
+    🔹 `amidi -p <port>` --> 📍 Select the desired MIDI port for sending or receiving.  <port> should be replaced with one from the list obtained from `amidi -l`.
+    🔹 `amidi -s <file>` --> 📤 Send SysEx messages from a file. The file should be in hexadecimal format.
+    🔹 `amidi -r <file>` --> 📥 Receive SysEx messages and save them to a file.
+
+🛠 **Examples:**
+
+    $ amidi -l
+
+    🔹 List all available MIDI ports.
+
+    $ amidi -p hw:1,0 -s my_sysex_file.hex
+
+    🔹 Send SysEx messages from the file "my_sysex_file.hex" to the MIDI port "hw:1,0".
+
+    $ amidi -p hw:1,0 -r received_sysex.hex
+
+    🔹 Receive SysEx messages from the MIDI port "hw:1,0" and save them to the file "received_sysex.hex".
+
+✅ **Simple Example:**
+
+    $ amidi -p virtual -s patch_data.syx
+
+    🔹 Send patch data from the file `patch_data.syx` (assuming it is in hex format) to the MIDI port `virtual`. This could be used to load new sounds into your synthesizer.

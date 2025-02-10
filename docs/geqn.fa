@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `geqn` (Graphical Equation) baraye ijad ya virayesh moadele-haye riyazi be soorate tasviri dar muhit X Window System (Linux va Unix) estefade mishavad.  In barnameh be shoma komak mikonad ta moadele-haye پیچیده را be soorate графики dar بیاورید.
+
+⚙️ **Gozine-ha:**
+    🔹 `geqn filename` --> 💾 Baz kardane file mojood ya ijad file jadid. Age filename nabashe, barnameh file jadid baz میکنه.
+    🔹 `-display displayname` --> 🖥️ Mosakhas kardane display X (dar soorate نیاز).
+
+🛠 **Mesal-ha:**
+
+    $ geqn equation.geq
+
+    🔹 Baz kardane file `equation.geq` bara virayesh.
+
+    $ geqn
+
+    🔹 Baz kardane ye safe jadid bara ijad moadele.
+
+✅ **Mesal sade:**
+
+    $ geqn formula.geq
+
+    🔹 Ba ejraye in dastoor, barnameh `geqn` file `formula.geq` ro baz mikone ta shoma بتونید moadele-haye dakhelsh رو virayesh کنید ya age file nabashe, ye file jadid ba hamin name misaze.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `geqn` (Graphical Equation) command is used to create or edit mathematical equations graphically in the X Window System (Linux and Unix).  This program helps you represent complex equations visually.
+
+⚙️ **Options:**
+    🔹 `geqn filename` --> 💾 Opens an existing file or creates a new file. If no filename is given, the program opens a new, empty file.
+    🔹 `-display displayname` --> 🖥️ Specifies the X display to use (if needed).
+
+🛠 **Examples:**
+
+    $ geqn equation.geq
+
+    🔹 Opens the file `equation.geq` for editing.
+
+    $ geqn
+
+    🔹 Opens a new, blank file for creating an equation.
+
+✅ **Simple Example:**
+
+    $ geqn formula.geq
+
+    🔹 By running this command, the `geqn` program opens the file `formula.geq` for you to edit the equations within it. If the file doesn't exist, a new file with that name is created.

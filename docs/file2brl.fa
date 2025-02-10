@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `file2brl` yek dastoor barname-rizi shode ast ke file-haye matni ra be format Braille tabdil mikonad. In dastoor baraye afrad nabina ya kam-bina ke az nemayeshgarhaye Braille estefade mikonand, mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `file2brl -l <zaban>` --> 🌐 Zaban-e varedi ra moshakhas mikonad (masalan, 'en' baraye English, 'fa' baraye Farsi). Agar zaban moshakhas nashavad, zaban-e pishfarz estefade mishavad.
+    🔹 `file2brl -o <file_khroji>` --> 📤 Name file-e khroji Braille ra moshakhas mikonad. Agar name file-e khroji moshakhas nashavad, natije dar stdout chap mishavad.
+    🔹 `file2brl -t` --> 📝 File matni sade ra baraye tabdil faraham mikonad (text only)
+
+🛠 **Mesal-ha:**
+
+    $ file2brl -l en input.txt -o output.brl
+
+    🔹 File `input.txt` ra be Braille tabdil mikonad va dar file `output.brl` zakhire mikonad, zaban `en` (English) ast.
+
+    $ cat input.txt | file2brl -l fa
+
+    🔹 Content file `input.txt` (Farsi) ra be Braille tabdil mikonad va dar terminal namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ file2brl -t simple_text.txt
+
+    🔹 File `simple_text.txt` ra be Braille tabdil mikonad va natije ra dar terminal namayesh midahad.  Dar in mesal, zaban-e pishfarz estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `file2brl` command is a utility that converts text files into Braille format. This is particularly useful for individuals who are blind or visually impaired and use Braille displays.
+
+⚙️ **Options:**
+    🔹 `file2brl -l <language>` --> 🌐 Specifies the input language (e.g., 'en' for English, 'fr' for French). If no language is specified, the default language is used.
+    🔹 `file2brl -o <output_file>` --> 📤 Specifies the output Braille file. If no output file is specified, the result is printed to stdout.
+    🔹 `file2brl -t` --> 📝 Process the input file as plain text
+
+🛠 **Examples:**
+
+    $ file2brl -l en input.txt -o output.brl
+
+    🔹 Converts the file `input.txt` to Braille and saves it in the `output.brl` file, with language set to `en` (English).
+
+    $ cat input.txt | file2brl -l fa
+
+    🔹 Converts the content of the file `input.txt` (Farsi) to Braille and displays it in the terminal.
+
+✅ **Simple Example:**
+
+    $ file2brl -t simple_text.txt
+
+    🔹 Converts the file `simple_text.txt` to Braille and displays the result in the terminal. In this case, the default language is used.

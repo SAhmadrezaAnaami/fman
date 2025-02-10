@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-gettextize` baraye tabdil dadan file-haye `debconf` be format `gettext` estefade mishavad ta betavan anha ra tarjome kard. Yani, in dastoor komak mikonad matn-haye dakhil dar package-haye `debconf` ra baraye estefade dar zabanhaye mokhtalef amade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--package=NAME`  --> 📦 Esme package-i ke file-haye `debconf` aan bayad gettextize shavad. Agar zekr nashavad, az environment variable `DEB_PACKAGE` estefade mikonad.
+    🔹 `--template=FILE` --> 📄 Masire file template baraye ijad file-haye `po`. Agar zekr nashavad, az default template estefade mikonad.
+    🔹 `--help`          --> ℹ️ Namayesh rahnama va etela'at estefade az dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ debconf-gettextize --package=mypackage
+
+    🔹 Tabdil file-haye `debconf` package `mypackage` be format `gettext`.
+
+    $ debconf-gettextize --template=my_template.pot --package=anotherpackage
+
+    🔹 Tabdil file-haye `debconf` package `anotherpackage` ba estefade az template `my_template.pot`.
+
+✅ **Mesal sade:**
+
+    $ debconf-gettextize --package=example-package
+
+    🔹 Agar `example-package` file-haye `debconf` dashte bashad, in dastoor file-haye `po` baraye tarjome aanha ijad mikonad.  In amr komak mikonad package shoma ra be zabanhaye digar tarjome konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-gettextize` command is used to convert `debconf` files into the `gettext` format, making them translatable.  This tool prepares the text within `debconf` packages for localization into different languages.
+
+⚙️ **Options:**
+    🔹 `--package=NAME`  --> 📦 The name of the package whose `debconf` files should be gettextized.  If not specified, it uses the `DEB_PACKAGE` environment variable.
+    🔹 `--template=FILE` --> 📄 Path to the template file for creating `po` files.  If not specified, it uses a default template.
+    🔹 `--help`          --> ℹ️ Display help and usage information about the command.
+
+🛠 **Examples:**
+
+    $ debconf-gettextize --package=mypackage
+
+    🔹 Converts the `debconf` files of the `mypackage` package to `gettext` format.
+
+    $ debconf-gettextize --template=my_template.pot --package=anotherpackage
+
+    🔹 Converts the `debconf` files of the `anotherpackage` package using the `my_template.pot` template.
+
+✅ **Simple Example:**
+
+    $ debconf-gettextize --package=example-package
+
+    🔹 If `example-package` has `debconf` files, this command creates `po` files for translating them. This helps translate your package into other languages.

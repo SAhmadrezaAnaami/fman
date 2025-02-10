@@ -1,0 +1,72 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `json_xs` baraye tabdil-e dadeh-haye JSON be format-haye digar va baraks estefade mishavad. Yani mitavanid JSON ra bekhanid va an ra be format-haye sade tar tabdil konid ya az format-haye sade, JSON besazid.  In dastoor bishtar dar barname-nevisi baraye kar ba dadeh-haye JSON estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--pretty-print` --> 💅 JSON ra be shekl-e ziba va moratab chap mikonad ta ghabl-e khandan bashad.
+    🔹 `--xml` --> 🔄 Dadeh-haye JSON ra be format XML tabdil mikonad.
+    🔹 `--json` --> 📝 Dadeh-haye XML ya format-haye digar ra be JSON tabdil mikonad.
+    🔹 `--input-file <file>` --> 📁 Az yek file be onvane vorudi estefade mikonad.
+    🔹 `--output-file <file>` --> 💾 Khuruji ra dar yek file zakhire mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ json_xs --pretty-print input.json
+
+    🔹 File `input.json` ra bekhanid va ba format-e ziba chap konid.
+
+    $ json_xs --xml input.json > output.xml
+
+    🔹 File `input.json` ra be format XML tabdil konid va dar file `output.xml` zakhire konid.
+
+✅ **Mesal sade:**
+
+    $ echo '{"name": "Ali", "age": 30}' | json_xs --pretty-print
+
+    🔹 Dadeh-haye JSON ra az terminal migirad va ba format-e ziba chap mikonad:
+    json
+    {
+       "age" : 30,
+       "name" : "Ali"
+    }
+    
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `json_xs` command is used to convert JSON data to other formats and vice versa. It allows you to read JSON and convert it to simpler formats, or create JSON from simpler formats. This command is mainly used in programming for working with JSON data.
+
+⚙️ **Options:**
+    🔹 `--pretty-print` --> 💅 Prints the JSON in a beautiful and formatted way for better readability.
+    🔹 `--xml` --> 🔄 Converts JSON data to XML format.
+    🔹 `--json` --> 📝 Converts XML or other formats to JSON.
+    🔹 `--input-file <file>` --> 📁 Uses a file as input.
+    🔹 `--output-file <file>` --> 💾 Saves the output to a file.
+
+🛠 **Examples:**
+
+    $ json_xs --pretty-print input.json
+
+    🔹 Read the `input.json` file and print it with a formatted output.
+
+    $ json_xs --xml input.json > output.xml
+
+    🔹 Convert the `input.json` file to XML format and save it to the `output.xml` file.
+
+✅ **Simple Example:**
+
+    $ echo '{"name": "Ali", "age": 30}' | json_xs --pretty-print
+
+    🔹 Takes JSON data from the terminal and prints it in a formatted way:
+    json
+    {
+       "age" : 30,
+       "name" : "Ali"
+    }
+    

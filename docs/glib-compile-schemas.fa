@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `glib-compile-schemas` baraye moratab kardan va compress kardan schema-haye XML (ke baraye setting-ha dar barname-ha estefade mishavand) be yek format binary estefade mishavad. In kar baraye sari'tar kardan load shodan setting-ha dar barname-ha mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--targetdir DIRECTORY` --> 🎯 Specify mikonad kodam directory bayad schema-haye compile shode dar an zakhire shavand. Agar specify nashavad, az directory pishfarz estefade mishavad.
+    🔹 `--schema-dir DIRECTORY` --> 📁 Directory-i ke schema-haye XML dar an gharar darand.
+    🔹 `--dry-run` --> 🧪 Faghat check mikonad aya schema-ha dorost hastand ya na, vali hich file-i nemisazad.
+
+🛠 **Mesal-ha:**
+
+    $ glib-compile-schemas .
+
+    🔹 Schema-haye XML ra az directory jari compile mikonad va dar directory pishfarz zakhire mikonad.
+
+    $ glib-compile-schemas --targetdir /usr/share/glib-2.0/schemas .
+
+    🔹 Schema-haye XML ra az directory jari compile mikonad va dar `/usr/share/glib-2.0/schemas` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ glib-compile-schemas --dry-run .
+
+    🔹 Check mikonad aya schema-haye XML dar directory jari dorost hastand ya na, vali hich file-i nemisazad. Agar khataee vojood dashte bashad, namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `glib-compile-schemas` command is used to compile XML schema files (used for application settings) into a binary format. This improves the loading time of settings in applications.
+
+⚙️ **Options:**
+    🔹 `--targetdir DIRECTORY` --> 🎯 Specifies the directory where the compiled schemas should be stored. If not specified, a default directory is used.
+    🔹 `--schema-dir DIRECTORY` --> 📁 The directory containing the XML schema files.
+    🔹 `--dry-run` --> 🧪 Only checks if the schemas are valid, without creating any files.
+
+🛠 **Examples:**
+
+    $ glib-compile-schemas .
+
+    🔹 Compiles XML schemas from the current directory and stores them in the default directory.
+
+    $ glib-compile-schemas --targetdir /usr/share/glib-2.0/schemas .
+
+    🔹 Compiles XML schemas from the current directory and stores them in `/usr/share/glib-2.0/schemas`.
+
+✅ **Simple Example:**
+
+    $ glib-compile-schemas --dry-run .
+
+    🔹 Checks if the XML schemas in the current directory are valid without creating any files. If there are errors, it displays them.

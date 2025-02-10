@@ -1,0 +1,48 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2hbpl2-wrapper` yek dastoor komaki (wrapper) baraye system chapgar (printing) ast. In dastoor be shoma komak mikonad ta az chapgare khod ba estefade az driver-haye `foo2zjs` behtar estefade konid, be vishe agar system chap shoma ghadimi bashad va niaz be rah andazi (configuration) khas dashte bashad. Dar asl, in dastoor command-haye `foo2zjs` ra ba gozine-haye dorost ejra mikonad ta chapgar dorost kar konad.
+
+⚙️ **Gozine-ha:**
+    🔹 (Be tore mostaghim gozine-i nadarad) `foo2hbpl2-wrapper` be tore khodkar command-haye `foo2zjs` ra ba gozine-haye lazem ejra mikonad. Gozine-ha obur dade shode az system chap be `foo2hbpl2-wrapper` obur dade mishavad be `foo2zjs`.
+
+🛠 **Mesal-ha:**
+
+    $ lpr filename.txt
+
+    🔹 Chap file `filename.txt` ba estefade az chapgare pishfarz (default). System chap az `foo2hbpl2-wrapper` be tore khodkar estefade mikonad agar chapgare shoma niaz dashte bashad.
+
+    $ lp -d printername filename.pdf
+
+    🔹 Chap file `filename.pdf` ba estefade az chapgare `printername`. Baz ham, `foo2hbpl2-wrapper` be tore khodkar agar lazem bashad estefade mishavad.
+
+✅ **Mesal sade:**
+
+    Farz konid shoma yek chapgar ghadimi darid ke ba driver-haye asri dorost kar nemikonad. System chap shoma `foo2hbpl2-wrapper` ra be tore khodkar estefade mikonad vaghti shoma chizi chap mikonid. Pas shoma faghat dastoor chap ra be tore mamooly mizanid (`lpr`, `lp`, ...) va `foo2hbpl2-wrapper` marhale-haye lazem ra posht parde anjam midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2hbpl2-wrapper` command is a helper (wrapper) program for the printing system. It helps you to better utilize your printer using `foo2zjs` drivers, especially if your printing system is older and requires specific configuration. Essentially, it executes the `foo2zjs` commands with the correct options to make the printer function properly.
+
+⚙️ **Options:**
+    🔹 (It doesn't have direct options) `foo2hbpl2-wrapper` automatically executes `foo2zjs` commands with the necessary options. Options passed to `foo2hbpl2-wrapper` from the printing system are passed to `foo2zjs`.
+
+🛠 **Examples:**
+
+    $ lpr filename.txt
+
+    🔹 Print the file `filename.txt` using the default printer. The printing system will automatically use `foo2hbpl2-wrapper` if your printer requires it.
+
+    $ lp -d printername filename.pdf
+
+    🔹 Print the file `filename.pdf` using the printer named `printername`. Again, `foo2hbpl2-wrapper` will be automatically used if necessary.
+
+✅ **Simple Example & Explanation:**
+
+    Imagine you have an older printer that doesn't work properly with modern drivers. Your printing system will automatically use `foo2hbpl2-wrapper` when you print something. So, you just issue the print command as usual (`lpr`, `lp`, ...), and `foo2hbpl2-wrapper` handles the necessary steps behind the scenes.

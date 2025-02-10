@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2qpdl-wrapper` yek ravesh baraye tabdil file-haye chap shodan (print files) be formati ast ke printer-haye rangie (color printers) ke az driver-haye `foo2zjs` estefade mikonand, mitavanand be khoobi chap konand. In dastoor, file-haye `PostScript` ya `PDF` ra migirad va anha ra be formate `QPdl` tabdil mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `foo2qpdl-wrapper -r <resolushan>`  --> 🎯 Ta'يين resolushan (deghat) baraye chap. Maghsad az resolushan behtar chap kardane aks ha va matn ha ast. Mesal: `foo2qpdl-wrapper -r300`.
+    🔹 `foo2qpdl-wrapper -p <profile>`  --> 🌈 Ta'يين profile rang baraye chap. In profile rang ha ra dorost mikonad.
+    🔹 `foo2qpdl-wrapper -n <copies>` --> 📄 Ta'يين tedad copy haee ke bayad chap shavad. Mesal: `foo2qpdl-wrapper -n2`.
+    🔹 `foo2qpdl-wrapper -d <duplex>` --> 🔄 Chap roo va posht (duplex). Agar printer e shoma in ra poshtibani konad, mitavanid az in gozine estefade konid.
+
+🛠 **Mesal-ha:**
+
+    $ foo2qpdl-wrapper file.pdf > file.qpdl
+
+    🔹 Tabdil file `PDF` be file `QPdl`.
+
+    $ foo2qpdl-wrapper -r600 file.ps > file.qpdl
+
+    🔹 Tabdil file `PostScript` ba resolushan 600dpi be file `QPdl`.
+
+✅ **Mesal sade:**
+
+    $ foo2qpdl-wrapper document.pdf | lpr
+
+    🔹  In dastoor, file `document.pdf` ra be formate `QPdl` tabdil mikonad va ba dastoor `lpr` an ra baraye chap mifrestad.  Behtarin ravesh ast agar nemikhahid file QPdl ra zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2qpdl-wrapper` command is a utility to convert print files into a format suitable for color printers using `foo2zjs` drivers. It takes `PostScript` or `PDF` files as input and converts them into the `QPdl` format.
+
+⚙️ **Options:**
+    🔹 `foo2qpdl-wrapper -r <resolution>` --> 🎯 Specifies the resolution for printing. Higher resolutions improve the quality of images and text. Example: `foo2qpdl-wrapper -r300`.
+    🔹 `foo2qpdl-wrapper -p <profile>` --> 🌈 Specifies the color profile for printing. This adjusts the color output.
+    🔹 `foo2qpdl-wrapper -n <copies>` --> 📄 Specifies the number of copies to be printed. Example: `foo2qpdl-wrapper -n2`.
+    🔹 `foo2qpdl-wrapper -d <duplex>` --> 🔄 Enables double-sided (duplex) printing. Use this option if your printer supports it.
+
+🛠 **Examples:**
+
+    $ foo2qpdl-wrapper file.pdf > file.qpdl
+
+    🔹 Converts a `PDF` file to `QPdl` format.
+
+    $ foo2qpdl-wrapper -r600 file.ps > file.qpdl
+
+    🔹 Converts a `PostScript` file with 600dpi resolution to `QPdl` format.
+
+✅ **Simple Example:**
+
+    $ foo2qpdl-wrapper document.pdf | lpr
+
+    🔹 This command converts the `document.pdf` file to `QPdl` format and sends it to the printer using the `lpr` command. This is useful if you don't want to save the `QPdl` file.

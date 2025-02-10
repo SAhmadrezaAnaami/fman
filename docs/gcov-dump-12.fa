@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcov-dump-12` baraye biron keshidane dade-haye coverage az file-haye `.gcda` (GCOV data files) estefade mishavad. In dastoor ghesmati az majmooeye abzarhaye GCOV ast, va baraye tahlil-e code va mohasebeye andazeye pooshesh (coverage) code be kar miravad. Shomareye "12" dar name dastoor be version-e compiler GCC eshare mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--all`      --> 📜 Namayeshe hameye recordha (records) dar file `.gcda`.
+    🔹 `--file <file>` --> 🎯 Specify kardan file `.gcda` ke bayad tahlil shavad. Agar Specify nashavad az input standard (stdin) khande mishavad.
+    🔹 `--verbose`  --> 🗣️ Namayeshe etela’at bishtar dar morede dade-haye coverage.
+    🔹 `--help`     --> ℹ️ Namayeshe rahnamaye dastoor va gozine-haye an.
+
+🛠 **Mesal-ha:**
+
+    $ gcov-dump-12 --all example.gcda
+
+    🔹 Namayeshe hameye etela’at coverage az file `example.gcda`.
+
+    $ gcov-dump-12 --file my_program.gcda --verbose
+
+    🔹 Namayeshe etela’at coverage az file `my_program.gcda` ba tafsil bishtar.
+
+✅ **Mesal sade:**
+
+    $ gcov-dump-12 --all test.gcda | less
+
+    🔹 Namayeshe hameye recordha az file `test.gcda` va estefade az `less` baraye safhe safhe didan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcov-dump-12` command is used to extract coverage data from `.gcda` (GCOV data files). This command is part of the GCOV tool suite, used for code analysis and measuring code coverage. The "12" in the command name refers to the GCC compiler version.
+
+⚙️ **Options:**
+    🔹 `--all`      --> 📜 Display all records in the `.gcda` file.
+    🔹 `--file <file>` --> 🎯 Specify the `.gcda` file to analyze. If not specified, it reads from standard input (stdin).
+    🔹 `--verbose`  --> 🗣️ Display more detailed information about the coverage data.
+    🔹 `--help`     --> ℹ️ Display the command help and options.
+
+🛠 **Examples:**
+
+    $ gcov-dump-12 --all example.gcda
+
+    🔹 Display all coverage information from the `example.gcda` file.
+
+    $ gcov-dump-12 --file my_program.gcda --verbose
+
+    🔹 Display coverage information from the `my_program.gcda` file with more details.
+
+✅ **Simple Example:**
+
+    $ gcov-dump-12 --all test.gcda | less
+
+    🔹 Display all records from the `test.gcda` file and use `less` to view it page by page.

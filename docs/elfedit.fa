@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `elfedit` baraye tagheer dadan etela'at ezafi (metadata) dar file-haye ELF (Executable and Linkable Format) estefade mishavad. File-haye ELF formate standart baraye file-haye ejraee, library-ha, va object-ha dar Linux va system-haye UNIX mesle FreeBSD hastand. Ba `elfedit` shoma mitoonid etela'at ra mesle instruction set architecture (ISA) ya ABI version tagheer bedahid. In dastoor bishtar baraye karhaye pishrafte va tagheer dadan etela'at dakheli file-ha be kar mirevad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--architecture <name>` --> 🏛️ Tagheer dadan architecture system mored nazar (mesal: `i386`, `x86_64`).
+    🔹 `--abi <name>` --> 🧬 Tagheer dadan name ABI (Application Binary Interface).
+    🔹 `--abi-version <number>` --> 🔢 Tagheer dadan version ABI.
+    🔹 `--output-file <file>` --> 📤 Neveshtan tagheerat be yek file jadid be jaye tagheer file asli.
+    🔹 `--print-version` --> ℹ️ Chap kardane version `elfedit`.
+    🔹 `--help` --> ❓ Namayesh rahnama baraye dastoor `elfedit`.
+
+🛠 **Mesal-ha:**
+
+    $ elfedit --architecture x86_64 myprogram
+
+    🔹 Tagheer dadan architecture file `myprogram` be `x86_64`.
+
+    $ elfedit --abi GNU mylibrary.so --output-file mylibrary_edited.so
+
+    🔹 Tagheer dadan ABI file `mylibrary.so` be `GNU` va save kardane file tagheer karde be name `mylibrary_edited.so`.
+
+✅ **Mesal sade:**
+
+    $ elfedit --abi-version 5 myprogram
+
+    🔹 Tagheer dadan version ABI file `myprogram` be 5. Agar shoma file ra ba `readelf -h myprogram` check konid, version ABI tagheer karde ra khahid did.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `elfedit` command is used to modify metadata within ELF (Executable and Linkable Format) files. ELF is the standard file format for executables, libraries, and object code on Linux and UNIX-like systems such as FreeBSD. With `elfedit`, you can change information like the target instruction set architecture (ISA) or the ABI version. This command is mostly used for advanced tasks and modifying internal file information.
+
+⚙️ **Options:**
+    🔹 `--architecture <name>` --> 🏛️ Change the target system architecture (e.g., `i386`, `x86_64`).
+    🔹 `--abi <name>` --> 🧬 Change the ABI (Application Binary Interface) name.
+    🔹 `--abi-version <number>` --> 🔢 Change the ABI version.
+    🔹 `--output-file <file>` --> 📤 Write the changes to a new file instead of modifying the original.
+    🔹 `--print-version` --> ℹ️ Print the version of `elfedit`.
+    🔹 `--help` --> ❓ Display help information for the `elfedit` command.
+
+🛠 **Examples:**
+
+    $ elfedit --architecture x86_64 myprogram
+
+    🔹 Change the architecture of the `myprogram` file to `x86_64`.
+
+    $ elfedit --abi GNU mylibrary.so --output-file mylibrary_edited.so
+
+    🔹 Change the ABI of the `mylibrary.so` file to `GNU` and save the modified file as `mylibrary_edited.so`.
+
+✅ **Simple Example:**
+
+    $ elfedit --abi-version 5 myprogram
+
+    🔹 Changes the ABI version of the `myprogram` file to 5. If you inspect the file using `readelf -h myprogram`, you will see the changed ABI version.

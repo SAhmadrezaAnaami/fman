@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `jsonschema` baraye baresi va taeed dorosti-e (validate) yek file JSON ba estefade az yek schema JSON estefade mishavad. Schema JSON yek tarh ya ghat-e (blueprint) ast ke shekle (format) va noe-e (type) dade-haye dakhele JSON ra moshakhas mikonad.  In dastoor komak mikonad ke motmaen shavid dade-haye JSON shoma ba tavagoo'ate shoma hamkhani darand.
+
+⚙️ **Gozine-ha:**
+    🔹 `jsonschema -i <file_JSON>`  --> 📑 Baresi yek file JSON ba schema-e default. (-i yani input file JSON)
+    🔹 `jsonschema -s <file_schema> <file_JSON>`  --> ⚙️ Baresi yek file JSON ba estefade az yek schema JSON khas. (-s yani schema file JSON)
+    🔹 `jsonschema -h`  --> ℹ️ Namayesh rahnamaye estefade az dastoor. (-h yani help)
+
+🛠 **Mesal-ha:**
+
+    $ jsonschema -i data.json
+
+    🔹 Baresi file `data.json` ba schema-e pishfarz (default) va agar moskeli nabashe chizi chap nemishe.
+
+    $ jsonschema -s schema.json data.json
+
+    🔹 Baresi file `data.json` ba estefade az `schema.json`.
+
+✅ **Mesal sade:**
+
+    $ jsonschema -i '{"name": "Ali", "age": 30}'
+
+    🔹 Agar file JSON dorost format shode bashad va moskeli nabashad, chizi chap nemishavad. Dar gheire in soorat, khata chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `jsonschema` command is used to validate a JSON file against a JSON schema. A JSON schema is a blueprint that defines the structure and data types within a JSON document. This command helps ensure that your JSON data conforms to your expectations.
+
+⚙️ **Options:**
+    🔹 `jsonschema -i <JSON_file>`  --> 📑 Validate a JSON file using a default schema. (-i means input JSON file)
+    🔹 `jsonschema -s <schema_file> <JSON_file>`  --> ⚙️ Validate a JSON file using a specific JSON schema. (-s means schema file JSON)
+    🔹 `jsonschema -h`  --> ℹ️ Display help information for the command. (-h means help)
+
+🛠 **Examples:**
+
+    $ jsonschema -i data.json
+
+    🔹 Validates the `data.json` file against a default schema and outputs nothing if valid.
+
+    $ jsonschema -s schema.json data.json
+
+    🔹 Validates the `data.json` file using the `schema.json` schema.
+
+✅ **Simple Example:**
+
+    $ jsonschema -i '{"name": "Ali", "age": 30}'
+
+    🔹 If the JSON is correctly formatted and valid, no output is produced. Otherwise, an error message will be displayed.

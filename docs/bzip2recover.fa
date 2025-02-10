@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzip2recover` baraye peyda kardane block-haye data zarar dide az file-haye `.bz2` va bazsazi (recover) onha be tore joda estefade mishavad. In dastoor vaghti karbord dare ke yek file `bzip2` az beyn rafte ya kamelan ghabele khandan nist.
+
+⚙️ **Gozine-ha:**
+    🔹 hich gozine-ye khas nadare. Dastoor sade ast.
+
+🛠 **Mesal-ha:**
+
+    $ bzip2recover filename.bz2
+
+    🔹 Dastoor file ra scan mikonad va block-haye bazsazi shode ra dar file-haye jadid zakhire mikonad.
+
+    $ ls rec*.bz2
+
+    🔹 Namayesh file-haye bazsazi shode (rec0001.bz2, rec0002.bz2, ...)
+
+✅ **Mesal sade:**
+
+    $ bzip2recover data.bz2
+    rec0001.bz2 sakhte shod.
+    rec0002.bz2 sakhte shod.
+
+    🔹 In neshan midahad ke dastoor do blocke data bazsazi shode ra peyda karde va anha ra be عنوان do file-ye joda zakhire karde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzip2recover` command is used to find individual damaged data blocks from `.bz2` files and recover them independently. This is useful when a `bzip2` file is corrupted or not fully readable.
+
+⚙️ **Options:**
+    🔹 It does not have any specific options. The command is straightforward.
+
+🛠 **Examples:**
+
+    $ bzip2recover filename.bz2
+
+    🔹 The command scans the file and saves recovered blocks into new files.
+
+    $ ls rec*.bz2
+
+    🔹 Shows the recovered files (rec0001.bz2, rec0002.bz2, ...).
+
+✅ **Simple Example:**
+
+    $ bzip2recover data.bz2
+    rec0001.bz2 created.
+    rec0002.bz2 created.
+
+    🔹 This indicates that the command found and recovered two data blocks, saving them as two separate files.

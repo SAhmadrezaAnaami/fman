@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep-status` baraye jostojo dar etela'at (information) marboot be `package`-haye `Debian` estefade mishavad. In dastoor bishtar dar script-ha baraye modiriyat `package`-ha be kar miravad. Ba estefade az in dastoor, shoma mitavanid etela'ati mesle version, dependencies (vabastegi-ha), va vaziyat-e nasb-e yek `package` ra peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p <package>` --> 🎯 Jostojo faghat baraye `package`-e moshakhas.
+    🔹 `-s <status>`  --> 🚦 Filtre kardan bar asase vaziyat (meslan `installed` ya `not-installed`).
+    🔹 `-F <file>`   --> 📁 Estefade az yek `file`-e digar be jaye `status file`-e pishfarz.
+
+🛠 **Mesal-ha:**
+
+    $ grep-status -p apache2
+    
+    🔹 Namayesh etela'at marboot be `package`-e `apache2`.
+
+    $ grep-status -s installed
+    
+    🔹 Namayesh `package`-haye nasb shodeh.
+
+✅ **Mesal sade:**
+
+    $ grep-status -p nginx -s installed
+    
+    🔹 Check konid aya `package`-e `nginx` nasb shodeh ya na va etela'at-ash ra namayesh dahid. Age output dashte bashid yani nasbe, age na yani nasb nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep-status` command is used to search information related to Debian packages. It's mainly used in scripts for package management. Using this command, you can find information like version, dependencies, and installation status of a package.
+
+⚙️ **Options:**
+    🔹 `-p <package>` --> 🎯 Search only for the specified package.
+    🔹 `-s <status>`  --> 🚦 Filter based on status (e.g., `installed` or `not-installed`).
+    🔹 `-F <file>`   --> 📁 Use a different status file instead of the default.
+
+🛠 **Examples:**
+
+    $ grep-status -p apache2
+    
+    🔹 Display information about the `apache2` package.
+
+    $ grep-status -s installed
+    
+    🔹 Display installed packages.
+
+✅ **Simple Example:**
+
+    $ grep-status -p nginx -s installed
+    
+    🔹 Check if the `nginx` package is installed and display its information. If there's output, it's installed; otherwise, it's not.

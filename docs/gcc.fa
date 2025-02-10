@@ -1,0 +1,76 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc` (GNU Compiler Collection) baraye tabdil kardan (compile) code-haye zaban C va C++ be barname-haye ejraii (executable) estefade mishavad. Yani code-haye shoma ra mikhanad va anha ra be zabani ke computer mifahmad (binary) tarjome mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc file.c -o barname` --> 📝 Tabdil code `file.c` be yek barname ba name `barname`.
+    🔹 `gcc -Wall file.c` --> ⚠️ Namayesh hameye khatarha (warnings) dar code. Kheli mohem ast baraye peyda kardan eshtebahat.
+    🔹 `gcc -c file.c` --> 🧱 Sakhtan yek file object (`file.o`) az `file.c`. File object dar hale hazer ejra nemishavad va bayad ba file-haye digar vasl shavad (linked).
+    🔹 `gcc file1.o file2.o -o barname` --> 🔗 Vasl kardan (linking) file-haye object (`file1.o` va `file2.o`) be yek barname ejraii ba name `barname`.
+    🔹 `gcc -I/path/be/include/pooshe file.c` --> 📁 Ezafe kardan yek pooshe (directory) baraye peyda kardan file-haye header.
+    🔹 `gcc -L/path/be/lib/pooshe -lmath` --> 📚 Ezafe kardan yek pooshe baraye peyda kardan library-ha va vasl kardan library `math` be barname.
+
+🛠 **Mesal-ha:**
+
+    $ gcc hello.c -o hello
+
+    🔹 Tabdil code `hello.c` be yek barname ejraii ba name `hello`.
+
+    $ gcc -Wall my_program.c -o my_program
+
+    🔹 Tabdil code `my_program.c` be yek barname ejraii ba name `my_program` va namayesh hameye khatarha.
+
+    $ gcc -c my_function.c
+    $ gcc -c main.c
+    $ gcc my_function.o main.o -o my_program
+
+    🔹  Sakhtan file-haye object az `my_function.c` va `main.c`, va bad vasl kardan anha be yek barname ejraii ba name `my_program`.
+
+✅ **Mesal sade:**
+
+    $ gcc simple.c -o simple
+    $ ./simple
+
+    🔹 Aval code `simple.c` tabdil mishavad be yek barname ejraii ba name `simple`, bad barname `simple` ejra mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc` (GNU Compiler Collection) command is used to compile C and C++ code into executable programs. It reads your code and translates it into a language that the computer understands (binary).
+
+⚙️ **Options:**
+    🔹 `gcc file.c -o program` --> 📝 Compile the code `file.c` into a program named `program`.
+    🔹 `gcc -Wall file.c` --> ⚠️ Show all warnings in the code.  Very important for finding errors.
+    🔹 `gcc -c file.c` --> 🧱 Create an object file (`file.o`) from `file.c`.  The object file is not executable and needs to be linked with other files.
+    🔹 `gcc file1.o file2.o -o program` --> 🔗 Link object files (`file1.o` and `file2.o`) into an executable program named `program`.
+    🔹 `gcc -I/path/to/include/directory file.c` --> 📁 Add a directory to search for header files.
+    🔹 `gcc -L/path/to/lib/directory -lmath` --> 📚 Add a directory to search for libraries and link the `math` library to the program.
+
+🛠 **Examples:**
+
+    $ gcc hello.c -o hello
+
+    🔹 Compile the code `hello.c` into an executable program named `hello`.
+
+    $ gcc -Wall my_program.c -o my_program
+
+    🔹 Compile the code `my_program.c` into an executable program named `my_program` and display all warnings.
+
+    $ gcc -c my_function.c
+    $ gcc -c main.c
+    $ gcc my_function.o main.o -o my_program
+
+    🔹 Create object files from `my_function.c` and `main.c`, and then link them into an executable program named `my_program`.
+
+✅ **Simple Example:**
+
+    $ gcc simple.c -o simple
+    $ ./simple
+
+    🔹 First, the code `simple.c` is compiled into an executable program named `simple`, then the program `simple` is executed.

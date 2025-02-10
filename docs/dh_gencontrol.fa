@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_gencontrol` baraye dorost kardane file-haye `control` dar directory `debian` baraye package-haye Debian be kar mirevad. In dastoor etela'at ra az file-haye digar mesle `debian/rules` va `debian/control.in` migirad va file `control` ra misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v PACKAGE=VERSION` --> 📦 Versione package ra moshakhas mikonad.
+    🔹 `--`               --> ⛔ Hame gozine-ha ra tamam mikonad. Agar gozine-haye ziadi dar `debian/rules` darid estefade konid.
+    🔹 `-pPACKAGE`        --> 🎯 Faghat control file-haye package-haye khass ra dorost mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_gencontrol
+    
+    🔹 Doroost kardane file `control` ba estefade az default settings.
+
+    $ dh_gencontrol -v mypackage=1.2.3
+    
+    🔹 Doroost kardane file `control` baraye `mypackage` ba vershion 1.2.3.
+
+✅ **Mesal sade:**
+    
+    Agar file `debian/control.in` darid va mikhahid az an be عنوان template estefade konid:
+
+    $ dh_gencontrol
+    
+    🔹 Dastoor `dh_gencontrol` file `control` ra az `control.in` dorost mikonad va جایگزین etela'at tagheer kardeh mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_gencontrol` command is used to generate `control` files in the `debian` directory for Debian packages. It gathers information from various files, such as `debian/rules` and `debian/control.in`, and creates the `control` file.
+
+⚙️ **Options:**
+    🔹 `-v PACKAGE=VERSION` --> 📦 Specifies the version of the package.
+    🔹 `--`               --> ⛔ Ends all option parsing. Use this if you have many options in `debian/rules`.
+    🔹 `-pPACKAGE`        --> 🎯 Only generate control files for specific packages.
+
+🛠 **Examples:**
+
+    $ dh_gencontrol
+    
+    🔹 Generates the `control` file using default settings.
+
+    $ dh_gencontrol -v mypackage=1.2.3
+    
+    🔹 Generates the `control` file for `mypackage` with version 1.2.3.
+
+✅ **Simple Example:**
+    
+    If you have a `debian/control.in` file and want to use it as a template:
+
+    $ dh_gencontrol
+    
+    🔹 The `dh_gencontrol` command generates the `control` file from `control.in`, replacing any changed information.

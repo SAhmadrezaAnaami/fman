@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ipcmk` baraye dorost kardane (create) resource-haye IPC (Inter-Process Communication) mesle shared memory, message queues, va semaphore-ha estefade mishavad. In resource-ha baraye barname-ha mojaz mikonad ke ba ham ertebat bargharar konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `ipcmk -Q`  --> ✉️ Yek message queue jadid misazad.
+    🔹 `ipcmk -M <size>`  --> 💾 Yek shared memory segment ba andazeye moshakhas misazad (be byte).
+    🔹 `ipcmk -S`  --> 🚦 Yek semaphore set jadid misazad.
+    🔹 `ipcmk --mode <permissions>` --> 🔑 Dastrasi-haye resource jadid ra tayin mikonad (mesle 666 ya 777).
+    🔹 `ipcmk --uid <user_id>` --> 👤 Owner resource jadid ra tayin mikonad.
+    🔹 `ipcmk --gid <group_id>` --> 🏢 Group resource jadid ra tayin mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ ipcmk -Q
+
+    🔹 Yek message queue jadid misazad.
+
+    $ ipcmk -M 1024 --mode 660
+
+    🔹 Yek shared memory segment ba andazeye 1024 byte misazad va dastrasi-haye 660 be an midahad.
+
+✅ **Mesal sade:**
+
+    $ ipcmk -Q --uid 1000 --gid 1000
+
+    🔹 Yek message queue jadid misazad va owner va group an ra be user ID 1000 va group ID 1000 tayin mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ipcmk` command is used to create IPC (Inter-Process Communication) resources such as shared memory, message queues, and semaphores.  These resources allow programs to communicate with each other.
+
+⚙️ **Options:**
+    🔹 `ipcmk -Q`  --> ✉️ Creates a new message queue.
+    🔹 `ipcmk -M <size>`  --> 💾 Creates a shared memory segment of the specified <size> (in bytes).
+    🔹 `ipcmk -S`  --> 🚦 Creates a new semaphore set.
+    🔹 `ipcmk --mode <permissions>` --> 🔑 Sets the permissions of the new resource (e.g., 666 or 777).
+    🔹 `ipcmk --uid <user_id>` --> 👤 Sets the owner user ID of the new resource.
+    🔹 `ipcmk --gid <group_id>` --> 🏢 Sets the owner group ID of the new resource.
+
+🛠 **Examples:**
+
+    $ ipcmk -Q
+
+    🔹 Creates a new message queue.
+
+    $ ipcmk -M 1024 --mode 660
+
+    🔹 Creates a 1024-byte shared memory segment with permissions set to 660.
+
+✅ **Simple Example:**
+
+    $ ipcmk -Q --uid 1000 --gid 1000
+
+    🔹 Creates a new message queue and sets its owner and group to user ID 1000 and group ID 1000, respectively.

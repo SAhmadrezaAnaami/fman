@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `memusage` baraye didan meghdare estefade shode az hafize (RAM) be vasileye har process dar system estefade mishavad. In dastoor komak mikonad ta process-haee ke hafize ziadi estefade mikonand ra peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `memusage -p <PID>` --> 🎯 Namayesh estefade az hafize baraye yek process khas ba PID moshakhas.
+    🔹 `memusage -u <username>` --> 👤 Namayesh estefade az hafize baraye hameye process-ha ke az tarighe yek karbar khass ejra mishavand.
+
+🛠 **Mesal-ha:**
+
+    $ memusage
+    
+    🔹 Namayesh listi az process-ha va meghdare hafize ke har yek estefade mikonand.
+
+    $ memusage -p 1234
+    
+    🔹 Namayesh etela'at tafsili darbareye process ba PID 1234.
+
+✅ **Mesal sade:**
+
+    $ memusage | grep firefox
+    
+    🔹 Estefade az `grep` baraye peyda kardane process `firefox` va namayesh meghdare hafeze estefade shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `memusage` command is used to display the memory usage of processes running on the system. It helps identify processes that consume a significant amount of memory.
+
+⚙️ **Options:**
+    🔹 `memusage -p <PID>` --> 🎯 Display memory usage for a specific process with the given PID.
+    🔹 `memusage -u <username>` --> 👤 Display memory usage for all processes owned by a particular user.
+
+🛠 **Examples:**
+
+    $ memusage
+    
+    🔹 Displays a list of processes and their respective memory usage.
+
+    $ memusage -p 1234
+    
+    🔹 Displays detailed information about the process with PID 1234.
+
+✅ **Simple Example:**
+
+    $ memusage | grep firefox
+    
+    🔹 Uses `grep` to find the `firefox` process and display its memory usage.

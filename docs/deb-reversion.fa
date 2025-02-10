@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deb-reversion` baraye bargardandan version-e package `.deb` be version-e ghabli estefade mishavad. In be shoma komak mikonad agar update jadid moshkel dashte bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `deb-reversion package_name [version]`  --> 📦 Package-e morede nazar va version-e bargashti ra moshakhas mikonad. Agar version ra nazanid, akharin version-e ghabli ra bargardand.
+    🔹 `-h`, `--help` --> ❓ Rahnamaye dastoor ra neshon midahad.
+    🔹 `-n`, `--no-remove` --> 🚫 Package-e jadid ra hazf nemikonad, fagat downgrade mikonad. (Ehtiat: momken ast problem be vojood biarad)
+
+🛠 **Mesal-ha:**
+
+    $ sudo deb-reversion firefox
+
+    🔹 Bargardandan Firefox be akharin version-e ghabli.
+
+    $ sudo deb-reversion chromium 83.0.4103.61-0ubuntu0.20.04.1
+
+    🔹 Bargardandan Chromium be version-e moshakhas shode.
+
+✅ **Mesal sade:**
+
+    $ sudo deb-reversion vlc
+
+    🔹 Agar vlc update shode va kar nemikonad, in dastoor an ra be version-e ghabli bargardanده ta dorost kar konad.  Pas az ejra, momken ast system az shoma password bekhahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deb-reversion` command is used to downgrade a `.deb` package to a previous version. This is helpful if a recent update introduces issues.
+
+⚙️ **Options:**
+    🔹 `deb-reversion package_name [version]`  --> 📦 Specifies the package and the version to revert to. If no version is given, it reverts to the latest available previous version.
+    🔹 `-h`, `--help` --> ❓ Shows the command's help message.
+    🔹 `-n`, `--no-remove` --> 🚫 Does not remove the newer package, only downgrades. (Caution: This might lead to conflicts)
+
+🛠 **Examples:**
+
+    $ sudo deb-reversion firefox
+
+    🔹 Reverts Firefox to its latest available previous version.
+
+    $ sudo deb-reversion chromium 83.0.4103.61-0ubuntu0.20.04.1
+
+    🔹 Reverts Chromium to the specified version.
+
+✅ **Simple Example:**
+
+    $ sudo deb-reversion vlc
+
+    🔹 If VLC has been updated and is not working correctly, this command will revert it to the previous version, potentially resolving the issue. You might be prompted for your password after running the command.

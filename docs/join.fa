@@ -1,0 +1,81 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `join` file-haye matni ra bar asase yek field moshtarak, mesle `ID` ya `username`, ba ham qati mikonad (merge mikonad). In dastoor baraye sakhtan file-haye bozorgtar az etela'ate file-haye koochiktar be kar mirevad.  File-ha bayad ghablan `moratab` shode bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `join -j FIELD_NUMBER` --> 🔑 Moshakhas kardan field baraye vasl kardan. Avalin file be tore pishfarz `1` ast.
+    🔹 `join -1 FIELD_NUMBER1 -2 FIELD_NUMBER2` --> 🔢 Moshakhas kardan field-haye mokhtalef baraye har file.
+    🔹 `join -a1` --> ➕ Namayesh dadan khat-haye file aval ke ba khat-haye file dovom match nemishavand.
+    🔹 `join -t SEPARATOR` --> 🔗 Moshakhas kardane separator, be tore pishfarz space ast.
+
+🛠 **Mesal-ha:**
+
+    $ join file1.txt file2.txt
+
+    🔹 File1.txt va file2.txt ra bar asase avalin space ba ham qati mikonad.
+
+    $ join -j 2 file1.txt file2.txt
+
+    🔹 File1.txt va file2.txt ra bar asase dovomin field (column) ba ham qati mikonad.  Harchi ke baraye har do file yekie qati mikone
+
+✅ **Mesal sade:**
+
+    $ cat file1.txt
+    1 Ali
+    2 Reza
+    3 Sara
+
+    $ cat file2.txt
+    1 90
+    2 80
+    4 70
+
+    $ join file1.txt file2.txt
+    1 Ali 90
+    2 Reza 80
+
+    🔹 File1.txt va file2.txt bar asase field aval (number) ba ham qati shode va khat-haye ba ID-haye motefavet hazf shodeand. Khat-haye gher motshabeh hazf mishan chon match nistan.
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `join` command merges lines of two files based on a common field, like an `ID` or `username`. It's used to create larger files from information in smaller ones. The input files must be sorted beforehand.
+
+⚙️ **Options:**
+    🔹 `join -j FIELD_NUMBER` --> 🔑 Specify the join field. The first file defaults to `1`.
+    🔹 `join -1 FIELD_NUMBER1 -2 FIELD_NUMBER2` --> 🔢 Specify different join fields for each file.
+    🔹 `join -a1` --> ➕ Show lines from the first file even if there's no match in the second file.
+    🔹 `join -t SEPARATOR` --> 🔗 Specify the separator; the default is a space.
+
+🛠 **Examples:**
+
+    $ join file1.txt file2.txt
+
+    🔹 Joins file1.txt and file2.txt based on the first whitespace-separated field.
+
+    $ join -j 2 file1.txt file2.txt
+
+    🔹 Joins file1.txt and file2.txt based on the second field (column). It only shows the matched lines
+
+✅ **Simple Example:**
+
+    $ cat file1.txt
+    1 Ali
+    2 Reza
+    3 Sara
+
+    $ cat file2.txt
+    1 90
+    2 80
+    4 70
+
+    $ join file1.txt file2.txt
+    1 Ali 90
+    2 Reza 80
+
+    🔹 file1.txt and file2.txt are joined based on the first field (number), and lines with different IDs are removed.  Non matching lines are omitted because they are not a perfect match.

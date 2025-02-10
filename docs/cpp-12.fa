@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cpp-12` (ya C++ compiler version 12) baraye tarjome kardan (compile) code-haye C++ be zabane mashin (machine code) estefade mishavad, ta computer betavanad anha ra ejra konad. In dastoor ghesmati az majmooe abzar GCC (GNU Compiler Collection) ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `cpp-12 -o [esme-barname] [esme-file.cpp]` --> 🚀 Compile file `[esme-file.cpp]` va sakhtane yek barname ba name `[esme-barname]`.
+    🔹 `cpp-12 -Wall [esme-file.cpp]` --> ⚠️ Namayeshe hameye khatarha (warnings) dar hale compile.
+    🔹 `cpp-12 -std=c++17 [esme-file.cpp]` --> ✨ Estefade az standart C++17 baraye compile.
+    🔹 `cpp-12 -g [esme-file.cpp]` --> 🐞 Ezafe kardane etela'at debug baraye debug kardan barname.
+
+🛠 **Mesal-ha:**
+
+    $ cpp-12 hello.cpp
+
+    🔹 Compile kardan file `hello.cpp` va sakhtane barname `a.out`.
+
+    $ cpp-12 -o hello hello.cpp
+
+    🔹 Compile kardan file `hello.cpp` va sakhtane barname `hello`.
+
+    $ cpp-12 -Wall -o hello hello.cpp
+
+    🔹 Compile kardan file `hello.cpp`, sakhtane barname `hello`, va namayeshe hameye warning-ha.
+
+✅ **Mesal sade:**
+
+    $ cpp-12 -o myprogram myprogram.cpp
+    $ ./myprogram
+
+    🔹 Aval code `myprogram.cpp` compile mishavad va yek barname ejraee be name `myprogram` sakhte mishavad. Ba'd az an, barname ejra mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cpp-12` command (or C++ compiler version 12) is used to translate (compile) C++ code into machine code so that the computer can execute it. This command is part of the GCC (GNU Compiler Collection) toolset.
+
+⚙️ **Options:**
+    🔹 `cpp-12 -o [program-name] [file-name.cpp]` --> 🚀 Compile file `[file-name.cpp]` and create a program named `[program-name]`.
+    🔹 `cpp-12 -Wall [file-name.cpp]` --> ⚠️ Display all warnings during compilation.
+    🔹 `cpp-12 -std=c++17 [file-name.cpp]` --> ✨ Use the C++17 standard for compilation.
+    🔹 `cpp-12 -g [file-name.cpp]` --> 🐞 Add debug information for debugging the program.
+
+🛠 **Examples:**
+
+    $ cpp-12 hello.cpp
+
+    🔹 Compile the `hello.cpp` file and create the `a.out` program.
+
+    $ cpp-12 -o hello hello.cpp
+
+    🔹 Compile the `hello.cpp` file and create the `hello` program.
+
+    $ cpp-12 -Wall -o hello hello.cpp
+
+    🔹 Compile the `hello.cpp` file, create the `hello` program, and display all warnings.
+
+✅ **Simple Example:**
+
+    $ cpp-12 -o myprogram myprogram.cpp
+    $ ./myprogram
+
+    🔹 First, the `myprogram.cpp` code is compiled, and an executable program named `myprogram` is created. Then, the program is executed.

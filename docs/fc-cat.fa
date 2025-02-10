@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-cat` baraye chap kardane (display) chand font az file-haye cache font config estefade mishavad. In dastoor be shoma komak mikone ke etela'ati raje' be font-ha, mesle name va masir-haye onha ro bebinid. Agar shoma barname-nevis hastid ya be font-ha alaghe darid, in dastoor baratoon mofid khahad bood.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-cat` --> 📜 Chap kardane hameye font-ha az file-haye cache.
+    🔹 `fc-cat pattern` --> 👀 Chap kardane font-hayee ke ba `pattern` motabeghat daran. Masalan `fc-cat "Sans"` hameye font-haye "Sans" ra chap mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ fc-cat
+
+    🔹 Namayesh hameye font-haye mojood dar cache-ha.
+
+    $ fc-cat "Arial:style=Bold"
+
+    🔹 Namayesh font Arial ba style Bold.
+
+✅ **Mesal sade:**
+
+    $ fc-cat | grep "family:"
+
+    🔹 Chap kardane hameye font-ha va estefade az `grep` baraye jostejoo va namayesh khat-hayee ke shamel "family:" hastand, ke name khanvade font ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-cat` command is used to display multiple fonts from the font config cache files. This command helps you view information about fonts, such as their names and paths. If you're a developer or interested in fonts, this command can be useful.
+
+⚙️ **Options:**
+    🔹 `fc-cat` --> 📜 Display all fonts from the cache files.
+    🔹 `fc-cat pattern` --> 👀 Display fonts that match the `pattern`. For example, `fc-cat "Sans"` will display all "Sans" fonts.
+
+🛠 **Examples:**
+
+    $ fc-cat
+
+    🔹 Display all fonts available in the caches.
+
+    $ fc-cat "Arial:style=Bold"
+
+    🔹 Display the Arial font with the Bold style.
+
+✅ **Simple Example:**
+
+    $ fc-cat | grep "family:"
+
+    🔹 Display all fonts and use `grep` to search and show lines containing "family:", which shows the font family name.

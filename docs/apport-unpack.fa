@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apport-unpack` baraye baz kardane file-haye `apport` ke shamel gozaresh-haye khata (error reports) hastand, estefade mishavad. In dastoor file-haye zip shode ra baz mikonad va etela'at dakhel anha ra dar yek pooshe-ye jadid gharar midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `apport-unpack crash_file.crash destination_folder` --> 📁 Baz kardane file `crash_file.crash` dar pooshe `destination_folder`.
+    🔹 `apport-unpack -s crash_file.crash destination_folder` --> 🤫 Baz kardane file va hazf file crash asli.
+
+🛠 **Mesal-ha:**
+
+    $ apport-unpack problem.crash /tmp/debug
+
+    🔹 Baz kardane file `problem.crash` dar pooshe `/tmp/debug`.
+
+    $ sudo apport-unpack -s another_problem.crash /var/tmp/debug_report
+
+    🔹 Baz kardane file `another_problem.crash` dar pooshe `/var/tmp/debug_report` va hazf file crash asli (ba dastresi administrator).
+
+✅ **Mesal sade:**
+
+    $ apport-unpack my_app.crash ~/debug_info
+
+    🔹 File `my_app.crash` baz mishavad va hameye etela'at dar pooshe `debug_info` dar directory home zakhire mishavad.  Agar in pooshe nabashad, sakhte mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apport-unpack` command is used to unpack `apport` files, which contain error reports. This command extracts the compressed files and places their contents into a new directory.
+
+⚙️ **Options:**
+    🔹 `apport-unpack crash_file.crash destination_folder` --> 📁 Unpack the `crash_file.crash` file into the `destination_folder`.
+    🔹 `apport-unpack -s crash_file.crash destination_folder` --> 🤫 Unpack the file and securely delete the original crash file.
+
+🛠 **Examples:**
+
+    $ apport-unpack problem.crash /tmp/debug
+
+    🔹 Unpacks the `problem.crash` file into the `/tmp/debug` directory.
+
+    $ sudo apport-unpack -s another_problem.crash /var/tmp/debug_report
+
+    🔹 Unpacks the `another_problem.crash` file into the `/var/tmp/debug_report` directory and securely deletes the original crash file (requires administrator privileges).
+
+✅ **Simple Example:**
+
+    $ apport-unpack my_app.crash ~/debug_info
+
+    🔹 The `my_app.crash` file is unpacked and all of its contents are stored in a directory named `debug_info` within your home directory. If the directory doesn't exist, it will be created.

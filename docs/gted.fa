@@ -1,0 +1,57 @@
+OK. Here's the user-friendly manual page for the `gted` command, formatted as requested:
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gted` (Graphical Text Editor) yek virayeshgare matni grafiki ast. Ba in dastoor mitoonid file-haye matni ro baz konid, taghir bedid, va zakhire konid.  In command baraye karbarani ke tarjih midand az yek muhit grafiki baraye virayesh matn estefade konand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `gted filename` --> 📝 Baz kardane yek file ba name `filename`. Agar file vojood nadashte bashad, yek file jadid sakhte mishavad.
+    🔹 `gted` --> 💻 Baz kardane virayeshgar bedoone baz kardane file khass. Shoma mitoonid az menu-ye virayeshgar file-haye digar ro baz konid.
+
+🛠 **Mesal-ha:**
+
+    $ gted myfile.txt
+
+    🔹 Baz kardane file-e "myfile.txt" dar virayeshgar.
+
+    $ gted
+
+    🔹 Baz kardane virayeshgar bedoone file.
+
+✅ **Mesal sade:**
+
+    $ gted newfile.txt
+
+    🔹 Agar "newfile.txt" vojood nadashte bashad, yek file jadid ba hamin name sakhte mishavad va dar virayeshgar baz mishavad.  Shoma mitoonid matn ro vared konid va file ro zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gted` (Graphical Text Editor) command is a graphical text editor. You can use it to open, edit, and save text files. This command is useful for users who prefer a graphical environment for text editing.
+
+⚙️ **Options:**
+    🔹 `gted filename` --> 📝 Opens a file named `filename`. If the file does not exist, a new file is created.
+    🔹 `gted` --> 💻 Opens the editor without opening a specific file. You can open other files from the editor's menu.
+
+🛠 **Examples:**
+
+    $ gted myfile.txt
+
+    🔹 Opens the file "myfile.txt" in the editor.
+
+    $ gted
+
+    🔹 Opens the editor without a file.
+
+✅ **Simple Example:**
+
+    $ gted newfile.txt
+
+    🔹 If "newfile.txt" does not exist, a new file with this name is created and opened in the editor. You can enter text and save the file.
+

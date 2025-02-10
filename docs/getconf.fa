@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `getconf` baraye gereftan config-ha ya setting-haye system va standard-ha az system estefade mishavad.  In dastoor be shoma komak mikonad etela'ati dar morede system-e khod be dast avarid, mesle type processor, size safehe (page size) va chiz-haye digar.
+
+⚙️ **Gozine-ha:**
+    🔹 `getconf _NPROCESSORS_ONLN` --> 💻 Tedade processor-haye online ra neshan midahad.
+    🔹 `getconf LONG_BIT`       --> ⚙️ Arzeshe LONG_BIT ra neshon midahad (32 ya 64 bit boodan).
+    🔹 `getconf PAGESIZE`        --> 📄 Size safehe ra be byte neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ getconf _NPROCESSORS_ONLN
+
+    🔹 Namayesh tedade processor-haye online.
+
+    $ getconf LONG_BIT
+
+    🔹 Namayesh arzeshe LONG_BIT.
+
+✅ **Mesal sade:**
+
+    $ getconf PAGESIZE
+
+    🔹 Size safehe ra be byte neshan midahad. In etela'at baraye barname-nevisi va optimizasion mohem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `getconf` command is used to retrieve configuration variables and system information from the system and standards. This command helps you get information about your system, such as processor type, page size, and other system-related details.
+
+⚙️ **Options:**
+    🔹 `getconf _NPROCESSORS_ONLN` --> 💻 Shows the number of online processors.
+    🔹 `getconf LONG_BIT`       --> ⚙️ Displays the value of LONG_BIT (32 or 64 bit).
+    🔹 `getconf PAGESIZE`        --> 📄 Displays the page size in bytes.
+
+🛠 **Examples:**
+
+    $ getconf _NPROCESSORS_ONLN
+
+    🔹 Displays the number of online processors.
+
+    $ getconf LONG_BIT
+
+    🔹 Displays the value of LONG_BIT.
+
+✅ **Simple Example:**
+
+    $ getconf PAGESIZE
+
+    🔹 Displays the page size in bytes. This information is important for programming and optimization purposes.

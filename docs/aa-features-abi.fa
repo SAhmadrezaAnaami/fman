@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aa-features-abi` baraye gereftan etela'at darbareye ABI (Application Binary Interface) az yek profile AppArmor estefade mishavad. Be zabane sade, in dastoor neshon midahad ke yek profile AppArmor az che ghabeliat-ha va vizhegi-haye ABI estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `aa-features-abi <profile>` --> 🔍 Namayesh vizhegi-haye ABI baraye profile-ye moshakhas.
+    🔹 `aa-features-abi --help`  --> ❓ Namayesh rahnama va tozihate bishtar darbareye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ aa-features-abi /etc/apparmor.d/usr.bin.firefox
+
+    🔹 Namayesh vizhegi-haye ABI profile Firefox.
+
+    $ aa-features-abi /etc/apparmor.d/sbin.dhcpd --help
+
+    🔹 Namayesh rahnama va tozihate dastoor `aa-features-abi`.
+
+✅ **Mesal sade:**
+
+    $ aa-features-abi /etc/apparmor.d/usr.sbin.nscd
+
+    🔹 Agar profile `nscd` az vizhegi-haye ABI estefade konad, list-e anha namayesh dade mishavad. Dar gheyr in soorat, hich chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aa-features-abi` command is used to retrieve information about the ABI (Application Binary Interface) features used by an AppArmor profile. Simply put, it shows which ABI features are used by a specific AppArmor profile.
+
+⚙️ **Options:**
+    🔹 `aa-features-abi <profile>` --> 🔍 Display ABI features for the specified profile.
+    🔹 `aa-features-abi --help`  --> ❓ Display help and more information about the command.
+
+🛠 **Examples:**
+
+    $ aa-features-abi /etc/apparmor.d/usr.bin.firefox
+
+    🔹 Display the ABI features of the Firefox profile.
+
+    $ aa-features-abi /etc/apparmor.d/sbin.dhcpd --help
+
+    🔹 Display help and information about the `aa-features-abi` command.
+
+✅ **Simple Example:**
+
+    $ aa-features-abi /etc/apparmor.d/usr.sbin.nscd
+
+    🔹 If the `nscd` profile utilizes ABI features, a list of those features will be displayed. Otherwise, nothing will be displayed.

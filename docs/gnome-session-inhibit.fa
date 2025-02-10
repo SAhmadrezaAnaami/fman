@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-session-inhibit` baraye jelogiri az raftare pishfarz-e session-e GNOME (mesle raftan be halate khab, ya namayesh dadane screensaver) dar zamani ke yek barname-ye khasi dar hale اجرا shodan ast estefade mishavad. In be shoma komak mikonad ta اطمینان حاصل konid ke karha be dorosti انجام mishavad, hata agar karbar fa’al nabashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--inhibit suspend` --> 😴 Jelogiri az raftan be halate khab.
+    🔹 `--inhibit idle` --> ⏳ Jelogiri az fa’al shodan screensaver.
+    🔹 `--inhibit logout` --> 🚪 Jelogiri az kharej shodan az session.
+    🔹 `--inhibit switch-user` --> 🧑‍🤝‍🧑 Jelogiri az taghire karbar.
+    🔹 `--reason <matn>` --> 💬 Ezafe kardane yek dalil baraye jelogiri.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-session-inhibit --inhibit idle --reason "Film dar hale pakhsh ast" vlc
+
+    🔹 VLC ra اجرا mikonad va az fa’al shodan screensaver dar zamani ke film dar hale pakhsh ast, jelogiri mikonad.
+
+    $ gnome-session-inhibit --inhibit suspend,idle --reason "Backup dar hale anjam ast" rsync -av /source /dest
+
+    🔹 Dastoor `rsync` ra اجرا mikonad va az raftan be halate khab va fa’al shodan screensaver dar zamani ke backup dar hale anjam ast, jelogiri mikonad.
+
+✅ **Mesal sade:**
+
+    $ gnome-session-inhibit --inhibit idle sleep 60
+
+    🔹 Dastoor `sleep` ra اجرا mikonad ke 60 sanie sabr mikonad va az fa’al shodan screensaver dar in modat, jelogiri mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-session-inhibit` command is used to prevent the default GNOME session behavior (like suspending or displaying the screensaver) while a specific application is running. This helps ensure tasks are completed properly, even if the user is inactive.
+
+⚙️ **Options:**
+    🔹 `--inhibit suspend` --> 😴 Prevent the system from suspending.
+    🔹 `--inhibit idle` --> ⏳ Prevent the screensaver from activating.
+    🔹 `--inhibit logout` --> 🚪 Prevent the user from logging out.
+    🔹 `--inhibit switch-user` --> 🧑‍🤝‍🧑 Prevent user switching.
+    🔹 `--reason <text>` --> 💬 Add a reason for the inhibition.
+
+🛠 **Examples:**
+
+    $ gnome-session-inhibit --inhibit idle --reason "Playing a movie" vlc
+
+    🔹 Runs VLC and prevents the screensaver from activating while the movie is playing.
+
+    $ gnome-session-inhibit --inhibit suspend,idle --reason "Backup in progress" rsync -av /source /dest
+
+    🔹 Runs the `rsync` command and prevents the system from suspending or the screensaver from activating while the backup is in progress.
+
+✅ **Simple Example:**
+
+    $ gnome-session-inhibit --inhibit idle sleep 60
+
+    🔹 Runs the `sleep` command which waits for 60 seconds and prevents the screensaver from activating during this time.

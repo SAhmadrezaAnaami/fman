@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lpq` vazife-ye namayesh dadan safe-e entezar chapgar (printer queue) ra bar ohde darad. Yani, hameye karhaye chape ke dar hale entezar hastand ya daran chap mishavand ra neshan midahad. Agar etelaati neshon dade nashavad, yani safe khali ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `lpq -a`  --> 📜 Namayesh safe-haye entezar hame-ye chapgar-ha.  
+    🔹 `lpq -l`  --> 👀 Namayesh etela'at bishtar dar mored har kar dar safe, mesl hostname va control file.  
+    🔹 `lpq -P <esm-e-chapgar>`  --> 🖨️ Namayesh safe entezar baraye yek chapgare moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ lpq
+
+    🔹 Namayesh safe entezar baraye chapgare pishfarz.
+
+    $ lpq -l
+
+    🔹 Namayesh etela'at tafsili dar mored karhaye chape dar safe entezar.
+
+✅ **Mesal sade:**
+
+    $ lpq -P laserjet
+
+    🔹 Safe entezar chapgar ba name "laserjet" ra namayesh midahad. Agar safe khali bashad, hich chizi neshon nemidahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lpq` command displays the contents of the printer queue. It shows all print jobs that are waiting to be printed or are currently being printed. If no information is displayed, the queue is empty.
+
+⚙️ **Options:**
+    🔹 `lpq -a`  --> 📜 Show all printer queues.
+    🔹 `lpq -l`  --> 👀 Show more detailed information about each job in the queue, such as the hostname and control file.
+    🔹 `lpq -P <printer-name>`  --> 🖨️ Show the queue for a specific printer.
+
+🛠 **Examples:**
+
+    $ lpq
+
+    🔹 Show the queue for the default printer.
+
+    $ lpq -l
+
+    🔹 Show detailed information about print jobs in the queue.
+
+✅ **Simple Example:**
+
+    $ lpq -P laserjet
+
+    🔹 Displays the print queue for the printer named "laserjet". If the queue is empty, nothing will be displayed.

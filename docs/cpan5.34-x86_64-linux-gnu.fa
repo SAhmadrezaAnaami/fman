@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cpan5.34-x86_64-linux-gnu` baraye ejra kardan CPAN (Comprehensive Perl Archive Network) client ba version-e 5.34 rooye system-e x86_64 Linux GNU estefade mishavad. CPAN yek repository bozorg az module-ha va library-haye Perl ast. Az in dastoor baraye install, update, va manage kardane module-haye Perl estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cpan5.34-x86_64-linux-gnu install Module::Name`  --> 📦 Install kardane yek module-e khass.
+    🔹 `cpan5.34-x86_64-linux-gnu upgrade Module::Name`  --> ⬆️ Upgrade kardane yek module be akharin version.
+    🔹 `cpan5.34-x86_64-linux-gnu list`  --> 📃 List kardane module-haye install shode.
+    🔹 `cpan5.34-x86_64-linux-gnu help`  --> ❓ Daryafte komak va rahnamayi dar morede dastoor CPAN.
+
+🛠 **Mesal-ha:**
+
+    $ cpan5.34-x86_64-linux-gnu install JSON::Parse
+    
+    🔹 Install kardane module `JSON::Parse`.
+
+    $ cpan5.34-x86_64-linux-gnu upgrade JSON::Parse
+    
+    🔹 Upgrade kardane module `JSON::Parse` be akharin version-e mojud dar CPAN.
+
+✅ **Mesal sade:**
+
+    $ cpan5.34-x86_64-linux-gnu -h
+    
+    🔹 Namayesh dadane rahnamayi va dastoorat baraye estefade az CPAN.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cpan5.34-x86_64-linux-gnu` command is used to run the CPAN (Comprehensive Perl Archive Network) client with version 5.34 on an x86_64 Linux GNU system. CPAN is a large repository of Perl modules and libraries. This command is used to install, update, and manage Perl modules.
+
+⚙️ **Options:**
+    🔹 `cpan5.34-x86_64-linux-gnu install Module::Name`  --> 📦 Install a specific module.
+    🔹 `cpan5.34-x86_64-linux-gnu upgrade Module::Name`  --> ⬆️ Upgrade a module to the latest version.
+    🔹 `cpan5.34-x86_64-linux-gnu list`  --> 📃 List installed modules.
+    🔹 `cpan5.34-x86_64-linux-gnu help`  --> ❓ Get help and guidance on the CPAN command.
+
+🛠 **Examples:**
+
+    $ cpan5.34-x86_64-linux-gnu install JSON::Parse
+    
+    🔹 Install the `JSON::Parse` module.
+
+    $ cpan5.34-x86_64-linux-gnu upgrade JSON::Parse
+    
+    🔹 Upgrade the `JSON::Parse` module to the latest version available on CPAN.
+
+✅ **Simple Example:**
+
+    $ cpan5.34-x86_64-linux-gnu -h
+    
+    🔹 Display help and instructions for using CPAN.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgparsemail` baraye tahqiq va bargozari email-haye gpg (GNU Privacy Guard) estefade mishavad. Yani, in dastoor email-haee ke ba gpg emza shodeh ya encrypt shodeh and ra barrasi mikonad ta etminan hosool shavad ke az taraf shakhs sahih ferestade shodeh va tagheer nakarde ast. Agar email encrypt shodeh bashad, `gpgparsemail` an ra baz mikonad (decrypt mikonad) ta matn asli namayesh dade shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--verbose`  --> 🗣️ Namayesh etela’at bishtar dar mored amal kard dastoor.
+    🔹 `--output <file>`  --> 📤 Save kardan natije-ye barrasi (validation) ya matn baz shodeh (decrypted) be yek file.
+    🔹 `--verify-only`  --> ✅ Fagat barrasi emza, decrypt nakon.
+    🔹 `--decrypt-only` --> 🔓 Fagat baz kardan (decrypt), barrasi emza nakon.
+
+🛠 **Mesal-ha:**
+
+    $ gpgparsemail email.txt
+
+    🔹 Barrasi emza va baz kardane email agar encrypt shodeh bashad, natijeh dar terminal namayesh dade mishavad.
+
+    $ gpgparsemail --output decrypted_email.txt email.txt
+
+    🔹 Email ra barrasi mikonad, agar encrypt shodeh bashad baz mikonad va natije ra dar file `decrypted_email.txt` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ gpgparsemail --verify-only signed_email.txt
+
+    🔹 Fagat emzaye email ra barrasi mikonad va natije ra dar terminal namayesh midahad (masalan, `Valid signature` ya `Invalid signature`). Matne email baz nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgparsemail` command is used to verify and process GPG (GNU Privacy Guard) signed or encrypted emails. It checks the signature of a signed email to ensure it's from the correct sender and hasn't been tampered with. If an email is encrypted, `gpgparsemail` can decrypt it to reveal the original message.
+
+⚙️ **Options:**
+    🔹 `--verbose`  --> 🗣️ Display more detailed information about the command's operation.
+    🔹 `--output <file>`  --> 📤 Save the validation result or decrypted message to a file.
+    🔹 `--verify-only`  --> ✅ Only verify the signature, do not decrypt.
+    🔹 `--decrypt-only` --> 🔓 Only decrypt, do not verify the signature.
+
+🛠 **Examples:**
+
+    $ gpgparsemail email.txt
+
+    🔹 Verifies the signature and decrypts the email if it is encrypted, displaying the output in the terminal.
+
+    $ gpgparsemail --output decrypted_email.txt email.txt
+
+    🔹 Verifies and decrypts the email, saving the result to the file `decrypted_email.txt`.
+
+✅ **Simple Example:**
+
+    $ gpgparsemail --verify-only signed_email.txt
+
+    🔹 Only verifies the email's signature and displays the result in the terminal (e.g., `Valid signature` or `Invalid signature`).  The email content is not decrypted.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep-aptavail` baraye jostojo (search) dar list-e package-haye dastres (available) dar system-e apt estefade mishavad. Shoma mitavanid be donbale esm-e package-ha ya tozihat-e anha begardid.
+
+⚙️ **Gozine-ha:**
+    🔹 `grep-aptavail NAME` --> 🎯 Jostojo baraye package-haye ba esm-e `NAME`.
+    🔹 `grep-aptavail -s TEXT` --> 🔎 Jostojo dar tozihat (description) package-ha baraye `TEXT`.
+    🔹 `grep-aptavail -x NAME` --> 💯 Jostojuye motabegh-e kamel (exact match) esm-e `NAME`.
+    🔹 `grep-aptavail -v TEXT` --> 🚫 Namayesh package-hayee ke `TEXT` ra dar esm ya tozihat nadarand.
+
+🛠 **Mesal-ha:**
+
+    $ grep-aptavail firefox
+
+    🔹 Namayesh hame package-hayee ke "firefox" dar esm-e anha vojood darad.
+
+    $ grep-aptavail -s "web browser"
+
+    🔹 Namayesh hame package-hayee ke tozihat-e anha shamel "web browser" mishavad.
+
+✅ **Mesal sade:**
+
+    $ grep-aptavail -x "nano"
+
+    🔹 Faghat package-hayee ra namayesh midahad ke esm-e anha دقیقاً "nano" bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep-aptavail` command is used to search the list of available packages in the apt system. You can search for package names or descriptions.
+
+⚙️ **Options:**
+    🔹 `grep-aptavail NAME` --> 🎯 Search for packages with the name `NAME`.
+    🔹 `grep-aptavail -s TEXT` --> 🔎 Search package descriptions for `TEXT`.
+    🔹 `grep-aptavail -x NAME` --> 💯 Search for an exact match of the name `NAME`.
+    🔹 `grep-aptavail -v TEXT` --> 🚫 Show packages that do NOT contain `TEXT` in their name or description.
+
+🛠 **Examples:**
+
+    $ grep-aptavail firefox
+
+    🔹 Shows all packages that have "firefox" in their name.
+
+    $ grep-aptavail -s "web browser"
+
+    🔹 Shows all packages whose descriptions include "web browser".
+
+✅ **Simple Example:**
+
+    $ grep-aptavail -x "nano"
+
+    🔹 Only displays packages that have the exact name "nano".

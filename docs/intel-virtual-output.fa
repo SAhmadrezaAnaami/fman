@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `intel-virtual-output` baraye modiriyat khorooji majazi (virtual output) dar system-haye Intel estefade mishavad. In dastoor be shoma ijaze midahad ta khorooji-haye majazi ra sakhte, fa'al ya gheyre fa'al konid. Asasan, in baraye setup-haye chand monitor va majazisazi (virtualization) mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnama va komak baraye dastoor.
+    🔹 `--create`  --> ➕ Sakhtan yek khorooji majazi jadid.
+    🔹 `--destroy <id>`  --> 🗑️ Pak kardan yek khorooji majazi ba ID moshakhas. <id> bayad ba shomare ID khorooji majazi jaygozin shavad.
+    🔹 `--list`  --> 📜 List khorooji-haye majazi fa'al.
+
+🛠 **Mesal-ha:**
+
+    $ intel-virtual-output --create
+
+    🔹 Sakhtan yek khorooji majazi jadid. Shoma momken ast niaz be dastresi admin (sudo) dashte bashid.
+
+    $ intel-virtual-output --destroy 1
+
+    🔹 Pak kardan khorooji majazi ba ID 1. Baz ham shoma momken ast niaz be dastresi admin (sudo) dashte bashid.
+
+✅ **Mesal sade:**
+
+    $ intel-virtual-output --list
+
+    🔹 List hameye khorooji-haye majazi fa'al.  In be shoma ID-haye khorooji majazi ke mitavanid ba dastoor `--destroy` estefade konid, neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `intel-virtual-output` command is used to manage virtual outputs on Intel systems. It allows you to create, enable, or disable virtual display outputs. Primarily useful for multi-monitor setups and virtualization environments.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help and usage information for the command.
+    🔹 `--create`  --> ➕ Create a new virtual output.
+    🔹 `--destroy <id>`  --> 🗑️ Delete a virtual output with the specified ID.  Replace `<id>` with the actual virtual output ID number.
+    🔹 `--list`  --> 📜 List active virtual outputs.
+
+🛠 **Examples:**
+
+    $ intel-virtual-output --create
+
+    🔹 Create a new virtual output. You may need administrator (sudo) privileges.
+
+    $ intel-virtual-output --destroy 1
+
+    🔹 Delete the virtual output with ID 1.  Again, you might need administrator (sudo) privileges.
+
+✅ **Simple Example:**
+
+    $ intel-virtual-output --list
+
+    🔹 List all active virtual outputs.  This shows you the IDs of virtual outputs that you can use with the `--destroy` command.

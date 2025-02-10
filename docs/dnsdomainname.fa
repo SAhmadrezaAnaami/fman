@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dnsdomainname` baraye peyda kardan name domaini ke server DNS estefade mikonad, be kar miravad. Agar domain setup nashode bashad, hich chizi chap nemishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 Heech gozine khassi nadarad (use-e sade). → 🚫 Hich flag ya optioni niaz nist.
+    🔹 (Amalan, estefade az in dastoor kheili kam ast.) → ℹ️ Bishtar dar script-ha baraye check kardan domain setup shode estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dnsdomainname
+
+    🔹 Namayesh name domain agar setup shode bashad. Agar setup nashode bashad, hich chizi chap nemishavad.
+
+    $ if dnsdomainname; then echo "Domain setup shode ast"; else echo "Domain setup nashode ast"; fi
+
+    🔹 Check mikonad ke domain setup shode ast ya na va payam monaseb ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ dnsdomainname
+    example.com
+
+    🔹 Agar `example.com` domain server DNS bashad, `example.com` chap mishavad. Agar domain setup nashode bashad, hich chizi chap nemishavad va cursor be khat badi miravad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dnsdomainname` command is used to find the DNS domain name that the DNS server uses. If the domain is not set up, nothing is printed.
+
+⚙️ **Options:**
+    🔹 It does not have any specific options (simple usage). → 🚫 No flags or options are needed.
+    🔹 (In practice, this command is rarely used.) → ℹ️ Mostly used in scripts to check if a domain is set up.
+
+🛠 **Examples:**
+
+    $ dnsdomainname
+
+    🔹 Displays the domain name if it is set up. If not, nothing is printed.
+
+    $ if dnsdomainname; then echo "Domain is set up"; else echo "Domain is not set up"; fi
+
+    🔹 Checks if the domain is set up and prints the appropriate message.
+
+✅ **Simple Example:**
+
+    $ dnsdomainname
+    example.com
+
+    🔹 If `example.com` is the DNS server's domain, `example.com` is printed. If the domain is not set up, nothing is printed, and the cursor moves to the next line.

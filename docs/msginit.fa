@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msginit` baraye sakhtan file-haye jadid `.po` az file-haye `.pot` (template) baraye tarjome-ye barnamaha be zabanhaye mokhtalef estefade mishavad. Yani, shoma az in dastoor estefade mikonid ta tarjome-ye barnamara baraye yek zaban-e khass shoru konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--locale=FA`  --> 🗣️ Zaban-e mored nazar ra moshakhas mikonad (dar inja FA baraye Farsi).
+    🔹 `--input=myfile.pot` --> 📄 File-e asli `.pot` (template) ra moshakhas mikonad.
+    🔹 `--output-file=FA.po` --> 💾 Esme file-e `.po`-ye khoruji ra moshakhas mikonad.
+    🔹 `--no-translator` --> 👤 Etela'ate translator ra dar file-e `.po` gharar nemidahad.
+    🔹 `--keep-pot` --> 🔄 File `.pot` asli ra pas az sakhte file `.po` hefz mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ msginit --locale=FA --input=myapp.pot
+
+    🔹 Yek file `.po` baraye zaban-e Farsi az `myapp.pot` misazad. Az shoma soalati dar morede etela'ate translator porside mishavad.
+
+    $ msginit --locale=DE --input=product.pot --output-file=german.po --no-translator
+
+    🔹 Yek file `.po` baraye zaban-e Almani (DE) az `product.pot` misazad, ba name `german.po`. Etela'ate translator ra dar file darj nemikonad.
+
+✅ **Mesal sade:**
+
+    $ msginit --locale=ES --input=template.pot
+
+    🔹 File `.po`-ye jadidi baraye zaban-e Espanyaii (ES) az `template.pot` misazad. Etela'ate translator ra az shoma miporsad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msginit` command is used to create new `.po` files from `.pot` (template) files for translating programs into different languages.  In essence, you use this command to initiate the translation of a program for a specific language.
+
+⚙️ **Options:**
+    🔹 `--locale=FA`  --> 🗣️ Specifies the target language (here, FA for Persian).
+    🔹 `--input=myfile.pot` --> 📄 Specifies the input `.pot` (template) file.
+    🔹 `--output-file=FA.po` --> 💾 Specifies the name of the output `.po` file.
+    🔹 `--no-translator` --> 👤 Excludes translator information in the `.po` file.
+    🔹 `--keep-pot` --> 🔄 Retains the original `.pot` file after creating the `.po` file.
+
+🛠 **Examples:**
+
+    $ msginit --locale=FA --input=myapp.pot
+
+    🔹 Creates a `.po` file for the Persian language from `myapp.pot`.  Prompts you for translator information.
+
+    $ msginit --locale=DE --input=product.pot --output-file=german.po --no-translator
+
+    🔹 Creates a `.po` file for the German language (DE) from `product.pot`, named `german.po`. Excludes translator information from the file.
+
+✅ **Simple Example:**
+
+    $ msginit --locale=ES --input=template.pot
+
+    🔹 Creates a new `.po` file for the Spanish language (ES) from `template.pot`.  Prompts you for translator information.

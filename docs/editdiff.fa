@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `editdiff` baraye dorost kardane file-haye `diff` az tarikhche-ye revision control estefade mishavad.  In dastoor be shoma komak mikonad ta taghirati ke dar tool-e zaman rooy file-ha anjam shode ast ra bebinid va aan ra save konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `editdiff -r revision1:revision2 filename` --> 📜 Sakhtane `diff` az beyn revision1 ta revision2 baraye file-e `filename`.
+    🔹 `editdiff -c commit_id filename` --> 👀 Sakhtane `diff` baraye taghirati ke dar commit_id rooy file-e `filename` anjam shode.
+    🔹 `editdiff -p`  --> 📏 Estefade az `patch` format baraye output.
+
+🛠 **Mesal-ha:**
+
+    $ editdiff -r 123:456 myfile.txt
+
+    🔹 Sakhtane diff az revision 123 ta 456 baraye `myfile.txt`.
+
+    $ editdiff -c abcdef myfile.txt > my_changes.diff
+
+    🔹 Sakhtane diff baraye commit ID `abcdef` rooy file-e `myfile.txt` va zakhireh kardane output dar file-e `my_changes.diff`.
+
+✅ **Mesal sade:**
+
+    $ editdiff -c HEAD myfile.txt
+
+    🔹 Sakhtane diff baraye akharin commit rooy `myfile.txt`.  In be shoma neshan midahad ke chi dar akharin version tagheer karde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `editdiff` command is used to generate `diff` files from revision control history. It helps you view and save the changes that have been made to files over time.
+
+⚙️ **Options:**
+    🔹 `editdiff -r revision1:revision2 filename` --> 📜 Create a `diff` from revision1 to revision2 for the file `filename`.
+    🔹 `editdiff -c commit_id filename` --> 👀 Create a `diff` for the changes made in `commit_id` on the file `filename`.
+    🔹 `editdiff -p`  --> 📏 Use `patch` format for the output.
+
+🛠 **Examples:**
+
+    $ editdiff -r 123:456 myfile.txt
+
+    🔹 Create a diff from revision 123 to 456 for `myfile.txt`.
+
+    $ editdiff -c abcdef myfile.txt > my_changes.diff
+
+    🔹 Create a diff for commit ID `abcdef` on the file `myfile.txt` and save the output to the file `my_changes.diff`.
+
+✅ **Simple Example:**
+
+    $ editdiff -c HEAD myfile.txt
+
+    🔹 Create a diff for the latest commit on `myfile.txt`. This shows you what has changed in the most recent version.

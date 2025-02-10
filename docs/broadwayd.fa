@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `broadwayd` yek server X11 virtual ast ke baraye namayesh dadan barname-haye grafiki dar browser estefade mishavad. Yani, shoma mitavanid barname-haye grafiki UNIX/Linux ra az tarigh browser-e khod bebinid va control konid. In dastoor be khosos baraye server-ha ya system-haye bi-sar (headless systems) mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `:n`  --> 🖥️ Shomare-ye display ra moshakhas mikonad (masalan, `:1` ya `:2`). Har display bayad yek shomare-ye benzir dashte bashad.
+    🔹 `-port port_number` --> 🌐 Port-e TCP ra baraye web server moshakhas mikonad. Be tore pishfarz, az yek port-e dinamiki estefade mikonad.
+    🔹 `--no-sandbox` --> ⚠️ (Ehtiat!) Sandbox ra ghayr fa'al mikonad. Tanha dar soorat-e niaz va ba etela' az khatar-ha estefade konid.
+    🔹 `--address ip_address` --> 📍 Adres IP ra baraye listen kardan baraye etesalat moshakhas mikonad. Be tore pishfarz, bar roye hame-ye address-ha listen mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ broadwayd :2
+
+    🔹 Ijad yek server Broadway dar display :2 ba estefade az port pishfarz.
+
+    $ broadwayd :1 --port 8080
+
+    🔹 Ijad yek server Broadway dar display :1 ke bar roye port 8080 listen mikonad.
+
+✅ **Mesal sade:**
+
+    $ broadwayd :3 &
+    $ export BROADWAY_DISPLAY=:3
+    $ xterm
+
+    🔹 Ijad yek server Broadway dar display :3 dar background.  Mojaz kardan variable muhiti BROADWAY_DISPLAY, va ejra kardan xterm. Xterm dar browser namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `broadwayd` command is a virtual X11 server used to display graphical applications in a web browser. It allows you to view and control UNIX/Linux graphical applications remotely through your browser. This is particularly useful for servers or headless systems.
+
+⚙️ **Options:**
+    🔹 `:n`  --> 🖥️ Specifies the display number (e.g., `:1` or `:2`). Each display should have a unique number.
+    🔹 `-port port_number` --> 🌐 Specifies the TCP port for the web server. By default, it uses a dynamic port.
+    🔹 `--no-sandbox` --> ⚠️ (Caution!) Disables the sandbox. Use only when necessary and aware of the risks.
+    🔹 `--address ip_address` --> 📍 Specifies the IP address to listen on for connections. By default, it listens on all addresses.
+
+🛠 **Examples:**
+
+    $ broadwayd :2
+
+    🔹 Creates a Broadway server on display :2 using the default port.
+
+    $ broadwayd :1 --port 8080
+
+    🔹 Creates a Broadway server on display :1 listening on port 8080.
+
+✅ **Simple Example:**
+
+    $ broadwayd :3 &
+    $ export BROADWAY_DISPLAY=:3
+    $ xterm
+
+    🔹 Creates a Broadway server on display :3 in the background.  Sets the BROADWAY_DISPLAY environment variable, and runs xterm. Xterm will be displayed in the browser.

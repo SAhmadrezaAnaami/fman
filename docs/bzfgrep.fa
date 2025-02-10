@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzfgrep` mesle `grep` amal mikonad, ama baraye gashtan dar file-haye `bzip2` shode (yani file-haye ziad compressed) be kar miravad. Yani dige niaz nist file zip shode ra baz konid, `bzfgrep` khodesh unzip mikonad va gashtanjoo ra anjam midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzfgrep "matn" file.bz2` --> Matn ra dar file `file.bz2` migardad.
+    🔹 `bzfgrep -i "matn" file.bz2` -->  Dar gashtan be bozorgi va koochiki horoof tavajoh nemikonad (case-insensitive).
+    🔹 `bzfgrep -c "matn" file.bz2` --> Faghat tedad khat-haee ke matn peyda shode ra neshan midahad.
+    🔹 `bzfgrep -l "matn" *.bz2` --> Name file-haee ke matn dar anha peyda shode ra list mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ bzfgrep "error" logfile.bz2
+
+    🔹 Peida kardan khat-haee ke kalame "error" dar logfile.bz2 darand.
+
+    $ bzfgrep -i "warning" logfile.bz2
+
+    🔹 Peida kardan khat-haee ke kalame "warning" ya "WARNING" dar logfile.bz2 darand.
+
+✅ **Mesal sade:**
+
+    $ bzfgrep -c "2023-10-26" access.log.bz2
+
+    🔹 Tedad khat-haee ke tarikhe "2023-10-26" dar file `access.log.bz2` darand ra neshan midahad, bedoon baz kardan file.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzfgrep` command works like `grep`, but is specifically designed to search within `bzip2` compressed files. This means you don't need to manually unzip the file; `bzfgrep` handles the decompression and searching process automatically.
+
+⚙️ **Options:**
+    🔹 `bzfgrep "text" file.bz2` --> Searches for "text" within the `file.bz2`.
+    🔹 `bzfgrep -i "text" file.bz2` -->  Performs a case-insensitive search for "text" in `file.bz2`.
+    🔹 `bzfgrep -c "text" file.bz2` --> Only displays the count of lines where "text" is found.
+    🔹 `bzfgrep -l "text" *.bz2` --> Lists the names of files where "text" is found.
+
+🛠 **Examples:**
+
+    $ bzfgrep "error" logfile.bz2
+
+    🔹 Finds lines containing the word "error" in `logfile.bz2`.
+
+    $ bzfgrep -i "warning" logfile.bz2
+
+    🔹 Finds lines containing the word "warning" or "WARNING" (case-insensitive) in `logfile.bz2`.
+
+✅ **Simple Example:**
+
+    $ bzfgrep -c "2023-10-26" access.log.bz2
+
+    🔹 Shows the number of lines that contain the date "2023-10-26" in the `access.log.bz2` file, without needing to unzip the file first.

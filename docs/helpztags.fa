@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `helpztags` baraye sakhtan ya update kardan file-haye "tags" baraye estefade dar editorha mesle Vim ya Emacs be kar mirevad. File-haye "tags" komak mikonand ke be sor'at be ta'rif-haye function-ha, variable-ha, va class-ha dar code manba' beravid. In dastoor zaban-haye barname-nevisi mokhtalef ra poshtibani mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help` --> ❓ Namayesh rahnamayi estefade az dastoor.
+    🔹 `--verbose` --> 📢 Chap kardane etela'ate bishtar dar morede amaliyat.
+    🔹 `-f <file>` --> 🎯 Specify name va masir file tag ha (default "tags").
+    🔹 `-R` --> 🔄 Recursively tag kardan file-ha dar directory ha.
+    🔹 `--languages=<zabanha>` --> 🗣️ Specify zabanhaye morede nazar ba comma separated list (mesal: C,Python,Java).
+
+🛠 **Mesal-ha:**
+
+    $ helpztags
+
+    🔹 Sakhtane file "tags" dar directory kari current baraye zabanhaye pishfarz.
+
+    $ helpztags -R
+
+    🔹 Sakhtane file "tags" baraye hameye file-ha dar directory current va subdirectory ha.
+
+    $ helpztags --languages=Python,C++ -f mytags
+
+    🔹 Sakhtane file "mytags" baraye file-haye Python va C++ dar directory current.
+
+✅ **Mesal sade:**
+
+    $ helpztags -R --verbose
+
+    🔹 File "tags" dar directory kari current va subdirectory ha sakhte mishavad va etela'ate detail chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `helpztags` command is used to generate or update "tags" files for use in editors like Vim or Emacs.  These files allow you to quickly jump to the definitions of functions, variables, and classes within source code.  It supports many programming languages.
+
+⚙️ **Options:**
+    🔹 `--help` --> ❓ Display help usage information.
+    🔹 `--verbose` --> 📢 Print more information about the operations.
+    🔹 `-f <file>` --> 🎯 Specify the tag file name (default "tags").
+    🔹 `-R` --> 🔄 Recursively tag files in directories.
+    🔹 `--languages=<languages>` --> 🗣️ Specify languages to consider using a comma-separated list (e.g., C,Python,Java).
+
+🛠 **Examples:**
+
+    $ helpztags
+
+    🔹 Create a "tags" file in the current working directory for default languages.
+
+    $ helpztags -R
+
+    🔹 Create a "tags" file for all files in the current directory and subdirectories.
+
+    $ helpztags --languages=Python,C++ -f mytags
+
+    🔹 Create a "mytags" file for Python and C++ files in the current directory.
+
+✅ **Simple Example:**
+
+    $ helpztags -R --verbose
+
+    🔹 Create a "tags" file recursively in the current working directory and print detailed information about what is being done.

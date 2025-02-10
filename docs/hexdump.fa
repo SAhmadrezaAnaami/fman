@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hexdump` baraye namayesh dade-haye binary dar yek format hexadesimal (base 16) va ASCII estefade mishavad. In dastoor bishtar baraye didan va tahlil kardan file-haye binary ke ghabele khandan nistand be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `hexdump -C filename`  --> 🗂️ Namayesh file be soorate canonical (ham hex va ham ASCII)
+    🔹 `hexdump -n length filename`  --> ✂️ Faghat `length` byte az file ra namayesh midahad.
+    🔹 `hexdump -v filename`  --> 👓 Namayesh hameye dade-ha, hatta agar yeksan bashand (pooshesh ra hazf mikonad).
+
+🛠 **Mesal-ha:**
+
+    $ hexdump file.bin
+
+    🔹 Namayesh file.bin be soorate hexadesimal.
+
+    $ hexdump -C file.bin
+
+    🔹 Namayesh file.bin be soorate hex va ASCII dar kenar ham.
+
+✅ **Mesal sade:**
+
+    $ hexdump -n 16 file.bin
+
+    🔹 Faghat 16 byte aval file.bin ra namayesh midahad. In baraye check kardane maghadire avalie yek file binary mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hexdump` command is used to display binary data in a hexadecimal (base 16) and ASCII format. This command is commonly used to view and analyze binary files that are not human-readable.
+
+⚙️ **Options:**
+    🔹 `hexdump -C filename`  --> 🗂️ Display the file in a canonical format (both hex and ASCII).
+    🔹 `hexdump -n length filename`  --> ✂️ Display only the first `length` bytes of the file.
+    🔹 `hexdump -v filename`  --> 👓 Display all data, even if identical (suppresses compression of identical lines).
+
+🛠 **Examples:**
+
+    $ hexdump file.bin
+
+    🔹 Display file.bin in hexadecimal format.
+
+    $ hexdump -C file.bin
+
+    🔹 Display file.bin in hex and ASCII side-by-side.
+
+✅ **Simple Example:**
+
+    $ hexdump -n 16 file.bin
+
+    🔹 Display only the first 16 bytes of file.bin. This is useful for checking the initial values of a binary file.

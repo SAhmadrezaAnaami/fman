@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgunfmt` baraye tabdil kardan file-haye `mo` (binary message catalog) be file-haye `po` (portable object) estefade mishavad. Yani, `msgunfmt` file-haye machine-readable ra be file-haye human-readable tabdil mikonad ta shoma betavanid anha ra modify va tarjome konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `-v | --verbose`  --> 🗣️ Namayesh etela'at bishtar dar morede chگونگی kar kardane dastoor.
+    🔹 `-o | --output-file FILE` --> 📤  Zakhire kardane khorooji dar yek file khass. Agar in gozine ra nadehid, khorooji dar safe namayesh dade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ msgunfmt file_name.mo
+    
+    🔹 Tabdil file `file_name.mo` va namayesh khorooji dar terminal.
+
+    $ msgunfmt -o file_name.po file_name.mo
+    
+    🔹 Tabdil `file_name.mo` be `file_name.po` va zakhire kardane an.
+
+✅ **Mesal sade:**
+
+    $ msgunfmt messages.mo > messages.po
+
+    🔹 In dastoor file `messages.mo` ra be `messages.po` tabdil mikonad va ba estefade az `>` khorooji ra dar file `messages.po` zakhire mikonad. Agar `messages.po` vojood nadashte bashad, sakhte mishavad va agar vojood dashte bashad, over-write mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgunfmt` command is used to convert `mo` (binary message catalog) files into `po` (portable object) files. Essentially, `msgunfmt` transforms machine-readable files into human-readable files, enabling you to modify and translate them.
+
+⚙️ **Options:**
+    🔹 `-v | --verbose` --> 🗣️ Show more details about how the command is working.
+    🔹 `-o | --output-file FILE` --> 📤 Save the output to a specific file. If this option is omitted, the output is displayed on the screen.
+
+🛠 **Examples:**
+
+    $ msgunfmt file_name.mo
+
+    🔹 Converts the file `file_name.mo` and displays the output in the terminal.
+
+    $ msgunfmt -o file_name.po file_name.mo
+
+    🔹 Converts `file_name.mo` to `file_name.po` and saves it.
+
+✅ **Simple Example:**
+
+    $ msgunfmt messages.mo > messages.po
+
+    🔹 This command converts the `messages.mo` file to `messages.po`, and using `>`, saves the output to the `messages.po` file.  If `messages.po` doesn't exist, it will be created; otherwise, it will be overwritten.

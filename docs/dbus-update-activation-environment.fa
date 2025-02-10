@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbus-update-activation-environment` baraye update kardane `environment variables` baraye service-haye `systemd` ke az `D-Bus` estefade mikonand be kar mirevad. Yani, vaqti shoma yek `environment variable` ra taghir midahid, in dastoor be `systemd` etela midehad ta an ra update konad, va in taghirat baraye service-haye jadidi ke start mishavand, mo’asser bashad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--systemd`  --> ⚙️ Update `environment`-haye `systemd` (default).  
+    🔹 `--all`     --> 🌐 Update hameye `environment`-ha (systemd va launchd).
+    🔹 `--verbose` --> 📢 Namayeshe etela’at bishtar dar morede amal kardane dastoor.
+
+🛠 **Mesal-ha:**
+    
+    $ dbus-update-activation-environment --systemd DISPLAY
+    
+    🔹 Update kardane `DISPLAY` `environment variable` dar `systemd`.
+
+    $ dbus-update-activation-environment --all
+    
+    🔹 Update kardane hameye `environment`-haye mojud.
+
+✅ **Mesal sade:**
+    
+    $ export MY_VARIABLE="hello" && dbus-update-activation-environment MY_VARIABLE
+    
+    🔹 Aval yek `environment variable` jadid (`MY_VARIABLE`) ra tarif mikonim, va ba'd az an, dastoor `dbus-update-activation-environment` ra ejra mikonim ta `systemd` az in taghir motale’ shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbus-update-activation-environment` command is used to update environment variables for `systemd` services that use `D-Bus` activation. This means when you change an environment variable, this command notifies `systemd` to update it, and these changes will be effective for any new services started.
+
+⚙️ **Options:**
+    🔹 `--systemd`  --> ⚙️ Update `systemd` environment variables (default).
+    🔹 `--all`     --> 🌐 Update all environment variables (systemd and launchd).
+    🔹 `--verbose` --> 📢 Display more information about the execution of the command.
+
+🛠 **Examples:**
+    
+    $ dbus-update-activation-environment --systemd DISPLAY
+    
+    🔹 Update the `DISPLAY` environment variable in `systemd`.
+
+    $ dbus-update-activation-environment --all
+    
+    🔹 Update all available environment variables.
+
+✅ **Simple Example:**
+    
+    $ export MY_VARIABLE="hello" && dbus-update-activation-environment MY_VARIABLE
+    
+    🔹 First, we define a new environment variable (`MY_VARIABLE`), and then run `dbus-update-activation-environment` so that `systemd` is aware of this change.

@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gio` (GNOME Input/Output) baraye dastresi be file-ha, pooshe-ha, va mahale-haye digar dar GNOME estefade mishavad. In dastoor be shoma komak mikonad ta file-ha ra baz konid, copy konid, delete konid, ya etela'at ra darbare-ye anha begirid, hame az tarighe terminal. Mesle yek komake bozorg baraye karha-ye file-ha dar system-e GNOME!
+
+⚙️ **Gozine-ha:**
+    🔹 `gio open [FILE]` --> 🚪 Baz kardane yek file ba estefade az barname-ye pishfarz
+    🔹 `gio copy [SOURCE] [DESTINATION]` --> 📄 Copy kardane file ya pooshe az yek ja be jaye digar
+    🔹 `gio move [SOURCE] [DESTINATION]` --> 🚚 Montaghel kardane file ya pooshe az yek ja be jaye digar
+    🔹 `gio trash [FILE]` --> 🗑️ Ferestadan file be zobaale-daan (trash)
+    🔹 `gio info [FILE]` --> ℹ️ Namayesh etela'at darbare-ye yek file ya pooshe
+
+🛠 **Mesal-ha:**
+
+    $ gio open document.txt
+
+    🔹 Baz kardane file "document.txt" ba barname-ye pishfarz-e text editor.
+
+    $ gio copy image.jpg /home/user/pictures/
+
+    🔹 Copy kardane file "image.jpg" be pooshe "pictures" dar /home/user/.
+
+    $ gio trash important_file.txt
+
+    🔹 Ferestadan file "important_file.txt" be zobaale-daan.
+
+✅ **Mesal sade:**
+
+    $ gio info my_file.pdf
+
+    🔹 Namayesh etela'ati mesle size, tarikhe sakht, va type-e file "my_file.pdf". In komak mikone ta bedonid chera file hamishe inghadr bozorge!
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gio` (GNOME Input/Output) command is used to access files, folders, and other locations in the GNOME environment. It helps you open, copy, delete files, or get information about them, all from the terminal. Think of it as a powerful helper for file operations within the GNOME system!
+
+⚙️ **Options:**
+    🔹 `gio open [FILE]` --> 🚪 Opens a file using the default associated application.
+    🔹 `gio copy [SOURCE] [DESTINATION]` --> 📄 Copies a file or directory from one location to another.
+    🔹 `gio move [SOURCE] [DESTINATION]` --> 🚚 Moves a file or directory from one location to another.
+    🔹 `gio trash [FILE]` --> 🗑️ Moves a file to the trash/recycle bin.
+    🔹 `gio info [FILE]` --> ℹ️ Displays information about a file or directory.
+
+🛠 **Examples:**
+
+    $ gio open document.txt
+
+    🔹 Opens the file "document.txt" with the default text editor.
+
+    $ gio copy image.jpg /home/user/pictures/
+
+    🔹 Copies the file "image.jpg" to the "pictures" directory under /home/user/.
+
+    $ gio trash important_file.txt
+
+    🔹 Moves the file "important_file.txt" to the trash.
+
+✅ **Simple Example:**
+
+    $ gio info my_file.pdf
+
+    🔹 Displays information such as the size, creation date, and file type of "my_file.pdf." This helps you understand why the file is always so big!

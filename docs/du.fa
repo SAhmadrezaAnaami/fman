@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `du` baraye mohasebeye hajme disk-i ke file-ha va directory-ha estefade mikonand, be kar miravad. Yani be shoma neshon mide har file ya directory cheghadr ja gerefte ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `du -h`  --> 📏  Hajm-ha ra be shekle ghabl-khani neshon mide (mesle KB, MB, GB).
+    🔹 `du -s`  --> 📦  Faghat koll hajme directory ra neshon mide, na etela’at-e har file dakhelash ra.
+    🔹 `du -a`  --> 📄  Hajme hameye file-ha va directory-ha ra neshon mide.
+    🔹 `du -m`  --> 💾  Hajm ra be megabyte (MB) neshon mide.
+
+🛠 **Mesal-ha:**
+
+    $ du
+    
+    🔹 Namayesh hajme disk-e directory-e فعلی va zir-directory-ha.
+
+    $ du -h *
+    
+    🔹 Namayesh hajme ghabl-khani hameye file-ha va directory-ha dar directory-e فعلی.
+
+✅ **Mesal sade:**
+
+    $ du -sh documents
+   
+    🔹 Koll-e hajm-e directory-e "documents" ra be shekle ghabl-khani neshon mide.  Be jaye neshon dadan hajm-e har file va directory dakhel "documents", faghat koll-e hajm ra neshon mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `du` command is used to estimate file and directory space usage. It shows how much disk space each file and directory is taking up.
+
+⚙️ **Options:**
+    🔹 `du -h`  --> 📏  Display sizes in a human-readable format (e.g., KB, MB, GB).
+    🔹 `du -s`  --> 📦  Display only a total for each argument.
+    🔹 `du -a`  --> 📄  Display an entry for each file in the directory.
+    🔹 `du -m`  --> 💾  Display sizes in megabytes (MB).
+
+🛠 **Examples:**
+
+    $ du
+    
+    🔹 Display disk space usage of the current directory and its subdirectories.
+
+    $ du -h *
+    
+    🔹 Display human-readable sizes of all files and directories in the current directory.
+
+✅ **Simple Example:**
+
+    $ du -sh documents
+    
+    🔹 Display the total size of the "documents" directory in human-readable format. Instead of showing the size of each file and directory inside "documents", it shows just the total size.

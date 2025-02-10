@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gstreamer-codec-install` baraye nasb codec-haye ghesmate GStreamer estefade mishavad. In dastoor komak mikonad ta shoma betavanid file-haye multimedia-ye mokhtalef ra ba estefade az GStreamer pakhsh konid. Agar GStreamer codec-i ke lazem ast ra nadashte bashad, in dastoor be shoma dar nasb an codec komak mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gstreamer-codec-install`  --> 🚀 Shoru kardane nasb codec-ha-ye gomshode.
+    🔹 `gstreamer-codec-install VIDEOTYPE` --> 🎞️ Nasbe codec baraye no'e makhsose video (masalan: AVI, MKV).
+    🔹 `gstreamer-codec-install AUDIOTYPE` --> 🎵 Nasbe codec baraye no'e makhsose audio (masalan: MP3, AAC).
+
+🛠 **Mesal-ha:**
+
+    $ gstreamer-codec-install
+
+    🔹 Shoru kardane dastoor baraye nasb codec-ha-ye gomshode-ye GStreamer.
+
+    $ gstreamer-codec-install AVI
+
+    🔹 Nasb codec baraye file-haye video-ye AVI.
+
+✅ **Mesal sade:**
+
+    $ gstreamer-codec-install MP3
+
+    🔹 In dastoor codec-haye lazem baraye pakhsh file-haye MP3 ra nasb mikonad. Agar dastoor codec-i ra peyda konad ke nasb nist, az shoma khohahad ke an ra nasb konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gstreamer-codec-install` command is used to install missing codecs for the GStreamer multimedia framework. This command helps you to play various multimedia files using GStreamer. If GStreamer lacks a required codec, this command assists you in installing it.
+
+⚙️ **Options:**
+    🔹 `gstreamer-codec-install`  --> 🚀 Start the installation of missing codecs.
+    🔹 `gstreamer-codec-install VIDEOTYPE` --> 🎞️ Install codec for a specific video type (e.g., AVI, MKV).
+    🔹 `gstreamer-codec-install AUDIOTYPE` --> 🎵 Install codec for a specific audio type (e.g., MP3, AAC).
+
+🛠 **Examples:**
+
+    $ gstreamer-codec-install
+
+    🔹 Starts the command to install missing GStreamer codecs.
+
+    $ gstreamer-codec-install AVI
+
+    🔹 Installs codecs for AVI video files.
+
+✅ **Simple Example:**
+
+    $ gstreamer-codec-install MP3
+
+    🔹 This command installs the necessary codecs to play MP3 files. If the command finds a codec that is not installed, it will prompt you to install it.

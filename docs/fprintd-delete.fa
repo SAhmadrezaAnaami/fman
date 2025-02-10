@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fprintd-delete` baraye pak kardan asare angosht az system estefade mishavad.  In dastoor be shoma komak mikonad ke asare angosht save shode ra az system hazf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--device <device>` --> 📍 Specify device ra moshakhas mikonad. Esm device morede nazar ra vared konid.  Agar device moshakhas nashavad, shoma bayad device ra az list entekhab konid.
+    🔹 `--all` --> 🗑️ Hameye asare angosht-ha ra pak mikonad.  Ba ihtiat estefade konid!
+
+🛠 **Mesal-ha:**
+
+    $ fprintd-delete --device /net/reactivated/Fprint/Device/0
+
+    🔹 Asare angosht ra az device moshakhas shode pak mikonad.
+
+    $ fprintd-delete --all
+
+    🔹 Hameye asare angosht-ha ra az system hazf mikonad.
+
+✅ **Mesal sade:**
+
+    $ fprintd-delete --device /net/reactivated/Fprint/Device/0
+    Deleting the enrolled fingerprint for user <username> from device /net/reactivated/Fprint/Device/0...
+
+    🔹 In dastoor asare angosht user ra az device moshakhas shode pak mikonad.  Dar natije, digar nemitavanid ba asar angosht vared shavid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fprintd-delete` command is used to delete fingerprints from the system.  It helps you remove stored fingerprints.
+
+⚙️ **Options:**
+    🔹 `--device <device>` --> 📍 Specifies the device to use. Enter the device name. If no device is specified, you will be prompted to select from a list.
+    🔹 `--all` --> 🗑️ Deletes all fingerprints. Use with caution!
+
+🛠 **Examples:**
+
+    $ fprintd-delete --device /net/reactivated/Fprint/Device/0
+
+    🔹 Deletes fingerprints from the specified device.
+
+    $ fprintd-delete --all
+
+    🔹 Deletes all fingerprints from the system.
+
+✅ **Simple Example:**
+
+    $ fprintd-delete --device /net/reactivated/Fprint/Device/0
+    Deleting the enrolled fingerprint for user <username> from device /net/reactivated/Fprint/Device/0...
+
+    🔹 This command deletes a user's fingerprint from the specified device. As a result, you can no longer log in using that fingerprint.

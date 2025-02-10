@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `btmon` baraye didan va barrasiye etela'at Bluetooth estefade mishavad. In dastoor etela'ati mesle etesalat Bluetooth, dade haye ersali va daryafti, va taghirate vaziate dastgah ha ra neshan midahad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `btmon` -->  💻 Namayesh etela'ate Bluetooth be soorate real-time.
+    🔹 `btmon -i hci0` --> 📡 Montoring rooye yek interface khass (masalan hci0). Agar interface ra moshakhas nakonid, btmon hameye interface ha ra barrasi mikonad.
+    🔹 `btmon -w filename.btsnoop` --> 💾 Zakhireye etela'at be soorate yek file btsnoop baraye tahlilhaye ba'di ba estefade az Wireshark.
+    🔹 `btmon -T` --> ⏱️ Neshan dadane time-stamp ha ba format ghabl-khani.
+
+🛠 **Mesal-ha:**
+
+    $ btmon
+
+    🔹 Shorooe monitoring Bluetooth ba etela'ate real-time.
+
+    $ sudo btmon -i hci0 -w bluetooth_log.btsnoop
+
+    🔹  Monitoring interface hci0 va zakhireye etela'at dar file bluetooth_log.btsnoop. Be zakhire sazi ba dastresi super user (sudo) deghat konid.
+
+✅ **Mesal sade:**
+
+    $ btmon
+
+    🔹 Ba ejraye in dastoor, tamame etesalat Bluetooth va dade haye ersali/daryafti rooye terminal neshan dade mishavand. Shoma mitavanid taghirate vaziate dastgah haye Bluetooth ra be soorate real-time moshahede konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `btmon` command is used to monitor Bluetooth traffic. It displays Bluetooth HCI (Host Controller Interface) events, data, and related information in real-time.
+
+⚙️ **Options:**
+    🔹 `btmon` --> 💻 Start Bluetooth monitoring in real-time.
+    🔹 `btmon -i hci0` --> 📡 Monitor a specific interface (e.g., hci0). If no interface is specified, btmon monitors all interfaces.
+    🔹 `btmon -w filename.btsnoop` --> 💾 Save the captured data to a btsnoop file for later analysis using tools like Wireshark.
+    🔹 `btmon -T` --> ⏱️ Display timestamps in human-readable format.
+
+🛠 **Examples:**
+
+    $ btmon
+
+    🔹 Start monitoring Bluetooth traffic with real-time output.
+
+    $ sudo btmon -i hci0 -w bluetooth_log.btsnoop
+
+    🔹 Monitor interface hci0 and save the captured data to the file bluetooth_log.btsnoop. Note the sudo used for root privileges.
+
+✅ **Simple Example:**
+
+    $ btmon
+
+    🔹 Running this command will display all Bluetooth connections and transmitted/received data on the terminal. You can observe changes in the status of Bluetooth devices in real-time.

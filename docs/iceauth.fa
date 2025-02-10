@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `iceauth` baraye modiriat etela'at dastresi be server-haye ICE (Inter-Client Exchange) estefade mishavad.  Ba estefade az `iceauth`, shoma mitavanid record-haye jadid ezafe konid, record-haye mojood ra taghir dahid, ya record-ha ra hazf konid.  In dastoor bishtar baraye karbarani ke ba barname-haye grafikie kar mikonan mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-f <file>` --> 📁 File-e etela'at dastresi ICE ra moshakhas mikonad. Agar moshakhas nashavad, az `$ICEAUTHORITY` estefade mishavad.
+    🔹 `-n` --> ➕ Record-e jadid ezafe mikonad.
+    🔹 `-b` --> 🗑️ Record-e mojood ra hazf mikonad.
+    🔹 `-l` --> 📜 List-e record-haye dastresi ICE ra namayesh midahad.
+    🔹 `-q` --> 🤫 Sedaye kharoji ra kam mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ iceauth -l
+
+    🔹 List kardan hameye record-haye dastresi ICE.
+
+    $ iceauth -n local/hostname:0
+
+    🔹 Ezafe kardan yek record-e jadid baraye dastresi az hostname mahallie ba display number 0.
+
+✅ **Mesal sade:**
+
+    $ iceauth -b local/hostname:0
+
+    🔹 Hazf kardan record-e dastresi baraye hostname mahallie ba display number 0. In karmitune moshkelati ro ke barname ha dar dastresi be server ICE darand hal kone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `iceauth` command is used to manage ICE (Inter-Client Exchange) authorization information. Using `iceauth`, you can add new entries, modify existing entries, or remove entries.  This command is primarily useful for users working with graphical applications.
+
+⚙️ **Options:**
+    🔹 `-f <file>` --> 📁 Specifies the ICE authorization file. If not specified, `$ICEAUTHORITY` is used.
+    🔹 `-n` --> ➕ Adds a new entry.
+    🔹 `-b` --> 🗑️ Removes an existing entry.
+    🔹 `-l` --> 📜 Lists the ICE authorization entries.
+    🔹 `-q` --> 🤫 Suppresses verbose output.
+
+🛠 **Examples:**
+
+    $ iceauth -l
+
+    🔹 List all ICE authorization entries.
+
+    $ iceauth -n local/hostname:0
+
+    🔹 Add a new entry for access from the local hostname with display number 0.
+
+✅ **Simple Example:**
+
+    $ iceauth -b local/hostname:0
+
+    🔹 Remove the authorization entry for the local hostname with display number 0. This can resolve issues where applications are unable to access the ICE server.

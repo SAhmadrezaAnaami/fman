@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `g++-12` yek compiler baraye zaban C++ ast. Compiler kood-haye C++ ra migirad va anha ra be code-haye machine (binary) tabdil mikonad ta computer betavanad anha ra ejra konad. `g++-12` version 12 az compiler GCC (GNU Compiler Collection) baraye C++ ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `g++-12 -o [esm_file_executable] [esm_file_source].cpp`  --> 🚀 Code ra compile va yek file executable ba esm `esm_file_executable` dorost mikonad.
+    🔹 `g++-12 -c [esm_file_source].cpp`  --> 🧱 File object (`.o`) az file source dorost mikonad.
+    🔹 `g++-12 -Wall [esm_file_source].cpp`  --> ⚠️ Hameye warning-ha ra namayesh midahad.
+    🔹 `g++-12 -std=c++17 [esm_file_source].cpp` --> ⚙️ Estefade az standard C++17 dar compilation. (mitavanid `c++11`, `c++14`, `c++20` ra ham estefade konid).
+
+🛠 **Mesal-ha:**
+
+    $ g++-12 hello.cpp -o hello
+
+    🔹 Compile file `hello.cpp` va yek executable ba esm `hello` dorost mikonad.
+
+    $ g++-12 -Wall hello.cpp -o hello
+
+    🔹 Compile file `hello.cpp` va hameye warning-ha ra namayesh midahad va yek executable ba esm `hello` dorost mikonad.
+
+✅ **Mesal sade:**
+
+    $ g++-12 main.cpp functions.cpp -o myprogram
+
+    🔹 Compile file-haye `main.cpp` va `functions.cpp` va yek executable ba esm `myprogram` dorost mikonad. In mesal neshon midahad ke mitavanid chand file ra ba ham compile konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `g++-12` command is a C++ compiler. It takes C++ source code and translates it into machine code (binary) that the computer can execute. `g++-12` is version 12 of the GCC (GNU Compiler Collection) compiler for C++.
+
+⚙️ **Options:**
+    🔹 `g++-12 -o [executable_file_name] [source_file_name].cpp`  --> 🚀 Compiles the code and creates an executable file named `executable_file_name`.
+    🔹 `g++-12 -c [source_file_name].cpp`  --> 🧱 Creates an object file (`.o`) from the source file.
+    🔹 `g++-12 -Wall [source_file_name].cpp`  --> ⚠️ Displays all warnings during compilation.
+    🔹 `g++-12 -std=c++17 [source_file_name].cpp` --> ⚙️ Uses the C++17 standard for compilation. (you can also use `c++11`, `c++14`, `c++20`).
+
+🛠 **Examples:**
+
+    $ g++-12 hello.cpp -o hello
+
+    🔹 Compiles the `hello.cpp` file and creates an executable named `hello`.
+
+    $ g++-12 -Wall hello.cpp -o hello
+
+    🔹 Compiles the `hello.cpp` file, displays all warnings, and creates an executable named `hello`.
+
+✅ **Simple Example:**
+
+    $ g++-12 main.cpp functions.cpp -o myprogram
+
+    🔹 Compiles `main.cpp` and `functions.cpp` and creates an executable named `myprogram`. This example demonstrates how to compile multiple files together.

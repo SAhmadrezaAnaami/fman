@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-checkbuilddeps` baraye check kardan dependency ha-ye lazem baraye build kardan yek package Debian estefade mishavad. Yani, check mikonad aya hameye package ha-ye mored niaz baraye compile va link kardan code mojood hastand ya na.  Agar dependency-i kam bashad, error midehad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-d`  --> 📦 Faghat dependency ha-ye `Depends` ra check kon. Az `Build-Depends` chashm pooshi kon.  
+    🔹 `-i`  --> ℹ️ Namayesh etela'at bishtar dar morede dependency ha-ye gomshode.  
+    🔹 `-A`  --> ⚠️ Tamameh `Architecture: any` dependency ha ra dar nazar begir.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-checkbuilddeps debian/control
+    
+    🔹 Check dependency ha az file `debian/control`.
+
+    $ dpkg-checkbuilddeps -d debian/control
+
+    🔹 Faghat dependency ha-ye `Depends` ra check kon.
+
+✅ **Mesal sade:**
+
+    $ dpkg-checkbuilddeps debian/control
+    dpkg-checkbuilddeps: Depends: libgtk-3-dev, libglib2.0-dev
+    
+    🔹 Agar error bede ke dependency haye `libgtk-3-dev` va `libglib2.0-dev` nistand, bayad anha ra install konid ta betavanid package ra build konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-checkbuilddeps` command is used to check for the necessary build dependencies to build a Debian package. It checks if all the required packages for compiling and linking the code are present. If a dependency is missing, it reports an error.
+
+⚙️ **Options:**
+    🔹 `-d`  --> 📦 Only check `Depends` dependencies. Ignore `Build-Depends`.
+    🔹 `-i`  --> ℹ️ Show more information about the missing dependencies.
+    🔹 `-A`  --> ⚠️ Consider all `Architecture: any` dependencies.
+
+🛠 **Examples:**
+
+    $ dpkg-checkbuilddeps debian/control
+    
+    🔹 Check dependencies from the `debian/control` file.
+
+    $ dpkg-checkbuilddeps -d debian/control
+    
+    🔹 Only check `Depends` dependencies.
+
+✅ **Simple Example:**
+
+    $ dpkg-checkbuilddeps debian/control
+    dpkg-checkbuilddeps: Depends: libgtk-3-dev, libglib2.0-dev
+    
+    🔹 If it reports that dependencies like `libgtk-3-dev` and `libglib2.0-dev` are missing, you need to install them to be able to build the package.

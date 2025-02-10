@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-genbuildinfo` yek file `.buildinfo` misazad ke etela'ati dar bareye chگونگی sakhteh shodan بسته (package) Debian dar آن negah dari mishavad. In file dar vaghe yek namayesh az etela'at metadata package ast va baraye kontrol درستی و reproducibility sakht package estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-q`  --> 🤫 Kam kardaneh output (quiet mode). Faghat error-ha namayesh dade mishavand.
+    🔹 `-ccontrol-file` --> 📄 Estefade az file `control-file` be عنوان file control asli baraye package.
+    🔹 `-g` --> ➕ Ezafe kardaneh etela'at debugging (مانند symbols) be file `.buildinfo`.
+    🔹 `-fkey=value` --> ✍️  Taghir dadan ya ezafe kardaneh yek field be file `.buildinfo`.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-genbuildinfo
+
+    🔹 In dastoor yek file `.buildinfo` ba estefade az file `debian/control` va digar file-haye مربوطه misazad.
+
+    $ dpkg-genbuildinfo -q
+
+    🔹 Mesle mesal ghabl ast, ama hich output-i namayesh نمی دهد magar dar soorate vugoo error.
+
+    $ dpkg-genbuildinfo -f "Package-Type: debian-binary"
+
+    🔹 In dastoor yek field ba name "Package-Type" ba meghdare "debian-binary" be file `.buildinfo` ezafe mikonad.
+
+✅ **Mesal sade:**
+
+    $ dpkg-genbuildinfo -g > package.buildinfo
+
+    🔹 In command file `.buildinfo` ra ba etela'at debuging misazad va آن ra be `package.buildinfo` redirect mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-genbuildinfo` command generates a `.buildinfo` file that contains information about how a Debian package was built. This file is essentially a representation of the package metadata and is used for verifying the integrity and reproducibility of the package build.
+
+⚙️ **Options:**
+    🔹 `-q`  --> 🤫 Reduce output (quiet mode). Only errors are displayed.
+    🔹 `-ccontrol-file` --> 📄 Use `control-file` as the main control file for the package.
+    🔹 `-g` --> ➕ Add debugging information (such as symbols) to the `.buildinfo` file.
+    🔹 `-fkey=value` --> ✍️ Modify or add a field to the `.buildinfo` file.
+
+🛠 **Examples:**
+
+    $ dpkg-genbuildinfo
+
+    🔹 This command generates a `.buildinfo` file using the `debian/control` file and other related files.
+
+    $ dpkg-genbuildinfo -q
+
+    🔹 Similar to the previous example, but no output is displayed unless there is an error.
+
+    $ dpkg-genbuildinfo -f "Package-Type: debian-binary"
+
+    🔹 This command adds a field named "Package-Type" with the value "debian-binary" to the `.buildinfo` file.
+
+✅ **Simple Example:**
+
+    $ dpkg-genbuildinfo -g > package.buildinfo
+
+    🔹 This command generates the `.buildinfo` file with debug information and redirects it to `package.buildinfo`.

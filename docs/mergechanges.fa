@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mergechanges` baraye hamgam sazi (synchronize) taghirat bein branch-ha dar bazaar (bzr) estefade mishavad. Yani taghirati ke dar yek shakh (branch) dade shode ra ba shakh-e digar yeki mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mergechanges` --> 🔄  Faghat taghirat-e asli ra hamgam mikonad (default).
+    🔹 `mergechanges --preview` --> 👓  Pish az anjam hameye taghirat namayesh midahad ke che taghirati anjam khahad shod.
+    🔹 `mergechanges --force` --> ⚠️  Agar moshkelati vojood dashte bashad, ba zor taghirat ra anjam midahad (ba ehtiat estefade shavad!).
+    🔹 `mergechanges -d directory_name` --> 📁 Taghirat ra dar yek directory moshakhas anjam midahad.
+
+🛠 **Mesal-ha:**
+
+    $ mergechanges
+
+    🔹 Taghirat az shakh-e bala-dasti (parent branch) be shakh-e فعلی hamgam mishavad.
+
+    $ mergechanges --preview
+
+    🔹 Namayesh taghirati ke قرار ast anjam shavad, bedoon-e anke taghirati اعمال shavad.
+
+✅ **Mesal sade:**
+
+    $ mergechanges
+
+    🔹 Agar dar shakh-e shoma taghirati vojood dashte bashad va dar shakh-e bala-dasti ham taghirati dade shode bashad, in dastoor taghirat-e bala-dasti ra be shakh-e shoma ezafe mikonad, va agar تداخلی vojood dashte bashad, be shoma etela' midahad ta an ra hal konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mergechanges` command is used to synchronize changes between branches in Bazaar (bzr). It merges changes from one branch into another.
+
+⚙️ **Options:**
+    🔹 `mergechanges` --> 🔄 Merges only the fundamental changes (default).
+    🔹 `mergechanges --preview` --> 👓 Shows what changes will be made before actually applying them.
+    🔹 `mergechanges --force` --> ⚠️ Forces the merge even if there are conflicts (use with caution!).
+    🔹 `mergechanges -d directory_name` --> 📁 Merges changes in a specific directory.
+
+🛠 **Examples:**
+
+    $ mergechanges
+
+    🔹 Merges changes from the parent branch into the current branch.
+
+    $ mergechanges --preview
+
+    🔹 Displays the changes that are about to be made without applying any changes.
+
+✅ **Simple Example:**
+
+    $ mergechanges
+
+    🔹 If there are changes in your branch and also changes in the parent branch, this command adds the parent branch's changes to your branch. If there are any conflicts, it will notify you so you can resolve them.
+

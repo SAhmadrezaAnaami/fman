@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `duplicity` yek barnameye backup-giriye amne. In dastoor az `rsync`-e eftezahi estefade mikone ta backup-haye ezafi (incremental backups) besaze, va az `GnuPG` baraye encryption va emniyat estefade mikone.  Shoma mitunid backup-hato rooye mahalhaye mokhtalef zakhire konid, mesle USB drive, server-haye FTP/SFTP, Amazon S3, va kheili jaye dige.
+
+⚙️ **Gozine-ha:**
+    🔹 `duplicity full [source] [target]` --> 💾 Ye backup-e kamel az `[source]` migire va tu `[target]` zakhire mikone.
+    🔹 `duplicity incr [source] [target]` --> ➕ Ye backup-e ezafi az vaghti ke akharin backup gerefte shode, migire.
+    🔹 `duplicity restore [source] [target]` --> 🔄 File-ha ro az `[source]` be `[target]` bazmigardune (restore mikone).
+    🔹 `duplicity verify [target]` --> ✅ Check mikone ke backup-ha dorost kar mikonan.
+    🔹 `--encrypt-key [key-id]` --> 🔑 Key ID baraye encrypt kardane backup-ha.
+
+🛠 **Mesal-ha:**
+
+    $ duplicity full /home/user/Documents/ sftp://user@example.com//backup/documents
+
+    🔹 Ye backup-e kamel az directory Documents be server FTP/SFTP.
+
+    $ duplicity incr /home/user/Documents/ sftp://user@example.com//backup/documents
+
+    🔹 Ye backup-e ezafi az directory Documents be server FTP/SFTP.
+
+✅ **Mesal sade:**
+
+    $ duplicity restore sftp://user@example.com//backup/documents /home/user/RestoredDocuments
+
+    🔹 Directory Documents ro az server FTP/SFTP be directory RestoredDocuments tu /home/user/ restore mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `duplicity` command is a secure backup program. It uses the `rsync` algorithm to create incremental backups and `GnuPG` for encryption and security. You can store your backups in various locations, such as USB drives, FTP/SFTP servers, Amazon S3, and many others.
+
+⚙️ **Options:**
+    🔹 `duplicity full [source] [target]` --> 💾 Takes a full backup of `[source]` and stores it in `[target]`.
+    🔹 `duplicity incr [source] [target]` --> ➕ Takes an incremental backup since the last backup.
+    🔹 `duplicity restore [source] [target]` --> 🔄 Restores files from `[source]` to `[target]`.
+    🔹 `duplicity verify [target]` --> ✅ Verifies that the backups are working correctly.
+    🔹 `--encrypt-key [key-id]` --> 🔑 Key ID to use for encrypting the backups.
+
+🛠 **Examples:**
+
+    $ duplicity full /home/user/Documents/ sftp://user@example.com//backup/documents
+
+    🔹 Takes a full backup of the Documents directory to an FTP/SFTP server.
+
+    $ duplicity incr /home/user/Documents/ sftp://user@example.com//backup/documents
+
+    🔹 Takes an incremental backup of the Documents directory to an FTP/SFTP server.
+
+✅ **Simple Example:**
+
+    $ duplicity restore sftp://user@example.com//backup/documents /home/user/RestoredDocuments
+
+    🔹 Restores the Documents directory from the FTP/SFTP server to the RestoredDocuments directory in /home/user/.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzcmp` baraye moghayese kardan file-haye boz shode (compressed) ba estefade az bzip2 ba yek file sade estefade mishavad. Agar file-ha farghi nadashte bashand, chizi chap nemishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v`  --> 📢 Chap kardan etela'at bishtar dar morede moghayese.
+    🔹 `-s`  --> 🤫 Chap nakardan chizi va faghat code voroodi ra bargardan kardan.
+
+🛠 **Mesal-ha:**
+
+    $ bzcmp file.txt.bz2 file.txt
+
+    🔹 Moghayese file boz shode `file.txt.bz2` ba file sade `file.txt`.
+
+    $ bzcmp -v file1.txt.bz2 file1.txt
+
+    🔹 Moghayese file-ha ba chap kardane etela'at bishtar.
+
+✅ **Mesal sade:**
+
+    $ bzcmp file.txt.bz2 file.txt
+    file.txt.bz2 file.txt differ: char 1, line 1
+
+    🔹 Chap kardane inke file-ha ba ham fargh darand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzcmp` command is used to compare bzip2 compressed files with a regular file. If the files are identical, nothing is printed.
+
+⚙️ **Options:**
+    🔹 `-v`  --> 📢 Print more verbose information about the comparison.
+    🔹 `-s`  --> 🤫 Suppress all normal output; return exit codes only.
+
+🛠 **Examples:**
+
+    $ bzcmp file.txt.bz2 file.txt
+
+    🔹 Compare the compressed file `file.txt.bz2` with the regular file `file.txt`.
+
+    $ bzcmp -v file1.txt.bz2 file1.txt
+
+    🔹 Compare the files with verbose output.
+
+✅ **Simple Example:**
+
+    $ bzcmp file.txt.bz2 file.txt
+    file.txt.bz2 file.txt differ: char 1, line 1
+
+    🔹 Output indicating that the files differ.

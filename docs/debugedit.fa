@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debugedit` baraye tagheer dadan va virayesh kardan etela'at debug dar file-haye object ya executable estefade mishavad. In dastoor kheili pishrafte ast va oboor va tagheer dadan ghesmat haye debug file ha ro asan mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debugedit --dump=all <file>`  --> 📜 Namayesh hameye etela'at debug dar file.
+    🔹 `debugedit --change-section-name <oldname>=<newname> <file>`  --> ✏️ Tagheer dadan esm yek ghesmat az debug info.
+    🔹 `debugedit --remove-section=<section> <file>`  --> ❌ Hazf kardan yek ghesmat az etela'at debug.
+
+🛠 **Mesal-ha:**
+
+    $ debugedit --dump=all myprogram.o
+
+    🔹 Namayesh hameye etela'at debug file object `myprogram.o`.
+
+    $ debugedit --change-section-name .debug_info=.my_debug_info myprogram
+
+    🔹 Tagheer dadeh esm ghesmat ".debug_info" be ".my_debug_info" dar file `myprogram`.
+
+✅ **Mesal sade:**
+
+    $ debugedit --remove-section=.debug_line myprogram
+
+    🔹 Hazf ghesmat ".debug_line" az etela'at debug file executable `myprogram`. In kar mitone size file ro kam kone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debugedit` command is used to modify or edit debugging information in object or executable files. This is an advanced tool that enables navigating and altering debug sections within these files.
+
+⚙️ **Options:**
+    🔹 `debugedit --dump=all <file>`  --> 📜 Display all debug information in the file.
+    🔹 `debugedit --change-section-name <oldname>=<newname> <file>`  --> ✏️ Change the name of a debug information section.
+    🔹 `debugedit --remove-section=<section> <file>`  --> ❌ Remove a debug information section.
+
+🛠 **Examples:**
+
+    $ debugedit --dump=all myprogram.o
+
+    🔹 Display all debug information for the object file `myprogram.o`.
+
+    $ debugedit --change-section-name .debug_info=.my_debug_info myprogram
+
+    🔹 Change the name of the ".debug_info" section to ".my_debug_info" in the `myprogram` file.
+
+✅ **Simple Example:**
+
+    $ debugedit --remove-section=.debug_line myprogram
+
+    🔹 Remove the ".debug_line" section from the debug information of the executable file `myprogram`. This can reduce the file size.

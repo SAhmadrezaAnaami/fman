@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lastlog` baraye didan akharin zamane vorood (login) karbaran be system estefade mishavad. Agar karbari hich vaght vorood nakarde bashad, etela'ati namayesh dade nemishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lastlog` --> 👤 Namayesh akharin vorood baraye hameye karbaran.
+    🔹 `lastlog -u [username]` --> 🎯 Namayesh akharin vorood baraye karbar khas.
+    🔹 `lastlog -t [rooz]` --> 📅 Namayesh akharin vorood baraye karbarani ke dar [rooz]-haye gozashte vorood kardeand.
+
+🛠 **Mesal-ha:**
+
+    $ lastlog
+
+    🔹 Namayesh akharin vorood baraye hameye karbaran.
+
+    $ lastlog -u ali
+
+    🔹 Namayesh akharin vorood baraye karbar "ali".
+
+✅ **Mesal sade:**
+
+    $ lastlog -t 7
+
+    🔹 Namayesh akharin vorood baraye karbarani ke dar 7 rooze gozashte vorood kardeand. Karbarani ke bishtar az 7 rooz pish vorood kardeand, namayesh dade nemishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lastlog` command is used to examine the most recent login times of all users or a specific user on the system. If a user has never logged in, no information is displayed for that user.
+
+⚙️ **Options:**
+    🔹 `lastlog` --> 👤 Display the last login time for all users.
+    🔹 `lastlog -u [username]` --> 🎯 Display the last login time for a specific user.
+    🔹 `lastlog -t [days]` --> 📅 Display the last login time for users who logged in within the last [days].
+
+🛠 **Examples:**
+
+    $ lastlog
+
+    🔹 Display the last login time for all users.
+
+    $ lastlog -u alice
+
+    🔹 Display the last login time for the user "alice".
+
+✅ **Simple Example:**
+
+    $ lastlog -t 30
+
+    🔹 Display the last login time for users who logged in within the last 30 days. Users who logged in more than 30 days ago will not be displayed.

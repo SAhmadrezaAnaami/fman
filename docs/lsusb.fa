@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsusb` baraye liste kardan dastgah-haye USB ke be computer shoma vasl hastand, be kar miravad. Shoma mitavanid etela'ati mesle shekat-e sazande, ID-e mahsul, va speed-e etesal-e har dastgah ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsusb` --> 📜 Liste sade-ye hameye dastgah-haye USB.
+    🔹 `lsusb -v` --> 👀 Namayesh etela'at bishtar dar morede har dastgah (verbose).
+    🔹 `lsusb -t` --> 🌳 Namayesh derakhti-e vasl shodan-e dastgah-ha be hub-haye USB.
+
+🛠 **Mesal-ha:**
+
+    $ lsusb
+
+    🔹 Liste sade-ye dastgah-haye USB-e vasl shode.
+
+    $ lsusb -v | less
+
+    🔹 Namayesh etela'at kamel dar morede hameye dastgah-ha va estefade az `less` baraye safhe-bandi.
+
+✅ **Mesal sade:**
+
+    $ lsusb -d 046d:c52b
+
+    🔹 Faghat dastgahi ra namayesh midahad ke vendor ID `046d` va product ID `c52b` ra darad (mesla mouse ya keyboard-e Logitech).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsusb` command lists USB devices connected to your computer. You can see information like the manufacturer, product ID, and connection speed of each device.
+
+⚙️ **Options:**
+    🔹 `lsusb` --> 📜 Simple list of all USB devices.
+    🔹 `lsusb -v` --> 👀 Show more detailed information about each device (verbose).
+    🔹 `lsusb -t` --> 🌳 Display a tree-like diagram of how devices are connected to USB hubs.
+
+🛠 **Examples:**
+
+    $ lsusb
+
+    🔹 List connected USB devices.
+
+    $ lsusb -v | less
+
+    🔹 Display detailed information about all devices and use `less` for pagination.
+
+✅ **Simple Example:**
+
+    $ lsusb -d 046d:c52b
+
+    🔹 Displays only the device with vendor ID `046d` and product ID `c52b` (e.g., a Logitech mouse or keyboard).

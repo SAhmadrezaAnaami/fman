@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dep3changelog` baraye sakhtane file-haye "changelog" az etela'at format shode DEB3 (Debian Enhancement Proposal 3) estefade mishavad. In dastoor komak mikonad ta tarikhe taghirat yek project ra be soorate standard va ghabl-khani (readable) dar biyarid.  Be zaban sade tar, in dastoor taghirat ra az file DEB3 migirad va yek file changelog dorost mikonad ke moshakhas mikonad che taghirati dar version jadid anjam shode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--from-git`  --> 📂 Az repository Git estefade kon ta taghirat ra peyda konad.
+    🔹 `--output=FILENAME` --> 💾 Esme file khorooji ra moshakhas mikonad. Agar in gozine estefade nashavad, be soorate pishfarz (default) be stdout chap mishavad.
+    🔹 `--package=PACKAGE_NAME` --> 📦 Esme package ra moshakhas mikonad.
+    🔹 `--version=VERSION` --> 🔢 Version ra moshakhas mikonad.
+    🔹 `--help` --> ❓ Raahnama ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ dep3changelog --from-git --output=debian/changelog
+
+    🔹 Yek file changelog az etela'at Git dorost mikonad va dar `debian/changelog` zakhire mikonad.
+
+    $ dep3changelog --package=my-package --version=1.0 --output=changelog.txt
+
+    🔹 Yek file changelog baraye package `my-package` ba version `1.0` dorost mikonad va dar `changelog.txt` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ dep3changelog --from-git | less
+
+    🔹 Taghirat ra az Git migirad va dar terminal namayesh midahad (ba estefade az `less` baraye safhe-bandi).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dep3changelog` command is used to generate changelog files from DEB3 (Debian Enhancement Proposal 3) formatted information.  This helps create a standard and readable history of changes for a project.  Simply put, it takes change information from DEB3 formatted data and creates a changelog file detailing what has changed in a new version.
+
+⚙️ **Options:**
+    🔹 `--from-git`  --> 📂 Use the Git repository to find changes.
+    🔹 `--output=FILENAME` --> 💾 Specifies the output filename. If not used, output is printed to stdout by default.
+    🔹 `--package=PACKAGE_NAME` --> 📦 Specifies the package name.
+    🔹 `--version=VERSION` --> 🔢 Specifies the version.
+    🔹 `--help` --> ❓ Display help information.
+
+🛠 **Examples:**
+
+    $ dep3changelog --from-git --output=debian/changelog
+
+    🔹 Creates a changelog file from Git information and saves it to `debian/changelog`.
+
+    $ dep3changelog --package=my-package --version=1.0 --output=changelog.txt
+
+    🔹 Creates a changelog file for the package `my-package` version `1.0` and saves it to `changelog.txt`.
+
+✅ **Simple Example:**
+
+    $ dep3changelog --from-git | less
+
+    🔹 Retrieves changes from Git and displays them in the terminal (using `less` for pagination).
+

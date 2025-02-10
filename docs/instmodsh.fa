@@ -1,0 +1,67 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `instmodsh` baraye modiriat va kar ba module-haye system dar Gentoo Linux estefade mishavad. In dastoor beheton komak mikone module-ha ro load, unload, va etela'ati dar moredeshoon be dast biarid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `instmodsh list`  --> 📜 List kardan hameye module-haye mojood.
+    🔹 `instmodsh load <module_name>`  --> 🚀 Load kardan yek module be system.
+    🔹 `instmodsh unload <module_name>`  --> ⛔ Unload kardan yek module az system.
+    🔹 `instmodsh show <module_name>`  --> 👀 Namayesh etela'at dar morede yek module khass.
+
+🛠 **Mesal-ha:**
+
+    $ instmodsh list
+
+    🔹 List kardan hameye module-haye mojood dar system.
+
+    $ instmodsh load vboxguest
+
+    🔹 Load kardan module `vboxguest`.
+
+    $ instmodsh unload vboxguest
+
+    🔹 Unload kardan module `vboxguest`.
+
+✅ **Mesal sade:**
+
+    $ instmodsh show nvidia
+
+    🔹 Namayesh etela'at dar morede module `nvidia`, mesle path, dependencies va size.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `instmodsh` command is used for managing and working with system modules in Gentoo Linux. It helps you load, unload, and retrieve information about modules.
+
+⚙️ **Options:**
+    🔹 `instmodsh list`  --> 📜 List all available modules.
+    🔹 `instmodsh load <module_name>`  --> 🚀 Load a module into the system.
+    🔹 `instmodsh unload <module_name>`  --> ⛔ Unload a module from the system.
+    🔹 `instmodsh show <module_name>`  --> 👀 Show information about a specific module.
+
+🛠 **Examples:**
+
+    $ instmodsh list
+
+    🔹 List all available modules on the system.
+
+    $ instmodsh load vboxguest
+
+    🔹 Load the `vboxguest` module.
+
+    $ instmodsh unload vboxguest
+
+    🔹 Unload the `vboxguest` module.
+
+✅ **Simple Example:**
+
+    $ instmodsh show nvidia
+
+    🔹 Show information about the `nvidia` module, such as path, dependencies, and size.
+

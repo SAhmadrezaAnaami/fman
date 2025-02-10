@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-ranlib-12` baraye sakhtan va ya update kardan index (fehrest) dar archive library (.a) estefade mishavad. In dastoor kheili vaght-ha ba compiler GCC estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc-ranlib-12 archive.a` --> 📦 Sakhtan index baraye archive library `archive.a`.
+    🔹 `gcc-ranlib-12 -v archive.a` --> 📢 Namayesh etela'at bishtar dar morede amaliat.
+    🔹 `gcc-ranlib-12 --help`       --> ❓ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ gcc-ranlib-12 mylibrary.a
+
+    🔹 Sakhtan index baraye library `mylibrary.a`.
+
+    $ gcc-ranlib-12 -v mylibrary.a
+
+    🔹 Sakhtan index ba namayeshe etela'at bishtar.
+
+✅ **Mesal sade:**
+
+    $ gcc-ranlib-12 libutils.a
+
+    🔹 Ba ejraye in dastoor, agar library `libutils.a` index nadashte bashad, index misazad, va agar dashte bashad, update mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-ranlib-12` command is used to generate or update an index to a static archive (library) file `.a`. It's often used in conjunction with the GCC compiler.
+
+⚙️ **Options:**
+    🔹 `gcc-ranlib-12 archive.a` --> 📦 Create an index for the archive library `archive.a`.
+    🔹 `gcc-ranlib-12 -v archive.a` --> 📢 Verbose mode; show more information about the operation.
+    🔹 `gcc-ranlib-12 --help`       --> ❓ Display the help message.
+
+🛠 **Examples:**
+
+    $ gcc-ranlib-12 mylibrary.a
+
+    🔹 Create an index for the library `mylibrary.a`.
+
+    $ gcc-ranlib-12 -v mylibrary.a
+
+    🔹 Create an index with verbose output.
+
+✅ **Simple Example:**
+
+    $ gcc-ranlib-12 libutils.a
+
+    🔹 By running this command, if the library `libutils.a` does not have an index, it creates one; otherwise, it updates the existing index.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dirmngr` baraye modiriyat certificate-ha va dastrasi be server-haye کلیدی estefade mishavad, be vizhe baraye GnuPG.
+    Dar vaghe, `dirmngr` mesle yek vasete kar mikonad ke GnuPG ba donya-ye بیرونی ertebat برقرار konad baraye gereftan certificate-haye jadid ya چک کردن revocation list-ha (لیست سیاه).
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`  --> ℹ️ Namayesh version-e `dirmngr`.
+    🔹 `--help`  --> ❓ Namayesh rahnamaye estefade az `dirmngr`.
+    🔹 `--debug-level n` --> 🐞 تعیین sathe debug (n adad ast). هر che قدر adad bozorgtar bashad, etela'at bishtari chap mishavad.
+    🔹 `--refresh-keys`  --> 🔄 Az server-haye کلیدی certificate-haye jadid ra daryaft mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dirmngr --version
+
+    🔹 Namayesh version-e `dirmngr`.
+
+    $ dirmngr --refresh-keys keyserver.ubuntu.com
+
+    🔹 Daryaft va update کلیدها az keyserver Ubuntu.
+
+✅ **Mesal sade:**
+
+    $ dirmngr --help
+
+    🔹 Chap mikonad hameye gozine-ha va komak-ha-ye dastoor `dirmngr` ra.  In komak mikonad ke bedanid chetor az `dirmngr` estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dirmngr` command is used to manage certificates and access keyservers, primarily for GnuPG.
+    Essentially, `dirmngr` acts as an intermediary, allowing GnuPG to interact with the outside world to retrieve new certificates or check revocation lists.
+
+⚙️ **Options:**
+    🔹 `--version`  --> ℹ️ Display the version of `dirmngr`.
+    🔹 `--help`  --> ❓ Display help information for using `dirmngr`.
+    🔹 `--debug-level n` --> 🐞 Set the debug level (n is a number). The higher the number, the more information is printed.
+    🔹 `--refresh-keys`  --> 🔄 Retrieve new certificates from keyservers.
+
+🛠 **Examples:**
+
+    $ dirmngr --version
+
+    🔹 Display the version of `dirmngr`.
+
+    $ dirmngr --refresh-keys keyserver.ubuntu.com
+
+    🔹 Retrieve and update keys from the Ubuntu keyserver.
+
+✅ **Simple Example:**
+
+    $ dirmngr --help
+
+    🔹 Prints all the options and help for the `dirmngr` command. This helps you understand how to use `dirmngr`.

@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gp-display-text` baraye chap kardane matn ya natijeye yek dastoor dar GUI (Graphical User Interface) estefade mishavad. In dastoor be shoma komak mikonad ta natijeye dastoorat ra be soorate graffiki bebinid, baraye mesal, natijeye yek script python ya file-haye matni ra.
+
+⚙️ **Gozine-ha:**
+    🔹 `--text "matn"` --> 💬 Matni ke mikhahid chap konid ra moshakhas mikonad.
+    🔹 `--command "dastoor"` --> 🚀 Dastoori ke mikhahid ejra konid va natije-ash ra chap konid ra moshakhas mikonad.
+    🔹 `--title "unvan"` --> 🏷️ Unvane panjere-ye GUI ra moshakhas mikonad.
+    🔹 `--font "name,size"` --> 🖋️ Shokl va andaze-ye khat ra moshakhas mikonad (mesal: "Arial,12").
+    🔹 `--width num` --> 📐 Pahnaye panjere ra be pixel moshakhas mikonad.
+    🔹 `--height num` --> 📏 Bortariye panjere ra be pixel moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gp-display-text --text "Salam Donya!" --title "Payam"
+
+    🔹 Matne "Salam Donya!" ra dar yek panjere ba unvane "Payam" namayesh midahad.
+
+    $ gp-display-text --command "ls -l" --title "Directory Contents"
+
+    🔹 Natijeye dastoor `ls -l` ra dar yek panjere ba unvane "Directory Contents" namayesh midahad.
+
+    $ gp-display-text --command "python myscript.py" --title "Python Script Output" --font "Courier New,10"
+
+    🔹 Natijeye script python `myscript.py` ra dar yek panjere ba unvane "Python Script Output" va ba khat `Courier New` andazeye `10` namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ gp-display-text --text "Emrooz havva khoob ast."
+
+    🔹 Matne "Emrooz havva khoob ast." ra dar yek panjere-ye sade namayesh midahad.  In yek rah asan baraye namayesh dadane etela’at be soorate graffiki bedoone dastoorat پیچیده است.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gp-display-text` command is used to display text or the output of a command in a GUI (Graphical User Interface) window.  It allows you to view command results in a graphical format, such as the output of a Python script or text files.
+
+⚙️ **Options:**
+    🔹 `--text "text"` --> 💬 Specifies the text to be displayed.
+    🔹 `--command "command"` --> 🚀 Specifies the command to be executed and its output displayed.
+    🔹 `--title "title"` --> 🏷️ Specifies the title of the GUI window.
+    🔹 `--font "name,size"` --> 🖋️ Specifies the font name and size (e.g., "Arial,12").
+    🔹 `--width num` --> 📐 Specifies the width of the window in pixels.
+    🔹 `--height num` --> 📏 Specifies the height of the window in pixels.
+
+🛠 **Examples:**
+
+    $ gp-display-text --text "Hello World!" --title "Message"
+
+    🔹 Displays the text "Hello World!" in a window titled "Message".
+
+    $ gp-display-text --command "ls -l" --title "Directory Contents"
+
+    🔹 Displays the output of the `ls -l` command in a window titled "Directory Contents".
+
+    $ gp-display-text --command "python myscript.py" --title "Python Script Output" --font "Courier New,10"
+
+    🔹 Displays the output of the Python script `myscript.py` in a window titled "Python Script Output" using the `Courier New` font with size `10`.
+
+✅ **Simple Example:**
+
+    $ gp-display-text --text "Today's weather is nice."
+
+    🔹 Displays the text "Today's weather is nice." in a simple window. This provides an easy way to graphically display information without complicated commands.

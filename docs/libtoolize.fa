@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `libtoolize` baraye amade kardane yek project baraye estefade az Libtool be kar miravad. Libtool yek asbab (tool) ast ke komak mikonad library-ha ra be soorate portable dar platform-haye mokhtalef besazid.  `libtoolize` file-haye lazem va directory-ha ra ezafe mikonad ya update mikonad ta project shoma ba Libtool kar konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `libtoolize` --> 🚀 Ra’s andazi asasi ra anjam midahad.
+    🔹 `libtoolize --force` --> 💪 Hata agar file-ha ghablan vojood dashte bashand, dobare anha ra misazad.
+    🔹 `libtoolize --copy` --> 📝 File-ha ra copy mikonad be jaye inke link konad (dar vaghe copy kardan ra tarjih midahad).
+    🔹 `libtoolize --automake` --> ⚙️ File-haye lazem baraye Automake ra ham ezafe mikonad (agar estefade shavad).
+
+🛠 **Mesal-ha:**
+
+    $ libtoolize
+
+    🔹 Ra’s andazi Libtool dar directory kari فعلی (fe'li).
+
+    $ libtoolize --force --copy
+
+    🔹 Ra’s andazi Libtool ba copy kardane file-ha va ijad dobareye anha agar ghablan vojood dashte bashand.
+
+✅ **Mesal sade:**
+
+    $ libtoolize && autoreconf -fi
+
+    🔹 Aval Libtool ra ra’s andazi mikonad va bad az an `autoreconf -fi` ra ejra mikonad ta configuration script-ha dobare sakhte shavand. In kar kheyli vaght-ha bad az `libtoolize` lazem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `libtoolize` command prepares a project for using Libtool.  Libtool is a tool that helps you build portable libraries across different platforms. `libtoolize` adds or updates the necessary files and directories so your project can work with Libtool.
+
+⚙️ **Options:**
+    🔹 `libtoolize` --> 🚀 Performs the basic initialization.
+    🔹 `libtoolize --force` --> 💪 Recreates files even if they already exist.
+    🔹 `libtoolize --copy` --> 📝 Copies files instead of linking (prefers copying).
+    🔹 `libtoolize --automake` --> ⚙️ Also adds files needed for Automake (if used).
+
+🛠 **Examples:**
+
+    $ libtoolize
+
+    🔹 Initializes Libtool in the current working directory.
+
+    $ libtoolize --force --copy
+
+    🔹 Initializes Libtool, copying files and recreating them if they already exist.
+
+✅ **Simple Example:**
+
+    $ libtoolize && autoreconf -fi
+
+    🔹 First initializes Libtool, and then runs `autoreconf -fi` to regenerate the configuration scripts.  This is often necessary after running `libtoolize`.

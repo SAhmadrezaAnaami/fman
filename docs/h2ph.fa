@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `h2ph` barname'i ast ke file-haye sar заголовка C ra be file-haye Perl tarjome mikonad. In kar baraye estefade az C library-ha dar barname-haye Perl asan mikonad. Yani shoma mitavanid function-ha va constant-haye zabane C ra dar barname-haye Perl estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `h2ph` --> 🔄 Hameye file-haye `.h` ra dar directory jari taghir midahad.
+    🔹 `h2ph /path/be/file.h` --> 🎯 Faghat file `.h` mored nazar ra taghir midahad.
+    🔹 `h2ph -d /path/be/output/directory` --> 📁 File-haye Perl ra dar yek directory khass save mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ h2ph
+    
+    🔹 Hameye file-haye `.h` ra dar directory jari be file-haye `.ph` tabdil mikonad.
+
+    $ h2ph /usr/include/stdio.h
+
+    🔹 Faghat file `stdio.h` ra be `stdio.ph` tabdil mikonad.
+
+✅ **Mesal sade:**
+
+    $ h2ph /usr/include/math.h
+
+    🔹 File `math.h` be `math.ph` tabdil mishavad, va shoma mitavanid function-haye riyazi ra az C dar barname-haye Perl estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `h2ph` command is a program that translates C header files into Perl files. This makes it easier to use C libraries in Perl programs. It allows you to use C functions and constants within your Perl code.
+
+⚙️ **Options:**
+    🔹 `h2ph` --> 🔄 Converts all `.h` files in the current directory.
+    🔹 `h2ph /path/to/file.h` --> 🎯 Converts only the specified `.h` file.
+    🔹 `h2ph -d /path/to/output/directory` --> 📁 Saves the Perl files in a specific directory.
+
+🛠 **Examples:**
+
+    $ h2ph
+    
+    🔹 Converts all `.h` files in the current directory to `.ph` files.
+
+    $ h2ph /usr/include/stdio.h
+
+    🔹 Converts only the `stdio.h` file to `stdio.ph`.
+
+✅ **Simple Example:**
+
+    $ h2ph /usr/include/math.h
+
+    🔹 The `math.h` file is converted to `math.ph`, and you can use math functions from C in your Perl programs.
+

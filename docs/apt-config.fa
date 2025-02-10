@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-config` baraye gereftan etela'at configuration az systeme APT (Advanced Package Tool) estefade mishavad. In dastoor be shoma komak mikonad ta be fahmid ke APT chegoone setup shode ast, masalan az koja package-ha ra download mikonad ya chegoone caching mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `apt-config dump`  --> 📜 Namayesh hameye configuration-haye APT. Kheyli toolani ast, ama hame chiz ra neshan midahad.
+    🔹 `apt-config shell` --> 🐚 Baz kardan yek shell interactive ke shoma mitavanid az an baraye soal kardan dar mored configuration estefade konid.
+    🔹 `apt-config --version` --> ℹ️ Namayesh versiyon apt-config.
+
+🛠 **Mesal-ha:**
+
+    $ apt-config dump
+
+    🔹 Namayesh hameye configuration-haye APT.
+
+    $ apt-config shell
+
+    🔹 Baz kardan yek shell interactive. Dar anja, mitavanid chizhaii mesle `Acquire::http::Proxy;` ra soal konid.
+
+✅ **Mesal sade:**
+
+    $ apt-config shell
+    apt-config:/> Acquire::http::Proxy;
+    Acquire::http::Proxy "false";
+    apt-config:/> quit
+
+    🔹 In mesal yek shell apt-config baz mikonad, proxy HTTP ra soal mikonad, va natije "false" ast, yani proxy HTTP setup nashode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-config` command is used to retrieve configuration information from the APT (Advanced Package Tool) system. It helps you understand how APT is set up, such as where it downloads packages from or how it handles caching.
+
+⚙️ **Options:**
+    🔹 `apt-config dump`  --> 📜 Display all APT configuration settings. This can be very lengthy, but shows everything.
+    🔹 `apt-config shell` --> 🐚 Opens an interactive shell that you can use to query the configuration.
+    🔹 `apt-config --version` --> ℹ️ Display the version of apt-config.
+
+🛠 **Examples:**
+
+    $ apt-config dump
+
+    🔹 Display all APT configuration settings.
+
+    $ apt-config shell
+
+    🔹 Open an interactive shell.  Within it, you can query things like `Acquire::http::Proxy;`.
+
+✅ **Simple Example:**
+
+    $ apt-config shell
+    apt-config:/> Acquire::http::Proxy;
+    Acquire::http::Proxy "false";
+    apt-config:/> quit
+
+    🔹 This example opens an apt-config shell, queries the HTTP proxy setting, and the result is "false," indicating no HTTP proxy is configured.

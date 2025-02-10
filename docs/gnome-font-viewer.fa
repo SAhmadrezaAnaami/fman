@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-font-viewer` baraye didan va barrasi font-ha (fonts) dar mohit GNOME be kar miravad. Ba in dastoor, mitoonid font-ha ro bebinid, mesal-ha az matn ba anha neveshte va vizhegi-haye font ro check konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-font-viewer [FILE]`  --> 📁 Baz kardane font az yek file. Agar file name dade nashe, font viewer khali baz mishe.
+    🔹 `gnome-font-viewer --help`  --> ❓ Namayesh dadane rahnamaye dastoor.
+    🔹 `gnome-font-viewer --version` --> ℹ️ Namayesh dadane version e barname.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-font-viewer /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+    🔹 Baz kardane font "DejaVuSans.ttf" az masir mored nazar.
+
+    $ gnome-font-viewer
+
+    🔹 Baz kardane barnameye font viewer be soorat khali, ke shoma betoonid az dakhel barname font ha ro baz konid.
+
+✅ **Mesal sade:**
+
+    $ gnome-font-viewer --version
+
+    🔹 Namayesh version e `gnome-font-viewer`. Az in dastoor estefade konid ta motmaen shavid barname sahih nasb shode va az che versioni estefade mikonid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-font-viewer` command is used to view and inspect fonts in the GNOME environment. It allows you to see how fonts look, preview text examples, and check font properties.
+
+⚙️ **Options:**
+    🔹 `gnome-font-viewer [FILE]`  --> 📁 Opens a font from a specified file. If no file is specified, the font viewer opens empty.
+    🔹 `gnome-font-viewer --help`  --> ❓ Displays help information about the command.
+    🔹 `gnome-font-viewer --version` --> ℹ️ Displays the version number of the program.
+
+🛠 **Examples:**
+
+    $ gnome-font-viewer /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+    🔹 Opens the "DejaVuSans.ttf" font from the specified path.
+
+    $ gnome-font-viewer
+
+    🔹 Opens the font viewer application in an empty state, allowing you to open fonts from within the application.
+
+✅ **Simple Example:**
+
+    $ gnome-font-viewer --version
+
+    🔹 Displays the version of `gnome-font-viewer`. Use this command to verify that the program is correctly installed and to know which version you are using.

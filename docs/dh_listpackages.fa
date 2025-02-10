@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_listpackages` baraye dorost kardane list-e package-haye Debian dar file `debian/control` estefade mishavad. In dastoor be shoma komak mikonad ke package-haye lazem baraye build shodan ra moshakhas konid. Agar package-haye binary-e shoma az name-haye motefaveti estefade mikonand, in dastoor kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 🚫 Package-ha ra dar `debian/control` ezafe nakon, faghat name anha ra chap kon.
+    🔹 `-p<package>` --> 📦 Faghat package-e `<package>` ra process kon.  Agar in gozine estefade shavad, `dh_listpackages` faghat field-e `Package` az in package ra update mikonad.
+    🔹 `--name=name` --> 🏷️ Package-e "name" ra process kon.
+
+🛠 **Mesal-ha:**
+
+    $ dh_listpackages
+    
+    🔹 List-e package-ha ra dorost mikonad va dar `debian/control` update mikonad.
+
+    $ dh_listpackages -n
+    
+    🔹 Faghat list-e package-ha ra chap mikonad bedoone update kardane `debian/control`.
+
+✅ **Mesal sade:**
+
+    $ dh_listpackages -pmyapp
+    
+    🔹 Faghat package-e `myapp` ra process mikonad va field-e `Package` an ra dar `debian/control` update mikonad. In mofid ast agar shoma chandin package dashte bashid va bekhahid faghat yek package-e khas ra update konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_listpackages` command is used to generate a list of Debian packages in the `debian/control` file.  This tool helps you specify the necessary packages for building. It's particularly useful if your binary packages use different names.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 🚫 Do not add packages to `debian/control`, only print their names.
+    🔹 `-p<package>` --> 📦 Only process the `<package>` package. If this option is used, `dh_listpackages` will only update the `Package` field of this package.
+    🔹 `--name=name` --> 🏷️ Process the "name" package.
+
+🛠 **Examples:**
+
+    $ dh_listpackages
+
+    🔹 Generates and updates the package list in `debian/control`.
+
+    $ dh_listpackages -n
+
+    🔹 Only prints the package list without updating `debian/control`.
+
+✅ **Simple Example:**
+
+    $ dh_listpackages -pmyapp
+
+    🔹 Processes only the `myapp` package and updates its `Package` field in `debian/control`. This is useful if you have multiple packages and want to update only a specific one.

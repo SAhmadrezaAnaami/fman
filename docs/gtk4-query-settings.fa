@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk4-query-settings` baraye gereftan va namayesh dadan tanzimat GTK4 az system estefade mishavad. In dastoor be shoma komak mikonad ta bebinid che tanzimati dar GTK4 fa’al hastand va che meghdari daran.
+
+⚙️ **Gozine-ha:**
+    🔹 `--all` --> 📜 Namayesh hameye tanzimat GTK4.
+    🔹 `--name=setting-name` --> 👀 Namayesh dadeye yek tanzimate khass (masalan: `gtk-theme-name`).
+    🔹 `--help` --> ❓ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ gtk4-query-settings --all
+
+    🔹 Namayesh hameye tanzimat GTK4 dar system.
+
+    $ gtk4-query-settings --name=gtk-theme-name
+
+    🔹 Namayesh name theme GTK4 fa’al.
+
+✅ **Mesal sade:**
+
+    $ gtk4-query-settings --name=gtk-font-name
+
+    🔹 Agar pasokhi bargasht, pas name font GTK4 dar system namayesh dade mishavad. Agar javabi nabashad, yaani tanzimati baraye in font vojood nadarad ya moshkeli vojood darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk4-query-settings` command is used to retrieve and display GTK4 settings from the system. This command helps you see which GTK4 settings are active and their values.
+
+⚙️ **Options:**
+    🔹 `--all` --> 📜 Display all GTK4 settings.
+    🔹 `--name=setting-name` --> 👀 Display the value of a specific setting (e.g., `gtk-theme-name`).
+    🔹 `--help` --> ❓ Display the command's help information.
+
+🛠 **Examples:**
+
+    $ gtk4-query-settings --all
+
+    🔹 Display all GTK4 settings in the system.
+
+    $ gtk4-query-settings --name=gtk-theme-name
+
+    🔹 Display the name of the active GTK4 theme.
+
+✅ **Simple Example:**
+
+    $ gtk4-query-settings --name=gtk-font-name
+
+    🔹 If a response is returned, it displays the name of the GTK4 font used in the system. If there's no output, it means either there is no custom setting for the font, or there is a problem.

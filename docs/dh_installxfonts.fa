@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installxfonts` baraye nasb kardan font-haye X Windows dar pakage Debian estefade mishavad. In dastoor file-haye font ra az jaye aslyesh copy mikonad be directory `debian/tmp/usr/share/fonts/X11`. Hamchenin, file-haye `fonts.dir` va `fonts.alias` ra update mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p package` --> 📦 Specify mikonad ke font-ha bayad dar kodam pakage nasb shavad. Agar esme pakage ra nadehid, az pakage aval estefade mikonad.
+    🔹 `--sourcedir dir` --> 📁 Directory-i ke file-haye font az anja copy mishavad ra moshakhas mikonad.
+    🔹 `--no-automatic-dirs` --> 🚫 Az sakhtane directory-haye otomatiki dar `debian/tmp/usr/share/fonts/X11` jelogiri mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installxfonts
+
+    🔹 Copy kardan hameye file-haye font az `debian/fonts/` be directory nasbe font va update kardan `fonts.dir` va `fonts.alias`.
+
+    $ dh_installxfonts -p mypackage --sourcedir resources/fonts
+
+    🔹 Copy kardan font-ha az directory `resources/fonts/` be pakage `mypackage`.
+
+✅ **Mesal sade:**
+
+    $ dh_installxfonts
+
+    🔹 File-haye font dar directory `debian/tmp/usr/share/fonts/X11` copy mishavand va file-haye metadata font update mishavad. Agar directory `debian/fonts/` vojood dashte bashad, file-ha az anja copy mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installxfonts` command is used to install X Windows fonts in a Debian package. It copies font files from their source location to `debian/tmp/usr/share/fonts/X11` and updates the `fonts.dir` and `fonts.alias` files accordingly.
+
+⚙️ **Options:**
+    🔹 `-p package` --> 📦 Specifies which package the fonts should be installed into. If no package is specified, it defaults to the first package.
+    🔹 `--sourcedir dir` --> 📁 Specifies the directory from which the font files will be copied.
+    🔹 `--no-automatic-dirs` --> 🚫 Prevents the automatic creation of directories in `debian/tmp/usr/share/fonts/X11`.
+
+🛠 **Examples:**
+
+    $ dh_installxfonts
+
+    🔹 Copies all font files from `debian/fonts/` to the installation directory and updates `fonts.dir` and `fonts.alias`.
+
+    $ dh_installxfonts -p mypackage --sourcedir resources/fonts
+
+    🔹 Copies fonts from the `resources/fonts/` directory into the `mypackage` package.
+
+✅ **Simple Example:**
+
+    $ dh_installxfonts
+
+    🔹 Font files are copied to the `debian/tmp/usr/share/fonts/X11` directory, and font metadata files are updated. If a `debian/fonts/` directory exists, files are copied from there.

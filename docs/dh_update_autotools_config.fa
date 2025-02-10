@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_update_autotools_config` baraye update kardan file-haye configuration autotools dar yek package Debian estefade mishavad. In dastoor komak mikonad ke build system az etela'at dorost estefade konad vaghti ke package sakhte mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--no-auto-configure` --> 🚫 Az auto-configure nashodan dar zaman build motmaen shavid.
+    🔹 `--merge-config`       --> ➕ File-haye config ra ba ham merge konid.
+    🔹 `--config-file`=`<file>` --> ⚙️ Estefade az yek file config khas.
+
+🛠 **Mesal-ha:**
+
+    $ dh_update_autotools_config
+
+    🔹 Update file-haye configuration autotools ba estefade az default setting-ha.
+
+    $ dh_update_autotools_config --no-auto-configure
+
+    🔹 Update file-haye configuration autotools va az auto-configure nashodan motmaen shavid.
+
+✅ **Mesal sade:**
+
+    $ dh_update_autotools_config
+
+    🔹 Ba ejraye in dastoor, file-haye configuration autotools dar pooshe build update mishavand, be tori ke build system mitavanad az anha baraye sakhtane package estefade konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_update_autotools_config` command is used to update Autotools configuration files in a Debian package. This command helps ensure that the build system uses correct information when the package is being built.
+
+⚙️ **Options:**
+    🔹 `--no-auto-configure` --> 🚫 Ensure no auto-configuration happens during the build.
+    🔹 `--merge-config`       --> ➕ Merge configuration files.
+    🔹 `--config-file`=`<file>` --> ⚙️ Use a specific configuration file.
+
+🛠 **Examples:**
+
+    $ dh_update_autotools_config
+
+    🔹 Update Autotools configuration files using default settings.
+
+    $ dh_update_autotools_config --no-auto-configure
+
+    🔹 Update Autotools configuration files and ensure no auto-configuration happens.
+
+✅ **Simple Example:**
+
+    $ dh_update_autotools_config
+
+    🔹 By running this command, the Autotools configuration files in the build directory are updated, so the build system can use them to build the package.
+

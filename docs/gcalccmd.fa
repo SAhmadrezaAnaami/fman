@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcalccmd` yek abzar khate farman (command line) baraye hesabat riazi va tabdil vahedeha (unit conversions) dar GNOME Calculator ast. Ba estefade az in dastoor, mitavanid hesab-ketab-haye pishrafte ra dar terminal anjam dahid. ➕➖➗
+
+⚙️ **Gozine-ha:**
+    🔹 `gcalccmd --calculate='expression'` --> ➕➖➗ Mohasebeye yek expression riazi mesle `2+2*3`.
+    🔹 `gcalccmd --units-from='value unit' --units-to='unit'` --> 📏 Tabdil vahedeha mesle `100 cm to inch`.
+    🔹 `gcalccmd --float`  --> 🔢 Namayesh natije be soorate adad ashari (floating-point).
+    🔹 `gcalccmd --help` --> ❓ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ gcalccmd --calculate='sqrt(16) + 5'
+
+    🔹 Mohasebeye جذر 16 jam’e 5.
+
+    $ gcalccmd --units-from='1 meter' --units-to='feet'
+
+    🔹 Tabdil 1 meter be foot.
+
+✅ **Mesal sade:**
+
+    $ gcalccmd --calculate='sin(30 degrees)' --float
+
+    🔹 Mohasebeye sinuse 30 daraje va namayesh natije be soorate adad ashari.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcalccmd` command is a command-line tool for performing mathematical calculations and unit conversions using the GNOME Calculator.  It allows advanced calculations to be done directly in the terminal. ➕➖➗
+
+⚙️ **Options:**
+    🔹 `gcalccmd --calculate='expression'` --> ➕➖➗ Calculate a mathematical expression such as `2+2*3`.
+    🔹 `gcalccmd --units-from='value unit' --units-to='unit'` --> 📏 Convert units, for example `100 cm to inch`.
+    🔹 `gcalccmd --float`  --> 🔢 Display the result as a floating-point number.
+    🔹 `gcalccmd --help` --> ❓ Display the command help.
+
+🛠 **Examples:**
+
+    $ gcalccmd --calculate='sqrt(16) + 5'
+
+    🔹 Calculate the square root of 16 plus 5.
+
+    $ gcalccmd --units-from='1 meter' --units-to='feet'
+
+    🔹 Convert 1 meter to feet.
+
+✅ **Simple Example:**
+
+    $ gcalccmd --calculate='sin(30 degrees)' --float
+
+    🔹 Calculate the sine of 30 degrees and display the result as a floating-point number.

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ipcrm` baraye pak kardan (remove) resource-haye IPC (Inter-Process Communication) az system estefade mishavad. Resource-haye IPC shamel message queue-ha, shared memory segment-ha, va semaphore set-ha mishavand. Agar yek barname resource-haye IPC ra bad az tamam shodan kar pak nakone, `ipcrm` mitoone baraye azad kardane in resource-ha be kar bere.
+
+⚙️ **Gozine-ha:**
+    🔹 `ipcrm -q < شناسه_صف >`  --> 🗑️ Saf-e payam (message queue) ba ID moshakhas ra pak mikonad.
+    🔹 `ipcrm -m < شناسه_حافظه >` --> 💾 Segment-e shared memory ba ID moshakhas ra pak mikonad.
+    🔹 `ipcrm -s < شناسه_سمافور >` --> 🚦 Set-e semaphore ba ID moshakhas ra pak mikonad.
+    🔹 `ipcrm --all < نوع_منبع >` --> 💥 Hameye manabe az yek no-e khass (masalan message queue ya shared memory) ra pak mikonad. BAYAD ba ehtiyat estefade shavad!
+
+🛠 **Mesal-ha:**
+
+    $ ipcrm -q 12345
+
+    🔹 Saf-e payam ba ID "12345" ra hazf mikonad.
+
+    $ ipcrm -m 67890
+
+    🔹 Segment-e shared memory ba ID "67890" ra hazf mikonad.
+
+    $ ipcrm --all msg
+
+    🔹 Hameye message queue-ha ra hazf mikonad (ba ehtiyat estefade shavad!).
+
+✅ **Mesal sade:**
+
+    $ ipcrm -q 42
+
+    🔹 Agar saf-e payami ba ID 42 vojud dashte bashad, hazf mishavad. Agar vojood nadashte bashad, error midehad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ipcrm` command is used to remove IPC (Inter-Process Communication) resources from the system. IPC resources include message queues, shared memory segments, and semaphore sets. If a program doesn't clean up its IPC resources after finishing, `ipcrm` can be used to free them.
+
+⚙️ **Options:**
+    🔹 `ipcrm -q < queue_id >` --> 🗑️ Removes the message queue with the specified ID.
+    🔹 `ipcrm -m < shmid >` --> 💾 Removes the shared memory segment with the specified ID.
+    🔹 `ipcrm -s < semid >` --> 🚦 Removes the semaphore set with the specified ID.
+    🔹 `ipcrm --all < resource_type >` --> 💥 Removes all resources of a specific type (e.g., message queues or shared memory). MUST be used with caution!
+
+🛠 **Examples:**
+
+    $ ipcrm -q 12345
+
+    🔹 Removes the message queue with ID "12345".
+
+    $ ipcrm -m 67890
+
+    🔹 Removes the shared memory segment with ID "67890".
+
+    $ ipcrm --all msg
+
+    🔹 Removes all message queues (use with caution!).
+
+✅ **Simple Example:**
+
+    $ ipcrm -q 42
+
+    🔹 If a message queue with ID 42 exists, it will be removed. If it doesn't exist, an error will be shown.

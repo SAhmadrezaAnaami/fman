@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dd` baraye copy kardan va tabdil kardan file-ha estefade mishavad.  In dastoor kheili ghodratmand ast va mitooneh baraye backup gereftan, clone kardan disk-ha, va tabdil format file-ha bekar bere.  
+
+⚙️ **Gozine-ha:**
+    🔹 `dd if=FILE`   -->  📥  File-i ro ke mikhay copy koni ro moshakhas mikone.  Age mikhay az yek device copy koni, name device ro bejay FILE benevis.
+    🔹 `dd of=FILE`   -->  📤  File-i ro ke mikhay etela'at dar oon zakhire beshe ro moshakhas mikone.  Age mikhay rooye yek device zakhire koni, name device ro benevis.
+    🔹 `dd bs=SIZE`   -->  📦  Andazeye block-ha ro baraye copy kardan moshakhas mikone. Andazeye bozorgtar mitooneh sar'at ro behtar kone. Masalan `bs=4M` yani block size 4 megabyte.
+    🔹 `dd count=NUMBER` -->  🔢  Tedad block-ha-i ke mikhay copy koni ro moshakhas mikone.
+    🔹 `dd conv=MODE`   -->  🔄  Tabdilat-i ke mikhay rooye etela'at anjam bedi ro moshakhas mikone.  Masalan `conv=sync` baraye ezafe kardan byte-haye khali hast ta block-ha kamel beshan.
+
+🛠 **Mesal-ha:**
+
+    $ dd if=/dev/sda of=disk.img bs=4M
+    
+    🔹  Az tamam disk /dev/sda yek image migire va dar file "disk.img" zakhire mikone.  Block size 4 megabyte ast.
+
+    $ dd if=input.txt of=output.txt conv=ucase
+    
+    🔹  File "input.txt" ro copy mikone be file "output.txt" va hameye horoof koochak ro be horoof bozorg tabdil mikone.
+
+✅ **Mesal sade:**
+
+    $ dd if=/dev/zero of=empty_file bs=1M count=10
+    
+    🔹  Yek file be name "empty_file" misaze ba size 10 megabyte.  Manba' etela'at /dev/zero ast (yani etela'at khali). In yek rahe asoone baraye sakhtan file-haye bozorg testy.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dd` command is used to copy and convert files. It is a powerful utility that can be used for backing up data, cloning disks, and converting file formats.
+
+⚙️ **Options:**
+    🔹 `dd if=FILE`   -->  📥  Specifies the input file or device to copy from. If you want to copy from a device, specify the device name instead of a file.
+    🔹 `dd of=FILE`   -->  📤  Specifies the output file or device to copy to. If you want to write to a device, specify the device name.
+    🔹 `dd bs=SIZE`   -->  📦  Sets the block size for copying. A larger block size can improve performance. For example, `bs=4M` means a block size of 4 megabytes.
+    🔹 `dd count=NUMBER` -->  🔢  Specifies the number of blocks to copy.
+    🔹 `dd conv=MODE`   -->  🔄  Specifies conversion options to apply to the data. For example, `conv=sync` adds padding bytes to ensure complete blocks.
+
+🛠 **Examples:**
+
+    $ dd if=/dev/sda of=disk.img bs=4M
+    
+    🔹  Creates an image of the entire disk /dev/sda and saves it to the file "disk.img". The block size is 4 megabytes.
+
+    $ dd if=input.txt of=output.txt conv=ucase
+    
+    🔹  Copies the file "input.txt" to "output.txt" and converts all lowercase characters to uppercase.
+
+✅ **Simple Example:**
+
+    $ dd if=/dev/zero of=empty_file bs=1M count=10
+    
+    🔹  Creates a file named "empty_file" with a size of 10 megabytes. The source of the data is /dev/zero (which provides null bytes). This is an easy way to create large test files.

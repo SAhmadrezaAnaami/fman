@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apport-cli` yek barname-ye command-line ast baraye gereftan gozaresh az crash-ha (barname-haee ke be nahve gheyre montazere baste mishavand) va ersal an be Markete Ubuntu baraye baresi va ref’e moshkelat. In dastoor be shoma komak mikonad etela’at crash-ha ra az rahe terminal ersal konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `apport-cli -c /path/to/crashreport`  --> 💥 Gozaresh crash-i ke ghablan save shode ra mifrestad.
+    🔹 `apport-cli -p package_name` --> 📦 Gozaresh crash az yek package khass ra mifrestad.
+    🔹 `apport-cli --version`       --> ℹ️ Version e `apport-cli` ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ apport-cli -c /var/crash/_usr_bin_name.1000.crash
+
+    🔹 Gozaresh crash-i ke dar ` /var/crash/` zakhire shode ra mifrestad.
+
+    $ apport-cli -p firefox
+
+    🔹 Gozaresh crash-haye marboot be `firefox` ra mifrestad.
+
+✅ **Mesal sade:**
+
+    $ apport-cli
+
+    🔹 Agar be unvane `root` run shavad, crash report-haye jadid ra be soorat interactive mifrestad va az shoma soalati miporsad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apport-cli` command is a command-line tool for collecting crash reports (reports of programs that unexpectedly close) and submitting them to the Ubuntu Marketplace for analysis and troubleshooting. This tool allows you to submit crash information through the terminal.
+
+⚙️ **Options:**
+    🔹 `apport-cli -c /path/to/crashreport`  --> 💥 Submits a crash report that was previously saved.
+    🔹 `apport-cli -p package_name` --> 📦 Submits crash reports related to a specific package.
+    🔹 `apport-cli --version`       --> ℹ️ Shows the version of `apport-cli`.
+
+🛠 **Examples:**
+
+    $ apport-cli -c /var/crash/_usr_bin_name.1000.crash
+
+    🔹 Submits the crash report saved in `/var/crash/`.
+
+    $ apport-cli -p firefox
+
+    🔹 Submits crash reports related to `firefox`.
+
+✅ **Simple Example:**
+
+    $ apport-cli
+
+    🔹 If run as `root`, it interactively submits new crash reports, prompting you with questions.

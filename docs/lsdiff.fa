@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsdiff` baraye check kardan patch file-ha (file-haye taghirat) estefade mishavad. In dastoor be shoma komak mikonad tafavot-haye beyn file-ha ro bebinid va etminan hasil konid ke patch be dorosti apply mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsdiff patchfile`  --> 📄 Check kardan yek file patch.
+    🔹 `lsdiff -`  --> 📤 Khandan patch az standard input.
+    🔹 `lsdiff -p[n]` --> ✂️ Bardashtan `n` ta pooshe az path name-ha (defult `n=1`).
+    🔹 `lsdiff --strip=[n]` --> ✂️ Hamoon kar-e `-p[n]` ro anjam mide.
+    🔹 `lsdiff --ignore-space-change` --> 💨 Etagh-e taghir dar space-ha ro nadide gereftan.
+    🔹 `lsdiff --ignore-whitespace` --> ⬜️ Etagh-e whitespace ro be koll nadide gereftan.
+
+🛠 **Mesal-ha:**
+
+    $ lsdiff mypatch.patch
+
+    🔹 Check kardan file patch `mypatch.patch`.
+
+    $ cat mypatch.patch | lsdiff -
+
+    🔹 Check kardan patch az standard input (az tarigh pipe).
+
+    $ lsdiff -p0 mypatch.patch
+
+    🔹 Estefade az path name-haye complete file-ha dar patch.
+
+✅ **Mesal sade:**
+
+    $ lsdiff --ignore-space-change mypatch.patch
+
+    🔹 Check kardan file patch `mypatch.patch` va nadide gereftan taghirat dar space-ha. In vaghti mofid ast ke taghirat space-ha mohem nabashand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsdiff` command is used to check patch files. It helps you view the differences between files and ensure that the patch can be applied correctly.
+
+⚙️ **Options:**
+    🔹 `lsdiff patchfile`  --> 📄 Check a patch file.
+    🔹 `lsdiff -`  --> 📤 Read the patch from standard input.
+    🔹 `lsdiff -p[n]` --> ✂️ Strip `n` leading directories from file names (default `n=1`).
+    🔹 `lsdiff --strip=[n]` --> ✂️ Same as `-p[n]`.
+    🔹 `lsdiff --ignore-space-change` --> 💨 Ignore changes in amount of white space.
+    🔹 `lsdiff --ignore-whitespace` --> ⬜️ Ignore all white space.
+
+🛠 **Examples:**
+
+    $ lsdiff mypatch.patch
+
+    🔹 Check the patch file `mypatch.patch`.
+
+    $ cat mypatch.patch | lsdiff -
+
+    🔹 Check the patch from standard input (via a pipe).
+
+    $ lsdiff -p0 mypatch.patch
+
+    🔹 Use complete file path names in the patch.
+
+✅ **Simple Example:**
+
+    $ lsdiff --ignore-space-change mypatch.patch
+
+    🔹 Check the patch file `mypatch.patch`, ignoring changes in the amount of whitespace. This is useful when whitespace changes are not important.

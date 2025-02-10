@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-terminal.real` barnameye asli baraye baz kardan terminal dar muhit GNOME ast. Ba estefade az in barname, shoma mitavanid dastoorat UNIX/Linux ra vared konid va ejra konid. In barname be shoma yek panjareh terminal ba ghabeliat-haie mesle tab-bandi va profile-bandi midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--profile <esm-profile>` --> 👤 Baz kardan terminal ba yek profile khass. Profile-ha mesle tem-ha hastand va rang-ha, font-ha va raftare terminal ra taeen mikonand.
+    🔹 `--tab`                 --> ➕ Baz kardan tab jadid dar haman panjare terminal.
+    🔹 `--window`              --> 🔲 Baz kardan yek panjare terminal jadid.
+    🔹 `-e`, `--command <dastoor>`  --> 🚀 Ejra kardan dastoor khass dar terminal.
+    🔹 `--title <unvan>`       --> 🏷️ Taaeen unvan baraye panjare terminal.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-terminal.real
+
+    🔹 Baz kardan yek panjare terminal sade.
+
+    $ gnome-terminal.real --tab -e "top"
+
+    🔹 Baz kardan yek tab jadid va ejra kardan dastoor "top" dar aan.
+
+    $ gnome-terminal.real --window --title="My Server" -e "ssh user@server"
+
+    🔹 Baz kardan yek panjare terminal jadid ba unvan "My Server" va etesal be yek server SSH.
+
+✅ **Mesal sade:**
+
+    $ gnome-terminal.real --profile="Dark"
+
+    🔹 Terminal ba profile "Dark" baz mishavad, ke rang-ha va font-haye tire darad. In baraye estefade dar shab munasib ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-terminal.real` is the actual program used to launch the terminal in the GNOME desktop environment. It allows you to enter and execute UNIX/Linux commands. It provides a terminal window with features such as tabs and profile management.
+
+⚙️ **Options:**
+    🔹 `--profile <profile-name>` --> 👤 Open the terminal with a specific profile. Profiles are like themes that define the colors, fonts, and behavior of the terminal.
+    🔹 `--tab`                 --> ➕ Open a new tab within the same terminal window.
+    🔹 `--window`              --> 🔲 Open a new terminal window.
+    🔹 `-e`, `--command <command>`  --> 🚀 Execute a specific command in the terminal.
+    🔹 `--title <title>`       --> 🏷️ Set the title for the terminal window.
+
+🛠 **Examples:**
+
+    $ gnome-terminal.real
+
+    🔹 Open a basic terminal window.
+
+    $ gnome-terminal.real --tab -e "top"
+
+    🔹 Open a new tab and execute the "top" command in it.
+
+    $ gnome-terminal.real --window --title="My Server" -e "ssh user@server"
+
+    🔹 Open a new terminal window with the title "My Server" and connect to an SSH server.
+
+✅ **Simple Example:**
+
+    $ gnome-terminal.real --profile="Dark"
+
+    🔹 The terminal will open with the "Dark" profile, which has dark colors and fonts. This is suitable for use at night.

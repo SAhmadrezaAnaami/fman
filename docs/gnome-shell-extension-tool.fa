@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-shell-extension-tool` baraye modiriyat va dastkari extension-haye Gnome Shell estefade mishavad. Ba in dastoor mitoonid extension-ha ro fa'al/gheir fa'al konid, neshani-haye extension ro neshon bedid, va version oonha ro check konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-shell-extension-tool list`  --> 📃 List hameye extension-haye nasb shode.
+    🔹 `gnome-shell-extension-tool enable <UUID>` --> ✅ Fa'al kardan yek extension ba UUID moshakhas.
+    🔹 `gnome-shell-extension-tool disable <UUID>` --> ⛔ Gheir fa'al kardan yek extension ba UUID moshakhas.
+    🔹 `gnome-shell-extension-tool status <UUID>` --> ℹ️ Namayesh status (fa'al ya gheir fa'al) yek extension ba UUID moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-shell-extension-tool list
+
+    🔹 List hameye extension-ha.
+
+    $ gnome-shell-extension-tool enable myextension@example.com
+
+    🔹 Fa'al kardan extension ba UUID `myextension@example.com`.
+
+✅ **Mesal sade:**
+
+    $ gnome-shell-extension-tool status myextension@example.com
+
+    Output:
+    Enabled
+
+    🔹 In neshan midahad ke extension ba UUID `myextension@example.com` fa'al ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-shell-extension-tool` command is used to manage and manipulate Gnome Shell extensions.  You can use it to enable/disable extensions, show extension locations, and check their versions.
+
+⚙️ **Options:**
+    🔹 `gnome-shell-extension-tool list`  --> 📃 List all installed extensions.
+    🔹 `gnome-shell-extension-tool enable <UUID>` --> ✅ Enable a specific extension by its UUID.
+    🔹 `gnome-shell-extension-tool disable <UUID>` --> ⛔ Disable a specific extension by its UUID.
+    🔹 `gnome-shell-extension-tool status <UUID>` --> ℹ️ Show the status (enabled or disabled) of a specific extension by its UUID.
+
+🛠 **Examples:**
+
+    $ gnome-shell-extension-tool list
+
+    🔹 List all extensions.
+
+    $ gnome-shell-extension-tool enable myextension@example.com
+
+    🔹 Enable the extension with UUID `myextension@example.com`.
+
+✅ **Simple Example:**
+
+    $ gnome-shell-extension-tool status myextension@example.com
+
+    Output:
+    Enabled
+
+    🔹 This indicates that the extension with UUID `myextension@example.com` is enabled.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ibus-daemon` baraye ejra kardane IBus (Intelligent Input Bus) be onvane yek service dar system-e shoma be kar miravad. IBus yek framework baraye vared kardane zaban-haye mokhtalef (mesle Farsi, Arabi, Chinese) dar Linux va UNIX ast. Yani ba estefade az in dastoor, shoma mitavanid zaban-haye digar ra be rahati type konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ibus-daemon -d`  --> 😈 IBus daemon ra dar background ejra mikonad (daemonize).
+    🔹 `ibus-daemon -x`  --> 🚪 Agar IBus ghablan ejra shode bashad, an ra mibandad va az aval shoru mikonad (restart).
+    🔹 `ibus-daemon --xim` --> 🖼️ IBus ra ba support az X Input Method (XIM) ejra mikonad. (Baraye barname-haye ghadimi)
+    🔹 `ibus-daemon --panel` --> 📱 Panel IBus ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ ibus-daemon -d
+
+    🔹 IBus daemon ra dar background ejra mikonad.
+
+    $ ibus-daemon -x
+
+    🔹 IBus ra restart mikonad. Agar moshkeli pish amade bashad, in command komak mikonad.
+
+✅ **Mesal sade:**
+
+    $ ibus-daemon &
+
+    🔹 IBus daemon ra dar background ejra mikonad. "&" be Linux mige ke in process ra dar background run kone va terminal ra azad kone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ibus-daemon` command is used to start the IBus (Intelligent Input Bus) daemon as a service on your system. IBus is an input method framework that allows you to type in various languages (like Persian, Arabic, Chinese) on Linux and UNIX systems.  It enables easy input of different languages.
+
+⚙️ **Options:**
+    🔹 `ibus-daemon -d`  --> 😈 Runs the IBus daemon in the background (daemonize).
+    🔹 `ibus-daemon -x`  --> 🚪 Restarts IBus. If IBus is already running, it will be closed and restarted.
+    🔹 `ibus-daemon --xim` --> 🖼️ Runs IBus with X Input Method (XIM) support. (For older applications)
+    🔹 `ibus-daemon --panel` --> 📱 Shows the IBus panel.
+
+🛠 **Examples:**
+
+    $ ibus-daemon -d
+
+    🔹 Runs the IBus daemon in the background.
+
+    $ ibus-daemon -x
+
+    🔹 Restarts IBus. This command is helpful if you encounter any issues.
+
+✅ **Simple Example:**
+
+    $ ibus-daemon &
+
+    🔹 Runs the IBus daemon in the background. The "&" tells Linux to run this process in the background and free up the terminal.

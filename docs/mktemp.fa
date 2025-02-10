@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mktemp` baraye dorost kardane yek file ya directory (pooshe) ba name unique va temporary (movaghat) be kar miravad. In dastoor kheili mofid ast vaghti shoma be yek jaee niaz darid ke etela'at ra be soorate movaghat zakhire konid va bekhahid motmaen bashid ke name file ya pooshe tekrari nist.
+
+⚙️ **Gozine-ha:**
+    🔹 `mktemp`  --> 📄 Dorost kardane yek file temporary ba name random.
+    🔹 `mktemp -d` --> 📁 Dorost kardane yek directory (pooshe) temporary ba name random.
+    🔹 `mktemp -t <template>` --> ✏️ Dorost kardane file ba estefade az template (olgoo). Dar template `XXXXXX` ba character-haye random jaygozin mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ mktemp
+    /tmp/tmp.Kkix399232
+
+    🔹 In dastoor yek file temporary dorost mikonad va name an ra chap mikonad.
+
+    $ mktemp -d
+    /tmp/tmp.Jfdif84843
+
+    🔹 In dastoor yek directory temporary dorost mikonad va name an ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ TEMP_DIR=$(mktemp -d)
+    $ echo "Temporary directory created: $TEMP_DIR"
+
+    🔹 Inja yek directory temporary dorost shode va name an dar variable `TEMP_DIR` zakhire shode ast. Pas az an, yek payam chap mishavad ke name directory ra neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mktemp` command is used to create a temporary file or directory with a unique name. It's very useful when you need a temporary location to store data and want to ensure the file or directory name is unique.
+
+⚙️ **Options:**
+    🔹 `mktemp`  --> 📄 Create a temporary file with a random name.
+    🔹 `mktemp -d` --> 📁 Create a temporary directory with a random name.
+    🔹 `mktemp -t <template>` --> ✏️ Create a file using a template. In the template, `XXXXXX` is replaced with random characters.
+
+🛠 **Examples:**
+
+    $ mktemp
+    /tmp/tmp.Kkix399232
+
+    🔹 This creates a temporary file and prints its name.
+
+    $ mktemp -d
+    /tmp/tmp.Jfdif84843
+
+    🔹 This creates a temporary directory and prints its name.
+
+✅ **Simple Example:**
+
+    $ TEMP_DIR=$(mktemp -d)
+    $ echo "Temporary directory created: $TEMP_DIR"
+
+    🔹 Here, a temporary directory is created, and its name is stored in the `TEMP_DIR` variable. Then, a message is printed showing the directory name.

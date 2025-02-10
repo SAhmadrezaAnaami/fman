@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `make` baraye sakhtan (build) barname-ha az rooye dastoor-haye tarif shode dar yek file be name `Makefile` estefade mishavad. `Makefile` tarjome-ye dastoor-ha ra asan mikonad va barname-ha ra be soorat khodkar (automatic) misazad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `make` --> 🔨 Sakhtan barname ba estefade az `Makefile` mojood dar haman directory.
+    🔹 `make -f <filename>` --> 📄 Sakhtan barname ba estefade az `Makefile` ba name `<filename>`.
+    🔹 `make clean` --> 🧹 Pak kardan file-haye vasati va executable sakhte shode.
+    🔹 `make -n` --> 👓 Namayesh dastoor-haye ejra shode bedoone ejra kardan anha (dry run).
+
+🛠 **Mesal-ha:**
+
+    $ make
+
+    🔹 Barname ra az rooye `Makefile` sakhte shode dar directory konooni misazad.
+
+    $ make -f MyMakefile
+
+    🔹 Barname ra az rooye `Makefile` ba name `MyMakefile` misazad.
+
+✅ **Mesal sade:**
+
+    $ make clean
+
+    🔹 File-haye object va executable ra az directory paak mikonad, amade baraye compilation az aval.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `make` command is used to build programs from instructions defined in a file called `Makefile`. It simplifies the process of compiling code and automates program building.
+
+⚙️ **Options:**
+    🔹 `make` --> 🔨 Build the program using the default `Makefile` in the current directory.
+    🔹 `make -f <filename>` --> 📄 Build the program using the `Makefile` named `<filename>`.
+    🔹 `make clean` --> 🧹 Clean up intermediate files and the built executable.
+    🔹 `make -n` --> 👓 Show commands that would be executed without actually running them (dry run).
+
+🛠 **Examples:**
+
+    $ make
+
+    🔹 Builds the program according to the `Makefile` in the current directory.
+
+    $ make -f MyMakefile
+
+    🔹 Builds the program using the `Makefile` named `MyMakefile`.
+
+✅ **Simple Example:**
+
+    $ make clean
+
+    🔹 Removes object files and the executable from the directory, preparing for a fresh compilation.

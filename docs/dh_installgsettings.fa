@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installgsettings` baraye nasbe tarhbandi-haye (schema) GSettings dar pakage-haye Debian estefade mishavad. In dastoor be shoma komak mikonad ta tarhbandi-haye GSettings ra be soorate dorost dar ja-haye monaseb dar system gharar dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir dir` --> 📂 Moshakhas kardane pooshe-i ke file-haye tarhbandi GSettings dar an ja gerefte shode ast. Agar az in gozine estefade nakonid, `debian/install` josteju mishavad.
+    🔹 `--target dir` --> 🎯 Moshakhas kardane pooshe-i ke file-haye tarhbandi GSettings bayad dar an ja nasb shavand. Obdatan, in ja `/usr/share/glib-2.0/schemas` ast.
+    🔹 `--name-prefix prefix` --> 🏷️ Ezafe kardane yek prefix be name-haye file-ha.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installgsettings
+
+    🔹 Tarhbandi-haye GSettings ra az `debian/install` nasb mikonad.
+
+    $ dh_installgsettings --sourcedir=src/gsettings
+
+    🔹 Tarhbandi-haye GSettings ra az pooshe `src/gsettings` nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installgsettings --sourcedir=src/gsettings --target=/usr/local/share/glib-2.0/schemas
+
+    🔹 Tarhbandi-haye GSettings ra az pooshe `src/gsettings` gerefte va dar `/usr/local/share/glib-2.0/schemas` nasb mikonad. In be shoma ejaze midahad ta tarhbandi-haye khod ra dar directory geyr-estandard nasb konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installgsettings` command is used to install GSettings schemas in Debian packages.  It helps you correctly place GSettings schema files in the appropriate system locations.
+
+⚙️ **Options:**
+    🔹 `--sourcedir dir` --> 📂 Specifies the directory where the GSettings schema files are located. If not specified, it defaults to searching `debian/install`.
+    🔹 `--target dir` --> 🎯 Specifies the directory where the GSettings schema files should be installed. By default, this is `/usr/share/glib-2.0/schemas`.
+    🔹 `--name-prefix prefix` --> 🏷️ Adds a prefix to the file names.
+
+🛠 **Examples:**
+
+    $ dh_installgsettings
+
+    🔹 Installs GSettings schemas from `debian/install`.
+
+    $ dh_installgsettings --sourcedir=src/gsettings
+
+    🔹 Installs GSettings schemas from the `src/gsettings` directory.
+
+✅ **Simple Example:**
+
+    $ dh_installgsettings --sourcedir=src/gsettings --target=/usr/local/share/glib-2.0/schemas
+
+    🔹 Installs GSettings schemas from the `src/gsettings` directory and installs them in `/usr/local/share/glib-2.0/schemas`.  This allows you to install your schemas in a non-standard directory.

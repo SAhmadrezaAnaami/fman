@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ipptool` baraye ferestadan darkhast-haye IPP (Internet Printing Protocol) be printer-ha ya server-haye chap estefade mishavad. In dastoor be shoma komak mikonad ta printer-ha ra azmayesh konid, etela'at ra darbareye onha begirid, va vazayef chap ra modiriat konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ipptool uri command.ipp` --> 🎯 Frestadan yek darkhast IPP az file `command.ipp` be URI mored nazar.
+    🔹 `ipptool -t timeout uri command.ipp` --> ⏳ Ta'yin vaght estefade shodan timeout baraye har darkhast (be saniye).
+    🔹 `ipptool -c` --> 📝 Namayesh darkhast va javab-ha be shekle matni (verbose mode).
+    🔹 `ipptool -d var=value` --> 🖋️ Ta'yin motaghayer-ha baraye estefade dar file-haye darkhast IPP.
+
+🛠 **Mesal-ha:**
+
+    $ ipptool ipp://localhost:631/printers/MyPrinter get-printer-attributes.ipp
+
+    🔹 Gereftan etela'at darbareye yek printer.
+
+    $ ipptool -t 30 ipp://server/ipp print-job.ipp
+
+    🔹 Chap yek vazife chap ba timeout 30 saniye.
+
+✅ **Mesal sade:**
+
+    $ ipptool ipp://localhost:631/printers/MyPrinter get-printer-attributes.ipp | grep "printer-state"
+
+    🔹 Gereftan vaziat printer va namayesh khat-hayi ke shamel "printer-state" hastand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ipptool` command is used to send IPP (Internet Printing Protocol) requests to printers or print servers. It allows you to test printers, retrieve information about them, and manage print jobs.
+
+⚙️ **Options:**
+    🔹 `ipptool uri command.ipp` --> 🎯 Sends an IPP request from the file `command.ipp` to the specified URI.
+    🔹 `ipptool -t timeout uri command.ipp` --> ⏳ Sets a timeout (in seconds) for each request.
+    🔹 `ipptool -c` --> 📝 Display requests and responses in text format (verbose mode).
+    🔹 `ipptool -d var=value` --> 🖋️ Defines variables to be used in IPP request files.
+
+🛠 **Examples:**
+
+    $ ipptool ipp://localhost:631/printers/MyPrinter get-printer-attributes.ipp
+
+    🔹 Retrieves information about a printer.
+
+    $ ipptool -t 30 ipp://server/ipp print-job.ipp
+
+    🔹 Prints a job with a timeout of 30 seconds.
+
+✅ **Simple Example:**
+
+    $ ipptool ipp://localhost:631/printers/MyPrinter get-printer-attributes.ipp | grep "printer-state"
+
+    🔹 Retrieves the printer state and displays lines containing "printer-state".

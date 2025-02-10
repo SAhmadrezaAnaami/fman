@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chgrp` baraye ta'yine goroohe aslie yek file ya pooshe estefade mishavad. Yani shoma mitavanid goroohe molikati yek file ra ba in dastoor tagheer dahid. Agar shoma molike asli file nabashid, nemitavanid goroohe aan ra tagheer dahid, magar inke root bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 `chgrp [OPTIONS] GROUP FILE(S)` --> Dastoore asli.
+    🔹 `chgrp -v GROUP FILE(S)` --> 🗣️ Namayeshe tafsilie tagheerat. Har filei ke goroohesh tagheer mikonad, payame confirm neshan dade mishavad.
+    🔹 `chgrp -R GROUP DIRECTORY` --> 🔄 Tagheer dadane goroohe hameye file-ha va zir-pooshe-ha dar yek directory be soorate recursive.
+
+🛠 **Mesal-ha:**
+
+    $ chgrp developers myfile.txt
+
+    🔹 Tagheer dadane goroohe file `myfile.txt` be `developers`.
+
+    $ chgrp -v admins important_file.txt
+
+    🔹 Tagheer dadane goroohe `important_file.txt` be `admins` va namayeshe confirm.
+
+✅ **Mesal sade:**
+
+    $ chgrp -R web_team /var/www/html
+
+    🔹 Tagheer dadane goroohe hameye file-ha va pooshe-ha dar dakhele `/var/www/html` be `web_team`. In yek rah baraye ta'yine goroohe sahih baraye file-haye website ast ta goroohe munasib dastresi dashte bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chgrp` command is used to change the group ownership of a file or directory. This allows you to modify which group has primary access to the file. You must be the owner of the file, or the root user, to change its group.
+
+⚙️ **Options:**
+    🔹 `chgrp [OPTIONS] GROUP FILE(S)` --> The basic command structure.
+    🔹 `chgrp -v GROUP FILE(S)` --> 🗣️ Verbose output. Shows a confirmation message for each file whose group is changed.
+    🔹 `chgrp -R GROUP DIRECTORY` --> 🔄 Recursively change the group ownership of all files and subdirectories within a directory.
+
+🛠 **Examples:**
+
+    $ chgrp developers myfile.txt
+
+    🔹 Change the group ownership of the file `myfile.txt` to `developers`.
+
+    $ chgrp -v admins important_file.txt
+
+    🔹 Change the group ownership of `important_file.txt` to `admins` and show a confirmation message.
+
+✅ **Simple Example:**
+
+    $ chgrp -R web_team /var/www/html
+
+    🔹 Change the group ownership of all files and directories within `/var/www/html` to `web_team`.  This is a common way to set the correct group for website files to ensure proper group access.

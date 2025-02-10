@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `compose` baraye ijade yek file jadid ya ezafe kardan matn be yek file mojood estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `compose +file` --> ➕ Ezafe kardan matn be entehaye file (append).
+    🔹 `compose file` --> 📝 Ijad ya baznevisi file (create or overwrite).
+    🔹 `compose -e file` --> ✍️ Baz kardan file dar editor baraye virayesh (edit).
+
+🛠 **Mesal-ha:**
+
+    $ compose myfile.txt
+
+    🔹 Ijad yek file jadid be name `myfile.txt` (ya baznevisi agar file ghablan vojood dashte bashad). Ba Ctrl+D save konid.
+
+    $ compose +myfile.txt
+
+    🔹 Ezafe kardan matn be entehaye file `myfile.txt`. Ba Ctrl+D save konid.
+
+✅ **Mesal sade:**
+
+    $ compose hello.txt
+    Hello world!
+    ^D
+
+    $ cat hello.txt
+    Hello world!
+
+    🔹 Dastoor `compose hello.txt` file-e `hello.txt` ra ijad mikonad va matn "Hello world!" ra dar an zakhire mikonad.  `^D` neshane-ye Ctrl+D ast ke baraye save kardan va khorooj az dastoor compose estefade mishavad. `cat hello.txt` obsat ra neshon mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `compose` command is used to create a new file or append text to an existing file.
+
+⚙️ **Options:**
+    🔹 `compose +file` --> ➕ Append text to the end of the file.
+    🔹 `compose file` --> 📝 Create or overwrite the file.
+    🔹 `compose -e file` --> ✍️ Open the file in an editor for editing.
+
+🛠 **Examples:**
+
+    $ compose myfile.txt
+
+    🔹 Creates a new file named `myfile.txt` (or overwrites it if it already exists). Save with Ctrl+D.
+
+    $ compose +myfile.txt
+
+    🔹 Appends text to the end of the file `myfile.txt`. Save with Ctrl+D.
+
+✅ **Simple Example:**
+
+    $ compose hello.txt
+    Hello world!
+    ^D
+
+    $ cat hello.txt
+    Hello world!
+
+    🔹 The command `compose hello.txt` creates the file `hello.txt` and stores the text "Hello world!" in it. `^D` represents Ctrl+D, which is used to save and exit the compose command. `cat hello.txt` shows content of the file.

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gzip` baraye feshrde (compress) kardan file-ha estefade mishavad. In kar حجم file-ha ra kam mikonad ta zakhireh kardan ya ferestadan asantar shavad. File-haye feshrde shode معمولاً پسوند `.gz` migirand.
+
+⚙️ **Gozine-ha:**
+    🔹 `gzip file.txt`  --> 📦 File `file.txt` ra feshrde mikonad va yek file jadid be name `file.txt.gz` misazad.
+    🔹 `gzip -d file.txt.gz`  --> 🔓 File `file.txt.gz` ra baz mikonad va file asli `file.txt` ra bargardanad.
+    🔹 `gzip -k file.txt`  --> 💾 File `file.txt` ra feshrde mikonad amma file asli ra negah midarad (پاک nemikonad).
+    🔹 `gzip -l file.txt.gz`  --> 📊 Etela'at raje be andaze feshrde va gheyre feshrde file ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gzip myfile.log
+
+    🔹 File `myfile.log` ra feshrde mikonad va آن ra be `myfile.log.gz` tabdil mikonad.
+
+    $ gzip -d myfile.log.gz
+
+    🔹 File `myfile.log.gz` ra baz mikonad va آن ra be `myfile.log` tabdil mikonad.
+
+✅ **Mesal sade:**
+
+    $ gzip -l myfile.log.gz
+    compressed        uncompressed  ratio uncompressed_name
+           12345             67890  82.0% myfile.log
+
+    🔹  Neshan midahad andaze feshrde shode, andaze gheyre feshrde va درصد feshrde shodan file `myfile.log.gz` ra.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gzip` command is used to compress files.  It reduces file size, making it easier to store and transfer. Compressed files usually have the `.gz` extension.
+
+⚙️ **Options:**
+    🔹 `gzip file.txt`  --> 📦 Compresses `file.txt` and creates a new file named `file.txt.gz`.
+    🔹 `gzip -d file.txt.gz` --> 🔓 Decompresses `file.txt.gz` and restores the original file `file.txt`.
+    🔹 `gzip -k file.txt` --> 💾 Compresses `file.txt` but keeps the original file (does not delete it).
+    🔹 `gzip -l file.txt.gz` --> 📊 Displays information about the compressed and uncompressed size of the file.
+
+🛠 **Examples:**
+
+    $ gzip myfile.log
+
+    🔹 Compresses the `myfile.log` file and converts it to `myfile.log.gz`.
+
+    $ gzip -d myfile.log.gz
+
+    🔹 Decompresses the `myfile.log.gz` file and converts it back to `myfile.log`.
+
+✅ **Simple Example & Explanation:**
+
+    $ gzip -l myfile.log.gz
+    compressed        uncompressed  ratio uncompressed_name
+           12345             67890  82.0% myfile.log
+
+    🔹  Shows the compressed size, uncompressed size, and compression ratio of the `myfile.log.gz` file.

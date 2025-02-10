@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `luit` yek barname ast baraye ejraye barname-haye digar ba encoding-haye mokhtalef. Yani, agar yek barname faghat az yek encoding khasi mesle ISO-8859 estefade mikonad, `luit` mitavanad aan ra be UTF-8 tabdil konad ta shoma betavanid aan ra dar terminal-e UTF-8-e khod be dorosti bebinid.  Be zabane sade tar, `luit` komak mikonad matn-ha va character-haye ajib-o-gharib dar terminal dorost namayesh dade shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `luit`  --> 🚀 Ejraye barname ba UTF-8 (agar `LANG` set shode bashad).
+    🔹 `luit -encoding encoding_morede_nazar` --> ⚙️  Entkhab encoding-e makhsoos (mesl: `luit -encoding ISO-8859-1`).
+    🔹 `luit -list`  --> 📚 Namayesh list-e hameye encoding-haye poshtibani shode.
+
+🛠 **Mesal-ha:**
+
+    $ luit barname_morede_nazar
+
+    🔹 Ejraye `barname_morede_nazar` ba UTF-8.
+
+    $ luit -encoding ISO-8859-1 barname_digar
+
+    🔹  Ejraye `barname_digar` ba encoding-e `ISO-8859-1`.
+
+✅ **Mesal sade:**
+
+    Agar shoma yek file matni darid ke ba encoding-e `latin1` save shode ast va terminal-e shoma UTF-8 ast, character-haye aan file be dorosti namayesh dade nemishavand.
+
+    $ luit -encoding latin1 less file_latin1.txt
+
+    🔹 In dastoor `file_latin1.txt` ra ba encoding-e `latin1` baz mikonad, va matn-ha be dorosti namayesh dade mishavand. `less` yek barname baraye safhe-bandi va khandan file-haye matni dar terminal ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `luit` command is used to run other programs with a specified encoding. This is helpful if a program only supports a certain encoding (like ISO-8859) and you want to display its output correctly in a UTF-8 terminal.  Simply put, `luit` helps display odd or incorrectly encoded text and characters correctly in your terminal.
+
+⚙️ **Options:**
+    🔹 `luit` --> 🚀 Run program with UTF-8 encoding (if `LANG` environment variable is set).
+    🔹 `luit -encoding desired_encoding` --> ⚙️ Specify a particular encoding (e.g., `luit -encoding ISO-8859-1`).
+    🔹 `luit -list` --> 📚 Display a list of all supported encodings.
+
+🛠 **Examples:**
+
+    $ luit program_name
+
+    🔹 Run `program_name` with UTF-8 encoding.
+
+    $ luit -encoding ISO-8859-1 another_program
+
+    🔹 Run `another_program` with the `ISO-8859-1` encoding.
+
+✅ **Simple Example:**
+
+    If you have a text file saved with `latin1` encoding, and your terminal is UTF-8, the characters may not display correctly.
+
+    $ luit -encoding latin1 less file_latin1.txt
+
+    🔹 This command opens `file_latin1.txt` with the `latin1` encoding, and the text is displayed correctly. `less` is a program used to page through and read text files in the terminal.

@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installlogcheck` baraye baresi log-haye nasb baraye khata-ha ya tahdid-ha estefade mishavad. In dastoor be developer-ha komak mikonad ta az nasb dorost va bedoon moshkel package-haye Debian khod motmaen shavand. Agar khata-ha peyda shavand, dastoor az nasb package jelogiri mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--ignore=file`  --> 🙈 Az baresi khat-ha dar file mored nazar chashm-pooshi kon.
+    🔹 `--no-fail` --> 😌 Agar khata peyda shod, az fail shodan sakhteman package jelogiri kon.
+    🔹 `--list-ignore` --> 📃 List khat-ha-yi ke ignore shode-and.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installlogcheck
+    
+    🔹 Baresi hameye log-haye nasb baraye khata-ha.
+
+    $ dh_installlogcheck --ignore=debian/ignore-errors
+    
+    🔹 Baresi log-ha, vali khat-ha-ye mojood dar `debian/ignore-errors` ra ignore kon.
+
+✅ **Mesal sade:**
+
+    $ dh_installlogcheck --no-fail
+    
+    🔹 Agar khata-ha dar log-haye nasb peyda shavand, baz ham ejaze bede nasb edame peyda konad (fail nakon).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installlogcheck` command is used to check installation logs for errors or warnings. It helps developers ensure that their Debian packages install correctly and without issues. If errors are found, the command prevents the package from being installed.
+
+⚙️ **Options:**
+    🔹 `--ignore=file`  --> 🙈 Ignore lines matching patterns in the specified file.
+    🔹 `--no-fail` --> 😌 Prevent the build from failing even if errors are found.
+    🔹 `--list-ignore` --> 📃 List the patterns that are being ignored.
+
+🛠 **Examples:**
+
+    $ dh_installlogcheck
+    
+    🔹 Check all installation logs for errors.
+
+    $ dh_installlogcheck --ignore=debian/ignore-errors
+    
+    🔹 Check logs, but ignore errors listed in `debian/ignore-errors`.
+
+✅ **Simple Example:**
+
+    $ dh_installlogcheck --no-fail
+    
+    🔹 Allows the installation to proceed even if errors are found in the installation logs (do not fail).
+

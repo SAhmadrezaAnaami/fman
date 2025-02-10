@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `enchant-lsmod-2` list module haaye Enchant raa neshon midehad.  Enchant yek ketabkhane ast baraye spell checking, va in dastoor be shoma komak mikonad module haaye fa'al Enchant raa bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `enchant-lsmod-2` --> 📜 List hameye module haaye Enchant e mojood va fa'al.
+    🔹 `enchant-lsmod-2 -v` --> 👀 Namayesh etela'at bishtar darbareye module haa.
+
+🛠 **Mesal-ha:**
+
+    $ enchant-lsmod-2
+
+    🔹 Namayesh list sade module haa
+
+    $ enchant-lsmod-2 -v
+
+    🔹 Namayesh etela'at kamel module haa
+
+✅ **Mesal sade:**
+
+    $ enchant-lsmod-2
+    ispell
+    myspell
+    hunspell
+
+    🔹 Module haaye `ispell`, `myspell`, va `hunspell` fa'al hastand va Enchant az anha baraye spell checking estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `enchant-lsmod-2` command lists the available Enchant modules.  Enchant is a library for spell checking, and this command helps you see which modules are currently enabled.
+
+⚙️ **Options:**
+    🔹 `enchant-lsmod-2` --> 📜 List all available and enabled Enchant modules.
+    🔹 `enchant-lsmod-2 -v` --> 👀 Display more detailed information about the modules.
+
+🛠 **Examples:**
+
+    $ enchant-lsmod-2
+
+    🔹 Displays a simple list of modules.
+
+    $ enchant-lsmod-2 -v
+
+    🔹 Displays more complete information for each module.
+
+✅ **Simple Example:**
+
+    $ enchant-lsmod-2
+    ispell
+    myspell
+    hunspell
+
+    🔹 The `ispell`, `myspell`, and `hunspell` modules are enabled, and Enchant uses them for spell checking.
+

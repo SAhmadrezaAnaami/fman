@@ -1,0 +1,78 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `curl` baraye ersal va daryaft dade az yek URL (manba’e resane interneti) estefade mishavad. Mesle download kardan file-ha az internet ya ferestadan etela’at be yek API (Application Programming Interface).
+
+⚙️ **Gozine-ha:**
+    🔹 `curl -O <URL>`  --> 💾 Download kardan file ba haman esm az URL.
+    🔹 `curl -o <filename> <URL>` --> ✏️ Download kardan file va zakhire kardan an ba yek esme digar.
+    🔹 `curl -I <URL>`  --> ℹ️ Namayesh header-haye HTTP faghat (etela’at meta).
+    🔹 `curl -X <METHOD> <URL>` --> 📡 Estefade az yek method HTTP khass (mesle POST, PUT, DELETE).
+    🔹 `curl -d <data> <URL>` --> 📤 Eesal data ba request HTTP POST.
+    🔹 `curl -H "<Header: Value>" <URL>` --> ⚙️ Ezafe kardan header haye HTTP khass.
+
+🛠 **Mesal-ha:**
+
+    $ curl -O https://example.com/myfile.txt
+
+    🔹 Download kardan myfile.txt az example.com va zakhire kardan an ba haman esm.
+
+    $ curl -o newfile.txt https://example.com/myfile.txt
+
+    🔹 Download kardan myfile.txt az example.com va zakhire kardan an ba esme newfile.txt.
+
+    $ curl -I https://example.com
+
+    🔹 Namayesh header-haye HTTP az example.com.
+
+    $ curl -X POST -d "name=John&age=30" https://example.com/api
+
+    🔹 Eersal data be yek API ba estefade az method POST.
+
+✅ **Mesal sade:**
+
+    $ curl https://example.com
+
+    🔹 Download kardan HTML page az example.com va namayesh an dar terminal. Agar mikhayid zakhire konid az gozine `-O` ya `-o` estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `curl` command is used to send and receive data from a URL (Uniform Resource Locator). It is commonly used to download files from the internet or send data to an API (Application Programming Interface).
+
+⚙️ **Options:**
+    🔹 `curl -O <URL>`  --> 💾 Download a file from the URL, using the same filename.
+    🔹 `curl -o <filename> <URL>` --> ✏️ Download a file and save it with a different filename.
+    🔹 `curl -I <URL>`  --> ℹ️ Show only the HTTP headers (meta information).
+    🔹 `curl -X <METHOD> <URL>` --> 📡 Use a specific HTTP method (e.g., POST, PUT, DELETE).
+    🔹 `curl -d <data> <URL>` --> 📤 Send data with an HTTP POST request.
+    🔹 `curl -H "<Header: Value>" <URL>` --> ⚙️ Add custom HTTP headers.
+
+🛠 **Examples:**
+
+    $ curl -O https://example.com/myfile.txt
+
+    🔹 Download myfile.txt from example.com and save it with the same name.
+
+    $ curl -o newfile.txt https://example.com/myfile.txt
+
+    🔹 Download myfile.txt from example.com and save it as newfile.txt.
+
+    $ curl -I https://example.com
+
+    🔹 Show the HTTP headers from example.com.
+
+    $ curl -X POST -d "name=John&age=30" https://example.com/api
+
+    🔹 Send data to an API using the POST method.
+
+✅ **Simple Example:**
+
+    $ curl https://example.com
+
+    🔹 Downloads the HTML page from example.com and displays it in the terminal. If you want to save it use the `-O` or `-o` options.

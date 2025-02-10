@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dumpkeys` baraye chap kardan etela'at dar morede table-haye keyboard be kar miravad. In etela'at shamel define shodan kelid-ha, string-ha va function-haye console hastand. Az in dastoor obooreh barresi va dastkari table-haye kelid, va hamchenin sakhtan configuration-haye keyboard eshtebahi estefadeh mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `dumpkeys -l`  --> 📜 Chap kardan hameye kelid-ha ba define shodan-ha.
+    🔹 `dumpkeys -i`  --> 👀 Fagat define shodan-ha be shekle sade chap mishavand.
+    🔹 `dumpkeys -f`  --> ⌨️ Namayesh format table kelid.
+
+🛠 **Mesal-ha:**
+
+    $ dumpkeys
+
+    🔹 Chap kardane hameye etela'at kelid-ha ba define shodan-ha az table keyboard.
+
+    $ dumpkeys -l | grep "keycode  30"
+
+    🔹  Peyda kardane define shodan-ha baraye kelid "keycode 30".
+
+✅ **Mesal sade:**
+
+    $ dumpkeys | less
+
+    🔹 Chap kardane hameye etela'at va estefade az dastoor `less` baraye safhe be safhe didan (baraye natijehaye boland).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dumpkeys` command is used to print information about the keyboard translation tables. This information includes key definitions, strings, and console functions. It can be used for examining and manipulating keyboard tables, as well as creating custom keyboard configurations.
+
+⚙️ **Options:**
+    🔹 `dumpkeys -l`  --> 📜 Print all keys with their definitions.
+    🔹 `dumpkeys -i`  --> 👀 Only print key definitions in a simple format.
+    🔹 `dumpkeys -f`  --> ⌨️ Show the keyboard table format.
+
+🛠 **Examples:**
+
+    $ dumpkeys
+
+    🔹 Print all key information with their definitions from the keyboard table.
+
+    $ dumpkeys -l | grep "keycode  30"
+
+    🔹 Find the definitions for the key "keycode 30".
+
+✅ **Simple Example:**
+
+    $ dumpkeys | less
+
+    🔹 Print all information and use the `less` command to view it page by page (for long outputs).

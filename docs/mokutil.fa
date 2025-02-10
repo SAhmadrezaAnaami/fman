@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mokutil` baraye modiriat Secure Boot MOK (Machine Owner Key) ha dar Linux estefade mishavad. Secure Boot komak mikonad ke system-e shoma faghat software-haye etemad shode ra boot konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mokutil --sb-state` --> 🔒 Check kardan vazeiat Secure Boot.
+    🔹 `mokutil --import <file.cer>` --> 🔑 Ezafe kardan yek certificate be MOK list.  Bayad password ra vared konid.
+    🔹 `mokutil --delete <file.cer>` --> 🗑️ Pak kardan yek certificate az MOK list. Bayad password ra vared konid.
+    🔹 `mokutil --password` --> 🔑 Avaz kardan password baraye MOK management.
+
+🛠 **Mesal-ha:**
+
+    $ mokutil --sb-state
+
+    🔹 Namayesh vazeiat Secure Boot (enable ya disable).
+
+    $ sudo mokutil --import mycert.cer
+
+    🔹 Ezafe kardan certificate `mycert.cer` be MOK list.  Az shoma password khaste mishavad ke dar reboot estefade konid.
+
+✅ **Mesal sade:**
+
+    $ mokutil --sb-state
+
+    🔹 Agar Secure Boot enable bashad, output chizi mesle "SecureBoot enabled" khahad bood. Agar disable bashad, "SecureBoot disabled" khahad bood.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mokutil` command is used to manage Secure Boot MOK (Machine Owner Key)s in Linux. Secure Boot helps ensure your system only boots trusted software.
+
+⚙️ **Options:**
+    🔹 `mokutil --sb-state` --> 🔒 Check the Secure Boot state (enabled or disabled).
+    🔹 `mokutil --import <file.cer>` --> 🔑 Import a certificate to the MOK list. Requires a password to be set.
+    🔹 `mokutil --delete <file.cer>` --> 🗑️ Delete a certificate from the MOK list. Requires a password to be set.
+    🔹 `mokutil --password` --> 🔑 Change the password used for MOK management.
+
+🛠 **Examples:**
+
+    $ mokutil --sb-state
+
+    🔹 Display the current Secure Boot state (enabled or disabled).
+
+    $ sudo mokutil --import mycert.cer
+
+    🔹 Import the certificate `mycert.cer` to the MOK list.  You will be prompted to enter a password which is used at next reboot.
+
+✅ **Simple Example:**
+
+    $ mokutil --sb-state
+
+    🔹 If Secure Boot is enabled, the output will be something like "SecureBoot enabled". If disabled, it will show "SecureBoot disabled".

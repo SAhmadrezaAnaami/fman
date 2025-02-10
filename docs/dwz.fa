@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dwz` baraye compressed kardan file-ha bar asase standard DWARF-5 estefade mishavad. In kar be andaze file debug tool information ro kam mikone, va download kardanesh ro az server asoon tar mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `dwz --help` --> ❓ Namayesh rahnamaye dastoor.
+    🔹 `dwz -o <file>` --> 💾 Zakhire kardan natije dar file <file>. Agar zakhire nashavad dar stdout chap mishavad.
+    🔹 `dwz -m <NUM>` --> 🧵 Tedad thread-haye baraye compressed kardan ra moshakhas mikonad (default: tedad core-haye CPU).
+    🔹 `dwz -q` --> 🤫 Silent mode, heech payami chap nemishavad magar khata bashe.
+    🔹 `<file>...` --> 📁 List file-haye ".debug_*" baraye compressed kardan.
+
+🛠 **Mesal-ha:**
+
+    $ dwz -o output.dwz .debug_info .debug_line
+    🔹 Compressed kardan file-haye .debug_info va .debug_line va zakhire kardan natije dar output.dwz
+
+    $ dwz -m 8 -o compressed.dwz *.debug_*
+    🔹 Compressed kardan hameye file-haye ke ba ".debug_" shoro mishavand, estefade az 8 thread, va zakhire dar compressed.dwz
+
+✅ **Mesal sade:**
+
+    $ dwz .debug_info > compressed.dwz
+    🔹 Compressed kardan file .debug_info va zakhire kardan natije dar compressed.dwz, bedune estefade az hich gozine-ye digar (default options).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dwz` command is used to compress DWARF-5 debugging information files. This reduces the size of debug information, making it easier to download from servers.
+
+⚙️ **Options:**
+    🔹 `dwz --help` --> ❓ Display help information.
+    🔹 `dwz -o <file>` --> 💾 Save the compressed output to <file>. If not specified, writes to standard output (stdout).
+    🔹 `dwz -m <NUM>` --> 🧵 Specify the number of threads to use for compression (default: number of CPU cores).
+    🔹 `dwz -q` --> 🤫 Quiet mode, suppress all messages except errors.
+    🔹 `<file>...` --> 📁 List of ".debug_*" files to compress.
+
+🛠 **Examples:**
+
+    $ dwz -o output.dwz .debug_info .debug_line
+    🔹 Compresses the .debug_info and .debug_line files, and saves the result to output.dwz.
+
+    $ dwz -m 8 -o compressed.dwz *.debug_*
+    🔹 Compresses all files starting with ".debug_", using 8 threads, and saves the result to compressed.dwz.
+
+✅ **Simple Example:**
+
+    $ dwz .debug_info > compressed.dwz
+    🔹 Compresses the .debug_info file and saves the result to compressed.dwz, using default options.
+

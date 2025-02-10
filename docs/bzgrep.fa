@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzgrep` mesle `grep` amal mikonad, vali baraye file-haye `bz2` ke moratab shode va hajmeshon kam shode be kar miravad. Yani, dastoor dar dakhele file-haye `bz2` donbale matn (pattern) migardad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzgrep "matn" file.bz2`  --> 🔍 Donbale matn dar file `file.bz2` migardad.
+    🔹 `bzgrep -i "matn" file.bz2` --> 👓 Donbale matn bagheyr az bozorgi va koochiki horoof migardad.
+    🔹 `bzgrep -c "matn" file.bz2` --> 🔢 Tedad khat-haee ke matn dar aanha peyda shode ra neshon midahad.
+    🔹 `bzgrep -l "matn" file.bz2` --> 📁 Name file-haee ke matn dar aanha peyda shode ra neshon midahad.
+    🔹 `bzgrep -v "matn" file.bz2` --> 🚫 Khat-haee ke matn dar aanha nist ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ bzgrep "error" logfile.bz2
+
+    🔹 Donbale kalame "error" dar file `logfile.bz2` migardad.
+
+    $ bzgrep -c "warning" data.bz2
+
+    🔹 Tedad khat-haee ke kalame "warning" dar file `data.bz2` dar aanha ast ra neshon midahad.
+
+✅ **Mesal sade:**
+
+    $ bzgrep "404" access.log.bz2
+
+    🔹 Agar file `access.log.bz2` khat-haee dashte bashad ke shomare "404" dar aanha bashad, an khat-ha neshon dade mishavand. In command baraye peyda kardan error-haye safhe dar logfile-haye web server kheili mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzgrep` command works like `grep`, but it is designed to search within `bz2` compressed files.  In other words, this command searches for a specific text pattern inside bz2 files.
+
+⚙️ **Options:**
+    🔹 `bzgrep "text" file.bz2`  --> 🔍 Searches for the "text" within the file `file.bz2`.
+    🔹 `bzgrep -i "text" file.bz2` --> 👓 Searches for the "text" case-insensitively within the file `file.bz2`.
+    🔹 `bzgrep -c "text" file.bz2` --> 🔢 Shows the count of lines containing "text" within the file `file.bz2`.
+    🔹 `bzgrep -l "text" file.bz2` --> 📁 Shows the names of files containing "text".
+    🔹 `bzgrep -v "text" file.bz2` --> 🚫 Shows the lines that do *not* contain "text".
+
+🛠 **Examples:**
+
+    $ bzgrep "error" logfile.bz2
+
+    🔹 Searches for the word "error" in the `logfile.bz2` file.
+
+    $ bzgrep -c "warning" data.bz2
+
+    🔹 Shows the number of lines containing the word "warning" in the `data.bz2` file.
+
+✅ **Simple Example:**
+
+    $ bzgrep "404" access.log.bz2
+
+    🔹 If the `access.log.bz2` file has lines containing the number "404", those lines will be displayed. This command is very useful for finding page errors in web server log files.

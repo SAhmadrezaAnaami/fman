@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mountpoint` baraye check kardan inke aya yek pooshe (directory) be onvane yek nuqte vasl (mount point) estefade shode ast ya na, be kar miravad. Yani aya yek disk ya partishn ruye an pooshe mount shode ast ya kheir.
+
+⚙️ **Gozine-ha:**
+    🔹 `mountpoint DIRECTORY`  -->  📜 Check mikonad aya `DIRECTORY` yek nuqte vasl hast ya na. Agar bashe, code vorudi 0 barmigardanad va agar nabashe, yek adad digar.
+    🔹 `mountpoint -q DIRECTORY`  -->  🤫 Faghat code vorudi (exit code) barmigardanad, bedune chap kardan chizi ruye safhe namayesh. (quiet mode)
+    🔹 `mountpoint -d` --> 🔍 Neshan dadane etela'at debug baraye mountpoint.
+
+🛠 **Mesal-ha:**
+
+    $ mountpoint /mnt
+    /mnt is a mountpoint
+
+    🔹 Check mikonad aya `/mnt` yek nuqte vasl hast ya na.
+
+    $ mountpoint /home
+    /home is not a mountpoint
+
+    🔹 Check mikonad aya `/home` yek nuqte vasl hast ya na.
+
+✅ **Mesal sade:**
+
+    $ mountpoint -q /boot && echo "Boot mounted" || echo "Boot not mounted"
+    Boot mounted
+
+    🔹 Check mikonad aya `/boot` mount shode ast ya na. Agar mount shode bashe, "Boot mounted" chap mikonad, va agar nashode bashe "Boot not mounted" chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mountpoint` command is used to check if a directory is a mount point.  A mount point is a directory in the file system where a storage device (like a hard drive partition or a network share) is attached (mounted).
+
+⚙️ **Options:**
+    🔹 `mountpoint DIRECTORY`  -->  📜 Checks if `DIRECTORY` is a mount point.  Returns an exit code of 0 if it is, and a non-zero exit code if it isn't.
+    🔹 `mountpoint -q DIRECTORY`  -->  🤫 Only returns the exit code, without printing anything to standard output. (quiet mode)
+    🔹 `mountpoint -d` --> 🔍 Displays debug information for the mountpoint.
+
+🛠 **Examples:**
+
+    $ mountpoint /mnt
+    /mnt is a mountpoint
+
+    🔹 Checks if `/mnt` is a mount point.
+
+    $ mountpoint /home
+    /home is not a mountpoint
+
+    🔹 Checks if `/home` is a mount point.
+
+✅ **Simple Example:**
+
+    $ mountpoint -q /boot && echo "Boot mounted" || echo "Boot not mounted"
+    Boot mounted
+
+    🔹 Checks if `/boot` is mounted.  If it's mounted, it prints "Boot mounted"; otherwise, it prints "Boot not mounted".

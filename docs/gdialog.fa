@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdialog` baraye ijad panjere-haye grafiki (graphical) az tarighe terminal estefade mishavad. Shoma mitavanid az an baraye namayesh peigham-ha, gereftan voroodi az karbar, ya entekhab file estefade konid. In dastoor baraye script-haye bash ke niaz be interaction ba karbar darand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--msgbox 'matn'`  --> 💬 Namayesh yek peigham sade.
+    🔹 `--inputbox 'matn'`  --> ⌨️ Gereftan voroodi az karbar.
+    🔹 `--yesno`  --> 👍👎 Namayesh do dokme 'yes' va 'no'.
+    🔹 `--file-selection`  --> 📁 Baz kardane panjere entekhab file.
+    🔹 `--title 'unvan'` --> 🏷️ Taghyir unvan panjere.
+
+🛠 **Mesal-ha:**
+
+    $ gdialog --msgbox "Salam donya!" 
+    
+    🔹 Namayesh yek peigham sade ba matn "Salam donya!".
+
+    $ gdialog --inputbox "Lotfan name khod ra vared konid:"
+    
+    🔹 Gereftan voroodi az karbar va namayesh dar terminal.
+
+✅ **Mesal sade:**
+
+    $ gdialog --yesno --title "Taeed" "Aya motmaenid?"
+
+    🔹 Yek panjere ba dokme-haye "yes" va "no" va unvan "Taeed" namayesh dade mishavad. Agar karbar "yes" ra entekhab konad, dastoor ba code 0 tamam mishavad; dar gheire in soorat ba code 1 tamam mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdialog` command is used to create graphical dialog boxes from the terminal. You can use it to display messages, get input from the user, or select files. This command is useful for bash scripts that need to interact with the user.
+
+⚙️ **Options:**
+    🔹 `--msgbox 'text'`  --> 💬 Display a simple message box.
+    🔹 `--inputbox 'text'`  --> ⌨️ Get input from the user.
+    🔹 `--yesno`  --> 👍👎 Display 'yes' and 'no' buttons.
+    🔹 `--file-selection`  --> 📁 Open a file selection dialog.
+    🔹 `--title 'title'` --> 🏷️ Change the title of the dialog box.
+
+🛠 **Examples:**
+
+    $ gdialog --msgbox "Hello world!"
+    
+    🔹 Display a simple message box with the text "Hello world!".
+
+    $ gdialog --inputbox "Please enter your name:"
+    
+    🔹 Get input from the user and display it in the terminal.
+
+✅ **Simple Example:**
+
+    $ gdialog --yesno --title "Confirmation" "Are you sure?"
+
+    🔹 A dialog box with "yes" and "no" buttons and the title "Confirmation" is displayed. If the user selects "yes," the command completes with code 0; otherwise, it completes with code 1.
+

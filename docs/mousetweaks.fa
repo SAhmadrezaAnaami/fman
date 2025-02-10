@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mousetweaks` baraye tagheer daadane raftaare mouse dar GNOME desktop estefade mishavad. In dastoor be shoma komak mikonad ta settings mouse ra, mesle click-e khodkaar (automatic click) va highlight kardan pointer mouse, moratab konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--enable click-delay`  --> 🖱️ Fa'al kardane click-e khodkaar ba ta'khir.
+    🔹 `--enable locate-pointer`  --> 📍 Fa'al kardane highlight kardan pointer mouse ba Ctrl.
+    🔹 `--disable all`  --> 🚫 Gheyre fa'al kardane hameye tweak-ha.
+    🔹 `--help` --> ℹ️ Namayesh rahnama va gozine-haye bishtar.
+
+🛠 **Mesal-ha:**
+
+    $ mousetweaks --enable click-delay
+
+    🔹 Fa'al kardane click-e khodkaar ba ta'khir.
+
+    $ mousetweaks --enable locate-pointer
+
+    🔹 Fa'al kardane highlight kardan pointer ba Ctrl.
+
+✅ **Mesal sade:**
+
+    $ mousetweaks --enable click-delay --locate-pointer
+
+    🔹 Fa'al kardane har do tweak click-e khodkaar va highlight kardan pointer ba Ctrl dar yek command.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mousetweaks` command is used to modify mouse behavior in the GNOME desktop environment. It helps you configure mouse settings like automatic clicks and highlighting the mouse pointer.
+
+⚙️ **Options:**
+    🔹 `--enable click-delay`  --> 🖱️ Enables automatic clicks with a delay.
+    🔹 `--enable locate-pointer`  --> 📍 Enables highlighting the mouse pointer when Ctrl is pressed.
+    🔹 `--disable all`  --> 🚫 Disables all tweaks.
+    🔹 `--help` --> ℹ️ Displays help and more options.
+
+🛠 **Examples:**
+
+    $ mousetweaks --enable click-delay
+
+    🔹 Enables automatic clicks with a delay.
+
+    $ mousetweaks --enable locate-pointer
+
+    🔹 Enables highlighting the pointer when Ctrl is pressed.
+
+✅ **Simple Example:**
+
+    $ mousetweaks --enable click-delay --locate-pointer
+
+    🔹 Enables both automatic click and pointer highlighting tweaks in a single command.
+

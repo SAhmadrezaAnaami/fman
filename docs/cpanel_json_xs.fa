@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cpanel_json_xs` baraye estekhraj va morur etela'at az file-haye JSON (JavaScript Object Notation) dar system-haye CPanel estefade mishavad. In dastoor beheton komak mikone ke betoonid be soorat asan etela'ate config va data-haye mokhtalef ro az file-haye JSON bekhoonid va estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version` --> ℹ️ Namayesh version-e `cpanel_json_xs`.
+    🔹 `--help`    --> ❓ Namayesh rahnamaye estefade az dastoor.
+    🔹 `--raw`     --> 📦 Khuruji (output) ro be soorat `raw` namayesh mide, bedune format-bandi ezafi.
+    🔹 `<file.json>` --> 📑 Esme file JSON ke mikhayid parse konid (etela'at ro estekhraj konid).
+
+🛠 **Mesal-ha:**
+
+    $ cpanel_json_xs --version
+
+    🔹 Namayesh version-e dastoor.
+
+    $ cpanel_json_xs config.json
+
+    🔹 Parse va namayesh dadan etela'ate dakhele file `config.json`.
+
+✅ **Mesal sade:**
+
+    $ cpanel_json_xs --raw data.json | grep username
+
+    🔹 Estekhraje etela'ate `username` az file `data.json` be soorate `raw`. In mesal neshon mide chetoor mitunid natijaro ba dastoor digeyi mesle `grep` filter konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cpanel_json_xs` command is used to extract and browse information from JSON (JavaScript Object Notation) files in cPanel systems. It helps you easily read and use configuration and various data from JSON files.
+
+⚙️ **Options:**
+    🔹 `--version` --> ℹ️ Display the version of `cpanel_json_xs`.
+    🔹 `--help`    --> ❓ Display help information for the command.
+    🔹 `--raw`     --> 📦 Display output in `raw` format, without extra formatting.
+    🔹 `<file.json>` --> 📑 The name of the JSON file you want to parse (extract information from).
+
+🛠 **Examples:**
+
+    $ cpanel_json_xs --version
+
+    🔹 Display the command's version.
+
+    $ cpanel_json_xs config.json
+
+    🔹 Parse and display the information inside the `config.json` file.
+
+✅ **Simple Example:**
+
+    $ cpanel_json_xs --raw data.json | grep username
+
+    🔹 Extract the `username` information from the `data.json` file in `raw` format. This example shows how you can filter the output with another command like `grep`.

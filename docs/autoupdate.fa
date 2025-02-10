@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autoupdate` baraye be-rooz resani khodkaar-e barname-ha va narm-afzar-ha estefade mishavad. In dastoor, barname-ha ra az tarigh internet be akharin version be-rooz mikonad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `autoupdate enable`  --> ✅ Roshan kardan be-rooz resani khodkaar.  
+    🔹 `autoupdate disable` --> 🚫 Kh خاموش kardan be-rooz resani khodkaar.  
+    🔹 `autoupdate check`   --> 🔎 Barresi baraye be-rooz resani-haye jadid bedoon nasb.  
+    🔹 `autoupdate now`     --> 🚀 Shoru-e fori be-rooz resani.
+
+🛠 **Mesal-ha:**
+    
+    $ autoupdate enable
+    
+    🔹 Roshan kardan be-rooz resani khodkaar.
+
+    $ autoupdate check
+    
+    🔹 Barresi baraye be-rooz resani-haye jadid bedoon nasb.
+
+✅ **Mesal sade:**
+    
+    $ autoupdate now
+    
+    🔹 Dastoor shoru be be-rooz resani fori mikonad agar version jadid mojud bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autoupdate` command is used to automatically update programs and software. This command updates the programs to the latest version via the internet.
+
+⚙️ **Options:**
+    🔹 `autoupdate enable`  --> ✅ Enable automatic updates.
+    🔹 `autoupdate disable` --> 🚫 Disable automatic updates.
+    🔹 `autoupdate check`   --> 🔎 Check for new updates without installing them.
+    🔹 `autoupdate now`     --> 🚀 Start the update process immediately.
+
+🛠 **Examples:**
+    
+    $ autoupdate enable
+    
+    🔹 Enables automatic updates.
+
+    $ autoupdate check
+    
+    🔹 Checks for new updates without installing them.
+
+✅ **Simple Example:**
+    
+    $ autoupdate now
+    
+    🔹 The command starts updating immediately if a newer version is available.
+

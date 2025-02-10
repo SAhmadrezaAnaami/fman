@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autoheader` baraye dorost kardan ya update kardan file `config.h.in` estefade mishavad. In file baraye configure kardane barname-haye C ya C++ be kar miravad. Be zaban sade tar, `autoheader` komak mikonad ta shoma betavanid header file-haye standard ra baraye projeye khod besazid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `--force`  --> 💪 Hatta agar file `config.h.in` ghadimi bashad, baz ham an ra update kon.
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor.
+    🔹 `--version`  --> ℹ️ Namayesh version e `autoheader`.
+
+🛠 **Mesal-ha:**
+
+    $ autoheader
+
+    🔹  File `config.h.in` ra az `configure.ac` ya `configure.in` misazad.
+
+    $ autoheader --force
+
+    🔹  File `config.h.in` ra hatman update mikonad, hata agar motmaen nabashad ke lazem ast ya na.
+
+✅ **Mesal sade:**
+
+    $ autoheader
+    🔹  Agar file `config.h.in` vojood nadashte bashad, `autoheader` an ra az template-haye default misazad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autoheader` command is used to create or update the `config.h.in` file.  This file is used for configuring C or C++ programs. Simply put, `autoheader` helps you create standard header files for your project.
+
+⚙️ **Options:**
+    🔹 `--force`  --> 💪 Force an update of the `config.h.in` file, even if it seems up-to-date.
+    🔹 `--help`  --> ❓ Display command help.
+    🔹 `--version`  --> ℹ️ Display the version of `autoheader`.
+
+🛠 **Examples:**
+
+    $ autoheader
+
+    🔹  Creates the `config.h.in` file from `configure.ac` or `configure.in`.
+
+    $ autoheader --force
+
+    🔹  Forces an update of the `config.h.in` file, even if it doesn't seem necessary.
+
+✅ **Simple Example:**
+
+    $ autoheader
+    🔹  If the `config.h.in` file does not exist, `autoheader` creates it from default templates.
+

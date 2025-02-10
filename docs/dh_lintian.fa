@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_lintian` baraye check kardane package Debian az nazare error-ha va warning-haye Lintian estefade mishavad. Lintian yek barname ast ke package-haye Debian ra baresi mikonad ta moshkelati mesle eshtebahat dar file-haye control ya porvandehaye moshkel dar file system ra peyda konad. `dh_lintian` in check-ha ra dar hale sakhtane package Debian anjam midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--fail-on=`<severity> --> 🔥 Agar Lintian natijeye ba ahamiat-tar az <severity> (mesle error ya critical) peyda konad, sakht package motavaqef mishavad.
+    🔹 `--no-override` --> 🚫 Az override file-haye default Lintian estefade nakon.
+    🔹 `--profile=`<profile> --> 🎯 Az yek profile khas baraye check kardane package estefade kon. Profile-ha majmooee az check-ha hastand.
+
+🛠 **Mesal-ha:**
+
+    $ dh_lintian
+    🔹 Package ra ba estefade az ayande-haye pishfarz check mikonad.
+
+    $ dh_lintian --fail-on=error
+    🔹 Agar error dar natijeye Lintian vojood dashte bashad, sakht package ra motavaqef mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_lintian --profile debian
+    🔹 Package ra ba estefade az profile "debian" check mikonad. In profile baraye check kardane etminan az inke package ba standard-haye Debian sazgar ast estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_lintian` command is used to check a Debian package for errors and warnings using Lintian. Lintian is a program that inspects Debian packages for problems such as mistakes in control files or policy violations in the file system. `dh_lintian` performs these checks as part of the Debian package build process.
+
+⚙️ **Options:**
+    🔹 `--fail-on=`<severity> --> 🔥 If Lintian finds any results with a severity greater than or equal to <severity> (e.g., error or critical), the package build will be halted.
+    🔹 `--no-override` --> 🚫 Do not use Lintian's default override files.
+    🔹 `--profile=`<profile> --> 🎯 Use a specific profile to check the package. Profiles are sets of checks.
+
+🛠 **Examples:**
+
+    $ dh_lintian
+    🔹 Checks the package using the default settings.
+
+    $ dh_lintian --fail-on=error
+    🔹 Stops the package build if any errors are found in the Lintian output.
+
+✅ **Simple Example:**
+
+    $ dh_lintian --profile debian
+    🔹 Checks the package using the "debian" profile. This profile is used to ensure that the package complies with Debian standards.

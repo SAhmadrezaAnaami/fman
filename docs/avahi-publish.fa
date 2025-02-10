@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-publish` baraye e’lan kardan service-ha dar shabake ba estefade az Avahi (ye implementation az Zeroconf) be kar mirevad. Yani, device-ha va service-ha mitoonan be tore automatic be shabake moarrefi beshan bedune niaz be configure-haye dastie pitchide.
+
+⚙️ **Gozine-ha:**
+    🔹 `avahi-publish -s <name> <type> <port> [<key>=<value> ...]`  --> 📢 E’lan kardan yek service ba name, type, port va etela’at ezafi.
+    🔹 `avahi-publish --service <name> <type> <port> [<key>=<value> ...]` --> 📢 Hamoon mesle bala vali ba estefade az `--service` be tore explicit.
+    🔹 `avahi-publish -h` --> ❓ Namayesh komak va rahnama-ye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ avahi-publish -s "My Web Server" _http._tcp 80
+
+    🔹 E’lan kardan yek web server ba name "My Web Server" rooye port 80.
+
+    $ avahi-publish -s "My SSH Server" _ssh._tcp 22 host=mycomputer.local
+
+    🔹 E’lan kardan yek SSH server rooye port 22, ba etela’ate ezafie hostname.
+
+✅ **Mesal sade:**
+
+    $ avahi-publish -s "My Printer" _ipp._tcp 631
+
+    🔹 Ba ejraye in dastoor, yek printer ba name "My Printer" ke dar port 631 dar hale kar ast, dar shabake e'lan mishe ta digar device-ha betoonan behesh dastresi dashte bashan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-publish` command is used to advertise services on a network using Avahi (an implementation of Zeroconf). This allows devices and services to be automatically discovered on the network without complex manual configuration.
+
+⚙️ **Options:**
+    🔹 `avahi-publish -s <name> <type> <port> [<key>=<value> ...]` --> 📢 Advertise a service with a name, type, port, and additional information.
+    🔹 `avahi-publish --service <name> <type> <port> [<key>=<value> ...]` --> 📢 Same as above, but using `--service` explicitly.
+    🔹 `avahi-publish -h` --> ❓ Display help and usage information.
+
+🛠 **Examples:**
+
+    $ avahi-publish -s "My Web Server" _http._tcp 80
+
+    🔹 Advertises a web server named "My Web Server" on port 80.
+
+    $ avahi-publish -s "My SSH Server" _ssh._tcp 22 host=mycomputer.local
+
+    🔹 Advertises an SSH server on port 22, with additional hostname information.
+
+✅ **Simple Example:**
+
+    $ avahi-publish -s "My Printer" _ipp._tcp 631
+
+    🔹 By running this command, a printer named "My Printer" operating on port 631 is advertised on the network, allowing other devices to discover and access it.

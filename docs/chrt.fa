@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chrt` baraye tagheer daadane shedat-e process-ha (processes) dar zamane ejra (runtime) estefade mishavad. In dastoor be shoma ejazeh midahad ta taeen konid che meghdar az CPU ya resource-haye digar be yek process ekhtesas dade shavad. Yani, mitavanid process-ha ra "prioritize" konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `chrt -f <priority> <command>` --> ⚡️ Run kardan yek `command` ba shedat FIFO (First-In-First-Out).  `<priority>` bayad beyne 1 ta 99 bashad.
+    🔹 `chrt -r <priority> <command>` --> 🔄 Run kardan yek `command` ba shedat RR (Round-Robin). `<priority>` bayad beyne 1 ta 99 bashad.
+    🔹 `chrt -p <priority> <PID>` --> 🎯 Tagheer daadane shedat yek process ba PID moshakhas.
+    🔹 `chrt 0 <command>` --> ⏱ Run kardan yek `command` ba shedat normal (be default).
+
+🛠 **Mesal-ha:**
+
+    $ chrt -f 20 ./my_program
+
+    🔹 Run kardan `my_program` ba shedat FIFO 20.
+
+    $ chrt -p 50 1234
+
+    🔹 Tagheer daadane shedat process ba PID 1234 be 50.
+
+✅ **Mesal sade:**
+
+    $ chrt 0 ./another_program
+
+    🔹 Run kardan `another_program` ba shedat normal (non-realtime). Yani, be system bar migardanad ke `another_program` digar shedat khas nadorad va bayad be soorat adi ejra shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chrt` command is used to change the real-time scheduling attributes of running processes. It allows you to specify the scheduling priority and policy for a process, effectively prioritizing its access to CPU and other resources.
+
+⚙️ **Options:**
+    🔹 `chrt -f <priority> <command>` --> ⚡️ Run a `command` with FIFO (First-In-First-Out) scheduling. The `<priority>` must be between 1 and 99.
+    🔹 `chrt -r <priority> <command>` --> 🔄 Run a `command` with RR (Round-Robin) scheduling.  The `<priority>` must be between 1 and 99.
+    🔹 `chrt -p <priority> <PID>` --> 🎯 Change the scheduling priority of an existing process with the specified PID.
+    🔹 `chrt 0 <command>` --> ⏱ Run a `command` with default (non-realtime) scheduling.
+
+🛠 **Examples:**
+
+    $ chrt -f 20 ./my_program
+
+    🔹 Run `my_program` with FIFO scheduling at priority 20.
+
+    $ chrt -p 50 1234
+
+    🔹 Change the scheduling priority of process with PID 1234 to 50.
+
+✅ **Simple Example:**
+
+    $ chrt 0 ./another_program
+
+    🔹 Run `another_program` with default (non-realtime) scheduling.  This effectively tells the system to revert `another_program` to normal scheduling behavior, removing any real-time priority it might have had.

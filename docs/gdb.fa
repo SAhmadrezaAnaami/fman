@@ -1,0 +1,96 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gdb` yek abzar baraye peyda kardan va dorost kardan khata-ha (debug) dar barname-ha ast. Be shoma komak mikonad ke barname-ra ghadam be ghadam ejra konid, meghdar moteghayyer-ha ra bebinid, va agar khataee vojood dashte bashad, an ra peyda va dorost konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gdb <name_barname>` --> 🚀 Barname-ra ba `gdb` baz konid.
+    🔹 `run` --> 🏃 Barname-ra ejra konid.
+    🔹 `break <shomare_khat>` --> 📍 Yek noghte tavaghof (breakpoint) dar khat mored nazar gharar bedahid.
+    🔹 `next` --> 🚶 Be khat badi beravid (az tabe-ha gozar konid).
+    🔹 `step` --> 👣 Dakhel tabe-ha shavid.
+    🔹 `print <name_moteghayer>` --> 🔍 Meghdar moteghayer-ra chap konid.
+    🔹 `continue` --> ⏩ Ejra-ra edame bedahid ta noghte tavaghof badi.
+    🔹 `quit` --> 👋 Az `gdb` kharej shavid.
+
+🛠 **Mesal-ha:**
+
+    $ gdb myprogram
+    
+    🔹 Barname "myprogram" ra dar `gdb` baz mikonad.
+
+    (gdb) break 10
+    
+    🔹 Noghte tavaghof ra dar khat 10 gharar midahad.
+
+    (gdb) run
+    
+    🔹 Barname-ra ejra mikonad.
+
+    (gdb) next
+    
+    🔹 Be khat badi miravad.
+
+    (gdb) print myvariable
+    
+    🔹 Meghdar moteghayer "myvariable" ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ gdb myprogram
+    (gdb) break main
+    (gdb) run
+    (gdb) print argc
+    
+    🔹 Barname "myprogram" ra dar `gdb` baz mikonad, dar aval tabe main noghte tavaghof gharar midahad, barname ra ejra mikonad, va meghdar `argc` (tedad arguman-ha) ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gdb` is a tool for finding and fixing errors (debugging) in programs. It helps you execute the program step by step, view the values ​​of variables, and if there is an error, find and fix it.
+
+⚙️ **Options:**
+    🔹 `gdb <program_name>` --> 🚀 Open the program with `gdb`.
+    🔹 `run` --> 🏃 Run the program.
+    🔹 `break <line_number>` --> 📍 Set a breakpoint at the specified line.
+    🔹 `next` --> 🚶 Go to the next line (skip over functions).
+    🔹 `step` --> 👣 Step into functions.
+    🔹 `print <variable_name>` --> 🔍 Print the value of a variable.
+    🔹 `continue` --> ⏩ Continue execution until the next breakpoint.
+    🔹 `quit` --> 👋 Exit `gdb`.
+
+🛠 **Examples:**
+
+    $ gdb myprogram
+    
+    🔹 Opens the "myprogram" in `gdb`.
+
+    (gdb) break 10
+    
+    🔹 Sets a breakpoint at line 10.
+
+    (gdb) run
+    
+    🔹 Runs the program.
+
+    (gdb) next
+    
+    🔹 Goes to the next line.
+
+    (gdb) print myvariable
+    
+    🔹 Prints the value of the variable "myvariable".
+
+✅ **Simple Example:**
+
+    $ gdb myprogram
+    (gdb) break main
+    (gdb) run
+    (gdb) print argc
+    
+    🔹 Opens the program "myprogram" in `gdb`, sets a breakpoint at the beginning of the main function, runs the program, and prints the value of `argc` (number of arguments).

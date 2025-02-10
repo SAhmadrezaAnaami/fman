@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_bugfiles` baraye eijad ya update file-haye debug package baraye build-haye Debian estefade mishavad. In dastoor be developer-ha komak mikonad ke etela'at debug ra be shekle dorost moratab konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir pooshe`  --> 📁 Specify mikonad ke az koja source code ra begirad.
+    🔹 `--destdir pooshe`  --> 🎯 Directory ke file-haye .debug dar an zakhire mishavand.
+    🔹 `--prefix prefix`  --> 🏷️ Add prefix khas be esm file-haye debug.
+    🔹 `--no-strip`  --> 🚫 Az hazf symbol-haye debug jelogiri mikonad.
+    🔹 `--dbg-package package` --> 📦 Esme package debug ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_bugfiles --sourcedir=src --destdir=debian/package.dbg
+
+    🔹 Source code ra az directory `src` migirad va file-haye debug ra dar `debian/package.dbg` zakhire mikonad.
+
+    $ dh_bugfiles --prefix=myapp --no-strip
+
+    🔹 File-haye debug ra ba prefix `myapp` dorost mikonad va symbol-haye debug ra hazf nemikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_bugfiles
+
+    🔹 Dastoor `dh_bugfiles` be soorat pishfarz file-haye debug package ra az directory pishfarz source code dorost mikonad va anha ra dar jaye dorost dar build Debian gharar midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_bugfiles` command is used to create or update debugging package files for Debian builds. This helps developers properly organize debug information.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory`  --> 📁 Specifies the directory to take the source code from.
+    🔹 `--destdir directory`  --> 🎯 The directory where the .debug files will be stored.
+    🔹 `--prefix prefix`  --> 🏷️ Adds a specific prefix to the debug filenames.
+    🔹 `--no-strip`  --> 🚫 Prevents the stripping of debug symbols.
+    🔹 `--dbg-package package` --> 📦 Specifies the debug package name.
+
+🛠 **Examples:**
+
+    $ dh_bugfiles --sourcedir=src --destdir=debian/package.dbg
+
+    🔹 Takes the source code from the `src` directory and saves the debug files in `debian/package.dbg`.
+
+    $ dh_bugfiles --prefix=myapp --no-strip
+
+    🔹 Creates debug files with the `myapp` prefix and does not strip debug symbols.
+
+✅ **Simple Example:**
+
+    $ dh_bugfiles
+
+    🔹 The `dh_bugfiles` command, by default, creates debugging package files from the default source code directory and places them in the correct location within the Debian build.
+

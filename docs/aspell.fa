@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aspell` baraye dorost nevisi va tekrare kalemat dar file-haye matni (text files) estefade mishavad.  In dastoor mitavanad eshtebahat emlai ra peyda konad va pishnahadate dorost ra arayeh dahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `aspell check <file>`  --> 📝 Check kardan yek file be tor dorost nevisi.
+    🔹 `aspell list <file>`   --> 📜 List kardan hameye kalemat ghalat dar yek file.
+    🔹 `aspell -d <dict> check <file>`  --> 📚 Estefade az yek dictionary khosoosi baraye check kardan.
+    🔹 `aspell create <dict> ` --> 🔨 Sakhtan dictionary khosoosi.
+
+🛠 **Mesal-ha:**
+
+    $ aspell check myfile.txt
+
+    🔹 Check kardan file `myfile.txt` baraye eshtebahat emlai.
+
+    $ aspell list myfile.txt
+
+    🔹 List kardan kalemat ghalat dar file `myfile.txt`.
+
+✅ **Mesal sade:**
+
+    $ aspell check mydocument.txt
+    ... (Output with suggestions) ...
+    🔹 Ba ejraye in dastoor, `aspell` eshtebahate emlai ra dar `mydocument.txt` neshon midahad va pishnahadate dorost ra arayeh midahad. Shoma mitavanid kalemat ra dorost konid ya az pishnahadat estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aspell` command is used for spell checking and correcting words in text files.  It can find spelling errors and provide correct suggestions.
+
+⚙️ **Options:**
+    🔹 `aspell check <file>`  --> 📝 Check a file for spelling errors.
+    🔹 `aspell list <file>`   --> 📜 List all misspelled words in a file.
+    🔹 `aspell -d <dict> check <file>`  --> 📚 Use a custom dictionary for checking.
+    🔹 `aspell create <dict> ` --> 🔨 Create a personal dictionary.
+
+🛠 **Examples:**
+
+    $ aspell check myfile.txt
+
+    🔹 Check the file `myfile.txt` for spelling mistakes.
+
+    $ aspell list myfile.txt
+
+    🔹 List the misspelled words in the file `myfile.txt`.
+
+✅ **Simple Example:**
+
+    $ aspell check mydocument.txt
+    ... (Output with suggestions) ...
+    🔹 By running this command, `aspell` will show spelling errors in `mydocument.txt` and provide corrections. You can correct the words or use the suggestions.

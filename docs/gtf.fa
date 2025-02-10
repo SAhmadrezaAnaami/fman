@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtf` (Generic Timing Formula) baraye sakhtane modeline clock video baraye monitor-haye CRT estefade mishavad. In dastoor timing-haye tolid shode ra chap mikonad, ke shoma mitavanid anha ra dar configuration file Xorg khod estefade konid. Agar shoma be clock video khas baraye monitor CRT khod niaz darid, `gtf` komak mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtf <width> <height> <refresh_rate>` -->  🎬 Width (pahna), height (ertefa), va refresh rate (tedad-e update dar saniye) ra moshakhas mikonad.
+    🔹 `gtf -help`                 -->  ❓ Rahnamaye dastoor ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gtf 1024 768 60
+
+    🔹 Sakhtane modeline clock video baraye resolution 1024x768 ba refresh rate 60Hz.  Output shamel modeline hast ke mitavanad dar Xorg configuration estefade shavad.
+
+    $ gtf 1280 1024 75
+
+    🔹 Sakhtane modeline clock video baraye resolution 1280x1024 ba refresh rate 75Hz.
+
+✅ **Mesal sade:**
+
+    $ gtf 800 600 60
+
+    🔹 In dastoor modeline clock video baraye resolution 800x600 ba refresh rate 60Hz ra tolid mikonad. Output line-haye Modeline ra neshan midahad ke mitavanad be /etc/X11/xorg.conf ezafe shavad ta resolution va refresh rate ra set konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtf` (Generic Timing Formula) command is used to generate video mode lines for CRT monitors.  It prints out the timings generated, which you can then use in your Xorg configuration file. If you need a specific video clock for your CRT monitor, `gtf` helps create one.
+
+⚙️ **Options:**
+    🔹 `gtf <width> <height> <refresh_rate>` --> 🎬 Specifies the width, height, and refresh rate.
+    🔹 `gtf -help`                 --> ❓ Shows the command's help information.
+
+🛠 **Examples:**
+
+    $ gtf 1024 768 60
+
+    🔹 Generate a video mode line for a resolution of 1024x768 with a refresh rate of 60Hz. The output includes a Modeline that can be used in Xorg configuration.
+
+    $ gtf 1280 1024 75
+
+    🔹 Generate a video mode line for a resolution of 1280x1024 with a refresh rate of 75Hz.
+
+✅ **Simple Example:**
+
+    $ gtf 800 600 60
+
+    🔹 This command generates a video mode line for a resolution of 800x600 with a refresh rate of 60Hz. The output will display the Modeline lines that can be added to /etc/X11/xorg.conf to set the resolution and refresh rate.

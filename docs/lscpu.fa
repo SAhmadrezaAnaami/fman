@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lscpu` etela'ati darbareye CPU (processor) shoma namayesh midehad. In etela'at shamel model, te'dad haste-ha (cores), va memari (architecture) mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lscpu` --> 💻 Namayesh etela'ate asasi CPU.
+    🔹 `lscpu -x` --> 📊 Namayesh etela'at be soorate liste ba estefade az karakter-haye `|`. baraye estefade dar dastoorat digar monaseb ast.
+    🔹 `lscpu -c` --> 🏷️ Namayesh etela'at darbareye cache CPU.
+    🔹 `lscpu -e` --> 🔍 Namayesh etela'at darbareye har thread CPU be soorate joda.
+
+🛠 **Mesal-ha:**
+
+    $ lscpu
+
+    🔹 Namayesh etela'ate asasi CPU.
+
+    $ lscpu | grep "Model name"
+
+    🔹 Peyda kardan name model CPU.
+
+✅ **Mesal sade:**
+
+    $ lscpu -x | grep "CPU MHz"
+
+    🔹 Etela'ate marboote be Clock Speed CPU ra namayesh midehad. `grep` be ma komak mikonad faghat khati ke shamel "CPU MHz" hastand ra bebinim.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lscpu` command displays information about your CPU (processor). This includes details about the model, number of cores, and architecture.
+
+⚙️ **Options:**
+    🔹 `lscpu` --> 💻 Display basic CPU information.
+    🔹 `lscpu -x` --> 📊 Display information as a list using `|` separators, suitable for scripting.
+    🔹 `lscpu -c` --> 🏷️ Display information about the CPU cache.
+    🔹 `lscpu -e` --> 🔍 Display information about each CPU thread separately.
+
+🛠 **Examples:**
+
+    $ lscpu
+
+    🔹 Display basic CPU information.
+
+    $ lscpu | grep "Model name"
+
+    🔹 Find the CPU model name.
+
+✅ **Simple Example:**
+
+    $ lscpu -x | grep "CPU MHz"
+
+    🔹 Show the CPU's clock speed. The `grep` command helps to filter the output to only show the line that contains "CPU MHz".
+

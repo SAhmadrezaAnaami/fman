@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `base32` baraye tabdil dade-ha be format `Base32` ya bargardandan az aan estefade mishavad.  `Base32` yek ravesh code-gozari ast ke dade-haye binary ra be formati tabdil mikonad ke az 32 character mokhtalef tashkil shode ast, va baraye enteqal dade-ha az tarigh channel-haye matni (text-based channels) monaseb ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `base32 -d`  --> 🔓 Decode kardane dade-haye `Base32` be halate asli.
+    🔹 `base32 -w [tool]` --> 📦 Peichidan (wrap) khorooji dar [tool] character dar har khat.  Tool default 76 ast.
+    🔹 `base32` (bedune hich gozine) --> 🔒 Encode kardane dade-ha be format `Base32`.
+
+🛠 **Mesal-ha:**
+
+    $ echo "Hello, world!" | base32
+
+    🔹 Encode kardane reshteye "Hello, world!" be format `Base32`.
+
+    $ echo "JBSWY3DPEBLW64TMMQQQ====" | base32 -d
+
+    🔹 Decode kardane reshteye `Base32` "JBSWY3DPEBLW64TMMQQQ====" be halate asli.
+
+✅ **Mesal sade:**
+
+    $ echo "This is a test" | base32 | base32 -d
+
+    🔹 Aval reshteye "This is a test" encode mishavad, va sepas decode mishavad. Dar natije, khorooji haman reshteye asli khahad bood.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `base32` command is used to encode data into `Base32` format or decode from it. `Base32` is an encoding scheme that converts binary data into a format represented by 32 different characters, suitable for transmission across text-based channels.
+
+⚙️ **Options:**
+    🔹 `base32 -d`  --> 🔓 Decode `Base32` encoded data back to its original form.
+    🔹 `base32 -w [cols]` --> 📦 Wrap encoded output to [cols] characters per line.  The default is 76.
+    🔹 `base32` (without any option) --> 🔒 Encode data into `Base32` format.
+
+🛠 **Examples:**
+
+    $ echo "Hello, world!" | base32
+
+    🔹 Encode the string "Hello, world!" into `Base32` format.
+
+    $ echo "JBSWY3DPEBLW64TMMQQQ====" | base32 -d
+
+    🔹 Decode the `Base32` string "JBSWY3DPEBLW64TMMQQQ====" back to its original form.
+
+✅ **Simple Example:**
+
+    $ echo "This is a test" | base32 | base32 -d
+
+    🔹 First, the string "This is a test" is encoded, and then decoded. As a result, the output will be the original string.

@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aa-enabled` baraye check kardan fa'al boodan AppArmor estefade mishavad. AppArmor yek system amniati baraye mahdood kardan amal kardane barname-ha ast. Agar `aa-enabled` chizi chap konad, ya'ni AppArmor fa'al ast.
+
+⚙️ **Gozine-ha:**
+    In dastoor gozine khassi nadarad.
+
+🛠 **Mesal-ha:**
+
+    $ aa-enabled
+
+    🔹 Check kardan fa'al boodan AppArmor. Agar fa'al bashad, natije ra chap mikonad.
+
+    $ aa-enabled; echo $?
+
+    🔹 Check kardan status va chap kardan return code. Agar 0 bashad, yani AppArmor fa'al ast.
+
+✅ **Mesal sade:**
+
+    $ aa-enabled
+    AppArmor is enabled.
+
+    🔹 In mesal neshon midahad ke AppArmor rooye system fa'al ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aa-enabled` command is used to check if AppArmor is enabled on the system. AppArmor is a security system that restricts the capabilities of applications. If `aa-enabled` prints any output, it indicates that AppArmor is enabled.
+
+⚙️ **Options:**
+    This command does not have any specific options.
+
+🛠 **Examples:**
+
+    $ aa-enabled
+
+    🔹 Check if AppArmor is enabled. If enabled, it will print output.
+
+    $ aa-enabled; echo $?
+
+    🔹 Check the status and print the return code. A return code of 0 indicates that AppArmor is enabled.
+
+✅ **Simple Example:**
+
+    $ aa-enabled
+    AppArmor is enabled.
+
+    🔹 This example demonstrates that AppArmor is active and running on the system.
+

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cpio-filter` baraye tagheer dadan (modify) content dakhele yek archive `cpio` ghabl az extract kardan (extract) an estefade mishavad.  In dastoor yek filter ro be kar mibareh rooye file-ha dar archive, va natijeh ro be stdout mifresteh.
+
+⚙️ **Gozine-ha:**
+    🔹 `--verbose` --> 🗣️ Namayesh etela'at bishtar dar moredeh amal kard.
+    🔹 `--quiet`   --> 🤫 Hich message-i chap nakon.
+    🔹 `--help`    --> ❓ Namayesh rahnamaye estefadeh az dastoor.
+    🔹 `--command`=<dastoor> --> 🚀 Dastoori ra baraye filter kardan file-ha estefade kon. Masalan: `--command="gzip -d"` baraye baz kardane file-haye gzip shodeh.
+
+🛠 **Mesal-ha:**
+
+    $ cpio -i < archive.cpio | cpio-filter --command="gzip -d" | tar xz
+
+    🔹 Extract kardane yek archive `cpio` ke file-haye gzip shodeh dareh.
+
+    $ find . -print | cpio -o > archive.cpio
+    $ cpio-filter --command="rot13" < archive.cpio > filtered_archive.cpio
+    $ cpio -i < filtered_archive.cpio
+
+    🔹 Sakhte yek archive `cpio`, ba estefadeh az `rot13` file-ha ro encode mikoneh, va baad extract mikoneh.
+
+✅ **Mesal sade:**
+
+    $ cpio-filter --command="cat" < archive.cpio | cpio -i
+
+    🔹  Extract kardane archive `cpio` ba estefadeh az dastoor `cat` (ke hich taghiri rooye file-ha nemideh).  In command baraye test kardan archive ya tabdileh output `cpio-filter` be input `cpio` baraye extract kardane file-ha estefade misheh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cpio-filter` command is used to modify the content of a `cpio` archive before extracting it. This command applies a filter to the files within the archive and sends the result to stdout.
+
+⚙️ **Options:**
+    🔹 `--verbose` --> 🗣️ Display more information about the operation.
+    🔹 `--quiet`   --> 🤫 Suppress all messages.
+    🔹 `--help`    --> ❓ Display usage information.
+    🔹 `--command`=<command> --> 🚀 Use the specified command to filter the files. For example: `--command="gzip -d"` to decompress gzipped files.
+
+🛠 **Examples:**
+
+    $ cpio -i < archive.cpio | cpio-filter --command="gzip -d" | tar xz
+
+    🔹 Extract a `cpio` archive containing gzipped files.
+
+    $ find . -print | cpio -o > archive.cpio
+    $ cpio-filter --command="rot13" < archive.cpio > filtered_archive.cpio
+    $ cpio -i < filtered_archive.cpio
+
+    🔹 Create a `cpio` archive, encode the files using `rot13`, and then extract them.
+
+✅ **Simple Example:**
+
+    $ cpio-filter --command="cat" < archive.cpio | cpio -i
+
+    🔹 Extract a `cpio` archive using the `cat` command (which makes no changes to the files). This command is useful for testing the archive or piping the output of `cpio-filter` to the input of `cpio` for extracting the files.

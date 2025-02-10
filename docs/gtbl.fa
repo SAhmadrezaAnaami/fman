@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtbl` (graphical table) baraye tabdil dade-ha be jadval-haye tasviri estefade mishavad. In dastoor obzar-haye mokhtalefi baraye tarrahie jadval-ha va nemoodar-ha faraham mikonad. Mohim tarin estefade az in dastoor ijad jadval az dade haii ast ke dar file ha zakhire shode and.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtbl file.dat` --> 🖼️  Sakhte yek jadval tasviri az dade-haye dakhele `file.dat`.
+    🔹 `gtbl -T ps file.dat > file.ps` --> 💾  Sakhte yek file PostScript az jadval va zakhireh an.
+    🔹 `gtbl -xaxis min max file.dat` --> 📈  Ta’een hadde aqal va aqsar baraye mehvar-e ofqi.
+
+🛠 **Mesal-ha:**
+
+    $ gtbl data.txt
+
+    🔹 Sakhte jadval-ha be shekle tasviri az dade-haye dakhele file `data.txt` va namayesh an dar safhe namayesh.
+
+    $ gtbl -T ps data.txt > data.ps
+
+    🔹 Sakhte file PostScript az jadval sakhte shode az file `data.txt` va zakhireh an ba name `data.ps`.
+
+✅ **Mesal sade:**
+
+    $ gtbl -T X data.txt
+
+    🔹  Namayesh jadval ba estefade az X Window System. Agar dastoor bedune gozine-ha ejra shavad, az X Window System estefade mikonad agar dar dastras bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtbl` (graphical table) command is used to convert data into graphical tables. This command provides various tools for designing tables and charts. The most important use of this command is creating tables from data stored in files.
+
+⚙️ **Options:**
+    🔹 `gtbl file.dat` --> 🖼️ Create a graphical table from the data in `file.dat`.
+    🔹 `gtbl -T ps file.dat > file.ps` --> 💾 Create a PostScript file of the table and save it.
+    🔹 `gtbl -xaxis min max file.dat` --> 📈 Specify the minimum and maximum values for the x-axis.
+
+🛠 **Examples:**
+
+    $ gtbl data.txt
+
+    🔹 Create tables graphically from the data in the `data.txt` file and display it on the screen.
+
+    $ gtbl -T ps data.txt > data.ps
+
+    🔹 Create a PostScript file from the table created from the `data.txt` file and save it with the name `data.ps`.
+
+✅ **Simple Example:**
+
+    $ gtbl -T X data.txt
+
+    🔹 Display the table using the X Window System. If the command is executed without options, it will use X Window System if available.

@@ -1,0 +1,82 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mdig` ( مخففِ meta dig) yek command-line tool baraye query kardan DNS (Domain Name System) servers ast. Ba estefade az `mdig`, shoma mitavanid etela'ati mesle A records, MX records, va NS records ra dar mored yek domain be dast avarid. `mdig` be shoma komak mikonad ta DNS resolution ra check konid va moshkelate DNS ra troubleshoot konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `mdig @server domain` --> 🎯 Query kardan yek server DNS khass.  `@server` address server DNS va `domain` name domaini ast ke mikhahed query shavad.
+    🔹 `mdig -t type domain` --> 🔍 Query kardan yek record DNS ba type khass. `type` mitavanad A, MX, TXT, NS va ghare bashad.
+    🔹 `mdig -x ip_address` --> 📍 Reverse DNS lookup baraye peyda kardan name domain az IP address.
+    🔹 `mdig +trace domain` --> 🧭 Trace kardan path DNS resolution ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ mdig google.com
+
+    🔹 Query kardan A record baraye google.com az DNS server pishfarz.
+
+    $ mdig @8.8.8.8 google.com
+
+    🔹 Query kardan A record baraye google.com az DNS server 8.8.8.8.
+
+    $ mdig -t MX google.com
+
+    🔹 Query kardan MX record baraye google.com.
+
+    $ mdig -x 8.8.8.8
+
+    🔹 Reverse DNS lookup baraye IP address 8.8.8.8.
+
+    $ mdig +trace google.com
+
+    🔹 Namayesh dadane path DNS resolution baraye google.com.
+
+✅ **Mesal sade:**
+
+    $ mdig -t A example.com
+
+    🔹 Ba estefade az gozine `-t A`, command `mdig` faghat A record ra baraye domain `example.com` barmigardanad, ke IP address domain ra neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mdig` (meta dig) command is a command-line tool for querying DNS (Domain Name System) servers. Using `mdig`, you can retrieve information such as A records, MX records, and NS records for a domain. `mdig` helps you check DNS resolution and troubleshoot DNS problems.
+
+⚙️ **Options:**
+    🔹 `mdig @server domain` --> 🎯 Query a specific DNS server. `@server` is the address of the DNS server, and `domain` is the domain name to query.
+    🔹 `mdig -t type domain` --> 🔍 Query a DNS record of a specific type. `type` can be A, MX, TXT, NS, etc.
+    🔹 `mdig -x ip_address` --> 📍 Perform a reverse DNS lookup to find the domain name from the IP address.
+    🔹 `mdig +trace domain` --> 🧭 Display the DNS resolution path.
+
+🛠 **Examples:**
+
+    $ mdig google.com
+
+    🔹 Query the A record for google.com from the default DNS server.
+
+    $ mdig @8.8.8.8 google.com
+
+    🔹 Query the A record for google.com from the DNS server 8.8.8.8.
+
+    $ mdig -t MX google.com
+
+    🔹 Query the MX record for google.com.
+
+    $ mdig -x 8.8.8.8
+
+    🔹 Perform a reverse DNS lookup for the IP address 8.8.8.8.
+
+    $ mdig +trace google.com
+
+    🔹 Display the DNS resolution path for google.com.
+
+✅ **Simple Example:**
+
+    $ mdig -t A example.com
+
+    🔹 Using the `-t A` option, the `mdig` command only returns the A record for the domain `example.com`, which shows the IP address of the domain.

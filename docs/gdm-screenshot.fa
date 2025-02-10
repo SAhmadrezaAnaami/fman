@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdm-screenshot` baraye gereftan ax az safhe login (login screen) dar Linux estefade mishavad, vaghti ke shoma az GDM (GNOME Display Manager) estefade mikonid. In dastoor aks ra zakhire mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--file filename.png` --> 🖼️  Esme file ax ra tayin mikonad. Agar esm tayin nashavad, esme pishfarz estefade mishavad.
+    🔹 `--destination /path/to/directory` --> 📁 Mahale zakhire kardane ax ra moshakhas mikonad. Agar in gozine estefade nashavad, directory pishfarz estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ gdm-screenshot
+
+    🔹  Gereftan ax az safhe vorood va zakhire kardan an ba esme pishfarz dar directory pishfarz.
+
+    $ gdm-screenshot --file login_screen.png --destination /tmp
+
+    🔹  Gereftan ax az safhe vorood va zakhire kardan an ba esme `login_screen.png` dar pooshe `/tmp`.
+
+✅ **Mesal sade:**
+
+    $ gdm-screenshot --file mylogin.png
+
+    🔹  Ax az safhe login gerefte va ba esme `mylogin.png` dar directory pishfarz zakhire mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdm-screenshot` command is used to take a screenshot of the login screen in Linux when you are using GDM (GNOME Display Manager). It saves the screenshot to a file.
+
+⚙️ **Options:**
+    🔹 `--file filename.png` --> 🖼️ Specifies the filename for the screenshot. If no filename is provided, a default name is used.
+    🔹 `--destination /path/to/directory` --> 📁 Specifies the destination directory for the screenshot. If this option is not used, the default directory is used.
+
+🛠 **Examples:**
+
+    $ gdm-screenshot
+
+    🔹  Takes a screenshot of the login screen and saves it with a default name in the default directory.
+
+    $ gdm-screenshot --file login_screen.png --destination /tmp
+
+    🔹  Takes a screenshot of the login screen and saves it as `login_screen.png` in the `/tmp` directory.
+
+✅ **Simple Example:**
+
+    $ gdm-screenshot --file mylogin.png
+
+    🔹  Takes a screenshot of the login screen and saves it as `mylogin.png` in the default directory.

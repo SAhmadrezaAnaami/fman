@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `addpart` baraye ezafe kardane yek ghesmat (partition) jadid be yek disk estefade mishavad. In dastoor obzari az majmooe `parted` ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `addpart primary filesystem start end` --> ✨ Ezafe kardane yek partition aslie ba type filesystem va shoroo az start va payan dar end.
+    🔹 `addpart logical filesystem start end`  --> ➕ Ezafe kardane yek partition manteghi ba type filesystem va shoroo az start va payan dar end.
+    🔹 `addpart extended start end`      --> 🧱 Ezafe kardane yek partition tosee یافته ba shoroo az start va payan dar end.
+
+🛠 **Mesal-ha:**
+
+    $ parted /dev/sda mklabel gpt
+    $ parted /dev/sda mkpart primary ext4 0% 100%
+    
+    🔹 Sakhtane yek partition aslie ba type ext4 dar kolle fazaye disk `/dev/sda`.
+    
+    $ parted /dev/sdb
+    (parted) mklabel gpt
+    (parted) mkpart primary ext4 0% 2048MiB
+    
+    🔹 Sakhtane yek partition aslie ba type ext4 ba andaze 2048 MB dar disk `/dev/sdb`.
+
+✅ **Mesal sade:**
+
+    $ parted /dev/sdc mklabel msdos
+    $ parted /dev/sdc mkpart primary fat32 1MiB 100%
+    
+    🔹 Sakhtane yek partition primary ba formet fat32 az offset 1MB ta akhar disk bar rooye `/dev/sdc`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `addpart` command is used to add a new partition to a disk. This command is a tool from the `parted` suite.
+
+⚙️ **Options:**
+    🔹 `addpart primary filesystem start end` --> ✨ Adds a primary partition with filesystem type, starting at start and ending at end.
+    🔹 `addpart logical filesystem start end`  --> ➕ Adds a logical partition with filesystem type, starting at start and ending at end.
+    🔹 `addpart extended start end`      --> 🧱 Adds an extended partition, starting at start and ending at end.
+
+🛠 **Examples:**
+
+    $ parted /dev/sda mklabel gpt
+    $ parted /dev/sda mkpart primary ext4 0% 100%
+
+    🔹 Creates a primary partition with ext4 filesystem type, utilizing the entire disk space of `/dev/sda`.
+
+    $ parted /dev/sdb
+    (parted) mklabel gpt
+    (parted) mkpart primary ext4 0% 2048MiB
+
+    🔹 Creates a primary partition with ext4 filesystem type, with a size of 2048 MB on disk `/dev/sdb`.
+
+✅ **Simple Example:**
+
+    $ parted /dev/sdc mklabel msdos
+    $ parted /dev/sdc mkpart primary fat32 1MiB 100%
+
+    🔹 Creates a primary partition with fat32 format from offset 1MB to the end of the disk `/dev/sdc`.

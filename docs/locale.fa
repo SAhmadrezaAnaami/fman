@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `locale` baraye namayesh ya ta’yin zaban, mantagheh, va character encoding baraye barname-ha estefade mishavad. In dastoor barname-ha ra komak mikonad ta be dorosti matn-ha ra namayesh dahand va ba format-haye monaseb kar konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `locale`  --> 🌍 Namayesh hameye etela'at locale jari.
+    🔹 `locale -a`  --> 📝 Namayesh list-e hameye locale-haye nasb shode.
+    🔹 `locale NAME` --> 🏷️ Namayesh faghat etela'at locale baraye `NAME` khass (masalan, `locale LC_TIME`).
+
+🛠 **Mesal-ha:**
+
+    $ locale
+
+    🔹 Namayesh hameye taghirat locale jari.
+
+    $ locale -a
+
+    🔹 List-e hameye locale-haye dastras.
+
+✅ **Mesal sade:**
+
+    $ locale LC_MONETARY
+
+    🔹 Namayesh format-e pool (currency) locale jari. Agar chizi namayesh dade nashavad, ya locale tayin nashode ya format-e pool dar locale jari tayin nashode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `locale` command is used to display or set the language, region, and character encoding for programs.  This command helps programs to correctly display text and work with appropriate formats.
+
+⚙️ **Options:**
+    🔹 `locale`  --> 🌍 Show all current locale settings.
+    🔹 `locale -a`  --> 📝 Show a list of all installed locales.
+    🔹 `locale NAME` --> 🏷️ Show only the locale information for the specific `NAME` (e.g., `locale LC_TIME`).
+
+🛠 **Examples:**
+
+    $ locale
+
+    🔹 Show all current locale settings.
+
+    $ locale -a
+
+    🔹 List all available locales.
+
+✅ **Simple Example & Explanation:**
+
+    $ locale LC_MONETARY
+
+    🔹 Show the current locale's currency format. If nothing is displayed, either the locale is unset, or the currency format is not defined in the current locale.

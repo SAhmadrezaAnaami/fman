@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `iptables-xml` baraye tabdil kardan ghavanin `iptables` be formate XML estefade mishavad.  In formate XML mitavanad baraye backup gereftan, moratab kardan va taghire ghavanin `iptables` be asani estefade shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--file <filename>` --> 💾 Zakhire kardan khorooji XML dar yek file khass.
+    🔹 `--stdout`       --> 📤 Chap kardan khorooji XML dar terminal (standard output).
+    🔹 `--version`      --> ℹ️ Namayesh version barname.
+
+🛠 **Mesal-ha:**
+
+    $ iptables-xml --stdout
+
+    🔹 Tabdil ghavanin `iptables` be XML va chap an dar terminal.
+
+    $ iptables-xml --file firewall.xml
+
+    🔹 Zakhire kardan ghavanin `iptables` dar file-e `firewall.xml`.
+
+✅ **Mesal sade:**
+
+    $ iptables-xml --file backup.xml
+
+    🔹 In dastoor ghavanin `iptables` ra be formate XML tabdil mikonad va dar file-e `backup.xml` zakhire mikonad.  In kar baraye backup gereftan az ghavanin firewall kheili mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `iptables-xml` command is used to convert `iptables` rules to XML format. This XML format can be used to easily back up, manage, and modify `iptables` rules.
+
+⚙️ **Options:**
+    🔹 `--file <filename>` --> 💾 Save the XML output to a specific file.
+    🔹 `--stdout`       --> 📤 Print the XML output to the terminal (standard output).
+    🔹 `--version`      --> ℹ️ Display the program version.
+
+🛠 **Examples:**
+
+    $ iptables-xml --stdout
+
+    🔹 Convert `iptables` rules to XML and print it on the terminal.
+
+    $ iptables-xml --file firewall.xml
+
+    🔹 Save `iptables` rules to a file named `firewall.xml`.
+
+✅ **Simple Example:**
+
+    $ iptables-xml --file backup.xml
+
+    🔹 This command converts `iptables` rules to XML format and saves them in the file `backup.xml`. This is very useful for backing up firewall rules.
+

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-scan` baraye estefade az scanner-e printer-haye HP az tarighe khat-e farman (terminal) be kar miravad. Ba in dastoor mitoonid aks ha ya asnad ro scan konid va save konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-scan -g` --> 🖼️ Baz kardane GUI (Graphical User Interface) baraye ayar-haye bishtar
+    🔹 `hp-scan -o <filename>` --> 💾 Save kardane scan ba name file-e moshakhas
+    🔹 `hp-scan --mode <color|grayscale|lineart>` --> 🌈 Tarz-e scan ro moshakhas mikone (rangi, khakestari, siyah-o-sefid)
+    🔹 `hp-scan --resolution <dpi>` --> 🎯 Deghat-e scan ro moshakhas mikone (dots per inch)
+
+🛠 **Mesal-ha:**
+
+    $ hp-scan
+
+    🔹 Scan kardan ba ayar-haye pishfarz va save kardan be name pishfarz.
+
+    $ hp-scan -o document.pdf
+
+    🔹 Scan kardan va save kardan be name "document.pdf".
+
+    $ hp-scan --mode grayscale --resolution 300 -o gray_doc.jpg
+
+    🔹 Scan kardan be soorat khakestari ba deghat 300 dpi va save kardan be name "gray_doc.jpg".
+
+✅ **Mesal sade:**
+
+    $ hp-scan -g
+
+    🔹 Baz kardane panjare-ye GUI baraye scan kardan. Shoma mitoonid settings ro tagheer bedid va aks ro pish az save kardan bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-scan` command is used to operate the scanner function of HP printers through the command line (terminal). It allows you to scan images or documents and save them.
+
+⚙️ **Options:**
+    🔹 `hp-scan -g` --> 🖼️ Opens the GUI (Graphical User Interface) for more settings
+    🔹 `hp-scan -o <filename>` --> 💾 Saves the scan with the specified filename
+    🔹 `hp-scan --mode <color|grayscale|lineart>` --> 🌈 Specifies the scan mode (color, grayscale, black and white)
+    🔹 `hp-scan --resolution <dpi>` --> 🎯 Specifies the scan resolution (dots per inch)
+
+🛠 **Examples:**
+
+    $ hp-scan
+
+    🔹 Scan with default settings and save with the default filename.
+
+    $ hp-scan -o document.pdf
+
+    🔹 Scan and save as "document.pdf".
+
+    $ hp-scan --mode grayscale --resolution 300 -o gray_doc.jpg
+
+    🔹 Scan in grayscale at 300 dpi resolution and save as "gray_doc.jpg".
+
+✅ **Simple Example:**
+
+    $ hp-scan -g
+
+    🔹 Opens the GUI window for scanning. You can change settings and preview the image before saving.

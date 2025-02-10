@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hostnamectl` baraye didan va tagheer dadan name computer (hostname) estefade mishavad. Ba in dastoor mitoonid name static, pretty, va transient ra moratab konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hostnamectl status`  --> ℹ️  Namayesh etela'at kamel dar morede hostname.
+    🔹 `hostnamectl set-hostname [name]`  --> ✍️  Tagheer dadan name static computer be [name]. Baraye ejraye in dastoor shoma bayad dastrasi admin (root) dashte bashid.
+    🔹 `hostnamectl set-hostname "[pretty name]"`  --> ✨  Tagheer dadan name "pretty" (ghabel fahm tar) computer.
+
+🛠 **Mesal-ha:**
+
+    $ hostnamectl status
+
+    🔹 Namayesh hameye etela'at marboot be hostname.
+
+    $ sudo hostnamectl set-hostname mynewhostname
+
+    🔹 Tagheer dadan name static computer be "mynewhostname".
+
+✅ **Mesal sade:**
+
+    $ hostnamectl
+
+    🔹 Agar bedune gozine ejra konid, etela'at asasi hostname ra neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hostnamectl` command is used to view and modify the system's hostname.  It allows you to manage the static, pretty, and transient hostnames.
+
+⚙️ **Options:**
+    🔹 `hostnamectl status`  --> ℹ️  Display the complete hostname information.
+    🔹 `hostnamectl set-hostname [name]`  --> ✍️  Set the static hostname to [name].  You need administrative (root) privileges to use this command.
+    🔹 `hostnamectl set-hostname "[pretty name]"`  --> ✨  Set the "pretty" hostname (more user-friendly name).
+
+🛠 **Examples:**
+
+    $ hostnamectl status
+
+    🔹 Display all hostname-related information.
+
+    $ sudo hostnamectl set-hostname mynewhostname
+
+    🔹 Change the static hostname to "mynewhostname".
+
+✅ **Simple Example:**
+
+    $ hostnamectl
+
+    🔹  If executed without any options, it displays basic hostname information.

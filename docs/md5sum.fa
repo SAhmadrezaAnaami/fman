@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `md5sum` baraye mohasebeye yek "fingerprint" ya hashe MD5 az yek file estefade mishavad. In hash be shoma komak mikonad ta motmaen shavid ke file taghir nakarde ast. Agar file taghir konad, hash MD5 avaz mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `md5sum filename` --> 📁 Mohasebeye hash MD5 file.
+    🔹 `md5sum -c checkfile` --> 🔍 Check kardane hash MD5 file ba hash mojood dar "checkfile".
+    🔹 `md5sum --binary filename` --> 💾 Khondan file be soorate binary. Mohem ast agar ba file-haye Windows kar mikonid.
+    🔹 `md5sum --text filename` --> 📄 Khondan file be soorate text. Default halat ast.
+
+🛠 **Mesal-ha:**
+
+    $ md5sum myfile.txt
+
+    🔹 Namayeshe hash MD5 file "myfile.txt"
+
+    $ md5sum -c checkfile.md5
+
+    🔹 Check kardane file-ha dar list "checkfile.md5" ba hash-haye mojood dar an file.
+
+✅ **Mesal sade:**
+
+    $ md5sum myfile.txt > myfile.md5
+    $ md5sum -c myfile.md5
+
+    🔹 Aval hash MD5 file "myfile.txt" ra mohasebe mikonad va dar file "myfile.md5" zakhire mikonad. Bad az an, check mikonad ke aya hash file "myfile.txt" ba hash dar file "myfile.md5" yeki ast ya na. Agar yeki bashad, payame "OK" neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `md5sum` command is used to calculate an MD5 hash (a "fingerprint") of a file.  This hash can be used to verify that a file has not been altered or corrupted. If the file changes, the MD5 hash will change.
+
+⚙️ **Options:**
+    🔹 `md5sum filename` --> 📁 Calculate the MD5 hash of a file.
+    🔹 `md5sum -c checkfile` --> 🔍 Check MD5 hashes against those listed in a "checkfile".
+    🔹 `md5sum --binary filename` --> 💾 Read the file in binary mode. Important when working with Windows files.
+    🔹 `md5sum --text filename` --> 📄 Read the file in text mode. This is the default.
+
+🛠 **Examples:**
+
+    $ md5sum myfile.txt
+
+    🔹 Display the MD5 hash of the file "myfile.txt".
+
+    $ md5sum -c checkfile.md5
+
+    🔹 Check the files listed in "checkfile.md5" against the hashes in that file.
+
+✅ **Simple Example:**
+
+    $ md5sum myfile.txt > myfile.md5
+    $ md5sum -c myfile.md5
+
+    🔹 First, calculate the MD5 hash of "myfile.txt" and save it to "myfile.md5". Then, check if the hash of "myfile.txt" matches the hash in "myfile.md5".  If they match, it displays "OK".

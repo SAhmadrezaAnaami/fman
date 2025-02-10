@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-resolve-address` baraye peyda kardane esme domain az rooye address IP estefade mishavad. Yani, address IP ra migirad va esme domaini ke ba aan address rabete darad ra barmigardanad. In baraye fahmidane asle address IP be jaye shomare estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-4` --> 🌐 Faghat address-haye IPv4 ra baresi mikonad.
+    🔹 `-6` --> 📡 Faghat address-haye IPv6 ra baresi mikonad.
+    🔹 `-v` --> 📢 Etela'ate bishtar dar morede cheraayi chizha chap mikonad (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ avahi-resolve-address 192.168.1.100
+
+    🔹 Peyda kardane esme domaini ke ba address IP 192.168.1.100 rabete darad.
+
+    $ avahi-resolve-address -4 192.168.1.100
+
+    🔹 Peyda kardane esme domaini ke ba address IPv4 192.168.1.100 rabete darad (faghat IPv4).
+
+✅ **Mesal sade:**
+
+    $ avahi-resolve-address 192.168.1.100
+    192.168.1.100    mycomputer.local
+
+    🔹 Agar `avahi-resolve-address` esme domain ra peyda konad, address IP va esme domain ra chap mikonad. Dar in mesal, address IP 192.168.1.100 ba esme domain `mycomputer.local` rabete darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-resolve-address` command is used to resolve an IP address to its corresponding domain name. It takes an IP address as input and returns the domain name associated with that address. This is useful for understanding the origin of an IP address instead of just seeing a number.
+
+⚙️ **Options:**
+    🔹 `-4` --> 🌐 Only resolve IPv4 addresses.
+    🔹 `-6` --> 📡 Only resolve IPv6 addresses.
+    🔹 `-v` --> 📢 Print more information about what's happening (verbose mode).
+
+🛠 **Examples:**
+
+    $ avahi-resolve-address 192.168.1.100
+
+    🔹 Resolve the domain name associated with the IP address 192.168.1.100.
+
+    $ avahi-resolve-address -4 192.168.1.100
+
+    🔹 Resolve the domain name associated with the IPv4 address 192.168.1.100 (IPv4 only).
+
+✅ **Simple Example & Explanation:**
+
+    $ avahi-resolve-address 192.168.1.100
+    192.168.1.100    mycomputer.local
+
+    🔹 If `avahi-resolve-address` finds the domain name, it prints the IP address and the corresponding domain name. In this example, the IP address 192.168.1.100 is associated with the domain name `mycomputer.local`.

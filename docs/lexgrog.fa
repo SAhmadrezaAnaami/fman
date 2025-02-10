@@ -1,0 +1,53 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lexgrog` baraye dorost kardan database az file-haye tarif-e manba’e data (source definition files) estefade mishavad. In database be `apropos` va digar dastoor-ha komak mikonad ta file-haye manba’e data ra peyda konand. Dar vaghe `lexgrog` index-bandi mikonad dastoor-ha va file-haye komaki ra baraye peyda kardan asan tar.
+
+⚙️ **Gozine-ha:**
+    🔹 Heech gozine-ye khas-i nadarad ke baraye estefade-ye ruzmare lazem bashad. Be طور معمول، be soorat otomatik az tarigh crontab ejra mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ lexgrog
+
+    🔹 In dastoor ra ejra konid ta database ra az file-haye manba’e data besazid. Hich khuruji nemidihad agar ba movafaghiat ejra shavad.
+
+    $ sudo lexgrog
+
+    🔹 Agar dastoor, file-ha ra nemitoonad update konad, az `sudo` estefade konid ta dastresi-e lazem ra dashte bashid.
+
+✅ **Mesal sade:**
+
+    $ lexgrog
+
+    🔹 Pas az ejra, database-i ke `apropos` az aan estefade mikonad update mishavad. Shoma pas az an mitoonid az `apropos keyword` estefade konid ta dastoor-ha ya function-ha-i ke ba an keyword rabete darand ra peyda konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lexgrog` command is used to create a database from source definition files. This database helps `apropos` and other commands find data source files. Essentially, `lexgrog` indexes commands and help files for easier searching.
+
+⚙️ **Options:**
+    🔹 It doesn't have specific options that are necessary for everyday use. It is typically executed automatically through crontab.
+
+🛠 **Examples:**
+
+    $ lexgrog
+
+    🔹 Run this command to build the database from the source definition files. It produces no output if it runs successfully.
+
+    $ sudo lexgrog
+
+    🔹 If the command cannot update the files, use `sudo` to gain the necessary permissions.
+
+✅ **Simple Example:**
+
+    $ lexgrog
+
+    🔹 After execution, the database that `apropos` uses is updated. You can then use `apropos keyword` to find commands or functions related to that keyword.
+

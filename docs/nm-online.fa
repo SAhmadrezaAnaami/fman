@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nm-online` baraye check kardan vazeiyat shabake (network) estefade mishavad. Ba in dastoor, shoma mitavanid motmaen shavid ke system shoma be shabake vasl ast va internet kar mikonad, ghabl az anke barname-haye digar ra ejra konid. 📶
+
+⚙️ **Gozine-ha:**
+    🔹 `nm-online -q`  --> ❓ Faghat natije ra chap mikonad (online ya offline). Bedune peyghame ziadi.
+    🔹 `nm-online -t [seconds]` --> ⏳ Moddat zaman entezar ra taeen mikonad (be saniye). Agar shabake dar in moddat online nashavad, offline hesab mishavad.
+    🔹 `nm-online -x` --> 🌐 Check mikonad ke aya shabake vasl be internet hast ya na (dar surati ke internet connection share shode bashad).
+
+🛠 **Mesal-ha:**
+
+    $ nm-online
+
+    🔹 Check mikonad ke aya shabake online ast ya na va peygham midehad.
+
+    $ nm-online -t 10
+
+    🔹 10 saniye sabr mikonad ta check konad ke shabake online mishavad ya na.
+
+✅ **Mesal sade:**
+
+    $ nm-online -q && echo "Shabake Online Ast" || echo "Shabake Offline Ast"
+
+    🔹 Check mikonad ke shabake online ast ya na va yek peygham sade chap mikonad. agar online bashad, "Shabake Online Ast" va agar offline bashad, "Shabake Offline Ast" chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nm-online` command is used to check the network connectivity status of your system.  It helps you to ensure that your system is connected to the network and has internet access before running other applications. 📶
+
+⚙️ **Options:**
+    🔹 `nm-online -q`  --> ❓ Only prints the result (online or offline) without verbose messages.
+    🔹 `nm-online -t [seconds]` --> ⏳ Sets a timeout (in seconds) to wait for the network to come online. If the network doesn't come online within the timeout period, it is considered offline.
+    🔹 `nm-online -x` --> 🌐 Checks if the system has internet access (useful in scenarios where internet connection is shared).
+
+🛠 **Examples:**
+
+    $ nm-online
+
+    🔹 Checks if the network is online and prints a message indicating the status.
+
+    $ nm-online -t 10
+
+    🔹 Waits for 10 seconds to check if the network comes online.
+
+✅ **Simple Example:**
+
+    $ nm-online -q && echo "Network is Online" || echo "Network is Offline"
+
+    🔹 Checks if the network is online and prints a simple message. If online, it prints "Network is Online"; otherwise, it prints "Network is Offline."

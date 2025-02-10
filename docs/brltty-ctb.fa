@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-ctb` baraye tabdil matn be Khat-e-Brail (braille) estefade mishavad. In dastoor qesmati az barnameye Brltty ast ke baraye afraad baa ma’loo’liat-e-binaa’ee komak mikonad ta matn raa be shekle Braille bekhanand.
+
+⚙️ **Gozine-ha:**
+    🔹 `brltty-ctb -b braille_table` --> 🔤 Estefade az jadvale Braille makhsus (braille table).
+    🔹 `brltty-ctb -l language`      --> 🌐 Tabdil matn ba estefade az zaban-e moshakhas.
+    🔹 `brltty-ctb -w line_width`    --> 📏 Ta’yin toole khat baraye Braille (tedad horoof dar har khat).
+
+🛠 **Mesal-ha:**
+
+    $ echo "Hello World" | brltty-ctb
+
+    🔹 Tabdil matn "Hello World" be khat-e Braille ba estefade az tanzeemat-e pishfarz.
+
+    $ brltty-ctb -b en-us.ctb < file.txt
+
+    🔹 Tabdil matne daroone file.txt ba estefade az jadvale Braille amrikaa’ee.
+
+✅ **Mesal sade:**
+
+    $ echo "Salam Donya" | brltty-ctb -l fa
+
+    🔹 Tabdil "Salam Donya" be Braille ba estefade az zaban-e faarsi (agar jadvale faarsi mojood bashad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-ctb` command is used to convert text to Braille.  It is a component of the Brltty program, which assists visually impaired individuals to read text in Braille format.
+
+⚙️ **Options:**
+    🔹 `brltty-ctb -b braille_table` --> 🔤 Use a specific braille table for conversion.
+    🔹 `brltty-ctb -l language`      --> 🌐 Convert text using a specified language.
+    🔹 `brltty-ctb -w line_width`    --> 📏 Set the line width for Braille output (number of characters per line).
+
+🛠 **Examples:**
+
+    $ echo "Hello World" | brltty-ctb
+
+    🔹 Convert the text "Hello World" to Braille using default settings.
+
+    $ brltty-ctb -b en-us.ctb < file.txt
+
+    🔹 Convert the contents of file.txt using the U.S. Braille table.
+
+✅ **Simple Example:**
+
+    $ echo "Hello World" | brltty-ctb -l en
+
+    🔹 Convert "Hello World" to Braille, specifying the English language table (if available).

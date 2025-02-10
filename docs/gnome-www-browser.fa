@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-www-browser` yek browser-e web-e sade ast ke baraye system-haye Linux ke az GNOME estefade mikonand, tarahi shode. In browser kheili sabok ast va baraye didane safhe-haye web-e sade va asasi munasib ast. 
+
+⚙️ **Gozine-ha:**
+    🔹 `--new-window`  --> 🆕 Baz kardane safheye jadid dar panjere jadid.
+    🔹 `--version`   --> ℹ️  Namayeshe version-e browser.
+    🔹 `<URL>`       --> 🌐 Baz kardane yek URL moshakhas dar browser.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-www-browser
+    
+    🔹 Baz kardane browser be soorate sade.
+
+    $ gnome-www-browser https://www.example.com
+    
+    🔹 Baz kardane safheye example.com dar browser.
+
+✅ **Mesal sade:**
+
+    $ gnome-www-browser --version
+    
+    🔹 Namayeshe version-e browser.  In command be shoma komak mikonad ta motmaen shavid ke shoma az akharin version estefade mikonid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-www-browser` is a simple web browser designed for Linux systems using GNOME. It is lightweight and suitable for viewing basic web pages.
+
+⚙️ **Options:**
+    🔹 `--new-window`  --> 🆕 Open the page in a new window.
+    🔹 `--version`   --> ℹ️  Display the browser version.
+    🔹 `<URL>`       --> 🌐 Open a specific URL in the browser.
+
+🛠 **Examples:**
+
+    $ gnome-www-browser
+    
+    🔹 Open the browser in a basic way.
+
+    $ gnome-www-browser https://www.example.com
+    
+    🔹 Open the example.com page in the browser.
+
+✅ **Simple Example:**
+
+    $ gnome-www-browser --version
+    
+    🔹 Display the browser version. This command helps you ensure that you are using the latest version.

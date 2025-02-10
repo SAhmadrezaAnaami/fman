@@ -1,0 +1,98 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ftp` baraye vasl shodan be yek server FTP (File Transfer Protocol) va enteghal dadan file-ha be kar miravad. Yani mitavanid file az computer khod be server upload konid ya az server be computer khod download konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ftp <address>` --> 🌐 Vasl shodan be yek server FTP ba address mored nazar.
+    🔹 `bye`         --> 👋 Ghat' kardan vasl az server FTP.
+    🔹 `get <file>`  --> ⬇️ Download kardan file az server FTP.
+    🔹 `put <file>`  --> ⬆️ Upload kardan file be server FTP.
+    🔹 `ls`          --> 📜 Namayesh dadan list file-ha va pooshe-ha dar server FTP.
+
+🛠 **Mesal-ha:**
+
+    $ ftp ftp.example.com
+
+    🔹 Vasl shodan be server FTP ba address ftp.example.com.
+
+    ftp> get myfile.txt
+
+    🔹 Download kardan file "myfile.txt" az server FTP be directory-e fa'ali ke darid.
+
+    ftp> put myfile.txt
+
+    🔹 Upload kardan file "myfile.txt" az directory-e fa'ali ke darid be server FTP.
+
+✅ **Mesal sade:**
+
+    $ ftp 192.168.1.100
+    Connected to 192.168.1.100.
+    220 (vsFTPd 3.0.3)
+    Name (192.168.1.100:user): anonymous
+    331 Please specify the password.
+    Password:
+    230 Login successful.
+    Remote system type is UNIX.
+    Using binary mode to transfer files.
+    ftp> ls
+    227 Entering Passive Mode (192,168,1,100,208,211).
+    150 Here comes the directory listing.
+    drwxr-xr-x    2 ftp      ftp          4096 Aug 10  2023 pub
+    226 Directory send OK.
+    ftp> bye
+    221 Goodbye.
+
+    🔹 Vasl shodan be server FTP ba IP address 192.168.1.100, login shodan be عنوان anonymous, namayesh list file-ha va pooshe-ha, va sepas kharej shodan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ftp` command is used to connect to an FTP (File Transfer Protocol) server and transfer files. It allows you to upload files from your computer to the server or download files from the server to your computer.
+
+⚙️ **Options:**
+    🔹 `ftp <address>` --> 🌐 Connect to an FTP server at the specified address.
+    🔹 `bye`         --> 👋 Disconnect from the FTP server.
+    🔹 `get <file>`  --> ⬇️ Download a file from the FTP server.
+    🔹 `put <file>`  --> ⬆️ Upload a file to the FTP server.
+    🔹 `ls`          --> 📜 List files and directories on the FTP server.
+
+🛠 **Examples:**
+
+    $ ftp ftp.example.com
+
+    🔹 Connect to the FTP server at ftp.example.com.
+
+    ftp> get myfile.txt
+
+    🔹 Download the file "myfile.txt" from the FTP server to your current working directory.
+
+    ftp> put myfile.txt
+
+    🔹 Upload the file "myfile.txt" from your current working directory to the FTP server.
+
+✅ **Simple Example:**
+
+    $ ftp 192.168.1.100
+    Connected to 192.168.1.100.
+    220 (vsFTPd 3.0.3)
+    Name (192.168.1.100:user): anonymous
+    331 Please specify the password.
+    Password:
+    230 Login successful.
+    Remote system type is UNIX.
+    Using binary mode to transfer files.
+    ftp> ls
+    227 Entering Passive Mode (192,168,1,100,208,211).
+    150 Here comes the directory listing.
+    drwxr-xr-x    2 ftp      ftp          4096 Aug 10  2023 pub
+    226 Directory send OK.
+    ftp> bye
+    221 Goodbye.
+
+    🔹 Connect to the FTP server with the IP address 192.168.1.100, log in as anonymous, list the files and directories, and then exit.

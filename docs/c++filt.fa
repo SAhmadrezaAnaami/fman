@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `c++filt` baraye tabdil name-haye tashkhis dadeh shodeye C++ (C++ mangled names) be name-haye ghabl-e khandan estefade mishavad. Vaghti ke barname-haye C++ compile mishavand, name function-ha va variable-ha taghir mikonand ta compiler بتواند anha ra be dorosti tashkhis bedahad. `c++filt` in name-haye taghir karde ra dobare be shakl asli bar migardanad.
+
+⚙️ **Gozine-ha:**
+    🔹 `c++filt _Z4funcIiEvT_` --> 🔄 Tabdil yek name taghir karde be name asli.
+    🔹 `c++filt -n` --> 🔢 Namayesh shomare function/variable dar kenare name asli.
+    🔹 `c++filt -_` --> 📝 Khandan name-haye taghir karde az vorudi standard (stdin).
+
+🛠 **Mesal-ha:**
+
+    $ c++filt _Z4funcIiEvT_
+
+    🔹 Tabdil name taghir karde `_Z4funcIiEvT_` be name asli.
+
+    $ nm myprogram | c++filt
+
+    🔹 Namayesh name function-ha az khorooji `nm` be shakl ghabl-e khandan.
+
+✅ **Mesal sade:**
+
+    $ c++filt _ZN5MyCls3fooEi
+
+    🔹 Agar output `MyCls::foo(int)` bashad, dastoor `c++filt` name taghir karde ra be name asli class `MyCls` va function `foo` tabdil karde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `c++filt` command is used to demangle C++ mangled names into human-readable names. When C++ programs are compiled, function and variable names are modified so the compiler can correctly identify them. `c++filt` converts these mangled names back into their original form.
+
+⚙️ **Options:**
+    🔹 `c++filt _Z4funcIiEvT_` --> 🔄 Demangle a single mangled name to its original form.
+    🔹 `c++filt -n` --> 🔢 Display function/variable number along with the demangled name.
+    🔹 `c++filt -_` --> 📝 Read mangled names from standard input (stdin).
+
+🛠 **Examples:**
+
+    $ c++filt _Z4funcIiEvT_
+
+    🔹 Demangles the name `_Z4funcIiEvT_` to its original form.
+
+    $ nm myprogram | c++filt
+
+    🔹 Displays function names from the `nm` output in a human-readable format.
+
+✅ **Simple Example:**
+
+    $ c++filt _ZN5MyCls3fooEi
+
+    🔹 If the output is `MyCls::foo(int)`, the `c++filt` command has demangled the mangled name to the original class `MyCls` and function `foo` name.

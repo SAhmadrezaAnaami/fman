@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `echo` baraye chap kardane matn ya variable-ha rooye safhe terminal estefade mishavad.  Meslan mitavanid yek payam sade ya natijeye yek dastoor digar ra chap konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `echo -n "matn"`  --> 🤫 Jelvegiri az chap kardane khat jadid dar entehaye matn.
+    🔹 `echo -e "matn\nmatn2"` --> 🗣️  Enable kardane interpretation az escape sequences mesle `\n` (khat jadid) ya `\t` (tab).
+    🔹 `echo "matn > file.txt"` --> 📝 Redirect kardane output be yek file.
+
+🛠 **Mesal-ha:**
+
+    $ echo Salam Donya!
+
+    🔹 Chap kardane "Salam Donya!" dar terminal.
+
+    $ echo $USER
+
+    🔹 Chap kardane name karbari shoma.
+
+✅ **Mesal sade:**
+
+    $ echo -e "Avalin khat\nKhat dovom"
+
+    🔹 Chap kardane do khat matn ba estefade az `\n` baraye khat jadid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `echo` command is used to display text or variables on the terminal screen.  For example, you can print a simple message or the result of another command.
+
+⚙️ **Options:**
+    🔹 `echo -n "text"` --> 🤫 Prevents printing a new line at the end of the text.
+    🔹 `echo -e "text\ntext2"` --> 🗣️ Enables interpretation of escape sequences like `\n` (new line) or `\t` (tab).
+    🔹 `echo "text > file.txt"` --> 📝 Redirects the output to a file.
+
+🛠 **Examples:**
+
+    $ echo Hello World!
+
+    🔹 Prints "Hello World!" to the terminal.
+
+    $ echo $USER
+
+    🔹 Prints your username.
+
+✅ **Simple Example:**
+
+    $ echo -e "First line\nSecond line"
+
+    🔹 Prints two lines of text using `\n` for a new line.
+

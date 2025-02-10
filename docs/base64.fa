@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `base64` baraye tabdil file-ha ya matn-ha be format `base64` estefade mishavad, ya baraks. Yani mitoonid file-ha ro `encode` ya `decode` konid. In format aksaran baraye enteghal data az tarigh channel-haee ke binary data ro dorost handle nemikonan, be kar mire.
+
+⚙️ **Gozine-ha:**
+    🔹 `base64 -e`  --> 🔒 Matn ya file ro `encode` mikonad (tabdil be `base64`).
+    🔹 `base64 -d`  --> 🔓 Matn ya file `base64` shode ro `decode` mikonad (tabdil be asle khodash).
+    🔹 `base64 -i <file>` --> 📥 `Encode` ya `decode` az yek file khass.
+    🔹 `base64 -o <file>` --> 📤 Natije ro dar yek file zakhire mikonad.
+    🔹 `base64 -w <number>` --> ➗ Har chand ta character natije ro line break bezaneh. (default: 76, 0 disable mikone)
+
+🛠 **Mesal-ha:**
+
+    $ echo "Hello World" | base64
+    🔹 In matn "Hello World" ro `encode` mikonad va natije `base64` shode ro chap mikonad.
+
+    $ base64 -d <<< "SGVsbG8gV29ybGQK"
+    🔹 In matn `base64` shode "SGVsbG8gV29ybGQK" ro `decode` mikonad va natije "Hello World" ro chap mikonad.
+
+    $ base64 -i input.txt -o output.b64
+    🔹 File `input.txt` ro `encode` mikonad va natije ro dar `output.b64` zakhire mikonad.
+
+    $ base64 -d -i input.b64 -o output.txt
+    🔹 File `input.b64` ro `decode` mikonad va natije ro dar `output.txt` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ echo "Salam Donya" | base64 -w 0
+    🔹 Matn "Salam Donya" ro `encode` mikonad va natije ro be soorate yek khat chap mikonad (bedune line break).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `base64` command is used to encode files or text into the `base64` format, or to decode `base64` encoded data back to its original form. This format is commonly used for transferring data across channels that don't properly handle binary data.
+
+⚙️ **Options:**
+    🔹 `base64 -e`  --> 🔒 Encodes the input text or file into `base64`.
+    🔹 `base64 -d`  --> 🔓 Decodes `base64` encoded text or file back to its original form.
+    🔹 `base64 -i <file>` --> 📥 Specifies an input file for encoding or decoding.
+    🔹 `base64 -o <file>` --> 📤 Specifies an output file to save the result.
+    🔹 `base64 -w <number>` --> ➗ Wraps the encoded output at the specified number of characters (default: 76, 0 disables wrapping).
+
+🛠 **Examples:**
+
+    $ echo "Hello World" | base64
+    🔹 Encodes the text "Hello World" and prints the `base64` encoded result.
+
+    $ base64 -d <<< "SGVsbG8gV29ybGQK"
+    🔹 Decodes the `base64` encoded text "SGVsbG8gV29ybGQK" and prints the original text "Hello World".
+
+    $ base64 -i input.txt -o output.b64
+    🔹 Encodes the file `input.txt` and saves the result in `output.b64`.
+
+    $ base64 -d -i input.b64 -o output.txt
+    🔹 Decodes the file `input.b64` and saves the result in `output.txt`.
+
+✅ **Simple Example:**
+
+    $ echo "Hello World" | base64 -w 0
+    🔹 Encodes the text "Hello World" and prints the `base64` encoded result as a single line (no line breaks).

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `git-receive-pack` dar taraf server baraye gereftan (receive) object-ha az yek `git send-pack` estefade mishavad.  Asosan, in dastoor be shoma ejaze midahad ke file-ha va taghirat-e project-e git-e khod ra az yek client be yek repository-e door (remote) beferestid (push konid).
+
+⚙️ **Gozine-ha:**
+    🔹 `--stateless-rpc`  --> 📡 Baraye rabete-ye bi-halat (stateless) ba client estefade mishavad.  Dar environment-haye HTTP smart transfer lazem ast.
+    🔹 `--strict`      --> 🚨  Check mikonad ke har update qabl az eemal shodan, be dorosti be repository apply shavad.
+    🔹 `--advertise-refs`  --> 📢 Ref-ha ra be client etela midahad (advertise mikonad) gabl az shoru’e gereftan object-ha.
+
+🛠 **Mesal-ha:**
+
+    $ git receive-pack --stateless-rpc .
+
+    🔹  Ra andazi `git receive-pack` dar hale rabete-ye bi-halat (stateless), obur az '.' be عنوان directory repository.
+
+    $ git receive-pack --strict /path/to/repository.git
+
+    🔹  Ra andazi `git receive-pack` dar hale strict, ba directory moshakhas shode.
+
+✅ **Mesal sade:**
+
+    $ git receive-pack . < input_data
+
+    🔹  Dadeh-ha az `input_data` gerefte mishavand va be repository ezafe mishavand.  `git receive-pack` object-ha va reference-ha ra az standard input mikhanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `git-receive-pack` command is used on the server side to receive objects transferred from a `git send-pack` process. Essentially, it allows you to push files and changes to your Git project from a client to a remote repository.
+
+⚙️ **Options:**
+    🔹 `--stateless-rpc`  --> 📡 Used for stateless communication with the client.  Necessary for HTTP smart transfer environments.
+    🔹 `--strict`      --> 🚨  Checks that each update applies cleanly to the repository before applying it.
+    🔹 `--advertise-refs`  --> 📢 Advertises the references to the client before starting to receive objects.
+
+🛠 **Examples:**
+
+    $ git receive-pack --stateless-rpc .
+
+    🔹  Starts `git receive-pack` in stateless RPC mode, passing '.' as the repository directory.
+
+    $ git receive-pack --strict /path/to/repository.git
+
+    🔹  Starts `git receive-pack` in strict mode, with the specified directory.
+
+✅ **Simple Example:**
+
+    $ git receive-pack . < input_data
+
+    🔹  Data is received from `input_data` and added to the repository. `git receive-pack` reads objects and references from standard input.

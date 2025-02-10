@@ -1,0 +1,71 @@
+Okay, here's a man page for the (fictional) `m2400w` command, following your specifications. I've assumed it's a fictional tool for managing wireless network connections.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `m2400w` baraye kontrol va modiriyat etesalat bi-sim (Wi-Fi) dar system-e shoma estefade mishavad.  Mitavanid shabake-ha-ye Wi-Fi ra jostojo konid, vasl shavid, va etela'ate etesal-e khod ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `m2400w scan` --> 📡 Jostojo-ye shabake-ha-ye Wi-Fi-ye dastras.
+    🔹 `m2400w connect <name-shabake>` --> 🔗 Vasl shodan be yek shabake-ye Wi-Fi ba name moshakhas. Az shoma ramz-e oboor khasteh khahad shod.
+    🔹 `m2400w disconnect` --> ✂️ Ghot-e etesal az shabake-ye Wi-Fi-ye فعلی.
+    🔹 `m2400w status` --> ℹ️ Namayesh etela'ate etesal-e فعلی (name-e shabake, signal, IP address, va...).
+    🔹 `m2400w save <name-shabake>` --> 💾 Zakhireh-ye ramz-e oboor baraye shabake baraye vasl shodan-e asan-tar dar ayandeh.
+
+🛠 **Mesal-ha:**
+
+    $ m2400w scan
+
+    🔹 Jostojo-ye shabake-ha-ye Wi-Fi-ye nazdik.
+
+    $ m2400w connect MyHomeWifi
+
+    🔹 Vasl shodan be shabake-ye "MyHomeWifi".  Dastoor az shoma ramz-e oboor khahad khast.
+
+    $ m2400w status
+
+    🔹 Namayesh etela'ate etesal-e فعلی.
+
+✅ **Mesal sade:**
+
+    $ m2400w disconnect
+
+    🔹 Az shabake-ye Wi-Fi-ye فعلی ghot-e etesal dadeh mishavad.  Pas az an, dastoor `m2400w status` chizi namayesh nemidahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `m2400w` command is used to control and manage wireless (Wi-Fi) connections on your system. You can scan for Wi-Fi networks, connect to them, and view connection information.
+
+⚙️ **Options:**
+    🔹 `m2400w scan` --> 📡 Scan for available Wi-Fi networks.
+    🔹 `m2400w connect <network-name>` --> 🔗 Connect to a Wi-Fi network with the specified name.  You will be prompted for the password.
+    🔹 `m2400w disconnect` --> ✂️ Disconnect from the current Wi-Fi network.
+    🔹 `m2400w status` --> ℹ️ Display information about the current connection (network name, signal strength, IP address, etc.).
+    🔹 `m2400w save <network-name>` --> 💾 Save the password for a network for easier future connections.
+
+🛠 **Examples:**
+
+    $ m2400w scan
+
+    🔹 Scan for nearby Wi-Fi networks.
+
+    $ m2400w connect MyHomeWifi
+
+    🔹 Connect to the "MyHomeWifi" network.  The command will prompt for the password.
+
+    $ m2400w status
+
+    🔹 Display current connection information.
+
+✅ **Simple Example:**
+
+    $ m2400w disconnect
+
+    🔹 Disconnects from the current Wi-Fi network.  After this, `m2400w status` will likely show no connection information.
+

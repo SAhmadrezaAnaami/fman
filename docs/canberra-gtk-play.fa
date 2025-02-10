@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `canberra-gtk-play` baraye pakhsh kardan seda az tarighe GTK estefade mishavad. In dastoor ob’haaye system-ro ba pakhsh kardan sedaye monaseb, be karbaran etela’ midahad.  Be tore mesal vaghti ke file-ee delete mishavad ya system error midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--id <esme-ob'>` --> 🏷️  Sedaaye marboot be yek ob’ khas ra pakhsh mikonad. Esme ob’ mesle "message" ya "window-close" mitoonad bashad.
+    🔹 `--file <address-file>` --> 📁  Yek file sedaye khass ra pakhsh mikonad.
+    🔹 `--description <tozihat>` --> 📝  Tozihati dar morede sedaa ijad mikonad ke baraye debug ya log estefade mishavad.
+    🔹 `--volume <meghdar>` --> 🔊  Meghdare sedaa ra taeen mikonad (az 0 ta 10).
+
+🛠 **Mesal-ha:**
+
+    $ canberra-gtk-play --id "message"
+
+    🔹 Sedaaye "message" ke baraye etela’ رسانی estefade mishavad ra pakhsh mikonad.
+
+    $ canberra-gtk-play --file "/home/user/sound.ogg"
+
+    🔹  File-e sedaye `/home/user/sound.ogg` ra pakhsh mikonad.
+
+✅ **Mesal sade:**
+
+    $ canberra-gtk-play --id "window-close" --description "Sedaye baste shodan panjere"
+
+    🔹  Sedaaye baste shodan panjere ra pakhsh mikonad va tozihati ra dar morede an dar log zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `canberra-gtk-play` command is used to play sounds through the GTK sound theme. It informs users about system events by playing appropriate sound cues, for example, when a file is deleted or a system error occurs.
+
+⚙️ **Options:**
+    🔹 `--id <event-name>` --> 🏷️ Plays the sound associated with a specific event. Event names can be like "message" or "window-close."
+    🔹 `--file <file-path>` --> 📁 Plays a specific sound file.
+    🔹 `--description <description>` --> 📝 Adds a description for the sound event, useful for debugging or logging.
+    🔹 `--volume <level>` --> 🔊 Sets the volume level (from 0 to 10).
+
+🛠 **Examples:**
+
+    $ canberra-gtk-play --id "message"
+
+    🔹 Plays the "message" sound, typically used for notifications.
+
+    $ canberra-gtk-play --file "/home/user/sound.ogg"
+
+    🔹 Plays the sound file located at `/home/user/sound.ogg`.
+
+✅ **Simple Example:**
+
+    $ canberra-gtk-play --id "window-close" --description "Window close sound"
+
+    🔹 Plays the window close sound and adds a description for logging purposes.

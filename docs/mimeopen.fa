@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mimeopen` baraye baz kardane file-ha ba barnamye pishfarz (default) ke baraye noe file moshakhas shode ast estefade mishavad. Agar barnamye pishfarz vojood nadashte bashad, az shoma soal mikonad ke ba che barnamyei file ra baz konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `mimeopen <filename>` --> 🚀 Baz kardane file ba barnamye pishfarz.
+    🔹 `mimeopen -n <filename>` --> ⛔ Faghat tashkhis dadane noe MIME file, vali baz nakardane an.
+    🔹 `mimeopen -d <filename>` --> 🔎 Namayesh dadane liste barnamahaee ke mitavanand file ra baz konand, vali baz nakardane an.
+    🔹 `mimeopen -s <filename>` --> 🛠️  Estefade az Terminal (CLI) baraye baz kardane file, agar chand gozine vojud dashte bashad, liste barnamaha dar Terminal namayesh dade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ mimeopen document.pdf
+
+    🔹 Baz kardane file `document.pdf` ba barnamye pishfarz baraye file-haye PDF.
+
+    $ mimeopen -n image.jpg
+
+    🔹 Namayesh dadane noe MIME file `image.jpg` bedune baz kardane an.
+
+✅ **Mesal sade:**
+
+    $ mimeopen text.txt
+
+    🔹 Agar barnamye pishfarzi baraye baz kardane file-haye `txt` taeen nashode bashad, `mimeopen` az shoma soal mikonad ke ba che barnamyei aan ra baz konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mimeopen` command is used to open a file with the default application associated with its MIME type. If no default application is set, it will prompt you to choose one.
+
+⚙️ **Options:**
+    🔹 `mimeopen <filename>` --> 🚀 Opens the file with its default application.
+    🔹 `mimeopen -n <filename>` --> ⛔ Only detects the MIME type of the file without opening it.
+    🔹 `mimeopen -d <filename>` --> 🔎 Displays a list of applications that can open the file without opening it.
+    🔹 `mimeopen -s <filename>` --> 🛠️ Use Terminal(CLI) to open file, if multiple option exist, list the applications on the terminal.
+
+🛠 **Examples:**
+
+    $ mimeopen document.pdf
+
+    🔹 Opens the `document.pdf` file with the default PDF viewer.
+
+    $ mimeopen -n image.jpg
+
+    🔹 Displays the MIME type of the `image.jpg` file without opening it.
+
+✅ **Simple Example:**
+
+    $ mimeopen text.txt
+
+    🔹 If there is no default application set for `txt` files, `mimeopen` will prompt you to select an application to open it with.

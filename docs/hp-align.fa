@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-align` baraye behtar kardane keyfiyat chap dar printer-haye HP estefade mishavad. In dastoor sar-haye chap ra moratab mikonad ta rang-ha va khatoot be dorosti chap shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-align -i`  --> ❓ Rahandazi dastoor be soorate interactive (soal az shoma va rahnamayi)
+    🔹 `hp-align -g`  --> 🖼️ Rahandazi dastoor be soorate graphical (ba estefade az panjere grafik)
+    🔹 `hp-align -u`  --> 🖥️ Rahandazi dastoor be soorate automatic (bedoone dakhalat shoma)
+
+🛠 **Mesal-ha:**
+
+    $ hp-align -i
+
+    🔹 Rahandazi dastoor `hp-align` be soorate interactive.
+
+    $ hp-align -g
+
+    🔹 Rahandazi dastoor `hp-align` be soorate graphical.
+
+✅ **Mesal sade:**
+
+    $ hp-align -u
+
+    🔹 Printer be soorate khodkar (automatic) sar-haye chap ra moratab mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-align` command is used to improve print quality on HP printers. This command aligns the print heads to ensure colors and lines are printed correctly.
+
+⚙️ **Options:**
+    🔹 `hp-align -i`  --> ❓ Run the command in interactive mode (prompts you for input and provides guidance)
+    🔹 `hp-align -g`  --> 🖼️ Run the command in graphical mode (using a graphical window)
+    🔹 `hp-align -u`  --> 🖥️ Run the command in automatic mode (without user intervention)
+
+🛠 **Examples:**
+
+    $ hp-align -i
+
+    🔹 Runs the `hp-align` command in interactive mode.
+
+    $ hp-align -g
+
+    🔹 Runs the `hp-align` command in graphical mode.
+
+✅ **Simple Example:**
+
+    $ hp-align -u
+
+    🔹 The printer automatically aligns the print heads.
+

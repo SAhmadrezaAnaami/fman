@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debdiff` do ta az file-haye `.deb` ra ba ham moghayese mikonad va taghirat bein anha ra namayesh midahad. In baraye fahmidane taghirat bein version-haye mokhtalef package-ha besiar mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `debdiff -h`  --> ❓ Namayeshe komake dastoor va gozine-ha.
+    🔹 `debdiff package_1.deb package_2.deb`  --> 📦 Moghayese sadeye do package va namayeshe taghirat.
+    🔹 `debdiff -o output.diff package_1.deb package_2.deb` --> 💾 Zakhireye natijeye moghayese dar yek file.
+
+🛠 **Mesal-ha:**
+
+    $ debdiff package_1.0.deb package_1.1.deb
+
+    🔹 Moghayese do version az yek package va namayeshe taghirat dar terminal.
+
+    $ debdiff -o changes.diff old_package.deb new_package.deb
+
+    🔹 Zakhireye taghirat bein `old_package.deb` va `new_package.deb` dar file-e `changes.diff`.
+
+✅ **Mesal sade:**
+
+    $ debdiff myapp_1.0.deb myapp_1.1.deb | less
+
+    🔹 Taghirate bein `myapp_1.0.deb` va `myapp_1.1.deb` ra namayesh midehad va natije ra az tarighe `less` baraye khandane asan tar neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debdiff` command compares two `.deb` files and displays the differences between them. This is very useful for understanding changes between different versions of packages.
+
+⚙️ **Options:**
+    🔹 `debdiff -h`  --> ❓ Show help message and options.
+    🔹 `debdiff package_1.deb package_2.deb`  --> 📦 Simple comparison of two packages and show the differences.
+    🔹 `debdiff -o output.diff package_1.deb package_2.deb` --> 💾 Save the comparison result to a file.
+
+🛠 **Examples:**
+
+    $ debdiff package_1.0.deb package_1.1.deb
+
+    🔹 Compare two versions of a package and display the changes in the terminal.
+
+    $ debdiff -o changes.diff old_package.deb new_package.deb
+
+    🔹 Save the changes between `old_package.deb` and `new_package.deb` in the file `changes.diff`.
+
+✅ **Simple Example:**
+
+    $ debdiff myapp_1.0.deb myapp_1.1.deb | less
+
+    🔹 Shows the differences between `myapp_1.0.deb` and `myapp_1.1.deb`, and displays the result using `less` for easier reading.

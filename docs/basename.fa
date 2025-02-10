@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `basename` ghesmate paayaniek path file ra joda mikonad. Be ebarate digar, name asli file ya directory ra bedune path-e kamel ya pasvand (extension) namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `basename PATH` --> 📁 Name file ya directory ra az PATH joda mikonad.
+    🔹 `basename PATH SUFFIX` --> ✂️ Agar PATH ba SUFFIX tamoom shavad, suffix ra hazf mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ basename /home/user/documents/myfile.txt
+
+    🔹 Namayesh: myfile.txt
+
+    $ basename /home/user/documents/myfile.txt .txt
+
+    🔹 Namayesh: myfile
+
+✅ **Mesal sade:**
+
+    $ basename /var/log/apache2/error.log
+
+    🔹 Agar name file "error.log" bashad va path an "/var/log/apache2/" bashad, dastoor "error.log" ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `basename` command isolates the last component of a file path. In other words, it displays the actual name of the file or directory, removing the complete path or a specified suffix (extension).
+
+⚙️ **Options:**
+    🔹 `basename PATH` --> 📁 Extracts the file or directory name from PATH.
+    🔹 `basename PATH SUFFIX` --> ✂️ If PATH ends with SUFFIX, it removes the suffix.
+
+🛠 **Examples:**
+
+    $ basename /home/user/documents/myfile.txt
+
+    🔹 Output: myfile.txt
+
+    $ basename /home/user/documents/myfile.txt .txt
+
+    🔹 Output: myfile
+
+✅ **Simple Example & Explanation:**
+
+    $ basename /var/log/apache2/error.log
+
+    🔹 If the file is named "error.log" and located in "/var/log/apache2/", the command will print "error.log".
+

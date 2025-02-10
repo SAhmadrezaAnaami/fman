@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `arecord` yek barname-ye command-line baraye sabt kardan seda az kart-e seda dar Linux ast. Shoma mitavanid ba estefade az in dastoor, seda ra ba format-haye mokhtalef zakhire konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `arecord -d <moddat>`  --> ⏳ Sabt seda baraye moddat zaman moshakhas (be saniye). Masalan: `arecord -d 10 file.wav` 10 sanie seda sabt mikonad.
+    🔹 `arecord -f <format>` --> 🎼  Taein format-e seda. Az jumle: `cd کیفیت`, `dat`  (braye CD) ya `s16_LE` (16-bit, Little Endian). Masalan: `arecord -f cd file.wav` ba کیفیت CD seda sabt mikonad.
+    🔹 `arecord -r <nerkh>`  --> 🎤 Taein nerkh-e nemoone bardari (sample rate) be hertz (Hz). Nerkh-haye raayej shamel 44100 (CD), 48000, va 96000 hastand. Masalan: `arecord -r 44100 file.wav` ba nerkh 44.1kHz seda sabt mikonad.
+    🔹 `arecord -c <tedad>` --> 🎧  Taein tedad-e channel-ha (yek ya do). 1 baraye mono va 2 baraye stereo ast. Masalan: `arecord -c 2 file.wav` stereo sabt mikonad.
+    🔹 `arecord -l` --> 📍 List kardan kart-haye seda va device-haye doroone system.
+
+🛠 **Mesal-ha:**
+
+    $ arecord file.wav
+
+    🔹 Shorooe sabt seda ta zamani ke shoma dastoor ra ba Ctrl+C motavaqef konid.
+
+    $ arecord -d 5 -f cd seda.wav
+
+    🔹 Sabt 5 sanie seda ba کیفیت CD va zakhire an be onvane seda.wav.
+
+✅ **Mesal sade:**
+
+    $ arecord -l
+
+    🔹 Namayesh list-e kart-haye seda va device-haye sabt dasteressi پذیر. In komak میکنه device-e dorost ra baraye sabt taeien konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `arecord` command is a command-line program for recording audio from a sound card in Linux. You can use this command to save audio in various formats.
+
+⚙️ **Options:**
+    🔹 `arecord -d <duration>` --> ⏳ Record audio for a specified duration (in seconds). For example: `arecord -d 10 file.wav` records audio for 10 seconds.
+    🔹 `arecord -f <format>` --> 🎼 Specify the audio format. Common options include: `cd`, `dat`, or `s16_LE` (16-bit, Little Endian). For example: `arecord -f cd file.wav` records audio with CD quality.
+    🔹 `arecord -r <rate>` --> 🎤 Specify the sample rate in Hertz (Hz). Common rates include 44100 (CD), 48000, and 96000. For example: `arecord -r 44100 file.wav` records audio at 44.1kHz.
+    🔹 `arecord -c <channels>` --> 🎧 Specify the number of channels (one or two). 1 for mono and 2 for stereo. For example: `arecord -c 2 file.wav` records in stereo.
+    🔹 `arecord -l` --> 📍 List sound cards and devices on the system.
+
+🛠 **Examples:**
+
+    $ arecord file.wav
+
+    🔹 Starts recording audio until you stop the command with Ctrl+C.
+
+    $ arecord -d 5 -f cd audio.wav
+
+    🔹 Records 5 seconds of audio with CD quality and saves it as audio.wav.
+
+✅ **Simple Example & Explanation:**
+
+    $ arecord -l
+
+    🔹 Displays a list of accessible sound cards and recording devices. This helps you identify the correct device for recording.

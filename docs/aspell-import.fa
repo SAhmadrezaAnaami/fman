@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aspell-import` baraye tabdil file-haye dictionary (leksikon) az format-haye digar be formati ke `aspell` mitoone bekhoone estefade mishe. Yani leksikon-haye ghadimi ro update mikone ke `aspell` befahme.
+
+⚙️ **Gozine-ha:**
+    🔹 `--lang=zaban` --> 🗣️  Zabani ke leksikon barash dorost shode ro moshakhas mikone (masalan, `en` baraye English). Agar nayarin, khodesh hads mizane.
+    🔹 `--encoding=kodgozari` --> 🔑 Kodgozari file varedi ro moshakhas mikone (masalan, `utf-8`).  Age nayarin, `aspell` az `locale` system estefade mikone.
+    🔹 `--personal=file` --> 👤  File-e shakhsi ke kalame-haye jadid behesh ezafe mishan ro moshakhas mikone.
+
+🛠 **Mesal-ha:**
+
+    $ aspell-import --lang=en_US my_old_dict.txt en_US.new
+
+    🔹  File-e `my_old_dict.txt` ro be formate `aspell` tabdil mikone va be name `en_US.new` zakhire mikone. Zaban `en_US` moshakhas shode.
+
+    $ aspell-import --encoding=latin1 old_dict.txt my_aspell_dict.wl
+
+    🔹 File `old_dict.txt` ba kodgozari `latin1` ro be format `aspell` tabdil mikone va be name `my_aspell_dict.wl` zakhire mikone.
+
+✅ **Mesal sade:**
+
+    $ aspell-import --lang=fr new_words.txt fr.wl
+
+    🔹 Kalame-haye jadid az file `new_words.txt` (baraye zabane Faransavi) ro be formate `aspell` tabdil mikone va zakhire mikone.  Inja `aspell` mitoone kalame-haye jadid ro be dictionary-esh ezafe kone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aspell-import` command is used to convert dictionary files from other formats into a format that `aspell` can read. It essentially updates older lexicons so `aspell` can understand them.
+
+⚙️ **Options:**
+    🔹 `--lang=language` --> 🗣️ Specifies the language the lexicon is for (e.g., `en` for English).  If not specified, it tries to guess.
+    🔹 `--encoding=encoding` --> 🔑 Specifies the encoding of the input file (e.g., `utf-8`). If not specified, `aspell` uses the system `locale`.
+    🔹 `--personal=file` --> 👤 Specifies a personal dictionary file to add new words to.
+
+🛠 **Examples:**
+
+    $ aspell-import --lang=en_US my_old_dict.txt en_US.new
+
+    🔹 Converts the `my_old_dict.txt` file to the `aspell` format and saves it as `en_US.new`.  The language is specified as `en_US`.
+
+    $ aspell-import --encoding=latin1 old_dict.txt my_aspell_dict.wl
+
+    🔹 Converts the `old_dict.txt` file with `latin1` encoding to the `aspell` format and saves it as `my_aspell_dict.wl`.
+
+✅ **Simple Example:**
+
+    $ aspell-import --lang=fr new_words.txt fr.wl
+
+    🔹 Converts new words from the `new_words.txt` file (for the French language) into the `aspell` format and saves it.  This allows `aspell` to add the new words to its dictionary.

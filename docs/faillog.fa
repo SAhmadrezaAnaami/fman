@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `faillog` baraye modiriyat va didan etela'at vorood-haye na-movafagh (failed login attempts) dar system estefade mishavad. Ba estefade az in dastoor, shoma mitavanid hesab-haye karbari ke ziyad talash baraye vorood-e ghalat dashte and ra peygiri konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `faillog --all`  --> 👁️‍🗨️ Namayesh hameye hesab-haye karbari va etela'at vorood-haye na-movafagh baraye har hesab.
+    🔹 `faillog --user USERNAME`  --> 👤 Namayesh etela'at vorood-haye na-movafagh baraye karbar khass (be jaye "USERNAME" name karbar ra benevisid).
+    🔹 `faillog --reset USERNAME`  --> 🔄 Reset kardane tedad vorood-haye na-movafagh baraye karbar khass.
+    🔹 `faillog --file FILE` --> 📁 Estefade az file-e digar be jaye file pishfarz /var/log/faillog
+
+🛠 **Mesal-ha:**
+
+    $ faillog --all
+
+    🔹 Namayesh hameye hesab-haye karbari ba etela'at vorood-haye na-movafagh.
+
+    $ faillog --user john
+
+    🔹 Namayesh etela'at vorood-haye na-movafagh baraye karbar "john".
+
+    $ sudo faillog --reset john
+    
+    🔹 Reset kardan tedad vorood-haye na-movafagh baraye karbar "john" (niaz be dastresi root darad).
+
+✅ **Mesal sade:**
+
+    $ faillog --user root
+
+    🔹 Agar hesab karbari "root" vorood-haye na-movafagh dashte bashad, etela'at aan namayesh dade mishavad. Agar hich vorood-e na-movafaghi nabashe, chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `faillog` command is used to manage and view information about failed login attempts on the system.  Using this command, you can track user accounts that have had excessive failed login attempts.
+
+⚙️ **Options:**
+    🔹 `faillog --all`  --> 👁️‍🗨️ Show all user accounts and the failed login information for each account.
+    🔹 `faillog --user USERNAME`  --> 👤 Show failed login information for a specific user (replace "USERNAME" with the actual username).
+    🔹 `faillog --reset USERNAME`  --> 🔄 Reset the number of failed login attempts for a specific user.
+    🔹 `faillog --file FILE` --> 📁 Use a different file instead of the default /var/log/faillog
+
+🛠 **Examples:**
+
+    $ faillog --all
+
+    🔹 Show all user accounts with failed login information.
+
+    $ faillog --user john
+
+    🔹 Show failed login information for the user "john".
+
+    $ sudo faillog --reset john
+    
+    🔹 Reset the number of failed login attempts for the user "john" (requires root access).
+
+✅ **Simple Example:**
+
+    $ faillog --user root
+
+    🔹 If the "root" user account has any failed login attempts, the information will be displayed. If there are no failed logins, nothing will be shown.

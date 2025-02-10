@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `head` baraye namayesh khat haye avaliye yek file be kar miravad. Be tore pishfarz, 10 khat az aval file ra neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `head -n [tedad]` --> 🔢 Ta'يين tedad khat haye namayeshi.  Masalan, `head -n 20 file.txt` 20 khat aval را namayesh midahad.
+    🔹 `head -c [tedad]` --> ✂️ Namayesh tedad character haye moshakhas shode az aval file.
+
+🛠 **Mesal-ha:**
+
+    $ head file.txt
+
+    🔹 Namayesh 10 khat aval file.txt.
+
+    $ head -n 5 file.txt
+
+    🔹 Namayesh 5 khat aval file.txt.
+
+✅ **Mesal sade:**
+
+    $ head -c 50 file.txt
+
+    🔹 Faghat 50 character aval file.txt ra namayesh midahad. Dar vaghe yek nim-negahi be aval file mindazad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `head` command displays the beginning lines of a file. By default, it shows the first 10 lines.
+
+⚙️ **Options:**
+    🔹 `head -n [number]` --> 🔢 Specify the number of lines to display. For example, `head -n 20 file.txt` displays the first 20 lines.
+    🔹 `head -c [number]` --> ✂️ Display the specified number of characters from the beginning of the file.
+
+🛠 **Examples:**
+
+    $ head file.txt
+
+    🔹 Display the first 10 lines of file.txt.
+
+    $ head -n 5 file.txt
+
+    🔹 Display the first 5 lines of file.txt.
+
+✅ **Simple Example:**
+
+    $ head -c 50 file.txt
+
+    🔹 Displays only the first 50 characters of file.txt. Essentially, it provides a sneak peek at the beginning of the file.
+

@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debsnap` baraye sakhtan yek "snapshot" az narm afzarhaye Debian (`.deb`) estefade mishavad. Yani yek copy az filehaye narm afzar dar hale ejra ra negah midarad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debsnap save <esm_package>` --> 💾 Zakhire kardane filehaye package mored nazar dar halate konooni.
+    🔹 `debsnap restore <esm_package>` --> ⏪ Bargardandan filehaye package be halate zakhire shode.
+    🔹 `debsnap diff <esm_package>` --> 🔍 Neshan dadane taghirati ke dar filehaye package ba'd az zakhire shodan rokh dade ast.
+    🔹 `debsnap purge <esm_package>` --> 🗑️ Pak kardane snapshot-haye zakhire shode baraye package mored nazar.
+
+🛠 **Mesal-ha:**
+
+    $ debsnap save firefox
+
+    🔹 Yek snapshot az filehaye package `firefox` misazad.
+
+    $ debsnap restore firefox
+
+    🔹 Filehaye `firefox` ra be halati ke ghabelan zakhire shode bood bargardan.
+
+✅ **Mesal sade:**
+
+    $ debsnap diff vlc
+
+    🔹 Listi az taghirati ke ba'd az `debsnap save vlc` rooye filehaye `vlc` anjam shode neshan midahad. Agar khataee vojood dashte bashad, mitoonid behalate ghabli bargardanid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debsnap` command is used to create a "snapshot" of Debian software packages (`.deb`). This means it saves a copy of the software's files in their current state.
+
+⚙️ **Options:**
+    🔹 `debsnap save <package_name>` --> 💾 Saves the current state of the specified package's files.
+    🔹 `debsnap restore <package_name>` --> ⏪ Restores the package's files to the saved snapshot.
+    🔹 `debsnap diff <package_name>` --> 🔍 Shows the differences in the package's files since the snapshot was taken.
+    🔹 `debsnap purge <package_name>` --> 🗑️ Deletes the saved snapshot for the specified package.
+
+🛠 **Examples:**
+
+    $ debsnap save firefox
+
+    🔹 Creates a snapshot of the `firefox` package's files.
+
+    $ debsnap restore firefox
+
+    🔹 Restores the `firefox` files to the previously saved state.
+
+✅ **Simple Example:**
+
+    $ debsnap diff vlc
+
+    🔹 Shows a list of changes made to the `vlc` files since `debsnap save vlc` was run. If there's an error, you can revert to the previous state.
+

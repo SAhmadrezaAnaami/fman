@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mcookie` baraye dorost kardane "magic cookie" estefade mishavad. Magic cookie ha baraye amniat dar X server ha be kar miravand. Yani, yek string e tasadofi dorost mikone va dar `.Xauthority` zakhire mikone ta barname ha betonand be X server vasl shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `mcookie [tedad]`  --> 🔢 Agar tedad ra vared konid, `mcookie` aan tedad cookie dorost mikonad. Agar vared nakonid, yek cookie dorost mikonad.
+    🔹 `mcookie -v` --> 🗣️ Namayesh dadan cookie dorost shode dar terminal (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ mcookie
+    
+    🔹 Yek magic cookie dorost mikonad va aan ra dar `.Xauthority` zakhire mikonad.
+
+    $ mcookie 3
+    
+    🔹 Se magic cookie dorost mikonad va aanha ra dar `.Xauthority` ezafe mikonad.
+
+✅ **Mesal sade:**
+
+    $ mcookie -v
+    
+    🔹 Alave bar dorost kardane cookie va zakhire kardane aan, cookie dorost shode ra dar terminal namayesh midahad. Meslan: `4f701212b1074d94c445316795905b83`
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mcookie` command is used to create "magic cookies." Magic cookies are used for security in X servers. It generates a random string and stores it in the `.Xauthority` file, allowing programs to connect to the X server.
+
+⚙️ **Options:**
+    🔹 `mcookie [number]`  --> 🔢 If you provide a number, `mcookie` creates that many cookies. If you don't specify a number, it creates one cookie.
+    🔹 `mcookie -v` --> 🗣️ Display the generated cookie in the terminal (verbose mode).
+
+🛠 **Examples:**
+
+    $ mcookie
+    
+    🔹 Creates a single magic cookie and stores it in `.Xauthority`.
+
+    $ mcookie 3
+    
+    🔹 Creates three magic cookies and appends them to `.Xauthority`.
+
+✅ **Simple Example:**
+
+    $ mcookie -v
+    
+    🔹 In addition to creating the cookie and saving it, displays the generated cookie in the terminal. For example: `4f701212b1074d94c445316795905b83`

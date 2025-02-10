@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gp-archive` baraye poshtiban-giri (backup) va bargardandan-e (restore) etela'at Google Play estefade mishavad. In dastoor be shoma komak mikonad ta az barname-ha (apps), bazi-ha (games), va etela'at hesab-e Google Play khod poshtiban begirid va dar sorat-e niaz, anha ra bargardanid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gp-archive backup`  --> 💾 Az hameye barname-ha va bazi-ha poshtiban migirad.
+    🔹 `gp-archive restore` --> 📤 Etela'at poshtiban-giri shode ra bargardandan.
+    🔹 `gp-archive list`    --> 📝 List-e poshtiban-giri haye mojood ra namayesh midahad.
+    🔹 `gp-archive --help` --> ❓ Komak va rahnamara namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gp-archive backup
+
+    🔹 Az hameye barname-ha va bazi-ha poshtiban migirad.
+
+    $ gp-archive restore
+
+    🔹 Akharin poshtiban-giri ra bargardandan.
+
+    $ gp-archive list
+
+    🔹 List-e poshtiban-giri haye mojood ra dar file haye archive namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ gp-archive backup --output ~/backup_gp_archive.tar.gz
+
+    🔹 Az hameye barname-ha va bazi-ha poshtiban migirad va dar file-e `backup_gp_archive.tar.gz` dar pooshe-ye home zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gp-archive` command is used for backing up and restoring Google Play data. It helps you backup and restore your apps, games, and Google Play account data.
+
+⚙️ **Options:**
+    🔹 `gp-archive backup`  --> 💾 Backup all apps and games.
+    🔹 `gp-archive restore` --> 📤 Restore previously backed up data.
+    🔹 `gp-archive list`    --> 📝 List available backups.
+    🔹 `gp-archive --help` --> ❓ Display help and usage information.
+
+🛠 **Examples:**
+
+    $ gp-archive backup
+
+    🔹 Backup all apps and games.
+
+    $ gp-archive restore
+
+    🔹 Restore the latest backup.
+
+    $ gp-archive list
+
+    🔹 List available backups stored in archive files.
+
+✅ **Simple Example:**
+
+    $ gp-archive backup --output ~/backup_gp_archive.tar.gz
+
+    🔹 Backup all apps and games and save them to the `backup_gp_archive.tar.gz` file in the home directory.

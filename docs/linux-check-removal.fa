@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `linux-check-removal` baraye check kardane inke aya yek package az system pak shode ya na estefade mishavad. In dastoor be shoma komak mikonad ta motmaen shavid ke yek narmafzar kamelan az system hazf shode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--package <esm-package>` --> 📦 Esme package-i ke mikhahid check konid.  Bayad esme kamel package ra vared konid.
+    🔹 `--quiet`  --> 🤫 Hich payami neshan nemidahad. Faghat agar package hazf nashode bashad, yek error code barmigardanad.
+    🔹 `--help`  --> ℹ️ Rahnamayi dastoor ra neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ linux-check-removal --package firefox
+
+    🔹 Check mikonad ke aya package `firefox` hazf shode ya na.
+
+    $ linux-check-removal --package vlc --quiet
+
+    🔹 Check mikonad ke aya package `vlc` hazf shode ya na, bedune neshan dadane hich payami.
+
+✅ **Mesal sade:**
+
+    $ linux-check-removal --package my-app
+
+    Agar package `my-app` hazf shode bashad, hich chizi neshan nemidahad. Agar hazf nashode bashad, yek error message neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `linux-check-removal` command is used to check whether a specific package has been removed from the system. It helps you ensure that a software application has been completely uninstalled.
+
+⚙️ **Options:**
+    🔹 `--package <package-name>` --> 📦 The name of the package you want to check. You must provide the exact package name.
+    🔹 `--quiet` --> 🤫 Suppresses all output messages. It only returns an error code if the package is not removed.
+    🔹 `--help` --> ℹ️ Displays the help information for the command.
+
+🛠 **Examples:**
+
+    $ linux-check-removal --package firefox
+
+    🔹 Checks if the `firefox` package has been removed.
+
+    $ linux-check-removal --package vlc --quiet
+
+    🔹 Checks if the `vlc` package has been removed, without displaying any messages.
+
+✅ **Simple Example:**
+
+    $ linux-check-removal --package my-app
+
+    If the `my-app` package is removed, it displays nothing. If it is not removed, it will show an error message.

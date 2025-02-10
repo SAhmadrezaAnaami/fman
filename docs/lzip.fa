@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzip` baraye feshoordan (compress) ya baz kardan (decompress) file-ha estefade mishavad.  File-haye feshoorde shode ba `lzip` pasvand `.lz` daran.  `lzip` nesbat be `gzip` ya `bzip2` feshoordegi behtari darad, ama momken ast kami koodtar bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzip -d file.lz`  --> 🔓 Baz kardan yek file `.lz` (decompress)
+    🔹 `lzip file`       --> 🔒 Feshoordan yek file (compress), file asli ra hazf mikonad.
+    🔹 `lzip -k file`    --> 💾 Feshoordan file va negah dashtan file asli (keep).
+    🔹 `lzip -o output_file file` --> ➡️  Feshoordan file be yek name digar (output file).
+    🔹 `lzip -9 file`    --> 💪 Feshoordegi ziad (maximum compression) (chand barabar koodtar)
+    🔹 `lzip -1 file`    --> 💨  Feshoordegi kam (fastest compression) (chand barabar sari tar)
+    🔹 `lzip -t file.lz`  --> ✅ Test kardan yek file `.lz` ke dorost kar mikonad ya na (test).
+    🔹 `lzip -z file`    --> 0️⃣  Feshoordan file dar hale ke file asli ra ba sefr replace mikonad (zero).
+
+🛠 **Mesal-ha:**
+
+    $ lzip file.txt
+
+    🔹 Feshoordan file `file.txt` va sakhtan `file.txt.lz`.
+
+    $ lzip -d file.txt.lz
+
+    🔹 Baz kardan file `file.txt.lz` va sakhtan `file.txt`.
+
+✅ **Mesal sade:**
+
+    $ lzip -k myfile.txt
+
+    🔹 Feshoordan `myfile.txt` be `myfile.txt.lz` vali `myfile.txt` ra negah midarad.  In dar vaghe yek copy az file ra feshoorde mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzip` command is used to compress or decompress files.  Compressed files using `lzip` have the `.lz` extension.  `lzip` offers better compression ratios than `gzip` or `bzip2`, but may be slightly slower.
+
+⚙️ **Options:**
+    🔹 `lzip -d file.lz`  --> 🔓 Decompress a `.lz` file.
+    🔹 `lzip file`       --> 🔒 Compress a file, deleting the original.
+    🔹 `lzip -k file`    --> 💾 Compress a file and keep the original.
+    🔹 `lzip -o output_file file` --> ➡️  Compress the file to a different name (output file).
+    🔹 `lzip -9 file`    --> 💪 Maximum compression (slower).
+    🔹 `lzip -1 file`    --> 💨  Fastest compression (less compression).
+    🔹 `lzip -t file.lz`  --> ✅ Test a `.lz` file to ensure it's not corrupted.
+    🔹 `lzip -z file`    --> 0️⃣  Compresses file while overwriting the original file with zeros.
+
+🛠 **Examples:**
+
+    $ lzip file.txt
+
+    🔹 Compresses the file `file.txt` creating `file.txt.lz`.
+
+    $ lzip -d file.txt.lz
+
+    🔹 Decompresses the file `file.txt.lz` creating `file.txt`.
+
+✅ **Simple Example:**
+
+    $ lzip -k myfile.txt
+
+    🔹 Compresses `myfile.txt` to `myfile.txt.lz` but keeps the original `myfile.txt`. This essentially compresses a copy of the file.

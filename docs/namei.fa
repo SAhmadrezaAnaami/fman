@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `namei` baraye taghir dadan ya namayesh dadan etela'at karbari (user information) dar system estefade mishavad. In etela'at mesle name kamel va etela'ate rabete karbar ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `namei -u username` --> 👤 Taghir dadan etela'at karbari moshakhas ba username
+    🔹 `namei -n "Full Name"` --> 📝 Taghir dadan name kamel karbar
+    🔹 `namei -r "Room Number"` --> 🏢 Taghir dadan ya ezafe kardan shomare otagh karbar.
+    🔹 `namei` --> 👀 Namayesh etela'ate karbare fa'al. (bi hich gozine)
+
+🛠 **Mesal-ha:**
+
+    $ namei -n "Ali Rezaei"
+
+    🔹 Taghir name kamel karbare fa'al be "Ali Rezaei".
+
+    $ namei -u john -r "Office 202"
+
+    🔹 Taghir shomare otagh karbar "john" be "Office 202".
+
+✅ **Mesal sade:**
+
+    $ namei
+
+    🔹 Namayesh etela'ate karbare fa'al. Output mesle name kamel, shomare otagh va etela'ate digar neshan dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `namei` command is used to change or display user information on the system. This includes the user's full name and contact information.
+
+⚙️ **Options:**
+    🔹 `namei -u username` --> 👤 Modify information for a specific user with username.
+    🔹 `namei -n "Full Name"` --> 📝 Change the user's full name.
+    🔹 `namei -r "Room Number"` --> 🏢 Change or add the user's room number.
+    🔹 `namei` --> 👀 Display the information of the current user (without any options).
+
+🛠 **Examples:**
+
+    $ namei -n "Ali Rezaei"
+
+    🔹 Changes the full name of the current user to "Ali Rezaei".
+
+    $ namei -u john -r "Office 202"
+
+    🔹 Changes the room number of user "john" to "Office 202".
+
+✅ **Simple Example:**
+
+    $ namei
+
+    🔹 Displays the information of the current user.  The output shows the full name, room number, and other details.

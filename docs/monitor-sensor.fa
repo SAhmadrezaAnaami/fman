@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `monitor-sensor` baraye khandan va namayesh etela'at az sensor-haye monitor estefade mishavad. In dastoor be shoma komak mikonad darbareye hararat (temperature), voltage, va fan speed (sor'at parch) etela'at kasb konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `monitor-sensor` --> 🌡️ Namayesh hameye sensor-ha va meghdar-haye anha.
+    🔹 `monitor-sensor --help` --> ❓ Namayesh rahnamaye dastoor ba gozine-haye bishtar.
+    🔹 `monitor-sensor <name>` --> 🎯 Faghat namayesh etela'at yek sensor khas (be esm).
+
+🛠 **Mesal-ha:**
+
+    $ monitor-sensor
+
+    🔹 Namayesh etela'at hameye sensor-ha
+
+    $ monitor-sensor temp1
+
+    🔹 Namayesh faghat etela'at sensor ba esme `temp1`
+
+✅ **Mesal sade:**
+
+    $ monitor-sensor
+
+    CPU Temperature:
+        temp1:          +45.0°C  (high = +70.0°C, crit = +90.0°C)
+
+    🔹 Namayesh temperature CPU ba hadaksar meghdar ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `monitor-sensor` command is used to read and display information from monitor sensors. This command helps you obtain data about temperature, voltage, and fan speeds.
+
+⚙️ **Options:**
+    🔹 `monitor-sensor` --> 🌡️ Display all sensors and their values.
+    🔹 `monitor-sensor --help` --> ❓ Display command help with more options.
+    🔹 `monitor-sensor <name>` --> 🎯 Only display information for a specific sensor (by name).
+
+🛠 **Examples:**
+
+    $ monitor-sensor
+
+    🔹 Display information for all sensors.
+
+    $ monitor-sensor temp1
+
+    🔹 Only display information for the sensor named `temp1`.
+
+✅ **Simple Example:**
+
+    $ monitor-sensor
+
+    CPU Temperature:
+        temp1:          +45.0°C  (high = +70.0°C, crit = +90.0°C)
+
+    🔹 Displays the CPU temperature along with maximum threshold values.

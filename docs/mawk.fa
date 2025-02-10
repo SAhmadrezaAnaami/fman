@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mawk` yek zaban barname-nevisi ast baraye pardazesh matn. Mesle `awk` amalkard dare, vali sari'tare va standard ANSI ro peyravi mikone. Baraye gereftan, taghir dadan, va moratab kardane matnha az dakhel file-ha ya az vorudi estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mawk -F field_separator` --> ✂️ Jodakardane har khatt az vorudi bar asase `field_separator`.  Agar `field_separator` ra moshakhas nakonid, az space estefade mishavad.
+    🔹 `mawk -v var=value` --> 📦  Eijade yek moteghayyer (`var`) ba arzeshe (`value`) ghable az shoroo barname.
+    🔹 `mawk -f program_file` --> 📜  Ejraye dastoorate `mawk` az dakhele yek file (`program_file`).
+    🔹 `mawk 'program'` --> 💻  Ejraye code `mawk` dar command line.
+
+🛠 **Mesal-ha:**
+
+    $ mawk '{print $1}' file.txt
+
+    🔹 Chap kardane avalin sotoon (field) az har khatt dar `file.txt`.
+
+    $ mawk -F: '{print $1}' /etc/passwd
+
+    🔹 Chap kardane avalin sotoon az file `/etc/passwd` ba estefade az `:` be عنوان جداکننده.
+
+✅ **Mesal sade:**
+
+    $ echo "ali reza 25" | mawk '{print "esm:", $1, "famel:", $2, "sen:", $3}'
+
+    🔹 Chap kardane esm, famel va sen ba estefade az `mawk` az vorudi dade shode. Output: `esm: ali famel: reza sen: 25`
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mawk` command is a programming language for text processing. It behaves similarly to `awk` but is generally faster and conforms to the ANSI standard. It's used to extract, transform, and format text from files or standard input.
+
+⚙️ **Options:**
+    🔹 `mawk -F field_separator` --> ✂️ Separates each line of input based on the `field_separator`.  If `field_separator` is not specified, whitespace is used.
+    🔹 `mawk -v var=value` --> 📦 Creates a variable (`var`) with the value (`value`) before the program starts.
+    🔹 `mawk -f program_file` --> 📜 Executes `mawk` commands from a file (`program_file`).
+    🔹 `mawk 'program'` --> 💻 Executes `mawk` code directly from the command line.
+
+🛠 **Examples:**
+
+    $ mawk '{print $1}' file.txt
+
+    🔹 Prints the first column (field) from each line in `file.txt`.
+
+    $ mawk -F: '{print $1}' /etc/passwd
+
+    🔹 Prints the first column from the `/etc/passwd` file using `:` as the field separator.
+
+✅ **Simple Example:**
+
+    $ echo "ali reza 25" | mawk '{print "name:", $1, "lastname:", $2, "age:", $3}'
+
+    🔹 Prints the name, lastname and age using `mawk` from the given input. Output: `name: ali lastname: reza age: 25`

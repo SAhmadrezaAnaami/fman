@@ -1,0 +1,45 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `clear` baraye paak kardan safe terminal estefade mishavad. Yani hameye chizhayi ke ghablan neveshte shodeh ast, hazf mishavad va safe az aval shoru mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 Dastoor `clear` gozine khassi nadarad.
+
+🛠 **Mesal-ha:**
+
+    $ clear
+
+    🔹 Paak kardan safe terminal.  Digar hich chizi az dastoorat ya khrooji-ha ghabli namayesh dade nemishavad.
+
+✅ **Mesal sade:**
+
+    $ clear
+    
+    🔹  Bad az ejraye in dastoor, safe terminal shoma kamelan khali mishavad va amade dastoore jadid mishavad.  Mesle inke yek safe jadid baz kardeid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `clear` command is used to clear the terminal screen. It removes all previous output and commands, providing a fresh, clean terminal.
+
+⚙️ **Options:**
+    🔹 The `clear` command does not have any specific options.
+
+🛠 **Examples:**
+
+    $ clear
+
+    🔹 Clears the terminal screen. No previous commands or outputs will be visible.
+
+✅ **Simple Example & Explanation:**
+
+    $ clear
+    
+    🔹 After executing this command, your terminal screen will be completely empty and ready for a new command. It's like opening a new terminal window.
+

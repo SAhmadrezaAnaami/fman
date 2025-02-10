@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mmcli` baraye modiriyat modem ha dar Linux estefade mishavad. Ba in dastoor mitoonid etela'ate modem ra bebinid, vasl shavid, va qeire.
+
+⚙️ **Gozine-ha:**
+    🔹 `mmcli -L`  --> 🔎 List kardan hameye modem haye peyda shode.
+    🔹 `mmcli -m <shomare_modem> --modem-get-status`  --> 📶 Gereftan vaz'iyat yek modem khass.  Be jaye `<shomare_modem>` bayad shomareye modemi ke mikhahid vaz'iyatesh ra bebinid benevisid.
+    🔹 `mmcli -m <shomare_modem> --modem-connect="bearer=/org/freedesktop/ModemManager1/Bearer/<shomare_bearer>"` --> 🔗 Etesal be internet az tarighe yek bearer khass.
+    🔹 `mmcli -m <shomare_modem> --modem-disconnect` --> ❌ Ghot' kardane etesal modem.
+
+🛠 **Mesal-ha:**
+
+    $ mmcli -L
+
+    🔹 List kardan hameye modem haye dastras.
+
+    $ mmcli -m 0 --modem-get-status
+
+    🔹 Gereftan vaz'iyate modemi ke shomareshe 0 ast.
+
+✅ **Mesal sade:**
+
+    $ mmcli -m 0 --modem-get-status | grep "state:"
+
+    🔹 Namayeshe khatti az vaz'iyate modem ke shamel "state:" ast. In mitooneh be shoma neshoon bede ke modem motasel hast ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mmcli` command is used to manage modems in Linux. With this command, you can view modem information, connect, and more.
+
+⚙️ **Options:**
+    🔹 `mmcli -L`  --> 🔎 List all detected modems.
+    🔹 `mmcli -m <modem_number> --modem-get-status`  --> 📶 Get the status of a specific modem.  Replace `<modem_number>` with the number of the modem you want to check.
+    🔹 `mmcli -m <modem_number> --modem-connect="bearer=/org/freedesktop/ModemManager1/Bearer/<bearer_number>"` --> 🔗 Connect to the internet using a specific bearer.
+    🔹 `mmcli -m <modem_number> --modem-disconnect` --> ❌ Disconnect the modem.
+
+🛠 **Examples:**
+
+    $ mmcli -L
+
+    🔹 List all available modems.
+
+    $ mmcli -m 0 --modem-get-status
+
+    🔹 Get the status of the modem with number 0.
+
+✅ **Simple Example:**
+
+    $ mmcli -m 0 --modem-get-status | grep "state:"
+
+    🔹 Displays the line from the modem status that includes "state:". This can show you if the modem is connected or not.

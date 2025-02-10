@@ -1,0 +1,41 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `desktop2menu` baraye dorost kardane menu az file-haye `.desktop` dar pooshe-ye `~/Desktop` estefade mishavad. In dastoor barname-ha ra dar menu-ye system shoma ezafe mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine-ye khas nadarad.
+
+🛠 **Mesal-ha:**
+
+    $ desktop2menu
+
+    🔹 Ezafe kardane shortcut-haye barname-ha az Desktop be menu.
+
+✅ **Mesal sade:**
+
+    agar shoma file `.desktop` dar desktop darid, ba ejraye dastoor `desktop2menu` , yek shortcut az an barname dar menu system ijad mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `desktop2menu` command is used to create menu entries from `.desktop` files located in the `~/Desktop` directory. This command effectively adds applications to your system's menu.
+
+⚙️ **Options:**
+    🔹 This command doesn't typically have any specific options.
+
+🛠 **Examples:**
+
+    $ desktop2menu
+
+    🔹 Adds application shortcuts from the Desktop to the menu.
+
+✅ **Simple Example:**
+
+    If you have a `.desktop` file on your desktop, running `desktop2menu` will create a shortcut for that application in the system menu.
+

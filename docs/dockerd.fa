@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `dockerd` barname-ye asli (daemon) Docker ast. In barname Docker container-ha ra modiriat mikonad. Yani container-ha ra misazad, ejra mikonad, va az bein mibarad. `dockerd` dar pas-zamine (background) kar mikonad va az tarigh-e Docker Client (CLI) dastoor migirad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--debug`     --> 🐛 Debug mode ra fa'al mikonad baraye peyda kardan moshkelat.
+    🔹 `--data-root` --> 📁 Masiire asli baraye zakhire-ye data-haye Docker (images, containers, etc.) ra tayin mikonad.  Agar tayin nashavad, default ast.
+    🔹 `--host`      --> 🌐 Address-haye TCP ke `dockerd` be aan گوش (goosh) midahad ra moshakhas mikonad (masalan, `tcp://0.0.0.0:2375`). Ehtiat konid, chon baaz gozashtan in dar internet mitavanad khatarnak bashad!
+    🔹 `--tlsverify` --> 🔒 TLS ra fa'al mikonad va اطمینان حاصل (etminan hasel) mikonad ke hameye etesalat امن (amn) hastand. Bayad ba `--tlscacert`, `--tlscert`, va `--tlskey` estefade shavad.
+
+🛠 **Mesal-ha:**
+
+    $ dockerd
+
+    🔹 اجرا کردن (ejra kardan) `dockerd` ba تنظیمات (tanzimat) pishfarz (default).
+
+    $ dockerd --debug
+
+    🔹 اجرا کردن `dockerd` dar debug mode baraye diagnostik (diagnostics).
+
+    $ dockerd --data-root=/mnt/docker-data
+
+    🔹 استفاده از `/mnt/docker-data` baraye zakhire-ye data-haye Docker.
+
+✅ **Mesal sade:**
+
+    $ dockerd &
+
+    🔹 اجرا کردن `dockerd` dar pas-zamine (background).  علامت `&` dastoor ra dar background اجرا میکند (ejra mikonad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `dockerd` is the main Docker daemon. It manages Docker containers, including creating, running, and destroying them. `dockerd` runs in the background and receives commands from the Docker Client (CLI).
+
+⚙️ **Options:**
+    🔹 `--debug`     --> 🐛 Enables debug mode for troubleshooting.
+    🔹 `--data-root` --> 📁 Specifies the root directory for Docker data (images, containers, etc.). If not specified, a default location is used.
+    🔹 `--host`      --> 🌐 Specifies the TCP addresses that `dockerd` listens on (e.g., `tcp://0.0.0.0:2375`). Be careful, as exposing this to the internet can be dangerous!
+    🔹 `--tlsverify` --> 🔒 Enables TLS and ensures all connections are secure. Should be used with `--tlscacert`, `--tlscert`, and `--tlskey`.
+
+🛠 **Examples:**
+
+    $ dockerd
+
+    🔹 Run `dockerd` with default settings.
+
+    $ dockerd --debug
+
+    🔹 Run `dockerd` in debug mode for diagnostics.
+
+    $ dockerd --data-root=/mnt/docker-data
+
+    🔹 Use `/mnt/docker-data` for storing Docker data.
+
+✅ **Simple Example:**
+
+    $ dockerd &
+
+    🔹 Run `dockerd` in the background. The `&` symbol executes the command in the background.

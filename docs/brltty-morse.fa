@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-morse` baraye tabdil matn be code Morse va pakhsh an az rah-e system braille estefade mishavad. In dastoor be shakhsaneh-e nabiina komak mikonad ta etela'at ra az rah-e code Morse daryaft konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v`  --> 📢 Afzayesh seda, afzayesh etela'at dar mored chگونگی kar-e program.
+    🔹 `-q`  --> 🤫 Kam kardan seda, kam kardan etela'at dar mored chگونگی kar-e program.
+    🔹 `-w <word_rate>`  --> ⏳ Ta'in sur'at-e kalamat (word rate) be wpm (kalame dar daghighe). Meghdar default 20 wpm ast.
+    🔹 `-f <tone_frequency>`  --> 🎵 Ta'in frekans-e seda baraye pakhsh code Morse. Meghdar default 700 Hz ast.
+
+🛠 **Mesal-ha:**
+
+    $ echo "Salam Donya" | brltty-morse
+
+    🔹 Tabdil va pakhsh matn "Salam Donya" be code Morse ba estefade az default-ha.
+
+    $ brltty-morse -w 25 -f 800 < file.txt
+
+    🔹 Tabdil va pakhsh matn dakhel `file.txt` be code Morse ba sur'at 25 wpm va frekans 800 Hz.
+
+✅ **Mesal sade:**
+
+    $ echo "123" | brltty-morse -v
+
+    🔹 Tabdil "123" be code Morse va chap etela'at bishtar dar mored chگونگی kar-e program.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-morse` command is used to convert text into Morse code and output it through the Braille system. This tool is particularly useful for blind users to receive information via Morse code.
+
+⚙️ **Options:**
+    🔹 `-v`  --> 📢 Verbose mode, providing more information about the program's operation.
+    🔹 `-q`  --> 🤫 Quiet mode, reducing the amount of output.
+    🔹 `-w <word_rate>`  --> ⏳ Set the word rate in words per minute (wpm). The default value is 20 wpm.
+    🔹 `-f <tone_frequency>`  --> 🎵 Set the tone frequency for the Morse code output. The default value is 700 Hz.
+
+🛠 **Examples:**
+
+    $ echo "Hello World" | brltty-morse
+
+    🔹 Converts and outputs the text "Hello World" into Morse code using default settings.
+
+    $ brltty-morse -w 25 -f 800 < file.txt
+
+    🔹 Converts and outputs the text from `file.txt` into Morse code at a speed of 25 wpm with a frequency of 800 Hz.
+
+✅ **Simple Example:**
+
+    $ echo "123" | brltty-morse -v
+
+    🔹 Converts "123" to Morse code and prints verbose information about the process.

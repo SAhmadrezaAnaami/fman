@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bc` yek mohasebe-gar (calculator) riyazi dar terminal ast. Ba `bc` shoma mitoonid amaliyat riyazi pishrafte ra anjam dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `bc -l` --> ➗ Estefade az ketabkhane riyazi standard (math library) baraye mohasebat دقیق tar mesl sin, cos, va geyre.
+    🔹 `bc -q` --> 🤫 Az namayeshe payam aghazeh (startup message) jologiri mikonad.
+    🔹 `bc -v` --> ℹ️ Neshan dadane version `bc`.
+
+🛠 **Mesal-ha:**
+
+    $ bc
+    bc 1.07.1
+    Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
+    This is free software with ABSOLUTELY NO WARRANTY.
+    For details type `warranty'.
+    1+1
+    2
+    quit
+
+    🔹 Run kardan `bc` be soorate interactive va jam zadan do adad.
+
+    $ echo "scale=2; 10/3" | bc -l
+
+    🔹 Mohasebeye taqseem ba deghat do ragham ashar ba estefade az pipe.
+
+✅ **Mesal sade:**
+
+    $ bc -l <<< "sqrt(2)"
+
+    🔹 Mohasebeye جذر 2 ba estefade az ketabkhane riyazi va here string.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bc` command is a command-line calculator. You can use `bc` to perform advanced mathematical operations in the terminal.
+
+⚙️ **Options:**
+    🔹 `bc -l` --> ➗ Use the standard math library for more precise calculations, such as sin, cos, etc.
+    🔹 `bc -q` --> 🤫 Suppress the startup banner message.
+    🔹 `bc -v` --> ℹ️ Display the version of `bc`.
+
+🛠 **Examples:**
+
+    $ bc
+    bc 1.07.1
+    Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
+    This is free software with ABSOLUTELY NO WARRANTY.
+    For details type `warranty'.
+    1+1
+    2
+    quit
+
+    🔹 Run `bc` in interactive mode and add two numbers.
+
+    $ echo "scale=2; 10/3" | bc -l
+
+    🔹 Calculate division with two decimal places using a pipe.
+
+✅ **Simple Example:**
+
+    $ bc -l <<< "sqrt(2)"
+
+    🔹 Calculate the square root of 2 using the math library and a here string.

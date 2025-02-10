@@ -1,0 +1,69 @@
+OK. Here's a `man` page for the `last` command, following the specified format.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `last` baraye namayesh dadan listi az vorood-ha va khurooj-haye karbaran (user-ha) be system va az system estefade mishavad. In dastoor etela'ati mesl-e zamane vorood, zamane khurooj, va terminali ke karbar az aan estefade karde ra neshon midahad. Agar heech gozineh-i dadeh nashavad, `last` hameye vorood-ha ra az file `/var/log/wtmp` neshon midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `last <username>` --> 👤 Namayesh vorood-ha va khurooj-haye faghat yek karbar khas.
+    🔹 `last -n <number>` --> 🔢  Namayesh tedad moshakhas-i az khat-ha.  Masalan, `last -n 10` 10 khat-e akhar ra neshon midahad.
+    🔹 `last -f <file>` --> 📁  Estefade az yek file-e digar be jaye `/var/log/wtmp`.  Be karbar etela' midehad ke az che file-i etela'at gerefte shode ast.
+    🔹 `last -t <YYYYMMDDHHMMSS>` --> ⏱️  Namayesh vorood-ha ta zaman-e moshakhas shode.
+
+🛠 **Mesal-ha:**
+
+    $ last
+
+    🔹 Namayesh listi az vorood-ha va khurooj-haye hameye karbaran.
+
+    $ last reza
+
+    🔹 Namayesh vorood-ha va khurooj-haye karbar reza.
+
+    $ last -n 5
+
+    🔹  Namayesh 5 vorood-e akhar.
+
+✅ **Mesal sade:**
+
+    $ last -t 20240101000000
+
+    🔹 In dastoor listi az hameye vorood-ha ra ta tarikh va saat 2024-01-01 00:00:00 neshon midahad.  Har voroodi ke ghabl az in tarikh bashe namayesh dadeh mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `last` command displays a list of the last logged-in users on the system.  It shows information such as login time, logout time, and the terminal used by the user. If no options are given, `last` shows all logins from the `/var/log/wtmp` file.
+
+⚙️ **Options:**
+    🔹 `last <username>` --> 👤 Show login/logout history for a specific user.
+    🔹 `last -n <number>` --> 🔢 Show a specific number of lines. For example, `last -n 10` shows the last 10 entries.
+    🔹 `last -f <file>` --> 📁 Use a different file instead of `/var/log/wtmp`. Notifies the user which file is being read.
+    🔹 `last -t <YYYYMMDDHHMMSS>` --> ⏱️  Show the state of logins as of the specified time.
+
+🛠 **Examples:**
+
+    $ last
+
+    🔹 Display a list of all user logins and logouts.
+
+    $ last john
+
+    🔹 Display login and logout history for the user john.
+
+    $ last -n 5
+
+    🔹 Display the last 5 login entries.
+
+✅ **Simple Example:**
+
+    $ last -t 20240101000000
+
+    🔹 This command shows a list of all logins up to the date and time 2024-01-01 00:00:00. Any login before this timestamp will be displayed.
+

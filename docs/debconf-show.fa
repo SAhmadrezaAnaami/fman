@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-show` baraye didane javabhaee ke be soale Debconf dade shode ast, estefade mishavad. Debconf yek system config-e baraye package-ha dar Debian va Ubuntu ast. In dastoor be shoma komak mikonad ta bebinid ke dar hengame nasb ya update yek package, che entekhab-haee kardeid.
+
+⚙️ **Gozine-ha:**
+    🔹 `debconf-show package-name` --> 📦 Namayesh hameye javabhaee ke baraye soale Debconf dar yek package khass sabt shode ast.
+    🔹 `debconf-show -f frontend package-name` --> 🖥️ Estefade az yek frontend khass baraye namayesh javabha. Mesal: `debconf-show -f Dialog package-name`.  Frontend-ha mitavanand `noninteractive`, `Dialog`, `Readline` bashand.
+    🔹 `debconf-show -c` --> 🗂️ Namayesh configuration-e فعلی debconf.
+
+🛠 **Mesal-ha:**
+
+    $ debconf-show apache2
+
+    🔹 Namayesh javabhaee ke baraye soale Debconf dar package `apache2` sabt shode ast.
+
+    $ debconf-show -f Dialog mysql-server
+
+    🔹 Namayesh javabha baraye package `mysql-server` ba estefade az frontend `Dialog`.
+
+✅ **Mesal sade:**
+
+    $ debconf-show tzdata
+
+    🔹 Agar shoma zone zamani khod ra dar hengame nasbe `tzdata` entekhab karde bashid, in dastoor on javab ra namayesh midahad. Agar hich javabi sabt nashode bashad, chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-show` command is used to display answers to Debconf questions. Debconf is a configuration system for packages in Debian and Ubuntu. This command helps you see the choices you made during the installation or update of a package.
+
+⚙️ **Options:**
+    🔹 `debconf-show package-name` --> 📦 Display all answers to Debconf questions recorded for a specific package.
+    🔹 `debconf-show -f frontend package-name` --> 🖥️ Use a specific frontend to display answers. Example: `debconf-show -f Dialog package-name`.  Frontends can be `noninteractive`, `Dialog`, `Readline`.
+    🔹 `debconf-show -c` --> 🗂️ Display the current debconf configuration.
+
+🛠 **Examples:**
+
+    $ debconf-show apache2
+
+    🔹 Display the answers to Debconf questions recorded for the `apache2` package.
+
+    $ debconf-show -f Dialog mysql-server
+
+    🔹 Display the answers for the `mysql-server` package using the `Dialog` frontend.
+
+✅ **Simple Example:**
+
+    $ debconf-show tzdata
+
+    🔹 If you selected your timezone during the installation of `tzdata`, this command will display that answer. If no answer is recorded, nothing will be displayed.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `localectl` baraye tagheer va modiriyat system locale va keyboard layout dar systemd estefade mishavad. Locale zaban, formate zaman, pool va digar setting-haye makhsoos be mantaghe-ye shoma ra tayeen mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `localectl status` --> ℹ️ Namayesh locale va keyboard layout فعلی
+    🔹 `localectl set-locale LANG=fa_IR.UTF-8` --> 🌍 Tagheer locale system be Farsi (Iran) ba encoding UTF-8
+    🔹 `localectl set-keymap ir` --> ⌨️ Tagheer keyboard layout be layout Farsi (Iran)
+    🔹 `localectl list-locales` --> 📃 List hameye locale-haye dastras
+    🔹 `localectl list-keymaps` --> ⌨️ List hameye keyboard layout-haye dastras
+
+🛠 **Mesal-ha:**
+
+    $ localectl status
+
+    🔹 Namayesh etela'at locale فعلی
+
+    $ localectl set-locale LANG=en_US.UTF-8
+
+    🔹 Tagheer locale system be English (US) ba encoding UTF-8
+
+✅ **Mesal sade:**
+
+    $ localectl set-keymap us
+
+    🔹 Tagheer keyboard layout system be United States (US). bad az reboot system layout jadid fa'al mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `localectl` command is used to change and manage system locale and keyboard layout settings under systemd. Locale settings determine language, time format, currency, and other region-specific settings.
+
+⚙️ **Options:**
+    🔹 `localectl status` --> ℹ️ Display the current locale and keyboard layout
+    🔹 `localectl set-locale LANG=en_US.UTF-8` --> 🌍 Change the system locale to English (US) with UTF-8 encoding.
+    🔹 `localectl set-keymap us` --> ⌨️ Change the keyboard layout to US.
+    🔹 `localectl list-locales` --> 📃 List all available locales
+    🔹 `localectl list-keymaps` --> ⌨️ List all available keymaps
+
+🛠 **Examples:**
+
+    $ localectl status
+
+    🔹 Display current locale information
+
+    $ localectl set-locale LANG=fr_CA.UTF-8
+
+    🔹 Change the system locale to French (Canada) with UTF-8 encoding
+
+✅ **Simple Example:**
+
+    $ localectl set-keymap de
+
+    🔹 Change system keyboard layout to German (DE).  The new layout will be active after a system reboot.

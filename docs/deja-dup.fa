@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deja-dup` baraye poshtiban-giri (backup) az file-ha va pooshe-ha-ye shoma be yek jaye digar (mesle USB drive ya cloud) estefade mishavad.  Hamchenin mitavanid file-haye poshtiban-giri shode ra bazgardani (restore) konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `deja-dup --backup`   --> 💾 Shoru’e amal-e poshtiban-giri az file-ha.
+    🔹 `deja-dup --restore`  --> ⏪ Bazgardandan file-ha az poshtiban-giri ghabli.
+    🔹 `deja-dup --verify`   --> ✅ Check kardan dorosti-ye poshtiban-giri.
+    🔹 `deja-dup --help`     --> ℹ️ Namayesh rahnama va dastoorat bishtar.
+
+🛠 **Mesal-ha:**
+
+    $ deja-dup --backup
+
+    🔹 Shoru’e poshtiban-giri ba estefade az tanzimat-e pishfarz.
+
+    $ deja-dup --restore
+
+    🔹 Bazgardandan file-ha az akharin poshtiban-giri.
+
+✅ **Mesal sade:**
+
+    $ deja-dup --backup --include /home/user/documents --exclude /home/user/documents/temp
+
+    🔹 Az pooshe `documents` poshtiban-giri kon, ama pooshe `temp` ra dar aan shamel nakon.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deja-dup` command is used to back up your files and folders to another location (like a USB drive or the cloud). You can also restore files from a previous backup.
+
+⚙️ **Options:**
+    🔹 `deja-dup --backup`   --> 💾 Start backing up files.
+    🔹 `deja-dup --restore`  --> ⏪ Restore files from a previous backup.
+    🔹 `deja-dup --verify`   --> ✅ Verify the integrity of the backup.
+    🔹 `deja-dup --help`     --> ℹ️ Show more help and instructions.
+
+🛠 **Examples:**
+
+    $ deja-dup --backup
+
+    🔹 Start the backup process using default settings.
+
+    $ deja-dup --restore
+
+    🔹 Restore files from the last backup.
+
+✅ **Simple Example:**
+
+    $ deja-dup --backup --include /home/user/documents --exclude /home/user/documents/temp
+
+    🔹 Back up the `documents` folder, but exclude the `temp` folder from the backup.

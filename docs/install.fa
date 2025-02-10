@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `install` baraye copy kardan file-ha be location-haye moshakhas dar system, va gharar dadane permission-haye monaseb be aanha estefade mishavad. Bishtar vaght-ha baraye install kardane program-ha ya library-ha be soorate system-wide be kar mirevad.
+
+⚙️ **Gozine-ha:**
+    🔹 `install -d directory`  --> 📁 Sakhtane yek pooshe (directory). Agar pooshe vojood nadashte bashad, aan ra misazad.
+    🔹 `install -m mode file destination` --> 🔐 Tagheer dadane dastrasi (permissions) file pas az copy shodan. `mode` bayad yek adad octal bashad (masalan 755).
+    🔹 `install -o owner -g group file destination` --> 👤 Tagheer dadane saheb (owner) va grooh (group) file pas az copy shodan.
+    🔹 `install -t directory file1 file2 ...` --> 🎯 Copy kardane chand file be yek directory moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ install -d /usr/local/bin
+
+    🔹 Sakhtane directory `/usr/local/bin` agar vojood nadashte bashad.
+
+    $ install -m 755 myprogram /usr/local/bin
+
+    🔹 Copy kardane `myprogram` be `/usr/local/bin` va gharar dadane permission 755.
+
+    $ install -o root -g root myprogram /usr/local/bin
+
+    🔹 Copy kardane `myprogram` be `/usr/local/bin` va gharar dadane saheb va grooh `root`.
+
+✅ **Mesal sade:**
+
+    $ install -m 644 myfile /etc/myfile.conf
+
+    🔹 Copy kardane `myfile` be `/etc/myfile.conf` va gharar dadane permission 644 (خواندنی برای همه, قابل نوشتن برای صاحب فایل).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `install` command is used to copy files to specific locations within the system, setting appropriate permissions. It's often used to install programs or libraries system-wide.
+
+⚙️ **Options:**
+    🔹 `install -d directory` --> 📁 Creates a directory. If the directory doesn't exist, it creates it.
+    🔹 `install -m mode file destination` --> 🔐 Changes the permissions of the file after copying. `mode` should be an octal number (e.g., 755).
+    🔹 `install -o owner -g group file destination` --> 👤 Changes the owner and group of the file after copying.
+    🔹 `install -t directory file1 file2 ...` --> 🎯 Copies multiple files into a specified directory.
+
+🛠 **Examples:**
+
+    $ install -d /usr/local/bin
+
+    🔹 Creates the directory `/usr/local/bin` if it doesn't exist.
+
+    $ install -m 755 myprogram /usr/local/bin
+
+    🔹 Copies `myprogram` to `/usr/local/bin` and sets the permissions to 755.
+
+    $ install -o root -g root myprogram /usr/local/bin
+
+    🔹 Copies `myprogram` to `/usr/local/bin` and sets the owner and group to `root`.
+
+✅ **Simple Example:**
+
+    $ install -m 644 myfile /etc/myfile.conf
+
+    🔹 Copies `myfile` to `/etc/myfile.conf` and sets the permissions to 644 (readable for everyone, writable for the file owner).

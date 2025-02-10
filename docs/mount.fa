@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mount` baraye vasl kardane yek dastgah (device) mesle yek hard disk, flash memory ya ISO image be yek pooshe (directory) estefade mishavad. In amaliat be shoma ejaze mide ke be file-ha va pooshe-haye dakhele aan dastgah az tareeqe aan pooshe dastresi dashte bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 `mount /dev/sdb1 /mnt`  --> 💾 Vasl kardane dastgah `/dev/sdb1` be pooshe `/mnt`. (niaz be root permissions)
+    🔹 `mount -o ro /dev/sdb1 /mnt` --> 🔒 Vasl kardane dastgah be soorate "read-only" (faghat khandan).
+    🔹 `mount -t iso9660 image.iso /mnt` --> 💿 Vasl kardane yek file ISO be onvane yek dastgah.
+    🔹 `mount -o loop image.iso /mnt` --> 🔄 Vasl kardane yek image file be pooshe.
+
+🛠 **Mesal-ha:**
+
+    $ sudo mount /dev/sdb1 /mnt
+
+    🔹  Vasl kardane device `sdb1` be directory `/mnt` ba estefade az dastresi root.
+
+    $ mount -o ro /dev/sdb1 /mnt
+
+    🔹  Vasl kardane device `sdb1` be directory `/mnt` be soorate read-only.
+
+✅ **Mesal sade:**
+
+    $ mount /dev/cdrom /mnt/cdrom
+
+    🔹  Agar yek CD ya DVD dar drive bashad, in dastoor aan ra be pooshe `/mnt/cdrom` vasl mikonad, va shoma mitoonid file-haye dakhele aan ra bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mount` command is used to attach a device, such as a hard disk, flash memory, or ISO image, to a directory in the file system. This makes the files and directories on the device accessible through that directory.
+
+⚙️ **Options:**
+    🔹 `mount /dev/sdb1 /mnt`  --> 💾 Mount the device `/dev/sdb1` to the directory `/mnt`. (requires root permissions)
+    🔹 `mount -o ro /dev/sdb1 /mnt` --> 🔒 Mount the device in "read-only" mode.
+    🔹 `mount -t iso9660 image.iso /mnt` --> 💿 Mount an ISO file as a device.
+    🔹 `mount -o loop image.iso /mnt` --> 🔄 Mount an image file to a directory.
+
+🛠 **Examples:**
+
+    $ sudo mount /dev/sdb1 /mnt
+
+    🔹 Mounts the device `sdb1` to the directory `/mnt` using root privileges.
+
+    $ mount -o ro /dev/sdb1 /mnt
+
+    🔹 Mounts the device `sdb1` to the directory `/mnt` in read-only mode.
+
+✅ **Simple Example:**
+
+    $ mount /dev/cdrom /mnt/cdrom
+
+    🔹 If a CD or DVD is in the drive, this command mounts it to the `/mnt/cdrom` directory, allowing you to view the files on the CD/DVD.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mtr` yek tool baraye diagnos kardan network ast. Mesle `traceroute` va `ping` amal mikonad, vali etela'at ra dar zamane vaghei neshan midahad. Yani dar hale ke data dar hale raftan ast, shoma mitavanid bebined ke koja moshkel darad. 
+
+⚙️ **Gozine-ha:**
+    🔹 `mtr hostname` --> 🎯 Shoru kardan mtr ba yek hostname ya IP address.
+    🔹 `mtr -r hostname` --> 📝 Report dar format text sade (raw).  Baraye save kardan dar file monaseb ast.
+    🔹 `mtr -n hostname` --> 🔢 Namayesh IP address be jayi hostname (baraye sari'tar shodan).
+    🔹 `mtr --report hostname` --> 📊 Generate report dar format `traceroute`.
+
+🛠 **Mesal-ha:**
+
+    $ mtr google.com
+
+    🔹 Run kardan `mtr` baraye trace kardan route be google.com. Shoma hop-ha va latency ra dar zamane vaghei mibined.
+
+    $ mtr -r google.com > report.txt
+
+    🔹 Save kardan report dar yek file be name `report.txt`.
+
+✅ **Mesal sade:**
+
+    $ mtr -n 8.8.8.8
+
+    🔹 Estefade az IP address (8.8.8.8) be jayi hostname. In mitavanad sari'tar bashad agar DNS resolve nemitavanad hostname ra be IP tabdil konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mtr` command is a network diagnostic tool. It combines the functionality of `traceroute` and `ping`, but displays the information in real-time. This allows you to see where problems are occurring as the data is traveling.
+
+⚙️ **Options:**
+    🔹 `mtr hostname` --> 🎯 Start mtr with a hostname or IP address.
+    🔹 `mtr -r hostname` --> 📝 Output a plain text report. Useful for saving to a file.
+    🔹 `mtr -n hostname` --> 🔢 Display IP addresses instead of hostnames (for faster operation).
+    🔹 `mtr --report hostname` --> 📊 Generate a `traceroute`-style report.
+
+🛠 **Examples:**
+
+    $ mtr google.com
+
+    🔹 Run `mtr` to trace the route to google.com. You will see the hops and latency in real time.
+
+    $ mtr -r google.com > report.txt
+
+    🔹 Save the report to a file named `report.txt`.
+
+✅ **Simple Example:**
+
+    $ mtr -n 8.8.8.8
+
+    🔹 Use the IP address (8.8.8.8) instead of a hostname. This can be faster if DNS resolution is slow or failing to resolve the hostname.

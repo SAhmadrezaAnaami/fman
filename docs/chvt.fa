@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chvt` baraye tagheer dade terminal majazi (virtual terminal) فعلی be yek terminal digar estefade می شود.  Be عبارتی دیگr, shoma می توانید بین صفحه‌های خط فرمان (command line) مختلف جابجا شوید.
+
+⚙️ **Gozine-ha:**
+    🔹 `chvt N`  --> 🔢  Tagheer be terminal majazi شماره N (به‌جای N یک عدد قرار دهید).
+        مثال: `chvt 2` شما را به terminal majazi شماره 2 می‌برد.
+
+🛠 **Mesal-ha:**
+
+    $ chvt 3
+
+    🔹 Tagheer be terminal majazi شماره 3.
+
+    $ chvt 1
+
+    🔹  Tagheer be terminal majazi شماره 1. معمولاً این ترمینال برای رابط کاربری گرافیکی (GUI) مانند X Window System استفاده می شود.
+
+✅ **Mesal sade:**
+
+    Agar shoma dar terminal majazi شماره 1 hastid va می خواهید be terminal شماره 4 beravid:
+
+    $ chvt 4
+
+    🔹  Ba ejraye in dastoor, صفحه نمایش be terminal majazi شماره 4 tagheer می کند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chvt` command is used to change the current virtual terminal. In other words, it allows you to switch between different command-line screens.
+
+⚙️ **Options:**
+    🔹 `chvt N`  --> 🔢  Switch to virtual terminal number N (replace N with a number).
+        Example: `chvt 2` will take you to virtual terminal number 2.
+
+🛠 **Examples:**
+
+    $ chvt 3
+
+    🔹 Switch to virtual terminal number 3.
+
+    $ chvt 1
+
+    🔹 Switch to virtual terminal number 1.  This terminal is often used for the graphical user interface (GUI) such as the X Window System.
+
+✅ **Simple Example & Explanation:**
+
+    If you are on virtual terminal number 1 and want to switch to terminal number 4:
+
+    $ chvt 4
+
+    🔹 By running this command, the display will switch to virtual terminal number 4.

@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nc` ( مخفف netcat ) baraye sakhtan ertebat TCP/UDP estefade mishavad. Mishe azash baraye ferestadan va daryafte dadeha az tarigh shabake estefade kard. Be عنوان یک "چاقوی سوئیسی" shabake shanakhte mishe.
+
+⚙️ **Gozine-ha:**
+    🔹 `nc -l -p <port>`  --> 👂 گوش دادن rooye yek port khass baraye ertebat vared shode.
+    🔹 `nc <host> <port>`  --> 🔗 اتصال be yek host va port khass.
+    🔹 `nc -u <host> <port>`  --> 📡 estefade az protocol UDP baraye ertebat.
+    🔹 `nc -v` --> 📢 Namayesh peygham haye bishtar (verbose mode) baraye debug kardan.
+    🔹 `nc -z <host> <port>` --> 🔎 Scan kardan port-ha baraye peyda kardan port-haye baz (port scanning).
+
+🛠 **Mesal-ha:**
+
+    $ nc -l -p 12345
+    
+    🔹 Goosh dadan rooye port 12345 baraye ertebat vared shode (dar terminal aval).
+
+    $ nc localhost 12345
+
+    🔹 Ejad ertebat be localhost rooye port 12345 (dar terminal dovom). Har chizi ke type konid dar terminal dovom, dar terminal aval neshan dade mishe va barعکس.
+
+    $ nc -u -l -p 53
+
+    🔹 Sakht server UDP rooye port 53 ( baraye mesal baraye test DNS).
+
+✅ **Mesal sade:**
+
+    $ nc -z -v localhost 1-100
+
+    🔹 Scan kardan port-haye 1 ta 100 rooye localhost baraye peyda kardan port-haye baz.  Khroji neshan mide ke kodoom port-ha darand goosh midand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nc` command (short for netcat) is used for establishing TCP/UDP connections. It can be used to send and receive data across a network.  It's known as the "Swiss Army knife" of networking.
+
+⚙️ **Options:**
+    🔹 `nc -l -p <port>`  --> 👂 Listen on a specific port for incoming connections.
+    🔹 `nc <host> <port>`  --> 🔗 Connect to a specific host and port.
+    🔹 `nc -u <host> <port>`  --> 📡 Use UDP protocol for the connection.
+    🔹 `nc -v` --> 📢 Display more verbose messages for debugging.
+    🔹 `nc -z <host> <port>` --> 🔎 Scan ports to find open ports (port scanning).
+
+🛠 **Examples:**
+
+    $ nc -l -p 12345
+
+    🔹 Listen on port 12345 for incoming connections (in the first terminal).
+
+    $ nc localhost 12345
+
+    🔹 Establish a connection to localhost on port 12345 (in the second terminal). Anything you type in the second terminal will be displayed in the first terminal and vice versa.
+
+    $ nc -u -l -p 53
+
+    🔹 Create a UDP server on port 53 (for example, to test DNS).
+
+✅ **Simple Example:**
+
+    $ nc -z -v localhost 1-100
+
+    🔹 Scan ports 1 to 100 on localhost to find open ports. The output will indicate which ports are listening.

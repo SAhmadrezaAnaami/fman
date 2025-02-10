@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installudev` baraye nasb kardan file-haye `udev` (rules) dar pakej Debian estefade mishavad. `udev` komak mikonad dastgah-haye sakht-afzari (hardware) be shekle dinamik dar system shenakhte shavand. In dastoor file-haye rule `udev` ra az directory `debian/udev/` be directory nasb dorosteshun, yani `/lib/udev/rules.d/` dar pakej Debian, copy mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 🚫 Nasb nakardan file-ha, ama faghat namayesh dadan kari ke bayad anjam shavad (dry run).
+    🔹 `-o=directory` --> 📂 Directory taghiri ke file-ha dar an nasb mishavand ra moshakhas mikonad, agar directory pishfarz (`/lib/udev/rules.d/`) ra bekhahid taghir dahid.
+    🔹 `--name=filename` --> ✏️ Taghir name file udev rule heingale nasb.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installudev
+    
+    🔹 File-haye rule `udev` ra az `debian/udev/` be `/lib/udev/rules.d/` copy mikonad.
+
+    $ dh_installudev -o=usr/lib/udev/rules.d/
+    
+    🔹 File-haye rule `udev` ra be directory `usr/lib/udev/rules.d/` nasb mikonad.
+
+✅ **Mesal sade:**
+    
+    Dar sooratike shoma yek file rule `udev` ba name `50-mydevice.rules` dar directory `debian/udev/` dashte bashid:
+    
+    $ dh_installudev
+    
+    File `50-mydevice.rules` be `/lib/udev/rules.d/50-mydevice.rules` dar pakej Debian copy mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installudev` command is used to install `udev` rules files in a Debian package. `udev` helps hardware devices to be dynamically recognized in the system. This command copies `udev` rule files from the `debian/udev/` directory to their proper installation directory, which is `/lib/udev/rules.d/` in the Debian package.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 🚫 Do not actually install the files, but just show what would be done (dry run).
+    🔹 `-o=directory` --> 📂 Specifies the directory where the files are installed, if you want to change the default directory (`/lib/udev/rules.d/`).
+    🔹 `--name=filename` --> ✏️ Change the name of the udev rule file during installation.
+
+🛠 **Examples:**
+
+    $ dh_installudev
+    
+    🔹 Copies `udev` rule files from `debian/udev/` to `/lib/udev/rules.d/`.
+
+    $ dh_installudev -o=usr/lib/udev/rules.d/
+    
+    🔹 Installs `udev` rule files to the `usr/lib/udev/rules.d/` directory.
+
+✅ **Simple Example:**
+    
+    If you have a `udev` rule file named `50-mydevice.rules` in the `debian/udev/` directory:
+    
+    $ dh_installudev
+    
+    The file `50-mydevice.rules` will be copied to `/lib/udev/rules.d/50-mydevice.rules` in the Debian package.

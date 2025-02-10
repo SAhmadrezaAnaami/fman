@@ -1,0 +1,82 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `c99` yek dastoor baraye kompiler kardan code-haye zaban C ast. In dastoor baraye tabdil kardan code-haye neveshte shode be zabane C be barname-haye ejraee (executable) estefade mishavad. Dar vaghe, `c99` version-e standard shode-ye zaban C ra compile mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o <esm-barname>` --> 📝 Esme barname-ye ejraee ra moshakhas mikonad. Agar in gozine estefade nashavad, esme pishfarz `a.out` khahad bood.
+    🔹 `-Wall`            --> ⚠️ Hameye khatar-ha va agah-sazi-ha (warnings) ra neshan midahad.  Estefade az in gozine baraye peyda kardan error-haye ehtemali dar code kheyli mofid ast.
+    🔹 `-c`               --> 📦 Faghat file-ha ra compile mikonad va link nemikonad. In gozine baraye sakhtan file-haye object (`.o`) baraye estefadeye badie estefade mishavad.
+    🔹 `-l<ketab-khane>` --> 📚 Ketab-khane-ha (libraries) ra baraye link kardan moshakhas mikonad. Masalan, `-lm` baraye link kardane ketab-khane-ye riazi (math library) be kar miravad.
+
+🛠 **Mesal-ha:**
+
+    $ c99 hello.c
+
+    🔹 Compile kardane file `hello.c` va sakhte barname-ye `a.out`.
+
+    $ c99 -o hello hello.c
+
+    🔹 Compile kardane file `hello.c` va sakhte barname-ye `hello`.
+
+    $ c99 -Wall hello.c
+
+    🔹 Compile kardane file `hello.c` ba neshan dadane hameye agah-sazi-ha (warnings).
+
+    $ c99 -c my_function.c
+
+    🔹 Compile kardane `my_function.c` va sakhte file object `my_function.o`.
+
+    $ c99 main.c my_function.o -o program
+
+    🔹 Compile kardane `main.c`, link kardane `my_function.o`, va sakhte barname-ye `program`.
+
+✅ **Mesal sade:**
+
+    $ c99 -o myprogram mycode.c -lm
+
+    🔹 In dastoor `mycode.c` ra compile mikonad, ba ketab-khane-ye riazi link mikonad, va yek barname-ye ejraee be name `myprogram` misazad.  Estefade az `-lm` zaroori ast agar code-e shoma az function-haye ketab-khane-ye riazi mesl `sqrt()` estefade konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `c99` command is a compiler for C language code. It's used to convert source code written in C into executable programs. Specifically, `c99` compiles code according to the C99 standard.
+
+⚙️ **Options:**
+    🔹 `-o <program-name>` --> 📝 Specifies the name of the executable program. If this option is not used, the default name will be `a.out`.
+    🔹 `-Wall`            --> ⚠️ Shows all warnings. Using this option is very useful for finding potential errors in the code.
+    🔹 `-c`               --> 📦 Only compiles the files and doesn't link them. This option is used to create object files (`.o`) for later use.
+    🔹 `-l<library>` --> 📚 Specifies libraries to link. For example, `-lm` is used to link the math library.
+
+🛠 **Examples:**
+
+    $ c99 hello.c
+
+    🔹 Compiles the file `hello.c` and creates the program `a.out`.
+
+    $ c99 -o hello hello.c
+
+    🔹 Compiles the file `hello.c` and creates the program `hello`.
+
+    $ c99 -Wall hello.c
+
+    🔹 Compiles the file `hello.c` while showing all warnings.
+
+    $ c99 -c my_function.c
+
+    🔹 Compiles `my_function.c` and creates the object file `my_function.o`.
+
+    $ c99 main.c my_function.o -o program
+
+    🔹 Compiles `main.c`, links `my_function.o`, and creates the program `program`.
+
+✅ **Simple Example:**
+
+    $ c99 -o myprogram mycode.c -lm
+
+    🔹 This command compiles `mycode.c`, links it with the math library, and creates an executable program named `myprogram`. Using `-lm` is necessary if your code uses functions from the math library, such as `sqrt()`.

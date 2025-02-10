@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgconv` baraye tabdil dadan file-haye jadval-e payam (message catalog) az yek format be format-e digar estefade mishavad. In dastoor be shoma komak mikonad ta file-haye zabanhaye mokhtalef ra be format-e binary (MO) tabdil konid, ke baraye barname-ha ghabl-khani bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ℹ️ Namayesh rahnama va etela'at estefade.
+    🔹 `--version` --> 🧾 Namayesh version-e barname.
+    🔹 `-i <file.po>` --> 📤 Vared kardan file .po (Portable Object).
+    🔹 `-o <file.mo>` --> 📥 Kharooji dadan be file .mo (Machine Object).
+
+🛠 **Mesal-ha:**
+
+    $ msgconv -i input.po -o output.mo
+
+    🔹 Tabdil file `input.po` be `output.mo`.
+
+    $ msgconv --help
+
+    🔹 Namayesh rahnama baraye estefade az dastoor.
+
+✅ **Mesal sade:**
+
+    $ msgconv -i fa.po -o fa.mo
+
+    🔹 File `fa.po` (jadval payam Farsi) ra be format binary `fa.mo` tabdil mikonad, ta barname-ha betavanand payam-haye Farsi ra be dorosti namayesh dahand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgconv` command is used to convert message catalog files from one format to another. It helps you convert localization files into binary (MO) format, which is more efficient for applications to read.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ℹ️ Display help information and usage instructions.
+    🔹 `--version` --> 🧾 Display program version information.
+    🔹 `-i <file.po>` --> 📤 Specify the input .po (Portable Object) file.
+    🔹 `-o <file.mo>` --> 📥 Specify the output .mo (Machine Object) file.
+
+🛠 **Examples:**
+
+    $ msgconv -i input.po -o output.mo
+
+    🔹 Converts the `input.po` file to `output.mo`.
+
+    $ msgconv --help
+
+    🔹 Displays the help message for using the command.
+
+✅ **Simple Example:**
+
+    $ msgconv -i fa.po -o fa.mo
+
+    🔹 Converts the `fa.po` (Persian message catalog) file to the binary `fa.mo` format, allowing applications to correctly display Persian messages.

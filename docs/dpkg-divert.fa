@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-divert` baraye tagheer-e naam-e file-ha dar system-e `dpkg` (Debian Package Management System) be kar miravad. In kar baraye rafaa-e tezadh-ha (conflicts) beyn-e package-ha ya estefade az version-haye digar-e file-ha mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--add` --> ➕ Ezafe kardan yek tagheer-e naam-e jadid (divert).
+    🔹 `--remove` --> ➖ Hazf kardan yek tagheer-e naam-e ghabli (divert).
+    🔹 `--list` --> 📜 List kardan hame-ye tagheer-e naam-ha-ye fa’al (active diverts).
+    🔹 `--rename` --> 🔄 Tagheer-e naam-e file az name-e asli be name-e tagheer-yafte (diverted name).
+    🔹 `--package package-name` --> 📦 Manzoor kardan tagheer-e naam-ha baraye package-e moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ sudo dpkg-divert --add --rename /etc/apache2/apache2.conf
+
+    🔹 Ezafe kardan yek tagheer-e naam baraye file `apache2.conf` dar pooshe `etc/apache2`.
+
+    $ sudo dpkg-divert --remove --rename /etc/apache2/apache2.conf
+
+    🔹 Hazf kardan tagheer-e naam-e ezafe shode baraye file `apache2.conf`.
+
+✅ **Mesal sade:**
+
+    $ sudo dpkg-divert --add --rename --package my-package /usr/bin/my-program
+    $ sudo dpkg-divert --list
+
+    🔹 Ebteda yek tagheer-e naam baraye `my-program` ezafe shode va ba `dpkg-divert --list` list tagheer-e naam-ha namayesh dade mishavad.  In kar be shoma komak mikonad ke betavanid file-ha ra be shekle sahih modiriyat konid va az tezadh-ha jologiri konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-divert` command is used to rename files within the `dpkg` (Debian Package Management System) framework. This is important for resolving conflicts between packages or for using different versions of files.
+
+⚙️ **Options:**
+    🔹 `--add` --> ➕ Add a new divert (rename).
+    🔹 `--remove` --> ➖ Remove an existing divert.
+    🔹 `--list` --> 📜 List all active diverts.
+    🔹 `--rename` --> 🔄 Rename the file from its original name to the diverted name.
+    🔹 `--package package-name` --> 📦 Apply the divert specifically for a given package.
+
+🛠 **Examples:**
+
+    $ sudo dpkg-divert --add --rename /etc/apache2/apache2.conf
+
+    🔹 Add a divert for the `apache2.conf` file in the `etc/apache2` directory.  This essentially renames the original file.
+
+    $ sudo dpkg-divert --remove --rename /etc/apache2/apache2.conf
+
+    🔹 Remove the divert previously added for the `apache2.conf` file, restoring the original file (if it exists).
+
+✅ **Simple Example:**
+
+    $ sudo dpkg-divert --add --rename --package my-package /usr/bin/my-program
+    $ sudo dpkg-divert --list
+
+    🔹 First, a divert is added for `my-program` within the context of the `my-package` package. Then, `dpkg-divert --list` is used to display the list of diverts, including the newly added one. This helps you manage files correctly and avoid conflicts.

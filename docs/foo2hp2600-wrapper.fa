@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2hp2600-wrapper` yek rahkar baraye chap kardan (print) file-ha ba estefade az printer-haye HP LaserJet 2600 dar Linux ast. In dastoor komak mikonad ke data be shekle dorost baraye printer tabdil shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `foo2hp2600-wrapper` --> 🖨️ Chap kardan ba estefade az default setting-ha.
+    🔹 `foo2hp2600-wrapper -z[0-9]+` --> 🌈 Control saturation value for color correction.
+    🔹 `foo2hp2600-wrapper -r[0-9]+` --> 🔴 Control red color correction.
+    🔹 `foo2hp2600-wrapper -g[0-9]+` --> 🟢 Control green color correction.
+    🔹 `foo2hp2600-wrapper -b[0-9]+` --> 🔵 Control blue color correction.
+    🔹 `foo2hp2600-wrapper -n[0-9]+` --> ⚫ Number of copies to print
+
+🛠 **Mesal-ha:**
+
+    $ foo2hp2600-wrapper file.ps
+
+    🔹 Chap kardane file postscript ba setting-haye pishfarz.
+
+    $ foo2hp2600-wrapper -r200 -g150 -b100 file.ps
+
+    🔹 Chap kardane file postscript ba taghire rang-ha.
+
+✅ **Mesal sade:**
+
+    $ foo2hp2600-wrapper document.pdf
+
+    🔹 Chap kardane file `document.pdf` ba printer HP LaserJet 2600.  Agar printer dorost setup shode bashad, file chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2hp2600-wrapper` command is a solution for printing files using HP LaserJet 2600 series printers in Linux. This command helps convert data into the correct format for the printer.
+
+⚙️ **Options:**
+    🔹 `foo2hp2600-wrapper` --> 🖨️ Print using default settings.
+    🔹 `foo2hp2600-wrapper -z[0-9]+` --> 🌈 Control saturation value for color correction.
+    🔹 `foo2hp2600-wrapper -r[0-9]+` --> 🔴 Control red color correction.
+    🔹 `foo2hp2600-wrapper -g[0-9]+` --> 🟢 Control green color correction.
+    🔹 `foo2hp2600-wrapper -b[0-9]+` --> 🔵 Control blue color correction.
+    🔹 `foo2hp2600-wrapper -n[0-9]+` --> ⚫ Number of copies to print
+
+🛠 **Examples:**
+
+    $ foo2hp2600-wrapper file.ps
+
+    🔹 Print the postscript file with default settings.
+
+    $ foo2hp2600-wrapper -r200 -g150 -b100 file.ps
+
+    🔹 Print the postscript file with color adjustments.
+
+✅ **Simple Example:**
+
+    $ foo2hp2600-wrapper document.pdf
+
+    🔹 Prints the `document.pdf` file with the HP LaserJet 2600 printer. If the printer is set up correctly, the file will be printed.

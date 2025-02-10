@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hcitool` baraye config kardan etesalat Bluetooth dar Linux estefade mishavad. In dastoor be shoma komak mikonad device-haye Bluetooth ra peyda konid, be anha vasl shavid, va etela'at-e Bluetooth ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hcitool dev`     --> 💻 Namayesh device-haye Bluetooth-e mojood
+    🔹 `hcitool scan`    --> 📡 Scan kardan baraye device-haye Bluetooth-e nazdik
+    🔹 `hcitool info <address>` --> ℹ️  Namayesh etela'at dar mored yek device Bluetooth (address-e aan ra bayad vared konid)
+    🔹 `hcitool con`     --> 🔗 Namayesh etesalat-e fa'al-e Bluetooth
+    🔹 `hcitool disconnect <address>` --> قطع  Disconnect kardan yek etesal Bluetooth
+
+🛠 **Mesal-ha:**
+
+    $ hcitool dev
+
+    🔹 Namayesh device-haye Bluetooth-e mojood dar system.
+
+    $ hcitool scan
+
+    🔹 Scan kardan baraye device-haye Bluetooth-e dar hale pakhsh.
+
+    $ hcitool info 00:11:22:33:44:55
+
+    🔹 Namayesh etela'at dar mored device-e Bluetooth ba address-e moshakhas shode.
+
+✅ **Mesal sade:**
+
+    $ hcitool scan
+
+    🔹 Device-haye Bluetooth-e nazdik ra peyda mikonad va address-e MAC va name anha ra namayesh midahad.  Az in etela'at mitavanid baraye vasl shodan be device-haye Bluetooth estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hcitool` command is used to configure Bluetooth connections in Linux.  It allows you to discover Bluetooth devices, connect to them, and view Bluetooth information.
+
+⚙️ **Options:**
+    🔹 `hcitool dev`     --> 💻 Display available Bluetooth devices.
+    🔹 `hcitool scan`    --> 📡 Scan for nearby Bluetooth devices.
+    🔹 `hcitool info <address>` --> ℹ️ Display information about a Bluetooth device (you must provide the address).
+    🔹 `hcitool con`     --> 🔗 Display active Bluetooth connections.
+    🔹 `hcitool disconnect <address>` --> 🚫 Disconnect a Bluetooth connection.
+
+🛠 **Examples:**
+
+    $ hcitool dev
+
+    🔹 Display available Bluetooth devices on the system.
+
+    $ hcitool scan
+
+    🔹 Scan for Bluetooth devices that are advertising.
+
+    $ hcitool info 00:11:22:33:44:55
+
+    🔹 Display information about the Bluetooth device with the specified address.
+
+✅ **Simple Example:**
+
+    $ hcitool scan
+
+    🔹 Discovers nearby Bluetooth devices and displays their MAC addresses and names. This information can then be used to connect to the Bluetooth devices.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `id` baraye namayesh etela'at karbari mesle `UID`, `GID`, va group-hayei ke karbar ozv ast, estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `id`     --> 👤 Namayesh `UID`, `GID`, va group-haye karbar current.
+    🔹 `id -u`  --> 🔢 Namayesh faghat `UID` karbar.
+    🔹 `id -g`  --> 🔢 Namayesh faghat `GID` karbar.
+    🔹 `id -n`  --> 📝 Namayesh name be jaye shomare (`UID`/`GID`).
+    🔹 `id -G`  --> 👥 Namayesh hameye ID-haye group karbar.
+
+🛠 **Mesal-ha:**
+
+    $ id
+
+    🔹 Namayesh etela'at karbar mesle `uid`, `gid`, va group-ha.
+
+    $ id -u
+    
+    🔹 Namayesh faghat `UID` karbar.
+
+✅ **Mesal sade:**
+
+    $ id -nG
+
+    🔹 Namayesh name group-ha be jaye ID-haye adadi. In baraye ghabl khan kardan khroji komak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `id` command is used to display user identity information such as `UID`, `GID`, and group memberships.
+
+⚙️ **Options:**
+    🔹 `id`     --> 👤 Display `UID`, `GID`, and groups for the current user.
+    🔹 `id -u`  --> 🔢 Display only the user ID (`UID`).
+    🔹 `id -g`  --> 🔢 Display only the group ID (`GID`).
+    🔹 `id -n`  --> 📝 Display names instead of numbers (`UID`/`GID`).
+    🔹 `id -G`  --> 👥 Display all group IDs the user is a member of.
+
+🛠 **Examples:**
+
+    $ id
+
+    🔹 Display user identity information including `uid`, `gid`, and groups.
+
+    $ id -u
+
+    🔹 Display only the user ID (`UID`).
+
+✅ **Simple Example:**
+
+    $ id -nG
+
+    🔹 Display group names instead of numerical IDs.  This helps make the output more readable.

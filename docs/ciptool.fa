@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ciptool` baraye modiriat va dastkari file-haye CIP (Catalog Interchange Protocol) estefade mishavad. In dastoor be shoma komak mikonad etela'at file-haye CIP ra bebinid, tabdil konid va validate konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ciptool info <file.cip>`  --> ℹ️ Namayesh etela'at asasi dar morede yek file CIP.
+    🔹 `ciptool validate <file.cip>`  --> ✅ Check kardan dorosti va etebare yek file CIP.
+    🔹 `ciptool convert <input.cip> <output.xml>` --> 🔄 Tabdil yek file CIP be format XML.
+    🔹 `ciptool --help` --> ❓ Namayesh rahnamaye kamel baraye hameye gozine-ha.
+
+🛠 **Mesal-ha:**
+
+    $ ciptool info example.cip
+
+    🔹 Namayesh etela'ate asasi dar morede file `example.cip`.
+
+    $ ciptool validate mycatalog.cip
+
+    🔹 Check kardan dorosti va etebare file `mycatalog.cip`.
+
+✅ **Mesal sade:**
+
+    $ ciptool info product.cip | grep "Product Name"
+
+    🔹 Peyda kardan va namayesh dadane name mahsool az file `product.cip`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ciptool` command is used to manage and manipulate CIP (Catalog Interchange Protocol) files. It allows you to view information, validate, and convert CIP files.
+
+⚙️ **Options:**
+    🔹 `ciptool info <file.cip>`  --> ℹ️ Display basic information about a CIP file.
+    🔹 `ciptool validate <file.cip>`  --> ✅ Validate the integrity and correctness of a CIP file.
+    🔹 `ciptool convert <input.cip> <output.xml>` --> 🔄 Convert a CIP file to XML format.
+    🔹 `ciptool --help` --> ❓ Display the complete help manual with all options.
+
+🛠 **Examples:**
+
+    $ ciptool info example.cip
+
+    🔹 Display basic information about the `example.cip` file.
+
+    $ ciptool validate mycatalog.cip
+
+    🔹 Check the integrity and correctness of the `mycatalog.cip` file.
+
+✅ **Simple Example:**
+
+    $ ciptool info product.cip | grep "Product Name"
+
+    🔹 Find and display the product name from the `product.cip` file.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpg-wks-server` baraye service-dehi be EKS (Email Key Server) estefade mishavad. Yani, komak mikonad ke key-haye OpenPGP az tarigh email address dorost kar konand. Dar asl, een dastoor vasile'i ast baraye service-dehi be client-haee ke key-haye OpenPGP ra az tarigh email address request mikonand, be surat secure.  EKS komak mikonad ke key-haye OpenPGP be rahatie ziad be dastresi bashand va valide bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--debug`  --> 🐞 Debug mode ra fa'al mikonad baraye peyda kardan moshkelat.
+    🔹 `--listen IP:port` --> 👂 Goosh midahad be IP address va port moshakhas shode. Masalan: `--listen 127.0.0.1:8080`
+    🔹 `--cache-dir DIRECTORY` --> 📁 Directory ra baraye zakhire-sazi cache moshakhas mikonad.
+    🔹 `--timeout SECONDS`  --> ⏳ Zamane timeout ra baraye har request moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gpg-wks-server --listen 0.0.0.0:80
+
+    🔹 Server ra rooye hameye IP address-ha rooye port 80 run mikonad.
+
+    $ gpg-wks-server --cache-dir /tmp/wks-cache --debug
+
+    🔹 Server ra ba directory cache `/tmp/wks-cache` va mode debug run mikonad.
+
+✅ **Mesal sade:**
+
+    $ gpg-wks-server --listen 127.0.0.1:8080
+
+    🔹  Server rooye localhost (127.0.0.1) rooye port 8080 goosh midahad. Be in tartib, faghat az dakhil masin dastresi khahad dasht. Ee kar baraye test ya zamani ke service dar aghab ba yek reverse proxy run shavad monaseb ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpg-wks-server` command is used to provide an Email Key Server (EKS) service. Essentially, it helps OpenPGP keys to function properly via email addresses. This command serves requests from clients seeking OpenPGP keys via email in a secure manner. EKS helps make OpenPGP keys easily accessible and valid.
+
+⚙️ **Options:**
+    🔹 `--debug`  --> 🐞 Enables debug mode for troubleshooting.
+    🔹 `--listen IP:port` --> 👂 Listens on the specified IP address and port.  Example: `--listen 127.0.0.1:8080`
+    🔹 `--cache-dir DIRECTORY` --> 📁 Specifies a directory for caching.
+    🔹 `--timeout SECONDS`  --> ⏳ Sets the timeout for each request in seconds.
+
+🛠 **Examples:**
+
+    $ gpg-wks-server --listen 0.0.0.0:80
+
+    🔹 Runs the server on all IP addresses on port 80.
+
+    $ gpg-wks-server --cache-dir /tmp/wks-cache --debug
+
+    🔹 Runs the server with the cache directory `/tmp/wks-cache` and in debug mode.
+
+✅ **Simple Example:**
+
+    $ gpg-wks-server --listen 127.0.0.1:8080
+
+    🔹  The server listens on localhost (127.0.0.1) on port 8080. This way, it will only be accessible from within the machine. This is suitable for testing or when the service runs in the background with a reverse proxy.

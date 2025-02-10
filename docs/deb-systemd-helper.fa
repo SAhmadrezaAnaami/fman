@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deb-systemd-helper` yek dastoor komaki ast ke dar bastaha-ye Debian (Debian packages) estefade mishavad ta service-haye systemd ra baraye barname-ha fa'al ya gheyre fa'al konad. Yani, vaghti yek barname az systemd estefade mikonad, in dastoor komak mikonad ta motmaen shavad ke service-haye an barname be dorosti shoru mishavand ya dar vaght-e hazf-e barname, dorosti gheyre fa'al mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `install` --> Baraye fa'al kardan service-haye systemd dar vaght-e nasb-e bastaha
+    🔹 `remove` --> Baraye gheyre fa'al kardan service-haye systemd dar vaght-e hazf-e bastaha
+    🔹 `purge`  --> Baraye hazf hame-ye config-ha marboot be service dar vaght-e hazf-e kamel-e bastaha
+    🔹 `update-state` --> Update kardan vaziyat service-ha
+
+🛠 **Mesal-ha:**
+
+    $ deb-systemd-helper install
+    🔹 Dar vaght-e nasb-e bastaha, service-haye systemd ra fa'al mikonad.
+
+    $ deb-systemd-helper remove
+    🔹 Dar vaght-e hazf-e bastaha, service-haye systemd ra gheyre fa'al mikonad.
+
+✅ **Mesal sade:**
+
+    $ deb-systemd-helper install --no-enable
+    🔹 Dar vaght-e nasb, service ra fa'al nemikonad, vali file service ra dar system zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deb-systemd-helper` command is a helper tool used in Debian packages to enable or disable systemd services for applications. Essentially, when an application utilizes systemd, this command helps ensure that the application's services are started correctly during installation and properly disabled when the application is removed.
+
+⚙️ **Options:**
+    🔹 `install` --> Enables systemd services during package installation.
+    🔹 `remove` --> Disables systemd services during package removal.
+    🔹 `purge`  --> Removes all service configurations during complete package removal (purge).
+    🔹 `update-state` --> Updates the service status.
+
+🛠 **Examples:**
+
+    $ deb-systemd-helper install
+    🔹 Enables the systemd services during the installation of packages.
+
+    $ deb-systemd-helper remove
+    🔹 Disables the systemd services during the removal of packages.
+
+✅ **Simple Example:**
+
+    $ deb-systemd-helper install --no-enable
+    🔹 During installation, it does not enable the service, but saves the service file in the system.

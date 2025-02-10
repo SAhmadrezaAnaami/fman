@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mknetdir` baraye dorost kardane yek directory (pooshe) estefade mishavad ke baraye boot kardan az tarigh shabake (network booting) ba estefade az GRUB zaruri ast. In dastoor hameye file-haye mored niaz baraye grub ro dar oon directory jam mikone ta masalan az tarigh TFTP server dastres pazir bashe.
+
+⚙️ **Gozine-ha:**
+    🔹 `--net-directory=DIR` --> 📁  Directory ke file-haye GRUB bayad dakhelash copy shan.  Aksaran `tftpboot` ya ye pooshe dige ke server TFTP behesh dastresi dare.
+    🔹 `--grub-mkimage=FILE` --> 🖼️  Masire dastoor `grub-mkimage`.  Age in gozine nadehin, `grub-mknetdir` az PATH baraye peyda kardanesh estefade mikone.
+
+🛠 **Mesal-ha:**
+
+    $ grub-mknetdir --net-directory=/tftpboot/grub
+
+    🔹 In dastoor hameye file-haye zaruri GRUB ra dar directory `/tftpboot/grub` copy mikonad, ke baraye shabake boot amade bashe.
+
+    $ grub-mknetdir --net-directory=/srv/tftp/boot --grub-mkimage=/usr/local/sbin/grub-mkimage
+
+    🔹 In dastoor haman kar ra mikonad ama masire `grub-mkimage` ra be surat explicit moshakhas mikonad.
+
+✅ **Mesal sade:**
+
+    $ sudo grub-mknetdir --net-directory=/tftpboot/grub
+
+    🔹  In dastoor hameye file haye grub ro tu /tftpboot/grub copy mikone.  Bad az in, server TFTP bayad configuration beshe ta be in directory eshare kone ta client ha betoonan az shabake boot konan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mknetdir` command is used to create a directory containing the necessary files for network booting using GRUB. It copies all relevant GRUB files into the specified directory, making them accessible via a TFTP server, for instance.
+
+⚙️ **Options:**
+    🔹 `--net-directory=DIR` --> 📁  The directory where GRUB files should be copied. Often `tftpboot` or another directory accessible to the TFTP server.
+    🔹 `--grub-mkimage=FILE` --> 🖼️  The path to the `grub-mkimage` command. If not provided, `grub-mknetdir` will use the PATH to locate it.
+
+🛠 **Examples:**
+
+    $ grub-mknetdir --net-directory=/tftpboot/grub
+
+    🔹 This command copies all necessary GRUB files to the `/tftpboot/grub` directory, preparing it for network boot.
+
+    $ grub-mknetdir --net-directory=/srv/tftp/boot --grub-mkimage=/usr/local/sbin/grub-mkimage
+
+    🔹 This command does the same, but explicitly specifies the path to `grub-mkimage`.
+
+✅ **Simple Example:**
+
+    $ sudo grub-mknetdir --net-directory=/tftpboot/grub
+
+    🔹 This command copies all necessary GRUB files to the `/tftpboot/grub` directory.  After this, the TFTP server needs to be configured to point to this directory so clients can boot from the network.

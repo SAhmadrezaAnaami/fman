@@ -1,0 +1,67 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gresource` baraye modiriyat va dastresi be manabe-e binary dar file-haye gresource estefade mishavad. In dastoor be shoma komak mikonad ta manabe-e khod ra dar yek jaye markazi jam’ konid va az anha be asani dar barname-haye GTK+ va GNOME estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gresource list [FILE.gresource]`  --> 📜 List kardan hameye manabe-e dakhele file.
+    🔹 `gresource extract [FILE.gresource] [RESOURCE_PATH]`  --> 📂 Extract kardan yek manba az file.
+    🔹 `gresource build [XML_FILE.gresource.xml] [-o OUTPUT.gresource]`  --> 🔨 Sakhtan yek file gresource az yek file XML.
+    🔹 `gresource --help` --> ❓ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ gresource list myapp.gresource
+
+    🔹 Namayesh listi az hameye manabe-e mojood dar file `myapp.gresource`.
+
+    $ gresource extract myapp.gresource /org/example/myapp/data.txt > data.txt
+
+    🔹 Extract kardan manba `/org/example/myapp/data.txt` az `myapp.gresource` va zakhire kardan an be onvane `data.txt`.
+
+    $ gresource build myapp.gresource.xml -o myapp.gresource
+
+    🔹 Sakhtan file gresource az `myapp.gresource.xml` va zakhire kardan an be onvane `myapp.gresource`.
+
+✅ **Mesal sade:**
+
+    $ gresource list icons.gresource | grep button
+
+    🔹 List kardan hameye manabe-e dar `icons.gresource` va filt kardan natije baraye peyda kardan manabe-e ke dar name-shoon "button" darand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gresource` command is used to manage and access binary resources stored within gresource files. It allows you to bundle resources into a single location for easy access within GTK+ and GNOME applications.
+
+⚙️ **Options:**
+    🔹 `gresource list [FILE.gresource]`  --> 📜 List all resources within the specified file.
+    🔹 `gresource extract [FILE.gresource] [RESOURCE_PATH]`  --> 📂 Extract a single resource from the file.
+    🔹 `gresource build [XML_FILE.gresource.xml] [-o OUTPUT.gresource]`  --> 🔨 Build a gresource file from an XML description.
+    🔹 `gresource --help` --> ❓ Display command help.
+
+🛠 **Examples:**
+
+    $ gresource list myapp.gresource
+
+    🔹 Displays a list of all resources contained in the `myapp.gresource` file.
+
+    $ gresource extract myapp.gresource /org/example/myapp/data.txt > data.txt
+
+    🔹 Extracts the resource `/org/example/myapp/data.txt` from `myapp.gresource` and saves it as `data.txt`.
+
+    $ gresource build myapp.gresource.xml -o myapp.gresource
+
+    🔹 Builds a gresource file from `myapp.gresource.xml` and saves it as `myapp.gresource`.
+
+✅ **Simple Example:**
+
+    $ gresource list icons.gresource | grep button
+
+    🔹 Lists all resources in `icons.gresource` and filters the output to find resources with "button" in their name.
+

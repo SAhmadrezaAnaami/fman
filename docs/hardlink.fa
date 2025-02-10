@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hardlink` (ya behtar ast beguyim, dastoor `ln` ba gozine-ye be-unvan-e hard link) yek rah baraye sakhtan-e yek eshareh-ye digar (yek name-ye digar) be yek file dar system-e file UNIX/Linux ast.  Dar vaghe, hardlink yek kopy-e az file nist; balkeh faghat yek address-e digar be hamun data ast.
+
+⚙️ **Gozine-ha (Options):**
+    🔹 `ln filename hardlinkname`  --> 🔗 Sakhtan-e hardlink ba name-ye `hardlinkname` az file asli `filename`.
+    🔹 agar `hardlinkname` vojood nadasht, yek hardlink ba haman name dar directory-ye فعلی sakhteh mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ ln myfile.txt mynewlink.txt
+
+    🔹 Sakhtan-e yek hardlink be name-ye `mynewlink.txt` ke be file `myfile.txt` eshareh mikonad.
+
+    $ ls -i myfile.txt mynewlink.txt
+    12345 myfile.txt  12345 mynewlink.txt
+
+    🔹 Namayesh inode number (شناسه) file-ha. Hardlink-ha inode number-e yeksan darand, ke neshan midahad be yek data اشاره mikonand.
+
+✅ **Mesal sade (Simple Example & Explanation):**
+
+    $ echo "Salam Donya" > file1.txt
+    $ ln file1.txt file2.txt
+    $ cat file2.txt
+    Salam Donya
+
+    🔹 Vaghti ke file `file2.txt` ra sakhtim (hardlink), content haman file `file1.txt` ra neshon midahad.  Agar file1.txt ra taghir bedim, file2.txt ham taghir mikonad, چون هردو به یک data block اشاره دارند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hardlink` command (more accurately, the `ln` command used to create hard links) provides a way to create another reference (another name) to a file in a UNIX/Linux file system.  Essentially, a hard link is not a copy of the file; rather it is just another address pointing to the same data.
+
+⚙️ **Options:**
+    🔹 `ln filename hardlinkname`  --> 🔗 Create a hard link named `hardlinkname` to the original file `filename`.
+    🔹 If `hardlinkname` does not exist, a hard link with that name will be created in the current directory.
+
+🛠 **Examples:**
+
+    $ ln myfile.txt mynewlink.txt
+
+    🔹 Creates a hard link named `mynewlink.txt` that points to the file `myfile.txt`.
+
+    $ ls -i myfile.txt mynewlink.txt
+    12345 myfile.txt  12345 mynewlink.txt
+
+    🔹 Displays the inode number (identifier) of the files. Hard links share the same inode number, indicating that they point to the same data.
+
+✅ **Simple Example & Explanation:**
+
+    $ echo "Hello World" > file1.txt
+    $ ln file1.txt file2.txt
+    $ cat file2.txt
+    Hello World
+
+    🔹 When we create `file2.txt` (a hardlink), its content reflects that of the original file `file1.txt`. If we modify file1.txt, file2.txt will also be modified, because both point to the same data block.

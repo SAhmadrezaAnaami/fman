@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `alsatplg` baraye kontrol va modiriyat plugin-haye ALSA (Advanced Linux Sound Architecture) estefade mishavad.  In dastoor be shoma komak mikonad ta plugin-ha ra fa'al ya gheyre fa'al konid va settings anha ra tagheer dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `alsatplg list`  --> 📜 List-e hameye plugin-haye mojood ra neshon midahad.
+    🔹 `alsatplg enable <name_plugin>`  --> ✅ Plugin ba name `<name_plugin>` ra fa'al mikonad.
+    🔹 `alsatplg disable <name_plugin>` --> ❌ Plugin ba name `<name_plugin>` ra gheyre fa'al mikonad.
+    🔹 `alsatplg info <name_plugin>` --> ℹ️  Ettela'ate bishtar dar morede yek plugin khass ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ alsatplg list
+
+    🔹 Namayesh list-e hameye plugin-haye ALSA.
+
+    $ alsatplg enable dmix
+
+    🔹 Fa'al kardan plugin `dmix`.
+
+    $ alsatplg disable speexrate
+
+    🔹 Gheyre fa'al kardan plugin `speexrate`.
+
+✅ **Mesal sade:**
+
+    $ alsatplg list | grep rate
+
+    🔹  List-e hameye plugin-ha ra neshon midahad va ba estefade az `grep`, faqat plugin-hayi ke dar esme anha "rate" vojood darad ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `alsatplg` command is used to control and manage ALSA (Advanced Linux Sound Architecture) plugins. This command helps you enable or disable plugins and modify their settings.
+
+⚙️ **Options:**
+    🔹 `alsatplg list`  --> 📜 Shows a list of all available plugins.
+    🔹 `alsatplg enable <plugin_name>`  --> ✅ Enables the plugin with the name `<plugin_name>`.
+    🔹 `alsatplg disable <plugin_name>` --> ❌ Disables the plugin with the name `<plugin_name>`.
+    🔹 `alsatplg info <plugin_name>` --> ℹ️ Shows more information about a specific plugin.
+
+🛠 **Examples:**
+
+    $ alsatplg list
+
+    🔹 Displays a list of all ALSA plugins.
+
+    $ alsatplg enable dmix
+
+    🔹 Enables the `dmix` plugin.
+
+    $ alsatplg disable speexrate
+
+    🔹 Disables the `speexrate` plugin.
+
+✅ **Simple Example:**
+
+    $ alsatplg list | grep rate
+
+    🔹 Shows the list of all plugins and, using `grep`, only displays the plugins that contain "rate" in their names.

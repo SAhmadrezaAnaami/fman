@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gipddecode` baraye tabdil dadan file-haye format GIPD (Google IP Discovery) be format-haye ghabl-e khandan estefade mishavad. In dastoor be shoma komak mikonad etela'ati ra ke az Google darbareye IP address-ha gerefte-id, analiz konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-i <input_file>`  --> 📥 File-e voroodi GIPD ra moshakhas mikonad.
+    🔹 `-o <output_file>` --> 📤 File-e khorooji ke etela'at tabdil shode dar aan zakhire mishavad ra moshakhas mikonad.
+    🔹 `-f <output_format>` --> ⚙️ Format-e khorooji ra moshakhas mikonad (masalan, JSON ya CSV). Agar moshakhas nashavad, format pishfarz estefade mishavad.
+    🔹 `-v`              --> 📢 Namayesh etela'at bishtar dar mored amal kard-e dastoor (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ gipddecode -i input.gipd -o output.json -f json
+
+    🔹 File `input.gipd` ra be format JSON tabdil mikonad va dar file `output.json` zakhire mikonad.
+
+    $ gipddecode -i data.gipd -o result.txt
+
+    🔹 File `data.gipd` ra be format pishfarz tabdil mikonad va dar file `result.txt` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ gipddecode -i google_ips.gipd -o ips.txt
+
+    🔹  File `google_ips.gipd` ke shamel etela'at IP address-haye Google ast, be file `ips.txt` tabdil mishavad ke ghabl-e khandan baraye analiz ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gipddecode` command is used to convert GIPD (Google IP Discovery) format files into a more readable format. It helps you analyze information obtained from Google about IP addresses.
+
+⚙️ **Options:**
+    🔹 `-i <input_file>`  --> 📥 Specifies the input GIPD file.
+    🔹 `-o <output_file>` --> 📤 Specifies the output file where the converted data will be saved.
+    🔹 `-f <output_format>` --> ⚙️ Specifies the output format (e.g., JSON or CSV). If not specified, a default format is used.
+    🔹 `-v`              --> 📢 Displays more information about the command's operation (verbose mode).
+
+🛠 **Examples:**
+
+    $ gipddecode -i input.gipd -o output.json -f json
+
+    🔹 Converts the `input.gipd` file to JSON format and saves it in the `output.json` file.
+
+    $ gipddecode -i data.gipd -o result.txt
+
+    🔹 Converts the `data.gipd` file to the default format and saves it in the `result.txt` file.
+
+✅ **Simple Example:**
+
+    $ gipddecode -i google_ips.gipd -o ips.txt
+
+    🔹 Converts the `google_ips.gipd` file, which contains Google IP address information, into the `ips.txt` file, making it readable for analysis.

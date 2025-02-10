@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gold` baraye peyda kardan (search) alamat-ha (symbols) va name-ha (names) dar file-haye object (.o), archive-ha (.a), va file-haye binary estefade mishavad. In dastoor bishtar dar barname-nevisi (programming) baraye debug kardan (debugging) ya didan chegoonegi ezafe shodan (implementation) function-ha estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gold -x symbol` --> 🔍 Peyda kardan alamat (symbol) ba name `symbol` (exact match).
+    🔹 `gold -t symbol` --> 📃 Namayesh noe (type) alamat (symbol).
+    🔹 `gold -f filename` --> 📁 Peyda kardan alamat-ha (symbols) faghat dar file `filename`.
+    🔹 `gold -r` --> 🔄 Recursively gashtan (search) dar pooshe-ha (directories). (Agar pooshe dadim)
+    🔹 `gold -a` --> 📂 Gashtan (search) archive-ha (archives).
+
+🛠 **Mesal-ha:**
+
+    $ gold -x main
+
+    🔹 Peyda kardan alamat (symbol) `main` dar hame file-ha dar pooshe (directory) kari.
+
+    $ gold -t printf
+
+    🔹 Namayesh noe (type) alamat (symbol) `printf`.
+
+    $ gold -f mylib.a my_symbol
+
+    🔹 Peyda kardan alamat (symbol) `my_symbol` faghat dar file archive `mylib.a`.
+
+✅ **Mesal sade:**
+
+    $ gold -x my_function
+
+    🔹 Agar `my_function` dar yek file object ya archive voojood dashte bashad, alamat (address) an va file-i ke dar an voojood darad namayesh dade mishavad. Agar voojood nadashte bashad, hich chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gold` command is used to search for symbols and names within object files (.o), archives (.a), and binary files. It's primarily used in programming for debugging or examining function implementations.
+
+⚙️ **Options:**
+    🔹 `gold -x symbol` --> 🔍 Find the symbol with the exact name `symbol`.
+    🔹 `gold -t symbol` --> 📃 Display the type of the symbol.
+    🔹 `gold -f filename` --> 📁 Find symbols only in the file `filename`.
+    🔹 `gold -r` --> 🔄 Recursively search directories (if a directory is provided).
+    🔹 `gold -a` --> 📂 Search archives.
+
+🛠 **Examples:**
+
+    $ gold -x main
+
+    🔹 Find the symbol `main` in all files in the working directory.
+
+    $ gold -t printf
+
+    🔹 Display the type of the symbol `printf`.
+
+    $ gold -f mylib.a my_symbol
+
+    🔹 Find the symbol `my_symbol` only in the archive file `mylib.a`.
+
+✅ **Simple Example:**
+
+    $ gold -x my_function
+
+    🔹 If `my_function` exists in an object file or archive, its address and the file it's located in will be displayed. If it doesn't exist, nothing will be printed.

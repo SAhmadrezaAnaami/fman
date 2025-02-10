@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `busctl` baraye barrasi va control systemd bus (message bus) estefade mishavad. Message bus yek rah baraye process-ha baraye gap zadan ba ham digar ast. Ba `busctl`, shoma mitavanid service-ha ra bebini, message-ha ra monitor konid, va dastoor be service-ha befrestid.
+
+⚙️ **Gozine-ha:**
+    🔹 `busctl status` --> ℹ️  Namayesh etela'at asasi dar morede bus.
+    🔹 `busctl list`   --> 📃  List service-hayi ke be bus vasl hastand.
+    🔹 `busctl monitor`--> 📡  Monitor message-ha dar bus.
+    🔹 `busctl call`    --> 📞  Call yek method dar yek service.
+
+🛠 **Mesal-ha:**
+
+    $ busctl status
+
+    🔹 Namayesh status bus systemd.
+
+    $ busctl list
+
+    🔹 List hameye service-ha dar bus.
+
+    $ busctl monitor org.freedesktop.NetworkManager
+
+    🔹 Monitor hameye message-ha az service `org.freedesktop.NetworkManager`.
+
+✅ **Mesal sade:**
+
+    $ busctl get-property org.freedesktop.systemd1 /org/freedesktop/systemd1/Managers/Manager org.freedesktop.systemd1.Manager DefaultTimeoutStartUSec
+
+    🔹 Gereftan property `DefaultTimeoutStartUSec` az object `org.freedesktop.systemd1.Manager` dar service `org.freedesktop.systemd1`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `busctl` command is used to introspect and control the systemd bus (message bus). A message bus is a way for processes to communicate with each other. With `busctl`, you can view services, monitor messages, and send commands to services.
+
+⚙️ **Options:**
+    🔹 `busctl status` --> ℹ️  Show basic information about the bus.
+    🔹 `busctl list`   --> 📃  List services connected to the bus.
+    🔹 `busctl monitor`--> 📡  Monitor messages on the bus.
+    🔹 `busctl call`    --> 📞  Call a method on a service.
+
+🛠 **Examples:**
+
+    $ busctl status
+
+    🔹 Show the status of the systemd bus.
+
+    $ busctl list
+
+    🔹 List all services on the bus.
+
+    $ busctl monitor org.freedesktop.NetworkManager
+
+    🔹 Monitor all messages from the `org.freedesktop.NetworkManager` service.
+
+✅ **Simple Example:**
+
+    $ busctl get-property org.freedesktop.systemd1 /org/freedesktop/systemd1/Managers/Manager org.freedesktop.systemd1.Manager DefaultTimeoutStartUSec
+
+    🔹 Get the `DefaultTimeoutStartUSec` property from the `org.freedesktop.systemd1.Manager` object in the `org.freedesktop.systemd1` service.

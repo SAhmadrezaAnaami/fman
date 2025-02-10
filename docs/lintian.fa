@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lintian` baraye baresi kardan package-haye Debian (ya .deb file-ha) az nazar moshkelat va ghalat-haye ehtemali estefade mishavad. In dastoor be shoma komak mikonad ta az dorost va standard boodan package-ha etminan hosel konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lintian package.deb` -->  📦 Baresi yek package .deb khass.
+    🔹 `lintian --verbose package.deb` --> 🗣️ Namayesh etela'at bishtar dar morede moshkelat va warning-ha.
+    🔹 `lintian --pedantic package.deb` -->  🧐 Baresi daghigh-tar va hosastar.
+    🔹 `lintian --no-tags package.deb` --> 🏷️ Hazf tag-haye etela'ati az khorooji (faqat moshkelat va warning-ha).
+
+🛠 **Mesal-ha:**
+
+    $ lintian mypackage.deb
+
+    🔹 Baresi package `mypackage.deb` az nazar moshkelat.
+
+    $ lintian --verbose mypackage.deb
+
+    🔹 Namayesh detailate bishtar dar morede moshkelati ke peyda shode.
+
+✅ **Mesal sade:**
+
+    $ lintian --no-tags mypackage.deb
+
+    🔹 Faghat error-ha va warning-ha namayesh dade mishavand, va etela'at digar hazf mishavad, baraye inke khorooji sade-tar bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lintian` command is used to check Debian packages (or .deb files) for potential issues and errors. It helps you ensure that your packages are correct and meet the Debian standards.
+
+⚙️ **Options:**
+    🔹 `lintian package.deb` --> 📦 Check a specific .deb package.
+    🔹 `lintian --verbose package.deb` --> 🗣️ Show more detailed information about problems and warnings.
+    🔹 `lintian --pedantic package.deb` --> 🧐 Perform a more thorough and strict check.
+    🔹 `lintian --no-tags package.deb` --> 🏷️ Remove informational tags from the output (only show errors and warnings).
+
+🛠 **Examples:**
+
+    $ lintian mypackage.deb
+
+    🔹 Check the `mypackage.deb` package for issues.
+
+    $ lintian --verbose mypackage.deb
+
+    🔹 Show more details about the problems found.
+
+✅ **Simple Example & Explanation:**
+
+    $ lintian --no-tags mypackage.deb
+
+    🔹 Only errors and warnings are displayed, removing other informational output, making the output cleaner.

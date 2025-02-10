@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hd` (hex dump) baraye namayesh dadan mohhtavayeh yek file be shekle hexadecimal va ASCII estefade mishavad. In dastoor baraye didan data-ye binary ya file-haye digar ke ghabl-khani nistand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `hd filename` --> 📄 Namayesh mohhtavayeh file be shekle hex va ASCII.
+    🔹 `hd -n number filename` --> 🔢 Namayesh `number` byte az file.
+    🔹 `hd -s offset filename` --> 📍 Shoru az offset moshakhas shode dar file.
+
+🛠 **Mesal-ha:**
+
+    $ hd example.txt
+
+    🔹 Namayesh mohhtavayeh file `example.txt` be shekle hex va ASCII.
+
+    $ hd -n 16 example.bin
+
+    🔹 Namayesh faghat 16 byte az file `example.bin`.
+
+✅ **Mesal sade:**
+
+    $ hd -n 32 data.dat
+
+    🔹 In dastoor 32 byte avalieh az file `data.dat` ra be shekle hexadecimal namayesh midahad, be shoma komak mikonad ta data-ye binary ra baresi konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hd` (hex dump) command is used to display the content of a file in hexadecimal and ASCII formats. This is useful for inspecting binary data or other files that are not human-readable.
+
+⚙️ **Options:**
+    🔹 `hd filename` --> 📄 Display the contents of the file in hex and ASCII.
+    🔹 `hd -n number filename` --> 🔢 Display only `number` bytes from the file.
+    🔹 `hd -s offset filename` --> 📍 Start from the specified offset in the file.
+
+🛠 **Examples:**
+
+    $ hd example.txt
+
+    🔹 Display the contents of the `example.txt` file in hex and ASCII.
+
+    $ hd -n 16 example.bin
+
+    🔹 Display only the first 16 bytes of the `example.bin` file.
+
+✅ **Simple Example:**
+
+    $ hd -n 32 data.dat
+
+    🔹 This command displays the first 32 bytes of the file `data.dat` in hexadecimal, helping you examine binary data.
+

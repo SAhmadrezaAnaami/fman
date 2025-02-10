@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_systemd_enable` yek dastoor baraye sakhtane file-haye lazem baraye systemd service ha dar bastahaye Debian ast. Yani ba estefade az in dastoor, mitavanid service-haye systemd ra dar bastahaye Debian fa'al ya gheyre fa'al konid.  In kar kheili mohem ast, chon systemd service manager default dar bishtar distro-haye Linux ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--no-enable` --> 🚫 Service ra fa'al nakonid (ama file-haye lazem ra dorost mikonad).  
+    🔹 `--name=FILENAME` --> 🏷️ Name file .service ra tayin mikonad. Agar tayin nashavad, az name baste estefade mishavad.  
+    🔹 `--default=yes|no` --> ⚙️ Tayin mikonad aya service be soorat default fa'al bashad ya na.
+
+🛠 **Mesal-ha:**
+
+    $ dh_systemd_enable
+    
+    🔹 File-haye service systemd ra ba name default baste misazad va service ra fa'al mikonad.
+
+    $ dh_systemd_enable --name=myservice --no-enable
+    
+    🔹 File service ra ba name `myservice.service` misazad, vali service ra fa'al nemikonad.
+
+✅ **Mesal sade:**
+    
+    $ dh_systemd_enable --default=yes
+
+    🔹 Service ra be soorat default fa'al mikonad, yani ba boot shodan system, service shoru be kar mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_systemd_enable` command is used to create the necessary files for systemd services in Debian packages. In other words, you can enable or disable systemd services in Debian packages using this command. This is very important because systemd is the default service manager in most Linux distributions.
+
+⚙️ **Options:**
+    🔹 `--no-enable` --> 🚫 Do not enable the service (but creates the necessary files).
+    🔹 `--name=FILENAME` --> 🏷️ Specifies the name of the .service file. If not specified, the package name is used.
+    🔹 `--default=yes|no` --> ⚙️ Determines whether the service should be enabled by default or not.
+
+🛠 **Examples:**
+
+    $ dh_systemd_enable
+    
+    🔹 Creates systemd service files with the default package name and enables the service.
+
+    $ dh_systemd_enable --name=myservice --no-enable
+    
+    🔹 Creates the service file with the name `myservice.service`, but does not enable the service.
+
+✅ **Simple Example:**
+    
+    $ dh_systemd_enable --default=yes
+
+    🔹 Enables the service by default, meaning the service will start when the system boots up.

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `keyring` yek barname ast ke ramz-ha va password-haye shoma ra moratab negah midarad.  Mesle yek ja klidi digitali amal mikonad baraye save kardane ramz-haye vorood be application-ha, websites, va chiz-haye digar.  Ba in kar, shoma niaz nadarid hameye ramz-haye khod ra be yad dashte bashid va anha ra har dafe type konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `keyring --help`  --> ❓ Namayesh rahnamaye dastoorat keyring.
+    🔹 `keyring set <name>` --> 🔑  Yek ramz jadid baraye <name> zakhire konid. Az shoma ramz khaste mishavad.
+    🔹 `keyring get <name>` --> 🔑  Ramz zakhire shode baraye <name> ra neshon midahad.
+    🔹 `keyring delete <name>`  --> 🗑  Ramz zakhire shode baraye <name> ra pak mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ keyring set gmail
+
+    🔹 In dastoor yek ramz baraye "gmail" zakhire mikonad.  Keyring az shoma ramz ra miporsad.
+
+    $ keyring get gmail
+
+    🔹 In dastoor ramz zakhire shode baraye "gmail" ra neshon midahad.
+
+✅ **Mesal sade:**
+
+    $ keyring set website_login
+    Please enter password for 'website_login':
+
+    $ keyring get website_login
+    your_secret_password
+
+    🔹 Dar in mesal, ma ramze vorood be yek website ra zakhire kardim va sepas aan ra az keyring gereftim.  Keyring ramz ra dar jaye amni zakhire mikonad ta niaz nabashad aan ra dobare type konim.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `keyring` is a utility for managing your passwords and secrets. It acts as a digital keyring, allowing you to store passwords for applications, websites, and other services.  This eliminates the need to remember and type your passwords repeatedly.
+
+⚙️ **Options:**
+    🔹 `keyring --help` --> ❓ Display the keyring command help.
+    🔹 `keyring set <name>` --> 🔑 Store a new password for <name>. You will be prompted for the password.
+    🔹 `keyring get <name>` --> 🔑 Retrieve the stored password for <name>.
+    🔹 `keyring delete <name>` --> 🗑 Delete the stored password for <name>.
+
+🛠 **Examples:**
+
+    $ keyring set gmail
+
+    🔹 This command stores a password for "gmail". Keyring will prompt you to enter the password.
+
+    $ keyring get gmail
+
+    🔹 This command retrieves the stored password for "gmail".
+
+✅ **Simple Example:**
+
+    $ keyring set website_login
+    Please enter password for 'website_login':
+
+    $ keyring get website_login
+    your_secret_password
+
+    🔹 In this example, we stored the login password for a website and then retrieved it from the keyring. Keyring stores the password securely, so you don't need to re-enter it.

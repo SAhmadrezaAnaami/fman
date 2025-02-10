@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzmore` baraye didan file-haye ziad bozorg ke ba `gzip` ya `lzma` feshorde shode-and, estefade mishavad.  Mesle `more` ast, ama baraye file-haye feshorde kar mikonad. Yani dige niaz nist aval az halat feshordegi dar biarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzmore +<number>` --> 🔢 Shoroo az khatte moshakhas shomare `<number>`  
+    🔹 `lzmore -d`      --> 📂  Estefade az dastoor digar (`program`) baraye baz kardane file, agar `LZMORE` taeen shode bashad.
+    🔹 `lzmore -f`      --> 📄 Namayesh file-ha be soorate majmooei (agar chand file dade shode bashad).
+    🔹 `lzmore -p <command>` --> 🚦 Estefade az `command` baraye safhe safhe kardan (paging).
+
+🛠 **Mesal-ha:**
+
+    $ lzmore myfile.gz
+
+    🔹 Didan file-e `myfile.gz` safhe be safhe.
+
+    $ lzmore +20 myfile.lzma
+
+    🔹 Didan file-e `myfile.lzma` az khatte 20 shoroo shode.
+
+✅ **Mesal sade:**
+
+    $ lzmore logfile.gz
+
+    🔹 File `logfile.gz` ra safhe be safhe namayesh midahad, va shoma mitavanid ba zadan dokmeye `space` be safhe badi beravid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzmore` command is used to view large compressed files (gzip or lzma) one page at a time.  It functions similarly to `more` but handles compressed files directly, eliminating the need to decompress them first.
+
+⚙️ **Options:**
+    🔹 `lzmore +<number>` --> 🔢 Start displaying from the specified line number `<number>`.
+    🔹 `lzmore -d`      --> 📂  Use the program specified by the `LZMORE` environment variable for viewing.
+    🔹 `lzmore -f`      --> 📄 Treat files as a logical sequence (if multiple files are given).
+    🔹 `lzmore -p <command>` --> 🚦 Use the specified `command` as the pager.
+
+🛠 **Examples:**
+
+    $ lzmore myfile.gz
+
+    🔹 View the file `myfile.gz` one page at a time.
+
+    $ lzmore +20 myfile.lzma
+
+    🔹 View the file `myfile.lzma`, starting from line 20.
+
+✅ **Simple Example:**
+
+    $ lzmore logfile.gz
+
+    🔹 Displays the `logfile.gz` page by page, allowing you to navigate using the `space` key.

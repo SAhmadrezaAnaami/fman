@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msexpand` baraye bazkardane file-haye compressed Microsoft (manand .cab) estefade mishavad. In dastoor file-haye compressed ra extract mikonad va anha ra be jaye aslishan gharar midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `msexpand source.cab destination`  --> 📁 File `.cab` ra baz karde va dar destination zakhire mikonad.
+    🔹 `msexpand -d source.cab` --> 📜 List file-haye dakhele file `.cab` ra neshon midahad (didebani file-ha).
+    🔹 `msexpand -f filename source.cab destination` --> 🎯 Faghat file morede nazar az dakhele `.cab` extract mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ msexpand source.cab /tmp
+
+    🔹 File `source.cab` ra baz karde va hameye file-ha ra dar pooshe `/tmp` zakhire mikonad.
+
+    $ msexpand -d source.cab
+
+    🔹 List file-haye dakhele `source.cab` ra namayesh midahad bedune extract kardan.
+
+✅ **Mesal sade:**
+
+    $ msexpand -f important.dll source.cab /opt
+
+    🔹 Faghat file `important.dll` ra az dakhele `source.cab` extract karde va dar pooshe `/opt` zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msexpand` command is used to expand Microsoft compressed files (like .cab). This command extracts the compressed files and places them in the specified destination.
+
+⚙️ **Options:**
+    🔹 `msexpand source.cab destination` --> 📁 Expands the `.cab` file and saves the extracted files to the destination directory.
+    🔹 `msexpand -d source.cab` --> 📜 Lists the files contained within the `.cab` file (directory listing).
+    🔹 `msexpand -f filename source.cab destination` --> 🎯 Extracts only the specified file from within the `.cab` archive.
+
+🛠 **Examples:**
+
+    $ msexpand source.cab /tmp
+
+    🔹 Expands the `source.cab` file and saves all extracted files to the `/tmp` directory.
+
+    $ msexpand -d source.cab
+
+    🔹 Displays the list of files contained within `source.cab` without extracting them.
+
+✅ **Simple Example:**
+
+    $ msexpand -f important.dll source.cab /opt
+
+    🔹 Extracts only the `important.dll` file from `source.cab` and saves it to the `/opt` directory.

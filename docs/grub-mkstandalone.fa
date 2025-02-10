@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mkstandalone` baraye sakhtan yek tasvir (image) az GRUB estefade mishavad ke mitavanad be tanhayi boot shavad. In be dard mikhord baraye USB drive-ha, CD-ha, ya disk-haye sakht ke nemikhahid system-e aslie shoma ra dastkari konid. Basically, GRUB ra ba hameye chizhayi ke niaz darad yekja mikonad ta tanha boot shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--directory=POOSHE` --> 📁 Pooshe-yi ke module-ha va file-haye GRUB dar aan gharar darand ra moshakhas mikonad. Agar moshakhas nashavad, az pooshe-ye pishfarz estefade mishavad.
+    🔹 `--format=FORMAT` --> 💽 Formate tasvir-e khorooji ra moshakhas mikonad (e.g., `i386-pc`).
+    🔹 `--output=FILE` --> 💾 Name file-e khorooji ra moshakhas mikonad.
+    🔹 `--modules=MODULE1,MODULE2,...` --> 🧩 List-e module-haye GRUB ke bayad dar tasvir shamel shavand ra moshakhas mikonad. Agar in gozine ra estefade nakonid, module-haye pishfarz shamel mishavand.
+
+🛠 **Mesal-ha:**
+
+    $ grub-mkstandalone --output=boot.img --format=i386-pc --directory=/usr/lib/grub/i386-pc
+
+    🔹 Yek tasvir GRUB ba name `boot.img` ba formate `i386-pc` misazad va az file-haye GRUB dar `/usr/lib/grub/i386-pc` estefade mikonad.
+
+    $ grub-mkstandalone --output=usbboot.img --format=i386-pc --directory=/usr/lib/grub/i386-pc --modules="normal linux ext2"
+
+    🔹 Yek tasvir GRUB ba name `usbboot.img` misazad ke shamel module-haye `normal`, `linux`, va `ext2` mishavad.
+
+✅ **Mesal sade:**
+
+    $ grub-mkstandalone --output=boot.img --format=i386-pc
+
+    🔹 In dastoor yek tasvir bootable GRUB ba name `boot.img` misazad. Shoma mitavanid in tasvir ra roye yek USB drive berizid va az aan baraye boot kardan system-e khod estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mkstandalone` command is used to create a GRUB image that can boot independently. This is useful for USB drives, CDs, or hard disks where you don't want to modify your main system. Essentially, it bundles GRUB with everything it needs to boot on its own.
+
+⚙️ **Options:**
+    🔹 `--directory=DIR` --> 📁 Specifies the directory where GRUB modules and files are located. If not specified, the default directory is used.
+    🔹 `--format=FORMAT` --> 💽 Specifies the output image format (e.g., `i386-pc`).
+    🔹 `--output=FILE` --> 💾 Specifies the output file name.
+    🔹 `--modules=MODULE1,MODULE2,...` --> 🧩 Specifies a list of GRUB modules to include in the image. If this option is not used, default modules are included.
+
+🛠 **Examples:**
+
+    $ grub-mkstandalone --output=boot.img --format=i386-pc --directory=/usr/lib/grub/i386-pc
+
+    🔹 Creates a GRUB image named `boot.img` in the `i386-pc` format, using GRUB files from `/usr/lib/grub/i386-pc`.
+
+    $ grub-mkstandalone --output=usbboot.img --format=i386-pc --directory=/usr/lib/grub/i386-pc --modules="normal linux ext2"
+
+    🔹 Creates a GRUB image named `usbboot.img` that includes the `normal`, `linux`, and `ext2` modules.
+
+✅ **Simple Example & Explanation:**
+
+    $ grub-mkstandalone --output=boot.img --format=i386-pc
+
+    🔹 This command creates a bootable GRUB image named `boot.img`. You can then write this image to a USB drive and use it to boot your system.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-terminal.wrapper` yek ravesh baraye ejra kardan `gnome-terminal` ba config-haye khas ya dar mohit-haye control shode ast. In barnameh be shoma ejazeh midahad ke `gnome-terminal` ra ba gozine-haye pishfarz digar ya be onvaneh yek karbar digar run konid.  Dar vaghe vasete ast baraye ejraye doroste `gnome-terminal`.
+
+⚙️ **Gozine-ha:**
+    🔹 `--` --> ⛔  Hameye argument-haye ba'di ra be `gnome-terminal` asli pass midehad. Dar vaghe gozine-haye `gnome-terminal` ra moshakhas mikonad.
+    🔹 `--login` --> 🚪 Terminal ra be onvane terminal login shoru mikonad (mesle vaghti ke az aval login mikonid).
+    🔹 `--disable-factory` --> 🏭 Az estefade az factory terminal jadid jelogiri mikonad, va terminal jadid ra dar yek window-ye jadid baz mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-terminal.wrapper -- bash
+
+    🔹  `gnome-terminal` ra baz mikonad va dastoor `bash` ra dakhel-esh ejra mikonad.
+
+    $ gnome-terminal.wrapper --window -- tab -- title "My Tab" bash
+
+    🔹  `gnome-terminal` ra baz mikonad, yek tab jadid ba title "My Tab" dorost mikonad, va dastoor `bash` ra dakhel-esh ejra mikonad.
+
+✅ **Mesal sade:**
+
+    $ gnome-terminal.wrapper -- sh -c "echo Hello World"
+
+    🔹  `gnome-terminal` ra baz mikonad, yek shell ba dastoor `echo Hello World` ejra mikonad, va natijeh ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-terminal.wrapper` is a way to run `gnome-terminal` with specific configurations or in controlled environments.  It allows you to launch `gnome-terminal` with alternative default options or as a different user.  Essentially, it is an intermediary for the correct execution of `gnome-terminal`.
+
+⚙️ **Options:**
+    🔹 `--` --> ⛔  Passes all subsequent arguments to the actual `gnome-terminal` executable.  Specifies `gnome-terminal` options.
+    🔹 `--login` --> 🚪 Starts the terminal as a login terminal (similar to when you first log in).
+    🔹 `--disable-factory` --> 🏭 Prevents the use of the new terminal factory, and opens new terminals in a new window.
+
+🛠 **Examples:**
+
+    $ gnome-terminal.wrapper -- bash
+
+    🔹 Opens `gnome-terminal` and executes the `bash` command inside it.
+
+    $ gnome-terminal.wrapper --window -- tab -- title "My Tab" bash
+
+    🔹 Opens `gnome-terminal`, creates a new tab with the title "My Tab", and executes the `bash` command inside it.
+
+✅ **Simple Example:**
+
+    $ gnome-terminal.wrapper -- sh -c "echo Hello World"
+
+    🔹 Opens `gnome-terminal`, executes a shell with the command `echo Hello World`, and prints the result.

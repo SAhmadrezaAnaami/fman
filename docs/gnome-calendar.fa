@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-calendar` yek barnameye taghvime rooy desktop GNOME ast. In barname be shoma komak mikonad ke randevoo-ha, moghe-ha, va event-haye khod ra modiriyat konid. Shoma mitavanid taghvime google, microsoft exchange, va digar taghvim-haye online ra ham ba an hamahang konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version` --> ℹ️ Namayesh dade version barname.
+    🔹 `--help`    --> ❓ Namayesh dade rahnamaye dastoor-e estefade az barname.
+    🔹 `gnome-calendar [FILE]` --> 📂 Baz kardan yek file .ics (iCalendar) .
+
+🛠 **Mesal-ha:**
+
+    $ gnome-calendar
+
+    🔹 Baz kardane barnameye taghvime gnome.
+
+    $ gnome-calendar --version
+
+    🔹 Namayesh dade version barnameye taghvime gnome.
+
+✅ **Mesal sade:**
+
+    $ gnome-calendar my_event.ics
+
+    🔹 Baz kardane file "my_event.ics" ke shamel etela'ate event ya randevoo ast dar barnameye taghvime gnome.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-calendar` is a desktop calendar application for the GNOME desktop environment.  It helps you manage your appointments, events, and schedules.  You can also synchronize it with Google Calendar, Microsoft Exchange, and other online calendars.
+
+⚙️ **Options:**
+    🔹 `--version` --> ℹ️ Display the program's version number.
+    🔹 `--help`    --> ❓ Show help message and exit.
+    🔹 `gnome-calendar [FILE]` --> 📂 Open an .ics (iCalendar) file.
+
+🛠 **Examples:**
+
+    $ gnome-calendar
+
+    🔹 Launch the GNOME Calendar application.
+
+    $ gnome-calendar --version
+
+    🔹 Display the version of the GNOME Calendar application.
+
+✅ **Simple Example & Explanation:**
+
+    $ gnome-calendar my_event.ics
+
+    🔹 Opens the "my_event.ics" file, which contains event or appointment information, in the GNOME Calendar application.
+

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kill` baraye ferestadan yek signal be yek process estefade mishavad. Be soorat mamool, signal `SIGTERM` (15) ferestade mishavad, ke az process mikhad ke ba adab va ehteram baste shavad. Agar process javab nadehad, signal `SIGKILL` (9) mitavanad estefade shavad, ama bayad ba ehtiyat bashad chera ke process ra be soorat naagahani motevaghef mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `kill PID` -->  🎯 Ferestadan signal `SIGTERM` be process ba ID `PID`.
+    🔹 `kill -l`  -->  ℹ️  List kardan hameye signal-haye dastress پذیر.
+    🔹 `kill -SIGNAL PID` -->  ⚠️  Ferestadan `SIGNAL` be process ba ID `PID` (SIGNAL mitavanad yek adad ya name bashad).
+    🔹 `kill -9 PID` -->  💀  Ferestadan signal `SIGKILL` (9) be process ba ID `PID` (اجباری بستن).
+
+🛠 **Mesal-ha:**
+
+    $ kill 1234
+
+    🔹 Ferestadan signal `SIGTERM` be process ba ID 1234.
+
+    $ kill -9 5678
+
+    🔹 Ferestadan signal `SIGKILL` be process ba ID 5678 (اجباری بستن).
+
+✅ **Mesal sade:**
+
+    $ kill -l
+
+    🔹 List kardan hameye signal-haye dastress پذیر ba adad-haye aanha. In komak mikonad ta signal-haye digar be joz `SIGTERM` va `SIGKILL` estefade shavand.
+    Badi az execute kardan, liste signal-ha mesl chizi shabihe in namayesh dade mishavad:
+    `1) SIGHUP 2) SIGINT 3) SIGQUIT 4) SIGILL 5) SIGTRAP ...`
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kill` command is used to send a signal to a process. By default, it sends the `SIGTERM` (15) signal, which requests the process to terminate gracefully. If the process doesn't respond, the `SIGKILL` (9) signal can be used, but it should be used with caution as it abruptly terminates the process.
+
+⚙️ **Options:**
+    🔹 `kill PID` --> 🎯 Send `SIGTERM` signal to the process with ID `PID`.
+    🔹 `kill -l`  -->  ℹ️  List all available signals.
+    🔹 `kill -SIGNAL PID` -->  ⚠️  Send `SIGNAL` to the process with ID `PID` (`SIGNAL` can be a number or a name).
+    🔹 `kill -9 PID` -->  💀  Send `SIGKILL` signal (9) to process with ID `PID` (forceful termination).
+
+🛠 **Examples:**
+
+    $ kill 1234
+
+    🔹 Send `SIGTERM` signal to the process with ID 1234.
+
+    $ kill -9 5678
+
+    🔹 Send `SIGKILL` signal to the process with ID 5678 (forceful termination).
+
+✅ **Simple Example:**
+
+    $ kill -l
+
+    🔹 List all available signals with their corresponding numbers. This helps in using signals other than `SIGTERM` and `SIGKILL`.
+    After executing, a list of signals will be displayed, looking something like this:
+    `1) SIGHUP 2) SIGINT 3) SIGQUIT 4) SIGILL 5) SIGTRAP ...`

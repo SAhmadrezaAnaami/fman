@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nawk` (New AWK) yek zaban barname-nevisi ast ke baraye kar ba matn va file-haye data estefade mishavad. Mesle `gawk`, `nawk` ham mitavanad matn-ha ra jostojo, taghir, va formate konad. Dar asle, `nawk` yek versioon az `awk` ast va dar vaghe hamun karha ra anjam midahad, ama ba behtar sazi-ha va ezafe-kardan-haye jadid.
+
+⚙️ **Gozine-ha:**
+    🔹 `nawk -F "delimeter"`  --> ✂️  Joda-kardan har khat az file ba `delimeter` be ja-ye space (faza).  
+    🔹 `nawk '{print $1}' file.txt` --> 🖨️  Chap kardan sotoon aval az har khat.
+    🔹 `nawk '/pattern/ {print}' file.txt` --> 🔍  Peyda kardan khat-hayee ke daroon-eshun `pattern` vojood darad va chap kardan anha.
+    🔹 `nawk 'BEGIN {commands} {commands} END {commands}' file.txt` --> 🚀  Ejra kardan `commands` ghabl az shoroo, rooye har khat, va bad az tamam shodan.
+    🔹 `nawk -v var=value '{print var}' file.txt` --> 📦  Ta'een kardan yek moteghayer (variable) az command line.
+
+🛠 **Mesal-ha:**
+
+    $ nawk '{print $1, $3}' data.txt
+
+    🔹 Chap kardan sotoon aval va sevom az file `data.txt`.
+
+    $ nawk -F ":" '{print $1}' /etc/passwd
+
+    🔹 Chap kardan username az file `/etc/passwd`, ba estefade az `:` be onvane delimeter.
+
+✅ **Mesal sade:**
+
+    $ nawk '$2 > 5 {print $1}' numbers.txt
+
+    🔹 Agar meghdar sotoon dovom bishtar az 5 bashad, meghdar sotoon aval ra chap kon.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nawk` (New AWK) command is a programming language used for text processing and data extraction from files. Similar to `gawk`, `nawk` can search, modify, and format text.  Essentially, `nawk` is a version of `awk` and performs the same tasks, but with improvements and added features.
+
+⚙️ **Options:**
+    🔹 `nawk -F "delimeter"` --> ✂️  Split each line of the file using the `delimeter` instead of space.
+    🔹 `nawk '{print $1}' file.txt` --> 🖨️  Print the first column of each line.
+    🔹 `nawk '/pattern/ {print}' file.txt` --> 🔍  Find lines containing `pattern` and print them.
+    🔹 `nawk 'BEGIN {commands} {commands} END {commands}' file.txt` --> 🚀  Execute `commands` before starting, on each line, and after finishing.
+    🔹 `nawk -v var=value '{print var}' file.txt` --> 📦  Define a variable from the command line.
+
+🛠 **Examples:**
+
+    $ nawk '{print $1, $3}' data.txt
+
+    🔹 Print the first and third columns from the file `data.txt`.
+
+    $ nawk -F ":" '{print $1}' /etc/passwd
+
+    🔹 Print usernames from the `/etc/passwd` file, using `:` as the delimiter.
+
+✅ **Simple Example:**
+
+    $ nawk '$2 > 5 {print $1}' numbers.txt
+
+    🔹 If the value of the second column is greater than 5, print the value of the first column.

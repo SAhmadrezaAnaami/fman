@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-session-quit` baraye baste shodan (logout), khamoosh kardan (shutdown), ya dobare rahandazi kardan (reboot) session Gnome estefade mishavad. In dastoor baraye karbarani ke az mize kar Gnome estefade mikonand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--logout`  --> 🚪 Az session fa’ali kharej shodan (logout).
+    🔹 `--power-off`  --> 💻 Computer ra khamoosh kardan (shutdown).
+    🔹 `--reboot`  --> 🔄 Computer ra dobare rahandazi kardan (reboot).
+    🔹 `--force`  --> ⚠️ Agar program-ha nemizarand kharej shavid, be zor kharej shodan (force quit).
+    🔹 `--no-prompt` --> ⛔ Bediune soal kardan, amaliat ra anjam dadan (no prompt).
+
+🛠 **Mesal-ha:**
+
+    $ gnome-session-quit --logout
+
+    🔹 Az session Gnome kharej mishavid.
+
+    $ gnome-session-quit --power-off
+
+    🔹 Computer khamoosh mishavad.
+
+    $ gnome-session-quit --reboot
+
+    🔹 Computer dobare rahandazi mishavad.
+
+✅ **Mesal sade:**
+
+    $ gnome-session-quit --logout --no-prompt
+
+    🔹 Bediune soal kardan az session kharej mishavid. In baraye zamani ke mikhahid sari’ be session digari beravid mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-session-quit` command is used to log out, shut down, or reboot the Gnome session. This command is useful for users who are using the Gnome desktop environment.
+
+⚙️ **Options:**
+    🔹 `--logout`  --> 🚪 Log out of the current session.
+    🔹 `--power-off`  --> 💻 Shut down the computer.
+    🔹 `--reboot`  --> 🔄 Reboot the computer.
+    🔹 `--force`  --> ⚠️ Force the quit operation if other programs are preventing it.
+    🔹 `--no-prompt` --> ⛔ Perform the operation without asking for confirmation.
+
+🛠 **Examples:**
+
+    $ gnome-session-quit --logout
+
+    🔹 Logs you out of the Gnome session.
+
+    $ gnome-session-quit --power-off
+
+    🔹 Shuts down the computer.
+
+    $ gnome-session-quit --reboot
+
+    🔹 Reboots the computer.
+
+✅ **Simple Example:**
+
+    $ gnome-session-quit --logout --no-prompt
+
+    🔹 Logs you out of the session without asking for confirmation. This is useful when you want to quickly switch to another session.

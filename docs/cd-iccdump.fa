@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cd-iccdump` baraye khandan va namayesh dadan profile-haye ICC (International Color Consortium) az rooye CD-ROM ya file image CD estefade mishavad. In dastoor etela'ate rang ra ke dar file-haye ICC zakhire shode and, neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cd-iccdump -v`  --> 🗣️ Namayesh etela'at bishtar (verbose mode).
+    🔹 `cd-iccdump -o <filename>` --> 💾 Zakhire kardan khuruji dar yek file be jaye namayesh dar terminal.
+    🔹 `cd-iccdump <device>` --> 📍 Specify device CD-ROM (masalan /dev/cdrom).
+
+🛠 **Mesal-ha:**
+
+    $ cd-iccdump
+    
+    🔹 Namayesh profile ICC az CD-ROM pishfarz.
+
+    $ cd-iccdump -o profile.icc /dev/cdrom
+    
+    🔹 Zakhire kardan profile ICC az device `/dev/cdrom` dar file `profile.icc`.
+
+✅ **Mesal sade:**
+
+    $ cd-iccdump -v
+    
+    🔹 Namayesh profile ICC ba etela'at bishtar, mesle tag-ha va description-ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cd-iccdump` command is used to read and display ICC (International Color Consortium) profiles from a CD-ROM or CD image file. This command shows the color information stored in the ICC files.
+
+⚙️ **Options:**
+    🔹 `cd-iccdump -v` --> 🗣️  Verbose mode, displaying more detailed information.
+    🔹 `cd-iccdump -o <filename>` --> 💾 Save the output to a file instead of displaying it in the terminal.
+    🔹 `cd-iccdump <device>` --> 📍 Specify the CD-ROM device (e.g., /dev/cdrom).
+
+🛠 **Examples:**
+
+    $ cd-iccdump
+    
+    🔹 Display the ICC profile from the default CD-ROM device.
+
+    $ cd-iccdump -o profile.icc /dev/cdrom
+    
+    🔹 Save the ICC profile from the `/dev/cdrom` device to the `profile.icc` file.
+
+✅ **Simple Example:**
+
+    $ cd-iccdump -v
+    
+    🔹 Display the ICC profile with more detailed information, such as tags and descriptions.

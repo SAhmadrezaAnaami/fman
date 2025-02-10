@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mk-build-deps` baraye dorost kardane dependency-haye build az yek `debian/control` file estefade mishavad. Yani, komak mikonad package-haye lazem baraye build kardan yek barname az source ra nasb konid.  In yek rah asan baraye amade kardane mohit baraye compile kardane yek package Debian ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-i` --> 📦 Ba'd az sakhtane list dependency-ha, anha ra ba estefade az `apt-get install` nasb mikonad.
+    🔹 `-t` --> 🎯  Package-haye dependency ra ba estefade az `apt-get build-dep` az package asly gerefte va nasb mikonad.
+    🔹 `-r` --> 🗑️  Package-haye sakhte shode ra ba estefade az `apt-get remove` hazf mikonad. (Baraye pak kardane dependency-haye build ba'd az an ke digar niaz nistand)
+    🔹 `--tool=TOOL` --> 🛠️  Tool-e mored nazar baraye nasb ya hazf package-ha ra moshakhas mikonad (masalan, `aptitude`).
+
+🛠 **Mesal-ha:**
+
+    $ mk-build-deps debian/control
+
+    🔹 List dependency-haye build ra az file `debian/control` dorost mikonad.  
+
+    $ mk-build-deps -i debian/control
+   
+    🔹 List dependency-haye build ra dorost karde va anha ra nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ mk-build-deps -ir debian/control
+
+    🔹 Aval dependency-haye build ra az `debian/control` dorost va nasb mikonad, va ba'd az tamam shodan, anha ra hazf mikonad. In ravesh baraye amade kardane mohit build va ba'd az an pak kardane an estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mk-build-deps` command is used to generate build dependencies from a `debian/control` file. It essentially helps you install the necessary packages required to build a program from source. This provides an easy way to prepare the environment for compiling a Debian package.
+
+⚙️ **Options:**
+    🔹 `-i` --> 📦 After creating the dependency list, install them using `apt-get install`.
+    🔹 `-t` --> 🎯  Fetch and install the dependencies using `apt-get build-dep` on the original package.
+    🔹 `-r` --> 🗑️  Remove the created packages using `apt-get remove`. (For cleaning up build dependencies after they are no longer needed.)
+    🔹 `--tool=TOOL` --> 🛠️  Specifies which tool to use for installing or removing packages (e.g., `aptitude`).
+
+🛠 **Examples:**
+
+    $ mk-build-deps debian/control
+
+    🔹 Creates a list of build dependencies from the `debian/control` file.
+
+    $ mk-build-deps -i debian/control
+   
+    🔹 Creates the build dependency list and then installs the packages.
+
+✅ **Simple Example:**
+
+    $ mk-build-deps -ir debian/control
+
+    🔹 First, create and install build dependencies from `debian/control`, and then removes them once finished.  This method is useful for preparing the build environment and then cleaning it up afterwards.

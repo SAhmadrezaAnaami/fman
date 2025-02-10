@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aclocal` baraye dorost kardane `aclocal.m4` file estefade mishe. In file shamel macro-haye tarif shode baraye estefade dar `configure.ac` hastesh.  Be zabane sade tar, `aclocal` komak mikone ta dastoor `configure` betoone chizhayee ke behesh niaz dare ro peyda kone, mesle version-haye library-ha ya tool-haye dige.
+
+⚙️ **Gozine-ha:**
+    🔹 `aclocal` --> 🔄 Run kardane dastoor ba default setting-ha.  Ehtiaj be hich gozine nist agar chizi niaz nist ke taghir dade beshe.
+    🔹 `aclocal -I directory` --> 📂 Ezafe kardane yek directory be list-e directory-haee ke `aclocal` baraye peyda kardane file-haye macro migarde.  In kheili mohemme age macro-haye khodetoon ro dar directory-haye standard nadarid.
+    🔹 `aclocal -m` --> ⚠️ Bejaye inke `aclocal.m4` ro overwrite kone, yek copy backup az `aclocal.m4` dorost mikone.
+    🔹 `aclocal --help` --> ❓ Namayeshe rahnamaye kommand va tamam gozine-haye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ aclocal
+
+    🔹 Sakhtane ya update kardane file `aclocal.m4` ba default setting-ha.
+
+    $ aclocal -I /path/to/mymacros
+
+    🔹 Sakhtane ya update kardane file `aclocal.m4` va ezafe kardane directory `/path/to/mymacros` be list-e jahayee ke baraye macro-ha bayad gasht.
+
+✅ **Mesal sade:**
+
+    $ aclocal
+    $ autoheader
+    $ autoconf
+
+    🔹 In se ta dastoor obdat mikonan system sakht ro. Awwalan `aclocal` macro-haye lazem ro peyda mikone, bad `autoheader` file header `config.h.in` ro dorost mikone az `configure.ac`, va sevvoman `autoconf` script `configure` ro az `configure.ac` misaze.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aclocal` command is used to generate the `aclocal.m4` file. This file contains the definitions of macros to be used by `configure.ac`. Simply put, `aclocal` helps the `configure` script find things it needs, such as library versions or other tools.
+
+⚙️ **Options:**
+    🔹 `aclocal` --> 🔄 Runs the command with default settings. No options are needed if nothing needs to be changed.
+    🔹 `aclocal -I directory` --> 📂 Adds a directory to the list of directories that `aclocal` searches for macro files. This is important if you have your own macros in non-standard directories.
+    🔹 `aclocal -m` --> ⚠️ Instead of overwriting `aclocal.m4`, it creates a backup copy of `aclocal.m4`.
+    🔹 `aclocal --help` --> ❓ Displays command help and all available options.
+
+🛠 **Examples:**
+
+    $ aclocal
+
+    🔹 Creates or updates the `aclocal.m4` file with default settings.
+
+    $ aclocal -I /path/to/mymacros
+
+    🔹 Creates or updates the `aclocal.m4` file and adds the directory `/path/to/mymacros` to the list of places to search for macros.
+
+✅ **Simple Example:**
+
+    $ aclocal
+    $ autoheader
+    $ autoconf
+
+    🔹 These three commands update the build system. First, `aclocal` finds necessary macros, then `autoheader` creates a header file `config.h.in` from `configure.ac`, and finally `autoconf` creates the `configure` script from `configure.ac`.

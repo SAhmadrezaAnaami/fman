@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fallocate` baraye eijad ya tagheer andazeye yek file be soorate pish-khaste (preallocated) estefade mishavad. Yani fazaye disk baraye file reserve mishavad hata agar data-ee dar an nabashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `fallocate -l <andaze>`  --> 📏 Ta'een andazeye file be byte (ya K, M, G)
+    🔹 `fallocate -o <offset> -l <andaze>` --> 🧮 Eijad hole (space-e khali) dar yek file dar yek mahale khas
+    🔹 `fallocate -d` --> 🗑️ Un-share kardan blok-haye data (deallocate)
+
+🛠 **Mesal-ha:**
+
+    $ fallocate -l 1G file.img
+
+    🔹 Yek file be name `file.img` ba andazeye 1 gigabyte dorost mikonad.
+
+    $ fallocate -o 10M -l 50M file.img
+
+    🔹 Dar `file.img`, az offset 10 megabyte, yek fazaye 50 megabyte reserve mikonad.
+
+✅ **Mesal sade:**
+
+    $ fallocate -l 10M myfile.txt
+    $ ls -lh myfile.txt
+
+    🔹 Dastoor aval yek file be name `myfile.txt` ba andazeye 10 megabyte dorost mikonad. Dastoor dovom andazeye file ra namayesh midahad va moshakhas mishavad ke 10 megabyte fazaye disk gerefte shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fallocate` command is used to preallocate disk space for a file, creating or modifying a file to a specified size. This reserves the space on the disk even if no data is written.
+
+⚙️ **Options:**
+    🔹 `fallocate -l <size>` --> 📏 Specify the size of the file in bytes (or K, M, G)
+    🔹 `fallocate -o <offset> -l <size>` --> 🧮 Create a hole (empty space) in a file at a specific offset.
+    🔹 `fallocate -d` --> 🗑️ Deallocate file space
+
+🛠 **Examples:**
+
+    $ fallocate -l 1G file.img
+
+    🔹 Creates a file named `file.img` with a size of 1 gigabyte.
+
+    $ fallocate -o 10M -l 50M file.img
+
+    🔹 In `file.img`, starting at offset 10 megabytes, reserves a space of 50 megabytes.
+
+✅ **Simple Example:**
+
+    $ fallocate -l 10M myfile.txt
+    $ ls -lh myfile.txt
+
+    🔹 The first command creates a file named `myfile.txt` with a size of 10 megabytes. The second command displays the file size, confirming that 10 megabytes of disk space have been allocated.

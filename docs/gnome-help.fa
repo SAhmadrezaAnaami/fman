@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-help` baraye baz kardane rahnama-ye (help) desktop GNOME estefade mishavad. In rahnama etela'at dar morede estefade az GNOME va barname-haye motealeq be aan ra faraaham mikonad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-help`  --> 🚀 Baz kardane rahnama-ye asli (main help viewer)
+    🔹 `gnome-help URL`  --> 🌐 Baz kardane safhe-ye rahnama ba address interneti (URL) moshakhas
+    🔹 `gnome-help topic`  --> 📚 Baz kardane rahnama baraye yek mavzooe khas (topic)
+
+🛠 **Mesal-ha:**
+    
+    $ gnome-help
+   
+    🔹 Baz kardane rahnama-ye GNOME.
+    
+    $ gnome-help network
+   
+    🔹 Baz kardane rahnama baraye mavzooe "network".
+
+✅ **Mesal sade:**
+    
+    $ gnome-help preferences
+   
+    🔹 Baz kardane rahnama dar bakhshe "preferences" baraye tanzimat va tarjihate GNOME.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-help` command is used to open the GNOME desktop help system. This help system provides information on using GNOME and its related applications.
+
+⚙️ **Options:**
+    🔹 `gnome-help`  --> 🚀 Opens the main help viewer.
+    🔹 `gnome-help URL`  --> 🌐 Opens the help page at the specified URL.
+    🔹 `gnome-help topic`  --> 📚 Opens the help for a specific topic.
+
+🛠 **Examples:**
+    
+    $ gnome-help
+    
+    🔹 Opens the GNOME help viewer.
+
+    $ gnome-help network
+    
+    🔹 Opens the help documentation for the "network" topic.
+
+✅ **Simple Example:**
+    
+    $ gnome-help preferences
+    
+    🔹 Opens the help documentation in the "preferences" section, related to GNOME settings and preferences.

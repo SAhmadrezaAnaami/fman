@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gzexe` yek file ejraee ra compress mikonad va on ra be shekle khod-bazgosha tabdil mikonad. Yani, vaghti file ejraee ejra shavad, aval az halat compress kharej shode va sepas ejra mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gzexe` --> File ra compress va khod-bazgosha mikonad.
+    🔹 `gzexe -d` --> File ra az halat compress kharej mikonad (decompress).
+    🔹 `gzexe -n` --> File asli ra pas az compress kardan hefz mikonad (naghes nemikonad).
+
+🛠 **Mesal-ha:**
+
+    $ gzexe myprogram
+
+    🔹 File "myprogram" ra compress va khod-bazgosha mikonad.
+
+    $ gzexe -d myprogram.gz
+
+    🔹 File "myprogram.gz" ra az halat compress kharej mikonad.
+
+✅ **Mesal sade:**
+
+    $ gzexe myprogram
+    $ ./myprogram
+
+    🔹 Dastoor aval "myprogram" ra compress mikonad. Dastoor dovvom file compress shode ra ejra mikonad; file khod-bazgosha mishavad va sepas ejra misavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gzexe` command compresses an executable file and transforms it into a self-extracting executable.  That is, when the executable file is run, it first decompresses itself and then executes.
+
+⚙️ **Options:**
+    🔹 `gzexe` --> Compresses the file and makes it self-extracting.
+    🔹 `gzexe -d` --> Decompresses the file.
+    🔹 `gzexe -n` --> Keeps the original file after compression (does not delete it).
+
+🛠 **Examples:**
+
+    $ gzexe myprogram
+
+    🔹 Compresses the file "myprogram" and makes it self-extracting.
+
+    $ gzexe -d myprogram.gz
+
+    🔹 Decompresses the file "myprogram.gz".
+
+✅ **Simple Example & Explanation:**
+
+    $ gzexe myprogram
+    $ ./myprogram
+
+    🔹 The first command compresses "myprogram". The second command executes the compressed file; the file self-extracts and then runs.
+

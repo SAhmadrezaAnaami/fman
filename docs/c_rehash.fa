@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `c_rehash` baraye dorost kardan link-haye ramzi (symbolic links) be file-haye certificate dar yek pooshe (directory) estefade mishavad. In kar baraye barname-haee ke az SSL/TLS estefade mikonand, komak mikonad ta certificate-ha ra be asani peyda konand.  
+
+⚙️ **Gozine-ha:**
+    🔹 `c_rehash -n <pooshe>` --> 🌐 Faghat name certificate-ha ra chap kon, link-e ramzi dorost nakon.
+    🔹 `c_rehash -v <pooshe>` --> 📢 Namayesh etela'at bishtar dar mored amaliyat.
+
+🛠 **Mesal-ha:**
+
+    $ c_rehash /etc/ssl/certs
+
+    🔹 Link-haye ramzi dorost mikonad baraye certificate-ha dar pooshe /etc/ssl/certs.
+
+    $ c_rehash -n /usr/local/share/ca-certificates
+
+    🔹 Name certificate-ha ra chap mikonad dar pooshe /usr/local/share/ca-certificates, vali link dorost nemikonad.
+
+✅ **Mesal sade:**
+
+    $ c_rehash /opt/certs
+
+    🔹 Agar yek certificate ba name `mycert.pem` dar pooshe `/opt/certs` bashad, `c_rehash` yek link ba name `$(openssl x509 -hash -noout < mycert.pem).0` be `mycert.pem` dorost mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `c_rehash` command is used to create symbolic links to certificate files in a directory. This helps applications that use SSL/TLS to easily find certificates.
+
+⚙️ **Options:**
+    🔹 `c_rehash -n <directory>` --> 🌐 Only print the certificate names, do not create symbolic links.
+    🔹 `c_rehash -v <directory>` --> 📢 Show more verbose output about the operation.
+
+🛠 **Examples:**
+
+    $ c_rehash /etc/ssl/certs
+
+    🔹 Creates symbolic links for certificates in the /etc/ssl/certs directory.
+
+    $ c_rehash -n /usr/local/share/ca-certificates
+
+    🔹 Prints the certificate names in the /usr/local/share/ca-certificates directory, but does not create any links.
+
+✅ **Simple Example & Explanation:**
+
+    $ c_rehash /opt/certs
+
+    🔹 If there is a certificate named `mycert.pem` in the `/opt/certs` directory, `c_rehash` will create a link named `$(openssl x509 -hash -noout < mycert.pem).0` pointing to `mycert.pem`.

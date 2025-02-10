@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dwp` (Dynamic Window Placement) yek barname ast baraye modiriat panjare-ha (window management) be soorate dynamic dar UNIX/Linux. Yani, be shoma komak mikonad ta panjare-ha ra be soorate khodkar va ba tartibe khasi dar safhe namayesh (screen) moratab konid. In dastoor bishtar baraye estefade ba window manager-haye tiling (mesle i3, Awesome, ya XMonad) monaseb ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `dwp` --> 🚀 Eejad config file default dar `~/.dwprc` agar mojood nabashad.
+    🔹 `dwp -v` --> ℹ️ Namayesh version barname.
+    🔹 `dwp -h` --> ❓ Namayesh rahnama (help) va gozine-haye digar.
+
+🛠 **Mesal-ha:**
+
+    $ dwp
+
+    🔹 Ba ejraye sadeye `dwp`, config file-haye default loading mishavand va `dwp` shoru be kar mikonad.  Agar config file dar masir `~/.dwprc`  vojood nadashte bashad, yek config file default sakhte mishavad.
+
+    $ dwp -v
+
+    🔹 Namayesh version e dwp.
+
+✅ **Mesal sade:**
+
+    $ dwp
+
+    🔹 Agar shoma config file khasi nadashte bashid, `dwp` ba settings default shoru be kar mikonad va panjare-ha ra be tartibi ke tolid mishavand, moratab mikonad.  Baraye tagheer dadan raftar `dwp`, bayad config file `~/.dwprc` ra tagheer dahid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dwp` (Dynamic Window Placement) command is a program for dynamic window management on UNIX/Linux systems. It helps you automatically arrange windows in a specific layout on the screen. It's often used with tiling window managers (like i3, Awesome, or XMonad).
+
+⚙️ **Options:**
+    🔹 `dwp` --> 🚀 Create a default config file in `~/.dwprc` if one doesn't exist.
+    🔹 `dwp -v` --> ℹ️ Show program version.
+    🔹 `dwp -h` --> ❓ Show help and other options.
+
+🛠 **Examples:**
+
+    $ dwp
+
+    🔹 Running `dwp` loads the default config files and starts `dwp`. If a config file doesn't exist in `~/.dwprc`, a default config file is created.
+
+    $ dwp -v
+
+    🔹 Shows the version of dwp.
+
+✅ **Simple Example:**
+
+    $ dwp
+
+    🔹 If you don't have a specific config file, `dwp` starts with default settings and arranges windows as they are created. To change `dwp`'s behavior, you need to modify the `~/.dwprc` config file.

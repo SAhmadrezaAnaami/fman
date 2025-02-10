@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hbpldecode` baraye decode kardan file-haye HBPL (HP Basic Language) estefade mishavad. HBPL zaban barname nevisi est ke ghadeeman dar mashin hesab-ha va computer-haye HP estefade mishod. In dastoor be shoma komak mikonad ke code-haye HBPL ra be shekle ghabl-khani dar biavarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hbpldecode filename.hbpl` --> 📑 Decode kardan file `filename.hbpl` va chap kardan natije dar terminal.
+    🔹 `hbpldecode -o output.txt filename.hbpl` --> 💾 Decode kardan file `filename.hbpl` va zakhire kardan natije dar file `output.txt`.
+    🔹 `hbpldecode -v filename.hbpl` --> 📢 Namayesh etela'at bishtar dar morede process decode kardan (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ hbpldecode myprogram.hbpl
+
+    🔹 Decode kardan file `myprogram.hbpl` va chap kardan code decode shode dar terminal.
+
+    $ hbpldecode -o decoded_program.txt myprogram.hbpl
+
+    🔹 Decode kardan file `myprogram.hbpl` va zakhire kardan code decode shode dar file `decoded_program.txt`.
+
+✅ **Mesal sade:**
+
+    $ hbpldecode -v myprogram.hbpl
+
+    🔹 In dastoor file `myprogram.hbpl` ra decode mikonad va hamzaman etela'at bishtari dar morede process decode kardan namayesh midahad. In komak mikonad agar moshkeli dar decode kardan vojood dashte bashad, on ra peyda konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hbpldecode` command is used to decode HBPL (HP Basic Language) files. HBPL is a programming language formerly used in HP calculators and computers. This command allows you to convert HBPL code into a readable format.
+
+⚙️ **Options:**
+    🔹 `hbpldecode filename.hbpl` --> 📑 Decode the file `filename.hbpl` and print the result to the terminal.
+    🔹 `hbpldecode -o output.txt filename.hbpl` --> 💾 Decode the file `filename.hbpl` and save the result to the file `output.txt`.
+    🔹 `hbpldecode -v filename.hbpl` --> 📢 Display more information about the decoding process (verbose mode).
+
+🛠 **Examples:**
+
+    $ hbpldecode myprogram.hbpl
+
+    🔹 Decode the file `myprogram.hbpl` and print the decoded code to the terminal.
+
+    $ hbpldecode -o decoded_program.txt myprogram.hbpl
+
+    🔹 Decode the file `myprogram.hbpl` and save the decoded code to the file `decoded_program.txt`.
+
+✅ **Simple Example:**
+
+    $ hbpldecode -v myprogram.hbpl
+
+    🔹 This command decodes the file `myprogram.hbpl` and simultaneously displays more information about the decoding process. This helps to identify any issues during decoding.

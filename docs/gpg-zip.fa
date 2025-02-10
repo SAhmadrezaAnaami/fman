@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpg-zip` baraye zakhire-kardan (archive) va ramez-negari (encrypt) file-ha ba estefade az GnuPG (GPG) be kar miravad. In dastoor file-ha ra compress mikonad va ba kelid-e shakhsi shoma ramez-negari mikonad, ta amniat-e aanha ra ta’min konad. 🔒
+
+⚙️ **Gozine-ha:**
+    🔹 `gpg-zip file.txt` --> 📝 File `file.txt` ra compress va ramez-negari mikonad.
+    🔹 `gpg-zip -r recipient file.txt` --> 👤 File `file.txt` ra baraye `recipient` ramez-negari mikonad (recipient bayad ID ya email address bashad).
+    🔹 `gpg-zip -o output.gpg file.txt` --> 📤 File `file.txt` ra compress va ramez-negari mikonad va dar file `output.gpg` zakhire mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gpg-zip myfile.txt
+
+    🔹 File `myfile.txt` compress va ba kelid-e pish-farz ramez-negari mishavad.
+
+    $ gpg-zip -r "User Name <user@example.com>" myfile.txt
+
+    🔹 File `myfile.txt` baraye shakhsi ba email `user@example.com` ramez-negari mishavad.
+
+✅ **Mesal sade:**
+
+    $ gpg-zip -o archive.gpg important_document.txt
+
+    🔹 File `important_document.txt` compress va ba estefade az GPG ramez-negari mishavad, natije dar file `archive.gpg` zakhire mishavad. 💾
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpg-zip` command is used to archive and encrypt files using GnuPG (GPG). It compresses files and encrypts them with your personal key, ensuring their security. 🔒
+
+⚙️ **Options:**
+    🔹 `gpg-zip file.txt` --> 📝 Compresses and encrypts the file `file.txt`.
+    🔹 `gpg-zip -r recipient file.txt` --> 👤 Encrypts `file.txt` for the specified `recipient` (recipient must be an ID or email address).
+    🔹 `gpg-zip -o output.gpg file.txt` --> 📤 Compresses and encrypts `file.txt` and saves it to `output.gpg`.
+
+🛠 **Examples:**
+
+    $ gpg-zip myfile.txt
+
+    🔹 Compresses `myfile.txt` and encrypts it using the default key.
+
+    $ gpg-zip -r "User Name <user@example.com>" myfile.txt
+
+    🔹 Encrypts `myfile.txt` for the person with the email `user@example.com`.
+
+✅ **Simple Example:**
+
+    $ gpg-zip -o archive.gpg important_document.txt
+
+    🔹 Compresses and encrypts `important_document.txt` using GPG, saving the result in `archive.gpg`. 💾

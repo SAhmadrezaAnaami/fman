@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-control-center` ya `control-center` yek barname ast ke be shoma komak mikonad ta tanzimat mokhtalef ra dar desktop GNOME tagheer dahid. Mesle tagheer dade wallpaper, network, seda, mouse, keyboard va chizhaye dige. In barname hame tanzimat ra dar yek jaye asan jam' mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-control-center` --> 🚀 Baz kardan barname control center ba hameye option-ha.
+    🔹 `gnome-control-center <tab>` --> 🔑 List kardan option-haye dakheli baraye baz kardan tab-haye khass. (ba zadan tab bad az neveshtane dastoor mitavanid option-ha ra bebinid)
+    🔹 `gnome-control-center display` --> 🖥️ Baz kardan tab display be soorat mostaghim.
+    🔹 `gnome-control-center network` --> 🌐 Baz kardan tab network be soorat mostaghim.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-control-center
+
+    🔹 Baz kardan control center ba hameye gozine ha.
+
+    $ gnome-control-center keyboard
+
+    🔹 Baz kardan tab keyboard be soorat mostaghim.
+
+✅ **Mesal sade:**
+
+    $ gnome-control-center mouse
+
+    🔹 Ba ejraye in dastoor, panjere tanzimat mouse baz mishavad, ke shoma mitavanid sor'at pointer va digar tanzimat ra tagheer dahid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-control-center` or `control-center` is a program that helps you change various settings in the GNOME desktop environment.  It allows you to configure things like your wallpaper, network connections, sound settings, mouse, keyboard, and more.  This program brings all the settings together in one easy-to-use interface.
+
+⚙️ **Options:**
+    🔹 `gnome-control-center` --> 🚀 Opens the control center application with all available options.
+    🔹 `gnome-control-center <tab>` --> 🔑 Lists internal options for opening specific tabs. (Pressing tab after typing the command will show you the options)
+    🔹 `gnome-control-center display` --> 🖥️ Opens the display settings tab directly.
+    🔹 `gnome-control-center network` --> 🌐 Opens the network settings tab directly.
+
+🛠 **Examples:**
+
+    $ gnome-control-center
+
+    🔹 Opens the control center with all options available.
+
+    $ gnome-control-center keyboard
+
+    🔹 Opens the keyboard settings tab directly.
+
+✅ **Simple Example:**
+
+    $ gnome-control-center mouse
+
+    🔹 By running this command, the mouse settings window will open, allowing you to change the pointer speed and other settings.

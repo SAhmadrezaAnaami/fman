@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-ar` mesle `ar` amal mikonad, vali baraye compiler GCC beینه-sazi shode ast. Az aan baraye sakhtan, tagheer dadan va estخراج arshive-haye static estefade mishavad.  In dastoor be shoma komak mikonad ke file-haye object (.o) ra dar yek arshive (.a) jam konid, ke ba'dan mitavanad dar marhale link baraye sakhtan barname-haye executable estefade shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc-ar -t archive.a`  --> 📜 List kardane tartibe file-ha dar arshive.
+    🔹 `gcc-ar -x archive.a`  --> 📦 Extract kardane hameye file-ha az arshive.
+    🔹 `gcc-ar -v`  --> 👀 Namayesh dadane etela'ate bishtar dar morede amaliyat.
+    🔹 `gcc-ar -q archive.a file1.o file2.o` --> ➕ Ezafe kardane file-ha be arshive (sari'tar az `-r`).
+    🔹 `gcc-ar -d archive.a file1.o` --> ➖ Hazf kardane `file1.o` az arshive.
+    🔹 `gcc-ar -r archive.a file1.o` --> 🔄 جایگزین kardane `file1.o` dar arshive ya ezafe kardane an agar vojud nadashte bashad.
+
+🛠 **Mesal-ha:**
+
+    $ gcc-ar -q libmyfuncs.a func1.o func2.o
+
+    🔹 Ijad ya ezafe kardane `func1.o` va `func2.o` be arshive `libmyfuncs.a`.
+
+    $ gcc-ar -t libmyfuncs.a
+
+    🔹 Namayesh listi az file-haye darune arshive `libmyfuncs.a`.
+
+✅ **Mesal sade:**
+
+    $ gcc-ar -x libmyfuncs.a
+
+    🔹 Extract kardane hameye file-haye object (.o) az arshive `libmyfuncs.a` dar directory فعلی.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-ar` command acts like `ar`, but is optimized for the GCC compiler. It is used to create, modify, and extract static archives.  This command allows you to collect object files (.o) into an archive (.a), which can then be used during the linking phase to create executable programs.
+
+⚙️ **Options:**
+    🔹 `gcc-ar -t archive.a`  --> 📜 List the table of contents of the archive.
+    🔹 `gcc-ar -x archive.a`  --> 📦 Extract all files from the archive.
+    🔹 `gcc-ar -v`  --> 👀 Verbose mode; shows more information about the operations.
+    🔹 `gcc-ar -q archive.a file1.o file2.o` --> ➕ Quickly append files to the end of the archive (faster than `-r`).
+    🔹 `gcc-ar -d archive.a file1.o` --> ➖ Delete `file1.o` from the archive.
+    🔹 `gcc-ar -r archive.a file1.o` --> 🔄 Replace `file1.o` in the archive or add it if it doesn't exist.
+
+🛠 **Examples:**
+
+    $ gcc-ar -q libmyfuncs.a func1.o func2.o
+
+    🔹 Create or append `func1.o` and `func2.o` to the archive `libmyfuncs.a`.
+
+    $ gcc-ar -t libmyfuncs.a
+
+    🔹 Display a list of the files inside the `libmyfuncs.a` archive.
+
+✅ **Simple Example:**
+
+    $ gcc-ar -x libmyfuncs.a
+
+    🔹 Extract all object files (.o) from the archive `libmyfuncs.a` into the current directory.

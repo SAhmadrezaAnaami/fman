@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aclocal-1.16` yek dastoor az majmooe `automake` ast ke baraye dorost kardane `aclocal.m4` estefade mishavad. `aclocal.m4` shamel tarif-haye macro baraye `autoconf` ast, ke az file-haye `.m4` dar directory-haye mokhtalef jam'avari shodeand. In dastoor baraye sakhtan narm-afzar-haee ke az `autoconf` va `automake` estefade mikonand, mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ℹ️ Namayesh rahnamaye dastoor.
+    🔹 `--verbose` --> 🗣️ Namayesh etela'at bishtar dar morede chگونگی ejraye dastoor.
+    🔹 `-I directory` --> 📁 Ezafe kardane yek directory be list-e directory-haee ke `aclocal` baraye file-haye `.m4` migardad.
+    🔹 `-m`         --> ➕ Merge kardane definition-haye macro ba file-e `aclocal.m4` mojud.
+    🔹 `-W warning` --> ⚠️  Enable kardane warning-haye khaas.
+
+🛠 **Mesal-ha:**
+
+    $ aclocal-1.16
+
+    🔹 Dorost kardane ya update kardane `aclocal.m4` dar directory-e فعلی.
+
+    $ aclocal-1.16 -I /path/to/macros
+
+    🔹  Dorost kardane `aclocal.m4` ba ezafe kardane directory `/path/to/macros` baraye gardesh macro.
+
+✅ **Mesal sade:**
+
+    $ aclocal-1.16
+    Creating aclocal.m4
+
+    🔹 Dastoor `aclocal-1.16` file-e `aclocal.m4` ra dar directory فعلی dorost mikonad, agar vojod nadashte bashad, ya an ra update mikonad ba توجه به file-haye `.m4` mojud.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aclocal-1.16` command is part of the `automake` suite and is used to generate the `aclocal.m4` file.  `aclocal.m4` contains macro definitions for `autoconf`, gathered from `.m4` files in various directories. This command is essential for building software projects that use `autoconf` and `automake`.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ℹ️ Display help information about the command.
+    🔹 `--verbose` --> 🗣️ Display more details on how the command is executed.
+    🔹 `-I directory` --> 📁 Add a directory to the list of directories `aclocal` searches for `.m4` files.
+    🔹 `-m`         --> ➕ Merge macro definitions with the existing `aclocal.m4` file.
+    🔹 `-W warning` --> ⚠️  Enable specific warnings.
+
+🛠 **Examples:**
+
+    $ aclocal-1.16
+
+    🔹 Create or update `aclocal.m4` in the current directory.
+
+    $ aclocal-1.16 -I /path/to/macros
+
+    🔹 Create `aclocal.m4` adding the `/path/to/macros` directory for macro searching.
+
+✅ **Simple Example:**
+
+    $ aclocal-1.16
+    Creating aclocal.m4
+
+    🔹 The `aclocal-1.16` command creates the `aclocal.m4` file in the current directory if it doesn't exist, or updates it based on the available `.m4` files.

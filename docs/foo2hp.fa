@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2hp` baraye tabdil dadan file-haye *raster* (aks-ha) be format-haye printer HP estefade mishavad. In dastoor aksaran baraye printer-haye laser HP ke az protokol GDI estefade mikonand, karbord darad.  Be zaban sade tar, `foo2hp` aks-ha ya tasavir ra jori moratab mikonad ke printer-haye HP betavanand anha ra chap konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `foo2hp -z[...]`  --> 🗜️ Compress kardan data-haye chap shode baraye size kamtar. Misal: `foo2hp -z2`
+    🔹 `foo2hp -r[...]`  --> 📐  Tagheer andaze aks. Misal: `foo2hp -r600` baraye DPI 600 (dot per inch).
+    🔹 `foo2hp -p[...]`  --> 📄  Entkhab size kaghaz (paper). Misal: `foo2hp -pLetter` ya `foo2hp -pA4`
+    🔹 `foo2hp -m[...]`  --> 🌈  Mode chap (monochrome ya rang).  Misal: `foo2hp -m1` baraye siah va sefid.
+
+🛠 **Mesal-ha:**
+
+    $ foo2hp -z2 < input.png > output.prn
+
+    🔹 Tabdil va compress kardan yek file PNG be file PRN ke printer HP mitavanad chap konad.
+
+    $ convert input.jpg -resize 600x800\! -monochrome pnm:- | foo2hp -r600 -m1 > output.prn
+
+    🔹  Aval aks JPG ra resize mikonad, bad siah va sefid mikonad, va bad tabdil be format printer HP ba DPI 600.
+
+✅ **Mesal sade:**
+
+    $ foo2hp < input.png > output.prn
+
+    🔹  Tabdil sade file PNG be format printer HP.  (Bedune hich gozine-e ezafi)
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2hp` command is used to convert raster (image) files into HP printer formats. It's mainly used for HP laser printers that use the GDI protocol. Simply put, `foo2hp` prepares images in a way that HP printers can print them.
+
+⚙️ **Options:**
+    🔹 `foo2hp -z[...]`  --> 🗜️ Compress the print data for smaller size. Example: `foo2hp -z2`
+    🔹 `foo2hp -r[...]`  --> 📐 Change the image resolution. Example: `foo2hp -r600` for 600 DPI (dots per inch).
+    🔹 `foo2hp -p[...]`  --> 📄 Select paper size. Example: `foo2hp -pLetter` or `foo2hp -pA4`
+    🔹 `foo2hp -m[...]`  --> 🌈 Print mode (monochrome or color).  Example: `foo2hp -m1` for black and white.
+
+🛠 **Examples:**
+
+    $ foo2hp -z2 < input.png > output.prn
+
+    🔹 Converts and compresses a PNG file to a PRN file that an HP printer can print.
+
+    $ convert input.jpg -resize 600x800\! -monochrome pnm:- | foo2hp -r600 -m1 > output.prn
+
+    🔹 First resizes a JPG image, then converts it to black and white, and then converts it to HP printer format with 600 DPI.
+
+✅ **Simple Example:**
+
+    $ foo2hp < input.png > output.prn
+
+    🔹 Simple conversion of a PNG file to HP printer format. (Without any extra options)

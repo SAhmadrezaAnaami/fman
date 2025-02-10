@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `crc32` yek code-e hash baraye file-ha ijad mikonad. In code baraye check kardane dorosti va taghir nakardane file-ha be kar miravad. Agar file taghir konad, code `crc32` avaz mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `crc32 FILE`  --> 📄 Ijad code `crc32` baraye file morede nazar.  
+    🔹 `crc32 < FILE`  --> 📤 Ijad code `crc32` az voroodi standard.  
+    🔹 `crc32 -`  --> ⌨️ Az voroodi standard (keyboard) be عنوان file bekhavanad.
+
+🛠 **Mesal-ha:**
+
+    $ crc32 myfile.txt
+
+    🔹 Ijad code `crc32` baraye file ba name "myfile.txt".
+
+    $ cat myfile.txt | crc32
+
+    🔹 Ijad code `crc32` az content file "myfile.txt".
+
+✅ **Mesal sade:**
+
+    $ crc32 hello.txt
+    29637d7b
+
+    🔹 Agar "hello.txt" taghir konad, code `crc32` fargh khahad kard. In be shoma komak mikonad ta مطمئن shavid file taghir nakarde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `crc32` command generates a checksum (CRC32 code) for files. This code is used to verify the integrity of files and detect if they have been modified. If a file is changed, its CRC32 code will be different.
+
+⚙️ **Options:**
+    🔹 `crc32 FILE`  --> 📄 Generate the CRC32 code for the specified file.
+    🔹 `crc32 < FILE`  --> 📤 Generate the CRC32 code from standard input.
+    🔹 `crc32 -`  --> ⌨️ Read from standard input (keyboard) as a file.
+
+🛠 **Examples:**
+
+    $ crc32 myfile.txt
+
+    🔹 Generate the CRC32 code for the file named "myfile.txt".
+
+    $ cat myfile.txt | crc32
+
+    🔹 Generate the CRC32 code from the content of the file "myfile.txt".
+
+✅ **Simple Example:**
+
+    $ crc32 hello.txt
+    29637d7b
+
+    🔹 If "hello.txt" is modified, the CRC32 code will change. This helps you ensure that the file hasn't been altered.

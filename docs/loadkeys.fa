@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `loadkeys` baraye ta'yin ya tagheer dadane layout keyboard dar Linux estefade mishavad. Ba in dastoor, mitoonid character map-haye mokhtalef ro baraye keyboard-etoon load konid, mesle layout-haye zaban-haye mokhtalef ya character-haye khas.
+
+⚙️ **Gozine-ha:**
+    🔹 `loadkeys <filename>` --> ⌨️ Load kardane layout keyboard az yek file.
+    🔹 `loadkeys -m <mapfile> <filename>` --> 🗺️ Load kardane yek keymap ba estefade az file mapfile.
+    🔹 `loadkeys -d` --> ↩️ Load kardane default keyboard map.
+    🔹 `loadkeys -C console` --> 🖥️ Ta'yin kardane console-i ke keymap ro bayad roosh load kard.
+
+🛠 **Mesal-ha:**
+
+    $ loadkeys fa
+
+    🔹 Load kardane layout keyboard Farsi (agar file "fa" mojood bashad).
+
+    $ loadkeys /usr/share/keymaps/i386/qwerty/uk.map.gz
+
+    🔹 Load kardane layout keyboard British az file zakhire shode.
+
+✅ **Mesal sade:**
+
+    $ loadkeys us
+    
+    🔹 Keyboard layout ra be halate default US barmigardanad, agar file `us` dar masir haye standart mojood bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `loadkeys` command is used to load or change the keyboard layout in Linux. You can load different character maps for your keyboard, such as layouts for different languages or special characters.
+
+⚙️ **Options:**
+    🔹 `loadkeys <filename>` --> ⌨️ Load keyboard layout from a file.
+    🔹 `loadkeys -m <mapfile> <filename>` --> 🗺️ Load a keymap using a mapfile.
+    🔹 `loadkeys -d` --> ↩️ Load the default keyboard map.
+    🔹 `loadkeys -C console` --> 🖥️ Specify the console to load the keymap on.
+
+🛠 **Examples:**
+
+    $ loadkeys fa
+
+    🔹 Load the Farsi keyboard layout (if the "fa" file exists).
+
+    $ loadkeys /usr/share/keymaps/i386/qwerty/uk.map.gz
+
+    🔹 Load the British keyboard layout from a stored file.
+
+✅ **Simple Example:**
+
+    $ loadkeys us
+
+    🔹 Restores the keyboard layout to the default US layout, if the `us` file exists in the standard paths.

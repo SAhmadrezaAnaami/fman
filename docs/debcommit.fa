@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debcommit` baraye sakhtan (`create`) commit message-haye standard baraye taghirat dar package-haye Debian estefade mishavad. Yani komak mikonad ta commit message-haye shoma moratab va ba format-e moshakhas bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debcommit`  --> 📝 Commit message-e sade misazad (agar message ra vared nakonid, az shoma soal mikonad).
+    🔹 `debcommit -a` --> ➕ Hameye taghirat-e stag shode ra ezafe mikonad va commit mikonad.
+    🔹 `debcommit -e` --> ✏️ Commit message-e ghablee ra edit mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ debcommit
+
+    🔹 Commit message-e jadid misazad. Shoma bayad message ra vared konid.
+
+    $ debcommit -a -m "Fix: address security vulnerability"
+
+    🔹 Hameye taghirat-e stage shode ra commit mikonad ba commit message "Fix: address security vulnerability".
+
+✅ **Mesal sade:**
+
+    $ debcommit -a -m "feat: Add support for Persian language"
+
+    🔹 In dastoor hameye taghirat-e stage shode ra commit mikonad va yek commit message ba format-e munasib misazad ("feat: Add support for Persian language").
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debcommit` command is used to create standardized commit messages for changes in Debian packages. It helps ensure that your commit messages are consistent and follow a specific format.
+
+⚙️ **Options:**
+    🔹 `debcommit`  --> 📝 Creates a simple commit message (if no message is provided, it will prompt you).
+    🔹 `debcommit -a` --> ➕ Adds all staged changes and commits them.
+    🔹 `debcommit -e` --> ✏️ Edits the previous commit message.
+
+🛠 **Examples:**
+
+    $ debcommit
+
+    🔹 Creates a new commit message. You will be prompted to enter the message.
+
+    $ debcommit -a -m "Fix: address security vulnerability"
+
+    🔹 Commits all staged changes with the commit message "Fix: address security vulnerability".
+
+✅ **Simple Example:**
+
+    $ debcommit -a -m "feat: Add support for Persian language"
+
+    🔹 This command commits all staged changes and creates a commit message in a suitable format ("feat: Add support for Persian language").
+

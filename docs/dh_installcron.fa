@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installcron` baraye nasb kardan file-haye cron job dar package Debian estefade mishavad. Cron job-ha barname-haee hastand ke be soorate khodkar dar zaman-haye moshakhas ejra mishavand. In dastoor komak mikonad ta cron job-haye shoma be dorosti dar system nasb shavand vaghti ke package shoma nasb mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 🚫 Az nasb cron job dar `/etc/cron.d` jologiri mikonad.  In gozine baraye test kardane script nasb (install) be dard mikhorad.
+    🔹 `-p`  --> 📦 Faghat cron job-haye marboot be yek package khass ra nasb mikonad. Esme package ra bayad moshakhas konid.
+    🔹 `--name` --> 📝 Esme file cron job ra tagheer midahad.  Agar esme default ra nemikhahid, az in gozine estefade konid.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installcron
+
+    🔹 Nasb hameye file-haye cron job ke dar directory `debian/` hastand.
+
+    $ dh_installcron -p mypackage
+
+    🔹 Faghat cron job-haye package "mypackage" ra nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installcron --name mycustomcron
+
+    🔹 File cron job ra ba esme "mycustomcron" nasb mikonad dar `/etc/cron.d/`.  In komak mikonad ta esme file cron job shoma ba esme package shoma motefavet bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installcron` command is used to install cron job files in a Debian package. Cron jobs are programs that run automatically at specified times. This command helps ensure that your cron jobs are correctly installed on the system when your package is installed.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 🚫 Prevents the installation of cron jobs in `/etc/cron.d`. This option is useful for testing the installation script.
+    🔹 `-p`  --> 📦 Installs only the cron jobs related to a specific package.  You must specify the package name.
+    🔹 `--name` --> 📝 Changes the name of the cron job file.  If you don't want the default name, use this option.
+
+🛠 **Examples:**
+
+    $ dh_installcron
+
+    🔹 Installs all cron job files found in the `debian/` directory.
+
+    $ dh_installcron -p mypackage
+
+    🔹 Installs only the cron jobs for the "mypackage" package.
+
+✅ **Simple Example:**
+
+    $ dh_installcron --name mycustomcron
+
+    🔹 Installs the cron job file with the name "mycustomcron" in `/etc/cron.d/`. This allows the cron job file to have a different name from your package.

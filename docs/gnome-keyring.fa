@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Gnome-keyring yek servis baraye negahdari va modiriyat password-ha, kalid-haye SSH, va sertifikat-ha ast. In komak mikonad ke shoma password-ha-ye khod ra be soorate امن negah دارید va niyazi nist har dafe anha ra vared konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-keyring-daemon --start`  --> 🚀 Baraye ejra kardane daemon gnome-keyring dar background.
+    🔹 `seahorse` --> 🔑 Baraye modiriyat grafiki password-ha va kalid-haye negahdashte shodeh.
+    🔹 `ssh-add` --> 🔐 Baraye ezafe kardane kalid-haye SSH be gnome-keyring.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-keyring-daemon --start
+    🔹 Shoru kardane daemon baraye negahdari password-ha.
+
+    $ seahorse
+    🔹 Baz kardane barnameh grafiki baraye modiriyat password-ha.
+
+✅ **Mesal sade:**
+
+    $ ssh-add ~/.ssh/id_rsa
+    🔹 Vaghti ke password-e SSH key khasteh shod, in password dar gnome-keyring zakhireh mishavad ta dafeye bad az shoma khasteh nashavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    Gnome-keyring is a service to store and manage passwords, SSH keys, and certificates. It helps you securely store your passwords and avoids having to enter them repeatedly.
+
+⚙️ **Options:**
+    🔹 `gnome-keyring-daemon --start` --> 🚀 To run the gnome-keyring daemon in the background.
+    🔹 `seahorse` --> 🔑 To graphically manage stored passwords and keys.
+    🔹 `ssh-add` --> 🔐 To add SSH keys to the gnome-keyring.
+
+🛠 **Examples:**
+
+    $ gnome-keyring-daemon --start
+    🔹 Starts the daemon for storing passwords.
+
+    $ seahorse
+    🔹 Opens the graphical application for password management.
+
+✅ **Simple Example:**
+
+    $ ssh-add ~/.ssh/id_rsa
+    🔹 When prompted for the SSH key password, this password will be stored in the gnome-keyring, so you are not prompted again next time.

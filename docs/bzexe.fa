@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzexe` yek file ejraee ra bozorg mikonad va aan ra ghabl az ejra az halat feshorde kharej mikonad. In be shoma komak mikonad ta file-haye ejraee kam hajm bashand, vali dar hengam ejra be suraat otomatik az halat feshorde kharej shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzexe`  --> 📦 File ra feshorde mikonad va aan ra ejraee negah midarad.
+    🔹 `bzexe -d` --> 🗑️ File ra az halat feshorde dar miavarad. (baraye bargasht be halat asli)
+
+🛠 **Mesal-ha:**
+
+    $ bzexe myprogram
+
+    🔹 File ejraee "myprogram" ra feshorde mikonad. Hengami ke "myprogram" ejra shavad, aval az halat feshorde kharej mishavad va sepas ejra mishavad.
+
+    $ bzexe -d myprogram
+
+    🔹 File "myprogram" ra az halat feshorde kharej mikonad va aan ra be halat asli bargardand.  (agar ghablan ba `bzexe` feshorde shode bashad).
+
+✅ **Mesal sade:**
+
+    $ bzexe game
+
+    🔹 Agar shoma yek bazi ("game") dashte bashid ke hajmesh ziyad bashad, ba `bzexe` mitavanid an ra feshorde konid ta hajmesh kamtar shavad va rahat tar share shavad. Vaghti kasi bazi ra ejra mikonad, bazi aval az halat feshorde kharej mishavad va bad ejra mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzexe` command compresses an executable file and makes it self-extracting. This allows you to distribute smaller executable files, which automatically decompress before running.
+
+⚙️ **Options:**
+    🔹 `bzexe`  --> 📦 Compresses the file and keeps it executable.
+    🔹 `bzexe -d` --> 🗑️ Decompresses the file (to revert to the original state).
+
+🛠 **Examples:**
+
+    $ bzexe myprogram
+
+    🔹 Compresses the executable file "myprogram". When "myprogram" is executed, it will first be decompressed and then run.
+
+    $ bzexe -d myprogram
+
+    🔹 Decompresses the file "myprogram", reverting it to its original state (if it was previously compressed with `bzexe`).
+
+✅ **Simple Example:**
+
+    $ bzexe game
+
+    🔹 If you have a game ("game") that is large in size, you can compress it with `bzexe` to make the file smaller and easier to share. When someone runs the game, it will first decompress and then run.
+

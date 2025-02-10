@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installmanpages` baraye nasb safahat-e rahnamaye (man pages) barname-ha dar pooshe-haye dorost dar bast-haye Debian estefade mishavad. In dastoor joz'i az majmooe dastoorat `debhelper` ast ke karha-ye sakht-e bast-ha-ye Debian ra asan mikonad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir directory` --> 📂 Az in pooshe be jaye `debian/tmp` baraye jostejoo-ye man page-ha estefade kon.
+    🔹 `--name` `file.1` `file2.1` --> ✏️ Esme file-ha-ye nasb shode ra taghir bede. Misalan, `file.1` dar jayi ke `file2.1` bayad bashad nasb mishavad.
+    🔹 `--link file target` --> 🔗 Yek payvand-e narm (soft link) az `file` be `target` dorost kon.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installmanpages
+    
+    🔹 Nasb man page-ha az `debian/tmp` be pooshe-haye dorost dar bast.
+
+    $ dh_installmanpages --sourcedir doc/man
+    
+    🔹 Nasb man page-ha az poosheye `doc/man` be jaye `debian/tmp`.
+
+✅ **Mesal sade:**
+
+    $ dh_installmanpages --name foo.1 bar.1
+    
+    🔹 Agar file `foo.1` dar `debian/tmp` vojood dashte bashad, aan ra be onvane `bar.1` nasb mikonad. Be in tartib, esme asli-e aan taghir mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installmanpages` command is used to install program manual pages (man pages) in the correct directories in Debian packages. This command is part of the `debhelper` suite, which simplifies the creation of Debian packages.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory` --> 📂 Use this directory instead of `debian/tmp` to search for man pages.
+    🔹 `--name` `file.1` `file2.1` --> ✏️ Rename the installed files. For example, `file.1` will be installed where `file2.1` should be.
+    🔹 `--link file target` --> 🔗 Create a symbolic link (soft link) from `file` to `target`.
+
+🛠 **Examples:**
+
+    $ dh_installmanpages
+    
+    🔹 Install man pages from `debian/tmp` to the correct directories in the package.
+
+    $ dh_installmanpages --sourcedir doc/man
+    
+    🔹 Install man pages from the `doc/man` directory instead of `debian/tmp`.
+
+✅ **Simple Example:**
+
+    $ dh_installmanpages --name foo.1 bar.1
+    
+    🔹 If the file `foo.1` exists in `debian/tmp`, it will be installed as `bar.1`.  This effectively renames the file during installation.

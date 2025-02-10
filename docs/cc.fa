@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cc` yek dastoor baraye compile kardan (tabdil kardan code be barnameye ejraee) code-haye zaban C ast.  Be ebarate digar, code-haye C ra migirad va anha ra be barnameye ghabele ejra tabdil mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cc file.c` --> 🚀 Tabdil file.c be yek barnameye ghabele ejra ba name "a.out".
+    🔹 `cc file.c -o barname` --> 🎯 Tabdil file.c be yek barnameye ghabele ejra ba name "barname".
+    🔹 `cc file.c -Wall` --> 🚧 Namayesh hameye etela'ati ke momken ast dar code moshkel ijad konad.
+    🔹 `cc file.c -lm` --> ➕ Ezafe kardane ketabkhanehaye riazi (math library) baraye estefade az function haye riazi mesle sin, cos, va...
+
+🛠 **Mesal-ha:**
+
+    $ cc hello.c
+
+    🔹 Tabdil file hello.c be barname "a.out" (age khata nabashe)
+
+    $ cc hello.c -o hello
+
+    🔹 Tabdil file hello.c be barname "hello".
+
+✅ **Mesal sade:**
+
+    $ cc program.c -o program
+
+    🔹 In dastoor code-haye mojood dar file `program.c` ra compile mikonad va yek barnameye ghabele ejra ba name `program` misazad.  Shoma mitavanid barname ra ba dastoor `./program` ejra konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cc` command is used to compile (convert code to an executable program) C language code.  In other words, it takes C source code and transforms it into an executable.
+
+⚙️ **Options:**
+    🔹 `cc file.c` --> 🚀 Compile file.c into an executable program named "a.out".
+    🔹 `cc file.c -o program` --> 🎯 Compile file.c into an executable program named "program".
+    🔹 `cc file.c -Wall` --> 🚧 Display all warnings, which might indicate potential problems in the code.
+    🔹 `cc file.c -lm` --> ➕ Link the math library to use mathematical functions like sin, cos, etc.
+
+🛠 **Examples:**
+
+    $ cc hello.c
+
+    🔹 Compiles the file hello.c into a program named "a.out" (if there are no errors).
+
+    $ cc hello.c -o hello
+
+    🔹 Compiles the file hello.c into a program named "hello".
+
+✅ **Simple Example:**
+
+    $ cc program.c -o program
+
+    🔹 This command compiles the C code in the file `program.c` and creates an executable program named `program`. You can then run the program using `./program`.

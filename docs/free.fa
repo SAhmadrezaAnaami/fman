@@ -1,0 +1,67 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `free` baraye didan meghdare hafize (memory) va swap-e estefade shode va mande dar system Linux estefade mishavad. Yani be shoma neshun mide cheghadr RAM darid va cheghadr az an estefade shode.
+
+⚙️ **Gozine-ha:**
+    🔹 `free -m`  --> 📏 Namayesh meghdare hafize be megabyte (MB). Raahat tareh baraye khandan.
+    🔹 `free -g`  --> 📏 Namayesh meghdare hafize be gigabyte (GB). Baraye system-haee ke RAM ziadi darand munasib ast.
+    🔹 `free -h`  --> 📏 Namayesh meghdare hafize be shekle ghabl-khani (human-readable), yani khodash entekhab mikonad MB, GB ya chize digar.
+    🔹 `free -s <seconds>` --> 🔄 Har chand sanieh yek bar update mishavad. Be dard mikhoreh agar bekhaid taghirate hafize ra dar zaman vaghei (real-time) bebinid.
+
+🛠 **Mesal-ha:**
+
+    $ free
+
+    🔹 Namayesh etela'ate hafize be kilobyte (KB).
+
+    $ free -m
+
+    🔹 Namayesh etela'ate hafize be megabyte (MB).
+
+    $ free -s 5
+
+    🔹 Har 5 sanieh yek bar etela'ate hafize update mishavad. Baraye monitor kardane masrafe hafize munasib ast.
+
+✅ **Mesal sade:**
+
+    $ free -h
+
+    🔹 Output mesl in ast: `Mem:   7.7Gi   2.3Gi   1.1Gi   725Mi   4.2Gi   5.0Gi`. In yani shoma 7.7 GB RAM darid, 2.3 GB estefade shodeh, 1.1 GB az an baraye cache estefade mishavad va...
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `free` command is used to display the amount of free and used memory (RAM) and swap space in a Linux system. It shows how much RAM you have and how much of it is being used.
+
+⚙️ **Options:**
+    🔹 `free -m`  --> 📏 Display memory amounts in megabytes (MB). Easier to read.
+    🔹 `free -g`  --> 📏 Display memory amounts in gigabytes (GB). Suitable for systems with a lot of RAM.
+    🔹 `free -h`  --> 📏 Display memory amounts in human-readable format, meaning it automatically chooses MB, GB, or something else.
+    🔹 `free -s <seconds>` --> 🔄 Update the display every few seconds. Useful if you want to see memory changes in real-time.
+
+🛠 **Examples:**
+
+    $ free
+
+    🔹 Display memory information in kilobytes (KB).
+
+    $ free -m
+
+    🔹 Display memory information in megabytes (MB).
+
+    $ free -s 5
+
+    🔹 Update memory information every 5 seconds. Suitable for monitoring memory usage.
+
+✅ **Simple Example:**
+
+    $ free -h
+
+    🔹 The output might look like this: `Mem:   7.7Gi   2.3Gi   1.1Gi   725Mi   4.2Gi   5.0Gi`. This means you have 7.7 GB of RAM, 2.3 GB is being used, 1.1 GB is used for cache, and so on...
+

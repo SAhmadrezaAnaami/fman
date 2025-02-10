@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `efibootmgr` baraye modiriat kardane entry-haye UEFI Boot dar system-haye EFI estefade mishavad. Yani ba in dastoor mitavanid tartibe boot shodan ra taghir dahid, entry jadid ezafe konid, ya entry ghadimi ra hazf konid.  Asosan baraye system-haye dual-boot kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `efibootmgr` --> 📜 Namayesh hameye entry-haye boot mojood
+    🔹 `efibootmgr -v` --> 👀 Namayesh etela'ate bishtar dar bareye entry-haye boot (verbose mode)
+    🔹 `efibootmgr -c -l <file> -L <label>` --> ➕ Sakhtan yek entry boot jadid. `<file>` masire file .efi hast va `<label>` esme entry hast.
+    🔹 `efibootmgr -b <XXXX> -B` --> ⛔ Hazf kardane entry boot ba shomare `XXXX`. Be jaye `XXXX` bayad shomare entry ra bezarid (meslan 0000).
+    🔹 `efibootmgr -o <XXXX,YYYY,ZZZZ>` --> 🔄 Taghire tartibe boot.  Be jaye `XXXX,YYYY,ZZZZ` bayad shomare entry-ha ra be tartibi ke mikhahid boot shavand bezarid.
+
+🛠 **Mesal-ha:**
+
+    $ efibootmgr
+
+    🔹 Namayesh hameye entry-haye boot فعلی.
+
+    $ efibootmgr -c -l "\EFI\ubuntu\shimx64.efi" -L "Ubuntu"
+
+    🔹 Sakhtane yek entry boot jadid baraye Ubuntu.
+
+    $ efibootmgr -b 0004 -B
+
+    🔹 Hazf kardane entry boot ba shomare 0004.
+
+✅ **Mesal sade:**
+
+    $ efibootmgr -o 0001,0000,0002
+
+    🔹 Tartibe boot ra taghir midahad be in surat ke aval entry 0001, bad entry 0000, va akhar entry 0002 boot shavad. Agar avali nashod, dovomi va sevvomi emtehan mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `efibootmgr` command is used to manage UEFI boot entries in EFI systems.  It allows you to change the boot order, add new boot entries, or delete existing ones. It's especially useful for dual-boot systems.
+
+⚙️ **Options:**
+    🔹 `efibootmgr` --> 📜 Display all available boot entries
+    🔹 `efibootmgr -v` --> 👀 Display more detailed information about the boot entries (verbose mode)
+    🔹 `efibootmgr -c -l <file> -L <label>` --> ➕ Create a new boot entry. `<file>` is the path to the .efi file, and `<label>` is the entry name.
+    🔹 `efibootmgr -b <XXXX> -B` --> ⛔ Delete the boot entry with number `XXXX`. Replace `XXXX` with the entry number (e.g., 0000).
+    🔹 `efibootmgr -o <XXXX,YYYY,ZZZZ>` --> 🔄 Change the boot order. Replace `XXXX,YYYY,ZZZZ` with the entry numbers in the desired boot order.
+
+🛠 **Examples:**
+
+    $ efibootmgr
+
+    🔹 Display the current boot entries.
+
+    $ efibootmgr -c -l "\EFI\ubuntu\shimx64.efi" -L "Ubuntu"
+
+    🔹 Create a new boot entry for Ubuntu.
+
+    $ efibootmgr -b 0004 -B
+
+    🔹 Delete the boot entry with number 0004.
+
+✅ **Simple Example:**
+
+    $ efibootmgr -o 0001,0000,0002
+
+    🔹 Changes the boot order so that entry 0001 is tried first, then entry 0000, and finally entry 0002. If the first one fails, the second and third will be attempted.

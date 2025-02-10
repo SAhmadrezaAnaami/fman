@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgconf` baraye modiriyat va ayar-bandi (configure) GnuPG (GNU Privacy Guard) estefade mishavad. In dastoor beheton komak mikone ta component-haye mokhtalef GnuPG ro ayar-bandi konid, masalan gpg, gpgsm, va gpg-agent. Ba `gpgconf` mitoonid directory-haye default, server-ha, va digar gozine-ha ro taghir bedid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--list-dirs` --> 📂 Namayesh directory-haye mohemt GnuPG (home directory, keybox directory, etc.)
+    🔹 `--kill` <component> --> 🔪 Kills yek component khase GnuPG (masalan, `gpg-agent`). Ba'd az kill kardan, barname dobare ejra mishe.
+    🔹 `--change-options` <component> --> ✍️  Taghir option-haye yek component. Shoma mitoonid az in baraye ezafe kardan ya taghir dadan option-haye config file estefade konid.
+    🔹 `--apply-defaults` <component> --> 🔄 Bazgardandan (reset) ayar-bandi-haye yek component be halat default.
+    🔹 `--check-programs` --> ✅ Check kardan vojood barname-haye mored niaz GnuPG.
+
+🛠 **Mesal-ha:**
+
+    $ gpgconf --list-dirs
+
+    🔹 Namayesh directory-haye GnuPG
+
+    $ gpgconf --kill gpg-agent
+
+    🔹 Restart kardane gpg-agent
+
+✅ **Mesal sade:**
+
+    $ gpgconf --apply-defaults gpg
+
+    🔹 Ayar-bandi-haye gpg be halat default bazgardande mishavad. In vaghti mohemt mishe ke shoma config-haye khodetoon ro ghalat ayar karde bashid va bekhayid hamechi ro az aval shoru konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgconf` command is used to manage and configure GnuPG (GNU Privacy Guard). This command allows you to configure various GnuPG components such as gpg, gpgsm, and gpg-agent. With `gpgconf`, you can modify default directories, servers, and other options.
+
+⚙️ **Options:**
+    🔹 `--list-dirs` --> 📂 Display important GnuPG directories (home directory, keybox directory, etc.).
+    🔹 `--kill` <component> --> 🔪 Kills a specific GnuPG component (e.g., `gpg-agent`). The program is restarted after being killed.
+    🔹 `--change-options` <component> --> ✍️ Change the options of a component. You can use this to add or modify options in the config file.
+    🔹 `--apply-defaults` <component> --> 🔄 Reset the configuration of a component to its default state.
+    🔹 `--check-programs` --> ✅ Check for the presence of required GnuPG programs.
+
+🛠 **Examples:**
+
+    $ gpgconf --list-dirs
+
+    🔹 Display GnuPG directories
+
+    $ gpgconf --kill gpg-agent
+
+    🔹 Restart the gpg-agent
+
+✅ **Simple Example:**
+
+    $ gpgconf --apply-defaults gpg
+
+    🔹 Resets the gpg configuration to its default settings. This is useful if you have misconfigured your settings and want to start fresh.

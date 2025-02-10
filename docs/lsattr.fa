@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsattr` baraye didane attribute-haye ezafi (extra attributes) rooye file-ha va directory-ha (pooshe-ha) dar system-haye file Linux estefade mishavad. In attribute-ha mitavanand behavior file system ra tagheer dahand, masalan, az tagheer ya hazf shodan file jelogiri konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsattr -a`  --> 👀 Namayesh hameye file-ha va directory-ha, hata anhaee ke ba "." shoru mishavand (makhfi).
+    🔹 `lsattr -d`  --> 📁 Agar yek directory be onvane argument dade shavad, faghat attribute-haye directory ra namayesh midahad, na mohyovat dakhel directory ra.
+    🔹 `lsattr -R`  --> 🔄 Be soorate recursive hameye directory-haye dakhel directory mored nazar ra barresi mikonad.
+    🔹 `lsattr -v`  --> 🔢 Namayesh version / generation number file dar ext2/ext3/ext4 file systems.
+
+🛠 **Mesal-ha:**
+
+    $ lsattr file.txt
+
+    🔹 Namayesh attribute-haye file "file.txt".
+
+    $ lsattr -d directory_name
+
+    🔹 Namayesh attribute-haye directory "directory_name".
+
+✅ **Mesal sade:**
+
+    $ lsattr -a .hidden_file
+
+    🔹 Namayesh attribute-haye file makhfie ".hidden_file". Agar file makhfi nabood, natijei nakhahid did magar inke gozineye `-a` ra estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsattr` command is used to list the file attributes on a Linux file system. These attributes can modify the file system behavior, for example, preventing a file from being modified or deleted.
+
+⚙️ **Options:**
+    🔹 `lsattr -a`  --> 👀 List all files and directories, including those that start with "." (hidden).
+    🔹 `lsattr -d`  --> 📁 If a directory is given as an argument, display attributes of the directory itself rather than the contents within.
+    🔹 `lsattr -R`  --> 🔄 Recursively list attributes of all files and subdirectories within the specified directory.
+    🔹 `lsattr -v`  --> 🔢 Show the file's version/generation number on ext2/ext3/ext4 file systems.
+
+🛠 **Examples:**
+
+    $ lsattr file.txt
+
+    🔹 Display attributes of the file "file.txt".
+
+    $ lsattr -d directory_name
+
+    🔹 Display attributes of the directory "directory_name".
+
+✅ **Simple Example:**
+
+    $ lsattr -a .hidden_file
+
+    🔹 Display attributes of the hidden file ".hidden_file". If the file wasn't hidden, you wouldn't see results unless you use the `-a` option.

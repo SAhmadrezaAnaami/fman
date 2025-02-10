@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debclean` baraye pak kardan package-haye `.deb` ke dige niaz nistand az cache APT estefade mishavad. In kar jaayeh disk ra azad mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debclean` --> ✨ Pak kardane package-haye ghadimi az cache.
+    🔹 `debclean -p` --> 🧹 Hamrah ba porsesh baraye har package ghabl az pak kardan.
+    🔹 `debclean --simulate` --> 🎭 Namayesh mide che chiz-haei pak khahad shod bedoone pak kardan.
+    🔹 `debclean --apt-get` --> 📦 Estefade az configuration `apt-get` baraye cache directory.
+
+🛠 **Mesal-ha:**
+
+    $ debclean
+
+    🔹 Pak kardane tamame package-haye `.deb` ziadi az cache APT.
+
+    $ sudo debclean -p
+
+    🔹 Pak kardane package-ha ba porsesh az karbar ghabl az hazf.
+
+✅ **Mesal sade:**
+
+    $ debclean --simulate
+
+    🔹 Bedoone pak kardan hich chizi, listi az package-haei ke pak mishavand ra namayesh midahad. In yek rahe khoob ast baraye check kardan ke chizi eshtebahi hazf nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debclean` command is used to clean up `.deb` packages that are no longer needed from the APT cache. This frees up disk space.
+
+⚙️ **Options:**
+    🔹 `debclean` --> ✨ Cleans up outdated packages from the cache.
+    🔹 `debclean -p` --> 🧹 Prompts for confirmation before deleting each package.
+    🔹 `debclean --simulate` --> 🎭 Simulates the cleanup process without actually deleting anything.
+    🔹 `debclean --apt-get` --> 📦 Uses `apt-get` configuration for cache directory.
+
+🛠 **Examples:**
+
+    $ debclean
+
+    🔹 Cleans all redundant `.deb` packages from the APT cache.
+
+    $ sudo debclean -p
+
+    🔹 Cleans packages by prompting the user for confirmation before deletion.
+
+✅ **Simple Example:**
+
+    $ debclean --simulate
+
+    🔹 Displays a list of packages that would be removed without actually deleting anything.  This is a good way to check that nothing important will be removed.

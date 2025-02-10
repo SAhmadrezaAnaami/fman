@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installalternatives` baraye nasb kardan `alternatives` (rah-hal-haye jaygozin) dar pakej-haye Debian estefade mishavad. `Alternatives` be shoma ejaze midahad ta chand barname ra baraye anjam dadan yek vazife-ye khas dashte bashid va yek barname ra be عنوان "default" entekhab konid. In dastoor etela'at `alternatives` ra az file `debian/install` migirad va file-haye lazem ra dar jaye dorost nasb mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> ℹ️  Agar file `debian/install` nist, hata age file alternative vojood dashte bashad, error nadehad.
+    🔹 `-i`  --> ⚙️  Dar vaghe hich chizi ra nasb nakonad, faghat command-ha ra chap konad. Baraye test kardan script ghabl az nasb vaghei khub ast.
+    🔹 `--name=esm` --> 🏷️  Esm `alternative` ra moshakhas mikonad. Agar esm moshakhas nashode bashad, az filename be عنوان esm estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installalternatives
+    🔹 Nasb `alternatives` az file `debian/install`.
+
+    $ dh_installalternatives -n
+    🔹 Agar file `debian/install` nist, hata age file alternative vojood dashte bashad, error nadehad.
+
+✅ **Mesal sade:**
+
+    agar file `debian/install` shamel khat-haye zir bashad:
+    /usr/bin/python3.10 usr/bin/python
+    /usr/bin/python3 /usr/bin/python
+
+    $ dh_installalternatives
+    🔹 Command `update-alternatives` ba etela'at az file `debian/install` ejra mishavad ta `alternatives` ra dorost nasb konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installalternatives` command is used to install alternatives in Debian packages. Alternatives allow you to have multiple programs to perform the same task, and select one as the "default". This command reads alternative information from the `debian/install` file and installs the necessary files in the correct location.
+
+⚙️ **Options:**
+    🔹 `-n`  --> ℹ️  Do not fail if there is no `debian/install` file, even if alternative files exist.
+    🔹 `-i`  --> ⚙️  Do not actually install anything, just print the commands.  Good for testing the script before actual installation.
+    🔹 `--name=name` --> 🏷️  Specifies the name of the alternative. If the name is not specified, the filename is used as the name.
+
+🛠 **Examples:**
+
+    $ dh_installalternatives
+    🔹 Installs alternatives from the `debian/install` file.
+
+    $ dh_installalternatives -n
+    🔹 Does not fail if the `debian/install` file is missing, even if alternative files exist.
+
+✅ **Simple Example:**
+
+    If the `debian/install` file contains the following lines:
+    /usr/bin/python3.10 usr/bin/python
+    /usr/bin/python3 /usr/bin/python
+
+    $ dh_installalternatives
+    🔹 The `update-alternatives` command is executed with the information from the `debian/install` file to correctly install the alternatives.

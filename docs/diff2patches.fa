@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `diff2patches` yek dastoor baraye tabdil kardan khorooji `diff` be file-haye patch ast. In dastoor be shoma komak mikonad ta taghirat ra dar yek file ya majmooe'i az file-ha be shekle file-haye `.patch` zakhire konid, ke badtar mitavanid anha ra baraye update kardan ya share kardan taghirat be digaran estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `diff2patches <file.diff>` --> 📝 Tabdil yek file `diff` be file-haye patch. Har yek az taghirat dar file `diff` be yek file patch joda tabdil mishavad.
+    🔹 `diff2patches -o <directory> <file.diff>` --> 📂 Zakhire kardan file-haye patch dar yek pooshe (directory) moshakhas.
+    🔹 `diff2patches -p <num> <file.diff>` --> ✂️ Bardashtan `<num>` qesmat az path file-ha. In be shoma komak mikonad path file-ha dar file-haye patch ra kotah tar konid.
+
+🛠 **Mesal-ha:**
+
+    $ diff2patches mychanges.diff
+
+    🔹 Tabdil file `mychanges.diff` be chand file patch dar haman pooshe jari.
+
+    $ diff2patches -o patches mychanges.diff
+
+    🔹 Zakhire kardan file-haye patch dar pooshe'i be name `patches`.
+
+    $ diff2patches -p 1 mychanges.diff
+
+    🔹 Bardashtan 1 component az path file-ha dar file-haye patch.  Agar path `a/b/c/file.txt` bashad, `a/b/c/file.txt` mishavad `b/c/file.txt`.
+
+✅ **Mesal sade:**
+
+    $ diff -u original.txt modified.txt > mychanges.diff
+    $ diff2patches mychanges.diff
+
+    🔹 Aval taghirat bein `original.txt` va `modified.txt` zakhire mishavad dar file `mychanges.diff`, sepas `diff2patches` an ra be file-haye patch tabdil mikonad. Har taghir be yek file patch joda tabdil mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `diff2patches` command is used to convert `diff` output into patch files. This helps you save changes in a file or set of files as `.patch` files, which can be used later to update files or share the changes with others.
+
+⚙️ **Options:**
+    🔹 `diff2patches <file.diff>` --> 📝 Convert a `diff` file to patch files. Each change in the `diff` file is converted into a separate patch file.
+    🔹 `diff2patches -o <directory> <file.diff>` --> 📂 Save the patch files in a specified directory.
+    🔹 `diff2patches -p <num> <file.diff>` --> ✂️ Strip `<num>` leading components from file paths. This helps to shorten the paths of the files in the patch files.
+
+🛠 **Examples:**
+
+    $ diff2patches mychanges.diff
+
+    🔹 Converts the `mychanges.diff` file into multiple patch files in the current directory.
+
+    $ diff2patches -o patches mychanges.diff
+
+    🔹 Saves the generated patch files in a directory named `patches`.
+
+    $ diff2patches -p 1 mychanges.diff
+
+    🔹 Strips 1 component from the beginning of file paths in the patch files. If the path is `a/b/c/file.txt`, it becomes `b/c/file.txt`.
+
+✅ **Simple Example:**
+
+    $ diff -u original.txt modified.txt > mychanges.diff
+    $ diff2patches mychanges.diff
+
+    🔹 First, the changes between `original.txt` and `modified.txt` are saved into `mychanges.diff`, then `diff2patches` converts it into patch files. Each distinct change becomes a separate patch file.

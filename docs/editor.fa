@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `editor` (virayeshgar) baraye baz kardan va virayesh kardan file-haye matni (text files) be kar miravad.  In dastoor obiate-i nist, va obiatan bayad ba yek virayeshgare matni mesle `nano`, `vim`, ya `emacs` hamrah bashad. Agar editor e moshakhas shode nist, az virayeshgare pishfarz estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `editor filename` --> 📝 Baz kardan file ba virayeshgare pishfarz.
+    🔹 `EDITOR="nano" editor filename` --> ✒️ Baz kardan file ba virayeshgare `nano`. (mohammadood ast faghat dar hamin dastoor)
+    🔹 `EDITOR="vim" editor filename` --> 💻 Baz kardan file ba virayeshgare `vim`. (mohammadood ast faghat dar hamin dastoor)
+
+🛠 **Mesal-ha:**
+
+    $ editor myfile.txt
+
+    🔹  Baz kardan `myfile.txt` ba virayeshgare pishfarz.
+
+    $ EDITOR="nano" editor myfile.txt
+
+    🔹  Baz kardan `myfile.txt` ba virayeshgare `nano`.
+
+✅ **Mesal sade:**
+
+    $ EDITOR="nano" editor newfile.txt
+
+    🔹  Agar `newfile.txt` vojood nadashte bashad, `nano` yek file jadid misazad.  Ba save kardan file, in file dar directory kari save mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `editor` command is used to open and edit text files. This command is typically an abstraction, and it usually needs to be coupled with a specific text editor like `nano`, `vim`, or `emacs`. If no editor is specified, it uses the default editor configured in the system.
+
+⚙️ **Options:**
+    🔹 `editor filename` --> 📝 Open the file with the default editor.
+    🔹 `EDITOR="nano" editor filename` --> ✒️ Open the file using the `nano` editor (only effective for this command).
+    🔹 `EDITOR="vim" editor filename` --> 💻 Open the file using the `vim` editor (only effective for this command).
+
+🛠 **Examples:**
+
+    $ editor myfile.txt
+
+    🔹 Open `myfile.txt` using the default editor.
+
+    $ EDITOR="nano" editor myfile.txt
+
+    🔹 Open `myfile.txt` using the `nano` editor.
+
+✅ **Simple Example:**
+
+    $ EDITOR="nano" editor newfile.txt
+
+    🔹 If `newfile.txt` does not exist, `nano` creates a new file. Saving the file will save it in the current working directory.

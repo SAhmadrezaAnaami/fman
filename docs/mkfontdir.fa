@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mkfontdir` yek file `fonts.dir` misazad. In file index-e font-ha dar yek pooshe (directory) ra zakhire mikonad. Vaghti ke yek server X font-ha ra load mikonad, az in file baraye peida kardan font-ha be soorat sari' estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mkfontdir -v`  --> 📢  Namayesh etela'at bishtar dar morede font-ha va amaleye sakhtan file `fonts.dir`.
+    🔹 `mkfontdir -e <esme_programe>` --> ✏️  Ezafe kardane yek dastoor baraye dorost kardan scale font-ha.
+
+🛠 **Mesal-ha:**
+
+    $ mkfontdir
+
+    🔹 Dar poosheye فعلی, file `fonts.dir` ra misazad.
+
+    $ mkfontdir /usr/share/fonts/truetype
+
+    🔹 Dar poosheye `/usr/share/fonts/truetype`, file `fonts.dir` ra misazad.
+
+✅ **Mesal sade:**
+
+    $ mkfontdir
+
+    🔹 Agar font-haye jadidi dar poosheye فعلی ezafe shode bashand, in dastoor file `fonts.dir` ra dobare misazad ta server X betavand font-haye jadid ra be dorosti peida konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mkfontdir` command creates a `fonts.dir` file. This file stores an index of the fonts in a directory. When an X server loads fonts, it uses this file to quickly locate them.
+
+⚙️ **Options:**
+    🔹 `mkfontdir -v`  --> 📢  Display more verbose information about the fonts and the process of creating the `fonts.dir` file.
+    🔹 `mkfontdir -e <program_name>` --> ✏️  Add a command for creating scaled fonts.
+
+🛠 **Examples:**
+
+    $ mkfontdir
+
+    🔹 Creates a `fonts.dir` file in the current directory.
+
+    $ mkfontdir /usr/share/fonts/truetype
+
+    🔹 Creates a `fonts.dir` file in the `/usr/share/fonts/truetype` directory.
+
+✅ **Simple Example:**
+
+    $ mkfontdir
+
+    🔹 If new fonts have been added to the current directory, this command recreates the `fonts.dir` file so the X server can properly find the new fonts.

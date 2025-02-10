@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsns` baraye liste kardan namespace-ha dar system Linux estefade mishavad. Namespace-ha raveshi hastand baraye isolate kardan resources system (mesle process-ha, network, va file system) az yekdigar. Ba estefade az `lsns` mitavan namespace-haye mokhtalef ra did va etela’at dar bareye anha kasb kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsns -t <type>` --> 🏷️  Faghat namespace-haye type moshakhas ra namayesh midahad.  `type` mitavanad chiz-haye mesle `ipc`, `mnt`, `net`, `pid`, `user`, ya `uts` bashad.
+    🔹 `lsns -n <namespace>` --> 🎯 Namayesh etela’at darbareye yek namespace-e khass ba ID an.
+    🔹 `lsns -p <PID>` --> 📍 Namayesh namespace-haye mored estefade az yek process ba PID moshakhas.
+    🔹 `lsns -u <UID>` --> 👤 Namayesh namespace-haye az taraf user ba UID moshakhas.
+    🔹 `lsns -o OUTPUT-FORMAT` --> 📤 Customize kardane format-e khoruji.
+
+🛠 **Mesal-ha:**
+
+    $ lsns
+
+    🔹 Liste hameye namespace-haye mojood ra namayesh midahad.
+
+    $ lsns -t net
+
+    🔹 Faghat namespace-haye az noe "net" (network) ra namayesh midahad.
+
+    $ lsns -p 1234
+
+    🔹 Namespace-haye mored estefade process ba PID 1234 ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ lsns | grep net
+
+    🔹 Ba estefade az `grep`, natijeye `lsns` ra filter mikonad ta faghat khatti ke dar an kalameye "net" (network) vojood darad namayesh dade shavad, yani namespace-haye network.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsns` command is used to list the namespaces in a Linux system. Namespaces provide a way to isolate system resources (such as processes, network, and file system) from each other. Using `lsns`, you can view different namespaces and gather information about them.
+
+⚙️ **Options:**
+    🔹 `lsns -t <type>` --> 🏷️ Show only namespaces of a specific type. `type` can be things like `ipc`, `mnt`, `net`, `pid`, `user`, or `uts`.
+    🔹 `lsns -n <namespace>` --> 🎯 Show information about a specific namespace by its ID.
+    🔹 `lsns -p <PID>` --> 📍 Show the namespaces used by a process with the specified PID.
+    🔹 `lsns -u <UID>` --> 👤 Show namespaces owned by a user with the specified UID.
+    🔹 `lsns -o OUTPUT-FORMAT` --> 📤 Customize the output format.
+
+🛠 **Examples:**
+
+    $ lsns
+
+    🔹 Displays a list of all existing namespaces.
+
+    $ lsns -t net
+
+    🔹 Displays only the namespaces of type "net" (network).
+
+    $ lsns -p 1234
+
+    🔹 Displays the namespaces used by the process with PID 1234.
+
+✅ **Simple Example:**
+
+    $ lsns | grep net
+
+    🔹 Using `grep`, filter the output of `lsns` to only show lines containing the word "net" (network), i.e., network namespaces.

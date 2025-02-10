@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-config_usb_printer` baraye rahandazi va tanzeem printer-haye USB Hewlett-Packard (HP) dar Linux estefade mishavad. Ba in dastoor, shoma mitavanid printer ra shenasaee konid, driver-haye lazem ra nasb konid va printer ra baraye estefade amade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-haye mojood.
+    🔹 `--use-ppd <file>`  --> 📄 Estefade az yek file PPD khas baraye tanzeem printer.  File PPD tarif mikonad chegoone yek printer kar mikonad.
+    🔹 `--debug` --> 🐞 Chap kardane etela'ate bishtar dar morede cheraee chizi kar nemikonad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-config_usb_printer
+
+    🔹 Rahandazi marhale be marhale baraye tanzeem printer USB HP.  Barname az shoma soalati miporsad va printer ra tanzeem mikonad.
+
+    $ sudo hp-config_usb_printer --use-ppd /path/to/printer.ppd
+
+    🔹 Tanzeem printer ba estefade az file PPD moshakhas shode.
+
+✅ **Mesal sade:**
+
+    $ hp-config_usb_printer
+
+    🔹 Ba ejraye in dastoor, dastoor amade ast ta printer HP USB ra shenasaee va tanzeem konad. Agar printer motasel bashad, dastoor be shoma dar marhale haye tanzeem komak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-config_usb_printer` command is used to set up and configure Hewlett-Packard (HP) USB printers on Linux systems. With this command, you can detect the printer, install the necessary drivers, and prepare the printer for use.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display the command's help information and available options.
+    🔹 `--use-ppd <file>`  --> 📄 Use a specific PPD file to configure the printer. The PPD file defines how a printer operates.
+    🔹 `--debug` --> 🐞 Print more info about what is going wrong.
+
+🛠 **Examples:**
+
+    $ hp-config_usb_printer
+
+    🔹 Starts a step-by-step process to set up the HP USB printer. The program will ask you questions and configure the printer.
+
+    $ sudo hp-config_usb_printer --use-ppd /path/to/printer.ppd
+
+    🔹 Configures the printer using the specified PPD file.
+
+✅ **Simple Example:**
+
+    $ hp-config_usb_printer
+
+    🔹 By running this command, the program is ready to identify and configure an HP USB printer.  If a printer is connected, the command will help you through the setup process.

@@ -1,0 +1,92 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpg` (GNU Privacy Guard) baraye sakht, modiriyat va estefade az key-haye cryptographic estefade mishavad. Shoma mitavanid file-ha va peygham-haye khod ra ba estefade az in dastoor encrypt va decrypt konid ta amniat va privacy anha ra ta'min konid. Hamchenin mitavanid ba estefade az imzaye dijital az sahih budan file-ha motmaen shavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gpg --gen-key` --> 🗝️ Sakhtane yek joft-klye jadid (private va public key).
+    🔹 `gpg --encrypt -r <recipient>` --> 🔒 Encrypt kardane yek file baraye yek shakhs mokhatab khass. `<recipient>` bayad ID ya email address public key shakhs bashad.
+    🔹 `gpg --decrypt <file>` --> 🔓 Decrypt kardane yek file ke qablan encrypt shode ast.
+    🔹 `gpg --sign <file>` --> ✍️ Imza kardane yek file baraye ta'ayid sahih budan an.
+    🔹 `gpg --verify <signature_file> <original_file>` --> ✅ Verify kardane imza-ye yek file ba file asly.
+    🔹 `gpg --list-keys` --> 🔑 List kardane hameye key-haye mojood dar keychain shoma.
+    🔹 `gpg --delete-key <key_id>` --> 🗑️ Pak kardane yek key az keychain shoma.
+    🔹 `gpg --import <key_file>` --> 📥 Import kardane yek public key az yek file.
+    🔹 `gpg --export -a <key_id>` --> 📤 Export kardane yek key be shekl ASCII armor.
+
+🛠 **Mesal-ha:**
+
+    $ gpg --gen-key
+
+    🔹 Sakhtane yek joft klye jadid. Shoma bayad etela'ati mesle name, email address va password ra vared konid.
+
+    $ gpg --encrypt -r user@example.com myfile.txt
+
+    🔹 Encrypt kardane file `myfile.txt` baraye user ba email `user@example.com`.  File jadid ba پسوند `.gpg` sakhte mishavad.
+
+    $ gpg --decrypt myfile.txt.gpg
+
+    🔹 Decrypt kardane file `myfile.txt.gpg`. Shoma bayad password private key khod ra vared konid.
+
+    $ gpg --sign myfile.txt
+
+    🔹 Imza kardane file `myfile.txt`. Yek file jadid ba pasvand `.sig` sakhte mishavad.
+
+    $ gpg --verify myfile.txt.sig myfile.txt
+
+    🔹 Verify kardane imza `myfile.txt.sig` baraye file `myfile.txt`.
+
+✅ **Mesal sade:**
+
+    $ gpg --list-keys
+
+    🔹 Namayesh list hameye key-haye mojood dar keychain shoma. In shamel public key-haye ke import kardeid va private key-haye ke sakhteid mishavad. ID key-ha baraye refer kardane anha dar dastoor-haye digar estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpg` (GNU Privacy Guard) command is used to create, manage, and use cryptographic keys. You can use this command to encrypt and decrypt files and messages to ensure their security and privacy. You can also use digital signatures to verify the authenticity of files.
+
+⚙️ **Options:**
+    🔹 `gpg --gen-key` --> 🗝️ Generate a new key pair (private and public key).
+    🔹 `gpg --encrypt -r <recipient>` --> 🔒 Encrypt a file for a specific recipient. `<recipient>` should be the ID or email address of the recipient's public key.
+    🔹 `gpg --decrypt <file>` --> 🔓 Decrypt a file that has been previously encrypted.
+    🔹 `gpg --sign <file>` --> ✍️ Sign a file to verify its authenticity.
+    🔹 `gpg --verify <signature_file> <original_file>` --> ✅ Verify the signature of a file against the original file.
+    🔹 `gpg --list-keys` --> 🔑 List all the keys available in your keychain.
+    🔹 `gpg --delete-key <key_id>` --> 🗑️ Delete a key from your keychain.
+    🔹 `gpg --import <key_file>` --> 📥 Import a public key from a file.
+    🔹 `gpg --export -a <key_id>` --> 📤 Export a key in ASCII armor format.
+
+🛠 **Examples:**
+
+    $ gpg --gen-key
+
+    🔹 Generate a new key pair. You will be prompted to enter information such as your name, email address, and passphrase.
+
+    $ gpg --encrypt -r user@example.com myfile.txt
+
+    🔹 Encrypt the file `myfile.txt` for the user with the email `user@example.com`.  A new file with the extension `.gpg` is created.
+
+    $ gpg --decrypt myfile.txt.gpg
+
+    🔹 Decrypt the file `myfile.txt.gpg`. You will be prompted to enter the passphrase for your private key.
+
+    $ gpg --sign myfile.txt
+
+    🔹 Sign the file `myfile.txt`. A new file with the extension `.sig` is created.
+
+    $ gpg --verify myfile.txt.sig myfile.txt
+
+    🔹 Verify the signature `myfile.txt.sig` for the file `myfile.txt`.
+
+✅ **Simple Example:**
+
+    $ gpg --list-keys
+
+    🔹 Display a list of all keys in your keychain. This includes public keys that you have imported and private keys that you have created. The key IDs are used to reference them in other commands.

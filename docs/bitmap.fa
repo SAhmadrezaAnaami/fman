@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `bitmap` yek dastoor baraye tabdil kardan aks-ha ya font-ha be formate bitmap dar Unix/Linux ast. Bitmap yek model-e tasviri ast ke tasvir ra be soorate yek shabake az noghte-ha (pixel-ha) zakhire mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bitmap -f <fontfile>` --> 🔤 Tabdil font be format bitmap.
+    🔹 `bitmap -g <geometry>` --> 📐 Tayin andaze-ye tasvir bitmap. Masalan: 64x64
+    🔹 `bitmap -n <name>` --> 🏷️ Gozashtan yek esm baraye tasvir.
+
+🛠 **Mesal-ha:**
+
+    $ bitmap -f myfont.pcf > myfont.bitmap
+
+    🔹 Tabdil font `myfont.pcf` be format bitmap va zakhireh dar file `myfont.bitmap`.
+
+    $ bitmap -g 32x32 -n myicon < input.xpm > output.bitmap
+
+    🔹 Tabdil file `input.xpm` be yek bitmap ba andazeye 32x32 va name `myicon`.
+
+✅ **Mesal sade:**
+
+    $ bitmap -f fixed > fixed.bitmap
+
+    🔹 Tabdil font pishfarz "fixed" be format bitmap va zakhireh dar file `fixed.bitmap`. In dastoor font system ra be yek file bitmap tabdil mikonad ke mishe dar barname-ha azash estefade kard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `bitmap` is a command to convert images or fonts to bitmap format in Unix/Linux systems. A bitmap is a digital image format that stores images as a grid of individual pixels.
+
+⚙️ **Options:**
+    🔹 `bitmap -f <fontfile>` --> 🔤 Convert a font to bitmap format.
+    🔹 `bitmap -g <geometry>` --> 📐 Specify the dimensions (geometry) of the bitmap image. Example: 64x64
+    🔹 `bitmap -n <name>` --> 🏷️ Assign a name to the image.
+
+🛠 **Examples:**
+
+    $ bitmap -f myfont.pcf > myfont.bitmap
+
+    🔹 Convert the font `myfont.pcf` to bitmap format and save it in the file `myfont.bitmap`.
+
+    $ bitmap -g 32x32 -n myicon < input.xpm > output.bitmap
+
+    🔹 Convert the `input.xpm` file to a bitmap with dimensions 32x32 and the name `myicon`.
+
+✅ **Simple Example:**
+
+    $ bitmap -f fixed > fixed.bitmap
+
+    🔹 Convert the default "fixed" font to bitmap format and save it in the file `fixed.bitmap`. This command turns a font system into a bitmap file that can then be used in programs.

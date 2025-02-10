@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `locale-check` baraye baresi va dorost kardan ayar-ha (settings) locale dar system-e shoma be kar miravad. Locale moshakhas mikonad zaban, mantaghe, va format-haee ke system shoma baraye namayesh matn, tarikhe, zaman, va pool estefade mikonad. Agar ayar-ha locale dorost nabashand, momken ast ba moshkelati dar namayesh dorost zaban-ha, karakter-ha, va format-haee digar robero shavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `locale-check`  --> 🔍 Baresi locale-ha-ye fa'al va namayeshe natije.
+    🔹 `locale-check -v` --> 📢 Namayeshe etela'ate bishtar (verbose) dar morede baresi locale-ha.
+    🔹 `locale-check --lang=fa_IR.UTF-8` --> 🌐 Baresi locale moshakhas (dar in mesal, farsi Iran).
+
+🛠 **Mesal-ha:**
+
+    $ locale-check
+
+    🔹 Baresi locale-ha-ye fa'al va namayesh natije.
+
+    $ locale-check -v
+
+    🔹 Namayeshe etela'ate bishtar dar morede baresi locale-ha.
+
+✅ **Mesal sade:**
+
+    $ locale-check
+
+    🔹 Agar natije "OK" bashad, yani locale-ha dorost ayar shode-and. Agar khata bebinid, bayad locale-haye system-e khod ra tas-hih konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `locale-check` command is used to check and validate the locale settings on your system. The locale determines the language, region, and formats that your system uses for displaying text, dates, times, and currency. Incorrect locale settings can lead to problems with properly displaying languages, characters, and other formats.
+
+⚙️ **Options:**
+    🔹 `locale-check`  --> 🔍 Check the active locales and display the results.
+    🔹 `locale-check -v` --> 📢 Display more detailed (verbose) information about the locale checks.
+    🔹 `locale-check --lang=en_US.UTF-8` --> 🌐 Check a specific locale (in this example, U.S. English).
+
+🛠 **Examples:**
+
+    $ locale-check
+
+    🔹 Check the active locales and display the results.
+
+    $ locale-check -v
+
+    🔹 Display more detailed information about the locale checks.
+
+✅ **Simple Example:**
+
+    $ locale-check
+
+    🔹 If the result is "OK", it means the locales are properly configured. If you see errors, you need to correct the locale settings of your system.
+

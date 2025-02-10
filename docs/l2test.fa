@@ -1,0 +1,38 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `l2test` baraye test kardan etesalate layer 2 (data link layer) dar shabake estefade mishavad.  In dastoor oboore packet-ha ra az tarighe yek shabake azmaysh mikonad. Agar `l2test` mojood nabashad, ehtemalan bayad az narm afzar-haye digari mesle `ping` ya `traceroute` baraye test etesalat shabake estefade konid.  
+
+⚙️ **Gozine-ha:**
+    Az aanja ke `l2test` yek dastoor standard nist, gozine-ha va amalkarde aan momken ast motefavet bashad ya voojood nadashte bashad. Agar dastoor dar system-e shoma mojood bashad, az `man l2test` ya `l2test --help` baraye didane gozine-haye momken estefade konid.
+
+🛠 **Mesal-ha:**
+    Az aanja ke `l2test` yek dastoor standard nist, mesal-haye khassi nemitoonim benevisim. Dar soorate dashtane in dastoor, dastoorat mesale `l2test -h` baraye rahnamayi estefade konid. Be tor mamool, agar chonin dastoor vojood dashte bashad, momken ast shekle zir dashte bashad:
+
+    $ l2test -i eth0 -c 10 192.168.1.1
+    🔹 Test etesale layer 2 az interface eth0 ba ersale 10 packet be address 192.168.1.1
+
+✅ **Mesal sade:**
+    Az aanja ke `l2test` yek dastoor mamool nist, yek mesal sade baraye namayesh voojood nadarad. Behtar ast az dastoor haye dige baraye test shabake estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `l2test` command is used to test Layer 2 (data link layer) connectivity in a network. It typically involves sending packets across a network to verify the connection. If `l2test` isn't available, you might need to use other tools such as `ping` or `traceroute` to test network connectivity.
+
+⚙️ **Options:**
+    Since `l2test` is not a standard command, the options and functionality might vary or it may not exist at all. If the command is available on your system, use `man l2test` or `l2test --help` to view possible options.
+
+🛠 **Examples:**
+    Since `l2test` is not a standard command, specific examples are difficult to provide. If you have this command available, use commands like `l2test -h` for help. Commonly, if such a command exists, it might look like this:
+
+    $ l2test -i eth0 -c 10 192.168.1.1
+    🔹 Test Layer 2 connectivity from interface eth0 by sending 10 packets to address 192.168.1.1
+
+✅ **Simple Example:**
+    Since `l2test` is not a common command, a simple demonstration example is not generally applicable. Consider using alternative network testing tools.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2zjs-wrapper` yek dastoor baraye tabdil dade-haye raster shode az Ghostscript be format ZjStream printer-ha ast. In dastoor be shoma komak mikonad ta printer-haye GDI ra az rah-andazi konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-z` --> 🚀 Eslahe rang-ha baraye chaph behtare rang-ha.
+    🔹 `-r <resolution>` --> 🎯 Ta'een deghat chape (dpi). Mesal: `-r300` ya `-r600`.
+    🔹 `-g` --> 🎨 Taghire range chap shodan be range khakestari (grayscale).
+    🔹 `-u <username>` --> 👤 Namayeshe username (Agar username mored niaz bashad).
+
+🛠 **Mesal-ha:**
+
+    $ foo2zjs-wrapper < input.ps > output.zjs
+
+    🔹 Tabdil file PostScript `input.ps` be format `output.zjs`.
+
+    $ foo2zjs-wrapper -r600 < input.ps > output.zjs
+
+    🔹 Tabdil file PostScript `input.ps` ba deghate 600 dpi be format `output.zjs`.
+
+✅ **Mesal sade:**
+
+    $ foo2zjs-wrapper -z < input.ps | lp
+
+    🔹 Tabdil file PostScript `input.ps` ba eslahe rang-ha va ezafe kardane an be saf chape.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2zjs-wrapper` command is a wrapper that converts rasterized data from Ghostscript into the ZjStream format suitable for certain printers, mainly GDI printers. It helps to drive these printers.
+
+⚙️ **Options:**
+    🔹 `-z` --> 🚀 Color correction for better color printing.
+    🔹 `-r <resolution>` --> 🎯 Specify the printing resolution (dpi). Example: `-r300` or `-r600`.
+    🔹 `-g` --> 🎨 Force grayscale printing.
+    🔹 `-u <username>` --> 👤 Set username (If username needed).
+
+🛠 **Examples:**
+
+    $ foo2zjs-wrapper < input.ps > output.zjs
+
+    🔹 Converts the PostScript file `input.ps` to `output.zjs` format.
+
+    $ foo2zjs-wrapper -r600 < input.ps > output.zjs
+
+    🔹 Converts the PostScript file `input.ps` to `output.zjs` format with a resolution of 600 dpi.
+
+✅ **Simple Example:**
+
+    $ foo2zjs-wrapper -z < input.ps | lp
+
+    🔹 Converts the PostScript file `input.ps` with color correction and pipes it to the printing system.

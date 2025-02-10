@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cksum` baraye hesab kardane yek adad-e khass (checksum) az content-e yek file estefade mishavad.  In adad be shoma komak mikonad ta check konid aya yek file taghir karde ya na.  Agar do file checksum-e yeksani dashte bashand, eshtemal ziadi darad ke yekianad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cksum FILE` --> 📝 Hesab kardane checksum-e file.
+    🔹 `cksum` --> ⌨️ Checksum az voroodi standart (standard input). Paayan ba Ctrl+D.
+
+🛠 **Mesal-ha:**
+
+    $ cksum myfile.txt
+
+    🔹 Namayesh checksum, size (bytes), va name file.
+
+    $ cksum < myfile.txt
+
+    🔹 Hesab kardane checksum az content-e file `myfile.txt` (bejay-e khod-e file).
+
+✅ **Mesal sade:**
+
+    $ cksum data.txt
+    3822714701 123 data.txt
+
+    🔹 In neshan midahad ke checksum-e `data.txt` barabar ast ba `3822714701`, size-e aan `123` bytes ast va file `data.txt` ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cksum` command is used to calculate a checksum of a file's content.  This checksum can be used to verify the integrity of a file; if two files have the same checksum, they are likely identical.
+
+⚙️ **Options:**
+    🔹 `cksum FILE` --> 📝 Calculate and display the checksum of FILE.
+    🔹 `cksum` --> ⌨️ Calculate checksum from standard input. Terminate with Ctrl+D.
+
+🛠 **Examples:**
+
+    $ cksum myfile.txt
+
+    🔹 Displays the checksum, size (in bytes), and filename.
+
+    $ cksum < myfile.txt
+
+    🔹 Calculate the checksum of the content of `myfile.txt` (rather than the file itself).
+
+✅ **Simple Example:**
+
+    $ cksum data.txt
+    3822714701 123 data.txt
+
+    🔹 This indicates that the checksum of `data.txt` is `3822714701`, its size is `123` bytes, and the file is `data.txt`.

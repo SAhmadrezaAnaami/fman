@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installdebconf` baraye avardan file-haye `debconf` az jaye `debian/package.debconf` be jaaye dorostash dar pooshe-ye `DEBIAN` pakej `deb` estefade mishavad.  In dastoor dar vaqte sakhte pakej `deb` kar mikonad ta etela'at `debconf` ro dorost jaye gozari kone.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n` --> ⛔ Yani file-haye `debconf` jaye gozari nashavand (dar hale test ya debug mofid ast).
+    🔹 `-o` --> ✍️ Override kardan, yani agar file-i qablan vojood dashte bashad, oon ro be roosh minevisad.  Be tore normal, agar file-i vojood dashte bashad, `dh_installdebconf` error midehad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installdebconf
+
+    🔹 File-haye `debconf` ra az `debian/package.debconf` be `DEBIAN/` jaye gozari mikonad.
+
+    $ dh_installdebconf -n
+
+    🔹 Dar hale sakhte pakej, file-haye `debconf` ra jaye gozari nemikonad (baraye test).
+
+✅ **Mesal sade:**
+
+    Dar file `debian/rules` :
+    makefile
+    install:
+        dh_installdebconf
+    
+    🔹  In code baes mishe ke file-haye `debconf` ba har bar sakhte pakej `deb` dorost jaye gozari shavand. Agar in dastoor nabashad, etela'at `debconf` be dorosti jaye gozari nashode va momken ast nasb pakej be moshkel bokhorad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installdebconf` command is used to install `debconf` files from `debian/package.debconf` to the correct location in the `DEBIAN` directory of a `deb` package. This command operates during the `deb` package build process, ensuring that the `debconf` information is correctly installed.
+
+⚙️ **Options:**
+    🔹 `-n` --> ⛔ Do not actually install the `debconf` files (useful for testing or debugging).
+    🔹 `-o` --> ✍️ Override existing files.  By default, `dh_installdebconf` will produce an error if a file already exists; this option causes it to be replaced.
+
+🛠 **Examples:**
+
+    $ dh_installdebconf
+
+    🔹 Installs `debconf` files from `debian/package.debconf` to `DEBIAN/`.
+
+    $ dh_installdebconf -n
+
+    🔹 During package build, does not install `debconf` files (for testing purposes).
+
+✅ **Simple Example:**
+
+    In `debian/rules` file:
+    makefile
+    install:
+        dh_installdebconf
+    
+    🔹 This code ensures that `debconf` files are correctly installed each time the `deb` package is built. Without this command, the `debconf` information might not be installed properly, and package installation could encounter problems.

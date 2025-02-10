@@ -1,0 +1,48 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `esc-m` (Escape Meta) dar bazi az muhit-haye terminal (masalan, GNU Screen ya tmux) baraye ferestadan character "Meta" (obour az function-haye terminal) be program-haye dakheli estefade mishavad. Be tor mamool, in character Meta ba key Alt ya Esc sazgar ast.  Dar vaghe, vaghti shoma Alt + yek character digar ra miznid, terminal Meta character ra mifresteh. Agar shoma be tor mostaghim daste resi be Meta nadashte bashid, `esc-m` yek rahe hale baraye ferestadan an ast.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine baraye `esc-m` mojood nist, chon funcitoni sakhte shode ast ke key-binding ra tasdegh mikonad va Meta character ra mifresteh.
+
+🛠 **Mesal-ha:**
+
+    agar shoma dar tmux bashid va mekhahid yek command ra ferestad bedone inke tmux anra tafsir konad, shoma mitavaneh az `esc-m` estefadeh konid.
+
+    ^B esc-m :command
+
+    🔹 In Mesal be in maenist ke shoma Ctrl+b (ke pish farz dar tmux ast) ra bezanid, badesh `esc-m` (ke yek function ast) be command ferestad mishavad, bad az an `:` va command shoma type mishavad.
+
+✅ **Mesal sade:**
+
+    imagine konid shoma dar screen hastid va mekhahid yek function khas ra estefade konid ke ba Alt+number kar mikonad.
+    
+    agar shoma be tor mostagim Alt+number ra bezanid, screen anra tafsir mikonad. Pas shoma mitavanid `esc-m` ra be binding yek key-binding ra be `esc-m` taghir dahid (e.g., Ctrl+a), va badesh key number ra vared konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `esc-m` (Escape Meta) command in some terminal environments (like GNU Screen or tmux) is used to send the "Meta" character to inner programs.  The Meta character is often associated with the Alt or Esc key.  Essentially, when you press Alt + another character, the terminal sends the Meta character. If you don't have direct Meta access, `esc-m` provides a way to send it.
+
+⚙️ **Options:**
+    🔹 There are no options for `esc-m`, as it is a built-in function that usually confirms key-bindings and sends the Meta character.
+
+🛠 **Examples:**
+
+    If you are in tmux and want to send a command without tmux interpreting it, you can use `esc-m`.
+
+    ^B esc-m :command
+
+    🔹 This means press Ctrl+b (the default tmux prefix), then send `esc-m` (a function), followed by `:` and your command.
+
+✅ **Simple Example:**
+
+    Imagine you are in screen and need to use a specific function that uses Alt+number.
+
+    If you directly press Alt+number, screen will interpret it.  So, you can rebind a key-binding to `esc-m` (e.g., Ctrl+a), and then type the number.

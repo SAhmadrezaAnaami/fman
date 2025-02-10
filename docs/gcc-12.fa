@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-12` compiler baraye tabdil kardan code-haye zaban C va C++ be barname-haye ejraii (executable) estefade mishavad.  In compiler version 12 az majmooye GCC ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc-12 -o <esm-barname> <manba-code>.c`  --> ⚙️ Tabdil kardan code C be barname ba esm moshakhas
+    🔹 `gcc-12 -Wall <manba-code>.c` --> ⚠️ Namayesh hameye khatarha (warnings) dar code
+    🔹 `gcc-12 -g <manba-code>.c` --> 🐞 Ezafe kardan etela'at debug baraye peyda kardan baq-ha
+    🔹 `gcc-12 -c <manba-code>.c` --> 📦 Faghat tabdil kardan code be object file (.o), na sakhtane barname ejraii
+    🔹 `gcc-12 -std=c11 <manba-code>.c` --> 🏷️ Estefade az standard C11 baraye tabdil code
+
+🛠 **Mesal-ha:**
+
+    $ gcc-12 -o hello hello.c
+
+    🔹 Sakhtane yek barname ejraii be esm "hello" az file "hello.c"
+
+    $ gcc-12 -Wall -o hello hello.c
+
+    🔹 Sakhtane yek barname ejraii be esm "hello" az file "hello.c" va namayesh hameye khatarha.
+
+✅ **Mesal sade:**
+
+    $ gcc-12 -o myprogram main.c utils.c
+
+    🔹 Tabdil kardan file-haye "main.c" va "utils.c" va sakhtane yek barname ejraii be esm "myprogram".
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-12` command is a compiler used to translate C and C++ source code into executable programs. This is version 12 of the GCC (GNU Compiler Collection) suite.
+
+⚙️ **Options:**
+    🔹 `gcc-12 -o <program-name> <source-code>.c` --> ⚙️ Compile C code into a program with a specific name.
+    🔹 `gcc-12 -Wall <source-code>.c` --> ⚠️ Show all warnings in the code.
+    🔹 `gcc-12 -g <source-code>.c` --> 🐞 Add debugging information for finding bugs.
+    🔹 `gcc-12 -c <source-code>.c` --> 📦 Only compile the code into an object file (.o), do not create an executable program.
+    🔹 `gcc-12 -std=c11 <source-code>.c` --> 🏷️ Use the C11 standard for compiling the code.
+
+🛠 **Examples:**
+
+    $ gcc-12 -o hello hello.c
+
+    🔹 Creates an executable program named "hello" from the file "hello.c".
+
+    $ gcc-12 -Wall -o hello hello.c
+
+    🔹 Creates an executable program named "hello" from the file "hello.c" and displays all warnings.
+
+✅ **Simple Example:**
+
+    $ gcc-12 -o myprogram main.c utils.c
+
+    🔹 Compiles the files "main.c" and "utils.c" and creates an executable program named "myprogram".

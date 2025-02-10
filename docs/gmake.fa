@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gmake` (ya GNU Make) yek barnameh ast baraye otomat kardane sakht va ejraye barname-haye bozorg. In dastoor az yek file be name `Makefile` estefade mikonad ke dar an, dastoorat baraye compile kardan va link kardan file-ha tarif shode ast.  `gmake` komak mikonad ke faghat file-haye taghir karde az akharin sakht dobare compile shavand, serfeye ziadi dar vaght va resource-ha mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gmake`                --> 🎯 Shoru'e sakht ba estefade az `Makefile` dar haman pooshe.
+    🔹 `gmake clean`          --> 🧹 Pak kardan file-haye temporari va sakhte shode. (bayad dar `Makefile` tarif shode bashad)
+    🔹 `gmake -f <filename>`  --> 📁 Estefade az yek `Makefile` ba name `<filename>` be jaye `Makefile` pishfarz.
+    🔹 `gmake -j <number>`    --> 🚀 Run kardan build dar chand process be surat parallel, baraye saritar shodan. E.g., `gmake -j4` estefade az 4 process.
+    🔹 `gmake -n`              --> 🧐 Namayesh dadane dastoorati ke ejra khahand shod, bedune ejra kardan anha.
+
+🛠 **Mesal-ha:**
+
+    $ gmake
+
+    🔹 Shoru'e build process ba estefade az `Makefile` dar directory jari.
+
+    $ gmake clean
+
+    🔹 Pak kardane file-haye vasati va file-haye sakhte shode (agar dar `Makefile` tarif shode bashad).
+
+    $ gmake -f MyMakefile
+
+    🔹 Sakht project ba estefade az file `MyMakefile`.
+
+✅ **Mesal sade:**
+
+    $ gmake -j4
+
+    🔹  Ba estefade az 4 thread, file-haye project compile mishavand. In kar compile kardane project-ha ro saritar mikonad, be khosos baraye project-haye bozorg.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gmake` command (or GNU Make) is a tool for automating the build and execution of large projects. It uses a file called `Makefile` which contains instructions for compiling and linking files. `gmake` helps to only recompile files that have changed since the last build, saving considerable time and resources.
+
+⚙️ **Options:**
+    🔹 `gmake`                --> 🎯 Start building using the `Makefile` in the current directory.
+    🔹 `gmake clean`          --> 🧹 Clean up temporary and built files (must be defined in the `Makefile`).
+    🔹 `gmake -f <filename>`  --> 📁 Use a `Makefile` named `<filename>` instead of the default `Makefile`.
+    🔹 `gmake -j <number>`    --> 🚀 Run the build in multiple processes in parallel, to speed it up.  E.g., `gmake -j4` uses 4 processes.
+    🔹 `gmake -n`              --> 🧐 Show the commands that would be executed, without actually running them.
+
+🛠 **Examples:**
+
+    $ gmake
+
+    🔹 Start the build process using the `Makefile` in the current directory.
+
+    $ gmake clean
+
+    🔹 Clean intermediate files and built files (if defined in the `Makefile`).
+
+    $ gmake -f MyMakefile
+
+    🔹 Build the project using the file `MyMakefile`.
+
+✅ **Simple Example:**
+
+    $ gmake -j4
+
+    🔹 The project files are compiled using 4 threads. This speeds up the compilation of projects, especially for large projects.

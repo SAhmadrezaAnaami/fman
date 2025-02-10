@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `killall` baraye bastan (terminate) hameye process-haee ke yek esm-e moshtarak darand be kar mirevad.  Agar process-i hang karde bashad, `killall` mitavanad be shoma komak konad ta an ra bebandid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `killall program_name`  --> 🎯 Baste hameye process-haee ke esm-e "program_name" ra darand.
+    🔹 `killall -u username program_name` --> 👤 Baste hameye process-haee ke az tarfe karbar "username" va esm-e "program_name" ra darand.
+    🔹 `killall -i program_name`  --> ❓ Az shoma soal mikonad aya process-ha ra bebaste ya na.
+    🔹 `killall -v program_name`  --> 📢 Eteela’at bishtar namayesh midahad dar morede process-haee ke baste shodeand.
+
+🛠 **Mesal-ha:**
+
+    $ killall firefox
+
+    🔹 Hameye instance-haee az Firefox ra mibandad.
+
+    $ killall -u ali vlc
+
+    🔹 Hameye instance-haee az VLC ra ke karbar "ali" ejra karde ast, mibandad.
+
+✅ **Mesal sade:**
+
+    $ killall -i gedit
+
+    🔹 Ghable az bastan har instance az gedit, az shoma soal mishavad ke aya motmaen hastid ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `killall` command is used to terminate processes by name. It sends a signal to all processes running any of the specified commands. Useful when a program has multiple instances running or is unresponsive.
+
+⚙️ **Options:**
+    🔹 `killall program_name` --> 🎯 Kills all processes with the name "program_name".
+    🔹 `killall -u username program_name` --> 👤 Kills all processes owned by user "username" that have the name "program_name".
+    🔹 `killall -i program_name` --> ❓ Asks for confirmation before killing the processes.
+    🔹 `killall -v program_name` --> 📢 Provides verbose output about the processes that are killed.
+
+🛠 **Examples:**
+
+    $ killall firefox
+
+    🔹 Kills all running instances of Firefox.
+
+    $ killall -u ali vlc
+
+    🔹 Kills all running instances of VLC owned by user "ali".
+
+✅ **Simple Example:**
+
+    $ killall -i gedit
+
+    🔹 Prompts for confirmation before killing each instance of gedit.

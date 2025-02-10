@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `journalctl` baraye didan log-haye systemd estefade mishavad. Systemd yek system modiriat (management) dar Linux ast, va `journalctl` be shoma komak mikonad etela'at marboot be service-ha, kernel, va digar rooydad-ha ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `journalctl`  --> 📜 Namayesh hameye log-ha az avalin log ta alan.
+    🔹 `journalctl -u <service>` --> ⚙️ Namayesh log-haye yek service khass. Be jaye `<service>`, name service ra benevisid (masalan `apache2`).
+    🔹 `journalctl -f`  --> 👀 Namayesh log-ha be soorat real-time (mesle `tail -f`).
+    🔹 `journalctl --since "yesterday"` --> ⏳ Namayesh log-ha az dirooz ta alan. Mitavanid be jaye "yesterday" az "today", "1 hour ago", ya tarikhe khass estefade konid.
+    🔹 `journalctl -p err` --> 🚨 Namayesh log-haye ba priority error va balatar (critical, alert, emergency).
+
+🛠 **Mesal-ha:**
+
+    $ journalctl
+
+    🔹 Namayesh hameye log-ha.
+
+    $ journalctl -u apache2
+
+    🔹 Namayesh log-haye service apache2.
+
+    $ journalctl -f -u nginx
+
+    🔹 Namayesh log-haye nginx be soorat zende (real-time).
+
+✅ **Mesal sade:**
+
+    $ journalctl -b
+
+    🔹 Namayesh log-ha az akharin boot system.  In komak mikonad moshkelati ke dar zaman boot be voqoo peyvaste ra peygiri konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `journalctl` command is used to view logs managed by systemd. Systemd is a system and service manager for Linux, and `journalctl` helps you view information about services, the kernel, and other system events.
+
+⚙️ **Options:**
+    🔹 `journalctl`  --> 📜 Show all logs from the beginning.
+    🔹 `journalctl -u <service>` --> ⚙️ Show logs for a specific service. Replace `<service>` with the service name (e.g., `apache2`).
+    🔹 `journalctl -f`  --> 👀 Show logs in real-time (like `tail -f`).
+    🔹 `journalctl --since "yesterday"` --> ⏳ Show logs from yesterday until now. You can use "today", "1 hour ago", or a specific date instead of "yesterday".
+    🔹 `journalctl -p err` --> 🚨 Show logs with error priority or higher (critical, alert, emergency).
+
+🛠 **Examples:**
+
+    $ journalctl
+
+    🔹 Show all logs.
+
+    $ journalctl -u apache2
+
+    🔹 Show logs for the apache2 service.
+
+    $ journalctl -f -u nginx
+
+    🔹 Show logs for nginx in real-time.
+
+✅ **Simple Example:**
+
+    $ journalctl -b
+
+    🔹 Show logs from the last system boot. This helps you trace issues that occurred during the boot process.

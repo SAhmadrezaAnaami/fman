@@ -1,0 +1,48 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-set-host-name` baraye ta’يين kardane name mehrban (hostname) dar shabake (network) ba estefade az Avahi (yek systeme zeroconf) be kar miravad. Yani computer shoma khodkar dar shabake shenakhte mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `avahi-set-host-name [name_mehrban]` --> 🖥️ Name mehrban jadid ra ta'يين mikonad. Agar name ra nazarid, az name computer estefade mikonad.
+    🔹 `avahi-set-host-name -v [name_mehrban]` --> 🗣️ Eetela'at bishtari dar morede amal kardane dastoor neshon midahad (verbose).
+
+🛠 **Mesal-ha:**
+
+    $ avahi-set-host-name mycomputer
+    🔹 Name mehrban ra be "mycomputer" ta'يين mikonad.
+
+    $ avahi-set-host-name -v server1
+    🔹 Name mehrban ra be "server1" ta'يين mikonad va etela'at bishtari neshon midahad.
+
+✅ **Mesal sade:**
+
+    $ avahi-set-host-name
+    🔹 Agar hich name'i ra nazarid, `avahi-set-host-name` az name asli computer shoma estefade mikonad va an ra dar shabake pakhsh mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-set-host-name` command is used to set the hostname on the network using Avahi, a zeroconf networking system. This allows your computer to be automatically discovered on the network.
+
+⚙️ **Options:**
+    🔹 `avahi-set-host-name [hostname]` --> 🖥️ Sets the new hostname. If no name is given, it uses the system's default hostname.
+    🔹 `avahi-set-host-name -v [hostname]` --> 🗣️ Shows more detailed information about the command's operation (verbose).
+
+🛠 **Examples:**
+
+    $ avahi-set-host-name mycomputer
+    🔹 Sets the hostname to "mycomputer".
+
+    $ avahi-set-host-name -v server1
+    🔹 Sets the hostname to "server1" and shows more detailed output.
+
+✅ **Simple Example:**
+
+    $ avahi-set-host-name
+    🔹 If no hostname is specified, `avahi-set-host-name` will use your computer's existing hostname and broadcast it on the network.

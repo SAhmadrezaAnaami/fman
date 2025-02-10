@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-nm` baraye didan neshane-ha (symbols) dar file-haye object (`.o`) va library-ha estefade mishavad. In neshan-ha mitavanand function-ha, variable-ha, va esme taghsim shode digar bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc-nm -a`  --> 👀 Namayesh hameye neshane-ha, hata neshane-haye debug va compiler-sakhtegi.
+    🔹 `gcc-nm -C`  --> ➕ Neshan dadane neshane-ha ba format insan-khanaye ziad (demangle C++ symbol names).
+    🔹 `gcc-nm -l`  --> 📜 Namayesh name file object baraye har neshan.
+    🔹 `gcc-nm -n`  --> 🔢 Moratab kardane neshane-ha be tartibe adress mahale zekr shode.
+    🔹 `gcc-nm -u`  --> 🔎 Faghat namayesh neshane-haye tarif nashode.
+
+🛠 **Mesal-ha:**
+
+    $ gcc-nm a.out
+
+    🔹 Namayesh hameye neshane-ha az file `a.out`.
+
+    $ gcc-nm -C mylib.so
+
+    🔹 Namayesh neshane-ha az `mylib.so` ba esme function-haye C++ moratab shode.
+
+✅ **Mesal sade:**
+
+    $ gcc-nm -u myprogram.o
+
+    🔹 Namayesh faghat neshane-haye tarif nashode dar `myprogram.o`, ke momken ast baraye peida kardane errorha dar link kardan komak konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-nm` command is used to display the symbol table of object files (`.o`) and libraries.  These symbols can represent functions, variables, and other named entities.
+
+⚙️ **Options:**
+    🔹 `gcc-nm -a`  --> 👀 Display all symbols, including debugger-only and compiler-generated symbols.
+    🔹 `gcc-nm -C`  --> ➕ Demangle C++ symbol names to make them more human-readable.
+    🔹 `gcc-nm -l`  --> 📜 Show the object file name for each symbol.
+    🔹 `gcc-nm -n`  --> 🔢 Sort symbols by their address in memory.
+    🔹 `gcc-nm -u`  --> 🔎 Only display undefined symbols.
+
+🛠 **Examples:**
+
+    $ gcc-nm a.out
+
+    🔹 Display all symbols from the executable `a.out`.
+
+    $ gcc-nm -C mylib.so
+
+    🔹 Display symbols from `mylib.so` with demangled C++ function names.
+
+✅ **Simple Example:**
+
+    $ gcc-nm -u myprogram.o
+
+    🔹 Display only the undefined symbols in `myprogram.o`, which can be useful for identifying linking errors.

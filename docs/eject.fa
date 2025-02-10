@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `eject` baraye birun andakhtane disk-ha-ye CD-ROM, DVD-ROM, USB drive-ha, ya digar dastgah-ha-ye ghabele bardasht az computer estefade mishavad. Agar behtarin dastgah ra moshakhas nakonid, `eject` be soorate pishfarz avalin dastgahi ra ke peyda konad birun mi اندازد.
+
+⚙️ **Gozine-ha:**
+    🔹 `eject` --> 🚪 Birun andakhtane disk-e pishfarz
+    🔹 `eject -t` --> ⏪ Baz kardan va baste shodan tray-e CD-ROM (dar baazi az system-ha)
+    🔹 `eject /dev/sr0` --> 🎯 Birun andakhtane dastgah moshakhas (masalan CD-ROM)
+    🔹 `eject -i on/off` --> 🔒 Baz ya baste kardan dastgah az tarrife eject
+
+🛠 **Mesal-ha:**
+
+    $ eject
+
+    🔹 Birun andakhtane CD-ROM pishfarz
+
+    $ eject /dev/sdb1
+
+    🔹 Birun andakhtane USB drive az device file `/dev/sdb1`
+
+✅ **Mesal sade:**
+
+    $ eject /dev/cdrom
+
+    🔹 Dastoor بالا CD-ROM ra birun mi اندازد. Agar CD ya DVD dar device باشد, آن را خارج می کند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `eject` command is used to eject CD-ROMs, DVD-ROMs, USB drives, or other removable media from the computer. If you don't specify a device, `eject` will, by default, attempt to eject the first ejectable device.
+
+⚙️ **Options:**
+    🔹 `eject` --> 🚪 Eject the default device.
+    🔹 `eject -t` --> ⏪ Close and open the CD-ROM tray (on some systems)
+    🔹 `eject /dev/sr0` --> 🎯 Eject a specified device (e.g., CD-ROM)
+    🔹 `eject -i on/off` --> 🔒 Prevent or allow eject from being called on the device
+
+🛠 **Examples:**
+
+    $ eject
+
+    🔹 Eject the default CD-ROM device
+
+    $ eject /dev/sdb1
+
+    🔹 Eject the USB drive from the device file `/dev/sdb1`
+
+✅ **Simple Example:**
+
+    $ eject /dev/cdrom
+
+    🔹 This command ejects the CD-ROM. If a CD or DVD is in the drive, it will be ejected.

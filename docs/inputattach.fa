@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `inputattach` baraye vasl kardane yek dastgah voroodi (mesle mouse ya keyboard) be yek handler rooy system Linux estefade mishavad. Yani, in dastoor be shoma ejazeh mide ke be system begooyid ke yek dastgah voroodi khass ra chegone bekhani va ba aan kar konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `inputattach --help` --> ℹ️ Namayeshe rahnama va etela'at bishtar dar morede gozine-ha.
+    🔹 `inputattach <handler> <dastgah>` --> 🔌 Vasl kardane dastgah be yek handler khass.  `<handler>` mesle `ps2`, `serio`, ya `usb` ast, va `<dastgah>` address ya path dastgah ast.
+
+🛠 **Mesal-ha:**
+
+    $ inputattach ps2 /dev/input/mice
+    
+    🔹 Vasl kardane mouse PS/2 be handler PS/2.
+
+    $ inputattach usb /dev/input/mouse0
+    
+    🔹 Vasl kardane mouse USB be handler USB.
+
+✅ **Mesal sade:**
+
+    $ inputattach serio /dev/ttyS0
+    
+    🔹 Dar in mesal, ma yek dastgah serial ra be handler serio vasl mikonim. Agar terminal ya mouse serial dashte bashid, in dastoor be kar miayad. Agar dastgah va handler dorost vasl shavand, dastgah shoro be kar kardan mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `inputattach` command is used to attach an input device (like a mouse or keyboard) to a specific handler on a Linux system. It essentially tells the system how to read and interact with a particular input device.
+
+⚙️ **Options:**
+    🔹 `inputattach --help` --> ℹ️ Display help information and more details about options.
+    🔹 `inputattach <handler> <device>` --> 🔌 Attach the device to a specific handler.  `<handler>` could be `ps2`, `serio`, or `usb`, and `<device>` is the address or path of the device.
+
+🛠 **Examples:**
+
+    $ inputattach ps2 /dev/input/mice
+    
+    🔹 Attach a PS/2 mouse to the PS/2 handler.
+
+    $ inputattach usb /dev/input/mouse0
+    
+    🔹 Attach a USB mouse to the USB handler.
+
+✅ **Simple Example:**
+
+    $ inputattach serio /dev/ttyS0
+    
+    🔹 In this example, we attach a serial device to the serio handler. This can be useful if you have a serial terminal or mouse. If the device and handler are correctly connected, the device should begin working.

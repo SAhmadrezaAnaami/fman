@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsinitramfs` baraye didan ehteviate yek file initramfs (initial RAM filesystem) estefade mishavad.  Initramfs yek file archive ast ke dar zaman boot estefade mishavad ta system ra load konad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `lsinitramfs` --> 📜 Namayeshe hameye file-ha va directory-ha dar initramfs.
+    🔹 `lsinitramfs -l` --> 📜 Namayeshe etela'ate bishtar darbareye file-ha (permission-ha, size, tarikhe tagheer).
+    🔹 `lsinitramfs -v` --> 💬 Namayeshe verbos output (etela'ate tafsili).
+
+🛠 **Mesal-ha:**
+    $ lsinitramfs /boot/initramfs-$(uname -r).img
+
+    🔹 Namayeshe ehteviate file initramfs pishfarz.
+
+    $ lsinitramfs -l /boot/initramfs-$(uname -r).img | less
+
+    🔹 Namayeshe ehteviate file initramfs ba etela'ate tafsili dar yek safhe.
+
+✅ **Mesal sade:**
+
+    $ lsinitramfs /boot/initramfs-$(uname -r).img | grep "kernel"
+
+    🔹  Peyda kardane hameye file-ha ya directory-ha ke dar filename "kernel" darand dar initramfs.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsinitramfs` command is used to view the contents of an initramfs (initial RAM filesystem) file.  An initramfs is an archive used during boot to load the system.
+
+⚙️ **Options:**
+    🔹 `lsinitramfs` --> 📜 Shows all files and directories in the initramfs.
+    🔹 `lsinitramfs -l` --> 📜 Shows more detailed information about the files (permissions, size, modification date).
+    🔹 `lsinitramfs -v` --> 💬 Shows verbose output (detailed information).
+
+🛠 **Examples:**
+    $ lsinitramfs /boot/initramfs-$(uname -r).img
+
+    🔹 Shows the contents of the default initramfs file.
+
+    $ lsinitramfs -l /boot/initramfs-$(uname -r).img | less
+
+    🔹 Shows the contents of the initramfs file with detailed information, piped to `less` for easier viewing.
+
+✅ **Simple Example:**
+
+    $ lsinitramfs /boot/initramfs-$(uname -r).img | grep "kernel"
+
+    🔹 Finds all files or directories containing the word "kernel" in their name within the initramfs.

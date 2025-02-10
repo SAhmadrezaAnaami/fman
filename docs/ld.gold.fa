@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `ld.gold` yek linker-e (link editor) jayedil (alternative) be `ld` ast, ke oboora'ee ziyad (optimization) darad. Linker kar mikonad ta object file-ha ra be ham vasl konad va yek file ejraee (executable) ya library besazad. `ld.gold` baraye sor'at va miizan-e estefade az memory behtar ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help` --> ❓ Namayesh rahnamaye dastoor.
+    🔹 `-o <file>` --> 📤 Esme file khroji ra moshakhas mikonad.
+    🔹 `-l<library>` --> 📚 Library ra link mikonad. (mesle libm.so)
+    🔹 `-L<directory>` --> 📁 Directory ra baraye library-ha ezafe mikonad.
+    🔹 `-shared` --> 🔗 Yek shared library misazad.
+
+🛠 **Mesal-ha:**
+
+    $ ld.gold -o program main.o module1.o module2.o
+
+    🔹 Files `main.o`, `module1.o`, va `module2.o` ra be ham link mikonad va file ejraee (executable) `program` ra misazad.
+
+    $ ld.gold -shared -o libexample.so module1.o module2.o
+
+    🔹 Files `module1.o` va `module2.o` ra be ham link mikonad va yek shared library ba name `libexample.so` misazad.
+
+✅ **Mesal sade:**
+
+    $ ld.gold -o myapp main.o -lc
+
+    🔹 File `main.o` ra ba C standard library (`libc`) link mikonad va yek file ejraee (executable) ba name `myapp` misazad.  `lc` yani library C (C standard library).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `ld.gold` is an alternative linker (link editor) to `ld`, designed with optimizations. The linker combines object files to create an executable file or library. `ld.gold` aims for improved speed and memory utilization.
+
+⚙️ **Options:**
+    🔹 `--help` --> ❓ Display command help.
+    🔹 `-o <file>` --> 📤 Specify the output file name.
+    🔹 `-l<library>` --> 📚 Link the library (e.g., libm.so).
+    🔹 `-L<directory>` --> 📁 Add a directory to the library search path.
+    🔹 `-shared` --> 🔗 Create a shared library.
+
+🛠 **Examples:**
+
+    $ ld.gold -o program main.o module1.o module2.o
+
+    🔹 Links the files `main.o`, `module1.o`, and `module2.o` to create an executable named `program`.
+
+    $ ld.gold -shared -o libexample.so module1.o module2.o
+
+    🔹 Links the files `module1.o` and `module2.o` to create a shared library named `libexample.so`.
+
+✅ **Simple Example:**
+
+    $ ld.gold -o myapp main.o -lc
+
+    🔹 Links the file `main.o` with the C standard library (`libc`) to create an executable named `myapp`. `lc` specifies the C standard library.

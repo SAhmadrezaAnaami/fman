@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gp-display-html` baraye namayesh dadane file-haye HTML dar terminal estefade mishavad.  In dastoor HTML ra migirad va aan ra be shekle matni ke ghabl-khani bashad namayesh midahad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`  --> ℹ️  Namayesh dadane version dastoor.
+    🔹 `--help`     --> ❓ Rahnamayi baraye estefade az dastoor va gozine-hayash.
+    🔹 `<filename>` --> 📄 Name file HTML ke bayad namayesh dade shavad.
+
+🛠 **Mesal-ha:**
+
+    $ gp-display-html page.html
+    
+    🔹 Namayesh dadane content file `page.html`.
+
+    $ gp-display-html --help
+    
+    🔹 Namayesh dadane rahnama baraye dastoor.
+
+✅ **Mesal sade:**
+
+    $ gp-display-html index.html
+
+    🔹 Agar file `index.html` shamel matni mesl `<h1>Hello, world!</h1><p>This is a test page.</p>` bashad, terminal matne moratab shode ra namayesh midahad, hata agar namayeshe kamel HTML nabashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gp-display-html` command is used to display HTML files in the terminal. It takes HTML as input and renders it into a readable text format.
+
+⚙️ **Options:**
+    🔹 `--version`  --> ℹ️  Display the command's version.
+    🔹 `--help`     --> ❓ Show help information about the command and its options.
+    🔹 `<filename>` --> 📄 The name of the HTML file to be displayed.
+
+🛠 **Examples:**
+
+    $ gp-display-html page.html
+    
+    🔹 Display the content of the `page.html` file.
+
+    $ gp-display-html --help
+    
+    🔹 Display the help information for the command.
+
+✅ **Simple Example:**
+
+    $ gp-display-html index.html
+
+    🔹 If the `index.html` file contains text like `<h1>Hello, world!</h1><p>This is a test page.</p>`, the terminal will display a formatted text representation, though not a full HTML rendering.

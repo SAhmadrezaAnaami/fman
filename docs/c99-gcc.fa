@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `c99-gcc` yek dastoor baraye compaile kardan code-haye C standard C99 ba estefade az GCC (GNU Compiler Collection) ast. In dastoor komak mikonad ta az vizhegi-ha va ghavaede standard C99 dar barname-haye khod estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o <esm-barname>`  --> 💾 Esme file khoruji ra moshakhas mikonad. Agar in gozine nayayad, file `a.out` dorost mishavad.
+    🔹 `-Wall`  --> ⚠️ Hameye warning-ha ra neshan midahad. Komak mikonad ta error-ha va moshkelat code ra zudtar peyda konid.
+    🔹 `-std=c99`  --> ✅ Moshakhas mikonad ke az standard C99 baraye compaile estefade shavad. (usually unnecessary as `c99-gcc` implies this)
+    🔹 `-g`  --> 🐞 Baraye debug kardan barname, etela'at debug ra ezafe mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ c99-gcc barname.c
+
+    🔹 Barname `barname.c` ra compaile mikonad va file khoruji `a.out` dorost mishavad.
+
+    $ c99-gcc -o barname barname.c
+
+    🔹 Barname `barname.c` ra compaile mikonad va file khoruji `barname` dorost mishavad.
+
+    $ c99-gcc -Wall -o barname barname.c
+
+    🔹 Barname `barname.c` ra compaile mikonad, hameye warning-ha ra neshan midahad va file khoruji `barname` dorost mishavad.
+
+✅ **Mesal sade:**
+
+    $ c99-gcc -Wall -g -o myprogram myprogram.c
+
+    🔹 In dastoor `myprogram.c` ra ba warning-haye ziad compaile mikonad, etela'at debug ra ezafe mikonad va file khoruji ra `myprogram` esm-gozari mikonad, baraye debug kardan rahattar bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `c99-gcc` is a command to compile C code adhering to the C99 standard using the GCC (GNU Compiler Collection). This command helps you utilize C99 standard features and rules in your programs.
+
+⚙️ **Options:**
+    🔹 `-o <program-name>`  --> 💾 Specifies the name of the output file. If not specified, the file `a.out` is created.
+    🔹 `-Wall`  --> ⚠️ Shows all warnings. Helps you find errors and issues in your code faster.
+    🔹 `-std=c99`  --> ✅ Specifies that the C99 standard should be used for compilation. (usually unnecessary as `c99-gcc` implies this)
+    🔹 `-g`  --> 🐞 Adds debugging information for debugging the program.
+
+🛠 **Examples:**
+
+    $ c99-gcc program.c
+
+    🔹 Compiles the `program.c` file and creates an output file named `a.out`.
+
+    $ c99-gcc -o program program.c
+
+    🔹 Compiles the `program.c` file and creates an output file named `program`.
+
+    $ c99-gcc -Wall -o program program.c
+
+    🔹 Compiles the `program.c` file, shows all warnings, and creates an output file named `program`.
+
+✅ **Simple Example:**
+
+    $ c99-gcc -Wall -g -o myprogram myprogram.c
+
+    🔹 This command compiles `myprogram.c` with all warnings enabled, adds debugging information, and names the output file `myprogram` for easier debugging.

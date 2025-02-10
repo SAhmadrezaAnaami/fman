@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `docker-compose` baraye ejra va modiriat barname-haye Docker ke az chand container tashkil shode-and estefade mishavad. Ba estefade az yek file `docker-compose.yml`, mitoonid hameye container-ha, network-ha va volume-ha ra ba ham tarif konid va be soorati yekparche ejra konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `docker-compose up`  --> 🚀 Container-ha ra misazad va ejra mikonad.
+    🔹 `docker-compose down`  --> ⛔ Container-ha, network-ha va volume-ha ra pak mikonad.
+    🔹 `docker-compose ps`  --> ℹ️ Vaziat container-ha ra neshon midahad.
+    🔹 `docker-compose logs`  --> 📝 Log-haye container-ha ra neshon midahad.
+    🔹 `docker-compose exec [service] [command]` --> 💻 Dastoor ra dar yek container ejra mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ docker-compose up -d
+
+    🔹 Container-ha ra dar paszamine (detached mode) ejra mikonad.
+
+    $ docker-compose down
+
+    🔹 Hameye container-ha ra motavaqef mikonad va network-ha va volume-ha ra hazf mikonad.
+
+✅ **Mesal sade:**
+
+    $ docker-compose logs web
+
+    🔹 Log-haye service ba name `web` ra neshon midahad, baraye peyda kardan error-ha mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `docker-compose` command is used to run and manage multi-container Docker applications. Using a `docker-compose.yml` file, you can define all your containers, networks, and volumes together and run them in a single command.
+
+⚙️ **Options:**
+    🔹 `docker-compose up`  --> 🚀 Builds and starts the containers.
+    🔹 `docker-compose down`  --> ⛔ Stops and removes containers, networks, and volumes.
+    🔹 `docker-compose ps`  --> ℹ️ Shows the status of the containers.
+    🔹 `docker-compose logs`  --> 📝 Shows the logs of the containers.
+    🔹 `docker-compose exec [service] [command]` --> 💻 Executes a command in a running container.
+
+🛠 **Examples:**
+
+    $ docker-compose up -d
+
+    🔹 Runs the containers in detached mode (background).
+
+    $ docker-compose down
+
+    🔹 Stops all containers and removes the networks and volumes.
+
+✅ **Simple Example:**
+
+    $ docker-compose logs web
+
+    🔹 Shows the logs for the service named `web`, useful for debugging errors.

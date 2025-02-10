@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-shlibdeps` baraye dorost kardan dependency-haye shared library (`.so`) baraye package-haye Debian (`.deb`) estefade mishavad. Yani, moshakhas mikonad ke yek barnameh be kodam library-haye moshtarak niaz darad ta dorost kar konad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `-Oobject` --> 🎯 Farsi az object file bejaye control file.
+    🔹 `-d`        --> 🐞 Eejad file `debian/substvars` baraaye estefade ba `dpkg-gencontrol`.
+    🔹 `-l`        --> 📚 Ezafe kardane library path.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-shlibdeps debian/mypackage.control
+
+    🔹 Check kardan dependency-haye library baraaye package `mypackage`.
+
+    $ dpkg-shlibdeps -Odebian/mypackage.control -l/opt/mylibs
+
+    🔹  Check kardan dependency-haye library az object file `mypackage.control` va ezafe kardane `/opt/mylibs` be library path.
+
+✅ **Mesal sade:**
+
+    $ dpkg-shlibdeps debian/control
+
+    🔹  Scan kardane file control va moshakhas kardane dependency-haye shared library lazem baraye package. Output shamel esme library-ha va version-haye mored niaz ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-shlibdeps` command is used to generate shared library dependencies for Debian packages (`.deb`). It determines which shared libraries (`.so`) a program needs to run correctly.
+
+⚙️ **Options:**
+    🔹 `-Oobject` --> 🎯 Parse an object file instead of a control file.
+    🔹 `-d`        --> 🐞 Create a `debian/substvars` file for use with `dpkg-gencontrol`.
+    🔹 `-l`        --> 📚 Add a library path.
+
+🛠 **Examples:**
+
+    $ dpkg-shlibdeps debian/mypackage.control
+
+    🔹 Check library dependencies for the `mypackage` package.
+
+    $ dpkg-shlibdeps -Odebian/mypackage.control -l/opt/mylibs
+
+    🔹 Check library dependencies from the object file `mypackage.control` and add `/opt/mylibs` to the library path.
+
+✅ **Simple Example:**
+
+    $ dpkg-shlibdeps debian/control
+
+    🔹 Scans the control file and identifies the shared library dependencies required by the package. The output includes the names of the libraries and the required versions.

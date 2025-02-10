@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cupstestppd` baraye check kardane dorosti va eskan-e-standard budane yek file PPD (PostScript Printer Description) baraye estefade dar CUPS (Common UNIX Printing System) be kar miravad.  In dastoor komak mikonad ta etminan hasil shavad ke printer be dorosti dar system shenakhte shode va kar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cupstestppd filename.ppd` --> 📄 Check kardane file PPD va namayesh dadane error-ha va warning-ha.
+    🔹 `cupstestppd -v filename.ppd` --> 🗣️ Namayesh etela'at bishtar dar morede check kardane file PPD.
+    🔹 `cupstestppd -s filename.ppd` --> 🛑 Check faghat baraye error-ha-ye sakhtgirane (strict).
+
+🛠 **Mesal-ha:**
+
+    $ cupstestppd myprinter.ppd
+
+    🔹 Check kardane file PPD be name `myprinter.ppd` va namayesh dadane natije.
+
+    $ cupstestppd -v myprinter.ppd
+
+    🔹 Check kardane file PPD be name `myprinter.ppd` ba verbose mode (etela'at bishtar).
+
+✅ **Mesal sade:**
+
+    $ cupstestppd printer.ppd
+
+    🔹 Dastoor file `printer.ppd` ra check mikonad va agar error-ha ya warning-ha vojood dashte bashad, anha ra namayesh midahad. Agar file be dorosti scan shavad, hich chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cupstestppd` command is used to check the validity and standards compliance of a PPD (PostScript Printer Description) file for use with CUPS (Common UNIX Printing System). It helps ensure that the printer is correctly recognized and functions properly within the system.
+
+⚙️ **Options:**
+    🔹 `cupstestppd filename.ppd` --> 📄 Checks the PPD file and displays any errors or warnings.
+    🔹 `cupstestppd -v filename.ppd` --> 🗣️ Provides more verbose output regarding the PPD file check.
+    🔹 `cupstestppd -s filename.ppd` --> 🛑 Checks only for strict errors.
+
+🛠 **Examples:**
+
+    $ cupstestppd myprinter.ppd
+
+    🔹 Checks the PPD file named `myprinter.ppd` and displays the result.
+
+    $ cupstestppd -v myprinter.ppd
+
+    🔹 Checks the PPD file named `myprinter.ppd` in verbose mode (more detailed output).
+
+✅ **Simple Example:**
+
+    $ cupstestppd printer.ppd
+
+    🔹 This command checks the `printer.ppd` file and displays any errors or warnings if they exist. If the file scans correctly, nothing will be displayed.

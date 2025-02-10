@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_testdir` baraye ejra kardan test-haye standard bad az sakhte pakage Debian estefade mishavad. In dastoor be shoma komak mikonad ke az dorost kar kardan file-ha va pooshe-haye shoma dar pakage Debian motmaen shavid. Yani be jaye inke shoma be tore dasti tek tek file-ha ro check konid, `dh_testdir` in kar ro baraye shoma anjam mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir pooshe`  --> 📁 Specify mikonad kodam pooshe bayad test shavad (default: `debian/tmp`). Yani age shoma mikhayid ye pooshe dige ro test konid (be joz `debian/tmp`), az in gozine estefade konid.
+    🔹 `--list-missing`  --> 🔍 List mikonad file-haee ke dar `debian/install` hastan vali dar pooshe install shode nistan. Yani age shoma file-haee ro dar list install dashte bashid ke dar pooshe install shode nabashan, in gozine be shoma neshon mide.
+    🔹 `--no-fail` --> 🚧 Agar test fail shod, bazam edame mide va error nemide. Yani age test-ha be moshkel khordan, build process stop nemishe.
+
+🛠 **Mesal-ha:**
+
+    $ dh_testdir
+    🔹 Ejdra kardan test-haye standard dar `debian/tmp`.
+
+    $ dh_testdir --sourcedir=tmp/my_app
+    🔹 Ejdra kardan test-ha dar pooshe `tmp/my_app`.
+
+✅ **Mesal sade:**
+
+    $ dh_testdir --list-missing
+    🔹 Agar file-haee dar `debian/install` bashand ke install nashode bashand, list mishavand. In komak mikonad ke az install shodan hameye file-ha motmaen shavid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_testdir` command is used to run standard tests after building a Debian package. It helps ensure that your files and directories are correctly placed in the Debian package. Instead of manually checking each file, `dh_testdir` automates the process for you.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory` --> 📁 Specifies which directory to test (default: `debian/tmp`). Use this option if you want to test a directory other than the default.
+    🔹 `--list-missing` --> 🔍 Lists files present in `debian/install` that are missing from the installed directory. This helps to identify if any files listed for installation were not actually installed.
+    🔹 `--no-fail` --> 🚧 Continues execution even if tests fail, preventing errors. This means the build process will not stop if any tests encounter issues.
+
+🛠 **Examples:**
+
+    $ dh_testdir
+    🔹 Run standard tests in `debian/tmp`.
+
+    $ dh_testdir --sourcedir=tmp/my_app
+    🔹 Run tests in the `tmp/my_app` directory.
+
+✅ **Simple Example:**
+
+    $ dh_testdir --list-missing
+    🔹 Lists any files in `debian/install` that have not been installed. This helps ensure that all specified files are installed correctly.

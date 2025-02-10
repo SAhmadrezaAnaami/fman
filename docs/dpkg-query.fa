@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-query` baraye gereftan etela'at dar morede package-haye `deb` (Debian package) nasb shode dar system estefade mishavad.  Mitavan az aan baraye fahmidane versiyon, tarikh nasb, va digar etela'at package-ha estefade kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg-query -l [esm-e-package]` --> 📜 List kardan etela'at dar morede yek ya chand package. Agar esm-e-package dade nashavad, hameye package-haye nasb shode ra neshon midahad.
+    🔹 `dpkg-query -s [esm-e-package]` --> 👀 Namayesh etela'ate kamel (status) yek package.
+    🔹 `dpkg-query -L [esm-e-package]` --> 📁 List kardan hameye file-haei ke yek package nasb karde ast.
+    🔹 `dpkg-query -W [esm-e-package]` --> 🔍 Namayesh name va versiyon package dar yek khatt.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-query -l firefox
+
+    🔹 Namayesh etela'at dar morede package `firefox`.
+
+    $ dpkg-query -s apache2
+
+    🔹 Namayesh etela'ate kamel dar morede package `apache2`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-query -l | grep nano
+
+    🔹 Peida kardan va namayesh package-haye nasb shode ke esm-e `nano` dar aanha vojood darad.  In komak mikonad package-haye marboote be `nano` ra peida konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-query` command is used to retrieve information about installed `deb` (Debian package) packages on your system. You can use it to find out the version, installation date, and other details of packages.
+
+⚙️ **Options:**
+    🔹 `dpkg-query -l [package-name]` --> 📜 List information about one or more packages. If no package name is provided, it will show all installed packages.
+    🔹 `dpkg-query -s [package-name]` --> 👀 Display full status information of a package.
+    🔹 `dpkg-query -L [package-name]` --> 📁 List all files that a package installed.
+    🔹 `dpkg-query -W [package-name]` --> 🔍 Display package name and version in one line.
+
+🛠 **Examples:**
+
+    $ dpkg-query -l firefox
+
+    🔹 Show information about the `firefox` package.
+
+    $ dpkg-query -s apache2
+
+    🔹 Show detailed information about the `apache2` package.
+
+✅ **Simple Example:**
+
+    $ dpkg-query -l | grep nano
+
+    🔹 Find and display installed packages that have `nano` in their name. This helps to find packages related to `nano`.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2hiperc-wrapper` yek dastoor-e komaki baraye chapgar-haye (printer-ha) rangi va siaah-sefid-e (grayscale) hast ke az protocol-e "foo2zjs" estefade mikonand. In dastoor be shoma komak mikonad ke chapgar-e khod ra ba estefade az yek rah-andazi-ye (driver) baz (open-source) be rah andazid.  Be zabane sade, in dastoor "wrapper" ast ke kar ra baraye rah andazi chapgar asan mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`   --> ❓ Namayesh rahnama-ye dastoor va gozine-ha.
+    🔹 `--version`--> ℹ️ Namayesh version-e `foo2hiperc-wrapper`.
+    🔹 `<chapgar>`  --> 🖨️  Esm-e chapgari ke mikhahid az an estefade konid (masalan: HP1020). Agar esm chapgar ra nadehid, dastoor be soorat khodkar chapgar-e pishfarz ra entekhab mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ foo2hiperc-wrapper --help
+
+    🔹  Namayesh rahnama-ye dastoor.
+
+    $ foo2hiperc-wrapper HP1020
+
+    🔹  Rah andazi chapgar-e HP1020 ba rah andazi-ye `foo2zjs`.
+
+✅ **Mesal sade:**
+
+    $ foo2hiperc-wrapper
+
+    🔹 Agar chapgar-e pishfarz dar system taeen shode bashad, in dastoor be soorat khodkar an ra ba rah andazi-ye `foo2zjs` rah andazi mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2hiperc-wrapper` command is a helper script for color and grayscale printers that use the "foo2zjs" protocol. It helps you to set up your printer using an open-source driver.  In simple terms, this command is a "wrapper" that makes printer setup easier.
+
+⚙️ **Options:**
+    🔹 `--help`   --> ❓ Display the command's help and options.
+    🔹 `--version`--> ℹ️ Display the `foo2hiperc-wrapper` version.
+    🔹 `<printer>` --> 🖨️ The name of the printer you want to use (e.g., HP1020). If you don't provide a printer name, the command will automatically select the default printer.
+
+🛠 **Examples:**
+
+    $ foo2hiperc-wrapper --help
+
+    🔹  Displays the command's help information.
+
+    $ foo2hiperc-wrapper HP1020
+
+    🔹  Sets up the HP1020 printer using the `foo2zjs` driver.
+
+✅ **Simple Example:**
+
+    $ foo2hiperc-wrapper
+
+    🔹 If a default printer is already configured in the system, this command will automatically set it up using the `foo2zjs` driver.

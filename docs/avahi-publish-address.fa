@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-publish-address` baraye pakhsh kardane address-haye IP rooye shabake ba estefade az Avahi (zeroconf implementation) be kar mirevad. In dastoor be device-ha va service-ha ijaze mide ke bedoon configure-haye sakht, hamdigaro peyda konan.  
+
+⚙️ **Gozine-ha:**
+    🔹 `-v` --> 📢 Nemayesh dadane etela'ate bishtar (verbose mode) dar morede pakhsh
+    🔹 `-a <IP address>` --> 🌐 Address IP-i ke bayad pakhsh beshe ro moshakhas mikone. Agar moshakhas nashode bashe, az hameye address-haye IP local estefade mikone.
+    🔹 `<domain name>` --> 🏷️ Esme domain-i ro moshakhas mikone ke address IP bayad behesh vasl beshe.
+
+🛠 **Mesal-ha:**
+
+    $ avahi-publish-address mycomputer.local 192.168.1.100
+
+    🔹 Address IP 192.168.1.100 ro ba name domain "mycomputer.local" pakhsh mikone.
+
+    $ avahi-publish-address -a 192.168.1.105 printer.local
+
+    🔹 Address IP 192.168.1.105 ro ba name domain "printer.local" pakhsh mikone.
+
+✅ **Mesal sade:**
+
+    $ avahi-publish-address mydevice.local 192.168.1.120
+
+    🔹 Agar computer ya device digeyi rooye shabake bekhad "mydevice.local" ro peyda kone, address IP 192.168.1.120 behesh dade mishe, va be device ijaze mide ke bedoon configure daste, be device shoma vasl beshe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-publish-address` command is used to publish IP addresses on the network using Avahi (a zeroconf implementation). This allows devices and services to discover each other without complex configuration.
+
+⚙️ **Options:**
+    🔹 `-v` --> 📢 Enables verbose mode, providing more information about the publishing process.
+    🔹 `-a <IP address>` --> 🌐 Specifies the IP address to publish. If not specified, it uses all local IP addresses.
+    🔹 `<domain name>` --> 🏷️ Specifies the domain name to associate with the IP address.
+
+🛠 **Examples:**
+
+    $ avahi-publish-address mycomputer.local 192.168.1.100
+
+    🔹 Publishes the IP address 192.168.1.100 with the domain name "mycomputer.local".
+
+    $ avahi-publish-address -a 192.168.1.105 printer.local
+
+    🔹 Publishes the IP address 192.168.1.105 with the domain name "printer.local".
+
+✅ **Simple Example:**
+
+    $ avahi-publish-address mydevice.local 192.168.1.120
+
+    🔹 If another computer or device on the network tries to find "mydevice.local", it will be given the IP address 192.168.1.120, allowing that device to connect to your device without manual configuration.

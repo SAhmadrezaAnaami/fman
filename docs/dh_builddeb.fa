@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_builddeb` baraye sakhtane pakage .deb az file-haye temporari (temp) estefade mishavad. In dastoor ghesmati az Debian Helper (dh) ast va karhaye pechideye sakhtane pakage-ha ra asan mikonad. Yani, be jaye inke shoma dastoorat ziyadi benevisid, `dh_builddeb` khodash karhaye lazem ra anjam midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-a, --arch`  --> 🎯 Moshakhas kardane architecture (masalan, amd64, i386). Agar moshakhas nakonid, architecture default estefade mishavad.
+    🔹 `-p, --package` --> 📦  Sakhtane faghat yek pakage moshakhas, na hameye package-ha.
+    🔹 `-u, --ultimate-destdir` --> 📂 Moshakhas kardane directory nihayi baraye pakage .deb. Agar moshakhas nakonid, directory default estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_builddeb
+    
+    🔹 Sakhtane pakage .deb ba estefade az etela'ate default.
+
+    $ dh_builddeb -a amd64
+    
+    🔹 Sakhtane pakage .deb baraye architecture amd64.
+
+    $ dh_builddeb -p mypackage
+    
+    🔹 Sakhtane faghat package-i ke name-ash "mypackage" ast.
+
+✅ **Mesal sade:**
+
+    $ dh_builddeb
+    
+    🔹 Agar directory `debian/` mojood bashad va file-haye control va rules dar an bashand, `dh_builddeb` pakage .deb ra az anha misazad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_builddeb` command is used to build a .deb package from temporary files.  It's part of the Debian Helper (dh) suite and simplifies the complex tasks of building Debian packages. Instead of writing many commands yourself, `dh_builddeb` handles the necessary steps automatically.
+
+⚙️ **Options:**
+    🔹 `-a, --arch`  --> 🎯 Specifies the architecture (e.g., amd64, i386). If not specified, the default architecture is used.
+    🔹 `-p, --package` --> 📦  Build only a specific package, not all of them.
+    🔹 `-u, --ultimate-destdir` --> 📂 Specifies the final destination directory for the .deb package. If not specified, the default directory is used.
+
+🛠 **Examples:**
+
+    $ dh_builddeb
+    
+    🔹 Build a .deb package using default settings.
+
+    $ dh_builddeb -a amd64
+    
+    🔹 Build a .deb package for the amd64 architecture.
+
+    $ dh_builddeb -p mypackage
+    
+    🔹 Build only the package named "mypackage".
+
+✅ **Simple Example & Explanation:**
+
+    $ dh_builddeb
+    
+    🔹 If the `debian/` directory exists and contains control and rules files, `dh_builddeb` will build a .deb package from them.

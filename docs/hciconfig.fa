@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hciconfig` baraye peyda kardan va tagheer dadan etela'at adapter Bluetooth dar system shoma estefade mishavad. In dastoor be shoma komak mikonad ta device Bluetooth khod ra config konid, status aan ra bebinid, va address MAC aan ra tagheer dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hciconfig`        -->  ℹ️ Namayesh hameye device-haye Bluetooth va etela'at aanha
+    🔹 `hciconfig hci0 up`  -->  📶 Roshan kardan (up) yek device Bluetooth moshakhas (hci0)
+    🔹 `hciconfig hci0 down`-->  🚫 Khamosh kardan (down) yek device Bluetooth moshakhas (hci0)
+    🔹 `hciconfig hci0 name <esme_jadid>`  --> 🏷️ Tagheer dadan esme device Bluetooth (hci0) be <esme_jadid>
+    🔹 `hciconfig hci0 reset` --> 🔄 Reset kardan device Bluetooth (hci0)
+
+🛠 **Mesal-ha:**
+
+    $ hciconfig
+
+    🔹 Namayesh etela'at hameye adapterhaye Bluetooth.
+
+    $ hciconfig hci0 up
+
+    🔹 Roshan kardan adapter Bluetooth ba name 'hci0'.
+
+✅ **Mesal sade:**
+
+    $ hciconfig hci0
+
+    🔹 Namayesh etela'at adapter Bluetooth ba name 'hci0', mesle address MAC va status.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hciconfig` command is used to configure Bluetooth devices on your system. It allows you to view information about Bluetooth adapters, bring them up or down, and modify their settings like the name and MAC address.
+
+⚙️ **Options:**
+    🔹 `hciconfig`              --> ℹ️ Displays information about all Bluetooth devices
+    🔹 `hciconfig hci0 up`    --> 📶 Brings the specified Bluetooth device (hci0) up (enables it)
+    🔹 `hciconfig hci0 down`  --> 🚫 Brings the specified Bluetooth device (hci0) down (disables it)
+    🔹 `hciconfig hci0 name <new_name>` --> 🏷️ Changes the name of the Bluetooth device (hci0) to <new_name>
+    🔹 `hciconfig hci0 reset`  --> 🔄 Resets the specified Bluetooth device (hci0)
+
+🛠 **Examples:**
+
+    $ hciconfig
+
+    🔹 Displays information about all Bluetooth adapters.
+
+    $ hciconfig hci0 up
+
+    🔹 Enables the Bluetooth adapter named 'hci0'.
+
+✅ **Simple Example:**
+
+    $ hciconfig hci0
+
+    🔹 Displays detailed information about the Bluetooth adapter 'hci0', such as its MAC address and status.

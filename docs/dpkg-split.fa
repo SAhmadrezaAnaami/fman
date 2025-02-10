@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-split` baraye taksim kardan file-haye bozorg `.deb` (package Debian) be ghesmathaye koochaktar baraye enteqal asantare anha be kar miravad.  In be makhsos mohem ast vaghti ke shoma mikhahid yek package-e bozorg ra az tarigh email ya media-ye mahdood enteqal dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-s<size>` --> ✂️  Andazeye har ghesmat ra moshakhas mikonad (be kilobyte).  Masalan, `-s1024` har ghesmat ra 1024KB misazad.
+    🔹 `-a<archive>` --> 📦 Esme file aslie `.deb` ra moshakhas mikonad ke bayad taksim shavad.
+    🔹 `-o<output-prefix>` --> 📂  Prefix-e esm baraye file-haye ghesmat shode ra moshakhas mikonad.  Agar moshakhas nashavad, az esme file asli estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-split -s1024 -a mypackage.deb
+    
+    🔹 File `mypackage.deb` ra be ghesmat haye 1024KB taksim mikonad.
+
+    $ dpkg-split -s2048 -a bigpackage.deb -obigpackage.part
+    
+    🔹 File `bigpackage.deb` ra be ghesmat haye 2048KB taksim mikonad va name ghesmat ha `bigpackage.part.aa`, `bigpackage.part.ab`, va ... khahad bood.
+
+✅ **Mesal sade:**
+
+    $ dpkg-split -s500 -a awesomeapp.deb
+    
+    🔹 File `awesomeapp.deb` ra be ghesmat haye 500KB taksim mikonad.  Dar natije, file haye `awesomeapp.deb.aa`, `awesomeapp.deb.ab`, va ... sakhte mishavand.  Baraye bazsazi file asli, bayad az dastoor `cat` estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-split` command is used to split large `.deb` (Debian package) files into smaller parts for easier transfer. This is especially useful when you need to transfer a large package via email or limited media.
+
+⚙️ **Options:**
+    🔹 `-s<size>` --> ✂️  Specifies the size of each part (in kilobytes). For example, `-s1024` will create parts of 1024KB each.
+    🔹 `-a<archive>` --> 📦 Specifies the original `.deb` file to be split.
+    🔹 `-o<output-prefix>` --> 📂 Specifies the output prefix name for the split files. If not specified, the original filename is used.
+
+🛠 **Examples:**
+
+    $ dpkg-split -s1024 -a mypackage.deb
+    
+    🔹 Splits the `mypackage.deb` file into 1024KB parts.
+
+    $ dpkg-split -s2048 -a bigpackage.deb -obigpackage.part
+    
+    🔹 Splits the `bigpackage.deb` file into 2048KB parts, and the parts will be named `bigpackage.part.aa`, `bigpackage.part.ab`, and so on.
+
+✅ **Simple Example:**
+
+    $ dpkg-split -s500 -a awesomeapp.deb
+    
+    🔹 Splits the `awesomeapp.deb` file into 500KB parts.  This will create files named `awesomeapp.deb.aa`, `awesomeapp.deb.ab`, etc. To reconstruct the original file, you can use the `cat` command.

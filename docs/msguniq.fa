@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msguniq` baraye hazf payam-haye tekrar shode dar file-haye tarjome (.po) estefade mishavad. In dastoor komak mikonad ta file-haye tarjome-ye shoma moratabtar va kam-hajmtar bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `msguniq input.po`  --> 📄 File voroodi ra moratab va tekrarat ra hazf mikonad.
+    🔹 `msguniq -o output.po input.po` --> 📤 Natije ra dar yek file jadid zakhire mikonad.
+    🔹 `msguniq --keep-first input.po` --> 🥇 Avalin version har payam tekrar shode ra negah midarad.
+
+🛠 **Mesal-ha:**
+
+    $ msguniq my_translation.po
+
+    🔹 Payam-haye tekrar shode az file `my_translation.po` hazf mishavand va file asli taghir mikonad.
+
+    $ msguniq -o cleaned_translation.po my_translation.po
+
+    🔹 Payam-haye tekrar shode az `my_translation.po` hazf shode va dar file `cleaned_translation.po` zakhire mishavand. File asli taghir nemikonad.
+
+✅ **Mesal sade:**
+
+    $ msguniq --keep-first input.po
+
+    🔹 Agar chand payam moshabeh vojood dashte bashad, avalin payam negah dashte mishavad va baghie hazf mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msguniq` command is used to remove duplicate messages from translation files (.po). This helps to keep your translation files clean and smaller in size.
+
+⚙️ **Options:**
+    🔹 `msguniq input.po` --> 📄 Sorts the input file and removes duplicates.
+    🔹 `msguniq -o output.po input.po` --> 📤 Saves the output to a new file.
+    🔹 `msguniq --keep-first input.po` --> 🥇 Keeps the first occurrence of each duplicate message.
+
+🛠 **Examples:**
+
+    $ msguniq my_translation.po
+
+    🔹 Removes duplicate messages from the `my_translation.po` file, modifying the original file.
+
+    $ msguniq -o cleaned_translation.po my_translation.po
+
+    🔹 Removes duplicate messages from `my_translation.po` and saves the result to the `cleaned_translation.po` file. The original file remains unchanged.
+
+✅ **Simple Example:**
+
+    $ msguniq --keep-first input.po
+
+    🔹 If there are multiple identical messages, the first message is kept, and the others are removed.

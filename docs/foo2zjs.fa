@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2zjs` yek barname ast baraye tabdil file-haye printer PCL (Printer Command Language) be format ZJS. In format baraye printerhaye rangie lazer ke az chipset Zoran estefade mikonand, monaseb ast. Yani shoma mitavanid yek file PCL ra be ZJS tabdil konid ta printer shoma be dorosti an ra chap konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `foo2zjs -r{xres}x{yres}` --> 🎯 Ta'een kardan deghat tasvir (resolution) baraye kharoji. Masalan: `foo2zjs -r600x600`
+    🔹 `foo2zjs -p` --> 🌈 Eejad kardan profile rang, ke baraye behtar shodan rangha estefade mishavad.
+    🔹 `foo2zjs > output.zjs` --> 📤 Save kardane kharoji be yek file ba name `output.zjs`.
+
+🛠 **Mesal-ha:**
+
+    $ foo2zjs < input.pcl > output.zjs
+
+    🔹 Tabdil kardane file `input.pcl` be `output.zjs` ba estefade az default setting-ha.
+
+    $ foo2zjs -r600x600 < input.pcl > output.zjs
+
+    🔹 Tabdil kardane file `input.pcl` be `output.zjs` ba deghate tasvir 600x600 DPI.
+
+✅ **Mesal sade:**
+
+    $ cat document.pcl | foo2zjs -r300x300 > document.zjs
+
+    🔹 In dastoor aval `document.pcl` ra mikhanad, baad an ra ba deghate 300x300 DPI be ZJS tabdil mikonad va dar file `document.zjs` zakhire mikonad.  In rosh kheili monaseb ast baraye printer hayee ke deghate kamtari ra support mikonand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2zjs` command is a utility to convert PCL (Printer Command Language) files to the ZJS format. This format is specifically designed for color laser printers that utilize the Zoran chipset.  It allows you to convert a PCL file to ZJS so that your printer can correctly process and print it.
+
+⚙️ **Options:**
+    🔹 `foo2zjs -r{xres}x{yres}` --> 🎯 Specify the output resolution. For example: `foo2zjs -r600x600`
+    🔹 `foo2zjs -p` --> 🌈 Generate a color profile, which is used to improve color accuracy.
+    🔹 `foo2zjs > output.zjs` --> 📤 Save the output to a file named `output.zjs`.
+
+🛠 **Examples:**
+
+    $ foo2zjs < input.pcl > output.zjs
+
+    🔹 Converts the `input.pcl` file to `output.zjs` using the default settings.
+
+    $ foo2zjs -r600x600 < input.pcl > output.zjs
+
+    🔹 Converts the `input.pcl` file to `output.zjs` with a resolution of 600x600 DPI.
+
+✅ **Simple Example:**
+
+    $ cat document.pcl | foo2zjs -r300x300 > document.zjs
+
+    🔹 This command reads `document.pcl`, converts it to ZJS format with a resolution of 300x300 DPI, and saves it to `document.zjs`. This is useful for printers that support a lower resolution.

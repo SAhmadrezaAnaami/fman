@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `m4` yek dastoor baraye pish-pardazesh matn ast. Yani, matn ra migirad, tagheerati rooye an ijad mikonad (masalan, jayeghozini mikonad), va natijeh ra barmigardanad.  In baraye neveshtane code-haye ghabl-az-compilation va ya ijad configuration file-haye pichideh kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `m4 file.m4`   --> 📄 File `.m4` ra pish-pardazesh mikonad va natijeh ra be stdout mifrestad.
+    🔹 `m4 -o output.txt file.m4`  --> 💾 File `.m4` ra pish-pardazesh mikonad va natijeh ra dar file `output.txt` zakhireh mikonad.
+    🔹 `m4 -Dvariable=value file.m4`  --> 🔑 Variable `variable` ra ba meghdar `value` ta’rif mikonad (define mikonad).  Baraye estefade az in variable dar file `.m4`.
+    🔹 `m4 -Uvariable file.m4`  --> 🗑️  Variable `variable` ra hazf mikonad (undefine mikonad).
+
+🛠 **Mesal-ha:**
+
+    $ m4 input.m4
+
+    🔹 File `input.m4` ra pish-pardazesh mikonad va natijeh ra dar terminal chap mikonad.
+
+    $ m4 -o output.txt input.m4
+
+    🔹 File `input.m4` ra pish-pardazesh mikonad va natijeh ra dar file `output.txt` zakhireh mikonad.
+
+    $ m4 -DVERSION=1.2.3 config.m4 > config.txt
+
+    🔹 Variable `VERSION` ra ba meghdar `1.2.3` ta’rif mikonad, file `config.m4` ra pish-pardazesh mikonad va natijeh ra dar `config.txt` zakhireh mikonad.
+
+✅ **Mesal sade:**
+
+    $ echo "define(\`VERSION\', \`1.0\')" > version.m4
+    $ echo "Version: VERSION" >> version.m4
+    $ m4 version.m4
+
+    🔹  Aval, yek file ba name `version.m4` misazim ke yek variable ba name `VERSION` ra ta’rif mikonad va sepas meghdar an ra dar yek khat chap mikonad.  Dastoor `m4` meghdar `VERSION` ra jayeghozin mikonad va natijeh ra chap mikonad: `Version: 1.0`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `m4` command is a macro processor. It takes text as input, performs transformations on it (such as macro expansion), and outputs the result. It is useful for generating code and configuration files.
+
+⚙️ **Options:**
+    🔹 `m4 file.m4`   --> 📄 Preprocesses the `.m4` file and sends the output to stdout.
+    🔹 `m4 -o output.txt file.m4`  --> 💾 Preprocesses the `.m4` file and saves the output to `output.txt`.
+    🔹 `m4 -Dvariable=value file.m4`  --> 🔑 Defines the variable `variable` with the value `value`. Can be used within the `.m4` file.
+    🔹 `m4 -Uvariable file.m4`  --> 🗑️ Undefines the variable `variable`.
+
+🛠 **Examples:**
+
+    $ m4 input.m4
+
+    🔹 Preprocesses `input.m4` and prints the result to the terminal.
+
+    $ m4 -o output.txt input.m4
+
+    🔹 Preprocesses `input.m4` and saves the result to `output.txt`.
+
+    $ m4 -DVERSION=1.2.3 config.m4 > config.txt
+
+    🔹 Defines the `VERSION` variable with the value `1.2.3`, preprocesses `config.m4`, and saves the result to `config.txt`.
+
+✅ **Simple Example:**
+
+    $ echo "define(\`VERSION\', \`1.0\')" > version.m4
+    $ echo "Version: VERSION" >> version.m4
+    $ m4 version.m4
+
+    🔹 First, a file named `version.m4` is created that defines a variable named `VERSION` and then prints its value in a line. The `m4` command substitutes the value of `VERSION` and prints the result: `Version: 1.0`.

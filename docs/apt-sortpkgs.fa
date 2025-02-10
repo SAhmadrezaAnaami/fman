@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-sortpkgs` baraye moratab kardane file-haye `Packages` (ke etela'at package-ha ro darand) estefade mishe.  In moratab sazi be `apt` komak mikone ta package-ha ro behtar peyda va nasb kone.  Agar file `Packages` ghalat moratab shode bashad, `apt` momkene ba moshkel baray yaftan package-ha robero beshe.
+
+⚙️ **Gozine-ha:**
+    🔹 `--source-directory directory`  --> 📁  Pooshe-i ke file-haye `Packages` dar anja hastand ra moshakhas mikonad.
+    🔹 `-o outputfile`  --> 📝  Esme file-e khoruji ke file `Packages` moratab shode dar an zakhire mishavad ra moshakhas mikonad.  Agar esmi dade nashavad, file asli jaygozin mishavad.
+    🔹 `--renumber` --> 🔢  Shomare-gozari az aval dobare anjam shavad.
+    🔹 `--help`  --> ❓  Namayesh rahnamayi dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ apt-sortpkgs Packages
+
+    🔹 File `Packages` dar directory-e فعلی ra moratab mikonad va file asli ra jaygozin mikonad.
+
+    $ apt-sortpkgs -o Packages.sorted Packages
+
+    🔹 File `Packages` ra moratab mikonad va natije ra dar file jadide `Packages.sorted` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ apt-sortpkgs --renumber Packages
+
+    🔹 File `Packages` ra moratab mikonad va shomare-gozari az aval dobare anjam mishavad. in yek kari ast ke momken ast baraye tasfiye ba'zi file-ha mofid bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-sortpkgs` command is used to sort `Packages` files (which contain package information). This sorting helps `apt` better locate and install packages. If a `Packages` file is incorrectly sorted, `apt` may have trouble finding the packages.
+
+⚙️ **Options:**
+    🔹 `--source-directory directory`  --> 📁  Specifies the directory where the `Packages` files are located.
+    🔹 `-o outputfile`  --> 📝  Specifies the name of the output file where the sorted `Packages` file will be saved. If a name is not given, the original file is replaced.
+    🔹 `--renumber` --> 🔢  Renumbers the package records from the beginning.
+    🔹 `--help`  --> ❓  Displays command help.
+
+🛠 **Examples:**
+
+    $ apt-sortpkgs Packages
+
+    🔹 Sorts the `Packages` file in the current directory and replaces the original file.
+
+    $ apt-sortpkgs -o Packages.sorted Packages
+
+    🔹 Sorts the `Packages` file and saves the result in a new file named `Packages.sorted`.
+
+✅ **Simple Example:**
+
+    $ apt-sortpkgs --renumber Packages
+
+    🔹 Sorts the `Packages` file and renumbers package records from the beginning.  This may be useful when cleaning up some files.

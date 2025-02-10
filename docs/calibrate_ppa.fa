@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `calibrate_ppa` baraye behtar kardan performance (P), power (P), va area (A) dar design-haye hardware estefade mishavad.  In dastoor obarate mokhtalef ra test mikonad ta behtarin balance ra beine PPA peida konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-tool <name>`  --> 🛠️  Esm e abzari ke baraye calibration estefade mishavad ra moshakhas mikonad (meslan Synopsys Design Compiler).
+    🔹 `-target_power <value>` --> ⚡️ Power mored nazar ra baraye optimization moshakhas mikonad (meslan 1.2V).
+    🔹 `-target_performance <value>` --> 🚀 Performance mored nazar ra baraye optimization moshakhas mikonad (meslan 1GHz).
+    🔹 `-area_constraint <value>` --> 📐 Had aksare area ke design mitavanad eshghal konad ra moshakhas mikonad.
+    🔹 `-iterations <number>` --> 🔄 Tedad daf'ati ke algorithme calibration tekrar mishavad ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ calibrate_ppa -tool DesignCompiler -target_power 1.0V -target_performance 1.2GHz
+
+    🔹 Calibration PPA ba estefade az Design Compiler ba target power 1.0V va target performance 1.2GHz.
+
+    $ calibrate_ppa -tool PrimeTime -target_power 0.9V -area_constraint 10000
+
+    🔹 Calibration PPA ba estefade az PrimeTime ba target power 0.9V va mahdoodiate area 10000 vahed.
+
+✅ **Mesal sade:**
+
+    $ calibrate_ppa -tool Genus -iterations 5
+
+    🔹 Algorithme calibration PPA ra 5 bar ba estefade az abzar Genus tekrar mikonad.  In kar momken ast baraye peida kardane natije behtar be kar ravad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `calibrate_ppa` command is used to optimize the performance (P), power (P), and area (A) of hardware designs. It explores different options to find the best balance between these three metrics.
+
+⚙️ **Options:**
+    🔹 `-tool <name>` --> 🛠️ Specifies the tool used for calibration (e.g., Synopsys Design Compiler).
+    🔹 `-target_power <value>` --> ⚡️ Specifies the target power for optimization (e.g., 1.2V).
+    🔹 `-target_performance <value>` --> 🚀 Specifies the target performance for optimization (e.g., 1GHz).
+    🔹 `-area_constraint <value>` --> 📐 Specifies the maximum area the design can occupy.
+    🔹 `-iterations <number>` --> 🔄 Specifies the number of times the calibration algorithm is repeated.
+
+🛠 **Examples:**
+
+    $ calibrate_ppa -tool DesignCompiler -target_power 1.0V -target_performance 1.2GHz
+
+    🔹 Calibrate PPA using Design Compiler with a target power of 1.0V and a target performance of 1.2GHz.
+
+    $ calibrate_ppa -tool PrimeTime -target_power 0.9V -area_constraint 10000
+
+    🔹 Calibrate PPA using PrimeTime with a target power of 0.9V and an area constraint of 10000 units.
+
+✅ **Simple Example:**
+
+    $ calibrate_ppa -tool Genus -iterations 5
+
+    🔹 Repeats the PPA calibration algorithm 5 times using the Genus tool. This can be useful to find a better result.

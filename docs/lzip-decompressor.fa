@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzip-decompressor` baraye baz kardane file-haye `lzip` estefade mishavad. Yani file-haye ziplzip shode ra baz mikonad ta shoma betavanid az anha estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-d` --> 📦 File ra az halat ziplzip dar miare (decompress mikonad). Ageh in gozine ro nazanid, dastoor faghat etela'at file ro neshon mide.
+    🔹 `-o <file>` --> 💾 File-e baz shode ro ba esme `<file>` zakhire mikonad. Ageh esmi nadeed, file asli ro taghir mide.
+    🔹 `-k` --> 🗂️ File-e asli ziplzip shode ro bazi nagah midare (keep mikonad). Be soorate pishfarz, file-e asli hazf mishe bad az baz shodan.
+    🔹 `-f` --> 💪 Majbooret mikone file ro baz kone, hata ageh file ziplzip shode asib dide bashe.
+    🔹 `-t` --> 🧪 Faghat test mikone ke file mishe baz shavad ya na, vali file ro baz nemikone.
+
+🛠 **Mesal-ha:**
+
+    $ lzip-decompressor file.lz
+
+    🔹 File `file.lz` ro baz mikone va file asli ro hazf mikone.
+
+    $ lzip-decompressor -k file.lz
+
+    🔹 File `file.lz` ro baz mikone va file asli ro negah midare.
+
+    $ lzip-decompressor -o output.txt file.lz
+
+    🔹 File `file.lz` ro baz mikone va natije ro ba esme `output.txt` zakhire mikone, file asli hazf mishe.
+
+✅ **Mesal sade:**
+
+    $ lzip-decompressor -t file.lz
+
+    🔹 Check mikone ke aya file `file.lz` mishe baz shavad ya na. Hich file-i taghir nemikone. Agar file sahih bashe, hich payami neshon dade nemishe. Agar file asib dide bashe, khatayi neshon mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzip-decompressor` command is used to decompress `lzip` compressed files. It extracts the contents of an `lzip` archive, allowing you to access the original data.
+
+⚙️ **Options:**
+    🔹 `-d` --> 📦 Decompress the input file. If not specified, the command only shows information about the compressed file.
+    🔹 `-o <file>` --> 💾 Save the decompressed output to `<file>`. If not specified, the original file is overwritten.
+    🔹 `-k` --> 🗂️ Keep (don't delete) the input compressed file. By default, the compressed file is deleted after decompression.
+    🔹 `-f` --> 💪 Force decompression even if the input file appears to be corrupted.
+    🔹 `-t` --> 🧪 Test the integrity of the compressed file without actually decompressing it.
+
+🛠 **Examples:**
+
+    $ lzip-decompressor file.lz
+
+    🔹 Decompresses `file.lz` and removes the original compressed file.
+
+    $ lzip-decompressor -k file.lz
+
+    🔹 Decompresses `file.lz` and keeps the original compressed file.
+
+    $ lzip-decompressor -o output.txt file.lz
+
+    🔹 Decompresses `file.lz` and saves the output to `output.txt`. The original compressed file is removed.
+
+✅ **Simple Example:**
+
+    $ lzip-decompressor -t file.lz
+
+    🔹 Tests whether the file `file.lz` is a valid `lzip` archive. No files are modified. If the file is valid, no output is displayed. If the file is corrupted, an error message is shown.

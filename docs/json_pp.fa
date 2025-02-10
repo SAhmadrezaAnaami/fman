@@ -1,0 +1,78 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `json_pp` baraye khandan va moratab kardan (pretty printing) file-haye JSON estefade mishavad. Yani format-e JSON ro be shekli dar miyare ke khandan-e aan asan tar bashe. Agar file JSON dade nashe, az voroodi (standard input) mikhune.
+
+⚙️ **Gozine-ha:**
+    🔹 `--json_opt OPT` --> ✨ Gozine-haye JSON::PP ro tanzim mikone. Masalan, `--json_opt indent_string='  '` baraye estefade az do ta space baraye indent kardan.
+    🔹 `--indent N`     --> 🔢 Tedad-e space baraye indent kardan ro moshakhas mikone (default: 2).
+    🔹 `--unparse`      --> 🔄 JSON ro az structure-e data-ye Perl misaze (az standard input). Baraye convert kardan data-ye Perl be JSON.
+    🔹 `--no_decode`    --> 🚫 Decode nemikone. Be tore default, `json_pp` decode mikone JSON ro be unicode. Ba in gozine, decode nemikone.
+
+🛠 **Mesal-ha:**
+
+    $ json_pp file.json
+
+    🔹 File `file.json` ro mikhune va moratab chap mikone.
+
+    $ cat file.json | json_pp
+
+    🔹 Content-e `file.json` ro az standard input mikhune va moratab chap mikone.
+
+    $ perl -MJSON::PP -le 'print to_json([1,2,{a=>"b"}])' | json_pp
+
+    🔹 Yek structure-e data-ye Perl ro be JSON convert mikone va moratab chap mikone.
+
+✅ **Mesal sade:**
+
+    $ echo '{"name":"Ali","age":30}' | json_pp
+
+    🔹 Chap mikone:
+    {
+       "age" : 30,
+       "name" : "Ali"
+    }
+    
+    🔹 In dastoor yek string-e JSON sade ro mikhune va ba format-e ghabl-khani chap mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `json_pp` command is used for reading and pretty printing JSON files. It formats JSON in a way that is easier to read. If no JSON file is given, it reads from standard input.
+
+⚙️ **Options:**
+    🔹 `--json_opt OPT` --> ✨ Sets JSON::PP options.  For example, `--json_opt indent_string='  '` uses two spaces for indentation.
+    🔹 `--indent N`     --> 🔢 Specifies the number of spaces for indentation (default: 2).
+    🔹 `--unparse`      --> 🔄 Creates JSON from a Perl data structure (from standard input).  Used to convert Perl data to JSON.
+    🔹 `--no_decode`    --> 🚫 Disables decoding. By default, `json_pp` decodes JSON to unicode. This option disables that.
+
+🛠 **Examples:**
+
+    $ json_pp file.json
+
+    🔹 Reads the file `file.json` and prints it in a pretty format.
+
+    $ cat file.json | json_pp
+
+    🔹 Reads the content of `file.json` from standard input and prints it in a pretty format.
+
+    $ perl -MJSON::PP -le 'print to_json([1,2,{a=>"b"}])' | json_pp
+
+    🔹 Converts a Perl data structure to JSON and prints it in a pretty format.
+
+✅ **Simple Example & Explanation:**
+
+    $ echo '{"name":"Ali","age":30}' | json_pp
+
+    🔹 Prints:
+    {
+       "age" : 30,
+       "name" : "Ali"
+    }
+
+    🔹 This command reads a simple JSON string and prints it in a human-readable format.

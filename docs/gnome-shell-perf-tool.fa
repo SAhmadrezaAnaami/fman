@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-shell-perf-tool` yek abzar baraye andazegiri va behbood performance (sure'at amal) dar Gnome Shell ast. In abzar komak mikonad ta moshkelate performance ra peyda va bartaraf konid.  Be zabane sade, `gnome-shell-perf-tool` mesle yek doctor baraye Gnome Shell amal mikonad, moshkelat ra tashkhis midehad va rahhal haye dorost kardan anha ra pishnahad mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`   --> ❓Namayesh rahnamaye estefade az abzar.
+    🔹 `--verbose`--> 🗣️ Namayesh etela'at bishtar dar morede chگونگی karkarde abzar.
+    🔹 `--output=FILE` --> 💾 Zakhire kardan natije andazegiri dar yek file.
+    🔹 `--duration=SECONDS` --> ⏳ Tayin moddate zaman baraye andazegiri performance (be sanie).
+
+🛠 **Mesal-ha:**
+
+    $ gnome-shell-perf-tool --duration=10
+
+    🔹 Andazegiri performance Gnome Shell baraye 10 sanie.
+
+    $ gnome-shell-perf-tool --output=perf_report.txt
+
+    🔹 Zakhire natije andazegiri performance dar file "perf_report.txt".
+
+✅ **Mesal sade:**
+
+    $ gnome-shell-perf-tool --duration=5 --verbose
+
+    🔹 Performance Gnome Shell ra baraye 5 sanie andazegiri mikonad va etela'ate bishtar dar morede procces ra namayesh midehad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-shell-perf-tool` is a tool for measuring and improving performance in Gnome Shell. It helps identify and fix performance issues. In simple terms, it acts like a doctor for Gnome Shell, diagnosing problems and suggesting solutions.
+
+⚙️ **Options:**
+    🔹 `--help`   --> ❓ Display help information about using the tool.
+    🔹 `--verbose`--> 🗣️ Display more information about how the tool works.
+    🔹 `--output=FILE` --> 💾 Save the measurement results to a file.
+    🔹 `--duration=SECONDS` --> ⏳ Set the duration for performance measurement (in seconds).
+
+🛠 **Examples:**
+
+    $ gnome-shell-perf-tool --duration=10
+
+    🔹 Measure Gnome Shell performance for 10 seconds.
+
+    $ gnome-shell-perf-tool --output=perf_report.txt
+
+    🔹 Save the performance measurement results to the file "perf_report.txt".
+
+✅ **Simple Example:**
+
+    $ gnome-shell-perf-tool --duration=5 --verbose
+
+    🔹 Measures Gnome Shell performance for 5 seconds and displays more information about the process.

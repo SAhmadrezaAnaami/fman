@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-info` baraye gereftan etela'at dar bareye hardware va systeme karkonande HP (Hewlett-Packard) estefade mishavad. In dastoor be shoma komak mikonad ta model, version BIOS, serial number, va digar moshakhasate sakht afzari device HP khod ra bedanid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-info` --> 📝 Namayesh etela'at asli hardware mesle model va serial number.
+    🔹 `hp-info --bios` --> 💻 Namayesh etela'at BIOS mesle version.
+    🔹 `hp-info --disk` --> 💽 Namayesh etela'at disk drive ha.
+
+🛠 **Mesal-ha:**
+
+    $ hp-info
+
+    🔹 Namayesh etela'at hardware asli
+
+    $ hp-info --bios
+
+    🔹 Namayesh etela'at BIOS
+
+✅ **Mesal sade:**
+
+    $ hp-info
+    Product Name: HP ProBook 450 G7
+    Serial Number: ABC123XYZ
+
+    🔹 In mesal namayesh midahad ke dastoor `hp-info` name mahsool va serial number ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-info` command is used to retrieve information about HP (Hewlett-Packard) hardware and the operating system. This command helps you to find the model, BIOS version, serial number, and other hardware specifications of your HP device.
+
+⚙️ **Options:**
+    🔹 `hp-info` --> 📝 Display basic hardware information such as model and serial number.
+    🔹 `hp-info --bios` --> 💻 Display BIOS information such as version.
+    🔹 `hp-info --disk` --> 💽 Display disk drive information.
+
+🛠 **Examples:**
+
+    $ hp-info
+
+    🔹 Display basic hardware information.
+
+    $ hp-info --bios
+
+    🔹 Display BIOS information.
+
+✅ **Simple Example:**
+
+    $ hp-info
+    Product Name: HP ProBook 450 G7
+    Serial Number: ABC123XYZ
+
+    🔹 This example shows that the `hp-info` command prints the product name and serial number.

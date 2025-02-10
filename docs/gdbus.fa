@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdbus` yek abzar khat-e-farman (command-line tool) ast baraye interaction ba bus-e-payam-resani (message bus) DBus. Ba estefade az `gdbus`, shoma mitavanid be service-ha dar DBus dastresi dashte bashid, method-ha ra seda bezanid, va etela’at ra daryaft konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `gdbus call`  --> 📞 Seda zadan yek method dar yek object DBus.
+    🔹 `gdbus introspect`  --> 🔍 Daryaft etela’at dar mored yek object DBus (method-ha, signal-ha, property-ha).
+    🔹 `gdbus monitor`  --> 📡 Shenidan (monitor) baraye signal-ha dar DBus.
+    🔹 `gdbus list`  --> 📜 List kardan service-haye mojood dar DBus.
+
+🛠 **Mesal-ha:**
+
+    $ gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --interface org.freedesktop.Notifications.Server GetServerInformation
+
+    🔹 Seda zadan method `GetServerInformation` dar service `org.freedesktop.Notifications`.
+
+    $ gdbus introspect --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --recursive
+
+    🔹 Daryaft etela’at dar mored object `/org/freedesktop/Notifications` va object-haye zir-majmooe an.
+
+✅ **Mesal sade:**
+
+    $ gdbus list --session
+
+    🔹 List kardan hameye service-ha dar bus session DBus. Shoma mitavanid az in baraye peyda kardan service-haye mored nazar estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdbus` command is a command-line tool for interacting with the DBus message bus. Using `gdbus`, you can access services on DBus, invoke methods, and receive information.
+
+⚙️ **Options:**
+    🔹 `gdbus call`  --> 📞 Invoke a method on a DBus object.
+    🔹 `gdbus introspect`  --> 🔍 Get information about a DBus object (methods, signals, properties).
+    🔹 `gdbus monitor`  --> 📡 Listen for signals on DBus.
+    🔹 `gdbus list`  --> 📜 List available services on DBus.
+
+🛠 **Examples:**
+
+    $ gdbus call --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --interface org.freedesktop.Notifications.Server GetServerInformation
+
+    🔹 Invoke the `GetServerInformation` method on the `org.freedesktop.Notifications` service.
+
+    $ gdbus introspect --session --dest org.freedesktop.Notifications --object-path /org/freedesktop/Notifications --recursive
+
+    🔹 Get information about the `/org/freedesktop/Notifications` object and its sub-objects.
+
+✅ **Simple Example:**
+
+    $ gdbus list --session
+
+    🔹 Lists all services on the session DBus bus. You can use this to discover available services.
+

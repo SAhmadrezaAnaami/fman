@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-ktb` yek command baraye tabdil matn be khatte braille ast, baraye estefade ba dastgah haye namayesh braille. In command matn ra az voroodi migirad va an ra be format braille tabdil mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-l <zaban>`  --> 🌍 Zaban-e voroodi ra moshakhas mikonad (masalan, 'en' baraye English, 'fa' baraye Farsi). Agar zaban moshakhas nashavad, zaban-e pishfarz estefade mishavad.
+    🔹 `-o <file>` --> 💾 Natije-ye tabdil ra dar yek file zakhire mikonad.
+    🔹 `-t` --> ⏳ Tabdil-e matn ra be soorate real-time anjam midahad.
+
+🛠 **Mesal-ha:**
+
+    $ echo "Hello, world!" | brltty-ktb
+
+    🔹 Tabdil matn "Hello, world!" be khatte braille va namayesh dar terminal.
+
+    $ brltty-ktb -l fa > output.brl
+
+    🔹 Tabdil voroodi Farsi be khatte braille va zakhire dar file "output.brl".
+
+✅ **Mesal sade:**
+
+    $ brltty-ktb -l en < input.txt
+
+    🔹 Matn dar file `input.txt` ra be khatte braille tabdil karde va dar terminal namayesh midahad.  Zaban English entekhab shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-ktb` command is used to convert text to Braille format for use with Braille display devices. It takes text as input and converts it to Braille.
+
+⚙️ **Options:**
+    🔹 `-l <language>` --> 🌍 Specifies the input language (e.g., 'en' for English, 'fa' for Persian). If no language is specified, the default language is used.
+    🔹 `-o <file>` --> 💾 Saves the converted output to a file.
+    🔹 `-t` --> ⏳ Performs real-time text conversion.
+
+🛠 **Examples:**
+
+    $ echo "Hello, world!" | brltty-ktb
+
+    🔹 Converts the text "Hello, world!" to Braille and displays it in the terminal.
+
+    $ brltty-ktb -l fa > output.brl
+
+    🔹 Converts Persian input to Braille and saves it in the file "output.brl".
+
+✅ **Simple Example:**
+
+    $ brltty-ktb -l en < input.txt
+
+    🔹 Converts the text in the file `input.txt` to Braille and displays it in the terminal. The English language is selected.

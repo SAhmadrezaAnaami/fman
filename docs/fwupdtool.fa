@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fwupdtool` baraye modiriyat va update kardan firmware device-ha (mesle BIOS, SSD, va digar sakht-afzar-ha) dar Linux estefade mishavad. In dastoor komak mikonad ta device-ha ra be akharin version firmware update konid, ke amniat va performan-ra behtar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `fwupdtool devices` --> 💻 Namayesh list device-haye ghabele update.
+    🔹 `fwupdtool get-updates` --> 📡 Check kardan baraye update-haye jadid baraye device-haye shoma.
+    🔹 `fwupdtool update` --> ⬆️ Shoru kardan process update firmware.
+    🔹 `fwupdtool get-history` --> 📜 Namayesh tarikhe update firmware device-ha.
+
+🛠 **Mesal-ha:**
+
+    $ fwupdtool devices
+
+    🔹 Namayesh device-haye ghabele update.
+
+    $ fwupdtool update
+
+    🔹 Shoru kardan update firmware baraye hameye device-ha.
+
+✅ **Mesal sade:**
+
+    $ fwupdtool get-updates
+    ...output showing available updates...
+    $ fwupdtool update
+
+    🔹 Check mikonad baraye update-haye jadid va shoru mikonad process update.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fwupdtool` command is used for managing and updating device firmware (such as BIOS, SSDs, and other hardware) in Linux. This tool helps you update devices to the latest firmware versions, which improves security and performance.
+
+⚙️ **Options:**
+    🔹 `fwupdtool devices` --> 💻 Display a list of updatable devices.
+    🔹 `fwupdtool get-updates` --> 📡 Check for new updates for your devices.
+    🔹 `fwupdtool update` --> ⬆️ Start the firmware update process.
+    🔹 `fwupdtool get-history` --> 📜 Display the firmware update history of devices.
+
+🛠 **Examples:**
+
+    $ fwupdtool devices
+
+    🔹 Display updatable devices.
+
+    $ fwupdtool update
+
+    🔹 Start firmware update for all devices.
+
+✅ **Simple Example:**
+
+    $ fwupdtool get-updates
+    ...output showing available updates...
+    $ fwupdtool update
+
+    🔹 Checks for new updates and starts the update process.

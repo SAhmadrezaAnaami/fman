@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `git-upload-pack` dar taraf server baraye service-dehi be dastoor `git fetch-pack` va `git send-pack` estefade mishavad.  In dastoor file-haye object-ha va packfile-ha ra az repository be taraf client mifrestad.  Shoma be tor-e mostaghim az in dastoor estefade nemikonid, balkeh `git fetch` va `git push` an ra dar posht-e sahne seda mizand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--strict` --> 🔒 Agar object-i ke client darkhast karde dar repository nabashad, khata midahad.
+    🔹 `--timeout=<sec>` --> ⏳ Modat zaman-e sabr baraye dariaft-e etela'at az client ra taeen mikonad (be saniye).
+    🔹 `--stateless-rpc` --> 📡 Az protocol RPC bedun-e halat estefade mikonad (baraye HTTP).
+    🔹 `--advertise-refs` --> 📢 Ref-ha ra e'lan mikonad (dar vaghe, liste branch-ha va tag-ha).
+
+🛠 **Mesal-ha:**
+
+    $ git upload-pack --stateless-rpc /path/to/repository
+
+    🔹 In dastoor `git-upload-pack` ra ba protocol RPC bedun-e halat baraye repository mored nazar ejra mikonad.  Obatan, shoma obatan in ra be surate mostagim ejra nemikonid, balkeh client git in kar ra anjam midahad.
+
+    $ git upload-pack /path/to/repository
+
+    🔹 In dastoor `git-upload-pack` ra baraye repository mored nazar ejra mikonad. Baz ham, shoma obatan in ra be surate mostagim ejra nemikonid.
+
+✅ **Mesal sade:**
+
+    Dar vaghe, hich mesal-e sadeh-i baraye ejra-ye mostaghim-e `git-upload-pack` vojood nadarad.  In dastoor be tor-e otomatiki az taraf `git fetch` va `git pull` dar taraf server seda zade mishavad. Shoma obatan be un dastresi-e mostaghim nadarid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `git-upload-pack` command is used on the server side to service `git fetch-pack` and `git send-pack` requests.  It sends objects and packfiles from the repository to the client.  You typically don't run this command directly; `git fetch` and `git push` invoke it behind the scenes.
+
+⚙️ **Options:**
+    🔹 `--strict` --> 🔒 Abort if the client requests an object that does not exist in the repository.
+    🔹 `--timeout=<sec>` --> ⏳ Set the timeout (in seconds) for receiving data from the client.
+    🔹 `--stateless-rpc` --> 📡 Use the stateless RPC protocol (for HTTP).
+    🔹 `--advertise-refs` --> 📢 Advertise refs (i.e., list branches and tags).
+
+🛠 **Examples:**
+
+    $ git upload-pack --stateless-rpc /path/to/repository
+
+    🔹 This command runs `git-upload-pack` with the stateless RPC protocol for the specified repository. Typically, you wouldn't execute this directly; the Git client handles this.
+
+    $ git upload-pack /path/to/repository
+
+    🔹 This command runs `git-upload-pack` for the specified repository.  Again, you wouldn't typically execute this directly.
+
+✅ **Simple Example & Explanation:**
+
+    There isn't really a simple example of running `git-upload-pack` directly.  It's automatically invoked on the server side by `git fetch` and `git pull`. You generally do not have direct access to it.

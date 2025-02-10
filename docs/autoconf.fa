@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autoconf` yek barname ast baraye sakhtan script-haye configure. In script-ha komak mikonand barname-haye shoma ro rooye system-haye mokhtalef compile konid, bedoon ehtiaj be dastkari-haye ziad. Yani code-haye shoma ro ba system-haye dige *sazgar* mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `autoconf` --> ⚙️ Sakhtan script `configure` az `configure.ac` (ya `configure.in`).
+    🔹 `autoconf --help` --> ℹ️ Namayesh rahnama (help) baraye dastoor `autoconf`.
+    🔹 `autoconf --version` --> 🔢 Namayesh version `autoconf`.
+
+🛠 **Mesal-ha:**
+
+    $ autoconf
+
+    🔹 Script `configure` ra az file `configure.ac` misazad.
+
+    $ autoconf my_config.ac
+
+    🔹 Agar esme file shoma `configure.ac` nabashad, mitavanid an ra moshakhas konid.
+
+✅ **Mesal sade:**
+
+    $ autoconf
+
+    🔹 Agar file `configure.ac` dar pooshe-ye shoma voojood dashte bashad, script `configure` sakhte mishavad. Ba'd az aan, shoma mitavanid az dastoor `./configure` estefade konid ta barname-ye shoma ro baraye compile amade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autoconf` command is a tool for generating configure scripts. These scripts help you compile your programs on different systems without significant manual adjustments.  It makes your code *compatible* with different systems.
+
+⚙️ **Options:**
+    🔹 `autoconf` --> ⚙️ Generate the `configure` script from `configure.ac` (or `configure.in`).
+    🔹 `autoconf --help` --> ℹ️ Display help information for the `autoconf` command.
+    🔹 `autoconf --version` --> 🔢 Display the version of `autoconf`.
+
+🛠 **Examples:**
+
+    $ autoconf
+
+    🔹 Generates the `configure` script from the `configure.ac` file.
+
+    $ autoconf my_config.ac
+
+    🔹 If your file isn't named `configure.ac`, you can specify it.
+
+✅ **Simple Example:**
+
+    $ autoconf
+
+    🔹 If a `configure.ac` file exists in your directory, a `configure` script will be created. After that, you can use the `./configure` command to prepare your program for compilation.

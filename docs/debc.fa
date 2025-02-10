@@ -1,0 +1,63 @@
+Okay, I'll create a user-friendly manual page for the (fictional) command `debc`, following your specifications. I'll assume `debc` is a command for managing Debian packages, perhaps simplifying common tasks.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debc` baraye modiriat pake-haye Debian (ba format .deb) be kar miravad.  In dastoor karha-ye raij ra asan mikonad, mesle nasb, hazf, va didane etela'at dar bareye pake-ha.
+
+⚙️ **Gozine-ha:**
+    🔹 `debc install <name.deb>` --> 📦 Nasb yek pake az file .deb.
+    🔹 `debc remove <esm-e-pake>`  --> 🗑 Hazf yek pake ke ghablan nasb shode ast.
+    🔹 `debc info <esm-e-pake>`    --> ℹ️ Namayesh etela'at dar bareye pake (version, dependencies).
+    🔹 `debc search <kalame-kelidi>` --> 🔍 Jostojoo pake-ha dar repository.
+    🔹 `debc list`              --> 📋 List kardan hameye pake-ha-ye nasb shode.
+
+🛠 **Mesal-ha:**
+
+    $ debc install mypackage.deb
+
+    🔹 Nasb pake "mypackage.deb".
+
+    $ debc remove mypackage
+
+    🔹 Hazf pake "mypackage" az system.
+
+✅ **Mesal sade:**
+
+    $ debc info vlc
+
+    🔹  Namayesh etela'at dar bareye pake VLC, shamel version, tarikh va dependencies.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debc` command is used for managing Debian packages (with the .deb format).  It simplifies common tasks, such as installing, removing, and viewing information about packages.
+
+⚙️ **Options:**
+    🔹 `debc install <package_name.deb>` --> 📦 Install a package from a .deb file.
+    🔹 `debc remove <package_name>`      --> 🗑 Remove a package that has already been installed.
+    🔹 `debc info <package_name>`        --> ℹ️ Display information about a package (version, dependencies).
+    🔹 `debc search <keyword>`          --> 🔍 Search for packages in the repository.
+    🔹 `debc list`                 --> 📋 List all installed packages.
+
+🛠 **Examples:**
+
+    $ debc install mypackage.deb
+
+    🔹 Install the "mypackage.deb" package.
+
+    $ debc remove mypackage
+
+    🔹 Remove the "mypackage" from the system.
+
+✅ **Simple Example & Explanation:**
+
+    $ debc info vlc
+
+    🔹 Displays information about the VLC package, including the version, date, and dependencies.
+

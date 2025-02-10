@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `faked-sysv` baraye ejra kardane dastoorati ke niaz be sakhtare SysV darand estefade mishavad, bedune inke vaghean niaz bashad ke sakhtare SysV ro nasb konim. Yani yek joor "fake" ya taghalobi az SysV init system ro emulat mikone. Baraye barnamerizi va test kardane chizhaee ke ba SysV kar mikonand mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor.
+    🔹 `--version` --> ℹ️ Namayesh version e faked-sysv.
+    🔹 `command`    --> 🚀 Dastoori ke bayad ba environment e SysV ejra shavad.
+
+🛠 **Mesal-ha:**
+
+    $ faked-sysv /path/to/your/script
+
+    🔹  Ejra kardane script shoma dar environment e SysV.
+
+    $ faked-sysv --version
+
+    🔹 Namayesh version e faked-sysv.
+
+✅ **Mesal sade:**
+
+    $ faked-sysv service apache2 start
+
+    🔹  Shabihe sazi kardane shoru kardane service apache2, dar halee ke vaghean az SysV estefade nemishavad.  Baraye test kardane script haye service mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `faked-sysv` command is used to execute commands that require a SysV-like environment without actually needing to install a full SysV init system.  It emulates a "fake" or simulated SysV init environment, which is useful for development and testing of applications that interact with SysV services.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Show the help message.
+    🔹 `--version` --> ℹ️ Show the version of faked-sysv.
+    🔹 `command`    --> 🚀 The command to execute within the SysV-like environment.
+
+🛠 **Examples:**
+
+    $ faked-sysv /path/to/your/script
+
+    🔹  Execute your script within the emulated SysV environment.
+
+    $ faked-sysv --version
+
+    🔹 Show the version of faked-sysv.
+
+✅ **Simple Example:**
+
+    $ faked-sysv service apache2 start
+
+    🔹  Simulates starting the apache2 service, without actually using SysV. Useful for testing service scripts.

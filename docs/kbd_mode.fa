@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kbd_mode` baraye tagheer daadan vaz’iat (mode) keyboard dar console Linux estefade mishavad. In dastoor be shoma ejazeh midehad keyboard ra be vaz’iat-haye mokhtalef, mesle ASCII ya UTF-8, tagheer dahid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `kbd_mode -a`  --> ⌨️ Gozashtan keyboard be vaz'iat ASCII. Dar in vaz'iat, karakter-haye ASCII tanha ghabele estefade hastand.
+    🔹 `kbd_mode -u`  --> 🌐 Gozashtan keyboard be vaz'iat UTF-8. Dar in vaz'iat, shoma mitavanid hameye karakter-haye UTF-8 ra type konid.
+    🔹 `kbd_mode -s`  --> ℹ️ Namayesh vaz'iat فعلی keyboard.
+
+🛠 **Mesal-ha:**
+
+    $ kbd_mode -a
+
+    🔹 Tagheer keyboard be vaz’iat ASCII.
+
+    $ kbd_mode -u
+
+    🔹 Tagheer keyboard be vaz’iat UTF-8.
+
+✅ **Mesal sade:**
+
+    $ kbd_mode -s
+
+    🔹 Namayesh midehad ke aya keyboard dar vaz’iat ASCII ast ya UTF-8. In baraye check kardane vaz'iat فعلی keyboard mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kbd_mode` command is used to change the keyboard mode in the Linux console. It allows you to switch the keyboard to different modes, such as ASCII or UTF-8.
+
+⚙️ **Options:**
+    🔹 `kbd_mode -a`  --> ⌨️ Set the keyboard to ASCII mode. In this mode, only ASCII characters can be used.
+    🔹 `kbd_mode -u`  --> 🌐 Set the keyboard to UTF-8 mode. In this mode, you can type all UTF-8 characters.
+    🔹 `kbd_mode -s`  --> ℹ️ Display the current keyboard mode.
+
+🛠 **Examples:**
+
+    $ kbd_mode -a
+
+    🔹 Change the keyboard to ASCII mode.
+
+    $ kbd_mode -u
+
+    🔹 Change the keyboard to UTF-8 mode.
+
+✅ **Simple Example:**
+
+    $ kbd_mode -s
+
+    🔹 Displays whether the keyboard is in ASCII or UTF-8 mode. This is useful for checking the current keyboard status.
+

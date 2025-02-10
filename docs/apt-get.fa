@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-get` baraye gereftan (install), paak kardan (remove), va update kardan narmafzar-ha (software) dar system-haye Debian va Ubuntu estefade mishavad.  Yek rah-e asan baraye modiriat narmafzar-ha az command line ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `sudo apt-get update` --> 🔄 Gereftan akharin etela'at az manabe narmafzari. (Update kardane list-e narmafzar-ha)
+    🔹 `sudo apt-get upgrade` --> ⬆️ Update kardane hameye narmafzare haye nasb shode be akharin version.
+    🔹 `sudo apt-get install [esm-e-narmafzar]` --> 📦 Nasb kardane yek narmafzar. (Install kardane yek barname)
+    🔹 `sudo apt-get remove [esm-e-narmafzar]` --> 🗑️ Paak kardane yek narmafzar, ama config file-hash mimoonan.
+    🔹 `sudo apt-get purge [esm-e-narmafzar]` --> 💣 Paak kardane yek narmafzar hamrah ba hameye config file-hash.
+    🔹 `sudo apt-get autoremove` --> 🧹 Paak kardane package-haye zaedi ke dige estefade nemishan.
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt-get update
+
+    🔹 Gereftan akharin etela'at az repo-ha.
+
+    $ sudo apt-get install firefox
+
+    🔹 Nasb kardane barname firefox.
+
+    $ sudo apt-get remove firefox
+
+    🔹 Hazf kardane barname firefox az system.
+
+✅ **Mesal sade:**
+
+    $ sudo apt-get update && sudo apt-get upgrade
+
+    🔹 Aval list-e narmafzar-haro update mikone, bad hameye narmafzar-haye ghadimi ro be akharin version update mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-get` command is used to retrieve (install), remove, and update software packages on Debian and Ubuntu-based systems. It's a convenient way to manage software from the command line.
+
+⚙️ **Options:**
+    🔹 `sudo apt-get update` --> 🔄 Retrieve the latest package information from the configured sources. (Updates package lists)
+    🔹 `sudo apt-get upgrade` --> ⬆️ Upgrade all installed packages to their newest versions.
+    🔹 `sudo apt-get install [package-name]` --> 📦 Install a new software package.
+    🔹 `sudo apt-get remove [package-name]` --> 🗑️ Remove a software package, but keeps configuration files.
+    🔹 `sudo apt-get purge [package-name]` --> 💣 Remove a software package along with its configuration files.
+    🔹 `sudo apt-get autoremove` --> 🧹 Remove automatically all unused dependencies.
+
+🛠 **Examples:**
+
+    $ sudo apt-get update
+
+    🔹 Update the package lists from the repositories.
+
+    $ sudo apt-get install firefox
+
+    🔹 Install the firefox browser.
+
+    $ sudo apt-get remove firefox
+
+    🔹 Uninstall the firefox browser from the system.
+
+✅ **Simple Example:**
+
+    $ sudo apt-get update && sudo apt-get upgrade
+
+    🔹 First update the package list, then upgrade all outdated packages to the newest version.

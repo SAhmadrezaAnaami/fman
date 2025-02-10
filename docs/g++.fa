@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `g++` yek compiler baraye zaban-e barname-nevisi C++ ast. Az an baraye tabdil kardan code-haye C++ be barname-haye ejraii (executable) estefade mishavad. 
+
+⚙️ **Gozine-ha:**
+    🔹 `g++ file.cpp -o program` --> 📝 Code ra compile va yek barname ba name `program` misazad.
+    🔹 `g++ -c file.cpp` --> 🧱 File ra compile mikonad vali link nemikonad (yek object file misazad).
+    🔹 `g++ file1.o file2.o -o program` --> 🔗 Object file-ha ra link mikonad ta yek barname ejraii besazad.
+    🔹 `g++ -Wall file.cpp` --> ⚠️ Hameye warning-ha ra neshan midahad. Kheli mofid ast baraye peyda kardan khataha.
+    🔹 `g++ -g file.cpp -o program` --> 🐛 Etela'at debug ra ezafe mikonad, baraye estefade az debugger-ha mesle `gdb`.
+
+🛠 **Mesal-ha:**
+
+    $ g++ hello.cpp -o hello
+
+    🔹 Code C++ ba name `hello.cpp` ra compile mikonad va yek barname ejraii ba name `hello` misazad.
+
+    $ g++ main.cpp functions.cpp -o myprogram
+
+    🔹 Code C++ az `main.cpp` va `functions.cpp` ra compile mikonad va yek barname ejraii ba name `myprogram` misazad.
+
+✅ **Mesal sade:**
+
+    $ g++ -Wall mycode.cpp -o myapp
+
+    🔹 Code ra compile mikonad, hameye warning-ha ra neshan midahad va yek barname ejraii ba name `myapp` misazad. Ehtemale ziadi dare ke ba tavajoh be warning-ha, betavanid code-e khod ra behtar konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `g++` command is a C++ compiler. It is used to translate C++ source code into executable programs.
+
+⚙️ **Options:**
+    🔹 `g++ file.cpp -o program` --> 📝 Compiles the code and creates a program named `program`.
+    🔹 `g++ -c file.cpp` --> 🧱 Compiles the file but doesn't link it (creates an object file).
+    🔹 `g++ file1.o file2.o -o program` --> 🔗 Links object files to create an executable program.
+    🔹 `g++ -Wall file.cpp` --> ⚠️ Shows all warnings. Very useful for finding errors.
+    🔹 `g++ -g file.cpp -o program` --> 🐛 Adds debugging information, for use with debuggers like `gdb`.
+
+🛠 **Examples:**
+
+    $ g++ hello.cpp -o hello
+
+    🔹 Compiles the C++ code `hello.cpp` and creates an executable program named `hello`.
+
+    $ g++ main.cpp functions.cpp -o myprogram
+
+    🔹 Compiles the C++ code from `main.cpp` and `functions.cpp` and creates an executable program named `myprogram`.
+
+✅ **Simple Example:**
+
+    $ g++ -Wall mycode.cpp -o myapp
+
+    🔹 Compiles the code, shows all warnings, and creates an executable program named `myapp`.  Paying attention to the warnings will likely improve your code.

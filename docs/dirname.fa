@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dirname` baraye gereftan masire (path) yek file ya directory va hazfe name file az an estefade mishavad. Be ebarate digar, `dirname` directory ke file dar an gharar darad ra neshon midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `dirname --help` --> ❓ Namayeshe rahnamaye dastoor
+    🔹 `dirname --version` --> ℹ️ Namayeshe version dastoor
+
+🛠 **Mesal-ha:**
+
+    $ dirname /home/user/documents/file.txt
+
+    🔹 Output: /home/user/documents
+
+    $ dirname /usr/bin/
+
+    🔹 Output: /usr
+
+✅ **Mesal sade:**
+
+    $ dirname ./myfile.txt
+
+    🔹 Agar `myfile.txt` dar hamin directory-e shoma bashad, natije "." khahad bood, yani directory-e konuni.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dirname` command extracts the directory path from a given filename or directory path. It essentially removes the trailing filename component, leaving just the path to the directory containing the file.
+
+⚙️ **Options:**
+    🔹 `dirname --help` --> ❓ Display help information
+    🔹 `dirname --version` --> ℹ️ Display version information
+
+🛠 **Examples:**
+
+    $ dirname /home/user/documents/file.txt
+
+    🔹 Output: /home/user/documents
+
+    $ dirname /usr/bin/
+
+    🔹 Output: /usr
+
+✅ **Simple Example:**
+
+    $ dirname ./myfile.txt
+
+    🔹 If `myfile.txt` is in your current directory, the output will be ".", representing the current directory.
+

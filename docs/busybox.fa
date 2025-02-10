@@ -1,0 +1,49 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `busybox` mesle yek ja'be abzar ast ke tool-haye khoobi baraye kar ba system-haye Embeded va system-haye kuchak darad. Dar asl, chandin dastoor-e mohem-e Linux ra dar yek file-e ejraii ja dade ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `busybox --list` --> 📜 List kardan hameye dastoorhaye dast-res
+    🔹 `busybox [dastoor] --help` --> 👀 Raahnamaii baraye yek dastoor-e khass
+
+🛠 **Mesal-ha:**
+
+    $ busybox ls
+    🔹 Namayesh file-ha dar poosheye fa'ali
+
+    $ busybox df -h
+    🔹 Didan fazaye disk be shekl ghabl-khani
+
+✅ **Mesal sade:**
+
+    $ busybox echo "Salam Donya!"
+    🔹 Chap kardan "Salam Donya!" dar terminal. busybox echo mesle dastoor echo kar mikonad, amma az dakhele busybox ejra mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `busybox` command is like a toolbox that contains many useful utilities for embedded and small systems.  It essentially bundles multiple essential Linux commands into a single executable.
+
+⚙️ **Options:**
+    🔹 `busybox --list` --> 📜 List all available commands.
+    🔹 `busybox [command] --help` --> 👀 Get help for a specific command.
+
+🛠 **Examples:**
+
+    $ busybox ls
+    🔹 List files in the current directory
+
+    $ busybox df -h
+    🔹 View disk space in human-readable format
+
+✅ **Simple Example:**
+
+    $ busybox echo "Hello World!"
+    🔹 Prints "Hello World!" to the terminal. `busybox echo` works like the standard `echo` command, but executed through busybox.
+

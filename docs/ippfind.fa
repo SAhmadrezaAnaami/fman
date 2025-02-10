@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ippfind` baraye peyda kardane printer haye IPP (Internet Printing Protocol) dar shabake shoma estefade mishavad.  In dastoor printer haye IPP ra dar shabake jostoju mikonad va etela'ati darbareye anha namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `ippfind`  -->  🔍 Printer haye IPP ra dar subnet mahali jostoju mikonad.
+    🔹 `ippfind -T timeout` --> ⏳ Zaman entezar baraye pasokh ra taeen mikonad (be saniye).  Agar printer zood pasokh nadahad, ippfind entezar ra motavaqef mikonad.
+    🔹 `ippfind -g group` --> 🏘️ Printer haye IPP ra faghat dar group multicast moshakhas jostoju mikonad.
+    🔹 `ippfind -v`  --> 🗣️ Etela'at bishtar namayesh midahad (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ ippfind
+
+    🔹 Peyda kardane printer haye IPP dar shabake mahali.
+
+    $ ippfind -T 5
+
+    🔹 Peyda kardane printer haye IPP dar shabake mahali ba timeout 5 saniye.
+
+✅ **Mesal sade:**
+
+    $ ippfind
+    ipp://myprinter.local.:631/ipp/print
+
+    🔹 In neshan midahad ke yek printer IPP ba address `ipp://myprinter.local.:631/ipp/print` dar shabake peyda shode ast.  Shoma mitoonid az in address baraye ezafe kardane printer be computer khod estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ippfind` command is used to discover IPP (Internet Printing Protocol) printers on your network. This command searches for IPP printers on the network and displays information about them.
+
+⚙️ **Options:**
+    🔹 `ippfind`  -->  🔍 Searches for IPP printers on the local subnet.
+    🔹 `ippfind -T timeout` --> ⏳ Sets the timeout (in seconds) for waiting for responses. If a printer doesn't respond quickly, ippfind stops waiting.
+    🔹 `ippfind -g group` --> 🏘️ Searches for IPP printers only in the specified multicast group.
+    🔹 `ippfind -v`  --> 🗣️ Displays more detailed information (verbose mode).
+
+🛠 **Examples:**
+
+    $ ippfind
+
+    🔹 Finds IPP printers on the local network.
+
+    $ ippfind -T 5
+
+    🔹 Finds IPP printers on the local network with a timeout of 5 seconds.
+
+✅ **Simple Example:**
+
+    $ ippfind
+    ipp://myprinter.local.:631/ipp/print
+
+    🔹 This indicates that an IPP printer with the address `ipp://myprinter.local.:631/ipp/print` was found on the network. You can use this address to add the printer to your computer.

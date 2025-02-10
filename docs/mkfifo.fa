@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mkfifo` baraye dorost kardane yek "named pipe" (ya FIFO) be kar mirevad.  yek named pipe mesle yek file ast, vali be jaye negahdashtane data, baraye ertebat bein process-ha be kar mirevad.  Do process mitoonand az yek named pipe baraye ersale data be ham estefade konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `mkfifo filename`  -->  📃 Dorost kardane yek named pipe ba name `filename`.
+    🔹 `mkfifo -m mode filename` --> 🔒 Ta'een kardane dastrasi-ha (permissions) baraye named pipe.  `mode` mesle dastoor `chmod` est.
+
+🛠 **Mesal-ha:**
+
+    $ mkfifo mypipe
+
+    🔹 In dastoor yek named pipe be name `mypipe` dorost mikonad.
+
+    $ mkfifo -m 660 mypipe
+
+    🔹 In dastoor yek named pipe be name `mypipe` dorost mikonad va dastrasi-haye aan ra be `660` ta'een mikonad (read/write baraye user va group).
+
+✅ **Mesal sade:**
+
+    $ mkfifo chatpipe
+    $ ls -l chatpipe
+
+    🔹 Aval yek named pipe be name `chatpipe` dorost mikonim. Ba `ls -l` mitoonim bebini ke chejoori ba file-haye dige fargh dare (harf `p` dar avale dastrasi-ha neshon mide ke in yek pipe ast).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mkfifo` command is used to create a named pipe (or FIFO). A named pipe is like a file, but instead of storing data, it's used for inter-process communication. Two processes can use a named pipe to send data to each other.
+
+⚙️ **Options:**
+    🔹 `mkfifo filename`  -->  📃 Creates a named pipe named `filename`.
+    🔹 `mkfifo -m mode filename` --> 🔒 Sets the permissions for the named pipe. `mode` is like the `chmod` command.
+
+🛠 **Examples:**
+
+    $ mkfifo mypipe
+
+    🔹 This command creates a named pipe named `mypipe`.
+
+    $ mkfifo -m 660 mypipe
+
+    🔹 This command creates a named pipe named `mypipe` and sets its permissions to `660` (read/write for user and group).
+
+✅ **Simple Example:**
+
+    $ mkfifo chatpipe
+    $ ls -l chatpipe
+
+    🔹 First, we create a named pipe called `chatpipe`. Using `ls -l`, we can see how it differs from regular files (the `p` at the beginning of the permissions indicates that it's a pipe).

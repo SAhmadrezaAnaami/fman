@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `codepage` (dar Windows) baraye tagheer ya namayesh safhe-ye code (code page) فعلی است. Safhe-ye code مجموعه-اي از character-ها است كه baraye namayesh matn estefade می شود.
+
+⚙️ **Gozine-ha:**
+    🔹 `chcp`  --> 🔢 Namayesh safhe-ye code فعلی.
+    🔹 `chcp [shomare_safhe]` --> 🔄 Tagheer be safhe-ye code مشخص شده (masalan, `chcp 65001` baraye UTF-8).
+
+🛠 **Mesal-ha:**
+
+    $ chcp
+
+    🔹 Namayesh safhe-ye code فعلی.
+
+    $ chcp 65001
+
+    🔹 Tagheer safhe-ye code be UTF-8.
+
+✅ **Mesal sade:**
+
+    $ chcp 1256
+
+    🔹 Tagheer safhe-ye code be Arabic (Windows). Agar character-haye Farsi ya Arabi be dorosti namayesh dade nemishavand, in dastoor می تواند کمک کند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `codepage` command (in Windows, often accessed via `chcp`) is used to change or display the current code page. A code page is a set of characters used for displaying text.
+
+⚙️ **Options:**
+    🔹 `chcp`  --> 🔢 Display the current code page.
+    🔹 `chcp [code_page_number]` --> 🔄 Change to the specified code page (e.g., `chcp 65001` for UTF-8).
+
+🛠 **Examples:**
+
+    $ chcp
+
+    🔹 Display the current code page.
+
+    $ chcp 65001
+
+    🔹 Change the code page to UTF-8.
+
+✅ **Simple Example:**
+
+    $ chcp 1256
+
+    🔹 Change the code page to Arabic (Windows). If Persian or Arabic characters are not displayed correctly, this command might help.
+

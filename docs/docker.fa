@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Docker yek platform baz-manba' (open-source) ast baraye sakhtan, rahnama'i kardan (deploy), va ejra kardan barname-ha dar container-ha. Container-ha mesle vahde-haye sabok vazn va mostaghel hastand ke hameye chiz-haee ke barname be an niaz darad, daroon-e khod jaay dade and. In amr, enteghal-e barname-ha bein mahafeze-ha (environments) mokhtalef ra asan mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `docker run [options] image_name` --> 🚀 Container jadid az yek tasvir (image) misazad va ejra mikonad.
+    🔹 `docker ps` --> 🐳 List-e container-haee ke alan dar hale ejra hastand ra namayesh midahad.
+    🔹 `docker stop container_id` --> 🛑 Yek container dar hale ejra ra motevaghef mikonad.
+    🔹 `docker images` --> 🖼 List-e tasvir-haee (images) ke dar sistem shoma mojood hastand ra namayesh midahad.
+    🔹 `docker build -t image_name .` --> 🏗 Tasvir (image) ra az yek Dockerfile misazad.
+
+🛠 **Mesal-ha:**
+
+    $ docker run -d -p 80:80 nginx
+    
+    🔹 Yek container Nginx ra dar background ejra mikonad va port 80 ra az container be port 80 dar host machine rabt midahad.
+
+    $ docker ps
+
+    🔹 List-e container-haee ke alan dar hale ejra hastand ba etela'ati mesl ID, name va status anha ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ docker run -it ubuntu bash
+
+    🔹 Yek container Ubuntu jadid az tasvir (image) Ubuntu ra ejra mikonad va yek terminal interactive (bash) daroon-e an baz mikonad. Shoma mitavanid dastoor-ha ra daroon-e container ejra konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    Docker is an open-source platform for building, deploying, and running applications in containers. Containers are like lightweight, standalone units that package everything an application needs to run. This makes it easy to move applications between different environments.
+
+⚙️ **Options:**
+    🔹 `docker run [options] image_name` --> 🚀 Creates and runs a new container from an image.
+    🔹 `docker ps` --> 🐳 Lists the containers that are currently running.
+    🔹 `docker stop container_id` --> 🛑 Stops a running container.
+    🔹 `docker images` --> 🖼 Lists the images available on your system.
+    🔹 `docker build -t image_name .` --> 🏗 Builds an image from a Dockerfile.
+
+🛠 **Examples:**
+
+    $ docker run -d -p 80:80 nginx
+    
+    🔹 Runs an Nginx container in the background and maps port 80 from the container to port 80 on the host machine.
+
+    $ docker ps
+
+    🔹 Shows a list of currently running containers, along with information such as their ID, name, and status.
+
+✅ **Simple Example:**
+
+    $ docker run -it ubuntu bash
+
+    🔹 Runs a new Ubuntu container from the Ubuntu image and opens an interactive terminal (bash) inside it. You can then execute commands within the container.

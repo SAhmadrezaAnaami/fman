@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-testpage` baraye chap kardane yek safhe azmayeshi (test page) bar rooye printer-haye HP estefade mishavad. In dastoor printer shoma ra check mikonad ta az dorost kar kardane aan motmaen shavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-testpage -h`  --> ❓ Namayesh dadane rahnamaye dastoor (help message).
+    🔹 `hp-testpage -q`  --> 🤫 Saket boodan; hich payami namayesh dade nemishavad (quiet mode).
+    🔹 `hp-testpage [printer_name]` --> 🖨️ Eentekhab kardane yek printer khass baraye chap kardane safhe azmayeshi (test page). Agar esm-e printer ra nadehid, printer-e pishfarz estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-testpage
+
+    🔹 Chap kardane yek safhe azmayeshi (test page) bar rooye printer-e pishfarz (default).
+
+    $ hp-testpage DeskJet_3630
+
+    🔹 Chap kardane yek safhe azmayeshi (test page) bar rooye printer-e ba esm 'DeskJet_3630'.
+
+✅ **Mesal sade:**
+
+    $ hp-testpage -q DeskJet_3630
+
+    🔹 Chap kardane yek safhe azmayeshi (test page) bar rooye printer 'DeskJet_3630' bedune namayesh dadane hich payami. Agar printer dorost kar konad, yek safhe azmayeshi chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-testpage` command is used to print a test page on HP printers. This command checks your printer to ensure it's working correctly.
+
+⚙️ **Options:**
+    🔹 `hp-testpage -h`  --> ❓ Display the help message.
+    🔹 `hp-testpage -q`  --> 🤫 Quiet mode; no messages are displayed.
+    🔹 `hp-testpage [printer_name]` --> 🖨️ Select a specific printer to print the test page on. If you don't provide a printer name, the default printer will be used.
+
+🛠 **Examples:**
+
+    $ hp-testpage
+
+    🔹 Print a test page on the default printer.
+
+    $ hp-testpage DeskJet_3630
+
+    🔹 Print a test page on the printer named 'DeskJet_3630'.
+
+✅ **Simple Example:**
+
+    $ hp-testpage -q DeskJet_3630
+
+    🔹 Print a test page on the 'DeskJet_3630' printer without displaying any messages. If the printer is working correctly, a test page will be printed.

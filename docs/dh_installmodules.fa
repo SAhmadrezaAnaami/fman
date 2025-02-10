@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installmodules` baraye sabte module-haye Python dar jay-haye dorost, vaghti package Debian sakhte mishe, be kar mire. In dastoor, module-haye shoma ro barresi mikone va اطمینان حاصل mikone ke dorost نصب shodan.
+
+⚙️ **Gozine-ha:**
+    🔹 `--no-enable` --> 🚫 Module-ha ro fa'al (enable) nemikone. Fagat نصب (install) mikone.
+    🔹 `--pysuffix suffix` --> 🐍 پسوند (suffix) Python ro مشخص mikone (مثلا py3-).
+    🔹 `--version version` --> 🔢 Version-e Python ro مشخص mikone (مثلا 3.7).
+    🔹 `--dest directory` --> 🎯 Directory-e destination ro baraye نصب module-ha مشخص mikone.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installmodules
+
+    🔹 Module-ha ro ba تنظیمات پیش فرض نصب میکنه.
+
+    $ dh_installmodules --pysuffix py3- --version 3.9
+
+    🔹 Module-ha ro baraye Python 3.9 با پسوند py3- نصب میکنه.
+
+✅ **Mesal sade:**
+
+    $ dh_installmodules --no-enable
+
+    🔹 Module-ha رو نصب میکنه ولی اونها رو فعال نمیکنه، برای زمانی که میخوای بعدا فعالشون کنی.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installmodules` command is used to register Python modules in the correct locations when building a Debian package. This command examines your modules and ensures that they are installed correctly.
+
+⚙️ **Options:**
+    🔹 `--no-enable` --> 🚫 Does not enable the modules. It only installs them.
+    🔹 `--pysuffix suffix` --> 🐍 Specifies the Python suffix (e.g., py3-).
+    🔹 `--version version` --> 🔢 Specifies the Python version (e.g., 3.7).
+    🔹 `--dest directory` --> 🎯 Specifies the destination directory for installing the modules.
+
+🛠 **Examples:**
+
+    $ dh_installmodules
+
+    🔹 Installs the modules with default settings.
+
+    $ dh_installmodules --pysuffix py3- --version 3.9
+
+    🔹 Installs the modules for Python 3.9 with the py3- suffix.
+
+✅ **Simple Example:**
+
+    $ dh_installmodules --no-enable
+
+    🔹 Installs the modules but does not enable them, useful when you want to enable them later.

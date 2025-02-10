@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_link` baraye sakhtan `symlink` dar build process Debian estefade mishavad. Yani yek file ya pooshe ra be jaye digar "link" mikonad, bedune inke copy shavad. In kar be khusus baraye save kardan space va asan kardan update-ha mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--list-missing` --> 👀 List file-haye ke `symlink` be anha sakhte nashode ast. Mofid baraye peida kardan eshkalaha.
+    🔹 `--no-scripts`   --> 🚫 Script-haye pish az va pas az link zadan ra ejra nakone.
+    🔹 `--link-file`=FILE --> 🔗 File-haye link-e khass ra az yek file config khande va link-e anha ra misazad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_link
+    🔹 Be soorat automatic, link-haye tarif shode ra az `debian/links` misazad.
+
+    $ dh_link --list-missing
+    🔹 List-e file-haye ke link-e anha sakhte nashode ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    Agar file-e `debian/links` shamel khat `usr/bin/myprogram usr/local/bin/myprogram` bashad:
+    $ dh_link
+    🔹 Yek symlink az `usr/local/bin/myprogram` be `usr/bin/myprogram` misazad. Agar `usr/local/bin/myprogram` ghablan vojood nadashte bashad, sakhte mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_link` command is used to create symlinks during the Debian build process. It "links" a file or directory to another location, without copying it. This is particularly important for saving space and facilitating updates.
+
+⚙️ **Options:**
+    🔹 `--list-missing` --> 👀 List files for which symlinks have not been created. Useful for finding errors.
+    🔹 `--no-scripts`   --> 🚫 Do not run pre- and post-linking scripts.
+    🔹 `--link-file`=FILE --> 🔗 Reads specific link files from a configuration file and creates their links.
+
+🛠 **Examples:**
+
+    $ dh_link
+    🔹 Automatically creates links defined in `debian/links`.
+
+    $ dh_link --list-missing
+    🔹 Prints a list of files for which links have not been created.
+
+✅ **Simple Example:**
+
+    If the `debian/links` file contains the line `usr/bin/myprogram usr/local/bin/myprogram`:
+    $ dh_link
+    🔹 Creates a symlink from `usr/local/bin/myprogram` to `usr/bin/myprogram`. If `usr/local/bin/myprogram` does not already exist, it is created.

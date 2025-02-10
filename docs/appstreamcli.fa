@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `appstreamcli` baraye modiriat va didan metadata barname-ha dar format AppStream estefade mishavad. Shoma mitavanid etela'at raje' be barname-ha, nasakha-ye jadid, va description-haye anha ra az repository-haye software dar Linux begirid.
+
+⚙️ **Gozine-ha:**
+    🔹 `appstreamcli search [kalame]` --> 🔍 Jostojooye barname-ha ba estefade az kalame kelidi.
+    🔹 `appstreamcli show [ID]` --> ℹ️ Namayesh etela'at kamel baraye yek barname ba ID moshakhas.
+    🔹 `appstreamcli refresh` --> 🔄 Update kardane cache az repository-haye barname-ha.
+    🔹 `appstreamcli validate [FILE]` --> ✅ Check kardane dorost boodane file AppStream XML.
+
+🛠 **Mesal-ha:**
+
+    $ appstreamcli search firefox
+
+    🔹 Jostojooye barname-haei ke "firefox" dar name ya description-e anha vojood darad.
+
+    $ appstreamcli show org.mozilla.firefox
+
+    🔹 Namayesh etela'at kamel baraye barname firefox.
+
+✅ **Mesal sade:**
+
+    $ appstreamcli refresh
+
+    🔹 Update kardane database AppStream az repository-haye software. In dastoor bayad ba hozoore root run shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `appstreamcli` command is used to manage and view application metadata in the AppStream format. You can retrieve information about applications, updates, and descriptions from software repositories in Linux.
+
+⚙️ **Options:**
+    🔹 `appstreamcli search [term]` --> 🔍 Search for applications using a keyword.
+    🔹 `appstreamcli show [ID]` --> ℹ️ Show detailed information for an application with a specific ID.
+    🔹 `appstreamcli refresh` --> 🔄 Update the cache from the application repositories.
+    🔹 `appstreamcli validate [FILE]` --> ✅ Check if an AppStream XML file is valid.
+
+🛠 **Examples:**
+
+    $ appstreamcli search firefox
+
+    🔹 Searches for applications that have "firefox" in their name or description.
+
+    $ appstreamcli show org.mozilla.firefox
+
+    🔹 Shows detailed information for the firefox application.
+
+✅ **Simple Example:**
+
+    $ appstreamcli refresh
+
+    🔹 Updates the AppStream database from software repositories. This command usually needs to be run with root privileges.

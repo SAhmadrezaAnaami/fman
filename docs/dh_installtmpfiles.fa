@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installtmpfiles` baraye nasb-e file-haye `tmpfiles.d` az directory `debian` be directory-e dorost dar system estefade mishavad. In dastoor be systemd komak mikonad ta file-ha va directory-haye temporary ra dorost manage konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--create-dirs`  --> 📁 Agar directory vojood nadashte bashad, misazad.
+    🔹 `--sourcedir dir` --> 📂 Az in pooshe bejay-e `debian/tmpfiles` fileha ro migire.
+    🔹 `--name filename` --> 📝  Name file nasbi ra taeen mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installtmpfiles
+    
+    🔹 File-haye tmpfiles.d az `debian/tmpfiles` nasb mishavand.
+
+    $ dh_installtmpfiles --sourcedir resources/tmpfiles
+    
+    🔹 File-haye tmpfiles.d az `resources/tmpfiles` nasb mishavand.
+
+✅ **Mesal sade:**
+    
+    $ dh_installtmpfiles --name myapp
+    
+    🔹 Name file nasbi ra be `myapp` tagheer midahad va file `debian/myapp.tmpfiles` ra estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installtmpfiles` command is used to install `tmpfiles.d` files from the `debian` directory to the correct directory in the system. This helps systemd properly manage temporary files and directories.
+
+⚙️ **Options:**
+    🔹 `--create-dirs`  --> 📁 Creates directories if they don't exist.
+    🔹 `--sourcedir dir` --> 📂 Takes the tmpfiles from this directory instead of `debian/tmpfiles`.
+    🔹 `--name filename` --> 📝 Sets the name of the installed file.
+
+🛠 **Examples:**
+    
+    $ dh_installtmpfiles
+    
+    🔹 Installs tmpfiles.d files from `debian/tmpfiles`.
+
+    $ dh_installtmpfiles --sourcedir resources/tmpfiles
+    
+    🔹 Installs tmpfiles.d files from `resources/tmpfiles`.
+
+✅ **Simple Example:**
+    
+    $ dh_installtmpfiles --name myapp
+    
+    🔹 Changes the name of the installed file to `myapp` and uses the file `debian/myapp.tmpfiles`.

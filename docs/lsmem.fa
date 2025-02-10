@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsmem` baraye didan etela'at darbareye range-haye hafize-ye RAM dar system shoma estefade mishavad.  In dastoor be shoma neshon midahad che meghdar RAM darid, che meghdarash online ast va che meghdarash offline.  Baraye modiriat behine-ye hafize mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsmem`  --> 📊 Namayesh etela'at sade darbareye range-haye hafize.
+    🔹 `lsmem -a` --> 👀 Namayesh hameye range-ha, hata anha ke online nistand.
+    🔹 `lsmem -b` --> 🔢 Namayesh size-ha be byte.
+    🔹 `lsmem --summary` --> 📝 Namayesh yek kholase az etela'at hafize.
+
+🛠 **Mesal-ha:**
+
+    $ lsmem
+
+    🔹 Namayesh etela'at asasi darbareye range-haye RAM.
+
+    $ lsmem -a
+
+    🔹 Namayesh hameye range-haye RAM, online va offline.
+
+✅ **Mesal sade:**
+
+    $ lsmem | grep Online
+
+    🔹  Faghat range-haye hafize ke online hastand ra neshon midahad, baraye didan meghdar hafeze-ye dastras mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsmem` command is used to display information about the memory ranges of RAM in your system. It shows you how much RAM you have, how much is online, and how much is offline. This is useful for optimizing memory management.
+
+⚙️ **Options:**
+    🔹 `lsmem`  --> 📊 Display basic information about memory ranges.
+    🔹 `lsmem -a` --> 👀 Show all memory ranges, even those that are not online.
+    🔹 `lsmem -b` --> 🔢 Display sizes in bytes.
+    🔹 `lsmem --summary` --> 📝 Display a summary of memory information.
+
+🛠 **Examples:**
+
+    $ lsmem
+
+    🔹 Display basic information about RAM ranges.
+
+    $ lsmem -a
+
+    🔹 Display all RAM ranges, online and offline.
+
+✅ **Simple Example:**
+
+    $ lsmem | grep Online
+
+    🔹 Shows only the memory ranges that are online, which is useful for seeing the available memory.

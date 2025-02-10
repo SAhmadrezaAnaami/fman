@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-fstest` yek abzar (tool) ast dar GRUB ke baraye test kardane file system-ha be kar miravad, bedoone inke lazem bashe anha ro mount konid. Shoma mitavanid be vasileye in dastoor, file system-haye mokhtalef ro azmayesh konid va az dorosti-e kar kardane anha motmaen shavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--size SIZE`  --> 📏 Meghdar hafize (memory) ke baraye file system test estefade mishavad ra moshakhas mikonad.  SIZE mitavanad ba suffix-haee mesle K, M, G bashad (kilobyte, megabyte, gigabyte).
+    🔹 `--offset OFFSET` --> 🧭 Az yek offset khass dar device shoru be test kardan mikonad.
+    🔹 `--device DEVICE` --> 💾 Device ya image file-i ra moshakhas mikonad ke bayad test shavad (masalan, `/dev/sda1` ya `disk.img`).
+    🔹 `--format FORMAT` --> 🗂 File system format ra moshakhas mikonad (masalan, `ext2`, `ext4`, `fat`).  Agar moshakhas nashavad, grub-fstest format ra khodash tashkhis midahad.
+
+🛠 **Mesal-ha:**
+
+    $ grub-fstest --format ext4 disk.img
+
+    🔹 In dastoor file system ba format ext4 dar image file `disk.img` ra test mikonad.
+
+    $ grub-fstest --device /dev/sda1
+
+    🔹 In dastoor file system mojood dar partition `/dev/sda1` ra test mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-fstest --format ext2 --size 1M disk.img
+
+    🔹 File system `ext2` dar file `disk.img` ba size `1M` test mishavad. In mesal baraye check kardane file system-haye koochak va test-haye avaliye mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-fstest` command is a tool in GRUB used to test file systems without needing to mount them. You can use it to examine different file systems and ensure they are working correctly.
+
+⚙️ **Options:**
+    🔹 `--size SIZE`  --> 📏 Specifies the amount of memory to use for file system testing. SIZE can have suffixes like K, M, G (kilobyte, megabyte, gigabyte).
+    🔹 `--offset OFFSET` --> 🧭 Starts testing from a specific offset in the device.
+    🔹 `--device DEVICE` --> 💾 Specifies the device or image file to test (e.g., `/dev/sda1` or `disk.img`).
+    🔹 `--format FORMAT` --> 🗂 Specifies the file system format (e.g., `ext2`, `ext4`, `fat`). If not specified, `grub-fstest` will attempt to detect the format automatically.
+
+🛠 **Examples:**
+
+    $ grub-fstest --format ext4 disk.img
+
+    🔹 This command tests the file system formatted as ext4 in the image file `disk.img`.
+
+    $ grub-fstest --device /dev/sda1
+
+    🔹 This command tests the file system present on the partition `/dev/sda1`.
+
+✅ **Simple Example:**
+
+    $ grub-fstest --format ext2 --size 1M disk.img
+
+    🔹 Tests the `ext2` file system in the file `disk.img` with a size of `1M`. This example is useful for checking small file systems and initial tests.

@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mscompress` baraye feshorde kardan (compress) file-ha be formati ke Microsoft estefade mikonad (MS-DOS, Windows) be kar miravad. In kar be manzoore kam kardan hajm file va zakhire-sazi fazaye bishtar anjam mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mscompress file.txt compressed.txt`  --> 📝 File `file.txt` ra feshorde mikonad va ba name `compressed.txt` zakhire mikonad.
+    🔹 `mscompress -d compressed.txt original.txt` --> 🔓 File feshorde shode `compressed.txt` ra baz mikonad (decompress) va ba name `original.txt` zakhire mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ mscompress myfile.txt myfile.cmp
+
+    🔹 File `myfile.txt` feshorde shode va ba name `myfile.cmp` zakhire mishavad.
+
+    $ mscompress -d myfile.cmp myfile_original.txt
+
+    🔹 File `myfile.cmp` baz shode va ba name `myfile_original.txt` zakhire mishavad.
+
+✅ **Mesal sade:**
+
+    $ mscompress document.txt document.cmp
+
+    🔹 Dastoor file `document.txt` ra feshorde mikonad. Dar natije, hajm file kamtar mishavad, va `document.cmp` file jadidi ast ke file feshorde shode ra dar khod negah midarad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mscompress` command is used to compress files into a format used by Microsoft operating systems (MS-DOS, Windows). This is done to reduce file size and save storage space.
+
+⚙️ **Options:**
+    🔹 `mscompress file.txt compressed.txt`  --> 📝 Compresses the file `file.txt` and saves it as `compressed.txt`.
+    🔹 `mscompress -d compressed.txt original.txt` --> 🔓 Decompresses the compressed file `compressed.txt` and saves it as `original.txt`.
+
+🛠 **Examples:**
+
+    $ mscompress myfile.txt myfile.cmp
+
+    🔹 Compresses the file `myfile.txt` and saves it as `myfile.cmp`.
+
+    $ mscompress -d myfile.cmp myfile_original.txt
+
+    🔹 Decompresses the file `myfile.cmp` and saves it as `myfile_original.txt`.
+
+✅ **Simple Example:**
+
+    $ mscompress document.txt document.cmp
+
+    🔹 The command compresses `document.txt`. As a result, the file size is reduced, and `document.cmp` is a new file containing the compressed data.

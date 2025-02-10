@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `colormgr` (Color Manager) baraye modiriat rang-ha va profile-haye rang dar system-e shoma estefade mishavad. In dastoor be shoma komak mikonad ta rang-haye dorost va motabeg baraye dastgah-haye mokhtalef (mesle monitor-ha, printer-ha va scanner-ha) ra be kar beرید.
+
+⚙️ **Gozine-ha:**
+    🔹 `colormgr devices`  --> 🖥️ List kardan hameye dastgah-haye rang shenasayi shode.
+    🔹 `colormgr get-devices`  --> ➕ Gereftan list dastgah ha, hamanand `devices`.
+    🔹 `colormgr device-info ID`  --> ℹ️ Namayesh etela'at darbarye yek dastgah be khosos ba estefade az ID an.
+    🔹 `colormgr import-profile FILE` --> 📦 Import kardan yek profile rang az file.
+
+🛠 **Mesal-ha:**
+
+    $ colormgr devices
+
+    🔹 Namayesh list dastgah-haye rangshenasayi shode.
+
+    $ colormgr device-info display_samsung_SyncMaster_2494HM
+
+    🔹 Namayesh etela'at darbarye dastgah ba ID "display_samsung_SyncMaster_2494HM".
+
+✅ **Mesal sade:**
+
+    $ colormgr get-devices
+
+    🔹 Listi az device ha ro neshon mide. in dastoor be shoma ID-haye dastgah ha ro mide ke betoonid ba 'device-info' estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `colormgr` (Color Manager) command is used to manage color profiles on your system. It helps ensure accurate and consistent colors for different devices such as monitors, printers, and scanners.
+
+⚙️ **Options:**
+    🔹 `colormgr devices`  --> 🖥️ List all detected color devices.
+    🔹 `colormgr get-devices`  --> ➕ Retrieve a list of devices, similar to `devices`.
+    🔹 `colormgr device-info ID`  --> ℹ️ Display information about a specific device using its ID.
+    🔹 `colormgr import-profile FILE` --> 📦 Import a color profile from a file.
+
+🛠 **Examples:**
+
+    $ colormgr devices
+
+    🔹 Display the list of detected color devices.
+
+    $ colormgr device-info display_samsung_SyncMaster_2494HM
+
+    🔹 Display information about the device with the ID "display_samsung_SyncMaster_2494HM".
+
+✅ **Simple Example:**
+
+    $ colormgr get-devices
+
+    🔹 Shows a list of available color devices. This command gives you the device IDs you can use with the `device-info` command to learn more about a particular device.

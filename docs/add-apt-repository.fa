@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `add-apt-repository` baraye ezafe kardane yek manba’ jadid (repository) be list-e manabe’ APT shoma estefade mishavad. APT barname-i ast baraye nasb va modiriyat-e narmafzar dar Debian va Ubuntu. Ba ezafe kardane repository-haye jadid, shoma mitavanid narmafzar-haye bishtari ra nasb konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `add-apt-repository ppa:<esm-e-ppa>`  --> ➕ Ezafe kardane yek PPA (Personal Package Archive). PPA-ha repository-haye shakhsi hastand ke barname-haye jadid ya version-haye jadidtari az barname-haye mojood ra dar khod jaay dahand. Mesal: `sudo add-apt-repository ppa:ondrej/php`
+    🔹 `add-apt-repository --remove ppa:<esm-e-ppa>` --> ➖ Hazf kardane yek PPA. Mesal: `sudo add-apt-repository --remove ppa:ondrej/php`
+    🔹 `add-apt-repository <line-e-manba’>` --> 📝 Ezafe kardane yek line-e manba’ mostaghim az tarigh-e command line. In ravesh baraye repository-haye gheir-PPA estefade mishavad. Mesal: `sudo add-apt-repository "deb http://example.com/ubuntu bionic main"`
+
+🛠 **Mesal-ha:**
+
+    $ sudo add-apt-repository ppa:libreoffice/ppa
+
+    🔹 Ezafe kardane PPA rasmi LibreOffice baraye daryaft-e akharin version-e LibreOffice.
+
+    $ sudo add-apt-repository --remove ppa:libreoffice/ppa
+
+    🔹 Hazf kardane PPA rasmi LibreOffice.
+
+✅ **Mesal sade:**
+
+    $ sudo add-apt-repository ppa:wireshark/stable
+    $ sudo apt update
+
+    🔹 Ebtedaa, PPA Wireshark (baraye tool analizi network) ezafe mishavad. Seepas, `apt update` ejra mishavad ta list-e package-ha az hameye repository-haye mojood, az jomle PPA jadid, be rooz shavad. Ba’d az aan, shoma mitavanid Wireshark ra az tarigh-e `apt install wireshark` nasb konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `add-apt-repository` command is used to add a new repository to your APT source list. APT is a package management system used on Debian and Ubuntu systems for installing and managing software. By adding new repositories, you can install more software packages.
+
+⚙️ **Options:**
+    🔹 `add-apt-repository ppa:<ppa-name>` --> ➕ Adds a PPA (Personal Package Archive). PPAs are personal repositories that contain new programs or newer versions of existing programs. Example: `sudo add-apt-repository ppa:ondrej/php`
+    🔹 `add-apt-repository --remove ppa:<ppa-name>` --> ➖ Removes a PPA. Example: `sudo add-apt-repository --remove ppa:ondrej/php`
+    🔹 `add-apt-repository <source-line>` --> 📝 Adds a direct source line via the command line. This is used for non-PPA repositories. Example: `sudo add-apt-repository "deb http://example.com/ubuntu bionic main"`
+
+🛠 **Examples:**
+
+    $ sudo add-apt-repository ppa:libreoffice/ppa
+
+    🔹 Adds the official LibreOffice PPA to get the latest versions of LibreOffice.
+
+    $ sudo add-apt-repository --remove ppa:libreoffice/ppa
+
+    🔹 Removes the official LibreOffice PPA.
+
+✅ **Simple Example:**
+
+    $ sudo add-apt-repository ppa:wireshark/stable
+    $ sudo apt update
+
+    🔹 First, the Wireshark PPA (for network analysis tool) is added. Then, `apt update` is run to refresh the package list from all repositories, including the new PPA. After that, you can install Wireshark using `apt install wireshark`.

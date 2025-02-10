@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installdirs` baraye ijad-e directory-haye standard baraye barname-ha dar pakage-haye Debian estefade mishavad. In dastoor directory-haye lazem ra dar masir-haye sahih dar dakhel pakage ijad mikonad, ta etminan hasil shavad ke file-ha dar jaye dorost nasb mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name=esme_barname`  --> 🏷️  Esme barname ra moshakhas mikonad. Agar esm moshakhas nashavad, az $PACKAGE estefade mishavad.
+    🔹 `--sourcedir=masir`  --> 📂  Directory-e manba' ra moshakhas mikonad. Agar moshakhas nashavad, az directory-e jari estefade mishavad.
+    🔹 `--list-file=file` --> 📄  File-i ra moshakhas mikonad ke liste directory-haye mored-e niaz ra dar khod negah midarad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installdirs --name=myprogram
+    
+    🔹 Directory-haye standard baraye barname-ye "myprogram" ra ijad mikonad.
+
+    $ dh_installdirs --sourcedir=src --list-file=dirs.list
+
+    🔹 Directory-ha ra az file "dirs.list" dar directory "src" ijad mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installdirs --name=myapp
+    
+    🔹 Directory-haye lazeme baraye nasb-e "myapp" ra dar structure-e pakage-ye Debian dorost mikonad, mesle /usr/bin ya /usr/share/myapp.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installdirs` command is used to create standard directories for programs in Debian packages. This command creates the necessary directories in the correct paths within the package, ensuring that files are installed in the right place.
+
+⚙️ **Options:**
+    🔹 `--name=program_name`  --> 🏷️ Specifies the program name. If not specified, it defaults to $PACKAGE.
+    🔹 `--sourcedir=path`  --> 📂 Specifies the source directory. If not specified, it defaults to the current directory.
+    🔹 `--list-file=file` --> 📄 Specifies a file that contains a list of directories to create.
+
+🛠 **Examples:**
+
+    $ dh_installdirs --name=myprogram
+    
+    🔹 Creates standard directories for the "myprogram" program.
+
+    $ dh_installdirs --sourcedir=src --list-file=dirs.list
+    
+    🔹 Creates directories from the "dirs.list" file in the "src" directory.
+
+✅ **Simple Example:**
+
+    $ dh_installdirs --name=myapp
+    
+    🔹 Creates the necessary directories for installing "myapp" within the Debian package structure, such as /usr/bin or /usr/share/myapp.

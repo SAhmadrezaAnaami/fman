@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `linux-boot-prober` yek barname ast baraye gashtan va peyda kardan system-haye amele Linux ke rooye disk-haye mokhtalef mojood hastand. In dastoor be shoma komak mikonad ta boot loader (mesle GRUB) ra be rooz konid ta hameye system-haye amele mojud ra be dorosti shenasayi va load konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--verbose` --> 🗣️ Namayesh etela’at bishtar dar morede chigonegi peyda kardane system-haye linux. Baraye fahmidane moshkelat momken ast mofid bashad.
+    🔹 `--help`    --> ℹ️ Namayesh rahnama va gozine-haye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ linux-boot-prober
+    
+    🔹 Gashtan disk-ha baraye yaftan system-haye amele Linux va namayeshe natije.
+
+    $ linux-boot-prober --verbose
+    
+    🔹 Gashtan disk-ha va namayesh etela’at bishtar dar morede amal kard.
+
+✅ **Mesal sade:**
+    
+    $ linux-boot-prober
+    /dev/sda1:Ubuntu 20.04 LTS
+    /dev/sdb2:Debian 10
+    
+    🔹 In natije neshon midahad ke Ubuntu 20.04 rooye `/dev/sda1` va Debian 10 rooye `/dev/sdb2` nasb shode ast. In etela’at mitavanad baraye config kardane boot loader estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `linux-boot-prober` command is a tool used to scan and detect Linux operating systems installed on different disks. It helps you update your boot loader (like GRUB) to properly recognize and load all available operating systems.
+
+⚙️ **Options:**
+    🔹 `--verbose` --> 🗣️ Show more detailed information about how Linux systems are detected. Useful for troubleshooting.
+    🔹 `--help`    --> ℹ️ Display help information and command options.
+
+🛠 **Examples:**
+
+    $ linux-boot-prober
+
+    🔹 Scan disks for Linux operating systems and display the results.
+
+    $ linux-boot-prober --verbose
+
+    🔹 Scan disks and display more detailed information about the operation.
+
+✅ **Simple Example:**
+
+    $ linux-boot-prober
+    /dev/sda1:Ubuntu 20.04 LTS
+    /dev/sdb2:Debian 10
+
+    🔹 This output indicates that Ubuntu 20.04 is installed on `/dev/sda1` and Debian 10 is installed on `/dev/sdb2`. This information can be used to configure the boot loader.

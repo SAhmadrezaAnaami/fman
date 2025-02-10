@@ -1,0 +1,80 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nc.openbsd` (ya be soorat sade `nc`) yek asbabe chatri (multi-purpose tool) baraye shabake ast. Mitoone etesal TCP/UDP ijad kone, be port-ha goosh bede, va data ersal va daryaft kone.  Bishtar baraye debug kardane etesalat shabake va enteghale file estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `nc -l -p <port>` --> 👂 Goosh dadan be yek port baraye etesalat vared shode.
+    🔹 `nc <host> <port>` --> 🔗 Ijad yek etesal be yek host va port moshakhas.
+    🔹 `nc -u <host> <port>` --> 📡 Estefade az protocol UDP be jaye TCP.
+    🔹 `nc -v` --> 🗣️ Namayesh etela'ate bishtar dar morede etesal.
+    🔹 `nc -w <seconds>` --> ⏳ Ta'yin vaght entezar (timeout) baraye etesal.
+    🔹 `nc -k` --> 🚪 Ba'd az ghate shodan etesal, bazam goosh dadan be port (only with `-l`).
+
+🛠 **Mesal-ha:**
+
+    $ nc -l -p 12345
+    
+    🔹 Goosh dadan be port 12345 baraye etesalat TCP vared shode.
+
+    $ nc example.com 80
+    GET / HTTP/1.0
+
+    🔹 Ijad etesal be example.com dar port 80 va ersal yek darkhast HTTP.
+
+    $ nc -l -p 5000 > file.txt
+    
+    🔹 Save hameye data i ke az port 5000 daryaft mishavad dar file `file.txt`.
+
+    $ cat file.txt | nc example.com 6000
+
+    🔹 Ersal contents file `file.txt` be example.com dar port 6000.
+
+✅ **Mesal sade:**
+
+    $ nc -l -p 9999 | tee output.log
+
+    🔹 Goosh dadan be port 9999 va hameye data i ke daryaft mishavad ra be file `output.log` ham minevise va ham namayesh mide dar terminal. `tee` dastoor baraye copy kardan az vorudi be khuruji va yek file ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nc.openbsd` command (or simply `nc`) is a networking utility for reading from and writing to network connections using TCP or UDP. It can be used to create connections, listen on ports, and transfer data.  It's often used for debugging network connections and file transfers.
+
+⚙️ **Options:**
+    🔹 `nc -l -p <port>` --> 👂 Listen on a specified port for incoming connections.
+    🔹 `nc <host> <port>` --> 🔗 Establish a connection to a specified host and port.
+    🔹 `nc -u <host> <port>` --> 📡 Use UDP protocol instead of TCP.
+    🔹 `nc -v` --> 🗣️ Provide more verbose output about the connection.
+    🔹 `nc -w <seconds>` --> ⏳ Set a timeout for connections.
+    🔹 `nc -k` --> 🚪 Keep listening for more connections after the current one closes (only with `-l`).
+
+🛠 **Examples:**
+
+    $ nc -l -p 12345
+
+    🔹 Listen on port 12345 for incoming TCP connections.
+
+    $ nc example.com 80
+    GET / HTTP/1.0
+
+    🔹 Connect to example.com on port 80 and send an HTTP request.
+
+    $ nc -l -p 5000 > file.txt
+
+    🔹 Save all data received on port 5000 to the file `file.txt`.
+
+    $ cat file.txt | nc example.com 6000
+
+    🔹 Send the contents of the file `file.txt` to example.com on port 6000.
+
+✅ **Simple Example:**
+
+    $ nc -l -p 9999 | tee output.log
+
+    🔹 Listen on port 9999 and simultaneously display the received data on the terminal and save it to the `output.log` file. `tee` command is used to copy standard input to standard output and a file.

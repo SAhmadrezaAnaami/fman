@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-buildpackage` baraye sakhtan (*build*) package-haye Debian az source code estefade mishavad. Yani, code-haye asli shoma ro migire va az un ye file `.deb` misaze ke mishe rooye Debian ya Ubuntu install kard. 📦
+
+⚙️ **Gozine-ha:**
+    🔹 `-rfakeroot` --> 🔑 Estefade az fakeroot baraye sakhtan package ba dastresi-haye (permissions) dorost, bedoone niaze be root. Kheili vaghta lazeme!
+    🔹 `-b` --> 🧱 Fagat binary package ro besaz, na source package. Yani faghat file `.deb` ro besaz.
+    🔹 `-S` --> 📂 Fagat source package ro besaz, na binary package.
+    🔹 `-us` --> 🚫 Sign nakon source package ro. Age nemikhay sign koni estefade kon.
+    🔹 `-uc` --> 🚫 Sign nakon changelog file ro. Age nemikhay sign koni estefade kon.
+    🔹 `-nc` --> 🚧 Clean nakon directory ghabl az build. Baraye test ya debug be dard mikhore.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-buildpackage -rfakeroot -b
+
+    🔹 Sakhtane binary package ba fakeroot. Rah-e asun vase sakhtan package!
+
+    $ dpkg-buildpackage -rfakeroot -S
+
+    🔹 Sakhtane source package ba fakeroot.
+
+✅ **Mesal sade:**
+
+    $ dpkg-buildpackage -rfakeroot -b -uc -us
+
+    🔹 In dastoor binary package ro ba fakeroot misaze va hich kodum az package-haye source ya changelog ro sign nemikone.  Vase test ya deploy-haye dakheli kheili khoobe. 🧪
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-buildpackage` command is used to build Debian packages from source code. It takes your source code and creates a `.deb` file, which can be installed on Debian or Ubuntu systems. 📦
+
+⚙️ **Options:**
+    🔹 `-rfakeroot` --> 🔑 Use fakeroot to build the package with correct permissions without requiring root access. Often necessary!
+    🔹 `-b` --> 🧱 Build only the binary package, not the source package.  That is, only create the `.deb` file.
+    🔹 `-S` --> 📂 Build only the source package, not the binary package.
+    🔹 `-us` --> 🚫 Do not sign the source package. Use if you don't want to sign.
+    🔹 `-uc` --> 🚫 Do not sign the changelog file. Use if you don't want to sign.
+    🔹 `-nc` --> 🚧 Do not clean the directory before building. Useful for testing or debugging.
+
+🛠 **Examples:**
+
+    $ dpkg-buildpackage -rfakeroot -b
+
+    🔹 Build a binary package with fakeroot.  An easy way to build packages!
+
+    $ dpkg-buildpackage -rfakeroot -S
+
+    🔹 Build a source package with fakeroot.
+
+✅ **Simple Example:**
+
+    $ dpkg-buildpackage -rfakeroot -b -uc -us
+
+    🔹 This command builds a binary package with fakeroot and does not sign either the source package or the changelog. Great for testing or internal deployments. 🧪

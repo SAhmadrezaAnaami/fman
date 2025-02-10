@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `choom` (Character Oriented Outgoing Message) system ra ba safe tarin halat khamoush mikonad va hameye process-ha ra mibandad. Agar be root vared shode bashid, system ba estefade az `shutdown` dobare rah andazi mishavad.  In dastoor baraye zamani ke system hang karde ya moshkel darad va bayad dobare rah andazi shavad mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `choom`  --> ⛔ System ra khamoush mikonad. Agar root bashid, system dobare rah andazi mishavad.  
+    🔹 `choom -f` --> ⚠️ System ra be fori khamoush mikonad (be process-ha ehtaram nemizarad).  
+    🔹 `choom -n` --> 🚫 Az ersale peigham be karbaran pishgiri mikonad.  
+
+🛠 **Mesal-ha:**
+    
+    $ choom
+    
+    🔹 System ra ba safe tarin halat khamoush mikonad.
+
+    $ choom -f
+    
+    🔹 System ra be fori khamoush mikonad (process-ha be fori baste mishavand).
+
+✅ **Mesal sade:**
+
+    $ sudo choom
+ 
+    🔹  Ba estefade az `sudo`, dastoor `choom` ba dastresi root ejra mishavad va pas az khamoush shodan, system dobare rah andazi mishavad. Agar `sudo` estefade nashavad, system khamoush mimanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `choom` (Character Oriented Outgoing Message) command shuts down the system in the safest way possible, terminating all processes. If executed as root, the system is rebooted using `shutdown`. This command is useful when the system is unresponsive or experiencing issues and needs to be restarted.
+
+⚙️ **Options:**
+    🔹 `choom`  --> ⛔ Shuts down the system. If run as root, the system reboots.
+    🔹 `choom -f` --> ⚠️ Forcefully shuts down the system (does not respect processes).
+    🔹 `choom -n` --> 🚫 Prevents sending messages to users.
+
+🛠 **Examples:**
+
+    $ choom
+    
+    🔹 Shuts down the system gracefully.
+
+    $ choom -f
+    
+    🔹 Forcefully shuts down the system (processes are terminated immediately).
+
+✅ **Simple Example:**
+
+    $ sudo choom
+    
+    🔹 Using `sudo`, the `choom` command is executed with root privileges, and after shutdown, the system reboots. If `sudo` is not used, the system will remain shut down.
+

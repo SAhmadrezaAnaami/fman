@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `dbus-daemon` yek barname ast ke mesle yek postchi baraye barname-ha dar Linux kar mikonad. Yani barname-ha mitoonan payam-ha ra be vasileye `dbus-daemon` baraye hamdigar beferestand. In komak mikonad ta barname-ha ba ham moratebtar va hamahangtar bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--session`  --> 👤 Ra'e andazi (start) yek instance az `dbus-daemon` baraye yek user (session).
+    🔹 `--system`   --> ⚙️ Ra'e andazi yek instance az `dbus-daemon` baraye system (hameye user-ha).
+    🔹 `--print-address[=NUMBER]`  --> ✉️ Chap (print) address instance az `dbus-daemon` dar stdout. Number (adad) moshakhas mikonad chand instance dar hal ra'e andazi ast.
+
+🛠 **Mesal-ha:**
+
+    $ dbus-daemon --session
+
+    🔹 Ra'e andazi yek instance az `dbus-daemon` baraye session user jari (current user session).
+
+    $ dbus-daemon --system
+
+    🔹 Ra'e andazi yek instance az `dbus-daemon` baraye system.
+
+✅ **Mesal sade:**
+
+    $ dbus-daemon --session --print-address=1
+
+    🔹 Ra'e andazi yek instance az `dbus-daemon` baraye session user va chap address instance dar terminal. In address baraye barname-ha zaruri ast ta ba `dbus-daemon` ertebat bargharar konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `dbus-daemon` is a message bus system daemon. It acts like a postal service for applications in Linux, allowing them to send messages to each other. This helps applications to be more organized and coordinated.
+
+⚙️ **Options:**
+    🔹 `--session`  --> 👤 Starts a `dbus-daemon` instance for a user session.
+    🔹 `--system`   --> ⚙️ Starts a `dbus-daemon` instance for the entire system.
+    🔹 `--print-address[=NUMBER]`  --> ✉️ Prints the address of the `dbus-daemon` instance to stdout. NUMBER specifies which instance to print the address for, in case multiple instances are running.
+
+🛠 **Examples:**
+
+    $ dbus-daemon --session
+
+    🔹 Starts a `dbus-daemon` instance for the current user session.
+
+    $ dbus-daemon --system
+
+    🔹 Starts a `dbus-daemon` instance for the system.
+
+✅ **Simple Example:**
+
+    $ dbus-daemon --session --print-address=1
+
+    🔹 Starts a `dbus-daemon` instance for the user session and prints the instance's address to the terminal. This address is necessary for applications to communicate through the `dbus-daemon`.

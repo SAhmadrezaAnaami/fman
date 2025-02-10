@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mksquashfs` baraye dorost kardane yek file SquashFS estefade mishavad.  SquashFS yek no' file system compress shode ast ke be shoma ejaze mide file-ha va directory-haye ziadi ro dar yek file archive jam konid ta jaye kamtari begire.
+
+⚙️ **Gozine-ha:**
+    🔹 `mksquashfs source destination.squashfs`  --> 📁 Dorost kardane yek file SquashFS az `source` be `destination.squashfs`
+    🔹 `mksquashfs source destination.squashfs -b 1024k`  --> 🧱 Estefade az block size bozorgtar (masalan 1024k) baraye compress kardane behtar va sare'tar.
+    🔹 `mksquashfs source destination.squashfs -comp xz`  --> 🗜️ Estefade az algorithm XZ baraye compress kardane bishtar.
+    🔹 `mksquashfs source destination.squashfs -exclude 'pattern'` --> 🚫 Hazf file-ha ya directory-haye motabegh ba `pattern` az dakhel archive.
+
+🛠 **Mesal-ha:**
+
+    $ mksquashfs my_files archive.squashfs
+
+    🔹 File-ha va directory-haye dakhel `my_files` ra dar file `archive.squashfs` jam mikonad.
+
+    $ mksquashfs data image.squashfs -comp gzip -b 512k
+
+    🔹 Directory `data` ra ba estefade az `gzip` compress mikonad, ba block size `512k` va dar `image.squashfs` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ mksquashfs website website.squashfs -comp xz
+
+    🔹 Tamam file-ha va directory-haye dakhel `website` ra ba estefade az algorithm `xz` compress mikonad va yek file SquashFS be name `website.squashfs` misazad. In yek rah-hal khub baraye backup gereftan az website ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mksquashfs` command is used to create a SquashFS file system image. SquashFS is a highly compressed read-only file system, allowing you to package multiple files and directories into a single archive to save space.
+
+⚙️ **Options:**
+    🔹 `mksquashfs source destination.squashfs`  --> 📁 Create a SquashFS image from `source` to `destination.squashfs`.
+    🔹 `mksquashfs source destination.squashfs -b 1024k`  --> 🧱 Use a larger block size (e.g., 1024k) for better and faster compression.
+    🔹 `mksquashfs source destination.squashfs -comp xz`  --> 🗜️ Use the XZ compression algorithm for higher compression ratios.
+    🔹 `mksquashfs source destination.squashfs -exclude 'pattern'` --> 🚫 Exclude files or directories matching the `pattern` from the archive.
+
+🛠 **Examples:**
+
+    $ mksquashfs my_files archive.squashfs
+
+    🔹 Packages the files and directories within `my_files` into an archive named `archive.squashfs`.
+
+    $ mksquashfs data image.squashfs -comp gzip -b 512k
+
+    🔹 Compresses the `data` directory using `gzip`, with a block size of `512k`, and saves it to `image.squashfs`.
+
+✅ **Simple Example:**
+
+    $ mksquashfs website website.squashfs -comp xz
+
+    🔹 Compresses all files and directories inside the `website` directory using the `xz` compression algorithm, creating a SquashFS image named `website.squashfs`. This is a good way to backup a website.

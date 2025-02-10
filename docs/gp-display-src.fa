@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gp-display-src` baraye namayesh-e code manba (source code) yek package GP (geopackage) estefade mishavad. In dastoor be shoma komak mikonad ta bebined ke chi daroon package GP neveshte shode ast, mesle jadval-ha, trigger-ha, va view-ha.
+
+⚙️ **Gozine-ha:**
+    🔹 `gp-display-src <file.gp>` --> 📁 File geopackage-e ke mikhayid code manba-ash ra bebined.
+    🔹 `gp-display-src -t <table_name> <file.gp>` --> 🗂️ Faghat code manba-e jadval-e moshakhas ra namayesh midahad.
+    🔹 `gp-display-src -v <view_name> <file.gp>` --> 👓 Faghat code manba-e view-e moshakhas ra namayesh midahad.
+    🔹 `gp-display-src -tr <trigger_name> <file.gp>` --> ⚡ Faghat code manba-e trigger-e moshakhas ra namayesh midahad.
+    🔹 `gp-display-src -all <file.gp>` --> 💯 Namayesh hameye code manba-haye mojood dar geopackage.
+
+🛠 **Mesal-ha:**
+
+    $ gp-display-src mygeopackage.gp
+
+    🔹 Namayesh hameye code manba-ha az geopackage `mygeopackage.gp`.
+
+    $ gp-display-src -t mytable mygeopackage.gp
+
+    🔹 Namayesh code manba faghat baraye jadval `mytable` dar geopackage `mygeopackage.gp`.
+
+✅ **Mesal sade:**
+
+    $ gp-display-src -t poi mydata.gp | less
+
+    🔹 Code manba jadval `poi` az file `mydata.gp` namayesh dade shode va az tarigh `less` mitavanid an ra safhe be safhe bebinid (dar terminal-ha-e bozorg komak mikonad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gp-display-src` command is used to display the source code of a GP (GeoPackage) database. This command helps you to inspect the contents and structure of a GeoPackage, such as tables, triggers, and views.
+
+⚙️ **Options:**
+    🔹 `gp-display-src <file.gp>` --> 📁 GeoPackage file whose source code you want to display.
+    🔹 `gp-display-src -t <table_name> <file.gp>` --> 🗂️ Display the source code only for the specified table.
+    🔹 `gp-display-src -v <view_name> <file.gp>` --> 👓 Display the source code only for the specified view.
+    🔹 `gp-display-src -tr <trigger_name> <file.gp>` --> ⚡ Display the source code only for the specified trigger.
+    🔹 `gp-display-src -all <file.gp>` --> 💯 Display all source code available in the GeoPackage.
+
+🛠 **Examples:**
+
+    $ gp-display-src mygeopackage.gp
+
+    🔹 Display all source code from the `mygeopackage.gp` GeoPackage.
+
+    $ gp-display-src -t mytable mygeopackage.gp
+
+    🔹 Display the source code only for the `mytable` table within the `mygeopackage.gp` GeoPackage.
+
+✅ **Simple Example:**
+
+    $ gp-display-src -t poi mydata.gp | less
+
+    🔹 Displays the source code for the `poi` table from the `mydata.gp` file, and uses `less` to page through the output (helpful in larger terminals).

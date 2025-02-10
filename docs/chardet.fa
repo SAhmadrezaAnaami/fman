@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chardet` baraye tashkhis encoding (code-gozaari) yek file ya matn be kar miravad.  In dastoor komak mikonad ta motmaen shavid ke file-ha ba encoding sahih baz mishavand ta horoof be dorosti namayesh dade shavand.  Agar encoding ra nemidanid, `chardet` mitavanad حدس بزند (hads bezanad) ke encoding chiست (chist).
+
+⚙️ **Gozine-ha:**
+    🔹 `chardet filename`  --> 📃 Tashkhis encoding file mored nazar.
+    🔹 `chardet --version` --> ℹ️ Namayesh نسخه (versione) chardet نصب‌شده (nasb-shode).
+    🔹 `chardet` + `matn`  --> ⌨️ Tashkhis encoding matn voroodi (input).  (Bayad matn ra be soorate standard input vared konid, mesle استفاده از pipe).
+
+🛠 **Mesal-ha:**
+
+    $ chardet myfile.txt
+
+    🔹 Tashkhis encoding file "myfile.txt".
+
+    $ cat myfile.txt | chardet
+
+    🔹 Tashkhis encoding matni ke az file "myfile.txt" khande shodeh ast.
+
+✅ **Mesal sade:**
+
+    $ chardet sample.txt
+    sample.txt: utf-8 with confidence 0.99
+
+    🔹 Yani `chardet` bavar darad (confidence) 99% ke encoding file "sample.txt", UTF-8 ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chardet` command is used to detect the character encoding of a file or text. It helps ensure that files are opened with the correct encoding so characters are displayed properly. If you are unsure of a file's encoding, `chardet` can guess it.
+
+⚙️ **Options:**
+    🔹 `chardet filename`  --> 📃 Detect the encoding of the specified file.
+    🔹 `chardet --version` --> ℹ️ Display the installed chardet version.
+    🔹 `chardet` + `text`  --> ⌨️ Detect the encoding of input text. (You must input the text as standard input, such as using a pipe).
+
+🛠 **Examples:**
+
+    $ chardet myfile.txt
+
+    🔹 Detects the encoding of the file "myfile.txt".
+
+    $ cat myfile.txt | chardet
+
+    🔹 Detects the encoding of the text read from the file "myfile.txt".
+
+✅ **Simple Example:**
+
+    $ chardet sample.txt
+    sample.txt: utf-8 with confidence 0.99
+
+    🔹 This means that `chardet` is 99% confident that the encoding of the file "sample.txt" is UTF-8.

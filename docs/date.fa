@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `date` baraye namayesh ya tagheer dadane tarikhe rooz va saat dar system estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `date`  --> 🗓️ Namayesh tarikhe konooni be soorate pishfarz.
+    🔹 `date + "%Y-%m-%d"` --> 📅 Namayesh tarikhe konooni ba format delkhah (year-month-day).
+    🔹 `date + "%T"` --> ⌚️ Namayesh saat be soorate hour:minute:second.
+    🔹 `date -s "STRING"` --> ⏰ Tagheer dadane saat va tarikh (niaz be dastrasi root).
+
+🛠 **Mesal-ha:**
+
+    $ date
+
+    🔹 Namayesh tarikhe va saat konooni.
+
+    $ date + "%A, %d %B %Y"
+
+    🔹 Namayesh tarikh ba formati ke rooze hafte, rooz, mah va sal ra neshan midahad.
+
+✅ **Mesal sade:**
+
+    $ date + "%Y%m%d-%H%M%S"
+
+    🔹 In dastoor tarikh va saat ra be shekle YYYYMMDD-HHMMSS namayesh midahad, baraye sakhte name file-ha ba zaman munasib ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `date` command is used to display or set the system date and time.
+
+⚙️ **Options:**
+    🔹 `date`  --> 🗓️ Display the current date and time in the default format.
+    🔹 `date + "%Y-%m-%d"` --> 📅 Display the current date in a custom format (year-month-day).
+    🔹 `date + "%T"` --> ⌚️ Display the time in hour:minute:second format.
+    🔹 `date -s "STRING"` --> ⏰ Set the date and time (requires root access).
+
+🛠 **Examples:**
+
+    $ date
+
+    🔹 Display the current date and time.
+
+    $ date + "%A, %d %B %Y"
+
+    🔹 Display the date in a format showing the day of the week, day, month, and year.
+
+✅ **Simple Example:**
+
+    $ date + "%Y%m%d-%H%M%S"
+
+    🔹 This command displays the date and time as YYYYMMDD-HHMMSS, useful for creating filenames with timestamps.

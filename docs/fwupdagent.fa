@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fwupdagent` baraye modiriyat va update kardan firmware device-ha az tarigh `fwupd` daemon estefade mishavad. In dastoor obzar-i ast ke dar pas-zamine kar mikonad va barresi mikonad aya update jadidi baraye device-haye shoma vojood darad ya na. Agar update'i bashad, shoma ra motale misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--daemon`  --> 👾 Dastoor ra dar pas-zamine ejra mikonad. (az ghabl be soorat khodkaar ejra mishavad)
+    🔹 `--verbose` --> 🗣️ Etela'at bishtari dar morede amal kard dastoor chap mikonad. Baraye debug kardan mofid ast.
+    🔹 `--version` --> 🔢 Version `fwupdagent` ra neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ fwupdagent --verbose
+
+    🔹 Dastoor ra ba etela'at bishtar ejra mikonad.
+
+    $ fwupdagent --version
+
+    🔹 Version `fwupdagent` ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ fwupdagent
+
+    🔹 Aksaran be soorat khodkaar ejra mishavad va be shoma dar morede update-haye firmware khabar midahad. Shoma ehtiyaji nadarid ke be soorat mostaghel an ra ejra konid magar anke bekhahid debug konid ya etela'ati ra be dast avarid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fwupdagent` command manages and updates device firmware through the `fwupd` daemon. It's a background utility that checks for new firmware updates for your devices and notifies you when updates are available.
+
+⚙️ **Options:**
+    🔹 `--daemon`  --> 👾 Runs the command in the background (already runs automatically).
+    🔹 `--verbose` --> 🗣️ Prints more detailed information about the command's operations. Useful for debugging.
+    🔹 `--version` --> 🔢 Displays the `fwupdagent` version.
+
+🛠 **Examples:**
+
+    $ fwupdagent --verbose
+
+    🔹 Runs the command with more detailed output.
+
+    $ fwupdagent --version
+
+    🔹 Prints the `fwupdagent` version.
+
+✅ **Simple Example:**
+
+    $ fwupdagent
+
+    🔹 Usually runs automatically and notifies you about firmware updates. You typically don't need to run it manually unless you want to debug or gather information.

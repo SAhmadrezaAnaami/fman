@@ -1,0 +1,97 @@
+Okay, I will generate a user-friendly man page for the `comm` command according to the given specifications.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `comm` file-haye matni ra ba ham moghayese mikonad va khat-ha-ye moshtarak va gheyre moshtarak ra neshan midahad.  File-ha bayad ghablan moratab shode bashand (ba dastoor `sort`).
+
+⚙️ **Gozine-ha:**
+    🔹 `comm -1 file1 file2` --> 🚫 Khat-haye mojood dar file1 ra hazf mikonad.
+    🔹 `comm -2 file1 file2` --> 🚫 Khat-haye mojood dar file2 ra hazf mikonad.
+    🔹 `comm -3 file1 file2` --> 🚫 Khat-haye moshtarak bein file1 va file2 ra hazf mikonad.
+    🔹 `comm -12 file1 file2` --> 📜 Khat-haye mojood dar file1 va file2 ra hazf mikonad va faghat khat-haye moshtarak ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ cat file1.txt
+    Ahmad
+    Ali
+    Reza
+
+    $ cat file2.txt
+    Ali
+    Hasan
+    Reza
+
+    $ comm file1.txt file2.txt
+    Ahmad
+        Ali
+        Reza
+            Hasan
+
+    🔹 Namayesh khat-haye gheyre moshtarak va moshtarak bein do file.
+
+    $ comm -12 file1.txt file2.txt
+    	Ali
+    	Reza
+
+    🔹 Faghat khat-haye moshtarak bein do file ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ comm -3 file1.txt file2.txt
+    Ahmad
+    	Hasan
+
+    🔹 Khat-haye moshtarak ra hazf mikonad va faghat khat-haye gheyre moshtarak ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `comm` command compares two sorted text files line by line and outputs the lines unique to each file and the lines common to both files.  The files must be sorted beforehand (using the `sort` command).
+
+⚙️ **Options:**
+    🔹 `comm -1 file1 file2` --> 🚫 Suppress lines unique to file1.
+    🔹 `comm -2 file1 file2` --> 🚫 Suppress lines unique to file2.
+    🔹 `comm -3 file1 file2` --> 🚫 Suppress lines common to both files.
+    🔹 `comm -12 file1 file2` --> 📜 Suppress lines unique to file1 and file2, displaying only common lines.
+
+🛠 **Examples:**
+
+    $ cat file1.txt
+    Ahmad
+    Ali
+    Reza
+
+    $ cat file2.txt
+    Ali
+    Hasan
+    Reza
+
+    $ comm file1.txt file2.txt
+    Ahmad
+        Ali
+        Reza
+            Hasan
+
+    🔹 Displays unique and common lines between two files.
+
+    $ comm -12 file1.txt file2.txt
+    	Ali
+    	Reza
+
+    🔹 Displays only the lines common to both files.
+
+✅ **Simple Example:**
+
+    $ comm -3 file1.txt file2.txt
+    Ahmad
+    	Hasan
+
+    🔹 Suppresses the common lines and shows only the lines unique to each file.
+

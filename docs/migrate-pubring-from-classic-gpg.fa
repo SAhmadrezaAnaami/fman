@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `migrate-pubring-from-classic-gpg` baraye enteqal koleed-haye public az formate classic GPG (ke ghadimi tare) be formate jadid tar va behtar estefade mishavad. In kar be shoma komak mikonad ke az amniyat va sazegaari bishtar dar barname-haye jadidtar estefade konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--help` --> ℹ️ Namayesh rahnamaye dastoor va gozine-ha.
+    🔹 `--target-dir <path>` --> 🎯 Masiire pooshe-ei ke bayad koleed-ha be aan enteqal yaaband. Age moshakhas nashavad, az default estefade mishavad.
+    🔹 `--no-backup` --> 🚫 Az gereftan backup az koleed-haye asli khoddaari kon. Ehtiyat konid!
+    🔹 `--verbose` --> 🗣️ Namayesh etela'ate bishtar dar morede amal-e enteqal.
+
+🛠 **Mesal-ha:**
+
+    $ migrate-pubring-from-classic-gpg --target-dir /home/user/new_gpg_keys
+
+    🔹 Enteqal koleed-haye public be pooshe-ye `new_gpg_keys`
+
+    $ migrate-pubring-from-classic-gpg --no-backup --verbose
+
+    🔹 Enteqal koleed-ha bedune backup va ba namayesh etela'ate bishtar (verbose mode).
+
+✅ **Mesal sade:**
+
+    $ migrate-pubring-from-classic-gpg
+
+    🔹 Agar heech gozine-ei dade nashavad, dastoor koleed-haye public ra az location-e default enteqal midehad be location-e default-e jadid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `migrate-pubring-from-classic-gpg` command is used to migrate public keys from the classic GPG format (older) to a newer and improved format.  This helps to ensure better security and compatibility with newer applications.
+
+⚙️ **Options:**
+    🔹 `--help` --> ℹ️ Display command help and options.
+    🔹 `--target-dir <path>` --> 🎯 Specify the directory where the keys should be migrated to.  If not specified, the default location is used.
+    🔹 `--no-backup` --> 🚫 Skip creating a backup of the original keys. Use with caution!
+    🔹 `--verbose` --> 🗣️ Display more information about the migration process.
+
+🛠 **Examples:**
+
+    $ migrate-pubring-from-classic-gpg --target-dir /home/user/new_gpg_keys
+
+    🔹 Migrate public keys to the `new_gpg_keys` directory.
+
+    $ migrate-pubring-from-classic-gpg --no-backup --verbose
+
+    🔹 Migrate keys without creating a backup and with verbose output.
+
+✅ **Simple Example:**
+
+    $ migrate-pubring-from-classic-gpg
+
+    🔹 If no options are provided, the command migrates the public keys from the default location to the new default location.

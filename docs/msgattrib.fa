@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgattrib` baraye dastkari va tagheer attribute-haye payam-ha dar file-haye `po` (Portable Object) estefade mishavad. File-haye `po` baraye tarjome-ye barnam-ha be zaban-haye mokhtalef be kar miravand. `msgattrib` komak mikonad ke shoma attribute-haye khas-e har payam ra tagheer dahid, masalan taghire status-e "fuzzy" ya "translated" ra anjam dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--translated` --> ✅ Hameye payam-ha ra be onvane tarjome shode nishan midahad.
+    🔹 `--untranslated` --> ❌ Hameye payam-ha ra be onvane tarjome nashode nishan midahad.
+    🔹 `--fuzzy` --> ⚠️ Payam-ha ra ba attribute "fuzzy" nishan midahad, yani niaz be check kardan darand.
+    🔹 `--no-fuzzy` --> 👌 Attribute "fuzzy" ra az payam-ha bardasht mikonad.
+    🔹 `-o <file>` --> 💾 Natije ra dar yek file jadid zakhire mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ msgattrib --translated input.po -o output.po
+
+    🔹 File `input.po` ra migirad va hameye payam-ha ra be onvane tarjome shode mark mikonad, natije ra dar `output.po` zakhire mikonad.
+
+    $ msgattrib --fuzzy --no-fuzzy input.po
+
+    🔹 Attribute fuzzy ra az hameye payam-ha bardasht mikonad.
+
+✅ **Mesal sade:**
+
+    $ msgattrib --untranslated template.po
+
+    🔹 Hameye payam-ha dar file `template.po` ra be onvane tarjome nashode mark mikonad, in komak mikonad ta shoma az aval shoro be tarjome konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgattrib` command is used to manipulate and modify message attributes in `po` (Portable Object) files. `po` files are used for translating programs into different languages. `msgattrib` allows you to change specific attributes of each message, such as setting the "fuzzy" or "translated" status.
+
+⚙️ **Options:**
+    🔹 `--translated` --> ✅ Marks all messages as translated.
+    🔹 `--untranslated` --> ❌ Marks all messages as untranslated.
+    🔹 `--fuzzy` --> ⚠️ Marks messages with the "fuzzy" attribute, indicating they need review.
+    🔹 `--no-fuzzy` --> 👌 Removes the "fuzzy" attribute from messages.
+    🔹 `-o <file>` --> 💾 Saves the output to a new file.
+
+🛠 **Examples:**
+
+    $ msgattrib --translated input.po -o output.po
+
+    🔹 Takes the `input.po` file, marks all messages as translated, and saves the result to `output.po`.
+
+    $ msgattrib --fuzzy --no-fuzzy input.po
+
+    🔹 Removes the fuzzy attribute from all messages.
+
+✅ **Simple Example:**
+
+    $ msgattrib --untranslated template.po
+
+    🔹 Marks all messages in the `template.po` file as untranslated, which can be useful when starting a translation from scratch.

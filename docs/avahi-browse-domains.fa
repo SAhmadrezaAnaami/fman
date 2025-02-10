@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-browse-domains` baraye peyda kardan domain-haye morede estefade az tarigh Avahi (yek system baraye service discovery) be kar miravad. In dastoor be shoma komak mikonad domain-haye mahalli ke service-ha dar aanha mojood hastand ra peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `avahi-browse-domains -t` --> ⏱️ Tanha domain-ha ra yek bar namayesh dade va khateme bede. Be jaye monitor kardan taghirat.
+    🔹 `avahi-browse-domains -v` --> 🗣️ Ezafe kardan etela'at bishtar be khorooji, mesle flag-ha.
+    🔹 `avahi-browse-domains --all` --> 🌐 Namayesh hameye domain-ha, hata domain-haye static.
+
+🛠 **Mesal-ha:**
+
+    $ avahi-browse-domains
+
+    🔹 List kardan domain-haye mahalli mojood.
+
+    $ avahi-browse-domains -t
+
+    🔹 List kardan domain-ha, va baad az an khorooj.
+
+✅ **Mesal sade:**
+
+    $ avahi-browse-domains
+
+    Output mesal:
+    + wlan0 IPv4 local                                              domains
+    + wlan0 IPv6 local                                              domains
+    = wlan0 IPv4 local                                              local
+    = wlan0 IPv6 local                                              local
+
+    🔹 In mesal neshon midahad ke system domain "local" ra peyda karde ast, ham az tarigh IPv4 va ham IPv6, rooye interface wlan0.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-browse-domains` command is used to discover domains available through Avahi, which is a system for service discovery. This command helps you find local domains where services are available.
+
+⚙️ **Options:**
+    🔹 `avahi-browse-domains -t` --> ⏱️ Only list the domains once and then exit, instead of monitoring for changes.
+    🔹 `avahi-browse-domains -v` --> 🗣️ Add more verbosity to the output, such as flags.
+    🔹 `avahi-browse-domains --all` --> 🌐 Show all domains, including static ones.
+
+🛠 **Examples:**
+
+    $ avahi-browse-domains
+
+    🔹 List the available local domains.
+
+    $ avahi-browse-domains -t
+
+    🔹 List the domains once, and then exit.
+
+✅ **Simple Example:**
+
+    $ avahi-browse-domains
+
+    Example output:
+    + wlan0 IPv4 local                                              domains
+    + wlan0 IPv6 local                                              domains
+    = wlan0 IPv4 local                                              local
+    = wlan0 IPv6 local                                              local
+
+    🔹 This example shows that the system discovered the "local" domain, both via IPv4 and IPv6, on the wlan0 interface.

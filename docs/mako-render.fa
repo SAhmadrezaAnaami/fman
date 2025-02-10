@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mako-render` baraye ejra va namayeshe template-haye Mako (yek engine template-sazi baraye Python) estefade mishavad. Yani shoma mitavanid yek file template Mako ra bedahid va natijeye an ra be dast آورید.
+
+⚙️ **Gozine-ha:**
+    🔹 `--template FILE` --> 📄 File template Mako ke bayad render shavad.
+    🔹 `--data DATA`     --> 💾 Dadeh-haee ke baraye template estefade mishavad (mitavanad JSON bashad).
+    🔹 `--output FILE`   --> 📤 Natijeye render shode ra dar yek file zakhire mikonad.
+    🔹 `--module-directory DIR` --> 📁 Pooshe-i baraye zakhire kardane module-haye compiled shode Mako.
+
+🛠 **Mesal-ha:**
+
+    $ mako-render --template mytemplate.mako
+
+    🔹 Render kardane `mytemplate.mako` va chap kardane natije dar terminal.
+
+    $ mako-render --template mytemplate.mako --data '{"name": "Ali"}'
+
+    🔹 Render kardane `mytemplate.mako` ba dadeh-haee ke dar format JSON dade shode ast.
+
+    $ mako-render --template mytemplate.mako --output output.txt
+
+    🔹 Render kardane `mytemplate.mako` va zakhire kardane natije dar `output.txt`.
+
+✅ **Mesal sade:**
+
+    $ mako-render --template hello.mako --data '{"name": "Javad"}'
+
+    🔹 Agar `hello.mako` shamel `Hello, ${name}!` bashad, natije `Hello, Javad!` khahad bood.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mako-render` command is used to execute and display Mako templates (a templating engine for Python). It allows you to provide a Mako template file and get the rendered output.
+
+⚙️ **Options:**
+    🔹 `--template FILE` --> 📄 The Mako template file to render.
+    🔹 `--data DATA`     --> 💾 Data to be used in the template (can be JSON).
+    🔹 `--output FILE`   --> 📤 Saves the rendered output to a file.
+    🔹 `--module-directory DIR` --> 📁 Directory to store compiled Mako modules.
+
+🛠 **Examples:**
+
+    $ mako-render --template mytemplate.mako
+
+    🔹 Renders `mytemplate.mako` and prints the result to the terminal.
+
+    $ mako-render --template mytemplate.mako --data '{"name": "Ali"}'
+
+    🔹 Renders `mytemplate.mako` with the data provided in JSON format.
+
+    $ mako-render --template mytemplate.mako --output output.txt
+
+    🔹 Renders `mytemplate.mako` and saves the result to `output.txt`.
+
+✅ **Simple Example:**
+
+    $ mako-render --template hello.mako --data '{"name": "Javad"}'
+
+    🔹 If `hello.mako` contains `Hello, ${name}!`, the output will be `Hello, Javad!`.

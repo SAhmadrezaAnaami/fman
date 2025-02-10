@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dscverify` baraye check kardane signature-haye Digital Signature Certificate (DSC) estefade mishavad. In dastoor komak mikonad ta az dorosti va etemadpazirboodane file-ha va etela'at اطمینان حاصل konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dscverify filename.pdf`  --> 📄 Check kardane signature-haye yek file PDF.
+    🔹 `dscverify --help` --> ❓ Namayesh dadane rahnama va gozine-haye dastoor.
+    🔹 `dscverify --version` --> ℹ️ Namayesh dadane version dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ dscverify document.pdf
+
+    🔹 Check kardane signature-haye file "document.pdf".
+
+    $ dscverify report.xml
+
+    🔹 Check kardane signature-haye file "report.xml".
+
+✅ **Mesal sade:**
+
+    $ dscverify my_contract.pdf
+    Verification successful.
+
+    🔹 In mesal نشان میدهد ke signature-haye file "my_contract.pdf" dorost va valid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dscverify` command is used to verify Digital Signature Certificate (DSC) signatures. This command helps ensure the authenticity and integrity of files and data.
+
+⚙️ **Options:**
+    🔹 `dscverify filename.pdf`  --> 📄 Verify the signatures of a PDF file.
+    🔹 `dscverify --help` --> ❓ Display help information and command options.
+    🔹 `dscverify --version` --> ℹ️ Display the command version.
+
+🛠 **Examples:**
+
+    $ dscverify document.pdf
+
+    🔹 Verify the signatures of the file "document.pdf".
+
+    $ dscverify report.xml
+
+    🔹 Verify the signatures of the file "report.xml".
+
+✅ **Simple Example:**
+
+    $ dscverify my_contract.pdf
+    Verification successful.
+
+    🔹 This example shows that the signatures of the file "my_contract.pdf" are valid and authentic.
+

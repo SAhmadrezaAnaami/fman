@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `edit-patch` baraye tagheer dadan ya dorost kardane patch file-ha estefade mishavad. Patch file-ha tagheerati ra dar file-ha zakhire mikonand va ba estefade az dastoor `patch` apply mishavand. Ba `edit-patch` shoma mitoonid in tagheerat ra be asoone modiriyat konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `edit-patch`  --> 📝 Fael ra baz mikonad ta shoma tagheerat ra be soorat dasti anjam dahid. (Default editor az $EDITOR estefade mikonad)
+    🔹 `edit-patch -p <number>` --> ✂️ Tedade pooshe-haye ziadi ra az esme file baraye jahat dehi hazf mikonad. Vaghti path-ha dar patch sahih nistand be dard mikhorad.
+    🔹 `edit-patch --version` --> ℹ️ Neshaan dadane version-e barname.
+    🔹 `edit-patch --help` --> ❓ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ edit-patch my_patch.patch
+
+    🔹 Baz kardane `my_patch.patch` baraye tagheer dadane dasti.
+
+    $ edit-patch -p1 my_patch.patch
+
+    🔹 Baz kardane `my_patch.patch` ba hazfe yek pooshe az path-ha dar patch file.
+
+✅ **Mesal sade:**
+
+    $ edit-patch small_fix.patch
+
+    🔹 In dastoor file `small_fix.patch` ra ba estefade az default editor baz mikonad. Shoma mitoonid tagheerat lazem ra anjam bedid, zakhire konid, va bebandid. Ba estefade az dastoor `patch`, shoma mitoonid tagheerat ra be code asli apply konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `edit-patch` command is used to modify or create patch files. Patch files store changes to files and are applied using the `patch` command. With `edit-patch`, you can easily manage these changes.
+
+⚙️ **Options:**
+    🔹 `edit-patch` --> 📝 Opens the file for manual editing (uses the default editor from $EDITOR).
+    🔹 `edit-patch -p <number>` --> ✂️  Removes a number of leading path components to guide the patch. Useful when paths in the patch are incorrect.
+    🔹 `edit-patch --version` --> ℹ️ Display the program version.
+    🔹 `edit-patch --help` --> ❓ Display command help.
+
+🛠 **Examples:**
+
+    $ edit-patch my_patch.patch
+
+    🔹 Opens `my_patch.patch` for manual editing.
+
+    $ edit-patch -p1 my_patch.patch
+
+    🔹 Opens `my_patch.patch` removing one leading directory from the paths in the patch file.
+
+✅ **Simple Example:**
+
+    $ edit-patch small_fix.patch
+
+    🔹 This command opens the `small_fix.patch` file using your default editor. You can make necessary changes, save them, and close the editor.  By using `patch`, you can then apply the change to the original code.

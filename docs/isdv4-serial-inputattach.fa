@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `isdv4-serial-inputattach` baraye vasl kardan device-haye serial ISDN V.4 be system-e input Linux estefade mishavad. Be zabane sade tar, in dastoor komak mikonad ta shoma betavanid az device-haye serial-e ISDN V.4 mesle keyboard ya mouse be عنوان device-haye voroodi dar Linux estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-m <device>` --> 🐭 Specify kardan device-e serial-e mouse.
+    🔹 `-k <device>` --> ⌨️ Specify kardan device-e serial-e keyboard.
+    🔹 `-d`        --> 🐞 Debug mode ra fa'al mikonad baraye peyda kardan khataha.
+    🔹 `-h`        --> ❓ Rahnamayi dastoor ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ isdv4-serial-inputattach -m /dev/ttyS0
+
+    🔹 Device-e serial-e mouse ra ke be /dev/ttyS0 vasl ast, ra andaze giri mikonad.
+
+    $ isdv4-serial-inputattach -k /dev/ttyS1 -d
+
+    🔹 Device-e serial-e keyboard ra ke be /dev/ttyS1 vasl ast, ra andaze giri mikonad va debug mode ra fa'al mikonad.
+
+✅ **Mesal sade:**
+
+    $ isdv4-serial-inputattach -m /dev/ttyS0
+
+    🔹 Ba ejra kardane in dastoor, Linux device-e serial-e mouse ra shenasayi mikonad va shoma mitavanid az an be عنوان mouse dar Linux estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `isdv4-serial-inputattach` command is used to attach ISDN V.4 serial devices to the Linux input system.  Simply put, this command helps you use ISDN V.4 serial devices like keyboards or mice as input devices in Linux.
+
+⚙️ **Options:**
+    🔹 `-m <device>` --> 🐭 Specify the serial mouse device.
+    🔹 `-k <device>` --> ⌨️ Specify the serial keyboard device.
+    🔹 `-d`        --> 🐞 Enable debug mode for troubleshooting.
+    🔹 `-h`        --> ❓ Display the command help.
+
+🛠 **Examples:**
+
+    $ isdv4-serial-inputattach -m /dev/ttyS0
+
+    🔹 Attaches the serial mouse device connected to /dev/ttyS0.
+
+    $ isdv4-serial-inputattach -k /dev/ttyS1 -d
+
+    🔹 Attaches the serial keyboard device connected to /dev/ttyS1 and enables debug mode.
+
+✅ **Simple Example:**
+
+    $ isdv4-serial-inputattach -m /dev/ttyS0
+
+    🔹 By running this command, Linux recognizes the serial mouse device, and you can use it as a mouse in Linux.

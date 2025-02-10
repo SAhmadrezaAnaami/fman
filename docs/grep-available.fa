@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep-available` baraye jostojo kardan (search) dastoor-ha (commands) va tool-haye terminal dar repository-haye APT (Advanced Package Tool) estefade mishavad. In dastoor be shoma komak mikonad ta bebinid aya yek dastoor dar repository-haye APT baraye install kardan vojud darad ya na.
+
+⚙️ **Gozine-ha:**
+    🔹 `grep-available <esm-dastoor>` --> 🔎 Jostojo baraye yek dastoor moshakhas.
+    🔹 `grep-available .<esm-dastoor>` --> 🔎 Jostojo baraye dastoor-haee ke esm-dastoor dar akhareshun bashe.
+    🔹 `grep-available ^<esm-dastoor>` --> 🔎 Jostojo baraye dastoor-haee ke esm-dastoor baesheshun shoru beshe.
+
+🛠 **Mesal-ha:**
+
+    $ grep-available python3
+
+    🔹 Jostojo mikonad aya package "python3" dar repository-haye APT vojud darad.
+
+    $ grep-available .log
+
+    🔹 Jostojo mikonad aya dastoor-ha ya package-haee hastand ke ba ".log" tamoom mishavand.
+
+✅ **Mesal sade:**
+
+    $ grep-available nano
+
+    🔹 Agar `nano` dar repository APT vojud dashte bashad, etela'ati raje be an namayesh dade mishavad. Agar vojud nadashte bashad, hich chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep-available` command is used to search for terminal commands and tools within APT (Advanced Package Tool) repositories. This command helps you determine if a specific command is available for installation in the APT repositories.
+
+⚙️ **Options:**
+    🔹 `grep-available <command-name>` --> 🔎 Searches for a specific command.
+    🔹 `grep-available .<command-name>` --> 🔎 Searches for commands that end with the given command name.
+    🔹 `grep-available ^<command-name>` --> 🔎 Searches for commands that start with the given command name.
+
+🛠 **Examples:**
+
+    $ grep-available python3
+
+    🔹 Searches if the "python3" package is available in APT repositories.
+
+    $ grep-available .log
+
+    🔹 Searches if there are any commands or packages that end with ".log".
+
+✅ **Simple Example:**
+
+    $ grep-available nano
+
+    🔹 If `nano` exists in the APT repository, information about it will be displayed. If it does not exist, nothing will be displayed.

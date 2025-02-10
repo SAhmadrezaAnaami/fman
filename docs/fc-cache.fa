@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-cache` baraye dorost kardan ya update kardan cache font-ha estefade mishavad. Font cache komak mikoneh system behtar va sari'tar font-ha ro peyda koneh. Agar font jadidi nasb kardid, run kardane `fc-cache` kheili mohemme ta systemetoon betoone az oon font estefade koneh.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-cache -f` --> 🔄 Majboor mikoneh ke cache az aval dorost she, hata age ghablan dorost shodeh bashe. Baraye vaghti ke moshkeli ba font-ha darid khube.
+    🔹 `fc-cache -v` --> 🗣️ Etela'ate bishtari dar morede chikar kardane `fc-cache` namayesh mideh (verbose mode).
+    🔹 `fc-cache -r` --> 🔍 Recursive search mikoneh tooye directory ha baraye font-ha.
+
+🛠 **Mesal-ha:**
+
+    $ fc-cache
+
+    🔹 Dorost kardane cache font-ha ba estefade az setting haye default.
+
+    $ fc-cache -fv
+
+    🔹 Force mikoneh cache az aval dorost she va etela'ate bishtari namayesh mideh.
+
+✅ **Mesal sade:**
+
+    $ fc-cache -f
+
+    🔹 Ba estefade az in dastoor, system cache font-ha ro az aval dorost mikoneh, va in kar mitooneh moshkelati ke ba font-ha darid ro hal koneh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-cache` command is used to build or update the font cache. The font cache helps the system locate fonts more efficiently and quickly. If you have installed new fonts, running `fc-cache` is essential for your system to recognize and use those fonts.
+
+⚙️ **Options:**
+    🔹 `fc-cache -f` --> 🔄 Forces a rebuild of the font cache, even if it appears to be up-to-date. Useful if you are experiencing issues with fonts.
+    🔹 `fc-cache -v` --> 🗣️ Provides more detailed output about what `fc-cache` is doing (verbose mode).
+    🔹 `fc-cache -r` --> 🔍 Recursively searches directories for fonts.
+
+🛠 **Examples:**
+
+    $ fc-cache
+
+    🔹 Builds the font cache using default settings.
+
+    $ fc-cache -fv
+
+    🔹 Forces a rebuild of the font cache and provides verbose output.
+
+✅ **Simple Example:**
+
+    $ fc-cache -f
+
+    🔹 By using this command, the system rebuilds the font cache from scratch, potentially resolving issues you might be having with fonts.

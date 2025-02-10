@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gjs-console` yek rah-e-asoon baraye ejra kardan dastoorat JavaScript dar muhit GNOME hast. Shoma mitavanid az aan baraye test kardan code, didan output, va fahmidan chizi dar bareye system estefade konid. Mesle yek terminal baraye JavaScript!
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnama-ye- dastoor.
+    🔹 `--interactive` --> 🤝 Mohavatele, yani shoma mitavanid dastoorat ra khodetoon vared konid va javabesho bebinid.
+    🔹 `--version`   --> ℹ️ Namayesh version `gjs-console`.
+    🔹 `--profile`  --> 📊 Profilling baraye behtar kardan performanse code.
+
+🛠 **Mesal-ha:**
+
+    $ gjs-console
+
+    🔹 Baz kardan console JavaScript.
+
+    $ gjs-console --interactive
+
+    🔹 Baz kardan console JavaScript dar halate interactive.
+
+    $ gjs-console -e 'print("Salam Donya!")'
+
+    🔹 Eejad print "Salam Donya!" be console va khoroj.
+
+✅ **Mesal sade:**
+
+    $ gjs-console -e 'print(2 + 2)'
+
+    🔹 In dastoor `2 + 2` hesab mikone va natije (4) ro dar console chap mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gjs-console` command provides a simple way to execute JavaScript code in the GNOME environment. You can use it for testing code snippets, viewing output, and exploring the system. Think of it as a terminal for JavaScript!
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display command help.
+    🔹 `--interactive` --> 🤝 Interactive mode, allowing you to enter commands and see the results in real-time.
+    🔹 `--version`   --> ℹ️ Display the version of `gjs-console`.
+    🔹 `--profile`  --> 📊 Enable profiling to improve code performance.
+
+🛠 **Examples:**
+
+    $ gjs-console
+
+    🔹 Opens the JavaScript console.
+
+    $ gjs-console --interactive
+
+    🔹 Opens the JavaScript console in interactive mode.
+
+    $ gjs-console -e 'print("Hello World!")'
+
+    🔹 Prints "Hello World!" to the console and exits.
+
+✅ **Simple Example:**
+
+    $ gjs-console -e 'print(2 + 2)'
+
+    🔹 This command calculates `2 + 2` and prints the result (4) to the console.

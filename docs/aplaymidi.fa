@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aplaymidi` baraye pakhsh file-haye MIDI az tarigh terminal estefade mishavad. MIDI yek format baraye music electronic ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `aplaymidi -l`  --> 🎤 List kardane port-haye MIDI mojud dar system.
+    🔹 `aplaymidi -p <port>`  --> 📍 Entkhab kardane port MIDI baraye pakhsh. Masalan: `aplaymidi -p 20:0 file.mid`
+    🔹 `aplaymidi --port=<port>` --> 📍 Digar shekl entekhab port MIDI.
+
+🛠 **Mesal-ha:**
+
+    $ aplaymidi file.mid
+
+    🔹 Pakhsh file MIDI ba estefade az port pishfarz.
+
+    $ aplaymidi -p 20:0 file.mid
+
+    🔹 Pakhsh file MIDI az port shomare 20:0.
+
+✅ **Mesal sade:**
+
+    $ aplaymidi -l
+
+    🔹 List kardane hameye device-haye MIDI ke mishe estefade kard baraye pakhsh file MIDI. Shoma mitoonid az in list estefade konid ta port sahih ra baraye gozine `-p` entekhab konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aplaymidi` command is used to play MIDI files through the terminal. MIDI is a format for electronic music.
+
+⚙️ **Options:**
+    🔹 `aplaymidi -l`  --> 🎤 List available MIDI ports on the system.
+    🔹 `aplaymidi -p <port>`  --> 📍 Select the MIDI port to use for playback.  For example: `aplaymidi -p 20:0 file.mid`
+    🔹 `aplaymidi --port=<port>` --> 📍 Another way to select the MIDI port.
+
+🛠 **Examples:**
+
+    $ aplaymidi file.mid
+
+    🔹 Play the MIDI file using the default MIDI port.
+
+    $ aplaymidi -p 20:0 file.mid
+
+    🔹 Play the MIDI file using MIDI port number 20:0.
+
+✅ **Simple Example:**
+
+    $ aplaymidi -l
+
+    🔹 Lists all MIDI devices available for playback. You can use this list to determine the correct port to use with the `-p` option.

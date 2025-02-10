@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aa-exec` baraye ejra kardan yek barnamaj dar profile AppArmor mored estefade gharar migirad. AppArmor yek sistem amniati hast ke barnameh ha ra dar dastresi be resoure-ha mahdood mikonad. Ba estefade az `aa-exec`, mitavanid yek barnamaj ra ba profile amniati khas ejra konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `aa-exec <profile> <dastoor>`  --> 🛡️ Ejjraie dastoor ba profile amniati moshakhas shode.
+    🔹 `aa-exec -p <profile> <dastoor>` --> 🎯 Hamoon kare ghabli ro anjam mide, vali `-p` be toreh explicit profile ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo aa-exec /usr/bin/foo /usr/bin/bar
+    
+    🔹 Barnamaj `/usr/bin/bar` ra ba profile `/usr/bin/foo` ejra mikonad.
+
+    $ sudo aa-exec -p /usr/bin/foo /usr/bin/bar argument1 argument2
+    
+    🔹 Barnamaj `/usr/bin/bar` ra ba argument ha, ba profile `/usr/bin/foo` ejra mikonad.
+
+✅ **Mesal sade:**
+
+    $ sudo aa-exec /usr/bin/ping ping 8.8.8.8
+
+    🔹 Dastoor `ping 8.8.8.8` ra ba profile `ping` ke dar AppArmor tarif shode, ejra mikonad. In komak mikonad ta dastresi `ping` mahdood shavad va amnyat behtar shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aa-exec` command is used to execute a program under a specified AppArmor profile. AppArmor is a security system that restricts programs' access to resources. By using `aa-exec`, you can run a program with a specific security profile.
+
+⚙️ **Options:**
+    🔹 `aa-exec <profile> <command>` --> 🛡️ Execute the command with the specified security profile.
+    🔹 `aa-exec -p <profile> <command>` --> 🎯 Does the same as above, but `-p` explicitly specifies the profile.
+
+🛠 **Examples:**
+
+    $ sudo aa-exec /usr/bin/foo /usr/bin/bar
+    
+    🔹 Executes the program `/usr/bin/bar` under the `/usr/bin/foo` profile.
+
+    $ sudo aa-exec -p /usr/bin/foo /usr/bin/bar argument1 argument2
+    
+    🔹 Executes the program `/usr/bin/bar` with arguments, under the `/usr/bin/foo` profile.
+
+✅ **Simple Example:**
+
+    $ sudo aa-exec /usr/bin/ping ping 8.8.8.8
+
+    🔹 Executes the `ping 8.8.8.8` command under the `ping` profile defined in AppArmor. This helps restrict `ping`'s access and improve security.

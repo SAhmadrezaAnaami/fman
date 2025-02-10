@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-conflist` baraye namayesh list-e font-haye mojud va config-haye font dar system shoma estefade mishavad. In dastoor be shoma komak mikonad ta bedanid che font-haee dastras hastand va config-haye font chegooneh and.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-conflist` --> 📜 Namayesh hameye font-ha va config-haye font.
+    🔹 `fc-conflist object` --> 👀 Namayesh faghat object-haye moshakhas (masalan, `fonts`, `cache-dir`, etc.).
+    🔹 `fc-conflist --verbose` --> 📏 Namayesh etela'at bishtar dar morede config-haye font.
+
+🛠 **Mesal-ha:**
+
+    $ fc-conflist
+
+    🔹 Namayesh list-e kamel font-ha va config-haye font.
+
+    $ fc-conflist fonts
+
+    🔹 Namayesh faghat list-e font-ha.
+
+✅ **Mesal sade:**
+
+    $ fc-conflist | grep "family"
+
+    🔹 In dastoor list-e font-ha ra filter mikonad ta faghat khat-haee ke shamel "family" hastand namayesh dade shavand, ke be shoma family-haye font-haye mojud ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-conflist` command is used to display the list of available fonts and font configurations on your system. It helps you know which fonts are accessible and how the font configurations are set up.
+
+⚙️ **Options:**
+    🔹 `fc-conflist` --> 📜 Show all fonts and font configurations.
+    🔹 `fc-conflist object` --> 👀 Show only specific objects (e.g., `fonts`, `cache-dir`, etc.).
+    🔹 `fc-conflist --verbose` --> 📏 Show more detailed information about the font configurations.
+
+🛠 **Examples:**
+
+    $ fc-conflist
+
+    🔹 Show the complete list of fonts and font configurations.
+
+    $ fc-conflist fonts
+
+    🔹 Show only the list of fonts.
+
+✅ **Simple Example:**
+
+    $ fc-conflist | grep "family"
+
+    🔹 This command filters the font list to display only lines containing "family," which shows you the font families available.

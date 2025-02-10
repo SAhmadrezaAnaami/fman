@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avinfo` baraye gereftan etela'at darbareye file-haye multimedia, mesle film-ha va ahang-ha, estefade mishavad. In dastoor format, codec, bitrate, va etela'ate digar ra namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `avinfo filename.mp4`  --> 🎬 Namayesh etela'at asasi file
+    🔹 `avinfo -v frames filename.mp4`  --> 🎞️ Namayesh etela'at har frame az video
+    🔹 `avinfo -i filename.mp3`  --> 🎵 Namayesh etela'at file audio
+    🔹 `avinfo -f format_name filename` --> 🗂️ Estefade az yek format khas baraye tahlil
+
+🛠 **Mesal-ha:**
+
+    $ avinfo video.mp4
+
+    🔹 Namayesh etela'at kamel darbareye file video.mp4
+
+    $ avinfo audio.mp3
+
+    🔹 Namayesh etela'at kamel darbareye file audio.mp3
+
+✅ **Mesal sade:**
+
+    $ avinfo mymovie.avi | grep Duration
+
+    🔹 Peyda kardan va namayesh dadane modat zaman (Duration) az file `mymovie.avi`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avinfo` command is used to retrieve information about multimedia files, such as movies and songs. This command displays the format, codec, bitrate, and other details.
+
+⚙️ **Options:**
+    🔹 `avinfo filename.mp4`  --> 🎬 Show basic file information
+    🔹 `avinfo -v frames filename.mp4`  --> 🎞️ Show information for each video frame
+    🔹 `avinfo -i filename.mp3`  --> 🎵 Show audio file information
+    🔹 `avinfo -f format_name filename` --> 🗂️ Use a specific format for analysis
+
+🛠 **Examples:**
+
+    $ avinfo video.mp4
+
+    🔹 Display complete information about the video.mp4 file.
+
+    $ avinfo audio.mp3
+
+    🔹 Display complete information about the audio.mp3 file.
+
+✅ **Simple Example:**
+
+    $ avinfo mymovie.avi | grep Duration
+
+    🔹 Find and display the duration from the file `mymovie.avi`.
+

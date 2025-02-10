@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cd-it8` yek dastoor sakhtegi ast ke baraye raftan be pooshe-ha be soorati asan va sare' estefade mishavad. In dastoor ba gereftan chand parametr, karbar ra be pooshe-ye mored-e nazar rahnamayi mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cd-it8 <masir>` --> 📁 Raftan be masir-e dadah shode. Agar masir nesbi bashad, az pooshe-ye fe'li shoru mishavad.
+    🔹 `cd-it8 ..` --> ⬆️ Raftan be pooshe-ye pedar. Mesle `cd ..` amal mikonad.
+    🔹 `cd-it8 -` --> 🔙 Bargashtan be pooshe-ye ghabli. Mesle `cd -` amal mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ cd-it8 documents
+    
+    🔹 Raftan be pooshe-ye "documents" dar pooshe-ye fe'li.
+
+    $ cd-it8 /home/user/projects
+    
+    🔹 Raftan be masir-e motlagh "/home/user/projects".
+
+✅ **Mesal sade:**
+
+    $ cd-it8 ..
+    
+    🔹 Agar dar pooshe-ye "/home/user/documents/important" bashid, shoma ra be pooshe-ye "/home/user/documents" mimarad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cd-it8` command is a custom-built command used for navigating directories easily and quickly. This command takes a few parameters and guides the user to the desired directory.
+
+⚙️ **Options:**
+    🔹 `cd-it8 <path>` --> 📁 Navigate to the specified path. If the path is relative, it starts from the current directory.
+    🔹 `cd-it8 ..` --> ⬆️ Navigate to the parent directory.  Functions like `cd ..`.
+    🔹 `cd-it8 -` --> 🔙 Return to the previous directory. Functions like `cd -`.
+
+🛠 **Examples:**
+
+    $ cd-it8 documents
+    
+    🔹 Navigate to the "documents" directory within the current directory.
+
+    $ cd-it8 /home/user/projects
+    
+    🔹 Navigate to the absolute path "/home/user/projects".
+
+✅ **Simple Example:**
+
+    $ cd-it8 ..
+    
+    🔹 If you are in the "/home/user/documents/important" directory, this will move you to the "/home/user/documents" directory.

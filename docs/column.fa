@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `column` baraye moratab kardan voroodi (input) be shekl-e sotooni (columns) be kar miravad. In dastoor be shoma komak mikonad ta data-ha ra be shekl-e ghabl-khani va ba tartib namayesh dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `column -s [jodakonandeh] -t` --> 🗂️ Joda kardan data ba yek character khas va moratab kardan an be shekl jadvali. (`-s` baraye moshakhas kardane jodakonandeh (separator) va `-t` baraye jadval-bandi (table formatting) ast.)
+    🔹 `column -x` --> ↔️ Por kardane sotoon-ha az chap be rast (horizontally) avazhe por kardane amoodi (vertically) ke halate pishfarz ast.
+    🔹 `column -n` --> 🔢 Hesab nakardan sotoon-haye khali.
+
+🛠 **Mesal-ha:**
+
+    $ echo "name:Ali,age:30,city:Tehran" | column -s , -t
+
+    🔹 Moratab kardane string ba estefade az `,` be عنوانه jodakonandeh.
+
+    $ cat data.txt | column -t
+
+    🔹 Moratab kardane content file `data.txt` be shekl jadvali.
+
+✅ **Mesal sade:**
+
+    $ echo "a b c d e f" | column -x -t
+
+    🔹  In dastoor horizantaly data ro moratab mikone va natije ro be soorate sotooni namayesh mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `column` command is used to format input into columns. It helps you display data in a readable and organized way.
+
+⚙️ **Options:**
+    🔹 `column -s [separator] -t` --> 🗂️ Separate data using a specific character and format it into a table. (`-s` is used to specify the separator, and `-t` enables table formatting.)
+    🔹 `column -x` --> ↔️ Fill columns horizontally instead of the default vertical filling.
+    🔹 `column -n` --> 🔢 Ignore empty columns.
+
+🛠 **Examples:**
+
+    $ echo "name:Ali,age:30,city:Tehran" | column -s , -t
+
+    🔹 Format the string using `,` as a separator.
+
+    $ cat data.txt | column -t
+
+    🔹 Format the content of `data.txt` into a table.
+
+✅ **Simple Example:**
+
+    $ echo "a b c d e f" | column -x -t
+
+    🔹 This command formats the data horizontally and displays the result in columns.

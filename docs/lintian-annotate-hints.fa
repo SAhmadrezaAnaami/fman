@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lintian-annotate-hints` baraye afzoodan hint-ha az lintian be file-haye source code estefade mishavad. In dastoor komak mikonad ta khata-ha va warning-haye lintian dar file-ha neshān dade shavand ta barname-nevisan betavanand be asani anha ra peyda va dorost konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`   --> ℹ️  Namayesh version-e lintian-annotate-hints.
+    🔹 `--help`      --> ❓  Namayesh rahnamaye estefade az dastoor.
+    🔹 `--file <file>` --> 📁  Specify file ya directory morede nazar baraye annotate kardan.
+
+🛠 **Mesal-ha:**
+
+    $ lintian-annotate-hints --file myfile.c
+
+    🔹 Annotate kardan file `myfile.c` ba hint-haye lintian.
+
+    $ lintian-annotate-hints --file mydirectory/
+
+    🔹 Annotate kardan hame file-ha dar directory `mydirectory/`.
+
+✅ **Mesal sade:**
+
+    $ lintian-annotate-hints --file hello.c
+
+    🔹 Agar file `hello.c` khata-ha ya warning-haye lintian dashte bashad, hint-ha be file ezafe mishavand ta dar IDE ya editor neshān dade shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lintian-annotate-hints` command is used to add hints from lintian to source code files. This command helps to display lintian errors and warnings directly in the files so that developers can easily find and fix them.
+
+⚙️ **Options:**
+    🔹 `--version`   --> ℹ️  Show the version of lintian-annotate-hints.
+    🔹 `--help`      --> ❓  Show the help message for the command.
+    🔹 `--file <file>` --> 📁  Specify the file or directory to annotate.
+
+🛠 **Examples:**
+
+    $ lintian-annotate-hints --file myfile.c
+
+    🔹 Annotate the file `myfile.c` with lintian hints.
+
+    $ lintian-annotate-hints --file mydirectory/
+
+    🔹 Annotate all files in the directory `mydirectory/`.
+
+✅ **Simple Example:**
+
+    $ lintian-annotate-hints --file hello.c
+
+    🔹 If the file `hello.c` has lintian errors or warnings, hints will be added to the file so they can be displayed in an IDE or editor.

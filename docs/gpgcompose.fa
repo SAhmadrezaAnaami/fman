@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgcompose` baraye dorost kardane email-haye imzashode va encrypt shode ba estefade az GPG (GNU Privacy Guard) be kar miravad. In dastoor az shoma soalati miporsad va email ra be shekle sahih misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--output FILE` --> 📤 File-e khoruji ra moshakhas mikonad. Agar FILE zekr nashavad, natije dar khuruji standart chap mishavad.
+    🔹 `--armor` --> 🛡️ Natije ra be format ASCII armor tabdil mikonad, ke baraye email behtar ast.
+    🔹 `--sign` --> ✍️ Email ra ba koleed-e shakhsi-e shoma imza mikonad.
+    🔹 `--encrypt RECIPIENT` --> 🔒 Email ra baraye RECIPIENT encrypt mikonad.  Shoma mitavanid chand recipient ra ba tekrar kardane in gozine zekr konid.
+    🔹 `--ask-passphrase` --> 🔑 Az shoma passphrase baraye unlock kardane koleed-e shakhsi-e shoma miporsad.
+    🔹 `--default-key KEYID` --> 🔑 ID-e koleed-e default baraye imza kardan ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gpgcompose --output email.txt --sign --encrypt example@example.com
+    
+    🔹 Yek email ra imza mikonad va baraye example@example.com encrypt mikonad va dar file email.txt zakhire mikonad.
+
+    $ gpgcompose --armor --sign --encrypt user1@example.com --encrypt user2@example.com
+    
+    🔹 Yek email ra dar format ASCII armor dorost mikonad, imza mikonad, va baraye user1@example.com va user2@example.com encrypt mikonad va natije ra dar khuruji standart chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ gpgcompose --sign --ask-passphrase
+    
+    🔹 Yek email ra imza mikonad va az shoma passphrase ra baraye unlock kardane koleed-e shakhsi-e shoma miporsad. Natije dar khuruji standart chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgcompose` command is used to create signed and encrypted emails using GPG (GNU Privacy Guard). It interactively prompts you for information and generates the email in the appropriate format.
+
+⚙️ **Options:**
+    🔹 `--output FILE` --> 📤 Specifies the output file. If FILE is not provided, the output is printed to standard output.
+    🔹 `--armor` --> 🛡️ Converts the output to ASCII armor format, which is suitable for email.
+    🔹 `--sign` --> ✍️ Signs the email using your private key.
+    🔹 `--encrypt RECIPIENT` --> 🔒 Encrypts the email for the specified RECIPIENT. You can specify multiple recipients by repeating this option.
+    🔹 `--ask-passphrase` --> 🔑 Prompts for a passphrase to unlock your private key.
+    🔹 `--default-key KEYID` --> 🔑 Specifies the default key ID to use for signing.
+
+🛠 **Examples:**
+
+    $ gpgcompose --output email.txt --sign --encrypt example@example.com
+    
+    🔹 Signs and encrypts an email for example@example.com and saves it to email.txt.
+
+    $ gpgcompose --armor --sign --encrypt user1@example.com --encrypt user2@example.com
+    
+    🔹 Creates an ASCII armored, signed, and encrypted email for user1@example.com and user2@example.com, printing the result to standard output.
+
+✅ **Simple Example:**
+
+    $ gpgcompose --sign --ask-passphrase
+    
+    🔹 Signs an email and prompts for a passphrase to unlock the private key. The output is printed to standard output.

@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `git-shell` yek dastoor ast ke baraye mahdood kardan dastrasi karbaran be repository-haye Git estefade mishavad. Ba estefade az `git-shell`, karbaran faghat mitavanand amaliyat Git (mesle `git push` va `git fetch`) anjam dahand va dastrasi be dastoorat shell-e digar nadarand. In be amniat repository-haye shoma komak mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khas nadarad; baraye mahdood kardan dastrasi be karbaran Git be kar miravad.
+    
+🛠 **Mesal-ha:**
+
+    1. Set kardan shell karbar be `git-shell` dar `/etc/passwd`:
+        
+        username:x:1001:1001:User Name:/home/username:/usr/bin/git-shell
+        
+        🔹 Dar in mesal, dastrasi `username` mahdood shode ta faghat amaliyat Git ra anjam dahad.
+
+    2. Ezafe kardan `git-shell` be `/etc/shells`:
+        
+        /usr/bin/git-shell
+        
+        🔹 In etminan midahad ke `git-shell` yek shell ghabool shode ast.
+
+✅ **Mesal sade:**
+    Agar karbari ba shell `git-shell` be system login konad, faghat mitavanad dastoorat Git ra ejra konad va dastoorat shell-e digar (mesle `ls` ya `rm`) ejra nashodani hastand.
+    
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `git-shell` is a command used to restrict user access to Git repositories. By using `git-shell`, users can only perform Git operations (such as `git push` and `git fetch`) and do not have access to other shell commands. This helps to secure your Git repositories.
+
+⚙️ **Options:**
+    🔹 It has no specific options; it is used to restrict user access to Git operations.
+
+🛠 **Examples:**
+
+    1. Setting a user's shell to `git-shell` in `/etc/passwd`:
+        
+        username:x:1001:1001:User Name:/home/username:/usr/bin/git-shell
+        
+        🔹 In this example, `username` access is restricted to only performing Git operations.
+
+    2. Adding `git-shell` to `/etc/shells`:
+        
+        /usr/bin/git-shell
+        
+        🔹 This ensures that `git-shell` is a recognized shell.
+
+✅ **Simple Example & Explanation:**
+    If a user with the `git-shell` logs into the system, they can only execute Git commands, and other shell commands (like `ls` or `rm`) will not be executable.
+

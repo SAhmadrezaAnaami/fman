@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dch` (Debian Change) baraye sakhtan va modiriyat taghirat (changes) dar pakage-haye Debian estefade mishavad.  In dastoor baraye developer-ha va maintainer-ha ke ba system-haye Debian kar mikonand kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `dch -i`  --> ➕ Ezafe kardane yek item jadid be changelog.  Az in gozine baraye sabt taghirat dar version jadid estefade mishavad.
+    🔹 `dch -v version` --> 🔢 Taghir dadane version package.  Version bayad be shekle sahih Debian bashad (e.g., 1.0-1).
+    🔹 `dch --release`  --> 🚀 Namayesh dadane version jadid be onvane release.  In gozine changelog ra update mikonad va version ra ezafe mikonad.
+    🔹 `dch --edit` --> ✍️ Baz kardane changelog ba editor pishfarz baraye virayesh dasti.
+
+🛠 **Mesal-ha:**
+
+    $ dch -i "Eslah bug dar ghesmat login."
+
+    🔹 Ezafe kardane yek note taghir ba payame moshakhas shode.
+
+    $ dch -v 2.0-1
+
+    🔹 Taghir dadane version package be 2.0-1.
+
+    $ dch --release
+
+    🔹 Create yek release jadid az package.
+
+✅ **Mesal sade:**
+
+    $ dch -i "Eslah amniat dar ghesmat daryaft data."
+
+    🔹 In dastoor yek item taghir jadid be changelog ezafe mikonad ba payame "Eslah amniat dar ghesmat daryaft data.".  In taghir dar changelog sabt mishavad ta digaran az taghirat etela peyda konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dch` (Debian Change) command is used to create and manage changes in Debian packages. It's primarily used by developers and maintainers working with Debian systems.
+
+⚙️ **Options:**
+    🔹 `dch -i`  --> ➕ Add a new item to the changelog.  Used to record changes for a new version.
+    🔹 `dch -v version` --> 🔢 Change the package version.  The version must be in the correct Debian format (e.g., 1.0-1).
+    🔹 `dch --release`  --> 🚀 Mark the current version as a release. This updates the changelog and adds a version entry.
+    🔹 `dch --edit` --> ✍️ Open the changelog in the default editor for manual editing.
+
+🛠 **Examples:**
+
+    $ dch -i "Fixed a bug in the login section."
+
+    🔹 Adds a change note with the specified message.
+
+    $ dch -v 2.0-1
+
+    🔹 Changes the package version to 2.0-1.
+
+    $ dch --release
+
+    🔹 Creates a new release of the package.
+
+✅ **Simple Example:**
+
+    $ dch -i "Improved security in data retrieval."
+
+    🔹 This command adds a new change item to the changelog with the message "Improved security in data retrieval.". This change will be recorded in the changelog, allowing others to be aware of the updates.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grdctl` baraye modiriyat va nazarat bar GPU (Graphics Processing Unit) resource-ha dar system shoma estefade mishavad. In dastoor be shoma komak mikonad ke etela'at raje be status GPU ha, estefade az memory, va process-haye jari rooye GPU ha ro bedast avarid. Hamchenin shoma mitavanid ba in dastoor GPU ha ro reset konid ya etela'at tafsili az driver GPU begirid.
+
+⚙️ **Gozine-ha:**
+    🔹 `grdctl status`   --> 📊 Namayesh status GPU ha va estefade az anha.
+    🔹 `grdctl reset`    --> 🔄 Reset kardan GPU(ha). Ehtiyat konid, chon momken ast process-haye jari rooye GPU ha ro motevaghef konad.
+    🔹 `grdctl driver`   --> ℹ️ Namayesh etela'at driver GPU nasb shode.
+    🔹 `grdctl utilization` --> 📈 Namayesh darsad estefade az GPU ha.
+
+🛠 **Mesal-ha:**
+
+    $ grdctl status
+
+    🔹 Namayesh etela'at kolee dar morede GPU ha dar system.
+
+    $ grdctl reset
+
+    🔹 Reset kardan hame GPU ha (ba ehtiyat estefade shavad).
+
+✅ **Mesal sade:**
+
+    $ grdctl utilization
+
+    🔹 In dastoor darsad estefade az har GPU ra namayesh midahad, ke baraye tashkhis bar haaye ziad rooye GPU ha mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grdctl` command is used to manage and monitor GPU (Graphics Processing Unit) resources on your system. It helps you to retrieve information about GPU status, memory usage, and processes running on the GPUs. You can also use this command to reset GPUs or get detailed information from the GPU driver.
+
+⚙️ **Options:**
+    🔹 `grdctl status`   --> 📊 Show the status of GPUs and their utilization.
+    🔹 `grdctl reset`    --> 🔄 Reset the GPU(s). Use with caution as it may terminate processes running on the GPUs.
+    🔹 `grdctl driver`   --> ℹ️ Show information about the installed GPU driver.
+    🔹 `grdctl utilization` --> 📈 Show the percentage of GPU utilization.
+
+🛠 **Examples:**
+
+    $ grdctl status
+
+    🔹 Displays general information about the GPUs in the system.
+
+    $ grdctl reset
+
+    🔹 Resets all GPUs (use with caution).
+
+✅ **Simple Example:**
+
+    $ grdctl utilization
+
+    🔹 This command displays the percentage of utilization for each GPU, which is useful for identifying high loads on the GPUs.

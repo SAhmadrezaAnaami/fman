@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `c89` yek compileri baraye zaban barname-nevisi C ast, ke asasan baraye code-haye ghadimi ya code-haye standart C89 neveshte shode estefade mishavad. In dastoor code shoma ra tarjome mikonad ta computer betavanad an ra ejra konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `c89 -o [name_file_khrooji] [name_file_manba]`  --> 🎯 Ta'een name file-e khrooji (executable).
+    🔹 `c89 -Wall [name_file_manba]`  --> ⚠️ Namayesh hameye peygham-haye ekhtar (warnings).
+    🔹 `c89 -c [name_file_manba]`  --> 🧱 Compile kardan file manba va sakhtan file object (.o).
+
+🛠 **Mesal-ha:**
+
+    $ c89 hello.c
+
+    🔹 Compile file-e `hello.c` va sakhtan file executable ba name `a.out`.
+
+    $ c89 -o my_program hello.c
+
+    🔹 Compile file-e `hello.c` va sakhtan file executable ba name `my_program`.
+
+✅ **Mesal sade:**
+
+    $ c89 -Wall hello.c
+
+    🔹 Compile file-e `hello.c` va namayesh hameye ekhtar-ha (warnings) dar halat compile shodan. Agar error nabashad file `a.out` dorost mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `c89` command is a C compiler, primarily used for older codebases or code specifically written to the C89 standard. It translates your source code into an executable program that your computer can run.
+
+⚙️ **Options:**
+    🔹 `c89 -o [output_file_name] [source_file_name]` --> 🎯 Specifies the output (executable) file name.
+    🔹 `c89 -Wall [source_file_name]`  --> ⚠️ Displays all compilation warnings.
+    🔹 `c89 -c [source_file_name]`  --> 🧱 Compiles the source file and creates an object file (.o).
+
+🛠 **Examples:**
+
+    $ c89 hello.c
+
+    🔹 Compiles the `hello.c` file and creates an executable file named `a.out`.
+
+    $ c89 -o my_program hello.c
+
+    🔹 Compiles the `hello.c` file and creates an executable file named `my_program`.
+
+✅ **Simple Example:**
+
+    $ c89 -Wall hello.c
+
+    🔹 Compiles the `hello.c` file and displays all warnings during compilation. If no errors occur, the `a.out` file is created.

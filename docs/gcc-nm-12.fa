@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-nm-12` baraye didan name symbol-ha dar file-haye object, library-ha, va executable-ha estefade mishavad. Yani etela'ati dar morede variable-ha, function-ha va digar symbol-haye tarif shode dar dastoor `gcc-12` neshon midahad. In dastoor be shoma komak mikonad ta bebinid che symbol-haee dar yek file vojud darand va address-haye anha chist.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc-nm-12 -a`  --> 👀 Namayesh hameye symbol-ha, hata debug symbol-ha.
+    🔹 `gcc-nm-12 -C`  --> 🔨 Demangle name symbol-ha (yani name haye zaban C++ ra sade mikonad).
+    🔹 `gcc-nm-12 -n`  --> 🔢 Moratab kardan symbol-ha bar asase address.
+    🔹 `gcc-nm-12 -u`  --> ❓ Namayesh symbol-haye tarif nashode (undefined).
+
+🛠 **Mesal-ha:**
+
+    $ gcc-nm-12 a.out
+
+    🔹 Namayesh symbol-haye file executable `a.out`.
+
+    $ gcc-nm-12 -C libexample.so
+
+    🔹 Namayesh symbol-haye library `libexample.so` va demangle kardan name C++.
+
+✅ **Mesal sade:**
+
+    $ gcc-nm-12 -a myprogram.o | grep "myVariable"
+
+    🔹 Peyda kardan etela’at morede `myVariable` az file object `myprogram.o`. Hameye symbol-ha neshon dade mishavand va ba dastoor `grep` symbol-haye marbut be `myVariable` filter mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-nm-12` command is used to display the symbol names in object files, libraries, and executables. It shows information about variables, functions, and other symbols defined using `gcc-12`. This tool helps you examine which symbols exist in a file and their addresses.
+
+⚙️ **Options:**
+    🔹 `gcc-nm-12 -a`  --> 👀 Display all symbols, including debugger-related symbols.
+    🔹 `gcc-nm-12 -C`  --> 🔨 Demangle symbol names (makes C++ names readable).
+    🔹 `gcc-nm-12 -n`  --> 🔢 Sort symbols by their addresses.
+    🔹 `gcc-nm-12 -u`  --> ❓ Display undefined symbols.
+
+🛠 **Examples:**
+
+    $ gcc-nm-12 a.out
+
+    🔹 Display the symbols from the executable file `a.out`.
+
+    $ gcc-nm-12 -C libexample.so
+
+    🔹 Display the symbols from the library `libexample.so` and demangle C++ names.
+
+✅ **Simple Example:**
+
+    $ gcc-nm-12 -a myprogram.o | grep "myVariable"
+
+    🔹 Find information about `myVariable` from the object file `myprogram.o`. All symbols are shown and the `grep` command filters for symbols related to `myVariable`.

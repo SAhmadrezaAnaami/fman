@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gio-querymodules` baraye bazrasi va shenasayi module-haye GIO (GNOME Input/Output) be kar mirevad. In module-ha be barname-ha komak mikonand ta ba protocol-ha va format-haye mokhtalef kar konand, mesle FTP, SFTP, SMB, va zip.  In dastoor be shoma neshon mide che module-hai nasb shode va che tor mitavanid az anha estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help` --> ❓ Namayesh rahnamaye estefade az dastoor.
+    🔹 `--debug` --> 🐛 Chap etela'ate debug baraye peydaye kardan moshkelat.
+
+🛠 **Mesal-ha:**
+
+    $ gio-querymodules
+
+    🔹 List module-haye nasb shode GIO ra namayesh midahad.
+
+    $ gio-querymodules --debug
+
+    🔹 Module-haye GIO ra ba etela'ate bishtar (debug) namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ gio-querymodules | grep sftp
+
+    🔹 List module-ha ra grep mikonad va module-haye mortabet ba sftp ra neshon midahad. In be shoma komak mikonad bedanid aya module sftp nasb ast ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gio-querymodules` command is used to inspect and discover GIO (GNOME Input/Output) modules. These modules help applications work with different protocols and formats, such as FTP, SFTP, SMB, and zip archives. This command shows which modules are installed and how they can be used.
+
+⚙️ **Options:**
+    🔹 `--help` --> ❓ Display help about using the command.
+    🔹 `--debug` --> 🐛 Print debug information for troubleshooting.
+
+🛠 **Examples:**
+
+    $ gio-querymodules
+
+    🔹 Lists the installed GIO modules.
+
+    $ gio-querymodules --debug
+
+    🔹 Lists GIO modules with more (debug) information.
+
+✅ **Simple Example:**
+
+    $ gio-querymodules | grep sftp
+
+    🔹 Greps the list of modules and shows the modules related to sftp. This helps you know if the sftp module is installed or not.

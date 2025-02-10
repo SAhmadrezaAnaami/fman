@@ -1,0 +1,59 @@
+Okay, here's a `man` page entry for a hypothetical command called `linux64`. Since there's no standard command with that name, I'll assume it's a custom script or program that's intended to provide information about a Linux system's 64-bit capabilities.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `linux64` baraye fahmidan inke system-e shoma 64-biti hast ya na, estefade mishavad. In dastoor etela'ati dar morede hardware va kernel-e system namayesh midahad ta shoma motmaen shavid ke system-e shoma az barname-haye 64-biti poshtibani mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `linux64 -c`  --> 💻 Check kardan CPU ke aya 64-biti hast ya na.
+    🔹 `linux64 -k`  --> ⚙️ Check kardan kernel ke aya 64-biti hast ya na.
+    🔹 `linux64 -v`  --> ℹ️ Namayesh version-e `linux64`.
+
+🛠 **Mesal-ha:**
+
+    $ linux64 -c
+
+    🔹 Check mikonad CPU 64-biti hast ya na va natije ra chap mikonad.
+
+    $ linux64 -k
+
+    🔹 Check mikonad kernel 64-biti hast ya na va natije ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ linux64
+
+    🔹 Agar system 64-biti bashad, payam "System is 64-bit" chap mishavad, dar gheire in soorat payam "System is not 64-bit" chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `linux64` command is used to determine if your Linux system is running a 64-bit architecture. It provides information about both the hardware (CPU) and the kernel to verify 64-bit support.
+
+⚙️ **Options:**
+    🔹 `linux64 -c`  --> 💻 Checks if the CPU is 64-bit capable.
+    🔹 `linux64 -k`  --> ⚙️ Checks if the kernel is running in 64-bit mode.
+    🔹 `linux64 -v`  --> ℹ️ Displays the version of the `linux64` utility.
+
+🛠 **Examples:**
+
+    $ linux64 -c
+
+    🔹 Checks if the CPU supports 64-bit instructions and prints the result.
+
+    $ linux64 -k
+
+    🔹 Checks if the running kernel is 64-bit and prints the result.
+
+✅ **Simple Example:**
+
+    $ linux64
+
+    🔹 If the system is 64-bit, it prints "System is 64-bit". Otherwise, it prints "System is not 64-bit".
+

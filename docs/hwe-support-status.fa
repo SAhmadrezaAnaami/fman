@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hwe-support-status` baraye check kardan status support hardware-haye jadid (Hardware Enablement - HWE) dar Ubuntu estefade mishavad. In dastoor neshon midahad aya system shoma az kernel va driver-haye jadidtar baraye hardware-haye khod support mikonad ya na. Agar support nashavad, momken ast anjamdadane update-ha be kernel-haye jadidtar mojar nabashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `hwe-support-status --verbose` --> 💬 Namayesh dadane etela'at bishtar dar morede status support hardware.
+    🔹 `hwe-support-status` --> ✅ Namayesh status sade support (supported ya not supported).
+
+🛠 **Mesal-ha:**
+
+    $ hwe-support-status
+
+    🔹 Namayesh status support HWE.
+
+    $ hwe-support-status --verbose
+
+    🔹 Namayesh etela'at tafsili dar morede support HWE.
+
+✅ **Mesal sade:**
+
+    $ hwe-support-status
+
+    → command: /usr/bin/hwe-support-status
+    will stop receiving updates for the hardware enablement stack after April 2025
+    → End of Life Date: April 2025
+
+    🔹 In mesal neshon midahad ke system ta April 2025 update-haye HWE ra daryaft khahad kard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hwe-support-status` command is used to check the support status of Hardware Enablement (HWE) stacks in Ubuntu. It shows whether your system is supported with newer kernels and drivers for its hardware. If not supported, upgrading to newer kernels might not be possible.
+
+⚙️ **Options:**
+    🔹 `hwe-support-status --verbose` --> 💬 Show more detailed information about the hardware support status.
+    🔹 `hwe-support-status` --> ✅ Show the simple support status (supported or not supported).
+
+🛠 **Examples:**
+
+    $ hwe-support-status
+
+    🔹 Display the HWE support status.
+
+    $ hwe-support-status --verbose
+
+    🔹 Display detailed information about the HWE support.
+
+✅ **Simple Example:**
+
+    $ hwe-support-status
+
+    → command: /usr/bin/hwe-support-status
+    will stop receiving updates for the hardware enablement stack after April 2025
+    → End of Life Date: April 2025
+
+    🔹 This example shows that the system will receive HWE updates until April 2025.

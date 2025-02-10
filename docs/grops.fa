@@ -1,0 +1,53 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `groups` baraye namayeshe grooh-haye karbari (user) estefade mishavad. Agar be soorate sade estefade shavad, grooh-haye karbar-e فعّal (fa'al - active) ra neshon midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `groups [username]` --> 👤 Namayesh grooh-haye karbare moshakhas.  Agar username dade nashavad, grooh-haye khode shoma ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ groups
+
+    🔹  Namayesh grooh-haye karbare فعّal (fa'al).
+
+    $ groups ali
+
+    🔹  Namayesh grooh-haye karbari ba name "ali".
+
+✅ **Mesal sade:**
+
+    $ groups
+
+    🔹  Agar kargardan bashid, liste grooh-hayei ke shoma ozv hastid ra neshon midahad. Masalan, "user admin wheel".
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `groups` command displays the groups a user belongs to.  If used without any arguments, it shows the groups of the current user.
+
+⚙️ **Options:**
+    🔹 `groups [username]` --> 👤 Display the groups a specific user belongs to. If no username is provided, it displays the groups of the current user.
+
+🛠 **Examples:**
+
+    $ groups
+
+    🔹  Display the groups of the current user.
+
+    $ groups john
+
+    🔹  Display the groups that the user "john" belongs to.
+
+✅ **Simple Example:**
+
+    $ groups
+
+    🔹  If you are the current user, this will display a list of groups you are a member of. For example: "user admin wheel".
+

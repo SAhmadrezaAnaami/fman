@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-render-label` baraye tabdil kardane yek label ya title be yek shekle ghabele fahm baraye GRUB (bootloader) estefade mishavad. In dastoor kheili vaghta baraye dynamic sakhtane menu-haye GRUB be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--target=DIRECTORY` --> 🎯 Directory ke file-haye GRUB dar an gharar darand. Agar zekr nashavad, az `/boot/grub` estefade mishavad.
+    🔹 `--variable=NAME=VALUE` --> 🏷️ Moteghayyer-haee ke mitoonid dar label estefade konid. Mesalan, `NAME=VALUE` ra vared konid ta moteghayyer `NAME` ba meghdare `VALUE` dar dastras bashad.
+
+🛠 **Mesal-ha:**
+
+    $ grub-render-label "Loading ${OS_NAME}" --variable="OS_NAME=MyOS"
+
+    🔹 In dastoor label "Loading MyOS" ra chap mikonad.
+
+    $ grub-render-label "Kernel Version: ${KERNEL_VERSION}" --variable="KERNEL_VERSION=$(uname -r)" --target=/boot/grub
+
+    🔹 In dastoor version kernel ra az system migirad va dar label estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-render-label "Welcome to ${SYSTEM}" --variable="SYSTEM=MySystem"
+
+    🔹 Output: `Welcome to MySystem`
+    Dastoor label ra chap mikonad va moteghayyer `$SYSTEM` ra ba meghdare `MySystem` jaygozin mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-render-label` command is used to render a label or title into a format that GRUB (the bootloader) can understand. It is often used to dynamically generate GRUB menus.
+
+⚙️ **Options:**
+    🔹 `--target=DIRECTORY` --> 🎯 Specifies the directory where GRUB files are located. If not specified, it defaults to `/boot/grub`.
+    🔹 `--variable=NAME=VALUE` --> 🏷️ Defines variables that can be used in the label. For example, `NAME=VALUE` will make the variable `NAME` available with the value `VALUE`.
+
+🛠 **Examples:**
+
+    $ grub-render-label "Loading ${OS_NAME}" --variable="OS_NAME=MyOS"
+
+    🔹 This command prints the label "Loading MyOS".
+
+    $ grub-render-label "Kernel Version: ${KERNEL_VERSION}" --variable="KERNEL_VERSION=$(uname -r)" --target=/boot/grub
+
+    🔹 This command retrieves the kernel version from the system and uses it in the label.
+
+✅ **Simple Example:**
+
+    $ grub-render-label "Welcome to ${SYSTEM}" --variable="SYSTEM=MySystem"
+
+    🔹 Output: `Welcome to MySystem`
+    The command prints the label, replacing the variable `$SYSTEM` with the value `MySystem`.

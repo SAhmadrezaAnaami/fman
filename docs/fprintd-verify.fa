@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fprintd-verify` baraye mohahezeh angosht-negari baraye vorood be system ya dastresi be resource-ha estefade mishavad. Ba estefade az in dastoor, shoma mitavanid ba scan kardan angosht-e khod be jaye vared kardan password, vorood konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--device <device>`  --> 📍 Moshakhas kardane dastgah-e angosht-negari. Agar moshakhas nashavad, system be soorat otomatik yek dastgah ra entekhab mikonad.
+    🔹 `--username <username>`  --> 👤 Moshakhas kardane username baraye mohahezeh. Agar moshakhas nashavad, username-e shakhs-e fa'al estefade mishavad.
+    🔹 `--verbose`  --> 🗣️ Namayesh etela'at bishtar dar mored amaliyat.
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ fprintd-verify
+
+    🔹 Shoru kardan mohahezeh angosht-negari baraye karbar-e fa'al ba dastgah-e pishfarz.
+
+    $ fprintd-verify --device /net/reactivated/Fprint/Device/0
+
+    🔹 Shoru kardan mohahezeh angosht-negari ba estefade az dastgah-e moshakhas shode.
+
+    $ fprintd-verify --username ali
+
+    🔹 Shoru kardan mohahezeh angosht-negari baraye karbar ba username "ali".
+
+✅ **Mesal sade:**
+
+    $ fprintd-verify --verbose
+
+    🔹 Ba ejraye in dastoor, etela'at bishtar dar mored mohahezeh angosht-negari namayesh dade mishavad, mesle esme dastgah va natijeye mohahezeh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fprintd-verify` command is used to verify a fingerprint for system login or resource access. Using this command, you can log in by scanning your fingerprint instead of typing a password.
+
+⚙️ **Options:**
+    🔹 `--device <device>`  --> 📍 Specifies the fingerprint device. If not specified, the system automatically selects a device.
+    🔹 `--username <username>`  --> 👤 Specifies the username for verification. If not specified, the current user's username is used.
+    🔹 `--verbose`  --> 🗣️ Displays more information about the operation.
+    🔹 `--help`  --> ❓ Displays the command help.
+
+🛠 **Examples:**
+
+    $ fprintd-verify
+
+    🔹 Starts fingerprint verification for the current user with the default device.
+
+    $ fprintd-verify --device /net/reactivated/Fprint/Device/0
+
+    🔹 Starts fingerprint verification using the specified device.
+
+    $ fprintd-verify --username ali
+
+    🔹 Starts fingerprint verification for the user with the username "ali".
+
+✅ **Simple Example:**
+
+    $ fprintd-verify --verbose
+
+    🔹 Running this command displays more information about the fingerprint verification process, such as the device name and the verification result.

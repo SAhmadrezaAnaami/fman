@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpasswd` baraye tagheer dadan, ezafe kardan, ya hazf kardan karbarha az group-ha estefade mishavad. Ba in dastoor mitoonid karbarha ro be group-haye mokhtalef ezafe ya az anha kharej konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `gpasswd -a username groupname`  --> ➕ Ezafe kardane karbar be group.  (Masalan: `gpasswd -a ali wheel`)
+    🔹 `gpasswd -d username groupname`  --> ➖ Hazf kardane karbar az group.  (Masalan: `gpasswd -d ali wheel`)
+    🔹 `gpasswd -r groupname`  --> ⏪ Bazgardandane password group be halate avalie (age password dashte bashe).
+    🔹 `gpasswd -A user1,user2,... groupname` --> 👮‍♂️ Taeen admin haye group (age group admin dashte bashe).
+
+🛠 **Mesal-ha:**
+
+    $ sudo gpasswd -a reza docker
+
+    🔹 Karbare "reza" be group "docker" ezafe mishe.  Az `sudo` estefade mishe chon tagheer dar group ha niaz be dastresi admin dare.
+
+    $ sudo gpasswd -d reza docker
+
+    🔹 Karbare "reza" az group "docker" hazf mishe. Baz ham `sudo` lazem dare.
+
+✅ **Mesal sade:**
+
+    $ groups reza
+
+    🔹  In dastoor hameye group hayi ke karbare "reza" ozve anha hast ro namayesh mide.  Bad az ezafe kardan ya hazf kardan karbar az yek group, mitoonid az in dastoor estefade konid ta motmaen shid tagheerat dorost amal karde.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpasswd` command is used to administer groups. It allows you to add users to, or remove users from groups.
+
+⚙️ **Options:**
+    🔹 `gpasswd -a username groupname`  --> ➕ Add a user to a group.  (Example: `gpasswd -a ali wheel`)
+    🔹 `gpasswd -d username groupname`  --> ➖ Delete a user from a group. (Example: `gpasswd -d ali wheel`)
+    🔹 `gpasswd -r groupname`  --> ⏪ Revert the group password to its original state (if the group has a password).
+    🔹 `gpasswd -A user1,user2,... groupname` --> 👮‍♂️ Assign group administrators (if the group supports administrators).
+
+🛠 **Examples:**
+
+    $ sudo gpasswd -a reza docker
+
+    🔹 Adds the user "reza" to the "docker" group. `sudo` is required because modifying group membership requires administrative privileges.
+
+    $ sudo gpasswd -d reza docker
+
+    🔹 Removes the user "reza" from the "docker" group.  Again, `sudo` is necessary.
+
+✅ **Simple Example:**
+
+    $ groups reza
+
+    🔹 This command displays all the groups the user "reza" is a member of. After adding or removing a user from a group, you can use this command to verify the changes.

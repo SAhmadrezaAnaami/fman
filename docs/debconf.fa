@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf` baraye modiriyat va ayar-bandi pakej-ha dar system-haye Debian va Ubuntu estefade mishavad.  In dastoor soalati az karbar miporsad va javabha ra baraye ayar-bandi dorost pakej-ha zakhire mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debconf-set-selections` --> ⚙️ Sabt javabha az ghabl baraye soalat ayar-bandi
+    🔹 `debconf-show`          --> 👀 Namayesh etela'at ayar-bandi yek pakej
+    🔹 `dpkg-reconfigure`      --> 🔄 Baz-ayari yek pakej va porsesh soalat az no
+
+🛠 **Mesal-ha:**
+
+    $ debconf-set-selections <<< "mypackage shared/setting boolean true"
+
+    🔹 Javabe 'true' ra baraye soale 'shared/setting' dar pakeje 'mypackage' zakhire mikonad.
+
+    $ debconf-show mypackage
+
+    🔹 Namayesh hameye etela'at ayar-bandi zakhire shode baraye pakeje 'mypackage'.
+
+✅ **Mesal sade:**
+
+    $ sudo dpkg-reconfigure openssh-server
+
+    🔹 Pakeje openssh-server ra baz-ayari mikonad va soalat ayar-bandi ra az karbar miporsad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf` command is used for managing package configurations on Debian and Ubuntu systems.  It presents questions to the user and saves the answers for proper package setup.
+
+⚙️ **Options:**
+    🔹 `debconf-set-selections` --> ⚙️ Pre-seed answers to configuration questions.
+    🔹 `debconf-show`          --> 👀 Display configuration information for a package.
+    🔹 `dpkg-reconfigure`      --> 🔄 Reconfigure a package and re-ask configuration questions.
+
+🛠 **Examples:**
+
+    $ debconf-set-selections <<< "mypackage shared/setting boolean true"
+
+    🔹 Saves the answer 'true' for the question 'shared/setting' in the package 'mypackage'.
+
+    $ debconf-show mypackage
+
+    🔹 Displays all stored configuration information for the package 'mypackage'.
+
+✅ **Simple Example:**
+
+    $ sudo dpkg-reconfigure openssh-server
+
+    🔹 Reconfigures the openssh-server package and prompts the user with configuration questions.

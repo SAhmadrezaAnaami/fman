@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lwp-download` baraye download kardan file-ha az internet az tarigh command line estefade mishavad. In dastoor ghesmati az majmooe `libwww-perl` ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `lwp-download -O <file>` --> 💾 Save kardane file ba name moshakhas.  Be jaye `<file>` name morede nazar ra benevisid.
+    🔹 `lwp-download -U <agent>` --> 👤 Ferestadan name yek `User-Agent` khas.  In komak mikonad website fekr konad shoma az browser khasi estefade mikonid.
+    🔹 `lwp-download -d` --> 🐞 Namayesh etela'ate debug baraye fahmidane moshkelat dar download.
+    🔹 `lwp-cdownload` --> 🚀  Download kardan ba resume kardan (agar download ghat shavad, az haman ja edameh midahad).
+
+🛠 **Mesal-ha:**
+
+    $ lwp-download http://example.com/myfile.txt
+    
+    🔹 Download kardane `myfile.txt` az website `example.com`.
+
+    $ lwp-download -O newfile.txt http://example.com/myfile.txt
+    
+    🔹 Download kardane `myfile.txt` az `example.com` va save kardane an be name `newfile.txt`.
+
+✅ **Mesal sade:**
+
+    $ lwp-download -O image.jpg http://example.com/image.jpg
+
+    🔹 Image ba name `image.jpg` download mishavad. Agar etela'at debug ra bebinid (ba estefade az `-d`), shoma status HTTP va etela'ate digar ra khahid did.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lwp-download` command is used to download files from the internet via the command line.  It is part of the `libwww-perl` suite.
+
+⚙️ **Options:**
+    🔹 `lwp-download -O <file>` --> 💾 Save the file with a specific name.  Replace `<file>` with the desired filename.
+    🔹 `lwp-download -U <agent>` --> 👤 Send a specific `User-Agent` header. This can help to mimic a specific browser.
+    🔹 `lwp-download -d` --> 🐞 Display debugging information to troubleshoot download issues.
+    🔹 `lwp-cdownload` --> 🚀 Download with resume capability (if the download is interrupted, it will continue from where it left off).
+
+🛠 **Examples:**
+
+    $ lwp-download http://example.com/myfile.txt
+    
+    🔹 Downloads `myfile.txt` from the website `example.com`.
+
+    $ lwp-download -O newfile.txt http://example.com/myfile.txt
+    
+    🔹 Downloads `myfile.txt` from `example.com` and saves it as `newfile.txt`.
+
+✅ **Simple Example & Explanation:**
+
+    $ lwp-download -O image.jpg http://example.com/image.jpg
+
+    🔹 Downloads the image and saves it as `image.jpg`.  If you enable debugging (using `-d`), you will see the HTTP status and other information about the download process.

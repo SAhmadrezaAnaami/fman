@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_clean` baraye pak kardan file-haye temporary va build shode az directory `debian/` estefade mishavad. In kar baraye moratab negah dashtan directory source code va amade sazi baraye build-haye jadid kheili mohem ast. Ba ejraye in dastoor, file-haye ziadi ke dar process build ijad shode-and hazf mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 Heech gozine khas (option) niaz nist. Dastoor be soorat pishfarz hame file-haye temporary ra pak mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_clean
+
+    🔹 In dastoor hameye file-haye temporary ra az directory `debian/` pak mikonad. Hich output neshon nemidahad agar hamechiz be dorosti kar konad.
+
+    $ debian/rules clean
+
+    🔹 Obadan, in dastoor `dh_clean` ra call mikonad ke directory ra pak mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_clean
+
+    🔹 Ba ejraye in dastoor, shoma motmaen mishavid ke directory `debian/` az file-haye build ghadimi pak shode ast va project shoma amadeye build dobare ast.  Agar ghable az build jadid in dastoor ra ejra konid, az moshkelati ke az file-haye build ghadimi ijad mishavad jelogiri mikonid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_clean` command is used to clean temporary and build files from the `debian/` directory. This is important for keeping the source code directory tidy and preparing for new builds. Running this command removes many files generated during the build process.
+
+⚙️ **Options:**
+    🔹 No specific options are typically needed. The command cleans all temporary files by default.
+
+🛠 **Examples:**
+
+    $ dh_clean
+
+    🔹 This command cleans all temporary files from the `debian/` directory. It typically shows no output if everything works correctly.
+
+    $ debian/rules clean
+
+    🔹 Usually, the `debian/rules clean` target calls `dh_clean` to clean the directory.
+
+✅ **Simple Example:**
+
+    $ dh_clean
+
+    🔹 By running this command, you ensure that the `debian/` directory is cleared of old build files and that your project is ready for a fresh build. Running this before a new build helps prevent issues arising from stale build artifacts.

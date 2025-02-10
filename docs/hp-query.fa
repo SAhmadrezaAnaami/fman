@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-query` baraye peyda kardan va namayesh dadan etela'at darbareye device-haye HP, mesle printer-ha va scanner-ha, estefade mishavad. In dastoor be shoma komak mikonad ta etela'ati mesle model, version-e firmware, va vaziat-e device ra be dast avarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-query -i`  --> ℹ️ Namayesh etela'at kamel darbareye device entekhab shode.
+    🔹 `hp-query -m model_name`  --> 🔍 Jostejoo baraye device-ha ba name model moshakhas.
+    🔹 `hp-query -p`  --> 🖨️ Namayesh liste printer-haye HP e ke nasb shodeand.
+    🔹 `hp-query -s`  --> 📷 Namayesh liste scanner-haye HP e ke nasb shodeand.
+
+🛠 **Mesal-ha:**
+
+    $ hp-query -i
+
+    🔹 Namayesh etela'at kamel darbareye avalin device HP peyda shode.
+
+    $ hp-query -m LaserJet
+
+    🔹 Jostejoo va namayesh device-haye HP ba name model shamel "LaserJet".
+
+✅ **Mesal sade:**
+
+    $ hp-query -p
+
+    🔹 Liste printer-haye HP e ke dar system shoma peyda shodeand ra namayesh midahad. Agar hich printer HP nasb nashode bashad, hich chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-query` command is used to find and display information about HP devices, such as printers and scanners. This command helps you to obtain information like the model, firmware version, and status of the device.
+
+⚙️ **Options:**
+    🔹 `hp-query -i`  --> ℹ️ Display detailed information about the selected device.
+    🔹 `hp-query -m model_name`  --> 🔍 Search for devices with a specific model name.
+    🔹 `hp-query -p`  --> 🖨️ Display a list of installed HP printers.
+    🔹 `hp-query -s`  --> 📷 Display a list of installed HP scanners.
+
+🛠 **Examples:**
+
+    $ hp-query -i
+
+    🔹 Display detailed information about the first HP device found.
+
+    $ hp-query -m LaserJet
+
+    🔹 Search and display HP devices with model names containing "LaserJet".
+
+✅ **Simple Example:**
+
+    $ hp-query -p
+
+    🔹 Displays a list of HP printers found on your system. If no HP printers are installed, nothing will be displayed.
+

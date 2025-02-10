@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `evince-thumbnailer` baraye dorost kardane akshaye koochak (thumbnails) az file-haye PDF va digar format haye document ke ba Evince baz mishavand, estefade mishavad. In dastoor oboore bekhshi az systeme thumbnailer Linux ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--size <andaze>`  --> 📐 Andazeye akse koochak ra moshakhas mikonad (pixel). Mesalan: 128
+    🔹 `--input-file <file>`  --> 📁 Masire file asli ke bayad thumbnail azash dorost shavad ra moshakhas mikonad.
+    🔹 `--output-file <file>`  --> 🖼️ Masire jaye save shodane akse koochak ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ evince-thumbnailer --size 128 --input-file document.pdf --output-file document.png
+
+    🔹 Yak thumbnail ba andazeye 128x128 az file document.pdf dorost mikonad va be name document.png save mikonad.
+
+    $ evince-thumbnailer --size 256 --input-file presentation.pdf --output-file presentation.jpg
+
+    🔹 Yak thumbnail ba andazeye 256x256 az file presentation.pdf dorost mikonad va be name presentation.jpg save mikonad.
+
+✅ **Mesal sade:**
+
+    $ evince-thumbnailer --size 64 --input-file report.pdf --output-file report.png
+
+    🔹 Thumbnailer aks koochaki az file `report.pdf` ba andazeye 64x64 dorost mikonad va an ra be onvane `report.png` zakhire mikonad. In aks koochak baraye namayesh e file dar file manager estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `evince-thumbnailer` command is used to generate thumbnails for PDF files and other document formats that are supported by Evince. It's part of the Linux thumbnailing system.
+
+⚙️ **Options:**
+    🔹 `--size <size>`  --> 📐 Specifies the size of the thumbnail in pixels. Example: 128
+    🔹 `--input-file <file>`  --> 📁 Specifies the path to the input file for which the thumbnail should be generated.
+    🔹 `--output-file <file>`  --> 🖼️ Specifies the path to save the generated thumbnail.
+
+🛠 **Examples:**
+
+    $ evince-thumbnailer --size 128 --input-file document.pdf --output-file document.png
+
+    🔹 Generates a 128x128 thumbnail from document.pdf and saves it as document.png.
+
+    $ evince-thumbnailer --size 256 --input-file presentation.pdf --output-file presentation.jpg
+
+    🔹 Generates a 256x256 thumbnail from presentation.pdf and saves it as presentation.jpg.
+
+✅ **Simple Example & Explanation:**
+
+    $ evince-thumbnailer --size 64 --input-file report.pdf --output-file report.png
+
+    🔹 The thumbnailer creates a small image (thumbnail) of `report.pdf` with dimensions 64x64 and saves it as `report.png`. This thumbnail is used to display the file's preview in file managers.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lgrep` (log grep) baraye jostojo kardan dar file-haye log estefade mishavad. In dastoor version-e behtari az `grep` ast ke baraye kar ba log-ha beینه shode ast.  Be shoma komak mikonad etela'at moshakhas ra az file-haye bozorg log ba sor'at peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--before=NUM` --> ⏪️  Namayesh dadan `NUM` khat ghabl az matn peyda shode.
+    🔹 `--after=NUM`  --> ⏩️  Namayesh dadan `NUM` khat ba'd az matn peyda shode.
+    🔹 `--color`      --> 🎨  Rang-e matn peyda shode ra taghyir midahad.
+    🔹 `--file=FILE`  --> 📂  Jostojo dar file-haye zyad az list file.
+
+🛠 **Mesal-ha:**
+
+    $ lgrep "error" application.log
+
+    🔹 Peyda kardan tamam khat haye shamel "error" dar file application.log
+
+    $ lgrep --before=2 "exception" system.log
+
+    🔹 Peyda kardan tamam khat haye shamel "exception" dar file system.log va namayesh dadan 2 khat ghabl az har matn peyda shode.
+
+✅ **Mesal sade:**
+
+    $ lgrep --color "warning" myapp.log
+
+    🔹 Hameye khat haye shamel kalame "warning" dar file `myapp.log` ra ba rang joda namayesh midahad ta asantar dideh shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lgrep` (log grep) command is used to search within log files. It's an enhanced version of `grep` optimized for working with logs, helping you quickly find specific information in large log files.
+
+⚙️ **Options:**
+    🔹 `--before=NUM` --> ⏪️ Display `NUM` lines before the matched text.
+    🔹 `--after=NUM`  --> ⏩️ Display `NUM` lines after the matched text.
+    🔹 `--color`      --> 🎨 Highlight the matched text with color.
+    🔹 `--file=FILE`  --> 📂 Search multiple files listed in FILE.
+
+🛠 **Examples:**
+
+    $ lgrep "error" application.log
+
+    🔹 Find all lines containing "error" in the application.log file.
+
+    $ lgrep --before=2 "exception" system.log
+
+    🔹 Find all lines containing "exception" in the system.log file and display 2 lines before each match.
+
+✅ **Simple Example:**
+
+    $ lgrep --color "warning" myapp.log
+
+    🔹 Displays all lines in `myapp.log` that contain the word "warning" with the matched text highlighted in color, making it easier to spot.

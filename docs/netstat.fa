@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `netstat` baraye didane etela'at shabake, mesle porte-ha'i ke baz hastand va ertebat-ha'i ke fa'al hastand, be kar miravad. Ba `netstat` mitoonid bebinnid kodam barname-ha dar hale estefade az shabake hastand.
+
+⚙️ **Gozine-ha:**
+    🔹 `netstat -a`  --> 👀 Namayesh hameye ertebat-ha va porte-ha'i ke gosh dade mishavand.
+    🔹 `netstat -t`  --> 📶 Namayesh ertebat-haye TCP.
+    🔹 `netstat -u`  --> 📡 Namayesh ertebat-haye UDP.
+    🔹 `netstat -l`  --> 👂🏻 Namayesh porte-ha'i ke dar hale gosh dadan hastand.
+    🔹 `netstat -p`  --> 🔑 Namayesh barname-ha'i ke az porte-ha estefade mikonand (niaz be dastresi root).
+    🔹 `netstat -n`  --> 🔢 Namayesh address-ha va porte-ha be soorate adadi (na nam).
+
+🛠 **Mesal-ha:**
+
+    $ netstat -at
+    
+    🔹 Namayesh hameye ertebat-haye TCP, dar hale gosh dadan va ertebat-haye bargharar shode.
+
+    $ sudo netstat -nlp
+    
+    🔹 Namayesh liste porte-ha'i ke dar hale gosh dadan hastand va barname-ha'i ke az anha estefade mikonand (ba dastresi root).
+
+✅ **Mesal sade:**
+
+    $ netstat -an | grep :80
+
+    🔹 In dastoor hameye ertebat-ha ra namayesh midehad va ba `grep`, faghat khat-ha'i ke porte 80 (porte web) ra daran namayesh midehad, ta bebini kodam ertebat-ha az web estefade mikonan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `netstat` command is used to display network information, such as open ports and active connections.  With `netstat`, you can see which programs are using the network.
+
+⚙️ **Options:**
+    🔹 `netstat -a`  --> 👀 Show all connections and listening ports.
+    🔹 `netstat -t`  --> 📶 Show TCP connections.
+    🔹 `netstat -u`  --> 📡 Show UDP connections.
+    🔹 `netstat -l`  --> 👂🏻 Show listening ports.
+    🔹 `netstat -p`  --> 🔑 Show the process using each port (requires root access).
+    🔹 `netstat -n`  --> 🔢 Show addresses and port numbers numerically (don't resolve names).
+
+🛠 **Examples:**
+
+    $ netstat -at
+    
+    🔹 Show all TCP connections, both listening and established.
+
+    $ sudo netstat -nlp
+    
+    🔹 Show the list of listening ports and the programs using them (requires root access).
+
+✅ **Simple Example:**
+
+    $ netstat -an | grep :80
+
+    🔹 This command displays all network connections and then, using `grep`, filters the output to show only lines containing port 80 (the web port), so you can see which connections are using web services.

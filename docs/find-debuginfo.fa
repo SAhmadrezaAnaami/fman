@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `find-debuginfo` baraye peyda kardan va dastrasi be etela'at debug az binar-ha (binary files) va ketab-khane-ha (libraries) estefade mishavad. Debuginfo komak mikonad ta moshkelat program-ha ra asantar peyda va rafa konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--strict` --> 🔍 Faghat debuginfo-haye kamel ra peyda mikonad (sakhtgir).
+    🔹 `--output=directory` --> 📁 Debuginfo-haye peyda shode ra dar yek pooshe-ye moshakhas zakhire mikonad.
+    🔹 `--strip` --> ✂️  Debuginfo ra az binar-ha joda mikonad.
+    🔹 `--compress` --> 🗜️ Debuginfo-haye zakhire shode ra moteraakem (compress) mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ find-debuginfo --strict /usr/bin/myprogram
+
+    🔹  Debuginfo-haye kamel ra baraye `myprogram` dar `/usr/bin` peyda mikonad.
+
+    $ find-debuginfo --output=/tmp/debuginfo --strip /usr/lib/mylibrary.so
+
+    🔹 Debuginfo-haye `mylibrary.so` ra joda mikonad va dar `/tmp/debuginfo` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ find-debuginfo /usr/sbin/myservice
+
+    🔹 Debuginfo-haye `myservice` ra dar system peyda mikonad va path anha ra namayesh midahad. Agar debuginfo mojood nabashad, chizi namayesh dade nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `find-debuginfo` command is used to locate and access debug information for binaries and libraries. Debug information helps you to find and fix program issues more easily.
+
+⚙️ **Options:**
+    🔹 `--strict` --> 🔍 Finds only complete debuginfo packages (strict mode).
+    🔹 `--output=directory` --> 📁 Saves the found debuginfo to a specified directory.
+    🔹 `--strip` --> ✂️  Separates debuginfo from binaries.
+    🔹 `--compress` --> 🗜️ Compresses the saved debuginfo files.
+
+🛠 **Examples:**
+
+    $ find-debuginfo --strict /usr/bin/myprogram
+
+    🔹 Finds complete debuginfo for `myprogram` in `/usr/bin`.
+
+    $ find-debuginfo --output=/tmp/debuginfo --strip /usr/lib/mylibrary.so
+
+    🔹 Separates debuginfo from `mylibrary.so` and saves it to `/tmp/debuginfo`.
+
+✅ **Simple Example:**
+
+    $ find-debuginfo /usr/sbin/myservice
+
+    🔹 Finds debuginfo for `myservice` in the system and displays their paths. If no debuginfo is found, nothing is displayed.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installdocs` baraye install kardan (ya copy kardan) file-haye document (manand README, LICENSE, COPYING) dar package Debian estefade mishavad. In dastoor autmatically file-haye marbooteh ra az source directory be directory `/usr/share/doc/package-name` dar build directory enteqal midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 🚫 File-ha ra install nakon, faghat simulate kon.
+    🔹 `-Xpattern` --> ✂️ File-haye motabegh ba `pattern` ra install nakon. Misal: `-X'*~'` baraye install nakardan file-haye backup.
+    🔹 `--sourcedir=dir` --> 📂 Directory ke file-haye source dar aan gharar darand ra moshakhas mikonad (agar directory default nabashad).
+    🔹 `--doc-mainfile` --> 🔑 File asli documant package ra moshakhas mikonad. In file dar safhe aslye help package estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installdocs
+    
+    🔹 Install hameye file-haye document az source directory be directory doc package Debian.
+
+    $ dh_installdocs -X'*.txt'
+    
+    🔹 Install hameye file-haye document be joz file-hayi ke pasvand `.txt` darand.
+
+✅ **Mesal sade:**
+
+    $ dh_installdocs --doc-mainfile=README
+    
+    🔹 Install hameye file-haye document va file README ra be onvane file aslye document moshakhas kon. Dar natije README dar safhe asli help package namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installdocs` command is used to install (or copy) documentation files (like README, LICENSE, COPYING) into a Debian package. This command automatically moves relevant files from the source directory to the `/usr/share/doc/package-name` directory within the build directory.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 🚫 Do not actually install the files, just simulate the process.
+    🔹 `-Xpattern` --> ✂️ Do not install files matching the `pattern`. Example: `-X'*~'` to avoid installing backup files.
+    🔹 `--sourcedir=dir` --> 📂 Specifies the directory where the source files are located (if it's not the default directory).
+    🔹 `--doc-mainfile` --> 🔑 Specifies the main documentation file for the package. This file is used as the primary help page for the package.
+
+🛠 **Examples:**
+
+    $ dh_installdocs
+    
+    🔹 Install all documentation files from the source directory into the Debian package's doc directory.
+
+    $ dh_installdocs -X'*.txt'
+    
+    🔹 Install all documentation files except those with the `.txt` extension.
+
+✅ **Simple Example:**
+
+    $ dh_installdocs --doc-mainfile=README
+    
+    🔹 Install all documentation files and designate the README file as the main documentation file. As a result, the README will be displayed on the main help page of the package.

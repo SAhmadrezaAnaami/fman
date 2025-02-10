@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installlogrotate` baraye nasb kardan file-haye `logrotate` dar pakage Debian estefade mishavad. In dastoor file-haye config `logrotate` ro az directory `debian/` be directory nasb shodeye pakage enteghal mide, ta `logrotate` betoone log file-ha ro dorost moratab kone.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> ℹ️ Faghat namayesh mide che amali anjam mishe, vali hich chizi ro taghir nemide. (Dry-run mode)
+    🔹 `-p <directory>` --> 🎯 Directory asli ro baraye file-haye `logrotate` moshakhas mikone. Agar in gozine estefade nashavad, az `debian/` estefade mishe.
+    🔹 `--name <filename>` --> ✏️ Esme file-haye nasb shode `logrotate` ro taghir mide.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installlogrotate
+    
+    🔹 File-haye `logrotate` ro az `debian/` nasb mikone.
+
+    $ dh_installlogrotate -p etc/logrotate.d
+    
+    🔹 File-haye `logrotate` ro az `etc/logrotate.d` nasb mikone.
+
+✅ **Mesal sade:**
+
+    $ dh_installlogrotate -n
+    
+    🔹 Namayesh mide che file-haee nasb mishan, vali hich file-i ro nasb nemikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installlogrotate` command is used to install `logrotate` configuration files in a Debian package. It moves the `logrotate` config files from the `debian/` directory to the installation directory of the package, so `logrotate` can properly manage log files.
+
+⚙️ **Options:**
+    🔹 `-n`  --> ℹ️ Shows what actions would be performed, without actually doing anything (Dry-run mode).
+    🔹 `-p <directory>` --> 🎯 Specifies the source directory for `logrotate` files. If not specified, it defaults to `debian/`.
+    🔹 `--name <filename>` --> ✏️ Renames the installed `logrotate` configuration files.
+
+🛠 **Examples:**
+
+    $ dh_installlogrotate
+    
+    🔹 Installs `logrotate` files from the `debian/` directory.
+
+    $ dh_installlogrotate -p etc/logrotate.d
+    
+    🔹 Installs `logrotate` files from the `etc/logrotate.d` directory.
+
+✅ **Simple Example:**
+
+    $ dh_installlogrotate -n
+    
+    🔹 Shows which files would be installed, but does not actually install any files.

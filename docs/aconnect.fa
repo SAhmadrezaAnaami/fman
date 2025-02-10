@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aconnect` baraye etesal dade MIDI be port-haye ALSA estefade mishavad. Yani mitavanid yek dastgah MIDI ra be yek barname ya dastgahe digar vasl konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `aconnect --help` --> ❓ Namayesh rahnamaye dastoor
+    🔹 `aconnect -i`     --> ℹ️ Namayesh port-haye mored estefade
+    🔹 `aconnect -o`     --> 📤 Namayesh port-haye khoruji (output)
+    🔹 `aconnect <port_client:port_number> <port_client:port_number>` --> 🔗 Etesal do port be ham
+
+🛠 **Mesal-ha:**
+
+    $ aconnect -i
+
+    🔹 Namayesh listi az port-haye vorudi (input) dastgah-haye MIDI.
+
+    $ aconnect 20:0 24:0
+
+    🔹 Etesal port 0 az client 20 be port 0 az client 24.  Baes mishavad data MIDI az 20:0 be 24:0 ferestade shavad.
+
+✅ **Mesal sade:**
+
+    $ aconnect -o
+
+    🔹 Listi az port-haye khoruji MIDI ra neshon midahad. In be shoma komak mikonad ta bebinid kodam port-ha ra mitavanid be onvane maqsad baraye etesal MIDI estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aconnect` command is used to connect MIDI ports in ALSA (Advanced Linux Sound Architecture). It allows you to connect one MIDI device or application to another.
+
+⚙️ **Options:**
+    🔹 `aconnect --help` --> ❓ Display help information
+    🔹 `aconnect -i`     --> ℹ️ List input ports
+    🔹 `aconnect -o`     --> 📤 List output ports
+    🔹 `aconnect <port_client:port_number> <port_client:port_number>` --> 🔗 Connect two ports together
+
+🛠 **Examples:**
+
+    $ aconnect -i
+
+    🔹 Shows a list of MIDI device input ports.
+
+    $ aconnect 20:0 24:0
+
+    🔹 Connects port 0 of client 20 to port 0 of client 24.  This routes MIDI data from 20:0 to 24:0.
+
+✅ **Simple Example:**
+
+    $ aconnect -o
+
+    🔹 Displays a list of available MIDI output ports. This helps you identify which ports are available to connect to as a MIDI destination.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk4-builder-tool` baraye modiriyat va tabdil file-haye GTK builder XML estefade mishavad. File-haye GTK builder XML baraye tarrahi interface-haye grafiki baraye barname-haye GTK estefade mishavand. In dastoor komak mikonad ke in file-ha ra az nazar syntax check konid va anha ra be format-haye digar tabdil konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtk4-builder-tool validate FILE`  --> ✅ Check kardan syntax va eshtebahat dar file XML.
+    🔹 `gtk4-builder-tool simplify FILE`  --> 🧹 File XML ra sade mikonad ta ghabl-khanitar shavad.
+    🔹 `gtk4-builder-tool compile FILE OUTPUT` --> 📦 File XML ra be format binary (gresource) tabdil mikonad baraye behbood performance.
+    🔹 `gtk4-builder-tool inspect FILE`   --> 🔍 Namayesh etela'at darbareye file XML.
+
+🛠 **Mesal-ha:**
+
+    $ gtk4-builder-tool validate my_window.ui
+
+    🔹 Check kardan file `my_window.ui` az nazar dorosti syntax.
+
+    $ gtk4-builder-tool compile my_window.ui my_window.gresource
+
+    🔹 Tabdil file `my_window.ui` be file binary `my_window.gresource`.
+
+✅ **Mesal sade:**
+
+    $ gtk4-builder-tool validate myapp.ui
+
+    🔹 Agar file `myapp.ui` eshtebahi dashte bashad, dastoor eshtebah ra namayesh midahad. Dar gheire in soorat, etela'ati dar morede dorosti file be shoma midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk4-builder-tool` command is used to manage and convert GTK builder XML files. GTK builder XML files are used to design graphical interfaces for GTK applications. This tool helps you check the syntax of these files and convert them into other formats.
+
+⚙️ **Options:**
+    🔹 `gtk4-builder-tool validate FILE`  --> ✅ Check the syntax and errors in the XML file.
+    🔹 `gtk4-builder-tool simplify FILE`  --> 🧹 Simplifies the XML file to make it more readable.
+    🔹 `gtk4-builder-tool compile FILE OUTPUT` --> 📦 Converts the XML file to binary format (gresource) to improve performance.
+    🔹 `gtk4-builder-tool inspect FILE`   --> 🔍 Displays information about the XML file.
+
+🛠 **Examples:**
+
+    $ gtk4-builder-tool validate my_window.ui
+
+    🔹 Check the file `my_window.ui` for syntax correctness.
+
+    $ gtk4-builder-tool compile my_window.ui my_window.gresource
+
+    🔹 Converts the file `my_window.ui` to a binary file `my_window.gresource`.
+
+✅ **Simple Example & Explanation:**
+
+    $ gtk4-builder-tool validate myapp.ui
+
+    🔹 If the file `myapp.ui` has an error, the command will display the error. Otherwise, it will provide information about the file's validity.

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ld.bfd` baraye link kardan file-haye object (az jomle .o file-ha) va sakhtane yek file executable (ya library) estefade mishavad.  `ld.bfd` ghesmati az GNU Binutils ast va tabe’e asli link kardane program-haye C/C++ va zaban-haye digar ra anjam midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o <name>` --> 📂 Esme file kharoji ra moshakhas mikonad.
+    🔹 `-l<library>` --> 📚 Library mored nazar ra link mikonad.  (masalan `-lm` baraye math library)
+    🔹 `-L<path>`   --> 🧭 Masiri ra ezafe mikonad ke `ld.bfd` bayad library-ha ra dar anja jostojo konad.
+    🔹 `-static`    --> 🔗 Library-ha ra be shekle static link mikonad.
+    🔹 `-shared`    --> 🔗 Library-ha ra be shekle shared link mikonad.
+    🔹 `-rpath <path>` --> 🛣️ Masiri ra dar file executable sabt mikonad ke baraye jostojo kardane library-haye shared dar zaman ejra estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ ld.bfd -o myprogram main.o utils.o
+
+    🔹 File-haye `main.o` va `utils.o` ra link karde va yek file executable be name `myprogram` misazad.
+
+    $ ld.bfd -o myprogram main.o -lm
+
+    🔹 File `main.o` ra link karde va library math (`libm.so`) ra ham link mikonad.
+
+✅ **Mesal sade:**
+
+    $ ld.bfd -o hello hello.o -lc
+
+    🔹 File object `hello.o` ra ba C standard library (`libc.so`) link karde va yek file executable be name `hello` misazad. In file `hello` baraye ejra amade ast va function-haye C standard library ra estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ld.bfd` command is used to link object files (such as .o files) and create an executable file or a library.  `ld.bfd` is part of GNU Binutils and performs the core function of linking C/C++ programs and other languages.
+
+⚙️ **Options:**
+    🔹 `-o <name>` --> 📂 Specifies the name of the output file.
+    🔹 `-l<library>` --> 📚 Links the specified library (e.g., `-lm` for the math library).
+    🔹 `-L<path>`   --> 🧭 Adds a path where `ld.bfd` should search for libraries.
+    🔹 `-static`    --> 🔗 Links libraries statically.
+    🔹 `-shared`    --> 🔗 Links libraries as shared.
+    🔹 `-rpath <path>` --> 🛣️ Embeds a path in the executable to search for shared libraries at runtime.
+
+🛠 **Examples:**
+
+    $ ld.bfd -o myprogram main.o utils.o
+
+    🔹 Links the `main.o` and `utils.o` files and creates an executable named `myprogram`.
+
+    $ ld.bfd -o myprogram main.o -lm
+
+    🔹 Links the `main.o` file and also links the math library (`libm.so`).
+
+✅ **Simple Example:**
+
+    $ ld.bfd -o hello hello.o -lc
+
+    🔹 Links the object file `hello.o` with the C standard library (`libc.so`) to create an executable named `hello`. This `hello` file is ready to execute and utilizes C standard library functions.

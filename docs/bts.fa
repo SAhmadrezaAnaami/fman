@@ -1,0 +1,83 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bts` (Bluetoothctl) baraye modiriat dastgah-haaye Bluetooth az tarigh terminal estefade mishavad. Ba in dastoor mitoonid dastgah-ha ra peyda konid, vasl shavid, va etela'at ra darbare-ye aan-ha be dast aarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `bluetoothctl` --> 💻 Baz kardan dastoor-e Bluetoothctl dar terminal.
+    🔹 `bluetoothctl scan on` --> 📡 Shoru kardan jostojo baraye dastgah-haaye Bluetooth-e nazdik.
+    🔹 `bluetoothctl pair [mac address]` --> 🔗 Vasl shodan be yek dastgah ba address MAC aan. (address MAC ra bayad jaye [mac address] benevisid)
+    🔹 `bluetoothctl connect [mac address]` --> 📲 Etebasl mojadad be yek dastgah-e qablan vasl shode ba address MAC aan.
+    🔹 `bluetoothctl disconnect [mac address]` --> ✂️ Ghot’ kardane etesal be yek dastgah ba address MAC aan.
+    🔹 `bluetoothctl list` --> 📃 List kardan controller-haaye Bluetooth-e mojud.
+    🔹 `bluetoothctl devices` --> 📱 List kardan dastgah-haaye vasl shode va payda shode.
+    🔹 `bluetoothctl power on/off` --> 💡 Roshan ya khamush kardan Bluetooth.
+    🔹 `bluetoothctl agent on/off` --> 🕵️‍  Enable/disable agent baraye handle connection-ha.
+
+🛠 **Mesal-ha:**
+
+    $ bluetoothctl
+    [bluetooth]# power on
+    [bluetooth]# scan on
+    [bluetooth]# devices
+
+    🔹 Roshan kardan Bluetooth, shoru kardan scan, va list kardan dastgah-haaye payda shode.
+
+    $ bluetoothctl
+    [bluetooth]# connect XX:XX:XX:XX:XX:XX
+
+    🔹 Vasl shodan be yek dastgah ba MAC address XX:XX:XX:XX:XX:XX.
+
+✅ **Mesal sade:**
+
+    $ bluetoothctl scan on
+    Discovery started
+    [CHG] Controller AA:BB:CC:DD:EE:FF Discovering: yes
+    [NEW] Device 00:11:22:33:44:55 Headphones
+
+    🔹 Jostojo baraye dastgah-ha shoru shode va yek dastgah be name "Headphones" payda shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bts` (Bluetoothctl) command is used to manage Bluetooth devices from the terminal. With this command, you can discover devices, connect to them, and obtain information about them.
+
+⚙️ **Options:**
+    🔹 `bluetoothctl` --> 💻 Open the Bluetoothctl command in the terminal.
+    🔹 `bluetoothctl scan on` --> 📡 Start scanning for nearby Bluetooth devices.
+    🔹 `bluetoothctl pair [mac address]` --> 🔗 Pair with a device using its MAC address. (Replace [mac address] with the actual MAC address).
+    🔹 `bluetoothctl connect [mac address]` --> 📲 Reconnect to a previously paired device using its MAC address.
+    🔹 `bluetoothctl disconnect [mac address]` --> ✂️ Disconnect from a device using its MAC address.
+    🔹 `bluetoothctl list` --> 📃 List available Bluetooth controllers.
+    🔹 `bluetoothctl devices` --> 📱 List paired and discovered devices.
+    🔹 `bluetoothctl power on/off` --> 💡 Turn Bluetooth on or off.
+    🔹 `bluetoothctl agent on/off` --> 🕵️‍  Enable/disable agent for handling connections.
+
+🛠 **Examples:**
+
+    $ bluetoothctl
+    [bluetooth]# power on
+    [bluetooth]# scan on
+    [bluetooth]# devices
+
+    🔹 Turn on Bluetooth, start scanning, and list the discovered devices.
+
+    $ bluetoothctl
+    [bluetooth]# connect XX:XX:XX:XX:XX:XX
+
+    🔹 Connect to a device with MAC address XX:XX:XX:XX:XX:XX.
+
+✅ **Simple Example:**
+
+    $ bluetoothctl scan on
+    Discovery started
+    [CHG] Controller AA:BB:CC:DD:EE:FF Discovering: yes
+    [NEW] Device 00:11:22:33:44:55 Headphones
+
+    🔹 Scanning for devices has started, and a device named "Headphones" has been found.
+

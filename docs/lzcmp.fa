@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzcmp` baraye moghayese kardan file-haye zip shode (ba estefade az lzip) ba file-haye asli be kar miravad. In dastoor fargh-ha ra neshon midahad agar chizi fargh dashte bashad. Agar file-ha yeksan bashand, chizi neshon nemidahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-l`  --> 📜 Estefade az `less` baraye namayesh fargh-ha (agar nasb bashad). Agar `less` nasb nabashad az `more` estefade mikonad.
+    🔹 `-n`  --> 🚫 Agar file zip shode vojood nadashte bashad etela'ati neshon nade. Be soorate pishfarz agar file zip shode vojood nadashte bashad payam k خطا neshon میدهد.
+    🔹 `-q`  --> 🤫 Payam-haye kamtari neshon bede (saket tar bash).
+
+🛠 **Mesal-ha:**
+
+    $ lzcmp file.txt.lz file.txt
+
+    🔹 Moghayese file zip shode `file.txt.lz` ba `file.txt`. Agar farghi bashad neshon midahad.
+
+    $ lzcmp -l file.log.lz file.log
+
+    🔹 Moghayese file zip shode `file.log.lz` ba `file.log` va estefade az `less` baraye namayesh fargh-ha agar `less` nasb bashad.
+
+✅ **Mesal sade:**
+
+    $ lzcmp report.txt.lz report.txt
+    report.txt.lz and report.txt differ: char 12, line 2
+
+    🔹 In neshon midahad ke file `report.txt.lz` ba `report.txt` dar character 12 az khat 2 fargh darad. Agar hich payami neshon nade yani yeksan hastand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzcmp` command is used to compare compressed files (using lzip) with their original uncompressed counterparts. It displays differences if any are found. If the files are identical, it produces no output.
+
+⚙️ **Options:**
+    🔹 `-l`  --> 📜 Use `less` to display the differences (if installed). If `less` is not installed, it falls back to `more`.
+    🔹 `-n`  --> 🚫 Suppress any output if the compressed file does not exist. By default, an error message is shown if the compressed file is missing.
+    🔹 `-q`  --> 🤫 Show fewer messages (quieter mode).
+
+🛠 **Examples:**
+
+    $ lzcmp file.txt.lz file.txt
+
+    🔹 Compares the compressed file `file.txt.lz` with `file.txt`.  If differences are found, they are displayed.
+
+    $ lzcmp -l file.log.lz file.log
+
+    🔹 Compares the compressed file `file.log.lz` with `file.log` and uses `less` to display the differences if `less` is available.
+
+✅ **Simple Example:**
+
+    $ lzcmp report.txt.lz report.txt
+    report.txt.lz and report.txt differ: char 12, line 2
+
+    🔹 This shows that `report.txt.lz` and `report.txt` differ at character 12 on line 2. If no output is shown, the files are identical.

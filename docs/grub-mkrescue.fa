@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mkrescue` baraye sakhtane yek image bootable ISO9660 az file system GRUB estefade mishavad. In image mitavanad baraye CD-ha, DVD-ha, ya USB drive-ha baraye boot kardane yek system amal (operating system) estefade shavad.  Asasan, in dastoor be shoma komak mikonad ta yek CD/DVD ya USB-e ghabele boot ba GRUB be soorate asan dorost konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--output=FILE` ya `-o FILE`  --> 💾 File ISO ra ba in name zakhire mikonad. Agar name file ra nadehid, output dar stdout chap mishavad.
+    🔹 `--directory=DIR` ya `-d DIR`  --> 📁 Directory-e root baraye file system ISO. Hameye file-haye mored niaz baraye boot shodan az in directory gerefte mishavand.
+    🔹 `--grub-mkimage=PATH`  --> ⚙️ Masir be `grub-mkimage`. Agar zekr nashavad, az `$PATH` estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ grub-mkrescue --output=bootable.iso /boot/grub
+
+    🔹  Yek image ISO bootable be name `bootable.iso` az contents directory `/boot/grub` misazad.
+
+    $ grub-mkrescue -o my_custom_boot.iso -d my_boot_files
+
+    🔹  Yek image ISO bootable be name `my_custom_boot.iso` az contents directory `my_boot_files` misazad.
+
+✅ **Mesal sade:**
+
+    $ grub-mkrescue -o rescue.iso /tmp/grub
+
+    🔹 Agar shoma file-haye GRUB-e khod ra dar directory `/tmp/grub` dashte bashid, in dastoor yek image ISO be name `rescue.iso` misazad ke shoma mitavanid an ra baraye boot kardane system-e khod estefade konid dar vaghti ke system-e shoma boot nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mkrescue` command is used to create a bootable ISO9660 image from a GRUB filesystem. This image can be used for CDs, DVDs, or USB drives to boot an operating system.  Essentially, this command helps you create a bootable CD/DVD or USB with GRUB easily.
+
+⚙️ **Options:**
+    🔹 `--output=FILE` or `-o FILE`  --> 💾 Save the ISO file with this name. If you don't specify the filename, the output is printed to stdout.
+    🔹 `--directory=DIR` or `-d DIR`  --> 📁 The root directory for the ISO file system. All files needed for booting are taken from this directory.
+    🔹 `--grub-mkimage=PATH`  --> ⚙️ Path to `grub-mkimage`. If not specified, it uses `$PATH`.
+
+🛠 **Examples:**
+
+    $ grub-mkrescue --output=bootable.iso /boot/grub
+
+    🔹  Creates a bootable ISO image named `bootable.iso` from the contents of the directory `/boot/grub`.
+
+    $ grub-mkrescue -o my_custom_boot.iso -d my_boot_files
+
+    🔹  Creates a bootable ISO image named `my_custom_boot.iso` from the contents of the directory `my_boot_files`.
+
+✅ **Simple Example & Explanation:**
+
+    $ grub-mkrescue -o rescue.iso /tmp/grub
+
+    🔹 If you have your GRUB files in the directory `/tmp/grub`, this command creates an ISO image named `rescue.iso` that you can use to boot your system when your system won't boot.

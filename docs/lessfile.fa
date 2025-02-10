@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lessfile` baraye baz kardan va didan mohtavay-e yek file matni (text file) be soorat safeh be safeh (page by page) estefade mishavad. In dastoor be shoma ejazeh midehad ke file-haye bozorg ra rahattar bekhanid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lessfile`  --> 📄 Baz kardan file be soorate sade.
+    🔹 `lessfile +G`  --> 🏢 Raftan be akharin khatt dar file.
+    🔹 `lessfile +F`  --> 📡 Monitor kardan file baraye taghirat jadid (mesle `tail -f`).
+    🔹 `lessfile -N`  --> 🔢 Namayesh shomareye khatt-ha.
+    🔹 `lessfile -g`  --> 🔍 Tanha khatt-haye marboot ra highlight mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ lessfile myfile.txt
+
+    🔹 Baz kardan file "myfile.txt" baraye khandan.
+
+    $ lessfile +G logfile.log
+
+    🔹 Baz kardan file "logfile.log" va raftan be akharin khatt.
+
+✅ **Mesal sade:**
+
+    $ lessfile -N important_notes.txt
+
+    🔹 Baz kardan file "important_notes.txt" ba namayesh shomareye khatt-ha, ke baraye peygiri va refrence dadan asan tar ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lessfile` command is used to open and view the contents of a text file page by page. It allows you to read large files more easily.
+
+⚙️ **Options:**
+    🔹 `lessfile` --> 📄 Open the file in a basic mode.
+    🔹 `lessfile +G` --> 🏢 Go to the last line in the file.
+    🔹 `lessfile +F` --> 📡 Monitor the file for new changes (like `tail -f`).
+    🔹 `lessfile -N` --> 🔢 Show line numbers.
+    🔹 `lessfile -g` --> 🔍 Only highlights the relevant lines
+
+🛠 **Examples:**
+
+    $ lessfile myfile.txt
+
+    🔹 Open the file "myfile.txt" for reading.
+
+    $ lessfile +G logfile.log
+
+    🔹 Open the file "logfile.log" and go to the last line.
+
+✅ **Simple Example:**
+
+    $ lessfile -N important_notes.txt
+
+    🔹 Open the file "important_notes.txt" with line numbers displayed, making it easier to track and reference specific lines.

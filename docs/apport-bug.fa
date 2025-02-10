@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apport-bug` baraye gozaresh-e moshkelat (bugs) dar barname-ha be system-e Apport estefade mishavad. Apport komak mikonad etela'at lazem ra jam'avari konad va baraye barname-nevisan befrestad ta anha betavanand moshkel ra rafa konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `apport-bug <esm-e-barname>` --> 🎯 Gozaresh-e moshkel baraye yek barname-ye khass.
+    🔹 `apport-bug -p <package-name>` --> 📦 Gozaresh-e moshkel baraye yek بسته (package), age esm-e barname dast nadashteh باشین.
+    🔹 `apport-bug -w <process-id>` --> 📟 Gozaresh-e moshkel az yek process ke dar hale اجرا شدنه (running).
+
+🛠 **Mesal-ha:**
+
+    $ apport-bug firefox
+
+    🔹 Gozaresh-e moshkel baraye barname-ye Firefox.
+
+    $ apport-bug -p firefox
+
+    🔹 Gozaresh-e moshkel baraye package Firefox (agar esm-e barname natoonesteh peyda she).
+
+✅ **Mesal sade:**
+
+    $ apport-bug -w 1234
+
+    🔹 Gozaresh-e moshkel az process ba shenase (ID) 1234. In be shoma komak mikonad moshkelat yek barname ra dar hale اجرا gozaresh dahid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apport-bug` command is used to report bugs in applications to the Apport system. Apport helps to collect the necessary information and send it to developers so that they can fix the problem.
+
+⚙️ **Options:**
+    🔹 `apport-bug <application-name>` --> 🎯 Report a bug for a specific application.
+    🔹 `apport-bug -p <package-name>` --> 📦 Report a bug for a package, if the application name is not available.
+    🔹 `apport-bug -w <process-id>` --> 📟 Report a bug from a running process.
+
+🛠 **Examples:**
+
+    $ apport-bug firefox
+
+    🔹 Report a bug for the Firefox application.
+
+    $ apport-bug -p firefox
+
+    🔹 Report a bug for the Firefox package (if the application name cannot be found).
+
+✅ **Simple Example:**
+
+    $ apport-bug -w 1234
+
+    🔹 Report a bug from the process with ID 1234. This helps you report problems with a running application.
+

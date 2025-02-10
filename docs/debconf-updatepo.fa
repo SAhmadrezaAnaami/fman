@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-updatepo` baraye update kardan file-haye `po` (translate shode) dar package-haye Debian estefade mishavad. In dastoor, translate-haye jadid ra az template file migirad va dar file-haye `po` apply mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ℹ️ Namayesh rahnamaye dastoor
+    🔹 `--no-header` --> 🚫 Header-haye default ra dar file `po` ezafe nemikonad.
+    🔹 `--create-missing` --> ✨ Agar file `po` vojood nadashte bashad, yek file jadid misazad.
+
+🛠 **Mesal-ha:**
+
+    $ debconf-updatepo -v
+
+    🔹 File-haye `po` ra update mikonad va output-haye bishtar neshon midahad.
+
+    $ debconf-updatepo --create-missing fr
+
+    🔹 File `po` baraye zaban Faransavi ra misazad agar vojood nadashte bashad, va update mikonad.
+
+✅ **Mesal sade:**
+
+    $ debconf-updatepo fa
+
+    🔹 File `po` baraye zaban Farsi ra update mikonad. Agar taghirati dar template file bashad, dar file `po` apply mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-updatepo` command is used to update `po` (translated) files in Debian packages. It fetches new translations from the template file and applies them to the `po` files.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ℹ️ Show command help
+    🔹 `--no-header` --> 🚫 Do not add default headers to the `po` file.
+    🔹 `--create-missing` --> ✨ Create a new `po` file if it doesn't exist.
+
+🛠 **Examples:**
+
+    $ debconf-updatepo -v
+
+    🔹 Updates the `po` files and displays more verbose output.
+
+    $ debconf-updatepo --create-missing fr
+
+    🔹 Creates a `po` file for the French language if it doesn't exist, and updates it.
+
+✅ **Simple Example:**
+
+    $ debconf-updatepo en
+
+    🔹 Updates the `po` file for the English language. If there are changes in the template file, they are applied to the `po` file.

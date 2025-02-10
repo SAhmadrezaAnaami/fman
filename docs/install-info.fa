@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `install-info` baraye update kardan file `info` estefade mishavad. File `info` yek fehrest az dastoor-ha va program-ha ro dar system negah midarad, va `install-info` be shoma komak mikonad ke etela'at jadid ro be in fehrest ezafe konid ya etela'at ghadimi ro hazf konid.  Asosan, in dastoor tool-ha ro az documentation-e jadid aagah mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--dir-file=FILENAME` --> 📁 Esme file directory ke bayad update shavad (default: `dir`).
+    🔹 `--entry=ENTRY` --> 📝 Esme entry ke bayad ezafe ya update shavad.
+    🔹 `--info-file=FILENAME` --> ℹ️ Esme file `info` ke etela'at aan ezafe mishavad.
+    🔹 `--remove` --> 🗑️ Entry-e mored nazar ra hazf mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ install-info --dir-file=/usr/share/info/dir --entry='My Program' --info-file=/usr/share/info/myprogram.info
+
+    🔹 Etela'at 'My Program' ra az file `/usr/share/info/myprogram.info` be file directory `/usr/share/info/dir` ezafe mikonad.
+
+    $ install-info --dir-file=/usr/share/info/dir --remove --entry='My Program'
+
+    🔹 Entry 'My Program' ra az file directory `/usr/share/info/dir` hazf mikonad.
+
+✅ **Mesal sade:**
+
+    $ install-info --dir-file=dir --entry='New Tool' --info-file=newtool.info
+
+    🔹 Agar file `newtool.info` vojood dashte bashad, in dastoor yek entry ba name 'New Tool' be file `dir` ezafe mikonad, ta karbaran betavanand ba estefade az dastoor `info` be documentation-e `newtool.info` dastresi dashte bashand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `install-info` command is used to update the `info` file, which serves as a central directory for documentation on your system.  It allows you to add new entries for newly installed software or remove entries for uninstalled software. Essentially, this command makes the system aware of new documentation resources.
+
+⚙️ **Options:**
+    🔹 `--dir-file=FILENAME` --> 📁 Specifies the directory file to update (default: `dir`).
+    🔹 `--entry=ENTRY` --> 📝 Specifies the name of the entry to add or update.
+    🔹 `--info-file=FILENAME` --> ℹ️ Specifies the `info` file whose information will be added.
+    🔹 `--remove` --> 🗑️ Removes the specified entry.
+
+🛠 **Examples:**
+
+    $ install-info --dir-file=/usr/share/info/dir --entry='My Program' --info-file=/usr/share/info/myprogram.info
+
+    🔹 Adds information about 'My Program' from the file `/usr/share/info/myprogram.info` to the directory file `/usr/share/info/dir`.
+
+    $ install-info --dir-file=/usr/share/info/dir --remove --entry='My Program'
+
+    🔹 Removes the entry 'My Program' from the directory file `/usr/share/info/dir`.
+
+✅ **Simple Example:**
+
+    $ install-info --dir-file=dir --entry='New Tool' --info-file=newtool.info
+
+    🔹 If the file `newtool.info` exists, this command adds an entry named 'New Tool' to the `dir` file, so that users can access the documentation in `newtool.info` using the `info` command.

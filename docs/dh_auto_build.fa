@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_auto_build` yek dastoor dar sakht-o-pazh (build) pakej-haye Debian ast. In dastoor be soorat otomatik dastoorhaye sakht (build) ra baraye system-haye sakht mokhtalef (mesl CMake, Make, va gheyre) ejra mikonad. Yani shoma dige niaz nist ke dastoorhaye sakht ra be soorat dasti benevisid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `dh_auto_build` --> 🚀 Sakht pakej ba estefade az system sakht pishfarz.
+    🔹 `dh_auto_build --parallel` --> 🧵 Sakht pakej ba estefade az chand thread baraye sarehtar shodan.
+    🔹 `dh_auto_build -- --option=value` --> 🔧 Ezafe kardane gozinehaye khas be dastoor sakht. (Bayad az `-- --` estefade konid ta gozinehaye khod ra ezafe konid)
+
+🛠 **Mesal-ha:**
+
+    $ dh_auto_build
+
+    🔹 Sakht pakej ba gozine-haye pishfarz.
+
+    $ dh_auto_build --parallel
+
+    🔹 Sakht pakej ba estefade az chand thread (cores) baraye afzayesh sor’at sakht.
+
+    $ dh_auto_build -- -- -j4
+    
+    🔹 In mesal, gozineh `-j4` ra be dastoor `make` (ya har system sakht dige) ezafe mikonad, ke yani az 4 thread baraye sakht estefade shavad. (agar system sakht `make` bashad)
+
+✅ **Mesal sade:**
+
+    $ dh_auto_build --parallel -- -- -j$(nproc)
+
+    🔹 In dastoor pakej ra ba estefade az hameye threadhaye dastgah sakht mikonad. `$(nproc)` tedad threadhaye mojood ra barmigardanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_auto_build` command is part of the Debian helper tools. It automatically runs the build commands for various build systems (like CMake, Make, etc.) when building a Debian package. This eliminates the need to manually write the build commands.
+
+⚙️ **Options:**
+    🔹 `dh_auto_build` --> 🚀 Build the package using the default build system.
+    🔹 `dh_auto_build --parallel` --> 🧵 Build the package using multiple threads for faster build times.
+    🔹 `dh_auto_build -- --option=value` --> 🔧 Add specific options to the build command. (You must use `-- --` to pass options to the underlying build system.)
+
+🛠 **Examples:**
+
+    $ dh_auto_build
+
+    🔹 Build the package with default options.
+
+    $ dh_auto_build --parallel
+
+    🔹 Build the package using multiple threads (cores) to speed up the build process.
+
+    $ dh_auto_build -- -- -j4
+    
+    🔹 This example adds the `-j4` option to the `make` command (or whatever the build system is), which means use 4 threads for the build (if the build system is `make`).
+
+✅ **Simple Example:**
+
+    $ dh_auto_build --parallel -- -- -j$(nproc)
+
+    🔹 This command builds the package using all available threads on the machine. `$(nproc)` returns the number of available threads.

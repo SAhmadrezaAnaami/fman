@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `login` baraye vorood be hesabe karbari (user account) dar system estefade mishavad. Agar shoma aslan vared nashodeid, ya agar az hesab kharej shodeid, `login` az shoma username va password mikhad.
+
+⚙️ **Gozine-ha:**
+    🔹 `login` --> 🔑 Vorood ba username va password (sade tareen halat)
+    🔹 `login -f username` --> 🚪 Bypass kardan darkhast dobare username (agar ghablan vared shodeid)
+
+🛠 **Mesal-ha:**
+
+    $ login
+
+    🔹 System username va password mikhad.
+
+    $ login -f ali
+
+    🔹 System be tor mostaghim password ali ro mikhad (age az ghabl vared shode bood).
+
+✅ **Mesal sade:**
+
+    $ login
+    username: jafar
+    password:
+    Last login: Tue Oct 27 10:00:00 PDT 2023 on tty1
+
+    🔹 In mesal neshon mide ke system username `jafar` ro darkhast karde, va shoma password khodetoon ro vared mikonid. Agar dorost bashe, shoma be hesabetoon vared mishavid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `login` command is used to log in to a user account on the system. If you are not already logged in, or if you have logged out, `login` will prompt you for a username and password.
+
+⚙️ **Options:**
+    🔹 `login` --> 🔑 Log in with username and password (simplest form)
+    🔹 `login -f username` --> 🚪 Bypass the username prompt (if you were already logged in)
+
+🛠 **Examples:**
+
+    $ login
+
+    🔹 The system will prompt for a username and password.
+
+    $ login -f alice
+
+    🔹 The system will directly prompt for Alice's password (if she was previously logged in).
+
+✅ **Simple Example:**
+
+    $ login
+    username: bob
+    password:
+    Last login: Tue Oct 27 10:00:00 PDT 2023 on tty1
+
+    🔹 This example shows the system prompting for the username `bob`, and you entering your password. If correct, you will be logged in to your account.

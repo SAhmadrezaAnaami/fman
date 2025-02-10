@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cut` baraye joda kardan ghesmat-haee az khtoot dar file-ha ya voroodi estandard be kar miravad. Shoma mitoonid ba estefade az in dastoor, столун-ha (columns) ya field-haee ra ke ba delimiter-ha joda shode-and, joda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `cut -d'delimiter' -ffield_number`  --> ✂️ Joda kardan field ba delimiter moshakhas va shomare field.
+    🔹 `cut -ccharacters` --> 🔤 Joda kardan character-ha az har khat.
+    🔹 `cut -bbytes` --> 💾 Joda kardan byte-ha az har khat.
+
+🛠 **Mesal-ha:**
+
+    $ cut -d':' -f1 /etc/passwd
+
+    🔹 Joda kardan username az file `/etc/passwd` ke ba `:` joda shode ast.
+
+    $ cut -c1-5 file.txt
+
+    🔹 Joda kardan panj character aval az har khat dar file `file.txt`.
+
+✅ **Mesal sade:**
+
+    $ echo "ali,reza,hossein" | cut -d',' -f2
+
+    🔹 Ba delimiter `,`, field dovom (reza) joda mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cut` command is used to extract sections from each line of files or standard input. You can use it to extract columns or fields that are separated by delimiters.
+
+⚙️ **Options:**
+    🔹 `cut -d'delimiter' -ffield_number` --> ✂️ Extract a field using a specified delimiter and field number.
+    🔹 `cut -ccharacters` --> 🔤 Extract characters from each line.
+    🔹 `cut -bbytes` --> 💾 Extract bytes from each line.
+
+🛠 **Examples:**
+
+    $ cut -d':' -f1 /etc/passwd
+
+    🔹 Extract the username from the `/etc/passwd` file, which is separated by `:`.
+
+    $ cut -c1-5 file.txt
+
+    🔹 Extract the first five characters from each line in the `file.txt` file.
+
+✅ **Simple Example:**
+
+    $ echo "ali,reza,hossein" | cut -d',' -f2
+
+    🔹 With the delimiter `,`, the second field (reza) is extracted.
+

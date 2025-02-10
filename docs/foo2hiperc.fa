@@ -1,0 +1,48 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2hiperc` yek driver baraye printer-haye GDI (Graphics Device Interface) ast, be vizhe printer-haye rangie arzan gheimat. In driver eejad mikonad format-haye file raster-based ke ba in printer-ha sazgar hastand.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine-ye mostaghim dar command line nist. `foo2hiperc` obiatan be onvane yek filter estefade mishavad, masalan az taraf CUPS (Common Unix Printing System).
+    🔹 Configuration obiatan az tarighe system-haye chap (printing) mesle CUPS anjam mishavad.
+
+🛠 **Mesal-ha:**
+
+    Az aanja ke `foo2hiperc` be tor mostaghim az command line estefade nemishavad, mesal-e mostaghim baraye ejra-ye aan nist.
+
+    Ama dar configuration CUPS, mitoonid printer ra ba `foo2hiperc` set konid.
+
+    $ # Dar CUPS GUI ya az tarighe file configuration
+    $ # Driver: foo2hiperc
+
+✅ **Mesal sade:**
+
+    Tasavvor konid yek file PDF dar CUPS chap mikonid. CUPS az `foo2hiperc` estefade mikonad ta data PDF ra be format-i ke printer shoma mitoonad chap konad tabdil konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2hiperc` command is a printer driver for GDI (Graphics Device Interface) printers, especially low-cost color printers. It generates raster-based file formats compatible with these printers.
+
+⚙️ **Options:**
+    🔹 There are no direct command-line options. `foo2hiperc` is typically used as a filter, for example, by CUPS (Common Unix Printing System).
+    🔹 Configuration is usually done through printing systems like CUPS.
+
+🛠 **Examples:**
+
+    Since `foo2hiperc` isn't directly used from the command line, there are no direct execution examples.
+
+    However, in a CUPS configuration, you can set up a printer using `foo2hiperc`.
+
+    $ # In CUPS GUI or via configuration file
+    $ # Driver: foo2hiperc
+
+✅ **Simple Example:**
+
+    Imagine printing a PDF file in CUPS. CUPS uses `foo2hiperc` to translate the PDF data into a format that your printer can print.

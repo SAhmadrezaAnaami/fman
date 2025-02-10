@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dput` baraye upload kardan file-ha be yek archive Debian (masalan, baraye upload package-haye jadid ya update shode) estefade mishavad. In dastoor, file .changes ra migirad va file-haye mortabet ra be mahale mored nazar upload mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `dput <target> <file.changes>`  --> 🎯 Mahal va file .changes ra moshakhas mikonad.
+    🔹 `dput -f <target> <file.changes>` --> 🚀 Force mikonad upload ra, hata agar khatayi vojood dashte bashad.
+    🔹 `dput -c <config_file>` --> ⚙️ Estefade az file config khass baraye etela'ate upload.
+
+🛠 **Mesal-ha:**
+
+    $ dput myrepo mypackage_1.0-1_amd64.changes
+
+    🔹 Upload package ba estefade az target "myrepo" ke dar /etc/dput.cf tarif shode ast.
+
+    $ dput -f somerepo mypackage_1.0-1_amd64.changes
+
+    🔹 Force upload package ba estefade az target "somerepo".
+
+✅ **Mesal sade:**
+
+    $ dput local mypackage_1.0-1_all.changes
+
+    🔹 Upload package be "local", ke oboore az check ha ra bypass mikonad va bedoone upload real, faghat check mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dput` command is used to upload files to a Debian archive (e.g., to upload new or updated packages).  It takes a .changes file as input and uploads the associated files to the specified destination.
+
+⚙️ **Options:**
+    🔹 `dput <target> <file.changes>`  --> 🎯 Specifies the target repository and the .changes file to upload.
+    🔹 `dput -f <target> <file.changes>` --> 🚀 Forces the upload, even if errors are encountered.
+    🔹 `dput -c <config_file>` --> ⚙️ Uses a specific configuration file for upload information.
+
+🛠 **Examples:**
+
+    $ dput myrepo mypackage_1.0-1_amd64.changes
+
+    🔹 Uploads the package using the "myrepo" target defined in /etc/dput.cf.
+
+    $ dput -f somerepo mypackage_1.0-1_amd64.changes
+
+    🔹 Forces the upload of the package using the "somerepo" target.
+
+✅ **Simple Example:**
+
+    $ dput local mypackage_1.0-1_all.changes
+
+    🔹 Uploads the package to "local", which bypasses normal checks and is often used for testing without a real upload.

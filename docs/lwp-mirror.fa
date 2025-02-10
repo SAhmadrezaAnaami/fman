@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lwp-mirror` baraye copy kardan (mirror) yek website az internet be rooye hard drive shoma be kar miravad. In dastoor hameye file-haye website ra download mikonad ta shoma betavanid offline website ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lwp-mirror -O <pooshe>`  --> 📁  File-ha dar yek poosheye khass zakhire mishavand. (`<pooshe>` bayad ba name pooshe replace shavad.)
+    🔹 `lwp-mirror -m <tedad>` --> ⏱️  Tedad download-haye hamzaman ra moshakhas mikonad. (`<tedad>` bayad ba yek adad replace shavad.)
+    🔹 `lwp-mirror --dont-delete-missing-files` --> 🗑️  File-haye hazf shode dar website asli ra hazf nemikonad.
+    🔹 `lwp-mirror -v`  -->  📢  Namayesh etela'at bishtar dar mored download
+
+🛠 **Mesal-ha:**
+
+    $ lwp-mirror http://www.example.com
+
+    🔹  Copy kardan website example.com be poosheye kari (current directory).
+
+    $ lwp-mirror -O website http://www.example.com
+
+    🔹  Copy kardan website example.com be poosheye "website".
+
+✅ **Mesal sade:**
+
+    $ lwp-mirror -O mywebsite http://www.example.com/mypage.html
+
+    🔹 Faghat safhe `mypage.html` az website example.com ra download mikonad va dar poosheye `mywebsite` zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lwp-mirror` command is used to mirror a website from the internet to your local hard drive.  It downloads all the necessary files so you can browse the website offline.
+
+⚙️ **Options:**
+    🔹 `lwp-mirror -O <directory>` --> 📁 Save files to a specific directory. (`<directory>` must be replaced with the directory name.)
+    🔹 `lwp-mirror -m <number>`  --> ⏱️ Set the number of simultaneous downloads. (`<number>` must be replaced with a number.)
+    🔹 `lwp-mirror --dont-delete-missing-files` --> 🗑️  Don't delete files that are missing from the original website.
+    🔹 `lwp-mirror -v` --> 📢  Verbose mode; show more information about the download.
+
+🛠 **Examples:**
+
+    $ lwp-mirror http://www.example.com
+
+    🔹 Mirror the website example.com to the current directory.
+
+    $ lwp-mirror -O website http://www.example.com
+
+    🔹 Mirror the website example.com to the directory "website".
+
+✅ **Simple Example:**
+
+    $ lwp-mirror -O mywebsite http://www.example.com/mypage.html
+
+    🔹 Downloads only the `mypage.html` page from the website example.com and saves it in the `mywebsite` directory.

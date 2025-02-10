@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `efibootdump` baraye didan va gereftan etela'at az `EFIVARS` (variables EFI) estefade mishavad. In dastoor behetoon komak mikone ke darke behtari az boot options-e systemetoon dashte bashid. Basically, etela'ate boot ra mikhune va neshoon mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `efibootdump` --> Namayesh hameye etela'ate default boot.
+    🔹 `efibootdump -v` --> 💬 Namayesh etela'ate bishtar (verbose mode).
+    🔹 `efibootdump -t` --> ⏱️ Namayesh timezone.
+    🔹 `efibootdump -h` --> ℹ️ Namayesh rahnama (help).
+
+🛠 **Mesal-ha:**
+
+    $ efibootdump
+
+    🔹 Namayesh etela'ate boot default.
+
+    $ efibootdump -v
+
+    🔹 Namayesh etela'ate boot ba details bishtar.
+
+✅ **Mesal sade:**
+
+    $ efibootdump | grep "BootOrder"
+
+    🔹 Peida kardan BootOrder az output efibootdump. Shoma mitoneen dastoor `grep` ra ba gozine-ha va kalame-haye digar estefade konin ta natijeye morde nazar ro peida konin.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `efibootdump` command is used to view and retrieve information from `EFIVARS` (EFI variables). This command helps you gain a better understanding of your system's boot options. Basically, it reads and displays boot information.
+
+⚙️ **Options:**
+    🔹 `efibootdump` --> Display all default boot information.
+    🔹 `efibootdump -v` --> 💬 Display more detailed information (verbose mode).
+    🔹 `efibootdump -t` --> ⏱️ Display timezone information.
+    🔹 `efibootdump -h` --> ℹ️ Display help information.
+
+🛠 **Examples:**
+
+    $ efibootdump
+
+    🔹 Display default boot information.
+
+    $ efibootdump -v
+
+    🔹 Display boot information with more details.
+
+✅ **Simple Example:**
+
+    $ efibootdump | grep "BootOrder"
+
+    🔹 Find the BootOrder from the efibootdump output. You can use the `grep` command with other options and keywords to find specific results.

@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `infocmp` baraye moghayese va namayeshe etela'ate terminalha estefade mishavad. Yani etela'ate "capability" haye terminalharo ba ham moghayese mikone ya etela'ate yek terminal ro namayesh mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `infocmp` --> 📜 Namayesh etela'ate terminale pishfarz.
+    🔹 `infocmp -x` --> ➕ Namayesh hameye etela'at, hata extension-ha.
+    🔹 `infocmp -d term1 term2` --> 📏 Moghayese `term1` va `term2` va namayeshe tafavotha.
+
+🛠 **Mesal-ha:**
+
+    $ infocmp
+
+    🔹 Namayesh etela'ate terminale pishfarz (ke az $TERM gerefte shode).
+
+    $ infocmp -d xterm-256color screen-256color
+
+    🔹 Moghayese terminalhaye `xterm-256color` va `screen-256color` va namayeshe tafavotha.
+
+✅ **Mesal sade:**
+
+    $ infocmp -x
+
+    🔹 Namayeshe hameye capability ha va extension ha baraye terminale pishfarz.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `infocmp` command is used to compare and display terminal information. It compares the "capabilities" of terminals or displays information about a specific terminal.
+
+⚙️ **Options:**
+    🔹 `infocmp` --> 📜 Display information for the default terminal.
+    🔹 `infocmp -x` --> ➕ Display all information, including extensions.
+    🔹 `infocmp -d term1 term2` --> 📏 Compare `term1` and `term2` and show the differences.
+
+🛠 **Examples:**
+
+    $ infocmp
+
+    🔹 Display information for the default terminal (taken from $TERM).
+
+    $ infocmp -d xterm-256color screen-256color
+
+    🔹 Compare the `xterm-256color` and `screen-256color` terminals and display the differences.
+
+✅ **Simple Example:**
+
+    $ infocmp -x
+
+    🔹 Display all capabilities and extensions for the default terminal.
+

@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mt` (magnetic tape) baraye control kardane tape drive estefade mishavad. Ba in dastoor mitoonid tape ro rewind konid, jayehesh ro avaz konid, ya etela'at ro rooye tape benevisid.
+
+⚙️ **Gozine-ha:**
+    🔹 `mt -f /dev/st0 rewind` --> ⏪ Tape ro be avalesh bargardooneh.  `/dev/st0` esme device tape ast.
+    🔹 `mt -f /dev/st0 status` --> ℹ️  Vaziyat (status) tape drive ro neshun mideh.
+    🔹 `mt -f /dev/st0 fsf 2` --> ⏩ Tape ro 2 ta file forward mibareh (file skip forward).
+    🔹 `mt -f /dev/st0 bsf 1` --> ⏪ Tape ro 1 ta file backward mibareh (file skip backward).
+    🔹 `mt -f /dev/st0 weof` --> 📝 Ye marker baraye end of file rooye tape mineviseh.
+
+🛠 **Mesal-ha:**
+
+    $ mt -f /dev/st0 rewind
+
+    🔹 Tape device `/dev/st0` ro rewind mikoneh.
+
+    $ mt -f /dev/st0 status
+
+    🔹  Etela'ati dar morede vaziyat device tape neshun mideh (masalan type device, density, va position tape).
+
+✅ **Mesal sade:**
+
+    $ mt -f /dev/st0 fsf 1
+
+    🔹 Tape ro be file badi mibareh. Ageh tape dar aval file basheh, be file dovom mireh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mt` (magnetic tape) command is used to control tape drives. It allows you to rewind the tape, change its position, and write data to the tape.
+
+⚙️ **Options:**
+    🔹 `mt -f /dev/st0 rewind` --> ⏪ Rewinds the tape to the beginning. `/dev/st0` is the name of the tape device.
+    🔹 `mt -f /dev/st0 status` --> ℹ️ Shows the status of the tape drive.
+    🔹 `mt -f /dev/st0 fsf 2` --> ⏩ Fast forwards the tape by 2 files (file skip forward).
+    🔹 `mt -f /dev/st0 bsf 1` --> ⏪ Fast backwards the tape by 1 file (file skip backward).
+    🔹 `mt -f /dev/st0 weof` --> 📝 Writes an end-of-file marker on the tape.
+
+🛠 **Examples:**
+
+    $ mt -f /dev/st0 rewind
+
+    🔹 Rewinds the tape device `/dev/st0`.
+
+    $ mt -f /dev/st0 status
+
+    🔹 Displays information about the tape device status (e.g., device type, density, and tape position).
+
+✅ **Simple Example:**
+
+    $ mt -f /dev/st0 fsf 1
+
+    🔹 Moves the tape to the next file. If the tape is at the beginning of a file, it will move to the second file.
+

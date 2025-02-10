@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `networkd-dispatcher` yek barnameh ast ke vaghti vazi'at shabake (network) taghir mikonad, script-ha ra ejra mikonad. Yani agar yek interface shabake vasl ya qat shavad, ya IP begirad va ... , `networkd-dispatcher` be soorat otomatik dastoorat shoma ra ejra mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 (Be soorate mostaqeem az command line gozine-ha nemeegirad. Config file dare).
+    🔹 `/etc/networkd-dispatcher/`:  --> 📁 Inja script-ha va directory-haye shoma gharar migirad.  Esme directory bayad ba esme interface shabake yeki bashad (masalan `eth0`, `wlan0`).
+    🔹 Script-ha bayad executable bashand (ba dastoor `chmod +x script_name`).
+
+🛠 **Mesal-ha:**
+
+    🔹 Hich dastoor mostaqimi baraye ejra nist. Service be soorate automatic vaghti vazi'at shabake taghir mikonad, ejra mishavad.
+
+    🔹 Gozashtane script dar `/etc/networkd-dispatcher/eth0/` baraye vaghti ke interface `eth0` vasl mishavad.
+
+✅ **Mesal sade:**
+
+    Farz konid yek script ba name `email-notify` dar `/etc/networkd-dispatcher/wlan0/up.d/` darid ke vaghti `wlan0` vasl mishavad, yek email mifrestad.
+
+    $ sudo chmod +x /etc/networkd-dispatcher/wlan0/up.d/email-notify
+    🔹 In dastoor script ra executable mikonad. Vaghti `wlan0` vasl shavad, `email-notify` ejra mishavad va shoma yek email migirid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `networkd-dispatcher` is a program that executes scripts when the network state changes. This means if a network interface connects or disconnects, or obtains an IP address, `networkd-dispatcher` automatically runs your commands.
+
+⚙️ **Options:**
+    🔹 (It doesn't directly take options from the command line. It uses configuration files).
+    🔹 `/etc/networkd-dispatcher/`:  --> 📁 This is where your scripts and directories are located. The directory name must match the network interface name (e.g., `eth0`, `wlan0`).
+    🔹 Scripts must be executable (using the `chmod +x script_name` command).
+
+🛠 **Examples:**
+
+    🔹 There are no direct commands to run. The service runs automatically when the network state changes.
+
+    🔹 Placing a script in `/etc/networkd-dispatcher/eth0/` for when the `eth0` interface connects.
+
+✅ **Simple Example:**
+
+    Suppose you have a script named `email-notify` in `/etc/networkd-dispatcher/wlan0/up.d/` that sends an email when `wlan0` connects.
+
+    $ sudo chmod +x /etc/networkd-dispatcher/wlan0/up.d/email-notify
+    🔹 This command makes the script executable. When `wlan0` connects, `email-notify` will run and you'll receive an email.

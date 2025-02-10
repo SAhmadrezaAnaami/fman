@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `evince-previewer` baraye pish-namayesh file-haye PDF va digar format-haye moshabeh be kar miravad. In dastoor asosan baraye estefade dar barname-haye digar (mesle file manager-ha) tarrahi shodeh ast ta betonand pish-namayesh-haye sari' az file-ha ra namayesh dahand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--embed`  --> 📦 Barname ra dar yek panjareye digar ja midahad. (Asosan baraye developers)
+    🔹 `--page=NUMBER`  --> 📄 Safheye moshakhas shodeh ra namayesh midahad.
+    🔹 `--display=DISPLAY` --> 🖥️ Namayesh dar yek X display-e khass. (Agar chand monitor darid)
+
+🛠 **Mesal-ha:**
+
+    $ evince-previewer file.pdf
+
+    🔹  File PDF `file.pdf` ra pish-namayesh midahad.
+
+    $ evince-previewer --page=5 file.pdf
+
+    🔹  File PDF `file.pdf` ra baz mikonad va be safheye 5 miravad.
+
+✅ **Mesal sade:**
+
+    $ evince-previewer document.pdf &
+
+    🔹 `document.pdf` ra dar pishnamayesh evince baz mikonad va be shoma ejaze midahad ke dar terminal dastoorat digari ra niz ejra konid. `&` yani dastoor dar paszamine ejra shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `evince-previewer` command is used to preview PDF files and other similar formats. It's primarily designed for use within other applications (like file managers) to provide quick file previews.
+
+⚙️ **Options:**
+    🔹 `--embed`  --> 📦 Embeds the application into another window. (Mainly for developers)
+    🔹 `--page=NUMBER`  --> 📄 Displays a specific page number.
+    🔹 `--display=DISPLAY` --> 🖥️ Displays on a specific X display (if you have multiple monitors).
+
+🛠 **Examples:**
+
+    $ evince-previewer file.pdf
+
+    🔹  Previews the PDF file `file.pdf`.
+
+    $ evince-previewer --page=5 file.pdf
+
+    🔹  Opens the PDF file `file.pdf` and navigates to page 5.
+
+✅ **Simple Example:**
+
+    $ evince-previewer document.pdf &
+
+    🔹 Opens `document.pdf` in the evince previewer and allows you to execute other commands in the terminal. The `&` means the command runs in the background.

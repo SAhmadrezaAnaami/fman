@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-firmware` baraye modiriyat va update kardan firmware dar printer-haye HP estefade mishavad. Ba in dastoor, mitoonid version firmware ra check konid, firmware jadid ra download va nasb konid. Agar printer-e HP darid, in dastoor komak mikonad ta az akharin update-ha bahre-mand bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-firmware -g` --> 🔍 Check kardane version-e firmware-e konooni
+    🔹 `hp-firmware -u` --> ⬆️ Update kardane firmware be akharin version
+    🔹 `hp-firmware -d` --> ⬇️ Download kardane firmware-e jadid
+
+🛠 **Mesal-ha:**
+
+    $ hp-firmware -g
+
+    🔹 Check kardane version-e firmware-e konooni dar printer
+
+    $ hp-firmware -u
+
+    🔹 Update kardane firmware printer be akharin version-e mojud
+
+✅ **Mesal sade:**
+
+    $ hp-firmware -g
+    Device(es) found: 1
+    Device Model: HP LaserJet Pro M15w
+    Serial Number: VNF6G12345
+    Current Firmware Version: 20201218
+    Newest Firmware Version: 20201218
+
+    🔹 In mesal neshon mide ke version-e firmware-e konooni ba akharin version barabari mikone, va niazi be update nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-firmware` command is used for managing and updating the firmware on HP printers. With this command, you can check the current firmware version, download, and install new firmware. If you have an HP printer, this command helps you stay up-to-date with the latest updates.
+
+⚙️ **Options:**
+    🔹 `hp-firmware -g` --> 🔍 Check the current firmware version
+    🔹 `hp-firmware -u` --> ⬆️ Update the firmware to the latest version
+    🔹 `hp-firmware -d` --> ⬇️ Download the new firmware
+
+🛠 **Examples:**
+
+    $ hp-firmware -g
+
+    🔹 Check the current firmware version on the printer
+
+    $ hp-firmware -u
+
+    🔹 Update the printer firmware to the latest available version
+
+✅ **Simple Example:**
+
+    $ hp-firmware -g
+    Device(es) found: 1
+    Device Model: HP LaserJet Pro M15w
+    Serial Number: VNF6G12345
+    Current Firmware Version: 20201218
+    Newest Firmware Version: 20201218
+
+    🔹 This example shows that the current firmware version matches the latest version, and no update is needed.

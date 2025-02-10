@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `addr2line` yek address az memory (address-e hafizeh) ra migirad va esm-e file va shomare-ye khat-i (line number) ke aan address dar aanja dar program vojood darad ra peyda mikonad. In baraye tashkhis-e khata-ha (debugging) dar program-ha kheili mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `addr2line -e <executable_file> <address>` --> 🎯 Estefade az file-e executable baraye peyda kardan etela'at.
+    🔹 `addr2line -f <address>` --> 🏷️ Namayesh esm-e function-i ke address dar aan ast.
+    🔹 `addr2line -C <address>` --> ➕ Tafsir esm-ha be shekl-e C++ (agar program ba C++ neveshte shode bashad).
+
+🛠 **Mesal-ha:**
+
+    $ addr2line -e myprogram 0x400567
+
+    🔹 Peyda kardan file va khat dar program "myprogram" baraye address 0x400567.
+
+    $ addr2line -f -e myprogram 0x400567
+
+    🔹 Namayesh esm-e function va file/khat baraye address 0x400567.
+
+✅ **Mesal sade:**
+
+    $ addr2line -e myprogram 0x400567
+    /path/to/myprogram.c:25
+
+    🔹 In neshan midahad ke address 0x400567 dar file "myprogram.c" dar khat-e 25 vojood darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `addr2line` command takes a memory address and finds the file name and line number where that address exists in the program's source code.  This is very useful for debugging programs.
+
+⚙️ **Options:**
+    🔹 `addr2line -e <executable_file> <address>` --> 🎯 Use the specified executable file to look up the information.
+    🔹 `addr2line -f <address>` --> 🏷️  Show the function name containing the address.
+    🔹 `addr2line -C <address>` --> ➕ Demangle names in C++ style (if the program is written in C++).
+
+🛠 **Examples:**
+
+    $ addr2line -e myprogram 0x400567
+
+    🔹 Find the file and line in the program "myprogram" for address 0x400567.
+
+    $ addr2line -f -e myprogram 0x400567
+
+    🔹 Show the function name and file/line for address 0x400567.
+
+✅ **Simple Example:**
+
+    $ addr2line -e myprogram 0x400567
+    /path/to/myprogram.c:25
+
+    🔹 This shows that address 0x400567 exists in the file "myprogram.c" on line 25.

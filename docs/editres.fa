@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `editres` yek barname baraye tagheer daadan resource-ha (manabe) barname-haye X Toolkit hast. Ba estefade az `editres`, shoma mitavanid resource-haye yek barname-ye fa'al ra be soorat dynamic tagheer dahid, bedoone inke niaz bashad barname ra dobare compile konid. In barname bishtar baraye debug kardane UI estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-id windowID`  --> 🆔  WindowID barnameyi ke mikhahid resource-hayash ra tagheer dahid ra moshakhas mikonad.
+    🔹 `-tree`     --> 🌳 Namayesh derakhti az widget-ha (ajza) barname ra neshan midahad.
+    🔹 `-help`     --> ❓ Rahnamayi estefade az dastoor ra neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ editres -id 0x2a0000b
+
+    🔹 In dastoor barnameyi ba ID `0x2a0000b` ra baz mikonad va shoma mitavanid resource-hayash ra az tarigh GUI tagheer dahid.
+
+    $ editres -tree
+
+    🔹 In dastoor yek derakht az widget-ha ra dar terminal neshan midahad ke structure UI ra baraye debug kardan asan mikonad.
+
+✅ **Mesal sade:**
+
+    $ editres
+    
+    🔹 Agar be tartibi ke daraye environment variabel `DISPLAY` bashid va yek barnameye X Toolkit dar hale ejra bashad, ba ejraye sade `editres`, barname baraye shoma baz mishavad ta resource hayash ra tagheer dahid. Agar `DISPLAY` set nashode bashad, shoma bayad az gozine `-id` estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `editres` command is a program for dynamically editing the resources of X Toolkit applications. With `editres`, you can change an application's resources without recompiling it. It's mostly used for UI debugging.
+
+⚙️ **Options:**
+    🔹 `-id windowID`  --> 🆔 Specifies the window ID of the application you want to edit the resources of.
+    🔹 `-tree`     --> 🌳 Shows a tree representation of the application's widgets.
+    🔹 `-help`     --> ❓ Displays the command's help message.
+
+🛠 **Examples:**
+
+    $ editres -id 0x2a0000b
+
+    🔹 This command opens the application with ID `0x2a0000b`, allowing you to edit its resources through a GUI.
+
+    $ editres -tree
+
+    🔹 This command displays a widget tree in the terminal, making it easier to debug the UI structure.
+
+✅ **Simple Example:**
+
+    $ editres
+
+    🔹 If your `DISPLAY` environment variable is set and an X Toolkit application is running, simply running `editres` will open the program for resource editing. If `DISPLAY` is not set, you need to use the `-id` option.

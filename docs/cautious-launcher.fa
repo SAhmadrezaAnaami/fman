@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `cautious-launcher` yek dastoor farzi ast ke baraye ejra kardane barname-ha ba ehtiyat ziad be kar miravad. Yani ghabl az ejra, hameye khatarate emkani ra barrasi mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--safe-mode` --> 🛡️ Barname ra dar safe-mode ejra mikonad ta az taghirate ziadi jelogiri konad.
+    🔹 `--sandbox` --> 📦 Barname ra dar yek mahdoodeye sandbox ejra mikonad ta asarate janbi kamtar shavad.
+    🔹 `--permissions=read-only` --> 🔒 Dastrasi barname ra be file-ha be soorate faghat khandan mahdood mikonad.
+    🔹 `--verbose` --> 📢 Etela'ate bishtari dar morede amaliate ejra be namayesh dar miyavad.
+
+🛠 **Mesal-ha:**
+
+    $ cautious-launcher --safe-mode ./myprogram
+
+    🔹 Barnameye `myprogram` ra dar safe mode ejra mikonad.
+
+    $ cautious-launcher --sandbox --permissions=read-only ./another_program
+
+    🔹 Barnameye `another_program` ra dar sandbox ba dastrasi faghat khandan ejra mikonad.
+
+✅ **Mesal sade:**
+
+    $ cautious-launcher --verbose ./risky_script.sh
+
+    🔹 Barnameye `risky_script.sh` ra ejra mikonad va etela'ate tafsili ra neshan midahad, ke dar barrasiye har goone moshkel komak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `cautious-launcher` is a hypothetical command for running programs with increased caution. It examines potential risks before execution.
+
+⚙️ **Options:**
+    🔹 `--safe-mode` --> 🛡️ Runs the program in safe mode to prevent significant changes.
+    🔹 `--sandbox` --> 📦 Runs the program in a sandbox environment to minimize side effects.
+    🔹 `--permissions=read-only` --> 🔒 Restricts the program's file access to read-only.
+    🔹 `--verbose` --> 📢 Displays more information about the execution process.
+
+🛠 **Examples:**
+
+    $ cautious-launcher --safe-mode ./myprogram
+
+    🔹 Executes `myprogram` in safe mode.
+
+    $ cautious-launcher --sandbox --permissions=read-only ./another_program
+
+    🔹 Executes `another_program` in a sandbox with read-only permissions.
+
+✅ **Simple Example:**
+
+    $ cautious-launcher --verbose ./risky_script.sh
+
+    🔹 Executes `risky_script.sh` and shows detailed information, helpful for examining potential issues.
+

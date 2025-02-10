@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-colorcal` baraye kalibr kardan rang-haye chapgar-haye rangie HP estefade mishavad. In kar be shoma komak mikonad ta rang-haye daghigh-tari dar chap dashte bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-colorcal -g`  --> 🎨  Ra'ngha ra bar asas-e dastoor-ol-amal grafik kalibr mikonad.
+    🔹 `hp-colorcal -i`  --> 🖥  Ra'ngha ra bar asas-e dastoor-ol-amal tasvir kalibr mikonad.
+    🔹 `hp-colorcal -q <level>` --> 🔎  Keyfiyat-e kalibrasieh ra ta'yin mikonad (az `draft` ta `best`).
+    🔹 `hp-colorcal -p <printer>` --> 🖨  Printer-e mored nazar ra ta'yin mikonad agar bishtar az yek printer mojud bashad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-colorcal -g -q best
+
+    🔹 Kalibr kardan rangha baraye grafik ba keyfiyat-e balatarin.
+
+    $ hp-colorcal -p DeskJet_3630 -i
+
+    🔹 Kalibr kardan rangha baraye tasvir dar printer ba nam DeskJet_3630.
+
+✅ **Mesal sade:**
+
+    $ hp-colorcal
+
+    🔹 Agar printer pishfarz ta'yin shode bashad, dastoor-ol-amal kalibrasieh pishfarz ejra mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-colorcal` command is used to calibrate the colors of HP color printers. This helps you achieve more accurate colors in your prints.
+
+⚙️ **Options:**
+    🔹 `hp-colorcal -g`  --> 🎨 Calibrate colors based on graphics workflow.
+    🔹 `hp-colorcal -i`  --> 🖥 Calibrate colors based on imaging workflow.
+    🔹 `hp-colorcal -q <level>` --> 🔎 Set the calibration quality level (from `draft` to `best`).
+    🔹 `hp-colorcal -p <printer>` --> 🖨 Specify the printer to use if multiple printers are available.
+
+🛠 **Examples:**
+
+    $ hp-colorcal -g -q best
+
+    🔹 Calibrate colors for graphics with the best quality setting.
+
+    $ hp-colorcal -p DeskJet_3630 -i
+
+    🔹 Calibrate colors for imaging on the printer named DeskJet_3630.
+
+✅ **Simple Example:**
+
+    $ hp-colorcal
+
+    🔹 If a default printer is already configured, the default calibration workflow will be executed.

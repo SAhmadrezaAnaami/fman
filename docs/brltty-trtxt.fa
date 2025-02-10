@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-trtxt` baraye tabdil file-haye matni (text) be format-e braille estefade mishavad. Yani, matn-e shoma ra migirad va on ra be shekl-e braille dar miyavad ta bar rooye dastgah-haye braille khande shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-l <zaban>`  --> 🗣️ Zaban-e file-e matni ra moshakhas mikonad (masalan, `en` baraye English, `fa` baraye Persian). Agar zaban ra moshakhas nakonid, `brltty-trtxt` khodash zaban ra tashkhis midahad.
+    🔹 `-t <jadval>` --> 🧮 Jadval-e braille-i ke bayad estefade shavad ra moshakhas mikonad (masalan, `en-us` baraye jadval-e English US).
+    🔹 `-o <file>`  --> 💾 Natije-ye braille ra dar yek file zakhire mikonad. Agar in gozine ra estefade nakonid, natije dar terminal chap mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ brltty-trtxt file.txt
+
+    🔹 File `file.txt` ra be braille tabdil mikonad va dar terminal chap mikonad.
+
+    $ brltty-trtxt -l fa file.txt
+
+    🔹 File `file.txt` ra ba zaban-e farsi be braille tabdil mikonad va dar terminal chap mikonad.
+
+    $ brltty-trtxt -o braille.brl file.txt
+
+    🔹 File `file.txt` ra be braille tabdil mikonad va natije ra dar file `braille.brl` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ echo "Hello World" | brltty-trtxt
+
+    🔹 Matn "Hello World" ra be braille tabdil mikonad va dar terminal chap mikonad. In mesal neshon midahad ke `brltty-trtxt` mitavanad voroodi ra az standard input (stdin) ham begirad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-trtxt` command is used to convert text files to Braille format. It takes your text as input and translates it into Braille characters that can be read on Braille displays and devices.
+
+⚙️ **Options:**
+    🔹 `-l <language>` --> 🗣️ Specifies the language of the input text file (e.g., `en` for English, `fr` for French). If no language is specified, `brltty-trtxt` attempts to auto-detect it.
+    🔹 `-t <table>`    --> 🧮 Specifies the Braille translation table to use (e.g., `en-us` for English US Braille).
+    🔹 `-o <file>`     --> 💾 Saves the Braille output to a specified file. If this option is not used, the output is printed to the terminal.
+
+🛠 **Examples:**
+
+    $ brltty-trtxt file.txt
+
+    🔹 Converts the text in `file.txt` to Braille and prints the output to the terminal.
+
+    $ brltty-trtxt -l en file.txt
+
+    🔹 Converts the text in `file.txt`, specifying English as the language, to Braille and prints the output to the terminal.
+
+    $ brltty-trtxt -o braille.brl file.txt
+
+    🔹 Converts the text in `file.txt` to Braille and saves the output to the file `braille.brl`.
+
+✅ **Simple Example:**
+
+    $ echo "Hello World" | brltty-trtxt
+
+    🔹 Converts the text "Hello World" to Braille and prints it to the terminal.  This example demonstrates how `brltty-trtxt` can also take input from standard input (stdin) via piping.

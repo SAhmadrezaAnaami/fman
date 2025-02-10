@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bdftruncate` baraye kootah kardan (truncate) file-haye BDF (Bitmap Distribution Format) font estefade mishavad. File-haye BDF font, file-haye matni hastand ke etela'at dar morede shakl va andazeye har character dar yek font ra zakhire mikonand. `bdftruncate` mitavanad size file ra kam kone ba hazfe character-haye estefade nashode.
+
+⚙️ **Gozine-ha:**
+    🔹 `bdftruncate -n <tedad>` --> ✂️ Faqat `tedad` character-haye aval ra negah midarad.
+    🔹 `bdftruncate -u` --> 🗑️ Character-haye estefade nashode ra hazf mikonad.
+    🔹 `bdftruncate -v` --> 📢 Namayesh etela'at bishtar dar morede amaleye kootah kardan.
+    🔹 `bdftruncate -o <file_jadid>` --> 💾 Natije ra dar yek file jadid zakhire mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ bdftruncate -n 128 font_asal.bdf > font_kootah.bdf
+
+    🔹 128 character aval az `font_asal.bdf` ra migirad va dar `font_kootah.bdf` zakhire mikonad.
+
+    $ bdftruncate -u font_asal.bdf > font_kootah.bdf
+
+    🔹 Character-haye estefade nashode az `font_asal.bdf` ra hazf mikonad va dar `font_kootah.bdf` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ bdftruncate -u -o font_kootah.bdf font_asal.bdf
+
+    🔹 Character-haye estefade nashode az `font_asal.bdf` hazf mishavand va natije dar `font_kootah.bdf` zakhire mishavad. Dastoor `bdftruncate` be soorate automat file asli ra tagheer nemidahad; pas bayad natije ra be yek file jadid zakhire kard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bdftruncate` command is used to truncate BDF (Bitmap Distribution Format) font files. BDF font files are text files that store information about the shape and size of each character in a font. `bdftruncate` can reduce the file size by removing unused characters.
+
+⚙️ **Options:**
+    🔹 `bdftruncate -n <number>` --> ✂️ Keeps only the first `<number>` characters.
+    🔹 `bdftruncate -u` --> 🗑️ Removes unused characters.
+    🔹 `bdftruncate -v` --> 📢 Shows more information about the truncation process.
+    🔹 `bdftruncate -o <new_file>` --> 💾 Saves the result in a new file.
+
+🛠 **Examples:**
+
+    $ bdftruncate -n 128 original_font.bdf > truncated_font.bdf
+
+    🔹 Takes the first 128 characters from `original_font.bdf` and saves them in `truncated_font.bdf`.
+
+    $ bdftruncate -u original_font.bdf > truncated_font.bdf
+
+    🔹 Removes unused characters from `original_font.bdf` and saves the result in `truncated_font.bdf`.
+
+✅ **Simple Example:**
+
+    $ bdftruncate -u -o truncated_font.bdf original_font.bdf
+
+    🔹 Unused characters are removed from `original_font.bdf`, and the result is saved in `truncated_font.bdf`. The `bdftruncate` command does not automatically modify the original file; therefore, the result must be saved to a new file.

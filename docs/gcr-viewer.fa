@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcr-viewer` yek barnameh graphiki ast baraye didan va modiriat sertificate-ha va kalid-haye SSL/TLS dar GNOME Keyring. Be shoma komak mikonad ke sertificate-ha va kalid-haye khod ra be asani bebinid, ezafe konid, va pak konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-ha.
+    🔹 `--version`  --> ℹ️ Namayesh version barnameh.
+    🔹 `gcr-viewer` --> 🔑 Baz kardan barnameh baraye didan sertificate-ha dar GUI.
+
+🛠 **Mesal-ha:**
+
+    $ gcr-viewer
+
+    🔹 Baz kardan barnameh gcr-viewer baraye didan sertificate-ha va kalid-ha az tarigh graphiki.
+
+    $ gcr-viewer --version
+
+    🔹 Namayesh version barnameh.
+
+✅ **Mesal sade:**
+
+    $ gcr-viewer
+    
+    🔹 Ba ejraye in dastoor, panjereye graphiki gcr-viewer baz mishavad ke shoma mitavanid sertificate-ha va kalid-haye khod ra bebinid va modiriat konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcr-viewer` command is a graphical utility to view and manage certificates and SSL/TLS keys in the GNOME Keyring. It allows you to easily view, add, and delete certificates and keys.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help message and options.
+    🔹 `--version`  --> ℹ️ Display program version.
+    🔹 `gcr-viewer` --> 🔑 Open the graphical certificate viewer.
+
+🛠 **Examples:**
+
+    $ gcr-viewer
+
+    🔹 Open the gcr-viewer application to view certificates and keys through the graphical interface.
+
+    $ gcr-viewer --version
+
+    🔹 Display the program version.
+
+✅ **Simple Example:**
+
+    $ gcr-viewer
+
+    🔹 Running this command opens the gcr-viewer graphical window, where you can view and manage your certificates and keys.

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_auto_test` baraye ejra kardane test-haye auto-matic dar sakht package Debian estefade mishavad. In dastoor test-haye ra ke bar asase standard-ha va convention-haye Debian neveshte shodeand, peyda va ejra mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--parallel` --> 🚀 Ejraye test-ha be soorate hamzaman (parallel) baraye sare' tar shodan.
+    🔹 `--list` --> 📝 Namayeshe list-e test-haye qabele ejra bedune ejra kardane anha.
+    🔹 `--only-test=<test_name>` --> 🎯 Faghat ejraye yek test-e khas ba name moshakhas.
+    🔹 `--no-test` --> 🚫 Az ejraye test-ha khod dari kon.
+
+🛠 **Mesal-ha:**
+
+    $ dh_auto_test
+
+    🔹 Ejraye hameye test-haye auto-matic ke dar directory source vojood darand.
+
+    $ dh_auto_test --parallel
+
+    🔹 Ejraye hameye test-ha be soorate parallel baraye sare' tar shodan amaliyat.
+
+    $ dh_auto_test --only-test=integration
+
+    🔹 Faghat ejraye test ba name "integration".
+
+✅ **Mesal sade:**
+
+    $ dh_auto_test
+
+    🔹 Ba ejraye in dastoor, `dh_auto_test` hameye test-haye marboote be package ra peyda mikonad va anha ra ejra mikonad. Agar hameye test-ha ba movafaghiyat tamoom shavand, sakht package edame peyda mikonad. Dar gheyre in soorat, sakht package motevaghef mishavad va payame error namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_auto_test` command is used to run automated tests during the Debian package build process. This command finds and executes tests written according to Debian standards and conventions.
+
+⚙️ **Options:**
+    🔹 `--parallel` --> 🚀 Run tests in parallel for faster execution.
+    🔹 `--list` --> 📝 List the available tests without running them.
+    🔹 `--only-test=<test_name>` --> 🎯 Only run a specific test with the given name.
+    🔹 `--no-test` --> 🚫 Skip the execution of tests.
+
+🛠 **Examples:**
+
+    $ dh_auto_test
+
+    🔹 Run all automated tests found in the source directory.
+
+    $ dh_auto_test --parallel
+
+    🔹 Run all tests in parallel to speed up the operation.
+
+    $ dh_auto_test --only-test=integration
+
+    🔹 Only run the test named "integration".
+
+✅ **Simple Example & Explanation:**
+
+    $ dh_auto_test
+
+    🔹 By running this command, `dh_auto_test` finds all relevant tests for the package and executes them. If all tests complete successfully, the package build continues. Otherwise, the package build stops and an error message is displayed.

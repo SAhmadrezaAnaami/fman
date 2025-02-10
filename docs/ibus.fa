@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ibus` yek system vared kardane zaban-haye mokhtalef baraye Linux va UNIX mesl-e system-haye windows ast. Ba `ibus`, shoma mitoonid farsi, arabi, ya har zabane digeyi ro type konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ibus-setup` --> ⚙️ Baz kardane panjere-ye ayar-haye IBus.
+    🔹 `ibus restart` --> 🔄 Baz-andazi (restart) kardane service `ibus`. Vaghti ke configuration-ha tagheer karde and, estefade mishavad.
+    🔹 `ibus exit` --> 👋 Baste (exit) kardane `ibus`.
+    🔹 `ibus read-cache` --> 🔄 Khondan-e dobare file-haye cache baraye tashkhis tagheerat dar engine-haye vared kardane zaban.
+    🔹 `ibus engine <name>` --> ⌨️ Set kardane engine-e vared kardane zaban-e fa’al. Mesal: `ibus engine xkb:us`
+
+🛠 **Mesal-ha:**
+
+    $ ibus-setup
+
+    🔹 In dastoor panjere-ye ayar-haye `ibus` ra baz mikonad, ke shoma mitavanid zaban-haye jadid ra ezafe konid va config-haye digar ra tagheer dahid.
+
+    $ ibus restart
+
+    🔹 In dastoor `ibus` ra baz-andazi mikonad, va in amr vaghti ke shoma zaban-haye jadid ezafe karde id ya configuration-haye `ibus` ra tagheer dade id mohem ast.
+
+✅ **Mesal sade:**
+
+    $ ibus engine pinyin
+
+    🔹 In dastoor engine-e `ibus` ra be `pinyin` tagheer midahad, ke shoma betavanid be zaban-e chineyi type konid. (agar `pinyin` engine install shode bashad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ibus` command is an Intelligent Input Bus system for Linux and UNIX-like operating systems, similar to input methods in Windows. It allows you to type in various languages such as Persian, Arabic, or any other language.
+
+⚙️ **Options:**
+    🔹 `ibus-setup` --> ⚙️ Opens the IBus settings window.
+    🔹 `ibus restart` --> 🔄 Restarts the `ibus` service. Used when configurations have been changed.
+    🔹 `ibus exit` --> 👋 Exits `ibus`.
+    🔹 `ibus read-cache` --> 🔄 Re-reads cache files to recognize changes in input method engines.
+    🔹 `ibus engine <name>` --> ⌨️ Sets the active input method engine. Example: `ibus engine xkb:us`
+
+🛠 **Examples:**
+
+    $ ibus-setup
+
+    🔹 This command opens the `ibus` settings window, where you can add new languages and modify other configurations.
+
+    $ ibus restart
+
+    🔹 This command restarts `ibus`, which is important after adding new languages or changing `ibus` configurations.
+
+✅ **Simple Example:**
+
+    $ ibus engine pinyin
+
+    🔹 This command changes the `ibus` engine to `pinyin`, allowing you to type in Chinese (if the `pinyin` engine is installed).

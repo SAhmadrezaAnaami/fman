@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcore` baraye gereftan yek copy az memory yek process dar hale ejra (running process) be kar mirevad. In yek rahe asan baraye negah dashtan state yek program ast va be shoma komak mikonad ta baad az crash shodan ya hang kardan, an ra debug konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcore <PID>`  --> 🎯 Gereftan core file az process ba PID moshakhas.
+    🔹 `gcore -o <filename> <PID>` --> 💾 Save kardan core file ba name moshakhas.
+    🔹 `gcore -a <PID>` --> ⚠️ Gereftan hameye threads yek process (all threads).
+
+🛠 **Mesal-ha:**
+
+    $ gcore 1234
+
+    🔹  Core file az process ba ID 1234 sakhte mishavad.
+
+    $ gcore -o mycore 5678
+
+    🔹 Core file ba name `mycore` az process ba ID 5678 zakhire mishavad.
+
+✅ **Mesal sade:**
+
+    $ gcore $$
+
+    🔹 In dastoor yek core file az shell jari (current shell) misazad. `$$` yani PID (process ID) shelli ke dar aan hastid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcore` command is used to obtain a core dump (a copy of the memory) of a running process. It provides a way to save the state of a program, often used for debugging crashes or hangs.
+
+⚙️ **Options:**
+    🔹 `gcore <PID>`  --> 🎯 Create a core file of the process with the given PID.
+    🔹 `gcore -o <filename> <PID>` --> 💾 Save the core file with a specific filename.
+    🔹 `gcore -a <PID>` --> ⚠️ Dump all threads of a process.
+
+🛠 **Examples:**
+
+    $ gcore 1234
+
+    🔹 Creates a core file of the process with ID 1234.
+
+    $ gcore -o mycore 5678
+
+    🔹 Saves the core file as `mycore` for process with ID 5678.
+
+✅ **Simple Example:**
+
+    $ gcore $$
+
+    🔹 This creates a core file of the current shell. `$$` represents the process ID (PID) of the shell you are in.

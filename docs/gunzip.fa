@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gunzip` baraye baz kardan (extract) file-haye zip shode ba format `.gz` estefade mishavad. Yani file-haye ziad bozorg ra ke size-shoon kam shode, dobare be halate aval bar migardanad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gunzip file.gz`  --> 📂 Baz kardan file `file.gz` va pak kardan file asli.
+    🔹 `gunzip -k file.gz` --> 💾 Baz kardan file `file.gz` va negah dashtan file asli.
+    🔹 `gunzip -l file.gz` --> ℹ️ Namayesh etela'at dar morede file zip shode, mesle size-haye ghabl va bad az zip.
+    🔹 `gunzip -r directory/` --> ♻️ Baz kardan hameye file-haye `.gz` dar yek pooshe va pooshe-haye dakheli.
+
+🛠 **Mesal-ha:**
+
+    $ gunzip myfile.txt.gz
+
+    🔹 Baz kardan `myfile.txt.gz` va ijad `myfile.txt`.
+
+    $ gunzip -k important_file.gz
+
+    🔹 Baz kardan `important_file.gz` va negah dashtan `important_file.gz` asli.
+
+✅ **Mesal sade:**
+
+    $ gunzip logfile.log.gz
+
+    🔹 File `logfile.log.gz` baz mishavad va file `logfile.log` ijad mishavad. File `logfile.log.gz` pak mishavad (agar az gozine `-k` estefade nashode bashad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gunzip` command is used to decompress (extract) files that have been compressed using the gzip compression algorithm (files with the `.gz` extension).  It essentially restores a compressed file back to its original state.
+
+⚙️ **Options:**
+    🔹 `gunzip file.gz`  --> 📂 Decompress `file.gz` and remove the original compressed file.
+    🔹 `gunzip -k file.gz` --> 💾 Decompress `file.gz` and keep the original compressed file.
+    🔹 `gunzip -l file.gz` --> ℹ️ Display information about the compressed file, such as the compressed and uncompressed sizes.
+    🔹 `gunzip -r directory/` --> ♻️ Recursively decompress all `.gz` files within a directory and its subdirectories.
+
+🛠 **Examples:**
+
+    $ gunzip myfile.txt.gz
+
+    🔹 Decompresses `myfile.txt.gz`, creating `myfile.txt`.
+
+    $ gunzip -k important_file.gz
+
+    🔹 Decompresses `important_file.gz`, while keeping the original `important_file.gz` file.
+
+✅ **Simple Example:**
+
+    $ gunzip logfile.log.gz
+
+    🔹 The `logfile.log.gz` file is decompressed, and a `logfile.log` file is created.  The `logfile.log.gz` file is deleted (unless the `-k` option is used).

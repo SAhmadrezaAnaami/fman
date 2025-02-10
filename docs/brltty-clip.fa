@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-clip` baraye dastresi be clipboard system dar BRLTTY estefade mishavad. BRLTTY yek system baraye namayeshe khat-be-khat (braille) az matn dar Linux ast. Ba `brltty-clip` shoma mitavanid matn ra az clipboard system begirid va an ra be BRLTTY befrestid, ya matn ra az BRLTTY begirid va dar clipboard system قرار dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--get`    --> 📥 Gereftan matn az clipboard system va namayesh aan dar BRLTTY.
+    🔹 `--set <matn>`  --> 📤 Gozashtan matn dar clipboard system az BRLTTY. Be jaye `<matn>` bayad matne khodetoon ra benevisid.
+    🔹 `--version` --> ℹ️ Namayesh version e BRLTTY-CLIP.
+
+🛠 **Mesal-ha:**
+
+    $ brltty-clip --get
+
+    🔹 Gereftan matn az clipboard system va namayesh aan dar BRLTTY.
+
+    $ brltty-clip --set "Salam Donya!"
+
+    🔹 Gozashtan matn "Salam Donya!" dar clipboard system.
+
+✅ **Mesal sade:**
+
+    $ brltty-clip --get | less
+
+    🔹 Gereftan matn az clipboard system va estefade az `less` baraye safhe-bandi agar matn toolani bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-clip` command is used to access the system clipboard in BRLTTY.  BRLTTY is a system for displaying text linearly (braille) in Linux. With `brltty-clip`, you can retrieve text from the system clipboard and send it to BRLTTY, or retrieve text from BRLTTY and place it in the system clipboard.
+
+⚙️ **Options:**
+    🔹 `--get`    --> 📥 Get text from the system clipboard and display it in BRLTTY.
+    🔹 `--set <text>`  --> 📤 Put text from BRLTTY into the system clipboard.  Replace `<text>` with the text you want to set.
+    🔹 `--version` --> ℹ️ Display the version of BRLTTY-CLIP.
+
+🛠 **Examples:**
+
+    $ brltty-clip --get
+
+    🔹 Get text from the system clipboard and display it in BRLTTY.
+
+    $ brltty-clip --set "Hello World!"
+
+    🔹 Put the text "Hello World!" into the system clipboard.
+
+✅ **Simple Example:**
+
+    $ brltty-clip --get | less
+
+    🔹 Get text from the system clipboard and use `less` for paging if the text is long.

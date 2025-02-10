@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mass-bug` yek dastoor farzi ast baraye anjam dadane yek taghire bozorg rooye code ya system. Mohemtareen estefade az in dastoor etminan az dorost boodane taghirat ast. Albate chon farzi ast, hich kari anjam nemidhad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mass-bug -dry-run` --> 🧪 Emtehane taghirat bedoone taghire vaghei. Faghat neshun mide che taghirati anjam mishavad.
+    🔹 `mass-bug -force`  --> 💪 Be zor taghirat ro anjam bede, hata agar khataei pish biad. (Ehtiate ziad dashte bashid!)
+    🔹 `mass-bug -verbose` --> 🗣️ Etela'ate bishtari dar morede chigoonegi anjam taghirat neshun bede.
+
+🛠 **Mesal-ha:**
+
+    $ mass-bug -dry-run
+
+    🔹 Emtehane taghirat bedoone taghire vaghei.
+
+    $ mass-bug -force -verbose
+
+    🔹 Be zor taghirat ro anjam mide va etelaate bishtari neshun mide.
+
+✅ **Mesal sade:**
+
+    $ mass-bug -dry-run
+    [INFO] Emtehane taghirat anjam shod. Hich taghiri dar vagheiyat anjam nashod.
+
+    🔹 In mesal neshun mide ke `dry-run` hich taghire vaghei anjam nemide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mass-bug` command is a hypothetical command for performing a large-scale change on code or a system. The most important use of this command is to ensure the correctness of the changes. However, since it is hypothetical, it does not perform any actual actions.
+
+⚙️ **Options:**
+    🔹 `mass-bug -dry-run` --> 🧪 Test the changes without actually making them. It only shows what changes would be made.
+    🔹 `mass-bug -force`  --> 💪 Force the changes to be made, even if an error occurs. (Be very careful!)
+    🔹 `mass-bug -verbose` --> 🗣️ Show more information about how the changes are being made.
+
+🛠 **Examples:**
+
+    $ mass-bug -dry-run
+
+    🔹 Test the changes without making actual changes.
+
+    $ mass-bug -force -verbose
+
+    🔹 Force the changes and show more information.
+
+✅ **Simple Example:**
+
+    $ mass-bug -dry-run
+    [INFO] Dry run completed. No changes were actually made.
+
+    🔹 This example shows that `dry-run` does not make any real changes.

@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgexec` baraye ejraye yek payam dar Unix be kar miravad. Dar vaghe, in dastoor be shoma emkan midahad ke yek command ra az dakhel yek payam (message) be system befrestid va an ra ejra konid. In bishtar dar script-ha va barname-haye automatized estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `msgexec -q`  --> 🤫 Seda-ha ya warning-ha ra ghaim mikonad. Agar nemikhahid khata-ha ya peygham-ha neshan dade shavand, az in estefade konid.
+    🔹 `msgexec -d DELIMITER` --> 🧩 Yek delimiter khas baraye joda kardan payam az dastoor moshakhas mikonad. Default delimiter newline ast.
+    🔹 `msgexec command`  --> 🚀 Dastoori ke bayad ejra shavad ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ echo "ls -l" | msgexec
+
+    🔹 In mesal dastoor `ls -l` ra az yek payam (echo) migirad va ejra mikonad, natije namayesh dade mishavad.
+
+    $ msgexec 'date' < message.txt
+
+    🔹 In mesal dastoor `date` ra ba estefade az voroodi az file `message.txt` ejra mikonad. Agar `message.txt` shamel `date` bashad, tarikhe alan neshan dade mishavad.
+
+✅ **Mesal sade:**
+
+    $ echo "whoami" | msgexec
+
+    🔹 In dastoor `whoami` ra ejra mikonad, ke username shoma ra namayesh midahad. `msgexec` payam "whoami" ra migirad va an ra mesl yek command ejra mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgexec` command is used to execute a message as a command in Unix-like systems. It allows you to pipe a command string to the system for execution, often used in scripts or automated processes.
+
+⚙️ **Options:**
+    🔹 `msgexec -q`  --> 🤫 Suppresses the output of any messages or warnings. Use this if you don't want errors or messages displayed.
+    🔹 `msgexec -d DELIMITER` --> 🧩 Specifies a custom delimiter to separate the message from the command. The default delimiter is a newline.
+    🔹 `msgexec command`  --> 🚀 Specifies the command to be executed.
+
+🛠 **Examples:**
+
+    $ echo "ls -l" | msgexec
+
+    🔹 This example takes the command `ls -l` from a piped echo and executes it, displaying the results of the long listing.
+
+    $ msgexec 'date' < message.txt
+
+    🔹 This example executes the `date` command using input redirected from `message.txt`. If `message.txt` contains `date`, it will display the current date.
+
+✅ **Simple Example:**
+
+    $ echo "whoami" | msgexec
+
+    🔹 This executes the `whoami` command, which displays your username. `msgexec` receives the "whoami" message and executes it as if it were a command.
+

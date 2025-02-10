@@ -1,0 +1,83 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mtrace` baraye peygiri va didane memory leak-ha (reshooti memory) dar barname-haye C/C++ estefade mishavad. In dastoor komak mikonad ke befahmim koja memory gerefte shode vali azad nashode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 Aval bayad az function-haye `mtrace()` va `muntrace()` dar code khod estefade konid ta peygiri ra shoru va tamam konid.
+    🔹 `MALLOC_TRACE=[filename]` --> 📁  Bayad yek file baraye zakhire log-ha (log) moshakhas konid.
+
+🛠 **Mesal-ha:**
+
+    Avval, code C/C++ ra instrument konid:
+
+    c
+    #include <mcheck.h>
+    #include <stdlib.h>
+
+    int main() {
+        mtrace(); // Peygiri shoru shod
+        int *ptr = (int*)malloc(10 * sizeof(int));
+        // free(ptr); // Uncomment konid ta memory azad shavad
+        muntrace(); // Peygiri tamam shod
+        return 0;
+    }
+    
+
+    Compile va run konid (be khater dashte bashid ke `MALLOC_TRACE` ra set konid):
+
+    bash
+    $ gcc -g test.c -o test
+    $ export MALLOC_TRACE=mtrace.log
+    $ ./test
+    $ mtrace test $MALLOC_TRACE
+    
+
+✅ **Mesal sade:**
+
+    Ba ejraye `mtrace test $MALLOC_TRACE`, age barname memory leak dashte bashe, `mtrace` gozaresh midahad ke koja memory gerefte shode vali azad nashode ast. Dar in mesal, age `free(ptr)` comment shode bashe, yek memory leak gozaresh mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mtrace` command is used to trace memory allocations and detect memory leaks in C/C++ programs.  It helps identify where memory is allocated but not freed.
+
+⚙️ **Options:**
+    🔹 First, you need to use the `mtrace()` and `muntrace()` functions in your code to start and stop tracing.
+    🔹 `MALLOC_TRACE=[filename]` --> 📁 You must specify a file to store the logs.
+
+🛠 **Examples:**
+
+    First, instrument your C/C++ code:
+
+    c
+    #include <mcheck.h>
+    #include <stdlib.h>
+
+    int main() {
+        mtrace(); // Start tracing
+        int *ptr = (int*)malloc(10 * sizeof(int));
+        // free(ptr); // Uncomment to free the memory
+        muntrace(); // Stop tracing
+        return 0;
+    }
+    
+
+    Compile and run (remember to set `MALLOC_TRACE`):
+
+    bash
+    $ gcc -g test.c -o test
+    $ export MALLOC_TRACE=mtrace.log
+    $ ./test
+    $ mtrace test $MALLOC_TRACE
+    
+
+✅ **Simple Example:**
+
+    By running `mtrace test $MALLOC_TRACE`, if the program has memory leaks, `mtrace` reports where memory was allocated but not freed. In this example, if `free(ptr)` is commented out, a memory leak is reported.
+

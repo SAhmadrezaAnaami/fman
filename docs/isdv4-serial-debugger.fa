@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `isdv4-serial-debugger` baraye debug kardane ertebat serial (serial communication) dar ISDV4 (Integrated Serial Data Viewer version 4) estefade mishavad. In abzar be shoma komak mikonad data-haye serial ra bebinid, analiz konid, va moshkelat ra peida konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--port <port_name>`  --> 🚪 Esme port seriali ke mikhahid behesh vasl shavid ra moshakhas mikonad. Masalan: `/dev/ttyUSB0` ya `COM3`.
+    🔹 `--baud <baud_rate>` --> ⚡️ Sor'ate baud rate baraye ertebat serial ra moshakhas mikonad. Mesle: `9600`, `115200`.
+    🔹 `--log <file_path>`   --> 📝 Data-haye serial ra dar yek file zakhire mikonad baraye analiz-haye badi.
+    🔹 `--hex`             --> 🔢 Data-ha ra be shekle hexadecimal namayesh midahad.
+    🔹 `--ascii`           --> 🔡 Data-ha ra be shekle ASCII namayesh midahad (agar ghabele khandan bashad).
+
+🛠 **Mesal-ha:**
+
+    $ isdv4-serial-debugger --port /dev/ttyUSB0 --baud 115200
+
+    🔹 Shoru'e debug kardane serial dar port `/dev/ttyUSB0` ba sor'ate 115200 baud.
+
+    $ isdv4-serial-debugger --port COM3 --baud 9600 --log serial.log --hex
+
+    🔹 Shoru'e debug kardane serial dar port `COM3` ba sor'ate 9600 baud, zakhire data-ha dar file `serial.log` be shekle hexadecimal.
+
+✅ **Mesal sade:**
+
+    $ isdv4-serial-debugger --port /dev/ttyACM0 --baud 57600
+
+    🔹 Be port serial `/dev/ttyACM0` ba sor'ate 57600 vasl mishavad va data-haye serial ra dar terminal namayesh midahad. Agar chizi namoshakhase, ehtemalan baud rate dorost nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `isdv4-serial-debugger` command is used to debug serial communication using ISDV4 (Integrated Serial Data Viewer version 4). This tool helps you view, analyze, and troubleshoot serial data.
+
+⚙️ **Options:**
+    🔹 `--port <port_name>`  --> 🚪 Specifies the serial port you want to connect to. For example: `/dev/ttyUSB0` or `COM3`.
+    🔹 `--baud <baud_rate>` --> ⚡️ Specifies the baud rate for the serial communication.  Like: `9600`, `115200`.
+    🔹 `--log <file_path>`   --> 📝 Saves the serial data to a file for later analysis.
+    🔹 `--hex`             --> 🔢 Displays the data in hexadecimal format.
+    🔹 `--ascii`           --> 🔡 Displays the data in ASCII format (if readable).
+
+🛠 **Examples:**
+
+    $ isdv4-serial-debugger --port /dev/ttyUSB0 --baud 115200
+
+    🔹 Starts debugging the serial port `/dev/ttyUSB0` at a baud rate of 115200.
+
+    $ isdv4-serial-debugger --port COM3 --baud 9600 --log serial.log --hex
+
+    🔹 Starts debugging the serial port `COM3` at a baud rate of 9600, saving the data to the file `serial.log` in hexadecimal format.
+
+✅ **Simple Example:**
+
+    $ isdv4-serial-debugger --port /dev/ttyACM0 --baud 57600
+
+    🔹 Connects to the serial port `/dev/ttyACM0` at a baud rate of 57600 and displays the serial data in the terminal. If nothing shows up, the baud rate may be incorrect.

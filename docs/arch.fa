@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `arch` baraye chap kardane nam-e architecture machine estefade mishavad. Yani neshan midahad computer az che noe CPU estefade mikonad (masalan x86_64 ya arm64).
+
+⚙️ **Gozine-ha:**
+    🔹 `arch` --> 🖥️ Namayesh architecture system-e ameli.
+    🔹 `arch -k` --> 🔤 Namayesh architecture kernel. (Dar system-haye mac)
+    🔹 `arch -x <architecture> <dastoor>` --> 🚀 Ejraye dastoor ba architecture moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ arch
+
+    🔹 Namayesh architecture فعلی سیستم.
+
+    $ arch -k
+
+    🔹 (Dar mac) Namayesh architecture هسته (kernel).
+
+✅ **Mesal sade:**
+
+    $ arch
+    x86_64
+
+    🔹 In neshan midahad ke computer shoma az architecture x86_64 estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `arch` command prints the machine architecture type. It shows what kind of CPU your computer is using (e.g., x86_64 or arm64).
+
+⚙️ **Options:**
+    🔹 `arch` --> 🖥️ Display the operating system's architecture.
+    🔹 `arch -k` --> 🔤 Display the kernel architecture (macOS only).
+    🔹 `arch -x <architecture> <command>` --> 🚀 Run the specified command under the given architecture.
+
+🛠 **Examples:**
+
+    $ arch
+
+    🔹 Display the current system architecture.
+
+    $ arch -k
+
+    🔹 (On macOS) Display the kernel architecture.
+
+✅ **Simple Example & Explanation:**
+
+    $ arch
+    x86_64
+
+    🔹 This indicates that your computer uses the x86_64 architecture.

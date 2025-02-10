@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `newgrp` baraye avaz kardan grooh-e fa'al-e shoma be yek grooh-e digar estefade mishavad. Agar shoma ozve chand grooh bashid, mitavanid ba in dastoor groohi ra ke baraye ijad-e file-ha va pooshe-ha estefade mishavad, tagheer dahid.  Agar dastoor ra bedune argument seda konid, be grooh-e asli-ye khod bargardideh mishavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `newgrp [grooh]` --> 🏢 Grooh-e fa'al ra be "[grooh]" tagheer midahad. Agar "[grooh]" vojood nadashte bashad ya shoma ozve aan nabashid, khata midehad.
+    🔹 `newgrp -` --> 🔙 Be groohi ke qablan az aan estefade mikardid bargardideh mishavid.  In kar be vasile-ye set kardane `$LOGNAME` va tekrar login kardan anjam mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ newgrp mygroup
+
+    🔹 Grooh-e fa'al ra be "mygroup" tagheer midahad. Agar shoma ozve "mygroup" nabashid, dastoor khata midehad.
+
+    $ newgrp -
+
+    🔹 Be grooh-e qabli bargardideh mishavid. Shoma bayad password khod ra vared konid.
+
+✅ **Mesal sade:**
+
+    $ id
+    uid=1001(user1) gid=1001(user1) groups=1001(user1),1002(group1),1003(group2)
+    $ newgrp group2
+    $ id
+    uid=1001(user1) gid=1003(group2) groups=1003(group2),1001(user1),1002(group1)
+
+    🔹 Dastoor `id` etela'at-e user ra namayesh midahad. Ba `newgrp group2`, grooh-e fa'al be "group2" tagheer mikonad. Dastoor `id` dobare namayesh dade mishavad ta tagheer ra neshan dahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `newgrp` command is used to change your current group ID to a different group. If you are a member of multiple groups, you can use this command to change the group used for creating new files and directories.  If called without any arguments, it returns you to your login group.
+
+⚙️ **Options:**
+    🔹 `newgrp [group]` --> 🏢 Changes the current group to "[group]". If "[group]" does not exist or you are not a member of it, an error occurs.
+    🔹 `newgrp -` --> 🔙 Returns you to the group you were previously using. This is done by setting `$LOGNAME` and re-logging you in.
+
+🛠 **Examples:**
+
+    $ newgrp mygroup
+
+    🔹 Changes the current group to "mygroup". If you are not a member of "mygroup", the command will fail.
+
+    $ newgrp -
+
+    🔹 Returns you to the previous group. You will be prompted for your password.
+
+✅ **Simple Example:**
+
+    $ id
+    uid=1001(user1) gid=1001(user1) groups=1001(user1),1002(group1),1003(group2)
+    $ newgrp group2
+    $ id
+    uid=1001(user1) gid=1003(group2) groups=1003(group2),1001(user1),1002(group1)
+
+    🔹 The `id` command shows the user's information. With `newgrp group2`, the current group is changed to "group2". The `id` command is shown again to demonstrate the change.

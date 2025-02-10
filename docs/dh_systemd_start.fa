@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_systemd_start` baraye sakhtan script-haye systemd service baraye package-haye Debian estefade mishavad. In dastoor be developers komak mikonad ta service-haye khod ra be shekle dorost ba systemd integration konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name=NAME`  --> 🏷️ Esme service ra mosahkhas mikonad. Agar zekr nashavad, az esme package estefade mishavad.
+    🔹 `--no-start`     --> 🛑 Baes mishavad ke service badan az tarighe dastoor haye digar start shavad va dar vaghe dar haman aval start nashavad.
+    🔹 `--before`   --> ⏳ Service ghabl az service haye digar run shavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_systemd_start
+    🔹 Sakhtan file service systemd ba estefade az esme package be عنوان پیش‌فرض.
+
+    $ dh_systemd_start --name=myservice
+    🔹 Sakhtan file service systemd ba esme `myservice`.
+
+✅ **Mesal sade:**
+
+    $ dh_systemd_start --no-start
+    🔹 File service systemd ra misazad, vali service ra dar haman aval start nemikonad. In baraye vaghti ke service niaz be config haye khass ghabl az run shodan darad mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_systemd_start` command is used to generate systemd service files for Debian packages. It helps developers properly integrate their services with systemd.
+
+⚙️ **Options:**
+    🔹 `--name=NAME`  --> 🏷️ Specifies the service name. If not provided, the package name is used.
+    🔹 `--no-start`     --> 🛑 Prevents the service from being started immediately.
+    🔹 `--before`   --> ⏳ Service should run before other services
+
+🛠 **Examples:**
+
+    $ dh_systemd_start
+    🔹 Generates a systemd service file using the default package name as the service name.
+
+    $ dh_systemd_start --name=myservice
+    🔹 Generates a systemd service file with the name `myservice`.
+
+✅ **Simple Example:**
+
+    $ dh_systemd_start --no-start
+    🔹 Creates the systemd service file, but does not start the service immediately. This is useful when the service requires specific configurations before running.

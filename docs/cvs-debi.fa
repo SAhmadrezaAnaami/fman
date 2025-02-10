@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cvs-debi` yek command baraye sakhtane package-haye Debian (.deb) az repository-haye CVS (Concurrent Versions System) ast. In dastoor karhaye sakhte package ra sade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--control=directory` --> 🗂️ Directory ke file-haye control (مانند `control`, `preinst`, `postinst` و غیره) dar anja gharar darand.
+    🔹 `--dest=directory`    --> 🎯 Directory-e maqsad baraye package sakhte shode. Agar zekr nashavad, package dar directory jari (current) sakhte mishavad.
+    🔹 `--version=version`  --> 🔢 Versione package Debian ra tayin mikonad. Agar zekr nashavad, az file `debian/changelog` estefade mishavad.
+    🔹 `--build`            --> 🛠️ Bade sakhtane package control, package ra ham misazad. Agar zekr nashavad, faghat file-haye control sakhte mishavand.
+
+🛠 **Mesal-ha:**
+
+    $ cvs-debi --control=debian
+    
+    🔹 Yek package control az file-haye control dar directory `debian` misazad.
+
+    $ cvs-debi --control=debian --dest=/tmp --version=1.0-1
+    
+    🔹 Yek package control ba version `1.0-1` misazad va an ra dar directory `/tmp` zakhire mikonad.
+
+    $ cvs-debi --control=debian --build
+    
+    🔹 Ham file-haye control ra misazad va ham package Debian ra.
+
+✅ **Mesal sade:**
+
+    $ cvs-debi --control=debian && dpkg -i *.deb
+    
+    🔹 File-haye control ra misazad va bade an package Debian ra nasb mikonad.
+    🔹 `&&` command dovom faghat vaghti ejra mishavad ke command aval ba movafaghiyat tamam shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cvs-debi` command is used to create Debian packages (.deb) from a CVS (Concurrent Versions System) repository. This command simplifies the process of building a Debian package.
+
+⚙️ **Options:**
+    🔹 `--control=directory` --> 🗂️ Directory where the control files (such as `control`, `preinst`, `postinst`, etc.) are located.
+    🔹 `--dest=directory`    --> 🎯 Destination directory for the created package. If not specified, the package is built in the current directory.
+    🔹 `--version=version`  --> 🔢 Specifies the Debian package version. If not specified, it's taken from the `debian/changelog` file.
+    🔹 `--build`            --> 🛠️ After building the control package, it also builds the Debian package. If not specified, only the control files are created.
+
+🛠 **Examples:**
+
+    $ cvs-debi --control=debian
+    
+    🔹 Creates a control package from the control files in the `debian` directory.
+
+    $ cvs-debi --control=debian --dest=/tmp --version=1.0-1
+    
+    🔹 Creates a control package with version `1.0-1` and saves it in the `/tmp` directory.
+
+    $ cvs-debi --control=debian --build
+    
+    🔹 Builds both the control files and the Debian package.
+
+✅ **Simple Example:**
+
+    $ cvs-debi --control=debian && dpkg -i *.deb
+    
+    🔹 Creates the control files and then installs the Debian package.
+    🔹 The `&&` ensures the second command only runs if the first one completes successfully.

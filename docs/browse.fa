@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `browse` (ya `xdg-open` dar aksar system-ha) baraye baz kardane file-ha ya URL-ha ba barnameye pishfarz (default) estefade mishavad. In dastoor otomatik mifahmad che barnamei baraye baz kardane file ya URL bayad estefade shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `browse <file>` --> 📂 Baz kardane yek file ba barnameye pishfarz.
+    🔹 `browse <URL>`  --> 🌐 Baz kardane yek URL dar browser-e pishfarz.
+    🔹 `xdg-open <file>`  --> 📂 Equivalent command to open a file with the default application (in many systems).
+    🔹 `xdg-open <URL>`   --> 🌐 Equivalent command to open a URL in the default browser (in many systems).
+
+🛠 **Mesal-ha:**
+
+    $ browse document.pdf
+
+    🔹 Baz kardane file "document.pdf" ba barnameye pishfarz baraye PDF.
+
+    $ browse https://www.example.com
+
+    🔹 Baz kardane website "https://www.example.com" dar browser-e pishfarz.
+
+✅ **Mesal sade:**
+
+    $ browse image.jpg
+
+    🔹 File "image.jpg" ba barnameye pishfarze tasvir baz mishavad. Agar barnameye pishfarze tasvir Mojod nabashad, system az shoma mikhad ke yek barname entekhab konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `browse` command (or `xdg-open` in many systems) is used to open files or URLs with the default application. It automatically detects which application to use based on the file type or URL.
+
+⚙️ **Options:**
+    🔹 `browse <file>` --> 📂 Open a file with the default application.
+    🔹 `browse <URL>`  --> 🌐 Open a URL in the default browser.
+    🔹 `xdg-open <file>`  --> 📂 Equivalent command to open a file with the default application (in many systems).
+    🔹 `xdg-open <URL>`   --> 🌐 Equivalent command to open a URL in the default browser (in many systems).
+
+🛠 **Examples:**
+
+    $ browse document.pdf
+
+    🔹 Opens the "document.pdf" file with the default PDF viewer.
+
+    $ browse https://www.example.com
+
+    🔹 Opens the website "https://www.example.com" in the default web browser.
+
+✅ **Simple Example:**
+
+    $ browse image.jpg
+
+    🔹 The "image.jpg" file will be opened with the default image viewer. If no default image viewer is configured, the system might prompt you to select one.

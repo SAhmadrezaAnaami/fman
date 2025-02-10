@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2lava-wrapper` baraye tabdil file-haye chap shode (print jobs) az format Foo2lava be format-i ke printer-haye PostScript mitavanand befahmand estefade mishavad. In dastoor, yek vasete (wrapper) ast ke be printer ezafe mishavad ta kare chap ra asan konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-z[0-9]`  --> 📏 Tarife sathe compression baraye kam kardane حجم فایل
+    🔹 `-b <bits>`  --> 🎨 Tarife تعداد bits per pixel
+    🔹 `-r <dpi>`   --> 🎯 Tarife daqate chap (dots per inch)
+
+🛠 **Mesal-ha:**
+
+    $ foo2lava-wrapper -r600 -z5 file.prn > file.ps
+
+    🔹 Tabdil file.prn ba daqate 600 DPI va compression level 5 be file.ps
+
+    $ foo2lava-wrapper file.prn | lpr
+
+    🔹 Chap kardane file.prn be soorate mostaqim az tarighe command lpr
+
+✅ **Mesal sade:**
+
+    $ foo2lava-wrapper -b1 file.prn > file.ps
+
+    🔹 Tabdil file.prn ba yek bit per pixel va save kardane output be file.ps. In معمولاً baraye chap-haye سیاه و سفید (black and white) be kar miravad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2lava-wrapper` command is used to convert print jobs from the Foo2lava format to a format understandable by PostScript printers. This command acts as a wrapper, added to printers to simplify printing tasks.
+
+⚙️ **Options:**
+    🔹 `-z[0-9]`  --> 📏 Defines the compression level to reduce file size
+    🔹 `-b <bits>`  --> 🎨 Defines the number of bits per pixel
+    🔹 `-r <dpi>`   --> 🎯 Defines the print resolution (dots per inch)
+
+🛠 **Examples:**
+
+    $ foo2lava-wrapper -r600 -z5 file.prn > file.ps
+
+    🔹 Converts file.prn with a resolution of 600 DPI and compression level 5 to file.ps
+
+    $ foo2lava-wrapper file.prn | lpr
+
+    🔹 Prints file.prn directly using the lpr command
+
+✅ **Simple Example:**
+
+    $ foo2lava-wrapper -b1 file.prn > file.ps
+
+    🔹 Converts file.prn with one bit per pixel and saves the output to file.ps. This is typically used for black and white prints.
+

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-session` baraye shoru kardan va modiriyat kardan neshaste GNOME estefade mishavad. Neshaste GNOME yek environment grafiki ast ke shamel panel-ha, menu-ha, va barname-haye digar mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-session` --> 🚀 Shoru kardan neshaste GNOME ba estefade az configuration pishfarz.
+    🔹 `gnome-session --session <name>` --> 💻 Shoru kardan neshaste ba estefade az yek file ".session" khas.  Be jaye `<name>` esme file ra benevisid (bedoone ".session").
+    🔹 `gnome-session --debug` --> 🐞 Shoru kardan neshaste GNOME dar halat debug baraye peyda kardan khataha.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-session
+
+    🔹 Shoru kardan neshaste GNOME ba configuration pishfarz.
+
+    $ gnome-session --session GNOME
+
+    🔹 Shoru kardan neshaste GNOME ba estefade az file "GNOME.session".
+
+✅ **Mesal sade:**
+
+    $ gnome-session &
+
+    🔹 Shoru kardan neshaste GNOME dar background.  `&` dastoor ra dar background ejra mikonad, pas terminal azad mimanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-session` command is used to start and manage the GNOME session. The GNOME session is a graphical environment consisting of panels, menus, and other applications.
+
+⚙️ **Options:**
+    🔹 `gnome-session` --> 🚀 Start the GNOME session using the default configuration.
+    🔹 `gnome-session --session <name>` --> 💻 Start the session using a specific ".session" file.  Replace `<name>` with the name of the file (without the ".session" extension).
+    🔹 `gnome-session --debug` --> 🐞 Start the GNOME session in debug mode for troubleshooting.
+
+🛠 **Examples:**
+
+    $ gnome-session
+
+    🔹 Start the GNOME session with the default configuration.
+
+    $ gnome-session --session GNOME
+
+    🔹 Start the GNOME session using the "GNOME.session" file.
+
+✅ **Simple Example:**
+
+    $ gnome-session &
+
+    🔹 Start the GNOME session in the background. The `&` runs the command in the background, freeing up the terminal.

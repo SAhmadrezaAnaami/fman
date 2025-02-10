@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lshw` baraye gereftan etela'at kamel az sakht-afzarhaye dakhili (hardware) computer shoma bekar miravad. Mesle model CPU, meghdare RAM, va etela'at device-haye digar.
+
+⚙️ **Gozine-ha:**
+    🔹 `lshw` --> 💻 Namayesh hameye etela'at sakht-afzari be soorate derakhti (tree-like).
+    🔹 `lshw -short` --> 📃 Namayesh kholaseye etela'at.
+    🔹 `lshw -class disk` --> 💾 Namayesh etela'at makhsoos disk-ha.
+    🔹 `lshw -html > report.html` --> 🌐 Zakhire etela'at be soorat HTML baraye didan dar browser.
+    🔹 `sudo lshw -json > report.json` --> 🗄 Zakhire etela'at be soorat JSON baraye estefade dar barname-ha.  (Requires sudo for complete info!)
+
+🛠 **Mesal-ha:**
+
+    $ lshw
+
+    🔹 Namayesh hameye etela'at sakht-afzari.  Momken ast kheili ziad bashad!
+
+    $ sudo lshw -short
+
+    🔹 Namayesh kholaseye etela'at sakht-afzari (Needs sudo for some hardware information).
+
+✅ **Mesal sade:**
+
+    $ sudo lshw -class memory
+
+    🔹  Faghat etela'at marboote be RAM-e shoma ra namayesh midahad. (Requires sudo to access memory details)
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lshw` command is used to gather detailed information about the hardware components of your computer, such as CPU model, RAM amount, and other device details.
+
+⚙️ **Options:**
+    🔹 `lshw` --> 💻 Display all hardware information in a tree-like format.
+    🔹 `lshw -short` --> 📃 Display a summary of the information.
+    🔹 `lshw -class disk` --> 💾 Display information specifically about disks.
+    🔹 `lshw -html > report.html` --> 🌐 Save the information as an HTML file for viewing in a browser.
+    🔹 `sudo lshw -json > report.json` --> 🗄 Save the information as a JSON file for use in programs. (Requires sudo for complete info!)
+
+🛠 **Examples:**
+
+    $ lshw
+
+    🔹 Display all hardware information.  This can be quite verbose!
+
+    $ sudo lshw -short
+
+    🔹 Display a short summary of the hardware information (Needs sudo for some hardware information).
+
+✅ **Simple Example:**
+
+    $ sudo lshw -class memory
+
+    🔹 Only display information related to your RAM (Requires sudo to access memory details).

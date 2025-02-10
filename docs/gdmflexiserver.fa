@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdmflexiserver` baraye ejra kardane yek server X jadid az tarighe GDM (GNOME Display Manager) be kar mirevad. In dastoor be shoma ejaze mide ta chand session X ro hamzaman rooye yek system dashte bashid, ke baraye test kardane narmafzar ya estefade az chand karbar be soorate hamzaman mofeed ast.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh dadane rahnamaye estefade az dastoor.
+    🔹 `--display :N`  --> 🖥️  Moshakhas kardane shomareye display (be jaye N yek adad gharar dahid). Agar moshakhas nashavad, GDM yek shomareye displaye khali ro entekhab mikonad.
+    🔹 `--xnest` --> 🪟  Ejraye server X dar dakhele yek panjere. Baraye test kardane X server dar yek muhite gheyre mostaghel mofeed ast.
+
+🛠 **Mesal-ha:**
+
+    $ gdmflexiserver --display :1
+
+    🔹 Ejraye yek X server jadid rooye display :1.
+
+    $ gdmflexiserver --xnest
+
+    🔹 Ejraye yek X server dar dakhele yek panjere (Xnest).
+
+✅ **Mesal sade:**
+
+    $ gdmflexiserver --display :2 &
+    [1] 12345
+
+    🔹 In dastoor yek X server jadid rooye display :2 ejra mikonad va an ra dar paszamineh gharar mide (ba estefade az `&`). `[1] 12345` PID (Process ID) e amaliyat ra neshan midahad. Shoma mitavanid ba estefade az `kill 12345` in amaliyat ra motavaghef konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdmflexiserver` command is used to start a new X server through GDM (GNOME Display Manager). It allows you to run multiple X sessions simultaneously on the same system, which is useful for testing software or enabling multiple users to work concurrently.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help information about the command.
+    🔹 `--display :N`  --> 🖥️ Specify the display number (replace N with a number). If not specified, GDM will choose a free display number.
+    🔹 `--xnest` --> 🪟 Run the X server inside a window. Useful for testing the X server in an isolated environment.
+
+🛠 **Examples:**
+
+    $ gdmflexiserver --display :1
+
+    🔹 Starts a new X server on display :1.
+
+    $ gdmflexiserver --xnest
+
+    🔹 Starts an X server inside a window (Xnest).
+
+✅ **Simple Example:**
+
+    $ gdmflexiserver --display :2 &
+    [1] 12345
+
+    🔹 This command starts a new X server on display :2 and runs it in the background (using `&`). `[1] 12345` shows the PID (Process ID) of the operation. You can stop this operation by using `kill 12345`.

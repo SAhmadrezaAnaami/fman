@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ckbcomp` baraye dorost kardane file-haye jadid keyboard layout az file-haye matni (text) ke be onvane manba (source) estefade mishavand, be kar miravad. Yani shoma yek file matni ba tarahi keyboard khodetoon dorost mikonid, va ba estefade az `ckbcomp` oon ro be yek file layout keyboard ghabele estefade tabdil mikonid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `ckbcomp source_file compiled_file`  --> 📝 File manba (source) va file kharoji (compiled) ra moshakhas mikonad.  
+    🔹 `ckbcomp -help` --> ❓ Namayeshe rahnamaye dastoor.
+    🔹 `ckbcomp -version` --> ℹ️ Namayeshe version.
+
+🛠 **Mesal-ha:**
+
+    $ ckbcomp my_keyboard.txt my_keyboard
+
+    🔹 Az file `my_keyboard.txt` yek file layout keyboard ba name `my_keyboard` misazad.
+
+    $ ckbcomp azerty.txt azerty
+
+    🔹 Az file `azerty.txt` file keyboard layout `azerty` ra misazad.
+
+✅ **Mesal sade:**
+
+    $ ckbcomp new_layout.txt new_layout
+
+    🔹 Agar `new_layout.txt` yek file ba tarahi keyboard shakhsi shoma bashad, in dastoor yek file layout keyboard jadid ba name `new_layout` misazad ke shoma mitoonid az settings systemetoon estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ckbcomp` command is used to create new keyboard layout files from text-based source files.  It essentially compiles a custom keyboard layout defined in a text file into a usable keyboard layout file.
+
+⚙️ **Options:**
+    🔹 `ckbcomp source_file compiled_file` --> 📝 Specifies the source file and the output file.
+    🔹 `ckbcomp -help` --> ❓ Displays the command help.
+    🔹 `ckbcomp -version` --> ℹ️ Displays the version.
+
+🛠 **Examples:**
+
+    $ ckbcomp my_keyboard.txt my_keyboard
+
+    🔹 Creates a keyboard layout file named `my_keyboard` from the source file `my_keyboard.txt`.
+
+    $ ckbcomp azerty.txt azerty
+
+    🔹 Creates a keyboard layout file `azerty` from the file `azerty.txt`.
+
+✅ **Simple Example:**
+
+    $ ckbcomp new_layout.txt new_layout
+
+    🔹 If `new_layout.txt` is a file with your custom keyboard design, this command will create a new keyboard layout file named `new_layout` which you can then apply through your system settings.

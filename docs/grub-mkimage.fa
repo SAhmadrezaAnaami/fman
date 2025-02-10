@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mkimage` baraye dorost kardane image-haye GRUB estefade mishavad. In image-ha mitavanand baraye boot kardane system az rooye USB ya CD estefade shavand. Asasan, in dastoor az module-haye entekhab shode yek file bootable misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o FILE`  --> 💾 Esme file kharoji ra moshakhas mikonad.  Age esm dad nashe, stdout estefade mishe.
+    🔹 `-O PLATFORM` --> 💻 Architecture morede nazar ra moshakhas mikonad (i386-pc, x86_64-efi, va...).
+    🔹 `-c FILE`  --> ⚙️ Config file GRUB ra moshakhas mikonad.
+    🔹 `-m FILE`  --> 📦 Core image template file ra moshakhas mikonad.
+    🔹 `-d DIRECTORY` --> 📁 Directory ke module-haye GRUB dar an gharar darand.
+
+🛠 **Mesal-ha:**
+
+    $ grub-mkimage -o boot.img -O i386-pc biosdisk part_msdos ext2
+
+    🔹 Yek image bootable misazad baraye system-haye PC ba estefade az module-haye `biosdisk`, `part_msdos`, va `ext2`.
+
+    $ grub-mkimage -o efi.img -O x86_64-efi -d /usr/lib/grub/x86_64-efi/ efi_gop efi_uga fat part_gpt ext2 normal
+
+    🔹 Yek image bootable EFI misazad.
+
+✅ **Mesal sade:**
+
+    $ grub-mkimage -o myboot.img -O i386-pc iso9660
+
+    🔹 Yek image bootable misazad ke az `iso9660` baraye khandan file system CD estefade mikonad.  In baraye sakhtane CD-haye bootable mohem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mkimage` command is used to create GRUB images. These images can be used to boot a system from a USB drive or CD. Basically, it creates a bootable file from selected modules.
+
+⚙️ **Options:**
+    🔹 `-o FILE`  --> 💾 Specifies the output file name. If not specified, stdout is used.
+    🔹 `-O PLATFORM` --> 💻 Specifies the target architecture (i386-pc, x86_64-efi, etc.).
+    🔹 `-c FILE`  --> ⚙️ Specifies the GRUB configuration file.
+    🔹 `-m FILE`  --> 📦 Specifies the core image template file.
+    🔹 `-d DIRECTORY` --> 📁 Specifies the directory where GRUB modules are located.
+
+🛠 **Examples:**
+
+    $ grub-mkimage -o boot.img -O i386-pc biosdisk part_msdos ext2
+
+    🔹 Creates a bootable image for PC systems using the `biosdisk`, `part_msdos`, and `ext2` modules.
+
+    $ grub-mkimage -o efi.img -O x86_64-efi -d /usr/lib/grub/x86_64-efi/ efi_gop efi_uga fat part_gpt ext2 normal
+
+    🔹 Creates an EFI bootable image.
+
+✅ **Simple Example:**
+
+    $ grub-mkimage -o myboot.img -O i386-pc iso9660
+
+    🔹 Creates a bootable image that uses `iso9660` for reading the CD filesystem. This is important for creating bootable CDs.

@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `false` yek dastoor sade ast ke be maenay "na dorost" ya "ghalat" ast. Vaghti `false` ejra mishe, yek code error (1) barmigardanad, yani dastoor ba movafaghiat anjam nashode.
+
+⚙️ **Gozine-ha:**
+    🔹 `false` --> Hich gozine-i nadarad. Fagat khodash ejra mishe va ghalat barmigardanad.
+
+🛠 **Mesal-ha:**
+
+    $ false
+    $ echo $?
+    1
+    🔹 Dastoor `false` ejra mishe va ba `echo $?` code error (1) namayesh dade mishe.
+
+    $ if false; then echo "dorost"; else echo "ghalat"; fi
+    ghalat
+    🔹 Dar yek dastoor `if`, `false` baes mishe ghesmat `else` ejra beshe.
+
+✅ **Mesal sade:**
+
+    $ false; echo "dastoor ejra shod"
+    dastoor ejra shod
+    🔹 Agarche `false` ghalat barmigardanad, vali dastoor badi ham ejra mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `false` command is a simple command that represents "not true" or "false". When `false` is executed, it returns an error code (1), indicating the command did not succeed.
+
+⚙️ **Options:**
+    🔹 `false` --> It has no options. It simply executes and returns false.
+
+🛠 **Examples:**
+
+    $ false
+    $ echo $?
+    1
+    🔹 The `false` command is executed and `echo $?` displays the error code (1).
+
+    $ if false; then echo "true"; else echo "false"; fi
+    false
+    🔹 In an `if` statement, `false` causes the `else` part to be executed.
+
+✅ **Simple Example:**
+
+    $ false; echo "command executed"
+    command executed
+    🔹 Even though `false` returns false, the next command still executes.
+

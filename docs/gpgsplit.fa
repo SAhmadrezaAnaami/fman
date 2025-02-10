@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgsplit` baraye joda kardan yek file bozorg e GPG be chand file koochak tar estefade mishavad. In be shoma komak mikonad ta file-ha ra asan tar share konid ya anha ra be surat ghesmat-ghesmat transfer konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `gpgsplit --create- নীতি [andaze]` --> ⚙️ Sakht yek policy jadid baraye split kardan file-ha. `andaze` bayad be byte bashad.
+    🔹 `gpgsplit --input [file]` --> 📥 Specify file-e asli ke bayad split shavad.
+    🔹 `gpgsplit --output [prefix]` --> 📤 Prefix baraye name file-haye jadid. Har file split ba in prefix shoro mishavad.
+    🔹 `gpgsplit --suffix [format]` --> 🔢 Format baraye suffix-e file-ha. `format` mitavanad `%n` (shomare file) ya `%N` (shomare file ba safe padded) bashad.
+
+🛠 **Mesal-ha:**
+
+    $ gpgsplit --create-policy 10M
+    
+    🔹 Sakht policy baraye split kardan file-ha be ghesmat-haye 10 megabyte.
+
+    $ gpgsplit --input myfile.gpg --output myfile_part --suffix %n
+    
+    🔹 Split kardan `myfile.gpg` be file-haye `myfile_part1`, `myfile_part2`, ...
+
+✅ **Mesal sade:**
+
+    $ gpgsplit --input bigfile.gpg --output part --suffix %03n
+
+    🔹 Split kardan `bigfile.gpg` be file-haye `part001`, `part002`, `part003`, ...
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgsplit` command is used to split a large GPG file into smaller parts. This helps you to easily share or transfer files in segments.
+
+⚙️ **Options:**
+    🔹 `gpgsplit --create-policy [size]` --> ⚙️ Create a new policy for splitting files. `size` must be in bytes.
+    🔹 `gpgsplit --input [file]` --> 📥 Specify the input file to split.
+    🔹 `gpgsplit --output [prefix]` --> 📤 Prefix for the names of the new files. Each split file starts with this prefix.
+    🔹 `gpgsplit --suffix [format]` --> 🔢 Format for the file suffixes. `format` can be `%n` (file number) or `%N` (file number with zero-padding).
+
+🛠 **Examples:**
+
+    $ gpgsplit --create-policy 10M
+    
+    🔹 Create a policy for splitting files into 10 megabyte parts.
+
+    $ gpgsplit --input myfile.gpg --output myfile_part --suffix %n
+    
+    🔹 Split `myfile.gpg` into files named `myfile_part1`, `myfile_part2`, ...
+
+✅ **Simple Example:**
+
+    $ gpgsplit --input bigfile.gpg --output part --suffix %03n
+
+    🔹 Split `bigfile.gpg` into files named `part001`, `part002`, `part003`, ...

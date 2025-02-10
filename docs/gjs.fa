@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gjs` baraye ejra kardan barname-haye JavaScript rooye GNOME estefade mishavad. Yani be shoma emkan mide barname-haye grafikio ba JavaScript benevisid ke ba GNOME desktop integration dashte bashan.
+
+⚙️ **Gozine-ha:**
+    🔹 `gjs <esme_file.js>`  --> 🚀 Eejra kardan file JavaScript.
+    🔹 `gjs -v` --> ℹ️ Namayesh dadane version e GJS.
+    🔹 `gjs -c <command>` --> 💻 Eejra kardan yek command JavaScript az terminal.
+
+🛠 **Mesal-ha:**
+
+    $ gjs hello.js
+
+    🔹 Eejra kardan file'e `hello.js`.
+
+    $ gjs -c 'print("Hello, world!")'
+
+    🔹 Eejra kardan command'e `print("Hello, world!")` dar terminal.
+
+✅ **Mesal sade:**
+
+    $ gjs -v
+
+    🔹 Version'e GJS rooye system namayesh dade mishe, mesle "GJS 1.72.0".
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gjs` command is used to execute JavaScript programs on the GNOME platform. It allows you to write graphical applications in JavaScript with GNOME desktop integration.
+
+⚙️ **Options:**
+    🔹 `gjs <file_name.js>` --> 🚀 Execute a JavaScript file.
+    🔹 `gjs -v` --> ℹ️ Display the GJS version.
+    🔹 `gjs -c <command>` --> 💻 Execute a JavaScript command from the terminal.
+
+🛠 **Examples:**
+
+    $ gjs hello.js
+
+    🔹 Executes the file `hello.js`.
+
+    $ gjs -c 'print("Hello, world!")'
+
+    🔹 Executes the command `print("Hello, world!")` in the terminal.
+
+✅ **Simple Example:**
+
+    $ gjs -v
+
+    🔹 Displays the GJS version on your system, such as "GJS 1.72.0".
+

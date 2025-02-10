@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lv` baraye namayesh dadan etela'at dar morede volume group-ha (VG) va logical volume-ha (LV) dar Linux estefade mishavad. Ba in dastoor mitavanid size, name, va digar moshakhasat VG-ha va LV-ha ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lvdisplay` --> 📜 Namayesh etela'ate kamel dar morede hameye LV-ha.
+    🔹 `lvdisplay <name>` --> 🎯 Namayesh etela'ate kamel dar morede LV ba name moshakhas.
+    🔹 `lvscan` --> 👀 Peyda kardan va list kardan hameye LV-ha dar system.
+    🔹 `lvs` --> 📊 Namayesh yek liste kootah az LV-ha ba etela'ate asli.
+
+🛠 **Mesal-ha:**
+
+    $ lvdisplay
+
+    🔹 Namayesh etela'ate kamel dar morede hameye logical volume-ha.
+
+    $ lvdisplay /dev/vg0/lvol0
+
+    🔹 Namayesh etela'ate kamel dar morede LV ba masir `/dev/vg0/lvol0`.
+
+✅ **Mesal sade:**
+
+    $ lvscan
+    ACTIVE            '/dev/vg0/lvol0' [10.00 GiB] inherit
+
+    🔹 In dastoor hameye LV-ha ra scan mikonad va vaziate anha ra neshan midahad. Dar in mesal, LV `/dev/vg0/lvol0` fa'al ast va size an 10.00 GiB ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lv` command (specifically `lvdisplay`, `lvscan`, `lvs`) is used to display information about Logical Volumes (LVs) and Volume Groups (VGs) in Linux. It allows you to view the size, name, and other attributes of LVs.
+
+⚙️ **Options:**
+    🔹 `lvdisplay` --> 📜 Show comprehensive details about all LVs.
+    🔹 `lvdisplay <name>` --> 🎯 Show comprehensive details about a specific LV by name.
+    🔹 `lvscan` --> 👀 Scan and list all LVs on the system.
+    🔹 `lvs` --> 📊 Show a short listing of LVs with essential information.
+
+🛠 **Examples:**
+
+    $ lvdisplay
+
+    🔹 Display detailed information about all logical volumes.
+
+    $ lvdisplay /dev/vg0/lvol0
+
+    🔹 Display detailed information about the LV located at `/dev/vg0/lvol0`.
+
+✅ **Simple Example:**
+
+    $ lvscan
+    ACTIVE            '/dev/vg0/lvol0' [10.00 GiB] inherit
+
+    🔹 This command scans for all LVs and shows their status. In this example, the LV `/dev/vg0/lvol0` is active and has a size of 10.00 GiB.
+

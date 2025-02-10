@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `csplit` baraye joda kardan yek file bozorg be chand file koochak tar, bar asas khatoot ya pattern-ha, be kar mirevad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `csplit filename pattern` --> ✂️ File-ra bar asas `pattern` joda mikonad.
+    🔹 `csplit -k filename pattern` --> 💾 Agar khata rokh bedahad, file-haye sakhte shode ra negah midarad.
+    🔹 `csplit -n digits filename pattern` --> 🔢 Az `digits` baraye esm gozari file-haye joda shode estefade mikonad (masalan, xx01, xx02).
+    🔹 `csplit -f prefix filename pattern` --> ✒️  Az `prefix` be عنوان pishvand baraye name file-haye jadid estefade mikonad (masalan, mypref00, mypref01).
+    🔹 `csplit -s filename pattern` --> 🤫 Size file-haye sakhte shode ra namayesh nemidahad.
+
+🛠 **Mesal-ha:**
+
+    $ csplit file.txt /PATTERN/
+    
+    🔹 `file.txt` ra az har ja ke `PATTERN` peyda shod, joda mikonad.
+
+    $ csplit -k file.txt 10
+    
+    🔹 `file.txt` ra har 10 khat joda mikonad, va agar khataei rokh bedahad, file-haye sakhte shode ra negah midarad.
+
+✅ **Mesal sade:**
+    
+    $ csplit logfile.txt '/^Error/' '{*}'
+   
+    🔹 File `logfile.txt` ra bar asas khatooti ke ba `Error` shoru mishavand, joda mikonad. `{*}` yani hameye matn-ha ra ta akhar file joda kon.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `csplit` command splits a file into sections determined by context lines.
+
+⚙️ **Options:**
+    🔹 `csplit filename pattern` --> ✂️ Splits the file based on the given `pattern`.
+    🔹 `csplit -k filename pattern` --> 💾 Keeps output files if errors occur.
+    🔹 `csplit -n digits filename pattern` --> 🔢 Uses `digits` to form the file name suffixes (e.g., xx01, xx02).
+    🔹 `csplit -f prefix filename pattern` --> ✒️  Uses `prefix` as the output file name prefix (e.g., mypref00, mypref01).
+    🔹 `csplit -s filename pattern` --> 🤫 Suppresses the output of file size counts.
+
+🛠 **Examples:**
+
+    $ csplit file.txt /PATTERN/
+    
+    🔹 Splits `file.txt` at each line containing `PATTERN`.
+
+    $ csplit -k file.txt 10
+    
+    🔹 Splits `file.txt` every 10 lines, and keeps the created files even if an error occurs.
+
+✅ **Simple Example:**
+    
+    $ csplit logfile.txt '/^Error/' '{*}'
+   
+    🔹 Splits `logfile.txt` at each line starting with `Error`. The `{*}` repeats the pattern until the end of the file.

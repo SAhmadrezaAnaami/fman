@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-resolve-host-name` baraye peyda kardan address IP az name domain (host name) estefade mishavad. In dastoor be shoma komak mikonad ke address IP yek computer ro ke az tarighe Avahi (yek system service baraye peyda kardane service-ha dar shabake mahali) share shode peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-4` --> 🌐 Faghat address IPv4 ro neshon bede.
+    🔹 `-6` --> 🌐 Faghat address IPv6 ro neshon bede.
+    🔹 `--resolve-address-only` --> 🎯 Faghat address IP ro neshon bede, bedune name host.
+
+🛠 **Mesal-ha:**
+
+    $ avahi-resolve-host-name example.local
+
+    🔹 Peyda kardane address IP domain "example.local".
+
+    $ avahi-resolve-host-name -4 example.local
+
+    🔹 Peyda kardane address IPv4 domain "example.local".
+
+✅ **Mesal sade:**
+
+    $ avahi-resolve-host-name mycomputer.local
+
+    🔹 Agar "mycomputer.local" dar shabake shoma share shode bashad, address IP an computer namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-resolve-host-name` command is used to resolve a domain name (host name) to an IP address. This command helps you find the IP address of a computer that is shared via Avahi (a system service for service discovery on a local network).
+
+⚙️ **Options:**
+    🔹 `-4` --> 🌐 Only show the IPv4 address.
+    🔹 `-6` --> 🌐 Only show the IPv6 address.
+    🔹 `--resolve-address-only` --> 🎯 Only show the IP address, without the host name.
+
+🛠 **Examples:**
+
+    $ avahi-resolve-host-name example.local
+
+    🔹 Resolve the IP address of the domain "example.local".
+
+    $ avahi-resolve-host-name -4 example.local
+
+    🔹 Resolve the IPv4 address of the domain "example.local".
+
+✅ **Simple Example:**
+
+    $ avahi-resolve-host-name mycomputer.local
+
+    🔹 If "mycomputer.local" is shared on your network, the IP address of that computer will be displayed.

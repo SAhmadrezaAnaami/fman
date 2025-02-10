@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fixcvsdiff` baraye dorost kardan khorooji dastoor `cvsdiff` estefade mishavad ta behtar dar patch estefade shavad. Yani, `fixcvsdiff` khorooji `cvsdiff` ra be shekli tabdil mikonad ke dastoor `patch` betavanad an ra dorost bekar bord.  Dar vaghe, in dastoor bishtar baraye karbarani monaseb ast ke ba CVS (Concurrent Versions System) kar mikonand va mikhahand taghirat ra az tarigh patch apply konand.
+
+⚙️ **Gozine-ha:**
+    🔹 No gozine khas, asasan khorooji `cvsdiff` ra migirad va aan ra dorost mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ cvsdiff -u file.c | fixcvsdiff > file.patch
+
+    🔹 In dastoor khorooji `cvsdiff` ra baraye `file.c` migirad, ba `fixcvsdiff` dorost mikonad va dar `file.patch` zakhire mikonad.
+
+    $ cvsdiff -u -r1.1 file.c | fixcvsdiff | patch -p0
+
+    🔹 In dastoor taghirat bein version 1.1 `file.c` ba version jari ra migirad, ba `fixcvsdiff` dorost mikonad va ba `patch` apply mikonad.
+
+✅ **Mesal sade:**
+
+    $ cvsdiff -u myfile.txt | fixcvsdiff > myfile.patch
+    $ patch -p0 < myfile.patch
+
+    🔹 Aval taghirat ra az `cvsdiff` migirim, ba `fixcvsdiff` dorost mikonim va dar yek file patch zakhire mikonim. Ba'd, az `patch` baraye apply kardan taghirat estefade mikonim.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fixcvsdiff` command is used to fix the output of `cvsdiff` so that it can be properly used with the `patch` command.  Basically, `fixcvsdiff` transforms the output of `cvsdiff` into a format that `patch` can understand and apply correctly.  This command is particularly useful for users working with CVS (Concurrent Versions System) and wishing to apply changes via patches.
+
+⚙️ **Options:**
+    🔹 No specific options, mainly takes the output of `cvsdiff` and corrects it.
+
+🛠 **Examples:**
+
+    $ cvsdiff -u file.c | fixcvsdiff > file.patch
+
+    🔹 This command takes the `cvsdiff` output for `file.c`, fixes it with `fixcvsdiff`, and saves it to `file.patch`.
+
+    $ cvsdiff -u -r1.1 file.c | fixcvsdiff | patch -p0
+
+    🔹 This command takes the changes between version 1.1 of `file.c` and the current version, fixes it with `fixcvsdiff`, and applies it with `patch`.
+
+✅ **Simple Example:**
+
+    $ cvsdiff -u myfile.txt | fixcvsdiff > myfile.patch
+    $ patch -p0 < myfile.patch
+
+    🔹 First we get the changes from `cvsdiff`, fix them using `fixcvsdiff` and save them to a patch file. Then, we use `patch` to apply the changes.

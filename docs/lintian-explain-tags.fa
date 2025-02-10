@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lintian-explain-tags` baraye tozih dadan tag-haye Lintian estefade mishavad. Lintian yek barnameh ast ke package-haye Debian ra check mikonad ta moshkelati ke momken ast dar anha vojud dashte bashad ra peyda konad. In dastoor komak mikonad ta befahmim har tag chi mige va chera mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help` --> ℹ️ Namayesh rahnamaye dastoor.
+    🔹 `--list` --> 📜 List kardan hameye tag-haye Lintian ke mishe tozih dad.
+    🔹 `<tag>` --> 🏷️ Tozih dadan tag-e moshakhas. Mishe chand tag ra ba space joda kard.
+
+🛠 **Mesal-ha:**
+
+    $ lintian-explain-tags E:binary-without-manpage
+    
+    🔹 Tozih midahad tag-e `E:binary-without-manpage` ra.
+
+    $ lintian-explain-tags --list | head -n 10
+    
+    🔹 List avalin 10 tag-e Lintian ra neshan midahad.
+
+✅ **Mesal sade:**
+
+    $ lintian-explain-tags W:copyright-contains-license-reference
+    
+    🔹 Tozih midahad ke chera copyright bayad etela'ate license dashte bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lintian-explain-tags` command is used to explain Lintian tags. Lintian is a program that checks Debian packages for potential problems. This command helps to understand what each tag means and why it is important.
+
+⚙️ **Options:**
+    🔹 `--help` --> ℹ️ Display the command's help message.
+    🔹 `--list` --> 📜 List all Lintian tags that can be explained.
+    🔹 `<tag>` --> 🏷️ Explain the specified tag. Multiple tags can be separated by spaces.
+
+🛠 **Examples:**
+
+    $ lintian-explain-tags E:binary-without-manpage
+    
+    🔹 Explains the tag `E:binary-without-manpage`.
+
+    $ lintian-explain-tags --list | head -n 10
+    
+    🔹 Shows the first 10 Lintian tags from the list.
+
+✅ **Simple Example:**
+
+    $ lintian-explain-tags W:copyright-contains-license-reference
+    
+    🔹 Explains why the copyright file should contain license information.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_makeshlibs` baraye dorost kardane package-haye `shlibs` dar Debian estefade mishavad. In dastoor file-haye library ra scan mikonad va dependency-haye shared library ra moteayen mikonad, va etela'at ra dar file `debian/shlibs.local` zakhire mikonad. In etela'at dar zaman sakhtane package baraye dependency resolution estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--params` --> ⚙️ Namayeshe paramhaye ezafe baraye `dpkg-gensymbols`  
+    🔹 `--dpkg-gensymbols-params=parameter` --> ⚙️ Parametre ezafe baraye `dpkg-gensymbols`.  
+    🔹 `-V[package=version]` --> 📦 Version ezafe baraye check kardane dependency-ha.  
+    🔹 `--` --> ⛔️ Etelef az option-haye `dh_makeshlibs` be dpkg-gensymbols.
+
+🛠 **Mesal-ha:**
+
+    $ dh_makeshlibs
+
+    🔹 Run kardan dastoor ba option-haye pishfarz.
+
+    $ dh_makeshlibs --params -- -u
+
+    🔹 Namayesh paramhaye `dpkg-gensymbols` va update kardan file symbol.
+
+✅ **Mesal sade:**
+
+    $ dh_makeshlibs -Vpackage=2.0
+
+    🔹 Check kardan version dependency-ha baraye package, va etela’at ra dar file `debian/shlibs.local` zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_makeshlibs` command is used to create `shlibs` packages in Debian. This command scans library files, determines shared library dependencies, and saves the information in the `debian/shlibs.local` file. This information is used during package building for dependency resolution.
+
+⚙️ **Options:**
+    🔹 `--params` --> ⚙️ Show extra parameters for `dpkg-gensymbols`.
+    🔹 `--dpkg-gensymbols-params=parameter` --> ⚙️ Add parameter for `dpkg-gensymbols`.
+    🔹 `-V[package=version]` --> 📦 Add version to check dependencies.
+    🔹 `--` --> ⛔️ Pass options directly to `dpkg-gensymbols`, separating them from `dh_makeshlibs` options.
+
+🛠 **Examples:**
+
+    $ dh_makeshlibs
+
+    🔹 Run the command with default options.
+
+    $ dh_makeshlibs --params -- -u
+
+    🔹 Show `dpkg-gensymbols` parameters and update symbol files.
+
+✅ **Simple Example:**
+
+    $ dh_makeshlibs -Vpackage=2.0
+
+    🔹 Check version dependencies for the specified package and store the information in the `debian/shlibs.local` file.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `loimpress` baraye baz kardan va tabdil kardan file-haye Presentation (mesle .ppt, .odp) ba estefade az LibreOffice estefade mishavad. In dastoor dar terminal kar mikonad va be shoma komak mikonad ke file-ha ra bedune baz kardan LibreOffice GUI, baz ya tabdil konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--convert-to format[:filter]` --> 🔄 Tabdil file be yek format digar.  Masalan: `--convert-to pdf` file ra be PDF tabdil mikonad. Filter-ha ezafe bar format baraye control bishtar ast.
+    🔹 `--headless` --> 👤 LibreOffice ra bedune GUI baz mikonad. In baraye estefade dar script-ha ya server-ha munasib ast.
+    🔹 `--invisible` --> 👻 LibreOffice ra be surat makhfi baz mikonad (mesle `--headless`), vali farayand dar poshte parde edame peida mikonad.
+    🔹 `--print-to-file filename.pdf` --> 🖨️ File ra be filename.pdf chap mikonad.
+    🔹 `--outdir directory` --> 📁 Pooshe-i ra baraye save kardan file-haye tabdil shode moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ loimpress --convert-to pdf file.odp
+
+    🔹 File `file.odp` ra be `file.pdf` tabdil mikonad.
+
+    $ loimpress --headless --convert-to pdf --outdir /tmp file.ppt
+
+    🔹 File `file.ppt` ra be `PDF` tabdil mikonad, dar pooshe `/tmp` save mikonad, va LibreOffice ra bedune GUI baz mikonad.
+
+✅ **Mesal sade:**
+
+    $ loimpress --convert-to 'pdf:writer_pdf_Export' presentation.odp
+
+    🔹  File `presentation.odp` ra be PDF tabdil mikonad, va az filter `writer_pdf_Export` baraye behtarin natije dar tabdil estefade mikonad.  In be shoma control bishtari bar rooye gozine-haye tabdil PDF midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `loimpress` command is used to open and convert presentation files (like .ppt, .odp) using LibreOffice. It operates from the terminal, allowing you to open or convert files without needing the LibreOffice GUI.
+
+⚙️ **Options:**
+    🔹 `--convert-to format[:filter]` --> 🔄 Converts the file to a different format. For example: `--convert-to pdf` converts the file to PDF. Filters refine the conversion process.
+    🔹 `--headless` --> 👤 Runs LibreOffice without a GUI. Useful for scripting and server environments.
+    🔹 `--invisible` --> 👻 Runs LibreOffice invisibly (similar to `--headless`), but the process continues in the background.
+    🔹 `--print-to-file filename.pdf` --> 🖨️ Prints the file to `filename.pdf`.
+    🔹 `--outdir directory` --> 📁 Specifies a directory to save the converted files.
+
+🛠 **Examples:**
+
+    $ loimpress --convert-to pdf file.odp
+
+    🔹 Converts `file.odp` to `file.pdf`.
+
+    $ loimpress --headless --convert-to pdf --outdir /tmp file.ppt
+
+    🔹 Converts `file.ppt` to PDF, saves it in the `/tmp` directory, and runs LibreOffice without a GUI.
+
+✅ **Simple Example:**
+
+    $ loimpress --convert-to 'pdf:writer_pdf_Export' presentation.odp
+
+    🔹 Converts `presentation.odp` to PDF, using the `writer_pdf_Export` filter for optimal PDF conversion settings.  This gives more control over the PDF conversion options.

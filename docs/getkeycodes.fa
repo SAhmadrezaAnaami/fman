@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `getkeycodes` baraye gereftan listi az keycode-ha va nameshune az keyboard estefade mishe. In dastoor be shoma komak mikone ta keycode har key az keyboardetoon ro peyda konid, ke baraye config kardan barname-ha ya script-ha kheili mofid hast.
+
+⚙️ **Gozine-ha:**
+    🔹 `getkeycodes` --> 📜 Namayesh listi az keycode-ha va name-ha.
+    🔹 `getkeycodes | grep <kalame>` --> 👀 Filter kardan natije bar asase yek kalame khas (mesal: `grep Shift` baraye keycode-haye marboot be Shift).
+
+🛠 **Mesal-ha:**
+
+    $ getkeycodes
+
+    🔹 Namayesh list kamel keycode-ha va name-ha.
+
+    $ getkeycodes | grep Control
+
+    🔹 Namayesh keycode-hayei ke dar name-shoon kalame "Control" vojood dare.
+
+✅ **Mesal sade:**
+
+    $ getkeycodes | grep a
+
+    🔹 Peyda kardan keycode harf "a" va name aan. In baraye tayin keycode harf "a" dar configuration file-ha estefade mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `getkeycodes` command is used to retrieve a list of keycodes and their corresponding names from the keyboard. This command helps you find the keycode for each key on your keyboard, which is useful for configuring applications or scripts.
+
+⚙️ **Options:**
+    🔹 `getkeycodes` --> 📜 Display a list of keycodes and names.
+    🔹 `getkeycodes | grep <word>` --> 👀 Filter the output based on a specific word (e.g., `grep Shift` for keycodes related to Shift).
+
+🛠 **Examples:**
+
+    $ getkeycodes
+
+    🔹 Display the complete list of keycodes and names.
+
+    $ getkeycodes | grep Control
+
+    🔹 Display keycodes that have the word "Control" in their name.
+
+✅ **Simple Example:**
+
+    $ getkeycodes | grep a
+
+    🔹 Find the keycode for the letter "a" and its name. This is used to determine the keycode of the letter "a" in configuration files.

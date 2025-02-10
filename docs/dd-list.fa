@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dd-list` baraye namayesh dadan dastgah-haye disk va partition-haye mojud dar system estefade mishavad. In dastoor be shoma komak mikonad ta etela'ati dar mored disk-haye sakht, SSD-ha, USB drive-ha, va digar vast-haye zakhire-sazi be dast avarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dd-list`  --> 📜 Namayesh hameye disk-ha va partition-ha ba etela'ate asasi.
+    🔹 `dd-list --json`  --> 📦 Khuruji ra be shekl JSON namayesh midahad baraye barname-nevisi.
+    🔹 `dd-list --scsi`  --> 🔩 Namayesh etela'ate SCSI baraye disk-ha.
+
+🛠 **Mesal-ha:**
+
+    $ dd-list
+
+    🔹 Namayesh listi az hameye disk-ha va partition-ha.
+
+    $ dd-list --json
+
+    🔹 Khuruji dar format JSON baraye estefade dar script-ha va barname-ha.
+
+✅ **Mesal sade:**
+
+    $ dd-list | grep /dev/sda
+
+    🔹 In dastoor natije-ye `dd-list` ra filter mikonad ta etela'at marbut be disk `/dev/sda` ra namayesh dahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dd-list` command is used to display the available disk devices and partitions on the system. It helps you to retrieve information about hard drives, SSDs, USB drives, and other storage media.
+
+⚙️ **Options:**
+    🔹 `dd-list`  --> 📜 Show all disks and partitions with basic information.
+    🔹 `dd-list --json`  --> 📦 Display the output in JSON format for programming purposes.
+    🔹 `dd-list --scsi`  --> 🔩 Show SCSI information for disks.
+
+🛠 **Examples:**
+
+    $ dd-list
+
+    🔹 Displays a list of all disks and partitions.
+
+    $ dd-list --json
+
+    🔹 Output in JSON format for use in scripts and applications.
+
+✅ **Simple Example:**
+
+    $ dd-list | grep /dev/sda
+
+    🔹 This command filters the output of `dd-list` to show information related to the `/dev/sda` disk.

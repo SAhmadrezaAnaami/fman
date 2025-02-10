@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzgrep` mesle dastoor `grep` ast, amma baraye gashtan daroon file-haye `gzip` shode (zip-shode) be kar miravad. Yani shoma mitoonid matn ya pattern-haye khassi ra dar file-haye zip-shode bedoon baz kardan-e anha peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzgrep "kalame" file.gz`  --> 🔑 Peyda kardan "kalame" dar file.gz
+    🔹 `lzgrep -i "kalame" file.gz` --> 🔤 Peyda kardan "kalame" bedoon tavajoh be horoof bozorg va koochak
+    🔹 `lzgrep -n "kalame" file.gz` --> 🔢 Namayesh shomare-ye khat-haee ke "kalame" dar anha peyda shode
+    🔹 `lzgrep -l "kalame" file.gz` --> 📃 Faghat namayesh filename file-haee ke "kalame" dar anha peyda shode
+    🔹 `lzgrep -v "kalame" file.gz` --> 🚫 Namayesh khat-haee ke "kalame" ra nadarand
+
+🛠 **Mesal-ha:**
+
+    $ lzgrep "error" logfile.gz
+
+    🔹 Peyda kardan hame-ye khat-haee ke kalame "error" ra dar logfile.gz darand.
+
+    $ lzgrep -i "warning" data.gz
+
+    🔹 Peyda kardan hame-ye khat-haee ke kalame "warning" ra dar data.gz darand, bedoon tavajoh be horoof bozorg va koochak.
+
+✅ **Mesal sade:**
+
+    $ lzgrep -n "important" report.gz
+
+    🔹 Namayesh hame-ye khat-haee ke kalame "important" ra dar report.gz darand, be hamrahe shomare-ye khat.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzgrep` command is similar to the `grep` command but is specifically designed for searching within `gzip` compressed files.  This allows you to find text or patterns within zipped files without needing to decompress them first.
+
+⚙️ **Options:**
+    🔹 `lzgrep "word" file.gz`  --> 🔑 Find "word" in file.gz
+    🔹 `lzgrep -i "word" file.gz` --> 🔤 Find "word" case-insensitively in file.gz
+    🔹 `lzgrep -n "word" file.gz` --> 🔢 Display the line numbers where "word" is found
+    🔹 `lzgrep -l "word" file.gz` --> 📃 Only display the filenames where "word" is found
+    🔹 `lzgrep -v "word" file.gz` --> 🚫 Display lines that *do not* contain "word"
+
+🛠 **Examples:**
+
+    $ lzgrep "error" logfile.gz
+
+    🔹 Finds all lines containing the word "error" in the logfile.gz.
+
+    $ lzgrep -i "warning" data.gz
+
+    🔹 Finds all lines containing the word "warning" in data.gz, ignoring case.
+
+✅ **Simple Example:**
+
+    $ lzgrep -n "important" report.gz
+
+    🔹 Displays all lines containing the word "important" in report.gz, along with their line numbers.

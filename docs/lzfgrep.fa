@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzfgrep` mesle `zgrep` amal mikonad, vali baraye file-haye `gzip` shode, kheyli sare'tare. Baraye jostojooye matn (text) dar file-haye zip shode be kar miravad bedune inke niyaz bashe aval unzip konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzfgrep -i "matn"` --> 🔎 Jostojo ba bi-deghati be horoof bozorg va koochak (case-insensitive search)
+    🔹 `lzfgrep -n "matn"` --> 🔢 Namayesh shomareye khat-haee ke matn dar anha peyda shode
+    🔹 `lzfgrep -c "matn"` --> 📊 Namayesh tedad khat-haee ke matn dar anha vojood darad
+    🔹 `lzfgrep -l "matn" file*.gz` --> 📃 Namayesh esme file-haee ke matn dar anha peyda shode
+    🔹 `lzfgrep -v "matn"` --> 🚫 Namayesh khat-haee ke matn dar anha nist (inverse match)
+
+🛠 **Mesal-ha:**
+
+    $ lzfgrep "error" logfile.gz
+
+    🔹 Peyda kardane khat-haee ke kalame "error" ra dar file `logfile.gz` darand.
+
+    $ lzfgrep -i "warning" *.gz
+
+    🔹 Peyda kardane khat-haee ke kalame "warning" (ba bi-deghati be horoof bozorg va koochak) ra dar hameye file-haye `gz` darand.
+
+✅ **Mesal sade:**
+
+    $ lzfgrep -c "2023" data.gz
+
+    🔹 Tedad khat-haee ke sal "2023" ra dar file `data.gz` darand, namayesh dade mishavad. In baraye mohasebeye tedad etefaghate salaneh dar log-ha mohem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzfgrep` command is similar to `zgrep`, but it's much faster for gzipped files. It's used to search for text within compressed (gzip) files without needing to decompress them first.
+
+⚙️ **Options:**
+    🔹 `lzfgrep -i "text"` --> 🔎 Case-insensitive search for "text"
+    🔹 `lzfgrep -n "text"` --> 🔢 Show line numbers where "text" is found
+    🔹 `lzfgrep -c "text"` --> 📊 Show count of lines containing "text"
+    🔹 `lzfgrep -l "text" file*.gz` --> 📃 Show filenames where "text" is found
+    🔹 `lzfgrep -v "text"` --> 🚫 Show lines that *do not* contain "text" (inverse match)
+
+🛠 **Examples:**
+
+    $ lzfgrep "error" logfile.gz
+
+    🔹 Finds lines containing the word "error" in the file `logfile.gz`.
+
+    $ lzfgrep -i "warning" *.gz
+
+    🔹 Finds lines containing the word "warning" (case-insensitive) in all `.gz` files in the current directory.
+
+✅ **Simple Example:**
+
+    $ lzfgrep -c "2023" data.gz
+
+    🔹 Displays the number of lines that contain the year "2023" in the file `data.gz`.  Useful for counting yearly occurrences in logs.

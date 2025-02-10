@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gamemoded` yek daemon (service) ast ke be shoma komak mikonad system-e khod ra baraye bazi beینه (optimize) konid. Vaghti bazi ra shoru mikonid, `gamemoded` be soorat otomatik CPU governor ra be 'performance' taghir midehad, i/o priority ra behtar mikonad, va script-haye digari ke baraye behtar kardan performance-e bazi neveshte shode-and ra ejra mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gamemoded -s`  --> 📊 Status: Namayesh vaziyat-e fa'al ya gheir fa'al budan-e gamemoded.
+    🔹 `gamemoded -r`  --> 🔄 Request: Egera-ye dastoor be soorate dasti
+    🔹 `gamemoded -d`  --> 💀 Kill: Paak kardane service gamemode
+
+🛠 **Mesal-ha:**
+
+    $ gamemoded -s
+
+    🔹 Namayesh vaziyat-e gamemoded. Agar bazi fa'al bashad, "active" va agar na bashad "inactive" neshon midehad.
+
+    $ gamemoded -r
+
+    🔹 Egera-ye gamemoded be soorate dasti. In agar gamemoded be soorate otomatik shoru nashavad mofeed ast.
+
+✅ **Mesal sade:**
+
+    $ gamemoded -s
+    active
+
+    🔹 In neshan midehad ke gamemoded alan fa'al ast va system baraye bazi beینه shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gamemoded` command is a daemon (service) that helps you optimize your system for gaming. When you start a game, `gamemoded` automatically changes the CPU governor to 'performance', improves I/O priority, and executes other scripts written to improve gaming performance.
+
+⚙️ **Options:**
+    🔹 `gamemoded -s`  --> 📊 Status: Displays whether gamemoded is currently active or inactive.
+    🔹 `gamemoded -r`  --> 🔄 Request: Manually trigger gamemoded to activate.
+    🔹 `gamemoded -d`  --> 💀 Kill: Stop the Gamemode service
+
+🛠 **Examples:**
+
+    $ gamemoded -s
+
+    🔹 Shows the status of gamemoded.  If a game is active, it will show "active", otherwise it will show "inactive".
+
+    $ gamemoded -r
+
+    🔹 Manually triggers gamemoded to activate.  This is useful if gamemoded doesn't start automatically.
+
+✅ **Simple Example:**
+
+    $ gamemoded -s
+    active
+
+    🔹 This indicates that gamemoded is currently active and the system is optimized for gaming.

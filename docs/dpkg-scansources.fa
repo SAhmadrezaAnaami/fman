@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-scansources` baraye dorost kardane file `sources.list` az yek ya chand directory ke package source (.dsc) daran estefade mishe.  In dastoor etela'at package source ro az file .dsc mikhone va un ro be formate `sources.list` minevise.
+
+⚙️ **Gozine-ha:**
+    🔹 `-m`  --> 📝 Ezafe kardane etela'at machine-readable be `sources.list`.  Baraye estefade dar script ha mofide.
+    🔹 `-t <type>` --> 🏷️ Specify kardane type repository (deb ya deb-src).  Age nazaninid, khodesh detect mikone.
+    🔹 `-p <prefix>` --> 📂 Ezafe kardane prefix be path-haye directory dar `sources.list`.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-scansources ./packages > sources.list
+
+    🔹 Dorost kardane file `sources.list` az hameye file-haye .dsc dar directory `packages`.
+
+    $ dpkg-scansources -m -t deb-src ./src_packages >> sources.list
+
+    🔹 Ezafe kardane etela'ate machine-readable az package source ha dar `src_packages` be file `sources.list`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-scansources -p /myrepo ./repo > sources.list
+
+    🔹 Hameye source package ha ro az directory `./repo` scan mikone va `deb file:/myrepo ./repo /` ro dar file `sources.list` minevise.  `myrepo` prefixi hast ke ezafe shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-scansources` command is used to create a `sources.list` file from one or more directories containing Debian source package (.dsc) files. It reads the source package information from the .dsc files and writes it in the `sources.list` format.
+
+⚙️ **Options:**
+    🔹 `-m`  --> 📝 Add machine-readable information to the `sources.list`. Useful for use in scripts.
+    🔹 `-t <type>` --> 🏷️ Specify the repository type (deb or deb-src). If not specified, it attempts to auto-detect the type.
+    🔹 `-p <prefix>` --> 📂 Add a prefix to the directory paths in the generated `sources.list` entry.
+
+🛠 **Examples:**
+
+    $ dpkg-scansources ./packages > sources.list
+
+    🔹 Create a `sources.list` file from all .dsc files found in the `./packages` directory.
+
+    $ dpkg-scansources -m -t deb-src ./src_packages >> sources.list
+
+    🔹 Add machine-readable information for source packages located in `src_packages` to an existing `sources.list` file.
+
+✅ **Simple Example:**
+
+    $ dpkg-scansources -p /myrepo ./repo > sources.list
+
+    🔹 Scans all source packages in the `./repo` directory and writes `deb file:/myrepo ./repo /` into the file `sources.list`.  `/myrepo` is the added prefix.

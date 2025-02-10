@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `firefox` baraye baz kardan web browser Firefox az terminal estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `firefox &`  --> 🌐 Firefox ra dar paszamine (background) baz kon va terminal ra azad negah dar.
+    🔹 `firefox -new-window <url>` --> ➕ Yek panjere jadid Firefox ba address dade shode baz kon.
+    🔹 `firefox -private-window <url>` --> 🕶️ Yek panjere khososi (private) jadid Firefox ba address dade shode baz kon.
+    🔹 `firefox -P <profile>` --> 👤 Firefox ra ba profile moshakhas shode baz kon.
+
+🛠 **Mesal-ha:**
+
+    $ firefox
+
+    🔹 Firefox ra baz mikonad.
+
+    $ firefox https://www.google.com
+
+    🔹 Firefox ra baz mikonad va safhe Google ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ firefox -new-window https://www.example.com
+
+    🔹 Yek panjere jadid dar Firefox baz mishavad va address https://www.example.com ra load mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `firefox` command is used to launch the Firefox web browser from the terminal.
+
+⚙️ **Options:**
+    🔹 `firefox &`  --> 🌐 Launch Firefox in the background and free up the terminal.
+    🔹 `firefox -new-window <url>` --> ➕ Open a new Firefox window with the specified URL.
+    🔹 `firefox -private-window <url>` --> 🕶️ Open a new Firefox private window with the specified URL.
+    🔹 `firefox -P <profile>` --> 👤 Launch Firefox with the specified profile.
+
+🛠 **Examples:**
+
+    $ firefox
+
+    🔹 Launches Firefox.
+
+    $ firefox https://www.google.com
+
+    🔹 Launches Firefox and displays the Google webpage.
+
+✅ **Simple Example:**
+
+    $ firefox -new-window https://www.example.com
+
+    🔹 Opens a new window in Firefox and loads the URL https://www.example.com.

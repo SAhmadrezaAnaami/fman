@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgfmt` baraye tabdil kardan file-haye `‎.po` (ke shamel tarjome-ha hastand) be file-haye `‎.mo` (ke file-haye binary hastand va barname-ha estefade mikonand) be kar miravad. Yani, `msgfmt` tarjome-haye shoma ra az yek formate ghabl-khani (readable) be yek formate mashin-khani (machine-readable) tabdil mikonad. 
+
+⚙️ **Gozine-ha:**
+    🔹 `msgfmt -o <file.mo> <file.po>`  --> 📤  Eejad file `.mo` ba name moshakhas az file `.po`.
+    🔹 `msgfmt --statistics <file.po>`  --> 📊  Namayesh amari az file `.po` (tedad payam-ha, tarjome shode-ha, va gheire).
+    🔹 `msgfmt --check-format <file.po>` --> ✅  Check kardane formate file `.po` baraye khataha.
+
+🛠 **Mesal-ha:**
+    
+    $ msgfmt -o app.mo app.po
+    
+    🔹 Tabdil file `app.po` be `app.mo`
+
+    $ msgfmt --statistics app.po
+   
+    🔹 Namayesh amari az file `app.po`.
+
+✅ **Mesal sade:**
+    
+    $ msgfmt -o fa.mo fa.po
+ 
+    🔹 File `fa.po` (ke tarjome-haye Farsi ra darad) be file `fa.mo` tabdil mishavad ta barname-ha betavanand az an estefade konand va barname ra be Farsi namayesh dahand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgfmt` command is used to convert `.po` files (containing translations) into `.mo` files (binary files used by applications). In other words, `msgfmt` transforms your translations from a human-readable format to a machine-readable format.
+
+⚙️ **Options:**
+    🔹 `msgfmt -o <file.mo> <file.po>`  --> 📤 Create a `.mo` file with a specific name from a `.po` file.
+    🔹 `msgfmt --statistics <file.po>`  --> 📊 Display statistics about the `.po` file (number of messages, translated ones, etc.).
+    🔹 `msgfmt --check-format <file.po>` --> ✅ Check the format of the `.po` file for errors.
+
+🛠 **Examples:**
+    
+    $ msgfmt -o app.mo app.po
+    
+    🔹 Convert `app.po` file to `app.mo`
+
+    $ msgfmt --statistics app.po
+   
+    🔹 Display statistics of `app.po` file.
+
+✅ **Simple Example:**
+    
+    $ msgfmt -o fa.mo fa.po
+ 
+    🔹 The `fa.po` file (containing Persian translations) is converted into the `fa.mo` file so that applications can use it and display the program in Persian.

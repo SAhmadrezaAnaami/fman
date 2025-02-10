@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-system-monitor` yek barnameh grafikie ke resourse-haye system shoma ro neshoon mide, mesle CPU, memory, disk va network. Ba estefadeh az in barnameh, mitoonid bebineed kodoom process-ha bishtar resource-ha ro estefade meekonand va agar lazem bashe, process-ha ro bekhorid (kill).
+
+⚙️ **Gozine-ha:**
+    🔹 No direct command-line options. --> 🖥️  `gnome-system-monitor`  yek barnameye grafikie va az terminal seda zade mishe vali az option-haye command-line poshtibani nemikone.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-system-monitor
+
+    🔹  Ejra kardan barnameh `gnome-system-monitor` az terminal.  In barnameh yek panjereh jadid baz meekone ke resourse-haye system ro neshoon mide.
+
+    $ gnome-system-monitor &
+
+    🔹 Ejra kardan dar background.
+
+✅ **Mesal sade:**
+
+    $ gnome-system-monitor
+
+    🔹  Ba ejra kardane in dastoor, yek panjereh baz mishe ke CPU usage, memory usage, network activity, va process-haye dar hale ejra ro neshoon mide. Shoma mitoonid process-hayee ro ke bishtar resource-ha ro estefade meekonand bebineed va agar lazem bashe, anha ro kill koneed.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-system-monitor` is a graphical program that displays your system's resources, such as CPU, memory, disk, and network. With this program, you can see which processes are using the most resources and, if necessary, kill processes.
+
+⚙️ **Options:**
+    🔹 No direct command-line options. --> 🖥️ `gnome-system-monitor` is a graphical program and is called from the terminal, but does not support command-line options.
+
+🛠 **Examples:**
+
+    $ gnome-system-monitor
+
+    🔹 Running the `gnome-system-monitor` program from the terminal. This program opens a new window that shows system resources.
+
+    $ gnome-system-monitor &
+
+    🔹 Running in the background.
+
+✅ **Simple Example:**
+
+    $ gnome-system-monitor
+
+    🔹 By running this command, a window opens showing CPU usage, memory usage, network activity, and running processes. You can see which processes are using the most resources and, if necessary, kill them.

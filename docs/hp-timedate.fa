@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-timedate` baraye tanzeem tarik va saat dar system-haye HP estefade mishavad. In dastoor be shoma komak mikonad ke tarik va saat ra be soorate interactive ya az command line set konid. Agar system shoma HP bashad va be tanzeem tarik va saat ehtiaj dashte bashid, in dastoor mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-timedate` --> 🕰️ Baz kardan yek interface baraye tanzeem tarik va saat be soorate graphical.
+    🔹 `hp-timedate --help` --> ℹ️ Namayesh rahnamayi dastoor va gozine-ha.
+    🔹 `hp-timedate --set-date='YYYY-MM-DD'` --> 📅 Set kardan tarik be form "sal-mah-rooz". (Masalan: '2024-10-27')
+    🔹 `hp-timedate --set-time='HH:MM:SS'` --> ⏱️ Set kardan saat be form "saat:daghighe:saniye". (Masalan: '14:30:00')
+    🔹 `hp-timedate --sync-ntp` --> 🌐 Hamgam sazi saat system ba server NTP (Network Time Protocol) baraye zaman accurate.
+
+🛠 **Mesal-ha:**
+
+    $ hp-timedate
+
+    🔹 Baz kardan tool graphical baraye tanzeem tarik va saat.
+
+    $ hp-timedate --set-date='2024-11-15' --set-time='08:45:00'
+
+    🔹 Set kardan tarik be 15 November 2024 va saat be 8:45 AM.
+
+✅ **Mesal sade:**
+
+    $ hp-timedate --sync-ntp
+
+    🔹 Dastoor saat system ra ba estefade az server NTP hamgam mikonad, ke behtar ast agar saat system az dast rafte bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-timedate` command is used to configure the date and time settings on HP systems. It allows you to set the date and time interactively or through the command line. This command is useful if you need to adjust the system's date and time and are using an HP system.
+
+⚙️ **Options:**
+    🔹 `hp-timedate` --> 🕰️ Opens a graphical interface to configure the date and time.
+    🔹 `hp-timedate --help` --> ℹ️ Displays the command's help information and options.
+    🔹 `hp-timedate --set-date='YYYY-MM-DD'` --> 📅 Sets the date in the format "year-month-day". (e.g., '2024-10-27')
+    🔹 `hp-timedate --set-time='HH:MM:SS'` --> ⏱️ Sets the time in the format "hour:minute:second". (e.g., '14:30:00')
+    🔹 `hp-timedate --sync-ntp` --> 🌐 Synchronizes the system time with an NTP (Network Time Protocol) server for accurate time.
+
+🛠 **Examples:**
+
+    $ hp-timedate
+
+    🔹 Opens the graphical tool for setting the date and time.
+
+    $ hp-timedate --set-date='2024-11-15' --set-time='08:45:00'
+
+    🔹 Sets the date to November 15, 2024, and the time to 8:45 AM.
+
+✅ **Simple Example:**
+
+    $ hp-timedate --sync-ntp
+
+    🔹 This command synchronizes the system time using an NTP server, which is helpful if the system clock has drifted.

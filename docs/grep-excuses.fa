@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep-excuses` baraye jostojooy e’ezar (excuses) dar yek database az e’ezar estefade mishavad. In dastoor yek rah-e asan baraye peyda kardan e’ezar haye khande dar va monaseb baraye vaghe-e haye mokhtalef ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `grep-excuses -n <tedad>`  --> 🔢 Namayesh <tedad> e’ezar tasadofi (random).
+    🔹 `grep-excuses -c`      --> 📊 Shomaresh tedad e’ezar haye mojood dar database.
+    🔹 `grep-excuses -s <kalame>` --> 🔍 Jostojooy e’ezar hayi ke shamel kalame `<kalame>` hastand.
+    🔹 `grep-excuses -a` --> 🔄 Namayesh hameye e’ezar haye mojood dar database.
+
+🛠 **Mesal-ha:**
+
+    $ grep-excuses -n 3
+
+    🔹 Namayesh 3 e’ezar tasadofi.
+
+    $ grep-excuses -s computer
+
+    🔹 Namayesh e’ezar hayi ke kalame "computer" dar anha mojood ast.
+
+✅ **Mesal sade:**
+
+    $ grep-excuses -c
+
+    🔹 Shomaresh va namayesh tedad kolli e’ezar haye mojood dar database. Misal: "There are 15 excuses available."
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep-excuses` command is used to search for excuses in a database of excuses. It provides a simple way to find funny and relevant excuses for different situations.
+
+⚙️ **Options:**
+    🔹 `grep-excuses -n <number>`  --> 🔢 Display <number> of random excuses.
+    🔹 `grep-excuses -c`      --> 📊 Count the total number of excuses available in the database.
+    🔹 `grep-excuses -s <word>` --> 🔍 Search for excuses that contain the word `<word>`.
+    🔹 `grep-excuses -a` --> 🔄 Show all excuses in the database.
+
+🛠 **Examples:**
+
+    $ grep-excuses -n 3
+
+    🔹 Display 3 random excuses.
+
+    $ grep-excuses -s computer
+
+    🔹 Display excuses that contain the word "computer".
+
+✅ **Simple Example:**
+
+    $ grep-excuses -c
+
+    🔹 Count and display the total number of excuses in the database. Example output: "There are 15 excuses available."

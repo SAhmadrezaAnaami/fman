@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2slx-wrapper` yek roosh baraye chap kardane file-haye PDF ya PostScript rooye printer-haye GDI (ke ba foo2zjs estefade mishan) ast.  Be jaye estefade az PDF ya PostScript be tore mostaghim, in dastoor file ro be format-i ke printer mifahme tabdil mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `-z<zoom>` --> 🔍 Zoom kardan safhe. Masalan `-z150` safhe ro 150% bozorgtar mikone.
+    🔹 `-r<resolution>` --> 🎯 Taghire deghat chap. Masalan `-r600` deghat ro be 600 DPI miresune.
+    🔹 `-p<paper>` --> 📄 Entkhab andazeye kaghaz. Masalan `-pletter` andazeye letter ro entkhab mikone.
+    🔹 `-d<duplex>` --> 🔄 Chap do rooye. Masalan `-dlong` baraye chap do rooye az samt bala.
+
+🛠 **Mesal-ha:**
+
+    $ foo2slx-wrapper file.pdf
+
+    🔹 Chap kardane file PDF ba estefade az ayarehaye pishfarz.
+
+    $ foo2slx-wrapper -z120 -r300 file.ps
+
+    🔹 Chap kardane file PostScript ba zoom 120% va deghat 300 DPI.
+
+✅ **Mesal sade:**
+
+    $ foo2slx-wrapper -pletter file.pdf > output.prn
+
+    🔹 Chap kardane file PDF rooye kaghaz letter va save kardane natije be unvane yek file .prn.  In file .prn ro mishe be printer ferestad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2slx-wrapper` command is a method for printing PDF or PostScript files on GDI printers (typically used with foo2zjs drivers).  Instead of directly sending PDF or PostScript, this command converts the file into a format the printer understands.
+
+⚙️ **Options:**
+    🔹 `-z<zoom>` --> 🔍 Zoom the page. For example, `-z150` zooms the page to 150%.
+    🔹 `-r<resolution>` --> 🎯 Change the print resolution. For example, `-r600` sets the resolution to 600 DPI.
+    🔹 `-p<paper>` --> 📄 Select the paper size. For example, `-pletter` selects letter size.
+    🔹 `-d<duplex>` --> 🔄 Enable duplex (two-sided) printing. For example, `-dlong` for long-edge duplex printing.
+
+🛠 **Examples:**
+
+    $ foo2slx-wrapper file.pdf
+
+    🔹 Print the PDF file using default settings.
+
+    $ foo2slx-wrapper -z120 -r300 file.ps
+
+    🔹 Print the PostScript file with 120% zoom and 300 DPI resolution.
+
+✅ **Simple Example:**
+
+    $ foo2slx-wrapper -pletter file.pdf > output.prn
+
+    🔹 Print the PDF file on letter-sized paper and save the output as a .prn file.  This .prn file can then be sent directly to the printer.

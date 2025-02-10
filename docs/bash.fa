@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `bash` yek zaban-e dasturi (shell) ast ke baraye ejra-ye dastoor-ha va neveshtan-e script-ha dar system-haye Unix va Linux estefade mishavad.  An yek barnameh-ye interprer ast ke dastoor-ha ra az karbar migirad va anha ra ejra mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bash script.sh`  --> 🚀 Ejra-ye yek script bash.
+    🔹 `bash -c 'dastoor'` --> 🎯 Ejra-ye yek dastoor az tarigh command line.
+    🔹 `bash --version`   --> ℹ️  Namayesh version bash.
+    🔹 `bash -x script.sh` --> 🐛 Debug kardane script bash ba namayeshe har khat ghabl az ejra.
+
+🛠 **Mesal-ha:**
+
+    $ bash myscript.sh
+
+    🔹 Ejra-ye script bash be name myscript.sh.
+
+    $ bash -c 'echo "Hello, world!"'
+
+    🔹 Chap kardane "Hello, world!" az tarigh command line.
+
+✅ **Mesal sade:**
+
+    $ bash --version
+
+    🔹 Namayesh version bash ke dar system shoma نصب shodeh ast.  Az in dastoor baraye اطمینان az nasb صحیح bash estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `bash` is a command language interpreter (shell) used for executing commands and writing scripts on Unix and Linux systems. It’s an interpreter program that takes commands from the user and executes them.
+
+⚙️ **Options:**
+    🔹 `bash script.sh`  --> 🚀 Execute a bash script.
+    🔹 `bash -c 'command'` --> 🎯 Execute a command from the command line.
+    🔹 `bash --version`   --> ℹ️  Display the bash version.
+    🔹 `bash -x script.sh` --> 🐛 Debug a bash script by showing each line before execution.
+
+🛠 **Examples:**
+
+    $ bash myscript.sh
+
+    🔹 Run the bash script named myscript.sh.
+
+    $ bash -c 'echo "Hello, world!"'
+
+    🔹 Print "Hello, world!" from the command line.
+
+✅ **Simple Example:**
+
+    $ bash --version
+
+    🔹 Display the version of bash installed on your system.  This command is used to ensure bash is properly installed.
+

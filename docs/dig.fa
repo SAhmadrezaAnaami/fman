@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dig` (domain information groper) baraye query kardan DNS server-ha estefade mishavad. Be zaban sade, ba `dig` mitoonid etela'ati dar morede domain-ha (masalan IP address, MX record, etc.) az DNS server-ha begirid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dig example.com` --> 🤔  Query kardan IP address A record baraye example.com.
+    🔹 `dig example.com MX` --> 📧 Query kardan MX record baraye example.com (mail exchange).
+    🔹 `dig example.com NS` --> 🌐 Query kardan NS record baraye example.com (name server).
+    🔹 `dig +trace example.com` --> 🔭 Trace kardan path query az root DNS server ta javab.
+    🔹 `dig -x <IP address>` --> 📍 Reverse DNS lookup, peida kardan name domain az IP address.
+
+🛠 **Mesal-ha:**
+
+    $ dig google.com
+
+    🔹  Namayesh IP address google.com az DNS server pishfarz.
+
+    $ dig @8.8.8.8 google.com
+
+    🔹  Query kardan IP address google.com az DNS server 8.8.8.8 (Google's public DNS).
+
+✅ **Mesal sade:**
+
+    $ dig example.com A +short
+
+    🔹 Faghat IP address A record domain `example.com` ra namayesh midahad (bedune etela'ate ezafi).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dig` (domain information groper) command is used to query DNS servers. Simply put, you can use `dig` to retrieve information about domains (e.g., IP address, MX record, etc.) from DNS servers.
+
+⚙️ **Options:**
+    🔹 `dig example.com` --> 🤔 Query the A record IP address for example.com.
+    🔹 `dig example.com MX` --> 📧 Query the MX record for example.com (mail exchange).
+    🔹 `dig example.com NS` --> 🌐 Query the NS record for example.com (name server).
+    🔹 `dig +trace example.com` --> 🔭 Trace the query path from the root DNS server to the answer.
+    🔹 `dig -x <IP address>` --> 📍 Perform a reverse DNS lookup to find the domain name from an IP address.
+
+🛠 **Examples:**
+
+    $ dig google.com
+
+    🔹 Display the IP address of google.com from the default DNS server.
+
+    $ dig @8.8.8.8 google.com
+
+    🔹 Query the IP address of google.com from DNS server 8.8.8.8 (Google's public DNS).
+
+✅ **Simple Example:**
+
+    $ dig example.com A +short
+
+    🔹 Displays only the A record IP address of the `example.com` domain (without extra information).

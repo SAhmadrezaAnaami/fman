@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installxmlcatalogs` baraye sabte file-haye XML catalog dar directory-haye dorost, hengame sakhtane package Debian, be kar miravad. In dastoor etela’at XML catalog ra dar jaye monaseb zakhire mikonad ta barname-ha betavanand file-haye XML ra be dorosti peyda va estefade konand. 
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir pooshe`  --> 📁 Moshakhas kardane pooshe-i ke file-haye XML catalog az aanja gerefte mishavand. Agar estefade nashavad, az `debian/tmp` estefade mishavad.
+    🔹 `--no-auto-discovery` --> 🚫 Jelvegiri az peyda kardane otomatike file-haye XML catalog.
+    🔹 `--name package-name` --> 📦  Taghir name package dar directory-haye catalog.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installxmlcatalogs
+
+    🔹 Sabte file-haye XML catalog az `debian/package/usr/share/xml/catalogs`
+
+    $ dh_installxmlcatalogs --sourcedir=src/xml
+
+    🔹 Sabte file-haye XML catalog az pooshe `src/xml`.
+
+✅ **Mesal sade:**
+
+    $ dh_installxmlcatalogs --name=my-custom-package
+
+    🔹 File-haye XML catalog ra ba name `my-custom-package` sabt mikonad, be jaye name default package. In dar vaghe directory mored nazar ra baraye catalog taghir midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installxmlcatalogs` command is used to register XML catalog files in the correct directories when building a Debian package. It stores XML catalog information in the appropriate location so that applications can correctly find and use XML files.
+
+⚙️ **Options:**
+    🔹 `--sourcedir directory` --> 📁 Specifies the directory from which to take the XML catalog files. If not used, it defaults to `debian/tmp`.
+    🔹 `--no-auto-discovery` --> 🚫 Prevents automatic discovery of XML catalog files.
+    🔹 `--name package-name` --> 📦 Changes the package name in the catalog directories.
+
+🛠 **Examples:**
+
+    $ dh_installxmlcatalogs
+
+    🔹 Registers XML catalog files from `debian/package/usr/share/xml/catalogs`
+
+    $ dh_installxmlcatalogs --sourcedir=src/xml
+
+    🔹 Registers XML catalog files from the `src/xml` directory.
+
+✅ **Simple Example:**
+
+    $ dh_installxmlcatalogs --name=my-custom-package
+
+    🔹 Registers the XML catalog files with the name `my-custom-package` instead of the default package name. This effectively changes the target directory for the catalog.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gprofng` yek abzar baraye tahlil va behینه سازی barname-ha ast. In dastoor barname-haye shoma ra monitor mikonad ta bebinad kodam bakhsh-ha bishtarin zaman ra masraf mikonand. Ba estefade az `gprofng`, shoma mitavanid noghat-e gheyre-bahrevar ra peyda konid va barname-ye khod ra behtar konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gprofng collect` --> 💾 Etela'at profile-ra jam'avari mikonad. Bayad qabl az ejraye barname estefade shavad.
+    🔹 `gprofng display` --> 📊 Etela'at profile-ra namayesh midahad.
+    🔹 `gprofng report`  --> 📝 Gozaresh-e kamele profile-ra misazad.
+
+🛠 **Mesal-ha:**
+
+    $ gprofng collect ./myprogram
+
+    🔹 Etela'at profile az barname-ye `myprogram` jam'avari mikonad.
+
+    $ gprofng display
+
+    🔹 Etela'at profile-ra dar terminal namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ gprofng collect ./myprogram; ./myprogram; gprofng display
+
+    🔹 Avval etela'at profile jam'avari mishavad, sepas barname ejra mishavad, va dar akhar etela'at profile namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gprofng` command is a tool for profiling and optimizing programs. It monitors your programs to see which parts consume the most time. By using `gprofng`, you can identify bottlenecks and improve your program's performance.
+
+⚙️ **Options:**
+    🔹 `gprofng collect` --> 💾 Collects profiling data. Must be used before running the program.
+    🔹 `gprofng display` --> 📊 Displays profiling data.
+    🔹 `gprofng report`  --> 📝 Generates a full profiling report.
+
+🛠 **Examples:**
+
+    $ gprofng collect ./myprogram
+
+    🔹 Collects profiling data from the `myprogram` program.
+
+    $ gprofng display
+
+    🔹 Displays the profiling data in the terminal.
+
+✅ **Simple Example:**
+
+    $ gprofng collect ./myprogram; ./myprogram; gprofng display
+
+    🔹 First, profiling data is collected, then the program is executed, and finally, the profiling data is displayed.

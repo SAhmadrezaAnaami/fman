@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-keyring-3` yek barname ast baraye negahdari parol-ha va kalid-haye amniyati shoma dar yek jaye amne computer. In kar ra mikonad ta shoma niaz nabashid har dafe ke barname-ha ya web-site-ha parol shoma ra mikhand, an ra vared konid.  Mesle yek sandoghche parol mimanad baraye system shoma.
+
+⚙️ **Gozine-ha:**
+    🔹 `--start`  --> 🚀 Keyring ra shoru mikonad agar ghablan shoru nashode bashad.
+    🔹 `--unlock` --> 🔓 Keyring ra baz mikonad agar ghafel bashad. Shoma bayad parol asli keyring ra vared konid.
+    🔹 `--login`  --> 🔑 Keyring ra baraye session login fa'al mikonad.
+    🔹 `--components` --> 🧩 Component haye mokhtalef keyring ra namayesh midahad (mesle ssh, pkcs11, secrets).
+    🔹 `--help`  --> ❓ Rahnamai dastoor ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-keyring-3 --start --components
+    
+    🔹 Keyring ra shoru mikonad va list component haye fa'al ra neshon midahad.
+
+    $ gnome-keyring-3 --unlock
+    
+    🔹 Az shoma khaste mishavad ke parol keyring ra vared konid ta baz shavad.
+
+✅ **Mesal sade:**
+
+    $ gnome-keyring-3 --login
+    
+    🔹  Ba login be system, keyring khodkar baz mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-keyring-3` is a program that stores your passwords and security keys in a safe place on your computer. It allows you to avoid entering your passwords every time applications or websites request them. Think of it as a password vault for your system.
+
+⚙️ **Options:**
+    🔹 `--start`  --> 🚀 Starts the keyring if it is not already running.
+    🔹 `--unlock` --> 🔓 Unlocks the keyring if it is locked. You will need to enter the main keyring password.
+    🔹 `--login`  --> 🔑 Activates the keyring for the login session.
+    🔹 `--components` --> 🧩 Displays the different components of the keyring (e.g., ssh, pkcs11, secrets).
+    🔹 `--help`  --> ❓ Shows the command's help information.
+
+🛠 **Examples:**
+
+    $ gnome-keyring-3 --start --components
+    
+    🔹 Starts the keyring and lists the active components.
+
+    $ gnome-keyring-3 --unlock
+    
+    🔹 Prompts you to enter the keyring password to unlock it.
+
+✅ **Simple Example:**
+
+    $ gnome-keyring-3 --login
+    
+    🔹 The keyring automatically unlocks when you log in to your system.

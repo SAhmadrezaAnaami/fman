@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzip2` baraye feeshorde kardan (compress) file-ha estefade mishavad ta size-e anha koochak shavad. File-haye feeshorde shode ba پسوند `.bz2` negah dari mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzip2 -k file`  --> 📦 File asli ra negah midarad va yek copy feeshorde shode misazad.
+    🔹 `bzip2 -d file.bz2` --> 🔓 File feeshorde shode ra baz mikonad (decompress).
+    🔹 `bzip2 -f file`  --> Force --> Agar file hamnam mojood bashad, override mikonad.
+    🔹 `bzip2 -v file`  --> Verbose --> Etela'at bishtar dar morede feeshordegi namayesh midahad.
+    🔹 `bzip2 -1 file`  --> 🚀  Feshordegi sari'tar ama ba size bozorgtar (az 1 ta 9, 1 sari'tarin).
+    🔹 `bzip2 -9 file`  --> 🎯 Feshordegi bishtar ama ba sor'at kamtar (az 1 ta 9, 9 kamtarin).
+
+🛠 **Mesal-ha:**
+
+    $ bzip2 myfile.txt
+
+    🔹 File `myfile.txt` ra feeshorde mikonad va be `myfile.txt.bz2` tabdil mikonad va file asli ra hazf mikonad.
+
+    $ bzip2 -k myfile.txt
+
+    🔹 File `myfile.txt` ra feeshorde mikonad va be `myfile.txt.bz2` tabdil mikonad va file asli ra negah midarad.
+
+    $ bzip2 -d myfile.txt.bz2
+
+    🔹 File `myfile.txt.bz2` ra baz mikonad va be `myfile.txt` tabdil mikonad va file asli feeshorde shode ra hazf mikonad.
+
+✅ **Mesal sade:**
+
+    $ bzip2 -v myfile.txt
+
+    🔹 File `myfile.txt` ra feeshorde mikonad va etela'at marboote be amaliyat ra dar terminal namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzip2` command is used to compress files, reducing their size. Compressed files are stored with the `.bz2` extension.
+
+⚙️ **Options:**
+    🔹 `bzip2 -k file`  --> 📦 Keeps the original file and creates a compressed copy.
+    🔹 `bzip2 -d file.bz2` --> 🔓 Decompresses a compressed file.
+    🔹 `bzip2 -f file`  --> Force --> Overwrites existing files with the same name.
+    🔹 `bzip2 -v file`  --> Verbose --> Shows more information about the compression process.
+    🔹 `bzip2 -1 file`  --> 🚀 Faster compression but with a larger file size (from 1 to 9, 1 is fastest).
+    🔹 `bzip2 -9 file`  --> 🎯 Higher compression but with slower speed (from 1 to 9, 9 is slowest).
+
+🛠 **Examples:**
+
+    $ bzip2 myfile.txt
+
+    🔹 Compresses the file `myfile.txt` to `myfile.txt.bz2` and removes the original file.
+
+    $ bzip2 -k myfile.txt
+
+    🔹 Compresses the file `myfile.txt` to `myfile.txt.bz2` and keeps the original file.
+
+    $ bzip2 -d myfile.txt.bz2
+
+    🔹 Decompresses the file `myfile.txt.bz2` to `myfile.txt` and removes the original compressed file.
+
+✅ **Simple Example:**
+
+    $ bzip2 -v myfile.txt
+
+    🔹 Compresses the file `myfile.txt` and shows information about the process in the terminal.

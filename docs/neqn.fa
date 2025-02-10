@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `neqn` yek dastoor baraye hesabe riyazi dar terminal ast. Ba estefade az in dastoor, shoma mitavanid mohasebate sade ra anjam dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `neqn 'expression'` --> ➕ Hesab kardane expression riyazi. Expression bayad dakhele '' bashad.
+    🔹 `neqn -f filename` --> 📄 Hesab kardane expression az file.
+    🔹 `neqn -n` --> 🔢 Be dast avardane natije ra faghat chap mikonad, bedune payam.
+
+🛠 **Mesal-ha:**
+
+    $ neqn '1 + 1'
+
+    🔹 Natije hesabe 1 + 1 ra namayesh midahad.
+
+    $ neqn 'sqrt(25)'
+
+    🔹 Natije jazre 25 ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ neqn '2 * 3 + 4'
+
+    🔹  In dastoor natije mohasebate 2 * 3 + 4 (ke barabar ast ba 10) ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `neqn` command is a mathematical equation processor in the terminal. You can use it to perform simple calculations.
+
+⚙️ **Options:**
+    🔹 `neqn 'expression'` --> ➕ Evaluates a mathematical expression. The expression should be inside ''.
+    🔹 `neqn -f filename` --> 📄 Evaluates expressions from a file.
+    🔹 `neqn -n` --> 🔢 Print only the result, without messages.
+
+🛠 **Examples:**
+
+    $ neqn '1 + 1'
+
+    🔹 Displays the result of the calculation 1 + 1.
+
+    $ neqn 'sqrt(25)'
+
+    🔹 Displays the square root of 25.
+
+✅ **Simple Example & Explanation:**
+
+    $ neqn '2 * 3 + 4'
+
+    🔹 This command prints the result of the calculation 2 * 3 + 4 (which equals 10).
+

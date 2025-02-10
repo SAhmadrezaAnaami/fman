@@ -1,0 +1,86 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `libnetcfg` yek ketabkhane (library) dar Linux ast ke baraye moratab kardane (configure) shabake (network) estefade mishavad. Be komake in ketabkhane, barname-nevis-ha mitavanand dastoorhaye marboot be shabake ra be asani dar barnamehaye khod estefade konand.  Manzoor az "configure" yani tanzimat ra dorost va kamel anjam dadan.
+
+⚙️ **Gozine-ha:**
+    Az aan jaaee ke `libnetcfg` yek ketabkhane ast, be tore mostaghim dar terminal estefade nemishavad.  Barname-nevis-ha az function-ha va dastoorhaye dakhel in ketabkhane dar code-haye khod estefade mikonand. Pas gozine-haye aan dar asl function-haee hastand ke barname-nevis mitavanad az aanha estefade konad. Chand mesal az function-ha:
+
+    🔹 `netcfg_init()` --> 🚀  Aghaz kardane (initialize) ketabkhane
+    🔹 `netcfg_get_interface_list()` --> 🌐  Gereftan list-e interface-haye shabake
+    🔹 `netcfg_set_ip_address()` --> 💻  Taeen kardane address IP baraye yek interface
+    🔹 `netcfg_apply()` --> ✅  E’mal kardane hameye tanzimat (apply all configurations)
+
+🛠 **Mesal-ha:**
+    Az aan jaaee ke `libnetcfg` yek ketabkhane ast, nemitavan be tore mostaghim dar terminal az aan estefade kard. Mesal-haye aan dar code-haye barname-nevisi dide mishavand:
+
+    c
+    #include <libnetcfg/netcfg.h>
+
+    int main() {
+        netcfg_handle_t handle;
+
+        // Aghaz kardane ketabkhane
+        int ret = netcfg_init(&handle);
+
+        if (ret != NETCFG_SUCCESS) {
+            // Error handling
+            return 1;
+        }
+
+        // ... estefade az function-haye digar ...
+
+        netcfg_release(handle);
+        return 0;
+    }
+    
+
+✅ **Mesal sade:**
+
+    Imagination konid yek barname minevisid ke bayad IP address-e computer ra tagheer dahad. Ba estefade az `libnetcfg`, code-e shoma kheili sade tar mishavad.  Be jaye inke shoma dastoorhaye پیچیده-ye terminal ra run konid, faghat yek function az `libnetcfg` ra seda mizنید.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `libnetcfg` is a library in Linux used for network configuration. It allows developers to easily integrate network-related functionalities into their programs. "Configuration" means setting up the network settings correctly and completely.
+
+⚙️ **Options:**
+    Since `libnetcfg` is a library, it's not directly used in the terminal. Programmers use the functions and commands within this library in their code.  Therefore, its "options" are essentially functions that developers can utilize.  Some examples of functions:
+
+    🔹 `netcfg_init()` --> 🚀  Initialize the library
+    🔹 `netcfg_get_interface_list()` --> 🌐  Get the list of network interfaces
+    🔹 `netcfg_set_ip_address()` --> 💻  Set the IP address for an interface
+    🔹 `netcfg_apply()` --> ✅  Apply all configurations
+
+🛠 **Examples:**
+    Because `libnetcfg` is a library, it cannot be directly used in the terminal. Examples of its use are found in programming code:
+
+    c
+    #include <libnetcfg/netcfg.h>
+
+    int main() {
+        netcfg_handle_t handle;
+
+        // Initialize the library
+        int ret = netcfg_init(&handle);
+
+        if (ret != NETCFG_SUCCESS) {
+            // Error handling
+            return 1;
+        }
+
+        // ... use other functions ...
+
+        netcfg_release(handle);
+        return 0;
+    }
+    
+
+✅ **Simple Example:**
+
+    Imagine you are writing a program that needs to change the computer's IP address. By using `libnetcfg`, your code becomes much simpler. Instead of running complex terminal commands, you simply call a function from `libnetcfg`.

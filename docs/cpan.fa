@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cpan` yek rahe asan baraye gereftan, nasb kardan va modiriat module-haye Perl az shabake ast.  Ba `cpan`, shoma mitavanid module-haye jadid ezafe konid, module-haye mojood ra be rooz konid va hattaa module-ha ra hazf konid.  In yek abzar kheili mohem baraye karbarane Perl ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `cpan install Module::Name`  --> 📦 Nasb ya be-rooz-resani yek module khass.
+    🔹 `cpan upgrade` --> ⬆️ Be-rooz-resani hameye module-hayi ke be rooz-resani niaz darand.
+    🔹 `cpan uninstall Module::Name`  --> 🗑️ Hazf yek module az system.
+    🔹 `cpan help` --> ❓ Namayesh rahnama baraye dastoor `cpan`.
+
+🛠 **Mesal-ha:**
+
+    $ cpan install Mojolicious
+
+    🔹 Nasb kardan framework Mojolicious Perl.
+
+    $ cpan upgrade
+
+    🔹 Be rooz resani hameye module haye Perl nasb shode.
+
+✅ **Mesal sade:**
+
+    $ cpan install JSON::PP
+
+    🔹 Dastoor bala module JSON::PP (Perl Pure) ra ke baraye kar ba format JSON ast, az CPAN download va nasb mikonad. Shoma badan mitavanid az in module dar barname haye Perl khod estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cpan` command provides an easy way to fetch, install, and manage Perl modules from the network.  With `cpan`, you can add new modules, update existing ones, and even remove modules.  It's a very important tool for Perl users.
+
+⚙️ **Options:**
+    🔹 `cpan install Module::Name`  --> 📦 Install or upgrade a specific module.
+    🔹 `cpan upgrade` --> ⬆️ Upgrade all modules that have updates available.
+    🔹 `cpan uninstall Module::Name`  --> 🗑️ Uninstall a module from the system.
+    🔹 `cpan help` --> ❓ Show the help documentation for the `cpan` command.
+
+🛠 **Examples:**
+
+    $ cpan install Mojolicious
+
+    🔹 Install the Mojolicious Perl framework.
+
+    $ cpan upgrade
+
+    🔹 Upgrade all installed Perl modules to the latest versions.
+
+✅ **Simple Example:**
+
+    $ cpan install JSON::PP
+
+    🔹 The command above downloads and installs the JSON::PP (Perl Pure) module, used for working with the JSON format, from CPAN. You can then use this module in your Perl programs.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `do-release-upgrade` baraye be-rooztar kardan (upgrade) version-e Ubuntu shoma be version-e jadidtar estefade mishavad. In dastoor version-e distro shoma ra check mikonad va be shoma rahnamayi mikonad ta be akharin version beresid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-d`  --> 🚧 Baraye be-rooztar kardan be version-e development (ghabl az release rasmi).  Ehtiat konid!
+    🔹 `-f DistUpgradeView`  --> 🖥️ Estefade az GUI baraye namayesh etela'at va gozine-ha.
+    🔹 `-m`  --> ⚙️ Force kardan upgrade hata agar chizi dorost kar nemikonad.  Ehtiat konid!
+    🔹 `-h`  --> ℹ️ Namayesh komak (help) va rahnamayi dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ sudo do-release-upgrade
+
+    🔹 Shoru kardan process be-rooztar kardan distro be akharin version-e stable.
+
+    $ sudo do-release-upgrade -d
+
+    🔹 Be-rooztar kardan be version-e development.
+
+✅ **Mesal sade:**
+
+    $ sudo do-release-upgrade
+
+    🔹 Dastoor shoru mishe va version-e system shoma ra check mikonad, bad az shoma soal mikonad ke aya mikhahid be akharin version be-rooz shavid ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `do-release-upgrade` command is used to upgrade your Ubuntu version to a newer release. It checks your distribution version and guides you through the process of upgrading to the latest available release.
+
+⚙️ **Options:**
+    🔹 `-d`  --> 🚧 Upgrade to the development release (pre-release). Use with caution!
+    🔹 `-f DistUpgradeView`  --> 🖥️ Use the GUI for displaying information and options during the upgrade.
+    🔹 `-m`  --> ⚙️ Force the upgrade even if something seems to be broken. Use with extreme caution!
+    🔹 `-h`  --> ℹ️ Display help and usage information for the command.
+
+🛠 **Examples:**
+
+    $ sudo do-release-upgrade
+
+    🔹 Starts the distribution upgrade process to the latest stable release.
+
+    $ sudo do-release-upgrade -d
+
+    🔹 Upgrades the system to the development release.
+
+✅ **Simple Example:**
+
+    $ sudo do-release-upgrade
+
+    🔹 The command starts and checks your system's version, then prompts you to confirm whether you want to upgrade to the latest stable release.

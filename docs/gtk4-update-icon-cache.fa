@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk4-update-icon-cache` baraye dorost kardan yek cache az icon-ha baraye GTK4 estefade mishavad. In kar baes mishe ta barnam-ha icon-ha ro zoodtar load konand. Agar icon-haye jadidi ezafe konid ya icon-haye ghadimi ro tagheer bedid, bayad in dastoor ro ejra konid ta GTK4 az tagheerat agah beshe.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtk4-update-icon-cache /path/be/pooshe/icon-ha`  --> 📁 Masir be pooshe-ye icon-ha ro moshakhas mikonad.
+    🔹 `gtk4-update-icon-cache -f /path/be/pooshe/icon-ha`  --> 🔄 Cache ro be zor update mikonad, hata agar tagheerati peyda nakone.
+    🔹 `gtk4-update-icon-cache -q /path/be/pooshe/icon-ha`  --> 🤫 Hich payami ro chap nemikonad (saket).
+
+🛠 **Mesal-ha:**
+
+    $ gtk4-update-icon-cache /usr/share/icons/hicolor
+
+    🔹 Cache icon-haye systemi ro update mikonad.
+
+    $ sudo gtk4-update-icon-cache -f /usr/share/icons/my-icons
+
+    🔹 Cache icon-haye moshtarak ro be zor update mikonad (ba dastresi root).
+
+✅ **Mesal sade:**
+
+    $ gtk4-update-icon-cache /home/user/icons
+
+    🔹 Cache icon-haye shakhsi ro update mikonad. Agar icon-haye jadidi dar in pooshe ezafe karde bashid, in dastoor bayad ejra beshe ta barnam-ha betoonan az anha estefade konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk4-update-icon-cache` command is used to generate icon caches for GTK4. This helps applications load icons more quickly. If you add new icons or modify existing ones, you need to run this command to update the cache so that GTK4 is aware of the changes.
+
+⚙️ **Options:**
+    🔹 `gtk4-update-icon-cache /path/to/icon/directory`  --> 📁 Specifies the path to the icon directory.
+    🔹 `gtk4-update-icon-cache -f /path/to/icon/directory`  --> 🔄 Forces an update of the cache, even if no changes are detected.
+    🔹 `gtk4-update-icon-cache -q /path/to/icon/directory`  --> 🤫 Suppresses all output messages (quiet mode).
+
+🛠 **Examples:**
+
+    $ gtk4-update-icon-cache /usr/share/icons/hicolor
+
+    🔹 Updates the system icon cache.
+
+    $ sudo gtk4-update-icon-cache -f /usr/share/icons/my-icons
+
+    🔹 Forces an update of the shared icons cache (requires root privileges).
+
+✅ **Simple Example:**
+
+    $ gtk4-update-icon-cache /home/user/icons
+
+    🔹 Updates the personal icon cache. If you have added new icons to this directory, this command needs to be executed for applications to be able to use them.

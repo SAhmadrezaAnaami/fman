@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installinit` baraye nasb skript haye `init` (baraye service-ha) dar package Debian estefade mishavad. In dastoor be shoma komak mikonad ke service-haye khod ra be tore dorost dar system boot nasb konid va start/stop konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name NAME`  --> 🏷️  Esme service ra tayin mikonad (agar esm az filename fargh dashte bashad).
+    🔹 `--no-start`   --> 🛑  Az start shodan service dar zaman nasb jologiri mikonad.
+    🔹 `--error-handler SCRIPT` --> 🚨 Agar dar vaghte start ya stop service errori rokh bedahad, in script ejra mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installinit
+    
+    🔹 Skripthaye `init` ra az `debian/init` nasb mikonad.
+
+    $ dh_installinit --name myservice
+    
+    🔹 Skript `debian/init` ra be esme `myservice` nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installinit --no-start
+    
+    🔹 Skript haye `init` ra nasb mikonad vali service ra dar hale nasb start nemikonad.  In baraye zamani khub ast ke shoma mikhahid service dar hale nasb kar nakonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installinit` command is used to install `init` scripts (for services) in a Debian package. This command helps you to properly install and start/stop your services at system boot.
+
+⚙️ **Options:**
+    🔹 `--name NAME`  --> 🏷️ Specifies the service name (if different from the filename).
+    🔹 `--no-start`   --> 🛑 Prevents the service from being started during installation.
+    🔹 `--error-handler SCRIPT` --> 🚨 If an error occurs during service start or stop, this script is executed.
+
+🛠 **Examples:**
+
+    $ dh_installinit
+    
+    🔹 Installs `init` scripts from `debian/init`.
+
+    $ dh_installinit --name myservice
+    
+    🔹 Installs the `debian/init` script as `myservice`.
+
+✅ **Simple Example:**
+
+    $ dh_installinit --no-start
+    
+    🔹 Installs the `init` scripts but prevents the service from starting during installation. This is useful when you don't want the service to run during package installation.
+

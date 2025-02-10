@@ -1,0 +1,61 @@
+Okay, here's a user-friendly manual page for the `foo2qpdl` command, following all the specified formatting guidelines.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2qpdl` baraye tabdil file-haye chap shode az PostScript be format-e QPDL (Quality Print Description Language) estefade mishavad.  In format baraye printer-haye ranghi az type-e minolta estefade mishe.  yani, `foo2qpdl` file-haye PostScript ro migire va onharo be chizi ke printer-e shoma befahme tabdil mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `-r <resolution>` --> 🎯  Ta'een-e deghat-e chap (resolution) be DPI (dots per inch). Masalan, `-r 600` yani deghat 600 DPI bashe.
+    🔹 `-m <type-e-media>` --> 📰  Type-e kaghaz ro moshakhas mikone (masalan, `Letter`, `A4`). Age type-e kaghaz ro tayin nakonid, az default estefade mishe.
+    🔹 `-n <tedad>` --> 🔢  Tedade copy-ha ro moshakhas mikone. Masalan, `-n 2` yani 2 copy chap kon.
+    🔹 `-c` --> 🌈  Chap rangy ro majaz mikone. Bedoone in gozine, chap siyah-o-sefid mishe.
+
+🛠 **Mesal-ha:**
+
+    $ foo2qpdl input.ps > output.qpdl
+
+    🔹 Tabdil-e file `input.ps` be `output.qpdl` ba estefade az ayar-haye pishfarz.
+
+    $ foo2qpdl -r 600 -m A4 input.ps > output.qpdl
+
+    🔹 Tabdil-e file `input.ps` be `output.qpdl` ba deghat 600 DPI va kaghaz A4.
+
+✅ **Mesal sade:**
+
+    $ foo2qpdl -c input.ps | lp -d printer_rangi
+
+    🔹 File `input.ps` ro ba rang chap mikone va be printer-e `printer_rangi` mifreste.  `lp` dastoor baraye chap kardane.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2qpdl` command converts PostScript print jobs into the QPDL (Quality Print Description Language) format. This format is commonly used for Minolta color printers. In essence, `foo2qpdl` takes PostScript files and transforms them into a language your printer understands.
+
+⚙️ **Options:**
+    🔹 `-r <resolution>` --> 🎯 Sets the printing resolution in DPI (dots per inch). For example, `-r 600` sets the resolution to 600 DPI.
+    🔹 `-m <media-type>` --> 📰 Specifies the paper type (e.g., `Letter`, `A4`). If you don't specify the paper type, the default will be used.
+    🔹 `-n <number>` --> 🔢 Specifies the number of copies to print. For example, `-n 2` prints two copies.
+    🔹 `-c` --> 🌈 Enables color printing. Without this option, the output will be black and white.
+
+🛠 **Examples:**
+
+    $ foo2qpdl input.ps > output.qpdl
+
+    🔹 Converts the `input.ps` file to `output.qpdl` using default settings.
+
+    $ foo2qpdl -r 600 -m A4 input.ps > output.qpdl
+
+    🔹 Converts the `input.ps` file to `output.qpdl` with a resolution of 600 DPI and A4 paper size.
+
+✅ **Simple Example:**
+
+    $ foo2qpdl -c input.ps | lp -d color_printer
+
+    🔹 Prints the `input.ps` file in color and sends it to the `color_printer` printer.  `lp` is the command used to print.
+

@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nmcli` (NetworkManager Command Line Interface) baraye modiriyat va control kardane ertebatate shabake dar Linux az tarighe terminal estefade mishavad. Ba `nmcli`, mitoonid ertebatate jadid dorost konid, ertebatate mojood ro taghir bedid, shabake-ha ro vasl ya g قطع konid, va vaziat shabake ro bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `nmcli device status`      --> 📶 Namayesh vaziat device-haye shabake (mesle wired, wifi)
+    🔹 `nmcli connection show`    --> 🔗 Namayesh hameye connection-haye tarif shode
+    🔹 `nmcli connection up <name>`   --> ⬆️ Vasl shodan be yek connection khas ba estefade az name-ash
+    🔹 `nmcli connection down <name>` --> ⬇️ Gقطع kardane yek connection khas
+    🔹 `nmcli radio wifi on|off`   --> 📡 روشن ya خاموش kardane WiFi
+
+🛠 **Mesal-ha:**
+
+    $ nmcli device status
+
+    🔹 Namayesh etela'at dar morede device-haye shabake.
+
+    $ nmcli connection show 'My WiFi'
+
+    🔹 Namayesh etela'at tafsili dar morede yek connection be name 'My WiFi'.
+
+    $ nmcli connection up 'My WiFi'
+
+    🔹 Vasl shodan be shabake WiFi ke name-ash 'My WiFi' ast.
+
+✅ **Mesal sade:**
+
+    $ nmcli radio wifi off
+
+    🔹 WiFi ra dar device khاموش mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nmcli` (NetworkManager Command Line Interface) command is used to manage and control network connections in Linux via the terminal. With `nmcli`, you can create new connections, modify existing connections, connect or disconnect from networks, and view network status.
+
+⚙️ **Options:**
+    🔹 `nmcli device status`      --> 📶 Display the status of network devices (e.g., wired, wifi)
+    🔹 `nmcli connection show`    --> 🔗 Display all defined connections
+    🔹 `nmcli connection up <name>`   --> ⬆️ Connect to a specific connection using its name
+    🔹 `nmcli connection down <name>` --> ⬇️ Disconnect a specific connection
+    🔹 `nmcli radio wifi on|off`   --> 📡 Turn WiFi on or off
+
+🛠 **Examples:**
+
+    $ nmcli device status
+
+    🔹 Displays information about network devices.
+
+    $ nmcli connection show 'My WiFi'
+
+    🔹 Displays detailed information about a connection named 'My WiFi'.
+
+    $ nmcli connection up 'My WiFi'
+
+    🔹 Connects to the WiFi network named 'My WiFi'.
+
+✅ **Simple Example:**
+
+    $ nmcli radio wifi off
+
+    🔹 Turns off WiFi on the device.

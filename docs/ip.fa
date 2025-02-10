@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ip` baraye modiriyat shabake (network) va didan etela'at rabete-ha (interfaces) estefade mishavad. Ba `ip` mitoonid address-haye IP ro tagheer bedid, route-ha ro bebinid va vaz'iat shabake ro baresi konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `ip addr show`  --> 🌐 Namayesh address-haye IP har interface shabake
+    🔹 `ip route show` --> 🛣️ Namayesh routing table (masir-haye shabake)
+    🔹 `ip link show`  --> 🔗 Namayesh etela'at layer-e dovom (MAC address va gheire)
+    🔹 `ip -s link`   --> 📊 Namayesh etela'at statistic-e interface-ha (packets received/transmitted)
+
+🛠 **Mesal-ha:**
+
+    $ ip addr show eth0
+
+    🔹 Namayesh etela'at address IP interface `eth0`.
+
+    $ ip route show default
+
+    🔹 Namayesh masir pishfarz (default route) dar routing table.
+
+✅ **Mesal sade:**
+
+    $ ip addr
+
+    🔹 Namayesh address-haye IP hameye interface-haye shabake. Ee dastoor yek negahi sari be address-haye IP shoma mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ip` command is used for network management and displaying information about network interfaces. With `ip`, you can change IP addresses, view routes, and check network status.
+
+⚙️ **Options:**
+    🔹 `ip addr show`  --> 🌐 Show IP addresses for each network interface
+    🔹 `ip route show` --> 🛣️ Show the routing table (network paths)
+    🔹 `ip link show`  --> 🔗 Show layer 2 information (MAC address, etc.)
+    🔹 `ip -s link`   --> 📊 Show interface statistics (packets received/transmitted)
+
+🛠 **Examples:**
+
+    $ ip addr show eth0
+
+    🔹 Show IP address information for the `eth0` interface.
+
+    $ ip route show default
+
+    🔹 Show the default route in the routing table.
+
+✅ **Simple Example & Explanation:**
+
+    $ ip addr
+
+    🔹 Show IP addresses for all network interfaces. This command provides a quick overview of your IP addresses.
+

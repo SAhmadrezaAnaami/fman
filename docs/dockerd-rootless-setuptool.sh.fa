@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dockerd-rootless-setuptool.sh` baraye rahandazi Docker be soorate bi-niaz az root (rootless) rooye system-haye Linux estefade mishavad. In dastoor Docker ra be goone'i config mikonad ke yek karbare mamooli (non-root user) ham betavanad az Docker estefade konad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `dockerd-rootless-setuptool.sh install`  --> 🚀 Docker ra be soorate rootless nasb mikonad.
+    🔹 `dockerd-rootless-setuptool.sh uninstall` --> 🗑️ Docker rootless ra hazf mikonad.
+    🔹 `dockerd-rootless-setuptool.sh status`    --> ℹ️ Vaziyat Docker rootless ra neshon midahad.
+    🔹 `dockerd-rootless-setuptool.sh help`      --> ❓ Rahnamaye kamel dastoor ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ dockerd-rootless-setuptool.sh install
+
+    🔹 Docker ra be soorate rootless nasb mikonad. Az shoma password khaste mishavad, pas az vard kardane password karbare shoma be group docker ezafe mishavad.
+
+    $ dockerd-rootless-setuptool.sh uninstall
+
+    🔹 Docker rootless ra az system hazf mikonad.
+
+✅ **Mesal sade:**
+
+    $ dockerd-rootless-setuptool.sh status
+
+    🔹 Agar Docker be dorosti nasb shode bashad, etela'ati dar morede vaziyat-e an neshon midahad. Dar gheire in soorat, peyghami مبنی bar nasb nashodan Docker neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dockerd-rootless-setuptool.sh` command is used to set up Docker to run in rootless mode on Linux systems.  This allows a regular (non-root) user to use Docker without requiring root privileges.
+
+⚙️ **Options:**
+    🔹 `dockerd-rootless-setuptool.sh install`  --> 🚀 Installs Docker in rootless mode.
+    🔹 `dockerd-rootless-setuptool.sh uninstall` --> 🗑️ Uninstalls Docker rootless.
+    🔹 `dockerd-rootless-setuptool.sh status`    --> ℹ️ Shows the status of Docker rootless.
+    🔹 `dockerd-rootless-setuptool.sh help`      --> ❓ Shows the complete command help.
+
+🛠 **Examples:**
+
+    $ dockerd-rootless-setuptool.sh install
+
+    🔹 Installs Docker in rootless mode. You will be prompted for your password, after which your user is added to the docker group.
+
+    $ dockerd-rootless-setuptool.sh uninstall
+
+    🔹 Removes Docker rootless from the system.
+
+✅ **Simple Example:**
+
+    $ dockerd-rootless-setuptool.sh status
+
+    🔹 If Docker is installed correctly, it shows information about its status.  Otherwise, it displays a message indicating that Docker is not installed.

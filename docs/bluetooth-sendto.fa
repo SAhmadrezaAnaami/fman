@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bluetooth-sendto` baraye ferestadan file-ha be device-haye Bluetooth estefade mishavad.  In dastoor asan va sarih ast baraye share kardan file-ha be soorate bi-sim.
+
+⚙️ **Gozine-ha:**
+    🔹 `bluetooth-sendto --device=[mac address] [file]` --> 🎯 Ferestadan file be device ba address MAC moshakhas.
+    🔹 `bluetooth-sendto --choose [file]` --> 🖱️ Namayesh listi az device-ha baraye entekhab va ferestadan file.
+
+🛠 **Mesal-ha:**
+
+    $ bluetooth-sendto --device=00:11:22:33:44:55 document.pdf
+
+    🔹 Ferestadan file `document.pdf` be device Bluetooth ba address MAC `00:11:22:33:44:55`.
+
+    $ bluetooth-sendto --choose image.jpg
+
+    🔹 Namayesh listi az device-haye Bluetooth baraye entekhab va ferestadan file `image.jpg`.
+
+✅ **Mesal sade:**
+
+    $ bluetooth-sendto --choose my_song.mp3
+
+    🔹 Ba ejraye in dastoor, yek panjare baz mishavad ke hameye device-haye Bluetooth-e nazdik ra neshan midahad. Shoma mitavanid device-e mored nazar ra entekhab konid ta file `my_song.mp3` be an ferestade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bluetooth-sendto` command is used to send files to Bluetooth devices. It provides a straightforward way to share files wirelessly.
+
+⚙️ **Options:**
+    🔹 `bluetooth-sendto --device=[mac address] [file]` --> 🎯 Send a file to a Bluetooth device with a specific MAC address.
+    🔹 `bluetooth-sendto --choose [file]` --> 🖱️ Display a list of available Bluetooth devices to select from and send the file.
+
+🛠 **Examples:**
+
+    $ bluetooth-sendto --device=00:11:22:33:44:55 document.pdf
+
+    🔹 Sends the file `document.pdf` to the Bluetooth device with the MAC address `00:11:22:33:44:55`.
+
+    $ bluetooth-sendto --choose image.jpg
+
+    🔹 Displays a list of Bluetooth devices for selection and sends the file `image.jpg`.
+
+✅ **Simple Example:**
+
+    $ bluetooth-sendto --choose my_song.mp3
+
+    🔹 Running this command will open a window showing all available Bluetooth devices nearby. You can then select the desired device to send the `my_song.mp3` file to.

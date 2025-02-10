@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lesspipe` yek script ast ke baraye behtar namayesh dadane file-ha dar dastoor `less` estefade mishavad. Yani `lesspipe` format-haye mokhtalef ra mishnasad va anha ra jori tabdil mikonad ke `less` betavanad dorost namayesh dahad, mesle code-haye rangi shode ya PDF-haye tabdil shode be matn.
+
+⚙️ **Gozine-ha:**
+    🔹 `LESSOPEN="| lesspipe %s"` --> ⚙️ Environment variable-i ke bayad set shavad ta `less` az `lesspipe` estefade konad.
+    🔹 Tanzimat dar `/etc/lesspipe.sh` ya `~/.lesspipe` --> 🔧 File-haye tanzimat baraye tagheer raftare `lesspipe`.
+    🔹 `lesspipe` be soorate khodkar format-haye ziadi ra handle mikonad --> 🦾 Handle kardane format-haye mokhtalef mesle zip, tar, image, pdf be soorate automatic.
+
+🛠 **Mesal-ha:**
+
+    $ export LESSOPEN="| lesspipe %s"
+    $ less file.tar.gz
+
+    🔹 Namayesh dadane dakhele yek file `tar.gz` ba estefade az `less`.
+
+    $ less file.pdf
+
+    🔹 Namayesh dadane matne dakhele yek file `pdf` ba estefade az `lesspipe` (agar `pdftotext` nasb bashad).
+
+✅ **Mesal sade:**
+
+    $ less script.py
+
+    🔹 Agar `script.py` yek file code python bashad, `lesspipe` an ra ba rang-bandi (agar nasb bashad) namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lesspipe` command is a script used to enhance the display of files in the `less` command. It recognizes various file formats and converts them into a format that `less` can properly display, such as color-coded code or PDF files converted to text.
+
+⚙️ **Options:**
+    🔹 `LESSOPEN="| lesspipe %s"` --> ⚙️ Environment variable that must be set for `less` to use `lesspipe`.
+    🔹 Settings in `/etc/lesspipe.sh` or `~/.lesspipe` --> 🔧 Configuration files for modifying the behavior of `lesspipe`.
+    🔹 `lesspipe` automatically handles many formats --> 🦾 Automatic handling of different formats like zip, tar, images, and PDFs.
+
+🛠 **Examples:**
+
+    $ export LESSOPEN="| lesspipe %s"
+    $ less file.tar.gz
+
+    🔹 Displaying the contents of a `tar.gz` file using `less`.
+
+    $ less file.pdf
+
+    🔹 Displaying the text content of a `pdf` file using `lesspipe` (if `pdftotext` is installed).
+
+✅ **Simple Example:**
+
+    $ less script.py
+
+    🔹 If `script.py` is a Python code file, `lesspipe` will display it with syntax highlighting (if installed).

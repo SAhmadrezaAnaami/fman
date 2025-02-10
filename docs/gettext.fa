@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gettext` baraye tarjomeh kardan matn-ha (text) dar barname-ha (programs) be zaban-haye mokhtalef (different languages) estefade mishavad. Yani, komak mikonad barname-haye shoma be zaban-haye digar ham kar konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `gettext "matn"`  --> 💬 Chap kardan (print) tarjomeh shodeh (translated) matn  
+    🔹 `gettext -s "matn"` --> 📝 Behtarine agar matn shoma dorosht (plural) bashad.
+    🔹 `gettext -d domain "matn"`  --> 🏢 Estefade az file tarjomeh (translation file) ba name 'domain'.
+    🔹 `gettext -n`  --> 🌍 Tarjomeh bar asase adade morede nazar
+
+🛠 **Mesal-ha:**
+
+    $ gettext "Hello, world!"
+
+    🔹 Agar tarjomeh "Hello, world!" dar dastras bashad, on ra chap mikonad.
+
+    $ gettext -d myprogram "Good morning"
+
+    🔹 Az file tarjomeh (translation file) baraye barnameh 'myprogram' estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ gettext "Welcome to my application."
+
+    🔹 Agar shoma file zaban farsi dashte bashid, mesle "Khosh amadid be barnameh man" namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gettext` command is used to translate text in programs to different languages. It helps your programs work in multiple languages.
+
+⚙️ **Options:**
+    🔹 `gettext "text"`  --> 💬 Print the translated text
+    🔹 `gettext -s "text"` --> 📝 Best used for translating plural forms.
+    🔹 `gettext -d domain "text"`  --> 🏢 Use a translation file named 'domain'.
+    🔹 `gettext -n`  --> 🌍 Translate based on number
+
+🛠 **Examples:**
+
+    $ gettext "Hello, world!"
+
+    🔹 If a translation for "Hello, world!" is available, it will print it.
+
+    $ gettext -d myprogram "Good morning"
+
+    🔹 Use the translation file for the program 'myprogram'.
+
+✅ **Simple Example & Explanation:**
+
+    $ gettext "Welcome to my application."
+
+    🔹 If you have a Persian language file, it will display something like "Khosh amadid be barnameh man."

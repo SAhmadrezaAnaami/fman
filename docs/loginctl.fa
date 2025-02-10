@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `loginctl` baraye control kardan `systemd-logind`, ke service-e modiriat session va vorood karbar ast, be kar miravad. Ba `loginctl` mitoonid karbar-ha ra list konid, session-ha ra modiriat konid, va system ra khamush ya restart konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `loginctl list-users` --> 🧑‍🤝‍🧑 List kardan hameye karbar-haye system.
+    🔹 `loginctl list-sessions` --> 💻 List kardan hameye session-haye fa'al.
+    🔹 `loginctl show-session [ID]` --> 🔍 Namayesh etela'at kamel dar morede yek session be moshakhas.
+    🔹 `loginctl terminate-session [ID]` --> 🚪 Baste session be moshakhas.
+    🔹 `loginctl poweroff` --> ⛔️ Khamush kardane system.
+    🔹 `loginctl reboot` --> 🔄 Restart kardane system.
+
+🛠 **Mesal-ha:**
+
+    $ loginctl list-users
+
+    🔹 List mikone hameye karbar-ha ro.
+
+    $ loginctl show-session 2
+
+    🔹 Namayesh mide etela'at kamel session ba ID 2.
+
+✅ **Mesal sade:**
+
+    $ loginctl terminate-session 2
+
+    🔹 Session ba ID 2 ro mibande (agar shoma dastresi dashte bashid).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `loginctl` command is used to control `systemd-logind`, which is the system service that manages user logins and sessions. With `loginctl`, you can list users, manage sessions, and shut down or reboot the system.
+
+⚙️ **Options:**
+    🔹 `loginctl list-users` --> 🧑‍🤝‍🧑 List all users on the system.
+    🔹 `loginctl list-sessions` --> 💻 List all active sessions.
+    🔹 `loginctl show-session [ID]` --> 🔍 Show detailed information about a specific session.
+    🔹 `loginctl terminate-session [ID]` --> 🚪 Terminate a specific session.
+    🔹 `loginctl poweroff` --> ⛔️ Shut down the system.
+    🔹 `loginctl reboot` --> 🔄 Reboot the system.
+
+🛠 **Examples:**
+
+    $ loginctl list-users
+
+    🔹 Lists all users.
+
+    $ loginctl show-session 2
+
+    🔹 Shows detailed information for session with ID 2.
+
+✅ **Simple Example:**
+
+    $ loginctl terminate-session 2
+
+    🔹 Terminates the session with ID 2 (if you have the required permissions).

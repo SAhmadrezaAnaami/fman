@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `linkicc` baraye sakhtane profile haye rangi ICC (International Color Consortium) bar asase chandin profile asli estefade mishavad. In dastoor be shoma komak mikonad ta profile ranghaye khas bekhshid va ranghaye tolid shode ra behtar control konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `linkicc -i <profile_1> <profile_2> [...] -o <output_profile>` --> 🔗 Profile haye ICC ra vasl mikonad va yek profile jadid misazad. `-i` profile haye voroodi ra moshakhas mikonad va `-o` profile khrooji ra.
+    🔹 `linkicc --intent <range_render>` --> 🎨 Raftar render kardane profile ra moshakhas mikonad. Mitanid az gozine hayi mesle `Perceptual`, `RelativeColorimetric`, `Saturation`, ya `AbsoluteColorimetric` estefade konid.
+    🔹 `linkicc --black-point-compensation` --> ⚫️ Jibrane noghte siyah ra fa'al mikonad, ke be behtar shodan contrast dar tasavvirha komak mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ linkicc -i profile1.icc profile2.icc -o linked_profile.icc
+
+    🔹 Profile haye `profile1.icc` va `profile2.icc` ra vasl mikonad va yek profile jadid ba name `linked_profile.icc` misazad.
+
+    $ linkicc -i profile_monitor.icc profile_printer.icc -o printer_profile.icc --intent RelativeColorimetric
+
+    🔹 Profile haye monitor va printer ra vasl mikonad va yek profile jadid baraye printer ba raftar render kardane `RelativeColorimetric` misazad.
+
+✅ **Mesal sade:**
+
+    $ linkicc -i sRGB.icc AdobeRGB.icc -o combined.icc
+
+    🔹 In dastoor profile haye ranghaye sRGB va AdobeRGB ra vasl mikonad va yek profile rang jadid be name `combined.icc` misazad. In profile mitavanad baraye behtar kardane tolid rang dar software haye graphic estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `linkicc` command is used to create linked ICC (International Color Consortium) color profiles based on multiple source profiles. It allows you to generate custom color profiles and better control color reproduction.
+
+⚙️ **Options:**
+    🔹 `linkicc -i <profile_1> <profile_2> [...] -o <output_profile>` --> 🔗 Links ICC profiles to create a new profile. `-i` specifies the input profiles, and `-o` specifies the output profile.
+    🔹 `linkicc --intent <rendering_intent>` --> 🎨 Specifies the rendering intent for the linked profile.  You can use options such as `Perceptual`, `RelativeColorimetric`, `Saturation`, or `AbsoluteColorimetric`.
+    🔹 `linkicc --black-point-compensation` --> ⚫️ Enables black point compensation, which can help improve contrast in images.
+
+🛠 **Examples:**
+
+    $ linkicc -i profile1.icc profile2.icc -o linked_profile.icc
+
+    🔹 Links the profiles `profile1.icc` and `profile2.icc` and creates a new profile named `linked_profile.icc`.
+
+    $ linkicc -i profile_monitor.icc profile_printer.icc -o printer_profile.icc --intent RelativeColorimetric
+
+    🔹 Links the monitor and printer profiles and creates a new profile for the printer with a rendering intent of `RelativeColorimetric`.
+
+✅ **Simple Example:**
+
+    $ linkicc -i sRGB.icc AdobeRGB.icc -o combined.icc
+
+    🔹 This command links the sRGB and AdobeRGB color profiles and creates a new color profile named `combined.icc`. This profile can be used to improve color reproduction in graphics software.

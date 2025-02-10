@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `nm-applet` yek barname-ye koochak ast ke dar system tray (kenar saat) neshan dade mishavad va shoma mitavanid ba estefade az an, etesalat shabake-ye khod ra modiriyat konid (wifi, ethernet, vpn va gheyre). Agar be internet motasel nistid, ya mikhahid wifi ra taghir dahid, az `nm-applet` estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `nm-applet` --> 🚀 Ejra-ye barname az terminal. oboori. Agar dar system tray nabood, ba in dastoor aan ra ejra konid.
+    🔹 `nm-applet --sm-disable` --> 🤫  Ejra-ye `nm-applet` bedoon save session.  Baraye vaghti mikhahid an ra test konid.
+    🔹 `nm-applet --indicator` --> 💡 Estefade az indicator baraye namayesh status shabake (dar GNOME shell).
+
+🛠 **Mesal-ha:**
+
+    $ nm-applet
+
+    🔹 Ejra-ye `nm-applet` dar system tray. Agar az ghabl ejra nashode bashad, ba in dastoor aan ra ejra mikonid.
+
+    $ nm-applet --sm-disable
+
+    🔹 Ejra-ye nm-applet bedoon save session. in yani bad az close kardane terminal an ham basteh mishavad
+
+✅ **Mesal sade:**
+
+    $ nm-applet &
+
+    🔹  Ejra-ye `nm-applet` dar background. `&` yani barname dar background ejra shavad va terminal ra azad konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `nm-applet` is a small program that sits in your system tray (next to the clock) and allows you to manage your network connections (WiFi, Ethernet, VPN, etc.). Use `nm-applet` if you're not connected to the internet, or need to change your WiFi network.
+
+⚙️ **Options:**
+    🔹 `nm-applet` --> 🚀 Run the program from the terminal. This is useful if it's not already running in the system tray.
+    🔹 `nm-applet --sm-disable` --> 🤫 Run `nm-applet` without session management. Use this for testing purposes.
+    🔹 `nm-applet --indicator` --> 💡 Use the indicator applet to display network status (in GNOME shell).
+
+🛠 **Examples:**
+
+    $ nm-applet
+
+    🔹 Starts `nm-applet` in the system tray. If it's not already running, this command will start it.
+
+    $ nm-applet --sm-disable
+
+    🔹 Starts nm-applet without session management. This mean if you close the terminal nm-applet will close too
+
+✅ **Simple Example:**
+
+    $ nm-applet &
+
+    🔹 Runs `nm-applet` in the background. The `&` symbol tells the shell to run the program in the background and free up the terminal.

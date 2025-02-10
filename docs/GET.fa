@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `GET` dar barnamenevisi bash estefade mishavad baraye gereftan meghdare yek moteghayer (variable). In dastoor bishtar dar скрипt-ha baraye daryaft voroodi az karbar ya az meghdare moteghayer-ha estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `GET` --> Befarmaeed voroodi az karbar ra daryaft konad va aan ra dar yek moteghayer zakhire konad. (Dar bash, `GET` be soorate mostaghim voojood nadarad. Az `read` estefade mishavad.)
+    🔹 `read -p "Payam: " moteghayer`  --> 💬 Payam ra chap mikonad va voroodi ra dar `moteghayer` zakhire mikonad.
+    🔹 `read -r moteghayer` --> 🚫 Character-haye khass ra tafsir nemikonad (raw input).
+
+🛠 **Mesal-ha:**
+
+    $ read -p "Lotfan esme khod ra vared konid: " esm
+
+    🔹 Az karbar darkhast mikonad ke esm ra vared konad va aan ra dar moteghayer `esm` zakhire mikonad.
+
+    $ echo "Salam, $esm!"
+
+    🔹 Payam salam ra chap mikonad ba estefade az esme vared shode.
+
+✅ **Mesal sade:**
+
+    $ read -p "Chand sal darid? " sen
+    $ echo "Shoma $sen sale hastid."
+
+    🔹 Az karbar soal mikonad chand sal darad va javab ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `GET` command, in the context of bash scripting, is used to retrieve the value of a variable. More commonly in bash, you achieve this by using the `read` command to get input from the user or from the value of a variable.
+
+⚙️ **Options:**
+    🔹 `GET` -->  Prompts the user to enter input and saves it to a variable. (In bash, `GET` doesn't exist directly. `read` is used.)
+    🔹 `read -p "Prompt: " variable` --> 💬 Prints a prompt and saves the input to `variable`.
+    🔹 `read -r variable` --> 🚫 Does not interpret special characters (raw input).
+
+🛠 **Examples:**
+
+    $ read -p "Please enter your name: " name
+
+    🔹 Prompts the user to enter their name and saves it to the variable `name`.
+
+    $ echo "Hello, $name!"
+
+    🔹 Prints a greeting message using the entered name.
+
+✅ **Simple Example:**
+
+    $ read -p "How old are you? " age
+    $ echo "You are $age years old."
+
+    🔹 Asks the user for their age and prints the answer.
+

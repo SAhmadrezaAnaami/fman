@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_fixperms` baraye dorost kardane dastresi-ha (permissions) rooye file-ha va pooshe-ha dar pake-haye Debian estefade mishavad. Yani, motmaen mishavad ke file-ha dastresi haye dorosti baraye karbar-ha va group-ha dashte bashand. In dastoor oboore amniyati ra kam mikonad va amniyat ra behtar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-X[package]` --> 🗑️ Faghat file-haye `debian/package.install` ra check mikonad. Agar `package` zekr nashode bashad, hameye pake-ha ra check mikonad.
+    🔹 `-p` --> 🛠️ Dastresi-ha ra dorost mikonad. Agar in gozine nabashad, faghat dastresi-haye ghalat ra chap mikonad.
+    🔹 `--sourcedir=dir` --> 📁 Directory'e manba' (source) ra moshakhas mikonad. Dar vaghe be jaye `debian/tmp` estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_fixperms
+
+    🔹 Dastresi-haye file-ha va pooshe-ha ra dar hameye pake-ha check mikonad.
+
+    $ dh_fixperms -Xmypackage
+
+    🔹 Faghat file-haye `debian/mypackage.install` ra check mikonad.
+
+    $ dh_fixperms -p
+
+    🔹  Dastresi-haye ghalat ra dorost mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_fixperms -p -Xmypackage
+
+    🔹 In dastoor file-haye `debian/mypackage.install` ra check mikonad va agar dastresi haye ghalati vojood dashte bashad, anha ra dorost mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_fixperms` command is used to correct the permissions on files and directories in Debian packages. It ensures that the files have the correct permissions for users and groups, reducing security vulnerabilities and improving overall security.
+
+⚙️ **Options:**
+    🔹 `-X[package]` --> 🗑️ Only check files listed in `debian/package.install`. If `package` is not specified, all packages are checked.
+    🔹 `-p` --> 🛠️ Fix the permissions. If this option is not used, it only prints the incorrect permissions.
+    🔹 `--sourcedir=dir` --> 📁 Specifies the source directory. Effectively used instead of `debian/tmp`.
+
+🛠 **Examples:**
+
+    $ dh_fixperms
+
+    🔹 Checks the permissions of files and directories in all packages.
+
+    $ dh_fixperms -Xmypackage
+
+    🔹 Only checks files listed in `debian/mypackage.install`.
+
+    $ dh_fixperms -p
+
+    🔹 Fixes incorrect permissions.
+
+✅ **Simple Example:**
+
+    $ dh_fixperms -p -Xmypackage
+
+    🔹 This command checks the files listed in `debian/mypackage.install` and corrects any incorrect permissions it finds.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty` yek barnameh ast baraye tabdil matn be khatte braille. In dastoor be afradi ke binayi kam ya nabinayi darand komak mikonad ta az system-haye computeri estefadeh konand. Ba estefadeh az `brltty`, matn-ha be shekle khatte braille rooye nemayeshgar-haye braille namayesh dade mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `brltty -b driver,address`  --> 🖥️  Entkhab driver va address baraye dastgah Braille.  
+    🔹 `brltty -t terminal`  --> ⌨️  T’يين noe terminal baraye dastgah.
+    🔹 `brltty -n`  --> 🚫 اجرا در پس زمینه بدون نمایش پیغام ها.
+    🔹 `brltty -q`  --> 🤫 اجرا در حالت ساکت (بدون خروجی زیاد).
+
+🛠 **Mesal-ha:**
+
+    $ brltty -b alva,usb
+
+    🔹 اجرا با درایور alva و اتصال USB.
+
+    $ brltty -t linux
+
+    🔹 اجرای BRLTTY در ترمینال لینوکس.
+
+✅ **Mesal sade:**
+
+    $ brltty
+
+    🔹 Ba ejraye sade, `brltty` ba tanzeemat pishfarz shoru be kar mikonad va matn-ha ra be khatte braille tabdil mikonad agar dastgah braille motasel bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty` command is a background process (daemon) that provides Braille display support for Linux/Unix systems. It allows visually impaired users to interact with the system by converting text into Braille output on a connected Braille display.
+
+⚙️ **Options:**
+    🔹 `brltty -b driver,address` --> 🖥️  Specifies the Braille display driver and address.
+    🔹 `brltty -t terminal` --> ⌨️  Specifies the terminal type.
+    🔹 `brltty -n` --> 🚫 Runs in the background with no messages.
+    🔹 `brltty -q` --> 🤫 Runs in quiet mode (minimal output).
+
+🛠 **Examples:**
+
+    $ brltty -b alva,usb
+
+    🔹 Starts BRLTTY with the alva driver and a USB connection.
+
+    $ brltty -t linux
+
+    🔹 Starts BRLTTY in a Linux terminal environment.
+
+✅ **Simple Example:**
+
+    $ brltty
+
+    🔹 With a simple execution, `brltty` starts with default settings and converts text to Braille if a Braille display is connected.

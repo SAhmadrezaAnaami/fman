@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_auto_clean` baraye pak kardan file-haye sakhte shode dar hengameye build kardan yek package Debian estefade mishavad. In dastoor khodkar ast va be shoma komak mikonad ta pooshe-haye build-e khod ra moratab negah darid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `dh_auto_clean`  --> ✨  Pak kardane default-e directory-haye build.
+    🔹 `-X<pattern>` --> 🚫  Estenah kardane file-ha ya directory-ha az pak shodan (az regex estefade konid).
+
+🛠 **Mesal-ha:**
+
+    $ dh_auto_clean
+
+    🔹  Pak kardane hameye file-haye temporari va build artifacts az directory-e build.
+
+    $ dh_auto_clean -X*.o -Xtemp/
+
+    🔹  Pak kardane hameye file-ha be joz file-haye ba extension `.o` va directory `temp/`.
+
+✅ **Mesal sade:**
+
+    $ dh_auto_clean
+
+    🔹  Agar directory-e build shoma file-haye object (`.o`) ya file-haye backup (`.bak`) dashte bashad, in dastoor anha ra pak mikonad ta directory-e shoma moratab bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_auto_clean` command is used to clean up files created during the build process of a Debian package. This command is automated and helps you keep your build directories organized.
+
+⚙️ **Options:**
+    🔹 `dh_auto_clean`  --> ✨ Cleans the default build directories.
+    🔹 `-X<pattern>` --> 🚫 Excludes files or directories from being cleaned (uses regex).
+
+🛠 **Examples:**
+
+    $ dh_auto_clean
+
+    🔹 Cleans all temporary files and build artifacts from the build directory.
+
+    $ dh_auto_clean -X*.o -Xtemp/
+
+    🔹 Cleans all files except files with the `.o` extension and the `temp/` directory.
+
+✅ **Simple Example:**
+
+    $ dh_auto_clean
+
+    🔹 If your build directory contains object files (`.o`) or backup files (`.bak`), this command will remove them to keep your directory tidy.

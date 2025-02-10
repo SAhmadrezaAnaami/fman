@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `automake` yek abzar baraye sakhtan `Makefile` az `configure.ac` ast. `Makefile` file-haye lazem baraye tabdil kardan source code be barnameye ejraii ra dorost mikonad. `automake` kar ra baraye developer-ha asan mikonad ta code-haye bozorg va pichide ra betavanand sakht va nasb konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `automake --add-missing`  --> ➕ Ezafe kardane file-haye goom shodeye standard, mesle `COPYING` ya `INSTALL`.
+    🔹 `automake --copy`  --> 📄 Copy kardane file-haye poshtibani be directory.
+    🔹 `automake --foreign`  --> 🌐 Estefade az `style` "foreign" ke sakhtgiri kamtari darad. Baraye project-haee ke kheili standard nistand mofid ast.
+
+🛠 **Mesal-ha:**
+
+    $ automake --add-missing
+    
+    🔹 Ijad ya ezafe kardane file-haye standard agar nabashand.
+
+    $ automake --copy --foreign
+    
+    🔹 Copy kardane file-haye lazem va estefade az `style` "foreign".
+
+✅ **Mesal sade:**
+
+    $ automake
+    
+    🔹 Ijad ya update kardane `Makefile.in` az `configure.ac`.  Bad az aan, dastoor `./configure` va `make` ra ejra konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `automake` command is a tool for automatically generating `Makefile`s from `configure.ac`. `Makefile`s are used to specify how to build and install software from source code. `automake` simplifies the build process for developers, especially for large and complex projects.
+
+⚙️ **Options:**
+    🔹 `automake --add-missing`  --> ➕ Add any standard files that are missing, such as `COPYING` or `INSTALL`.
+    🔹 `automake --copy`  --> 📄 Copy support files to the directory.
+    🔹 `automake --foreign`  --> 🌐 Use the "foreign" style, which is less strict. Useful for projects that do not adhere to all standards.
+
+🛠 **Examples:**
+
+    $ automake --add-missing
+    
+    🔹 Creates or adds standard files if they are missing.
+
+    $ automake --copy --foreign
+    
+    🔹 Copies necessary support files and uses the "foreign" style.
+
+✅ **Simple Example:**
+
+    $ automake
+    
+    🔹 Creates or updates `Makefile.in` from `configure.ac`. After this, run `./configure` and then `make`.

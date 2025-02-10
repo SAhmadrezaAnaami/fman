@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `archpath` baraye peyda kardan va namayesh dadan masir haye (path) file haye archive (مانند zip, tar, rar) dar system estefade mishavad. In dastoor be shoma komak mikonad ta be tore asan file haye archive ra peyda konid bedune inke be tore dasti donbale anha begardid.
+
+⚙️ **Gozine-ha:**
+    🔹 `archpath -l`  --> 📜 Namayesh list kamele filehaye archive be hamrahe masir anha.
+    🔹 `archpath -d <directory>`  --> 👀 Gardesh dar yek pooshe (directory) khass baraye peyda kardane filehaye archive. Agar directory ra moshakhas nakonid, az directory kari konuni estefade mikonad.
+    🔹 `archpath -e <extension>`  --> 🔍 Peyda kardane file haye archive ba پسوند (extension) khass mesle zip ya tar. Agar extension ra moshakhas nakonid, hameye extension haye mamool ra search mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ archpath
+
+    🔹 Peyda kardane hameye file haye archive dar directory kari konuni.
+
+    $ archpath -d /home/user/downloads -e zip
+
+    🔹 Peyda kardane hameye filehaye zip dar pooshe downloads.
+
+✅ **Mesal sade:**
+
+    $ archpath -l
+
+    🔹 List kamele hameye file haye archive be hamrahe masir anha namayesh dade mishavad.  In komak mikonad ta be tore asan be file haye archive dastresi dashte bashid bedune inke masir anha ra be yad داشته باشيد.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `archpath` command is used to find and display the paths of archive files (like zip, tar, rar) in the system. This command helps you easily locate archive files without manually searching for them.
+
+⚙️ **Options:**
+    🔹 `archpath -l`  --> 📜 Show the complete list of archive files along with their paths.
+    🔹 `archpath -d <directory>`  --> 👀 Search for archive files within a specific directory. If you don't specify a directory, it uses the current working directory.
+    🔹 `archpath -e <extension>`  --> 🔍 Find archive files with a specific extension like zip or tar. If you don't specify an extension, it searches for all common archive extensions.
+
+🛠 **Examples:**
+
+    $ archpath
+
+    🔹 Find all archive files in the current working directory.
+
+    $ archpath -d /home/user/downloads -e zip
+
+    🔹 Find all zip files in the downloads folder.
+
+✅ **Simple Example:**
+
+    $ archpath -l
+
+    🔹 Displays the complete list of all archive files along with their paths. This helps you easily access archive files without having to remember their paths.

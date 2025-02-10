@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mimetype` baraye peida kardan va namayesh dadane noe' (type) yek file estefade mishavad. Be zabane sade, be shoma miguyad ke yek file che noe' file'i ast (masalan aks, film, ya matn).
+
+⚙️ **Gozine-ha:**
+    🔹 `mimetype FILENAME`  --> 🔍 Peida kardane noe' file (MIME type)
+    🔹 `mimetype -b FILENAME` --> 🤏 Faghat name noe' ra chap kon (bedune etela'ate ezafe)
+    🔹 `mimetype --version` --> ℹ️ Namayesh versiane barnameh
+
+🛠 **Mesal-ha:**
+
+    $ mimetype document.pdf
+
+    🔹 Namayesh noe' file "document.pdf". Output mesle "document.pdf: application/pdf" khahad bud.
+
+    $ mimetype -b image.jpg
+
+    🔹 Chap kardane faghat noe' file "image.jpg". Output mesle "image/jpeg" khahad bud.
+
+✅ **Mesal sade:**
+
+    $ mimetype my_photo.png
+
+    🔹 Agar "my_photo.png" yek file aks bashad, dastoor natijeye "my_photo.png: image/png" ra namayesh khahad dad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mimetype` command is used to determine and display the MIME type of a file. Simply put, it tells you what kind of file it is (e.g., image, video, or text).
+
+⚙️ **Options:**
+    🔹 `mimetype FILENAME`  --> 🔍  Determine the MIME type of the file
+    🔹 `mimetype -b FILENAME` --> 🤏  Print only the MIME type (without extra information)
+    🔹 `mimetype --version` --> ℹ️  Show the program's version
+
+🛠 **Examples:**
+
+    $ mimetype document.pdf
+
+    🔹  Displays the MIME type of the file "document.pdf". The output will be something like "document.pdf: application/pdf".
+
+    $ mimetype -b image.jpg
+
+    🔹  Prints only the MIME type of the file "image.jpg". The output will be something like "image/jpeg".
+
+✅ **Simple Example:**
+
+    $ mimetype my_photo.png
+
+    🔹 If "my_photo.png" is an image file, the command will output "my_photo.png: image/png".
+

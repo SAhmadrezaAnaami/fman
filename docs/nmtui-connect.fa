@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nmtui-connect` baraye vasl shodan be shabake-ha (networks) az tarigh dastoor-e `nmtui` (NetworkManager TUI) estefade mishavad. Ba in dastoor mitoonid be WiFi ya Ethernet vasl shavid, VPN configurate konid va etela'at shabake ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 hich gozine-ye khas-i -->  Agar be tanhayi estefade shavad, dastoor `nmtui-connect` ra ba interface grafiki baz mikonad, ta shoma be shabake mored nazar vasl shavid.
+    🔹 `nmtui-connect <esm shabake>` --> 📶 Be shabake ba esm moshakhas shode vasl mishavad. Agar password lazem bashad, az shoma khaste mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ nmtui-connect
+
+    🔹 In dastoor interface `nmtui-connect` ra baz mikonad, va shoma mitoonid shabake-ye khod ra entekhab konid.
+
+    $ nmtui-connect MyWiFi
+
+    🔹 In dastoor be shabake-ye WiFi ba esm "MyWiFi" vasl mishavad.
+
+✅ **Mesal sade:**
+
+    $ nmtui-connect office-vpn
+
+    🔹 Agar yek shabake-ye VPN ba esm "office-vpn" define shode bashad, ba ejraye in dastoor be an vasl mishavid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nmtui-connect` command is used to connect to networks using the `nmtui` (NetworkManager TUI) tool. It allows you to connect to Wi-Fi or Ethernet networks, configure VPNs, and view network information.
+
+⚙️ **Options:**
+    🔹 No specific options --> If used alone, the `nmtui-connect` command opens the graphical interface, allowing you to select and connect to your desired network.
+    🔹 `nmtui-connect <network name>` --> 📶 Connects to the specified network. If a password is required, you will be prompted.
+
+🛠 **Examples:**
+
+    $ nmtui-connect
+
+    🔹 This command opens the `nmtui-connect` interface, allowing you to choose your network.
+
+    $ nmtui-connect MyWiFi
+
+    🔹 This command connects to the Wi-Fi network named "MyWiFi".
+
+✅ **Simple Example:**
+
+    $ nmtui-connect office-vpn
+
+    🔹 If a VPN connection named "office-vpn" is defined, running this command connects you to that VPN.

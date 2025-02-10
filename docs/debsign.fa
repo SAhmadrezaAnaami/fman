@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debsign` baraye emza kardan (*sign*) package-haye Debian (.deb) estefade mishavad. In kar baraye etminan az dorosti va asli boodan package anjam mishavad. Yani, sabab mishe motmaen bashim ke package dastkari nashode ast va az taraf kasi ke etemad darim omade.
+
+⚙️ **Gozine-ha:**
+    🔹 `debsign -k <shenase_key>` --> 🔑 Estefade az yek kalid khass baraye emza kardan. `shenase_key` mitone ID kalid ya email address bashe.
+    🔹 `debsign -r` --> ♻️ Dobare emza kardan package haee ke ghablan emza shode and.
+    🔹 `debsign -p` --> 📢 Namayesh dastoorhayee ke `debsign` ejra mikonad, bedoone ejra kardan aanha.
+    🔹 `debsign -d` --> 🔎 Debug mode ra fa'al mikonad baraye peyda kardan moshkelat.
+
+🛠 **Mesal-ha:**
+
+    $ debsign mypackage.deb
+
+    🔹 Emza kardan `mypackage.deb` ba kalid pishfarz (*default*).
+
+    $ debsign -k "mykey@example.com" mypackage.deb
+
+    🔹 Emza kardan `mypackage.deb` ba estefade az kalidi ba email `mykey@example.com`.
+
+✅ **Mesal sade:**
+
+    $ debsign -k "0123456789ABCDEF" mypackage.deb
+
+    🔹  Emza kardan `mypackage.deb` ba kalidi ba shenaseye "0123456789ABCDEF". In kar etminan mide ke faghat kasani ke be kalid shakhsi shoma dastresi darand mitonan package ro emza konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debsign` command is used to sign Debian packages (.deb). This ensures the integrity and authenticity of the package.  It confirms that the package hasn't been tampered with and comes from a trusted source.
+
+⚙️ **Options:**
+    🔹 `debsign -k <key_id>` --> 🔑 Use a specific key for signing. `key_id` can be a key ID or an email address.
+    🔹 `debsign -r` --> ♻️ Re-sign packages that have already been signed.
+    🔹 `debsign -p` --> 📢 Display the commands `debsign` would execute without actually running them.
+    🔹 `debsign -d` --> 🔎 Enable debug mode for troubleshooting.
+
+🛠 **Examples:**
+
+    $ debsign mypackage.deb
+
+    🔹 Sign `mypackage.deb` using the default key.
+
+    $ debsign -k "mykey@example.com" mypackage.deb
+
+    🔹 Sign `mypackage.deb` using the key with email `mykey@example.com`.
+
+✅ **Simple Example:**
+
+    $ debsign -k "0123456789ABCDEF" mypackage.deb
+
+    🔹  Sign `mypackage.deb` with the key having the ID "0123456789ABCDEF".  This ensures that only those with access to your private key can sign the package.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `im-config` baraye entekhab va moratab kardane configuration-haye Input Method (IM) dar Linux estefade mishavad.  Input Method baraye vared kardane zabanhaye gheyre az Englisi mesle Farsi, Arabi va ... ast.  In dastoor be shoma komak mikone ta IM ke mikhayd ro ra andazi konid va estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `im-config -n system`  --> 💻 Taghir dadane IM system be soorate default baraye hameye user-ha.  (Needs root permission)
+    🔹 `im-config -l`      --> 📜 List kardane hameye IM-haye dast ras.
+    🔹 `im-config -c`      --> ❓ Check kardane IM configuration felie user.
+
+🛠 **Mesal-ha:**
+
+    $ im-config -n ibus
+
+    🔹 Taghir dadane IM system be IBus.  Badi az in dastoor, logout/login konid.
+
+    $ im-config -l
+
+    🔹 Namayesh list-e hameye IM-haye dast ras dar system.
+
+✅ **Mesal sade:**
+
+    $ im-config -c
+
+    🔹 In dastoor configuration felie Input Method ra namayesh midahad. Az inja mitonid befahmid ke az che IM estefade mikonid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `im-config` command is used to configure and select Input Method (IM) configurations in Linux. Input Methods are used to enter languages other than English, such as Persian, Arabic, etc. This command helps you to set up and use the IM you want.
+
+⚙️ **Options:**
+    🔹 `im-config -n system`  --> 💻 Changes the system-wide default IM. (Needs root permission)
+    🔹 `im-config -l`      --> 📜 Lists all available IMs.
+    🔹 `im-config -c`      --> ❓ Checks the current IM configuration for the user.
+
+🛠 **Examples:**
+
+    $ im-config -n ibus
+
+    🔹 Changes the IM system to IBus. After this command, logout/login.
+
+    $ im-config -l
+
+    🔹 Displays a list of all available IMs on the system.
+
+✅ **Simple Example & Explanation:**
+
+    $ im-config -c
+
+    🔹 This command displays the current Input Method configuration. From here you can find out which IM you are using.

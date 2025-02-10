@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-check` baraye baresi kardan va etela' gereftan az vaz'iyate chapgar haye HP rooye system shoma estefade mishavad. In dastoor komak mikonad ta az dorost kar kardan chapgar va daryafte ta'rif haye (drivers) lazem اطمینان حاصل کنید.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-check -t`  --> 🧪 Baresi sade va sari' (check-e zood gozar)
+    🔹 `hp-check -r`  --> ♻️  Sakhte dobare queue haye chapgar (printer queues)
+    🔹 `hp-check -i`  --> ℹ️  Namayesh etela'at bishtar dar morede system va nasb bodan برنامه ها (applications)
+
+🛠 **Mesal-ha:**
+
+    $ hp-check
+
+    🔹 اجرا کردن بررسی کامل سیستم برای چاپگرهای HP.
+
+    $ hp-check -t
+
+    🔹 اجرا کردن یک بررسی سریع برای مشکلات رایج.
+
+✅ **Mesal sade:**
+
+    $ hp-check -r
+
+    🔹 دوباره سازی صف‌های چاپگر برای رفع مشکلات احتمالی.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-check` command is used to check and obtain information about the status of HP printers on your system. This command helps ensure your printer is functioning correctly and that you have the necessary drivers installed.
+
+⚙️ **Options:**
+    🔹 `hp-check -t`  --> 🧪 Perform a simple and quick check.
+    🔹 `hp-check -r`  --> ♻️ Rebuild printer queues.
+    🔹 `hp-check -i`  --> ℹ️ Show more information about the system and installed applications.
+
+🛠 **Examples:**
+
+    $ hp-check
+
+    🔹 Run a complete system check for HP printers.
+
+    $ hp-check -t
+
+    🔹 Run a quick check for common issues.
+
+✅ **Simple Example & Explanation:**
+
+    $ hp-check -r
+
+    🔹 Rebuild printer queues to resolve potential problems.
+

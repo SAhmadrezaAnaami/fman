@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lesskey` baraye ijad ya tagheer dadan file-haye kelid (key bindings) baraye dastoor `less` be kar miravad. `less` yek dastoor safhe-bandi (paging) ast ke baraye didan file-haye bozorg estefade mishavad. Shoma mitavanid kelid-haye mokhtalef ra ta'rif konid ta karhaye mokhtalefi anjam dahand, mesle raftan be safhe badi, safhe ghabli, jostejoo, va gheyre. Ba `lesskey` shoma mitavanid `less` ra be delkhah-e khod moratab konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lesskey filename`  --> 📁 Az file eshkal-ha baraye ta'rif kelid-ha estefade kon.
+    🔹 `lesskey -o output_file input_file`  --> 💾 File voroodi ra be file khorooji tabdil kon.
+    🔹 `lesskey --help`  --> ℹ️ Namayesh komakha va rahnamai-e dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ lesskey  
+    
+    🔹 In dastoor yek file jadid baraye ta'rif kelid-ha baz mikonad. Shoma mitavanid kelid-haye khod ra dar aan vared konid.
+
+    $ lesskey mykeys.txt  
+    
+    🔹 In dastoor file `mykeys.txt` ra baraye ta'rif kelid-ha estefade mikonad.
+
+✅ **Mesal sade:**
+    
+    $ lesskey  
+    
+    🔹 Ba ejraye in dastoor, yek editor baz mishavad ke shoma mitavanid kelid-haye khod ra dar aan ta'rif konid. File save shode, be shekl otomatik baraye `less` estefade khahad shod.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lesskey` command is used to create or modify key binding files for the `less` command. `less` is a pager program used to view large files. You can define different keys to perform various actions, such as moving to the next page, previous page, searching, and more. With `lesskey`, you can customize `less` to your liking.
+
+⚙️ **Options:**
+    🔹 `lesskey filename`  --> 📁 Use the specified file to define key bindings.
+    🔹 `lesskey -o output_file input_file`  --> 💾 Convert the input file to the output file.
+    🔹 `lesskey --help`  --> ℹ️ Display help information and instructions.
+
+🛠 **Examples:**
+
+    $ lesskey
+    
+    🔹 This command opens a new file to define key bindings. You can enter your custom key bindings in it.
+
+    $ lesskey mykeys.txt
+    
+    🔹 This command uses the file `mykeys.txt` to define key bindings.
+
+✅ **Simple Example:**
+    
+    $ lesskey
+    
+    🔹 Running this command opens an editor where you can define your custom key bindings. The saved file will be automatically used for `less`.

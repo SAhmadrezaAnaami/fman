@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msggrep` baraye jostojoo kardan dar file-haye `messages` estefade mishavad. File-haye `messages` ob'haee az tarjomeh hastand ke baraye software-ha estefade mishavand ta software be zaban-haye mokhtalef kar konad. Ba `msggrep` shoma mitoonid be donbale matn-haye khass dar in file-ha begardid.
+
+⚙️ **Gozine-ha:**
+    🔹 `msggrep -i "matn mored nazar" file.po`  --> 🔎 Jostojoo ba bi deghati be horoof bozorg va koochak.
+    🔹 `msggrep -n "matn mored nazar" file.po`  --> 🔢 Namayesh shomare khat dar natijeh.
+    🔹 `msggrep -w "matn mored nazar" file.po`  --> 🎯 Jostojoo baraye kalameh kamel.
+    🔹 `msggrep -r directory` --> 📁 Jostojoo rekursiv dar pooshe-ha.
+
+🛠 **Mesal-ha:**
+
+    $ msggrep "Hello world" file.po
+
+    🔹 Jostojoo baraye matn "Hello world" dar file `file.po`.
+
+    $ msggrep -i "hello world" file.po
+
+    🔹 Jostojoo baraye matn "hello world" (bi deghati be case) dar file `file.po`.
+
+✅ **Mesal sade:**
+
+    $ msggrep -n "Welcome" myapp.po
+
+    🔹  In dastoor matn "Welcome" ra dar file `myapp.po` jostojoo mikonad va shomare khat-haee ke in matn dar anha peida mishavad ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msggrep` command is used for searching within `messages` files. `Messages` files are translation databases used by software to operate in different languages. With `msggrep`, you can search for specific text within these files.
+
+⚙️ **Options:**
+    🔹 `msggrep -i "text to search" file.po` --> 🔎 Search ignoring case.
+    🔹 `msggrep -n "text to search" file.po` --> 🔢 Show line numbers in the output.
+    🔹 `msggrep -w "text to search" file.po` --> 🎯 Search for whole words only.
+    🔹 `msggrep -r directory` --> 📁 Recursively search through directories.
+
+🛠 **Examples:**
+
+    $ msggrep "Hello world" file.po
+
+    🔹 Search for the text "Hello world" in the file `file.po`.
+
+    $ msggrep -i "hello world" file.po
+
+    🔹 Search for the text "hello world" (case-insensitive) in the file `file.po`.
+
+✅ **Simple Example:**
+
+    $ msggrep -n "Welcome" myapp.po
+
+    🔹 This command searches for the text "Welcome" in the `myapp.po` file and displays the line numbers where the text is found.

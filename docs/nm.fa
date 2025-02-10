@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nm` baraye barresi va didane neshane-ha (symbols) dar file-haye object, executable va library estefade mishavad. In dastoor be shoma komak mikonad ta etela'ati dar morede function-ha, variable-ha, va digar neshane-haye daroon file-ha kasb konid. 
+
+⚙️ **Gozine-ha:**
+    🔹 `nm -a`   --> 📜 Namayesh hameye neshane-ha, hata anha ke baraye debug ast
+    🔹 `nm -C`   --> ➕ Decode (az halat pichide dar avardan) name neshane-ha C++ (agar C++ bashad)
+    🔹 `nm -l`   --> 📍 Namayesh faghat name file dar natije (dar soorati ke chand file dade shode bashad)
+    🔹 `nm -n`   --> 🔢 Moratab kardane neshane-ha bar asase address (value)
+    🔹 `nm -u`   --> 🗑️ Namayesh faghat neshane-haye undefine shode (resolve nashode)
+
+🛠 **Mesal-ha:**
+
+    $ nm a.out
+
+    🔹 Namayesh neshane-haye file executable ba name "a.out"
+
+    $ nm -C mylib.so
+
+    🔹 Namayesh neshane-haye file library share shode "mylib.so" va decode kardane name neshane-haye C++.
+
+✅ **Mesal sade:**
+
+    $ nm -u myprogram.o
+
+    🔹  List kardane hameye neshane-haye undefine shode (nazi be resolve dashtan) dar file object "myprogram.o".  In komak mikonad ta bebinid che function-ha ya variable-hayi bayad link shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nm` command is used to examine and display the symbol table of object files, executable files, and libraries. It helps you gain insights into functions, variables, and other symbols within these files.
+
+⚙️ **Options:**
+    🔹 `nm -a`   --> 📜 Display all symbols, including debugger-only symbols.
+    🔹 `nm -C`   --> ➕ Demangle C++ symbol names (if applicable).
+    🔹 `nm -l`   --> 📍 Show the file name in the output (when processing multiple files).
+    🔹 `nm -n`   --> 🔢 Sort symbols numerically by address (value).
+    🔹 `nm -u`   --> 🗑️ Display only undefined symbols (unresolved references).
+
+🛠 **Examples:**
+
+    $ nm a.out
+
+    🔹 Display symbols from the executable file "a.out".
+
+    $ nm -C mylib.so
+
+    🔹 Display symbols from the shared library "mylib.so" and demangle C++ symbol names.
+
+✅ **Simple Example:**
+
+    $ nm -u myprogram.o
+
+    🔹 List all undefined symbols in the object file "myprogram.o".  This helps you identify which functions or variables need to be linked in.

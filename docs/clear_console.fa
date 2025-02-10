@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `clear_console` (ya be soorat sade `clear`) safhe terminal ra tamiz mikonad. Yani hameye chizhaii ke ghablan neveshte shode ast, pak mishavad va safhe az aval shoru mishavad. In be shoma komak mikonad ke terminal-e moratab-tari dashte bashid. 🧹
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khasi nadarad.  Faghat `clear` ya `clear_console` ra vared konid.
+
+🛠 **Mesal-ha:**
+
+    $ clear
+    
+    🔹 Safhe terminal tamiz mishavad.
+
+    $ clear_console
+
+    🔹 Hamoon kare `clear` ra anjam midahad.
+
+✅ **Mesal sade:**
+
+    $ ls -l  
+    file1.txt  file2.txt
+    $ clear
+    $  
+    
+    🔹 Aval listi az file-ha neshan dade mishavad. Ba'd az vared kardane `clear`, hameye chizha pak mishavad va faghat satr-e command badi neshan dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `clear_console` command (or simply `clear`) cleans the terminal screen. It erases everything that was previously written, starting the screen from scratch. This helps you have a more organized terminal. 🧹
+
+⚙️ **Options:**
+    🔹 It doesn't have specific options.  Just type `clear` or `clear_console`.
+
+🛠 **Examples:**
+
+    $ clear
+
+    🔹 Clears the terminal screen.
+
+    $ clear_console
+
+    🔹 Does the same thing as `clear`.
+
+✅ **Simple Example & Explanation:**
+
+    $ ls -l
+    file1.txt  file2.txt
+    $ clear
+    $
+
+    🔹 First, a list of files is displayed. After entering `clear`, everything is erased, and only the next command line is shown.
+

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `linux-update-symlinks` baraye dorost kardane ya update kardane symlink-haye (link-haye namadine) system estefade mishavad. In dastoor kheili vaghta dar vaghte upgrade kardan system ya install kardan narm afzar az source estefade mishe, ta motmaen beshe ke hameye link-ha be dorosti be jahaye dorost eshare mikonan.
+
+⚙️ **Gozine-ha:**
+    🔹 `linux-update-symlinks` --> 🔄 Hameye symlink-haro check mikone va update mikone agar lazem bashe. (be surete automatic)
+    🔹 `linux-update-symlinks -v` --> 🗣️ Namayesh dadane etela'ate bishtar dar morede amal kardane dastoor (verbose mode).
+    🔹 `linux-update-symlinks --dry-run` --> 🧪 Test kardane update be done ejra kardane vaqe'i, faghat natijaro neshon mide.
+
+🛠 **Mesal-ha:**
+
+    $ linux-update-symlinks
+
+    🔹 Check va update kardane hameye symlink-ha dar system.
+
+    $ linux-update-symlinks -v
+
+    🔹 Check va update kardane hameye symlink-ha ba namayesh dadane etela'ate bishtar.
+
+✅ **Mesal sade:**
+
+    $ linux-update-symlinks --dry-run
+
+    🔹 Neshon dadane che symlink-haei update khahand shod bedoone update kardane anha. In baraye check kardane natije ghabl az update kardane vaghei khube.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `linux-update-symlinks` command is used to create or update symbolic links (symlinks) on the system. This command is often used during system upgrades or when installing software from source, to ensure that all links correctly point to their intended destinations.
+
+⚙️ **Options:**
+    🔹 `linux-update-symlinks` --> 🔄 Checks and updates all symlinks on the system, if necessary (in automatic mode).
+    🔹 `linux-update-symlinks -v` --> 🗣️ Display more information about the command's operation (verbose mode).
+    🔹 `linux-update-symlinks --dry-run` --> 🧪 Test the update without actually performing it; only shows the potential results.
+
+🛠 **Examples:**
+
+    $ linux-update-symlinks
+
+    🔹 Check and update all symlinks on the system.
+
+    $ linux-update-symlinks -v
+
+    🔹 Check and update all symlinks, displaying detailed information.
+
+✅ **Simple Example:**
+
+    $ linux-update-symlinks --dry-run
+
+    🔹 Shows which symlinks would be updated without actually updating them.  This is useful for reviewing the changes before committing.

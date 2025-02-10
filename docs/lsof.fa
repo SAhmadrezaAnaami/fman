@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsof` baraye list kardan hameye file-haye baz shode (open files) estefade mishavad. In dastoor be shoma komak mikonad bebinid kodam process-ha kodam file-ha ya socket-ha ra baz kardeand.  
+
+⚙️ **Gozine-ha:**
+    🔹 `lsof -i`  --> 🌐 List kardan etesalate shabake (network connections).  
+    🔹 `lsof -p PID`  --> 🔍 List kardan file-haye baz shode baraye process ba ID (PID) moshakhas. Be jaye PID, shomare ID process ra benevisid.  
+    🔹 `lsof | grep FILENAME` --> 📁 Peyda kardan process-haee ke file (FILENAME) khasi ra baz kardeand.  
+    🔹 `lsof -u USERNAME` --> 👤 List kardan file-haye baz shode baraye karbar (USER) moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ lsof
+    
+    🔹 Namayesh hameye file-haye baz shode dar system.
+
+    $ lsof -i :80
+    
+    🔹 Namayesh hameye process-haee ke be port 80 gosh midahand.
+
+✅ **Mesal sade:**
+
+    $ lsof -p 1234
+    
+    🔹 List kardan hameye file-haye baz shode tavasote process ba ID 1234.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsof` command is used to list all open files. This command helps you see which processes have which files or sockets open.
+
+⚙️ **Options:**
+    🔹 `lsof -i`  --> 🌐 List network connections.
+    🔹 `lsof -p PID`  --> 🔍 List open files for a specific process ID (PID). Replace PID with the actual process ID number.
+    🔹 `lsof | grep FILENAME` --> 📁 Find processes that have a specific file (FILENAME) open.
+    🔹 `lsof -u USERNAME` --> 👤 List open files for a specific user (USER).
+
+🛠 **Examples:**
+
+    $ lsof
+    
+    🔹 Show all open files on the system.
+
+    $ lsof -i :80
+    
+    🔹 Show all processes listening on port 80.
+
+✅ **Simple Example:**
+
+    $ lsof -p 1234
+    
+    🔹 List all open files by the process with ID 1234.

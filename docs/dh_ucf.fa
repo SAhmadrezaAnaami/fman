@@ -1,0 +1,53 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_ucf` baraye update ya taghir configuration file-ha (file-haye tanzimat) dar package-haye Debian estefade mishavad. In dastoor motmaen mishavad ke taghirati ke user dade az bein naravad vaghti ke package update mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--create-templates` --> 📝 Template file-ha baraye har configuration file misazad.
+    🔹 `--no-templates`    --> 🚫 Az template file-ha estefade nemikonad.
+    🔹 `--priority=level`  --> 🚦 Tarjih baraye handler-ha tanzim mikonad.
+    🔹 `--package`         --> 📦 Package-i ke configuration file-haye aan ra handle mikonad moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_ucf --create-templates
+    🔹 Template file-ha ra baraye hameye configuration file-ha dar package misazad.
+
+    $ dh_ucf --package mypackage
+    🔹  Faghat configuration file-haye `mypackage` ra handle mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_ucf
+    🔹 Be soorate pishfarz, configuration file-ha ra update ya handle mikonad. Agar user configuration file ra taghir dade bashad, `dh_ucf` az user miporsad ke aya taghirat ra hefz konad ya az version jadid estefade konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_ucf` command is used to update or manage configuration files in Debian packages. It ensures that user modifications to configuration files are preserved during package updates.
+
+⚙️ **Options:**
+    🔹 `--create-templates` --> 📝 Creates template files for each configuration file.
+    🔹 `--no-templates`    --> 🚫 Disables the use of template files.
+    🔹 `--priority=level`  --> 🚦 Sets the priority for handler execution.
+    🔹 `--package`         --> 📦 Specifies the package whose configuration files are handled.
+
+🛠 **Examples:**
+
+    $ dh_ucf --create-templates
+    🔹 Creates template files for all configuration files in the package.
+
+    $ dh_ucf --package mypackage
+    🔹 Handles only the configuration files of the `mypackage` package.
+
+✅ **Simple Example:**
+
+    $ dh_ucf
+    🔹 By default, updates or manages configuration files. If a user has modified a configuration file, `dh_ucf` will prompt the user to decide whether to keep the changes or use the new version from the package.
+

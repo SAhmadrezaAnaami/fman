@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bmtoa` baraye tabdil dadan file-haye bitmap (BMP) be file-haye ASCII art (TOA) estefade mishavad. Yani tasvir ra be namayesh dar matn tabdil mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bmtoa <file.bmp>` --> 🖼️ Tabdil file BMP be ASCII art ba estefade az default setting-ha.
+    🔹 `bmtoa -w <width> <file.bmp>` --> ↔️ Set kardane width output be meghdare dade shode.  Az in gozine baraye control kardane andaze output estefade konid.
+    🔹 `bmtoa -h <height> <file.bmp>` --> ↕️ Set kardane height output be meghdare dade shode.  Az in gozine baraye control kardane andaze output estefade konid.
+    🔹 `bmtoa -d <characters> <file.bmp>` --> 🎨 Set kardane majmooe characters baraye ASCII art.  Shoma mitavanid characters-haye mokhtalef ra baraye rango-hayee tasvir entekhab konid.
+    🔹 `bmtoa -i <file.bmp>` --> ℹ️  Namayeshe etela'at dar morede file BMP, mesle andaze va format.
+
+🛠 **Mesal-ha:**
+
+    $ bmtoa image.bmp
+
+    🔹 Tabdil "image.bmp" be ASCII art ba settings default.  Output be stdout chap mishavad.
+
+    $ bmtoa -w 80 image.bmp > output.txt
+
+    🔹 Tabdil "image.bmp" be ASCII art ba width 80 column va save kardane natije dar file "output.txt".
+
+✅ **Mesal sade:**
+
+    $ bmtoa logo.bmp
+
+    🔹 File "logo.bmp" ra be ASCII art tabdil mikonad va dar terminal namayesh midahad. Agar tasvir rangi bashad, az characterhaye mokhtalef baraye namayesh rango-ha estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bmtoa` command converts a bitmap (BMP) file into an ASCII art representation. It essentially transforms an image into a text-based visual.
+
+⚙️ **Options:**
+    🔹 `bmtoa <file.bmp>` --> 🖼️ Converts a BMP file to ASCII art using default settings.
+    🔹 `bmtoa -w <width> <file.bmp>` --> ↔️ Sets the output width to the specified value.  Use this option to control the width of the output.
+    🔹 `bmtoa -h <height> <file.bmp>` --> ↕️ Sets the output height to the specified value. Use this option to control the height of the output.
+    🔹 `bmtoa -d <characters> <file.bmp>` --> 🎨 Sets the character set for ASCII art. You can select different characters to represent varying shades in the image.
+    🔹 `bmtoa -i <file.bmp>` --> ℹ️ Displays information about the BMP file, such as its dimensions and format.
+
+🛠 **Examples:**
+
+    $ bmtoa image.bmp
+
+    🔹 Converts "image.bmp" to ASCII art with default settings. The output is printed to standard output (stdout).
+
+    $ bmtoa -w 80 image.bmp > output.txt
+
+    🔹 Converts "image.bmp" to ASCII art with a width of 80 columns and saves the result in the file "output.txt".
+
+✅ **Simple Example:**
+
+    $ bmtoa logo.bmp
+
+    🔹 Converts the file "logo.bmp" to ASCII art and displays it in the terminal. If the image is colored, different characters will be used to represent different colors.

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `automake-1.16` yek abzar baraye sakhtane Makefile-ha az `configure.ac` baraye projhe-haye software dar UNIX/Linux ast. In kar ra asan mikonad va eytminan midahad ke projhe-ha rooye system-haye mokhtalef dorost kar mikonand. 
+    Dar vaghe, `automake` az file `configure.ac` estefade mikonad, ta Makefile.in ha ra dorost konad, va az anja be bad, `configure` script ra misazad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--add-missing`  --> ➕ Agar file-haye standard ghom bashand, `automake` anha ra ezafe mikonad.
+    🔹 `--copy`       --> 📝 File-ha ra az directory-haye standard copy mikonad, be jaye link kardan.
+    🔹 `--foreign`    --> 🌐 Sathe sakht-giri-haye `automake` ra kam mikonad. Baraye projhe-haie ke standard-haye GNU ra kamelan riayat nemikonand mofid ast.
+    🔹 `--help`       --> ℹ️ Rahnamaii dastoor ra namayesh midahad.
+    🔹 `--version`    --> 🔢 Version `automake` ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ automake-1.16 --add-missing
+    
+    🔹 File-haye gomshode ra be projhe ezafe mikonad.
+
+    $ automake-1.16 --copy --foreign
+    
+    🔹 File-ha ra copy mikonad va sakht-giri-haye standard ra kam mikonad.
+
+✅ **Mesal sade:**
+    
+    $ automake-1.16
+    
+    🔹 Ba estefade az `configure.ac`, file-haye `Makefile.in` ra misazad.  Agar taghirati dar `configure.ac` dade bashid, bayad in dastoor ra ejra konid ta `Makefile` ha update shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `automake-1.16` command is a tool for automatically generating `Makefile`s from `configure.ac` for software projects on UNIX/Linux systems.  It simplifies project building and ensures portability across different systems.
+    Essentially, `automake` takes `configure.ac` as input, generates `Makefile.in` files, and helps in creating the `configure` script.
+
+⚙️ **Options:**
+    🔹 `--add-missing`  --> ➕ Adds standard missing files if they are not present in the project.
+    🔹 `--copy`       --> 📝 Copies standard files from Automake's auxiliary directory instead of creating symbolic links.
+    🔹 `--foreign`    --> 🌐 Reduces the strictness of Automake's requirements, useful for projects that don't fully adhere to GNU standards.
+    🔹 `--help`       --> ℹ️ Displays help information about the command.
+    🔹 `--version`    --> 🔢 Displays the version of Automake being used.
+
+🛠 **Examples:**
+
+    $ automake-1.16 --add-missing
+    
+    🔹 Adds any missing standard files to the project.
+
+    $ automake-1.16 --copy --foreign
+    
+    🔹 Copies the auxiliary files and relaxes the standard requirements.
+
+✅ **Simple Example:**
+    
+    $ automake-1.16
+    
+    🔹 Generates `Makefile.in` files based on `configure.ac`. Run this command after modifying `configure.ac` to update the `Makefile`s.

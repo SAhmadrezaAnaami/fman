@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_md5sums` baraye dorost kardan file-haye `md5sums` dar pakege Debian estefade mishavad. In file-ha checksum MD5 file-haye nasb shode ra dar bar migirand, ta motmaen shavad file-ha taghir nakardeand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--create-missing` --> ➕ Agar file `md5sums` vojood nadashte bashad, yek file jadid dorost mikonad.
+    🔹 `--no-add-package` --> ➖ Esm pakege ra be file `md5sums` ezafe nemikonad.
+    🔹 `--list-missing`  --> 📝 File-haye ke MD5 nadarand ra list mikonad, vali file jadid nemisazad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_md5sums
+
+    🔹 File `md5sums` ra baraye hameye file-ha dar directory `debian/tmp` dorost mikonad.
+
+    $ dh_md5sums --create-missing
+
+    🔹 Agar file `md5sums` vojood nadashte bashad, yek file jadid misazad.
+
+✅ **Mesal sade:**
+
+    $ dh_md5sums
+    find . -type f -print0 | xargs -0 md5sum > debian/package/DEBIAN/md5sums
+
+    🔹 Dastoor file `md5sums` ra dorost mikonad va check mikonad hameye file-ha MD5 hash darand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_md5sums` command is used to generate `md5sums` files for Debian packages. These files contain MD5 checksums of installed files, ensuring file integrity by detecting changes.
+
+⚙️ **Options:**
+    🔹 `--create-missing` --> ➕ Creates a new `md5sums` file if one doesn't already exist.
+    🔹 `--no-add-package` --> ➖ Prevents the package name from being added to the `md5sums` file.
+    🔹 `--list-missing`  --> 📝 Lists files that are missing MD5 checksums, without creating a new file.
+
+🛠 **Examples:**
+
+    $ dh_md5sums
+
+    🔹 Generates `md5sums` file for all files in the `debian/tmp` directory.
+
+    $ dh_md5sums --create-missing
+
+    🔹 Creates a new `md5sums` file if one does not already exist.
+
+✅ **Simple Example:**
+
+    $ dh_md5sums
+    find . -type f -print0 | xargs -0 md5sum > debian/package/DEBIAN/md5sums
+
+    🔹 This command generates or updates the `md5sums` file, ensuring all packaged files have MD5 hashes.

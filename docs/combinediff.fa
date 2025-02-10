@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `combinediff` baraye yekja kardan (merge) file-haye `diff` estefade mishavad, be tarighi ke taghirat rooye ham nayoftand. Yani agar yek khat dar yek diff tagheer karde bashad va dar diff digar ham haman khat tagheer karde bashad, `combinediff` tamam taghirat ra neshan midahad. In baraye hal kardane conflict ha dar file-haye patch kheyli mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khas nadarad ke kheyli estefade shavad, chon kar kardane asli an yekja kardane taghirat ast. Amma estefade az `combinediff file1.diff file2.diff > output.diff` ravaj darad.
+
+🛠 **Mesal-ha:**
+
+    $ combinediff file1.diff file2.diff > combined.diff
+
+    🔹 In dastoor file-haye `file1.diff` va `file2.diff` ra yekja mikonad va natije ra dar `combined.diff` zakhire mikonad.
+
+    $ combinediff patch1.diff patch2.diff patch3.diff > final.patch
+
+    🔹 In mesal neshon midahad ke mitavan chand file patch ra ham zaman yekja kard.
+
+✅ **Mesal sade:**
+
+    $ combinediff a.diff b.diff > result.diff
+
+    🔹 Agar `a.diff` va `b.diff` taghirati rooye yek file dashte bashand, `combinediff` hameye taghirat ra dar `result.diff` jam mikonad, hata agar taghirat conflict dashte bashand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `combinediff` command is used to merge multiple `diff` files in a way that changes are combined, even if they affect the same lines.  This is helpful for resolving conflicts in patch files and ensuring all changes are included.
+
+⚙️ **Options:**
+    🔹 `combinediff` doesn't have many specific options. Its core functionality is to merge diffs. Common usage involves redirecting output: `combinediff file1.diff file2.diff > output.diff`.
+
+🛠 **Examples:**
+
+    $ combinediff file1.diff file2.diff > combined.diff
+
+    🔹 This merges `file1.diff` and `file2.diff`, saving the result to `combined.diff`.
+
+    $ combinediff patch1.diff patch2.diff patch3.diff > final.patch
+
+    🔹  Demonstrates merging multiple patch files into a single final patch file.
+
+✅ **Simple Example:**
+
+    $ combinediff a.diff b.diff > result.diff
+
+    🔹 If `a.diff` and `b.diff` contain changes to the same file, `combinediff` will combine all changes into `result.diff`, even if there are conflicts.

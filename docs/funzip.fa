@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `funzip` baraye baz kardane file-haye zip shode estefade mishavad.  In dastoor be shoma ejazeh mideh ta file-haye zip ra dar hale ke file asli zip shode dast nakhorde mimanad, baz konid va estefade konid.  Be ebarate digar, `funzip` file-haye zip shode ra dar directory-e movaghat baz mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `funzip -l filename.zip` --> 📜 Liste file-haye dakhele file zip ra neshon midahad, bedune baz kardan.
+    🔹 `funzip -p password filename.zip` --> 🔑 Agar file zip shode password dashte bashad, ba in dastoor mitavanid an ra baz konid.
+    🔹 `funzip -q filename.zip` --> 🤫  Dar hale baz kardan, hich payami chap nakon. (Quiet mode)
+
+🛠 **Mesal-ha:**
+
+    $ funzip file.zip
+
+    🔹 File `file.zip` ra baz mikonad va file-haye dakhelash ra dar directory-e movaghat gharar midahad.
+
+    $ funzip -l file.zip
+
+    🔹 Listi az file-haye dakhele `file.zip` ra chap mikonad bedune baz kardan.
+
+✅ **Mesal sade:**
+
+    $ funzip archive.zip && cd /tmp/funzip_*
+
+    🔹 `archive.zip` ra baz mikonad va shoma ra be pooshe-ye movaghati ke file-ha dar anja baz shodeand, rahnamayi mikonad. Shoma mitavanid az file-ha estefade konid va bad az tamam shodan kar, pooshe-ye movaghati ra pak konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `funzip` command is used to extract files from a zip archive. It allows you to access the contents of a zip file without actually extracting the archive permanently. Essentially, `funzip` extracts the zip file into a temporary directory.
+
+⚙️ **Options:**
+    🔹 `funzip -l filename.zip` --> 📜 Lists the files contained within the zip archive without extracting them.
+    🔹 `funzip -p password filename.zip` --> 🔑 If the zip archive is password-protected, this allows you to extract it using the given password.
+    🔹 `funzip -q filename.zip` --> 🤫 Suppresses all output messages during extraction. (Quiet mode)
+
+🛠 **Examples:**
+
+    $ funzip file.zip
+
+    🔹 Extracts `file.zip` and places the contents in a temporary directory.
+
+    $ funzip -l file.zip
+
+    🔹 Prints a list of the files contained within `file.zip` without extracting it.
+
+✅ **Simple Example:**
+
+    $ funzip archive.zip && cd /tmp/funzip_*
+
+    🔹 Extracts `archive.zip` and then navigates you to the temporary directory where the extracted files are located. You can work with the files and delete the temporary directory when you are finished.

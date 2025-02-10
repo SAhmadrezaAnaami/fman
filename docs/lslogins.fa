@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lslogins` etela'ati ra darbareye user-ha va login-haye system namayesh midahad. In dastoor be shoma komak mikonad ta user-haye fa'al, akharin zamane vorood, va etela'ate digari ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lslogins` --> 📜 Namayesh list-e sadeye user-ha va etela'at asli.
+    🔹 `lslogins -u` --> 👤 Namayesh list-e user-ha va UID-haye aanha.
+    🔹 `lslogins -b` --> ⏰ Namayesh akharin zamane vorood baraye har user.
+    🔹 `lslogins -p` --> 🔒 Namayesh etela'at password (agar dastres dashte bashid).
+
+🛠 **Mesal-ha:**
+
+    $ lslogins
+
+    🔹 Namayesh list-e sadeye user-ha va etela'at asli.
+
+    $ lslogins -u
+
+    🔹 Namayesh list-e user-ha va UID-haye aanha.
+
+✅ **Mesal sade:**
+
+    $ lslogins -b
+
+    🔹 Etela'ati ra darbareye akharin zamane vorood baraye har user namayesh midahad, ke be shoma komak mikonad ta fa'aliyathaye user-ha ra peygiri konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lslogins` command displays information about users and logins on the system. It helps you see active users, last login times, and other details.
+
+⚙️ **Options:**
+    🔹 `lslogins` --> 📜 Show a basic list of users and main information.
+    🔹 `lslogins -u` --> 👤 Show a list of users and their User IDs (UIDs).
+    🔹 `lslogins -b` --> ⏰ Show the last login time for each user.
+    🔹 `lslogins -p` --> 🔒 Show password information (if you have access).
+
+🛠 **Examples:**
+
+    $ lslogins
+
+    🔹 Show a basic list of users and main information.
+
+    $ lslogins -u
+
+    🔹 Show a list of users and their User IDs (UIDs).
+
+✅ **Simple Example:**
+
+    $ lslogins -b
+
+    🔹 Displays information about the last login time for each user, which helps you track user activity.

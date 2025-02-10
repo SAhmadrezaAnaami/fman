@@ -1,0 +1,72 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debootsnap` yek rahe asan baraye sakhtan va modiriyat kardan "snapshot" az system file shoma (root filesystem) dar Debian va Ubuntu ast. Yani, mitavanid yek copy az system-e khodetoon dar yek lahze begirid, taghirat ra anjam bedahid, va agar khastid be hale ghabl bargardid.  In be dard mikhoreh baraye tajrobe kardan ba narmafzar-haye jadid bedune tars az kharab kardan system.
+
+⚙️ **Gozine-ha:**
+    🔹 `debootsnap create` --> 📸 Yek snapshot jadid az system misazad.
+    🔹 `debootsnap activate` --> ✅ Snapshot-e entekhab shode ra fa'al mikonad ta system az an estefadeh konad.
+    🔹 `debootsnap deactivate` --> 🚫 Snapshot fa'al ra gheire fa'al mikonad.
+    🔹 `debootsnap reset` --> 🔄 System ra be akharin snapshot fa'al bargardanad (revert mikonad).
+    🔹 `debootsnap delete` --> 🗑️ Yek snapshot ra pak mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo debootsnap create
+    
+    🔹 Yek snapshot az root filesystem misazad.
+
+    $ sudo debootsnap activate 2024-10-27T10:00:00
+    
+    🔹 Snapshot ba name "2024-10-27T10:00:00" ra fa'al mikonad.
+
+    $ sudo debootsnap reset
+    
+    🔹 System ra be snapshot fa'al bargardanad.
+
+✅ **Mesal sade:**
+
+    $ sudo debootsnap create
+    $ sudo apt update && sudo apt upgrade
+    $ sudo debootsnap reset
+
+    🔹 In mesal, aval yek snapshot misazim, bad update va upgrade mikonim. Agar problem dashtim, ba `debootsnap reset` system ra be halat ghabl az update bargardani.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debootsnap` command provides an easy way to create and manage snapshots of your root filesystem on Debian and Ubuntu systems. This allows you to take a copy of your system at a specific point in time, make changes, and revert back to the snapshot if needed. It is useful for experimenting with new software without the fear of breaking your system.
+
+⚙️ **Options:**
+    🔹 `debootsnap create` --> 📸 Creates a new snapshot of the system.
+    🔹 `debootsnap activate` --> ✅ Activates a selected snapshot to be used by the system.
+    🔹 `debootsnap deactivate` --> 🚫 Deactivates the active snapshot.
+    🔹 `debootsnap reset` --> 🔄 Resets (reverts) the system to the last active snapshot.
+    🔹 `debootsnap delete` --> 🗑️ Deletes a snapshot.
+
+🛠 **Examples:**
+
+    $ sudo debootsnap create
+    
+    🔹 Creates a snapshot of the root filesystem.
+
+    $ sudo debootsnap activate 2024-10-27T10:00:00
+    
+    🔹 Activates the snapshot named "2024-10-27T10:00:00".
+
+    $ sudo debootsnap reset
+    
+    🔹 Resets the system to the active snapshot.
+
+✅ **Simple Example:**
+
+    $ sudo debootsnap create
+    $ sudo apt update && sudo apt upgrade
+    $ sudo debootsnap reset
+
+    🔹 This example first creates a snapshot, then updates and upgrades the system. If any problems occur, `debootsnap reset` reverts the system to the state before the update.

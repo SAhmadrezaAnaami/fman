@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `infobrowser` baraye didan va gashtan dar etela'at dastoor-ha estefade mishavad. Mesle yek ketabche-ye rahnama, vali dar terminal.  In dastoor shoma ra komak mikonad ta behtar dark konid har dastoor che kar mikonad va che gozine-haee darad.
+
+⚙️ **Gozine-ha:**
+    🔹 `infobrowser` --> 💻 Baz kardan rahnama-ye dastoor-ha be soorate grafiki (agar dastras bashad).
+    🔹 `infobrowser --help`  --> ❓ Namayesh rahnamaye sade dastoor `infobrowser`.
+    🔹 Dar dakhel `infobrowser`, az kelid-haye harekat (arrow keys), `n` (baraye safhe-ye badi), va `p` (baraye safhe-ye ghabeli) estefade konid.
+
+🛠 **Mesal-ha:**
+
+    $ infobrowser
+
+    🔹 Baz kardan safhe-ye asli `infobrowser`.
+
+    $ infobrowser ls
+
+    🔹 Baz kardan etela'at marboot be dastoor `ls`.
+
+✅ **Mesal sade:**
+
+    $ infobrowser bash
+
+    🔹 In dastoor etela'at ra darbareye `bash` (yek noe shell dar linux) namayesh midahad, ke dar an tozihat, dastoorat va gozine-haee ke mitavanid estefade konid vojood darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `infobrowser` command is used to view and navigate command information pages. It's like a manual, but within the terminal or in a graphical browser, providing a detailed explanation of commands and their options.
+
+⚙️ **Options:**
+    🔹 `infobrowser` --> 💻 Opens the command documentation in a graphical browser (if available).
+    🔹 `infobrowser --help` --> ❓ Displays basic help information about the `infobrowser` command itself.
+    🔹 Within `infobrowser`, use arrow keys, `n` (for next page), and `p` (for previous page) for navigation.
+
+🛠 **Examples:**
+
+    $ infobrowser
+
+    🔹 Opens the main `infobrowser` page.
+
+    $ infobrowser ls
+
+    🔹 Opens the information page for the `ls` command.
+
+✅ **Simple Example:**
+
+    $ infobrowser bash
+
+    🔹 This command displays information about `bash` (a common Linux shell), including explanations, commands, and available options.

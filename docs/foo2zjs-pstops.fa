@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2zjs-pstops` baraye tagheer andaze safhe va dorost kardane safahat baraye chap ba printer haye foo2zjs estefade mishavad. Be ebarate digar, file haye PostScript ra gerefte va anha ra baraye chap ba printer hayi ke az zaban foo2zjs estefade mikonand, amade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--notumble` --> 🤸 Agar safahat dar chap posht va roo nabayad bargardanade shavand.
+    🔹 `--paper <size>` --> 📄 Andazeye kaghaz ra moshakhas mikonad (masalan: A4, Letter).
+    🔹 `--version` --> ℹ️ Namayeshe version dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ foo2zjs-pstops --paper Letter input.ps > output.ps
+
+    🔹 In dastoor file `input.ps` ra be andazeye kaghaz Letter tabdil mikonad va natije ra dar file `output.ps` zakhire mikonad.
+
+    $ foo2zjs-pstops --notumble input.ps | lpr
+
+    🔹 In dastoor file `input.ps` ra chap mikonad be sooratei ke dar chap posht va roo safahat bargardanade nashavand.
+
+✅ **Mesal sade:**
+
+    $ foo2zjs-pstops --paper A4 file.ps > file_a4.ps
+
+    🔹 File `file.ps` ra be andazeye A4 tabdil mikonad va file jadid ra ba name `file_a4.ps` zakhire mikonad. In kar baraye chap file hayi ke andazeye kaghaz dorosti nadarand kheili mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2zjs-pstops` command is used to resize pages and prepare documents for printing with foo2zjs printers.  Essentially, it takes PostScript files and prepares them to be printed on printers that use the foo2zjs language.
+
+⚙️ **Options:**
+    🔹 `--notumble` --> 🤸 Do not tumble pages for duplex printing.
+    🔹 `--paper <size>` --> 📄 Specify the paper size (e.g., A4, Letter).
+    🔹 `--version` --> ℹ️ Display the version of the command.
+
+🛠 **Examples:**
+
+    $ foo2zjs-pstops --paper Letter input.ps > output.ps
+
+    🔹 This command converts the `input.ps` file to Letter paper size and saves the result in the `output.ps` file.
+
+    $ foo2zjs-pstops --notumble input.ps | lpr
+
+    🔹 This command prints the `input.ps` file without tumbling pages for duplex printing.
+
+✅ **Simple Example:**
+
+    $ foo2zjs-pstops --paper A4 file.ps > file_a4.ps
+
+    🔹 Converts `file.ps` to A4 size and saves the new file as `file_a4.ps`. This is useful for printing files that are not correctly sized.

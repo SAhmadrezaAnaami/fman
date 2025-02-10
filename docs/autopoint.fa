@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `autopoint` baraye update kardane file-haye gettext estefade mishavad. Gettext baraye tarjome kardan barnamye shoma be zabanhaye mokhtalef be kar miravad. `autopoint` komak mikonad ke shoma file-haye `po` va `pot` khod ra ba akharin standard-ha va taghirat be rooz negah دارید.
+
+⚙️ **Gozine-ha:**
+    🔹 `--force` --> 💪 Be zor update mikonad, hata agar moshkelati bashad.
+    🔹 `--verbose` --> 🗣️ Etela'ate bishtari dar morede chigonegi kar kardane dastoor chap mikonad.
+    🔹 `--version` --> ℹ️ Version-e `autopoint` ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ autopoint
+
+    🔹 File-haye gettext ra dar directory kari be rooz mikonad.
+
+    $ autopoint --force
+
+    🔹 File-haye gettext ra be zor be rooz mikonad, hata agar error bashad.
+
+✅ **Mesal sade:**
+
+    $ autopoint
+    Looking for '[gettext]' in 'configure.ac'... found.
+    ...
+    🔹 Ba ejraye in dastoor, `autopoint` configure.ac ra migardad va file-haye gettext-e shoma ra be rooz mikonad ta barnameye shoma betone be zabanhaye digar tarjome shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `autopoint` command is used to update gettext infrastructure files. Gettext is used for internationalizing your programs, allowing them to be translated into different languages. `autopoint` helps you keep your `po` and `pot` files up-to-date with the latest standards and changes.
+
+⚙️ **Options:**
+    🔹 `--force` --> 💪 Force updates, even if there are potential problems.
+    🔹 `--verbose` --> 🗣️ Print more information about how the command is working.
+    🔹 `--version` --> ℹ️ Display the version of `autopoint`.
+
+🛠 **Examples:**
+
+    $ autopoint
+
+    🔹 Updates gettext files in the current directory.
+
+    $ autopoint --force
+
+    🔹 Forces the update of gettext files, even if there are errors.
+
+✅ **Simple Example:**
+
+    $ autopoint
+    Looking for '[gettext]' in 'configure.ac'... found.
+    ...
+    🔹 By running this command, `autopoint` searches `configure.ac` and updates your gettext files, allowing your program to be translated into other languages.

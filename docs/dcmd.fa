@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dcmd` (Docker Compose Management Tool) baraye modiriyat asan-tar va sari'tar container-haye Docker estefade mishavad. In dastoor komak mikonad ta shoma service-ha ra ba yek dastoor start, stop, va update konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dcmd up`     --> 🚀 Ejra kardane hameye service-ha tarif shode dar file docker-compose.yml.
+    🔹 `dcmd down`   --> ⛔ Stop kardane hameye service-ha va pak kardane container-ha.
+    🔹 `dcmd restart`--> 🔄 Restart kardane hameye service-ha.
+    🔹 `dcmd logs`   --> 🪵 Namayesh log-haye hameye service-ha.
+
+🛠 **Mesal-ha:**
+
+    $ dcmd up
+
+    🔹 Ejra kardane hameye service-ha.
+
+    $ dcmd down
+
+    🔹 Stop va remove kardane hameye service-ha.
+
+✅ **Mesal sade:**
+
+    $ dcmd up -d
+    
+    🔹 Ejra kardane service-ha dar background (detached mode), be in mani ke terminal shoma azad mimanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dcmd` (Docker Compose Management Tool) command is used for easier and faster management of Docker containers. This command helps you start, stop, and update services with a single command.
+
+⚙️ **Options:**
+    🔹 `dcmd up`     --> 🚀 Run all the services defined in the docker-compose.yml file.
+    🔹 `dcmd down`   --> ⛔ Stop all the services and remove the containers.
+    🔹 `dcmd restart`--> 🔄 Restart all the services.
+    🔹 `dcmd logs`   --> 🪵 Show the logs for all the services.
+
+🛠 **Examples:**
+
+    $ dcmd up
+
+    🔹 Run all the services.
+
+    $ dcmd down
+
+    🔹 Stop and remove all the services.
+
+✅ **Simple Example:**
+
+    $ dcmd up -d
+
+    🔹 Run the services in the background (detached mode), meaning your terminal will remain free.
+

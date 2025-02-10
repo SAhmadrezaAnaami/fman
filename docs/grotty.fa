@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grotty` baraye tabdil kardan file-haye `man` (man pages) be formati ke ghabele khandan bashad, estefade mishavad. Yani `grotty` file-haye `man` ra ke format-bandi shode ba `troff` hastand, be formati tabdil mikonad ke mishe anha ra dar terminal ya safhe chap did.
+
+⚙️ **Gozine-ha:**
+    🔹 `grotty -t` --> 🖥️ Tabdil be format-e terminal (ASCII) baraye namayesh dar terminal.
+    🔹 `grotty -l` --> 📃 Darj footer ba esme safhe va shomare safhe.
+    🔹 `grotty -m NAME` --> 📦 Estefade az macro-haye 'NAME' bejaye macro-haye pishfarz.
+
+🛠 **Mesal-ha:**
+
+    $ grotty manpage.troff > manpage.txt
+
+    🔹 Tabdil file `manpage.troff` be file `manpage.txt` baraye khandan.
+
+    $ man ls | grotty -t | less
+
+    🔹 Namayesh safhe `man` dastoor `ls` dar terminal ba estefade az `grotty` va `less`.
+
+✅ **Mesal sade:**
+
+    $ grotty -t my_command.1 | less
+
+    🔹 File `my_command.1` ra ke yek file `man` ast, be formati tabdil mikonad ke dar terminal ghabele khandan bashad va ba dastoor `less` namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grotty` command is used to convert `man` page source files into a readable format. It processes `man` pages formatted with `troff` and transforms them into a format suitable for display on a terminal or printing.
+
+⚙️ **Options:**
+    🔹 `grotty -t` --> 🖥️ Convert to terminal (ASCII) format for display in a terminal.
+    🔹 `grotty -l` --> 📃 Include a footer with the page name and page number.
+    🔹 `grotty -m NAME` --> 📦 Use the macro set 'NAME' instead of the default macro set.
+
+🛠 **Examples:**
+
+    $ grotty manpage.troff > manpage.txt
+
+    🔹 Converts the `manpage.troff` file into a readable `manpage.txt` file.
+
+    $ man ls | grotty -t | less
+
+    🔹 Displays the `man` page for the `ls` command in the terminal using `grotty` and `less`.
+
+✅ **Simple Example:**
+
+    $ grotty -t my_command.1 | less
+
+    🔹 Converts the `my_command.1` file, which is a `man` page, into a terminal-readable format and displays it using the `less` command.

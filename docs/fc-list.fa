@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-list` baraye liste kardan font-haye mojood dar system shoma be kar miravad. Shoma mitavanid az an baraye peyda kardan name font-ha va style-haye mokhtalef estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-list`        --> 📜 Namayesh hameye font-ha ba etela'ate kamel.
+    🔹 `fc-list :lang=fa` --> 🇮🇷 Namayesh font-hayi ke az zabane Farsi poshtibani mikonand.
+    🔹 `fc-list family`  --> 👪 Namayesh listi az name-haye family-e font-ha.
+    🔹 `fc-list object-path`  --> 📁 Namayesh masir (path) file-haye font.
+
+🛠 **Mesal-ha:**
+
+    $ fc-list
+    
+    🔹 Liste kardan hameye font-ha va etela'ate aanha.
+
+    $ fc-list :lang=en family style
+    
+    🔹 Namayesh family va style-haye font-hayi ke az zabane Englisi poshtibani mikonand.
+
+✅ **Mesal sade:**
+
+    $ fc-list | grep "Arial"
+
+    🔹 Peyda kardan font-haye Arial dar list font-ha. In dastoor az `grep` estefade mikonad ta natije-ha ra filtar konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-list` command is used to list the fonts available on your system.  You can use it to find font names and different styles.
+
+⚙️ **Options:**
+    🔹 `fc-list`            --> 📜 Display all fonts with complete information.
+    🔹 `fc-list :lang=en`   --> 🇺🇸 Display fonts that support the English language.
+    🔹 `fc-list family`     --> 👪 Display a list of font family names.
+    🔹 `fc-list object-path` --> 📁 Display the file paths of the fonts.
+
+🛠 **Examples:**
+
+    $ fc-list
+    
+    🔹 List all fonts and their information.
+
+    $ fc-list :lang=en family style
+    
+    🔹 Show the family and styles of fonts that support the English language.
+
+✅ **Simple Example:**
+
+    $ fc-list | grep "Arial"
+
+    🔹 Find Arial fonts in the font list. This command uses `grep` to filter the results.

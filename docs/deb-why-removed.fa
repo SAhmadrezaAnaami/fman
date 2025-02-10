@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deb-why-removed` baraye fahmidaneh chera yek package `.deb` az system shoma hazf shodeh ast, estefadeh mishavad. In dastoor be shoma komak mikonad ta moshkelati ra ke dar vaghti yek barnameh ya dastoor kar nemikonad, peida konid. Agar yek barnameh az system hazf shodeh va shoma nemidoonid chera, in dastoor mitavanad komak konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-ha.
+    🔹 `--version` --> ℹ️ Namayesh version dastoor.
+    🔹 `package-name` --> 📦 Esme package ke mikhayid bedoonid chera hazf shode.
+
+🛠 **Mesal-ha:**
+
+    $ deb-why-removed vlc
+
+    🔹 Peida kardaneh chera package `vlc` hazf shodeh.
+
+    $ deb-why-removed --help
+
+    🔹 Namayesh rahnamaye dastoor.
+
+✅ **Mesal sade:**
+
+    $ deb-why-removed chromium
+
+    🔹 Agar `chromium` hazf shodeh bashad, in dastoor etela'ati dar mored chera hazf shodanash namayesh midahad, masalan agar ba yek package digar ta'aroz dashteh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deb-why-removed` command is used to find out why a `.deb` package was removed from your system.  It helps you troubleshoot issues when a program or command stops working. If a program has been removed from the system and you don't know why, this command can help.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Show command help and options.
+    🔹 `--version` --> ℹ️ Show command version.
+    🔹 `package-name` --> 📦 The name of the package you want to know why it was removed.
+
+🛠 **Examples:**
+
+    $ deb-why-removed vlc
+
+    🔹 Find out why the `vlc` package was removed.
+
+    $ deb-why-removed --help
+
+    🔹 Show the command's help information.
+
+✅ **Simple Example:**
+
+    $ deb-why-removed chromium
+
+    🔹 If `chromium` was removed, this command will display information about why it was removed, such as if it conflicted with another package.

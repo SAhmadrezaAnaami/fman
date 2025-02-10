@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `manpath` baraye namayesh ya tanzim masir-haye jostojooye dastoor `man` estefade mishavad. Be zabane sade, `manpath` jay-haye ra neshon midahad ke dastoor `man` baraye peyda kardane rahnamaha (manual pages) migardad.
+
+⚙️ **Gozine-ha:**
+    🔹 `manpath` --> 📍 Namayesh masir-haye فعلی ke `man` az anha estefade mikonad.
+    🔹 `manpath -d` --> ⚙️ Namayesh masir-haye default (pishfarz) ke dar system sakhteh shodeh ast.
+    🔹 `manpath -c` --> 🧹 پاک kardane masir-haye ke khali hastand va eslah kardane masir-ha.
+
+🛠 **Mesal-ha:**
+
+    $ manpath
+
+    🔹 Namayesh masir-haye ke dastoor `man` dar anha donbale file-haye rahnamaye dastoorha migardad.
+
+    $ manpath -d
+
+    🔹 Namayesh masir-haye pishfarz ra neshon midahad.
+
+✅ **Mesal sade:**
+
+    $ manpath
+
+    🔹 Output yek list az masir-ha ast. Dastoor `man` az in masir-ha estefade mikonad ta rahnamaye yek dastoor ra peyda konad, masalan rahnamaye dastoor `ls`. Agar rahnamaye dastoor `ls` dar hich kodam az in masir-ha nabashad, dastoor `man` rahnamayei nakhahad dasht.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `manpath` command is used to display or configure the search paths for the `man` command.  Simply put, `manpath` shows the locations where the `man` command searches for manual pages.
+
+⚙️ **Options:**
+    🔹 `manpath` --> 📍 Display the current paths that `man` uses.
+    🔹 `manpath -d` --> ⚙️ Display the default paths that are built into the system.
+    🔹 `manpath -c` --> 🧹 Clean up the paths, removing empty paths and correcting any errors.
+
+🛠 **Examples:**
+
+    $ manpath
+
+    🔹 Display the paths where the `man` command looks for manual page files.
+
+    $ manpath -d
+
+    🔹 Show the default search paths.
+
+✅ **Simple Example & Explanation:**
+
+    $ manpath
+
+    🔹 The output is a list of paths. The `man` command uses these paths to find the manual for a command, such as the `ls` command. If the manual page for `ls` is not in any of these paths, the `man` command won't find it.

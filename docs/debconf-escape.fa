@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-escape` baraye tabdil kardan reshteh-ha (string-ha) be shekli ke dar file-haye `debconf` ghabele estefade bashand, be kar miravad. Yani karakterhaye khas ra jabeja mikonad ta `debconf` anha ra be dorosti bekhwanad.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine-ye khas nadarad.  Faghat reshteh-ee ke bayad escape shavad ra az voroodi (stdin) migirad ya az argument line command.
+
+🛠 **Mesal-ha:**
+
+    $ echo "In yek reshte ba \"quote\" va \\backslash ast" | debconf-escape
+
+    🔹 Reshte-ye voroodi ra escape mikonad va dar khorooji chap mikonad.
+
+    $ debconf-escape "Reshte-ye digar ba 'single quote'"
+
+    🔹  Dar in mesal, `debconf-escape` reshte-ye dade shodeh ra escape mikonad.
+
+✅ **Mesal sade:**
+
+    $ echo "Hello, World! \$This is a variable" | debconf-escape
+
+    🔹 Khorooji chizi mesle "Hello, World! \\$This is a variable" khahad bood. Dar inja, `$` escape shodeh ta `debconf` an ra motefavet az yek motaghayer dar nazar begirad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-escape` command is used to convert strings into a format suitable for use in `debconf` files. It escapes special characters so that `debconf` can interpret them correctly.
+
+⚙️ **Options:**
+    🔹 It does not have specific options. It takes the string to be escaped from standard input (stdin) or as a command line argument.
+
+🛠 **Examples:**
+
+    $ echo "This is a string with \"quotes\" and \\backslashes" | debconf-escape
+
+    🔹 Escapes the input string and prints it to standard output.
+
+    $ debconf-escape "Another string with 'single quotes'"
+
+    🔹 In this example, `debconf-escape` escapes the provided string.
+
+✅ **Simple Example:**
+
+    $ echo "Hello, World! \$This is a variable" | debconf-escape
+
+    🔹 The output will be something like "Hello, World! \\$This is a variable". Here, `$` is escaped so that `debconf` treats it as a literal character rather than a variable.

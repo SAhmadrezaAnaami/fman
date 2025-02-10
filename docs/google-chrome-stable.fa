@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `google-chrome-stable` yek dastoor nist, balke name package (baste) baraye Google Chrome Stable (version-e paaydar) dar system-haye Linux ast. Az in estefade mishavad baraye nasb ya update kardan Chrome az tarigh package manager (masalan apt dar Debian/Ubuntu). Agar Chrome nasb shode bashad, shoma mitavanid an ra az tarigh application launcher baz konid, na az tarigh terminal ba in name.
+
+⚙️ **Gozine-ha:**
+    Chonke `google-chrome-stable` yek dastoor nist, gozine-haye mostaghim nadarad. Vali, package manager-ha (mesle `apt`) gozine-haye khass-e khod ra darand:
+    🔹 `sudo apt install google-chrome-stable` --> 📦 Chrome ra nasb mikonad.
+    🔹 `sudo apt update` --> 🔄 List-e package-ha ra update mikonad (pish az nasb).
+    🔹 `sudo apt upgrade` --> ⬆️ Hameye package-haye nasb shode ra update mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt update
+    $ sudo apt install google-chrome-stable
+
+    🔹 Dastoor-haye bala Chrome ra nasb mikonand ya update mikonand.
+
+    $ google-chrome-stable
+
+    🔹 In dastoor dar terminal Chrome ra baz nemikonad. Chrome az application launcher baz mishavad.
+
+✅ **Mesal sade:**
+
+    $ sudo apt update && sudo apt install google-chrome-stable
+
+    🔹 Aval list-e package-ha ra update mikonad va bad Chrome ra nasb mikonad. Agar Chrome ghablan nasb shode bashad, update mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `google-chrome-stable` is not a command, but the package name for the stable version of Google Chrome on Linux systems. It's used to install or update Chrome via a package manager (like apt on Debian/Ubuntu). If Chrome is installed, you launch it from the application launcher, not via the terminal using this name.
+
+⚙️ **Options:**
+    Since `google-chrome-stable` is a package name and not a direct command, it doesn't have options of its own. However, package managers (like `apt`) have options:
+    🔹 `sudo apt install google-chrome-stable` --> 📦 Installs Chrome.
+    🔹 `sudo apt update` --> 🔄 Updates the package list (before installing).
+    🔹 `sudo apt upgrade` --> ⬆️ Updates all installed packages.
+
+🛠 **Examples:**
+
+    $ sudo apt update
+    $ sudo apt install google-chrome-stable
+
+    🔹 These commands install or update Chrome.
+
+    $ google-chrome-stable
+
+    🔹 This command won't launch Chrome from the terminal. Launch Chrome from the application launcher.
+
+✅ **Simple Example:**
+
+    $ sudo apt update && sudo apt install google-chrome-stable
+
+    🔹 First, update the package list, then install Chrome. If Chrome is already installed, it updates it.

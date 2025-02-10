@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-launch-1.0` baraye ijra kardan va sakhtan pipeline-haye multimedia ba estefade az GStreamer estefade mishavad.  Shoma mitavanid an ra baraye pakhsh video, sabt seda, ya tabdil format-haye multimedia be kar bebarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`     --> ℹ️  Namayesh version-e GStreamer.
+    🔹 `--verbose`     --> 📢  Chap etela'at bishtar dar morede raftare pipeline.
+    🔹 `--pipeline` "PIPELINE_DESCRIPTION"  --> 🎬  Tarife pipeline az tarigh command line.  Be jaye neveshtan file estefade konid.
+    🔹 `--eos-on-shutdown` --> 🛑  Ersale signal EOS (End-Of-Stream) be pipeline dar hengam bastan.
+
+🛠 **Mesal-ha:**
+
+    $ gst-launch-1.0 playbin uri=file:///path/to/your/video.mp4
+
+    🔹  Ejraye yek file video ba estefade az playbin.
+
+    $ gst-launch-1.0 videotestsrc ! video/x-raw,width=640,height=480 ! autovideosink
+
+    🔹  Namayesh yek test pattern video dar window.
+
+✅ **Mesal sade:**
+
+    $ gst-launch-1.0 filesrc location=music.mp3 ! decodebin ! autoaudiosink
+
+    🔹  Ejraye file `music.mp3`. `filesrc` file ra load mikonad, `decodebin` an ra decode mikonad, va `autoaudiosink` seda ra pakhsh mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-launch-1.0` command is used to build and run GStreamer multimedia pipelines. You can use it to stream video, record audio, or convert multimedia formats.
+
+⚙️ **Options:**
+    🔹 `--version`     --> ℹ️  Show the GStreamer version.
+    🔹 `--verbose`     --> 📢  Print more information about pipeline behavior.
+    🔹 `--pipeline` "PIPELINE_DESCRIPTION" --> 🎬  Define the pipeline from the command line instead of using a file.
+    🔹 `--eos-on-shutdown` --> 🛑  Send an EOS (End-Of-Stream) signal to the pipeline when closing.
+
+🛠 **Examples:**
+
+    $ gst-launch-1.0 playbin uri=file:///path/to/your/video.mp4
+
+    🔹  Play a video file using playbin.
+
+    $ gst-launch-1.0 videotestsrc ! video/x-raw,width=640,height=480 ! autovideosink
+
+    🔹  Display a video test pattern in a window.
+
+✅ **Simple Example:**
+
+    $ gst-launch-1.0 filesrc location=music.mp3 ! decodebin ! autoaudiosink
+
+    🔹  Play the `music.mp3` file. `filesrc` loads the file, `decodebin` decodes it, and `autoaudiosink` plays the audio.

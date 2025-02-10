@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deallocvt` baraye azad kardane (deallocate) yek virtual terminal (VT) estefade mishavad. Vaghti ke VT digar estefade nemishavad, ba in dastoor mishe an ra az memory hazf kard ta resource-ha azad shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `deallocvt N` --> 🔢 `N` shomare terminal virtuali ast ke mikhaid azad konid. Agar shomare dade nashavad, terminal jari azad mishavad.
+    🔹 `deallocvt -k N` --> 🔪 VT ra be force mikoshe (kill) va azad mikonad, hata agar kasio dar an terminal logg-in bashad. Ehtiat konid!
+
+🛠 **Mesal-ha:**
+
+    $ deallocvt 2
+
+    🔹 Terminal virtual shomare 2 ra azad mikonad.
+
+    $ deallocvt -k 3
+
+    🔹 Terminal virtual shomare 3 ra majbur mikonad bebandad va azad mikonad.
+
+✅ **Mesal sade:**
+
+    $ deallocvt
+    
+    🔹 Terminal virtual jari (current) ra azad mikonad, agar hich terminal digari be an vasl nabashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deallocvt` command is used to deallocate a virtual terminal (VT).  When a VT is no longer in use, this command can free up memory and resources associated with it.
+
+⚙️ **Options:**
+    🔹 `deallocvt N` --> 🔢 `N` is the number of the virtual terminal you want to deallocate. If no number is given, the current terminal is deallocated.
+    🔹 `deallocvt -k N` --> 🔪 Forcefully kill and deallocate VT `N`, even if someone is logged in. Use with caution!
+
+🛠 **Examples:**
+
+    $ deallocvt 2
+
+    🔹 Deallocates virtual terminal number 2.
+
+    $ deallocvt -k 3
+
+    🔹 Forces virtual terminal number 3 to close and deallocate.
+
+✅ **Simple Example:**
+
+    $ deallocvt
+    
+    🔹 Deallocates the current virtual terminal, if no other terminal is attached to it.

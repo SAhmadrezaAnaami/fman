@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `getent` (get entries) az database-haye systemi mesle /etc/passwd va /etc/group etela'at migirad. In dastoor be shoma komak mikonad ta etela'at karbaran, group-ha, hosts, service-ha va chizhaye digar ra az system be dast avarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `getent passwd` --> 👤 Namayesh etela'at hameye karbaran system.
+    🔹 `getent group`  --> 👥 Namayesh etela'at hameye group-haye system.
+    🔹 `getent hosts`  --> 🌐 Namayesh list IP address-ha va domain name-ha az /etc/hosts.
+    🔹 `getent services` --> 🖥 Namayesh list service-ha va port-haye system.
+    🔹 `getent shadow` --> 🔒 Namayesh etela'at shadow password (agar dastresi dashte bashid).
+    🔹 `getent passwd <username>` --> 👤 Namayesh etela'at yek karbar khass.
+
+🛠 **Mesal-ha:**
+
+    $ getent passwd
+    
+    🔹 Namayesh etela'at hameye karbaran dar system.
+
+    $ getent group developers
+
+    🔹 Namayesh etela'at group "developers".
+
+✅ **Mesal sade:**
+
+    $ getent hosts google.com
+
+    🔹 Agar google.com dar file /etc/hosts bashad, IP address aan ra namayesh midahad. Dar gheyr in soorat, hich chizi namayesh nemidahad magar dar source-haye digar configuration shode bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `getent` (get entries) command retrieves entries from system databases like /etc/passwd and /etc/group.  It helps you to get information about users, groups, hosts, services, and other things from system configuration files and databases.
+
+⚙️ **Options:**
+    🔹 `getent passwd` --> 👤 Display information about all system users.
+    🔹 `getent group`  --> 👥 Display information about all system groups.
+    🔹 `getent hosts`  --> 🌐 Display a list of IP addresses and domain names from /etc/hosts.
+    🔹 `getent services` --> 🖥 Display a list of services and ports on the system.
+    🔹 `getent shadow` --> 🔒 Display shadow password information (if you have access).
+    🔹 `getent passwd <username>` --> 👤 Display information for a specific user.
+
+🛠 **Examples:**
+
+    $ getent passwd
+    
+    🔹 Display information about all users in the system.
+
+    $ getent group developers
+
+    🔹 Display information for the "developers" group.
+
+✅ **Simple Example:**
+
+    $ getent hosts google.com
+
+    🔹 If google.com is in the /etc/hosts file, this will show its IP address. Otherwise, it won't show anything unless configured in other sources.

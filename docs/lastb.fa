@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lastb` baraye didane talaash-ha-ye nameوفقیت‌آمیز baraye vared shodan be system (login) estefade mishavad. In dastoor az file-haye log system estefade mikonad ta etela'at ra namayesh dahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lastb` -->  📜 Namayesh hameye talaash-ha-ye login-e nameوفقیت‌آمیز be tartib-e zaman.
+    🔹 `lastb -n X` -->  🔢 Namayesh faghat X ta az akharin talaash-ha. Be jaye X adad bezarid.
+    🔹 `lastb username` --> 👤 Namayesh talaash-ha-ye login-e nameوفقیت‌آمیz faghat baraye yek karbar khass.
+
+🛠 **Mesal-ha:**
+
+    $ lastb
+
+    🔹 Namayesh hameye talaash-ha-ye nameوفقیت‌آمیز login.
+
+    $ lastb -n 5
+
+    🔹 Namayesh 5 ta az akharin talaash-ha-ye nameوفقیت‌آمیز login.
+
+✅ **Mesal sade:**
+
+    $ lastb root
+
+    🔹 Namayesh hameye talaash-ha-ye nameوفقیت‌آمیz login baraye karbar "root".  Agar hich chizi namayesh dade nashavad, yani karbar "root" hich talaash-e nameوفقیت‌آمیzi nadashte ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lastb` command displays a list of unsuccessful login attempts to the system.  It reads from system log files to provide this information.
+
+⚙️ **Options:**
+    🔹 `lastb` --> 📜 Show all failed login attempts in chronological order.
+    🔹 `lastb -n X` --> 🔢 Show only the last X failed login attempts. Replace X with a number.
+    🔹 `lastb username` --> 👤 Show failed login attempts only for a specific user.
+
+🛠 **Examples:**
+
+    $ lastb
+
+    🔹 Show all failed login attempts.
+
+    $ lastb -n 5
+
+    🔹 Show the last 5 failed login attempts.
+
+✅ **Simple Example:**
+
+    $ lastb root
+
+    🔹 Show all failed login attempts for the user "root". If nothing is displayed, it means the user "root" had no failed login attempts.

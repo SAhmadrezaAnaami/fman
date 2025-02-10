@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-parsechangelog` baraye khandan va tajziyeh file changelog (tarikhche taghirat) az package Debian estefade mishavad.  In dastoor etela'at ra az file changelog kharej mikonad va an ra be shekle motafavet namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-l`   --> 📜 Namayesh kol file changelog.
+    🔹 `-S`   --> 👀 Namayesh source package name.
+    🔹 `-vVER` --> 🏷️ Namayesh etela'at version khass. (VER = version number)
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-parsechangelog
+
+    🔹 Namayesh akharin version az changelog.
+
+    $ dpkg-parsechangelog -l
+
+    🔹 Namayesh tamame content file changelog.
+
+✅ **Mesal sade:**
+
+    $ dpkg-parsechangelog -S
+
+    🔹 Faghat name source package ra az file changelog chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-parsechangelog` command is used to read and parse the changelog file of a Debian package. It extracts information from the changelog file and displays it in various formats.
+
+⚙️ **Options:**
+    🔹 `-l`   --> 📜 Display the entire changelog file.
+    🔹 `-S`   --> 👀 Display the source package name.
+    🔹 `-vVER` --> 🏷️ Display information for a specific version. (VER = version number)
+
+🛠 **Examples:**
+
+    $ dpkg-parsechangelog
+
+    🔹 Displays the latest version from the changelog.
+
+    $ dpkg-parsechangelog -l
+
+    🔹 Displays the entire content of the changelog file.
+
+✅ **Simple Example:**
+
+    $ dpkg-parsechangelog -S
+
+    🔹 Prints only the source package name from the changelog file.
+

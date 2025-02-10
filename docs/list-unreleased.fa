@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `list-unreleased` baraye liste kardan commit-haye release nashode dar git repository estefade mishavad. In dastoor obdatan baraye projhe-haye bozorg ke release-haye motadad darand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--format <format>` --> 🎨 Shekl namayesh kharoji ra tayin mikonad (meslan, `concise`, `detailed`).
+    🔹 `--all`           --> 📂 Hameye branch-ha ra barresi mikonad, na faghat branch-e konooni.
+    🔹 `--exclude <branch>`--> 🚫 Branch-haye khass ra az barresi hazf mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ list-unreleased
+
+    🔹 Liste commit-haye release nashode ra az branch-e konooni namayesh midahad.
+
+    $ list-unreleased --format detailed
+
+    🔹 Liste commit-ha ra ba etela'ate bishtar (mesle comment-e commit) namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ list-unreleased --all
+
+    🔹 Hameye branch-ha ra baraye commit-haye release nashode barresi mikonad va liste kol ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `list-unreleased` command is used to list unreleased commits in a git repository. This command is especially useful for large projects that have frequent releases.
+
+⚙️ **Options:**
+    🔹 `--format <format>` --> 🎨 Specifies the output format (e.g., `concise`, `detailed`).
+    🔹 `--all`           --> 📂 Checks all branches, not just the current branch.
+    🔹 `--exclude <branch>`--> 🚫 Excludes specific branches from the check.
+
+🛠 **Examples:**
+
+    $ list-unreleased
+
+    🔹 Shows the list of unreleased commits from the current branch.
+
+    $ list-unreleased --format detailed
+
+    🔹 Shows the list of commits with more detailed information (like commit message).
+
+✅ **Simple Example:**
+
+    $ list-unreleased --all
+
+    🔹 Checks all branches for unreleased commits and displays a comprehensive list.

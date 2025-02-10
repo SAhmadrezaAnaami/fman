@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsirq` baraye didane etela'at dar morede interrupt request-ha (IRQ-ha) dar Linux estefade mishavad. IRQ-ha channel-haye hardware hastand ke device-ha az anha baraye khabar dadan be processor vaghti ke niaz be khadamat darand, estefade mikonand.  Ba `lsirq` mitoonid bebini kodam device-ha az kodam IRQ-ha estefade mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsirq` --> 📜 Namayesh list kamele IRQ-ha va device-ha.
+    🔹 `lsirq <IRQ_number>` --> 👀 Namayesh etela'at mokhtasar baraye yek IRQ khas.
+    🔹 `lsirq -v`  --> 💬 Namayesh etela'at bishtar (verbose) dar morede interrupt controller-ha.
+
+🛠 **Mesal-ha:**
+
+    $ lsirq
+
+    🔹 Namayesh list kolli IRQ-ha.
+
+    $ lsirq 12
+
+    🔹 Namayesh etela'at IRQ shomare 12.
+
+✅ **Mesal sade:**
+
+    $ lsirq | grep eth0
+
+    🔹 Peida kardane IRQ-i ke network interface 'eth0' az aan estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsirq` command is used to display information about interrupt requests (IRQs) in Linux. IRQs are hardware channels that devices use to signal the processor when they need attention.  With `lsirq`, you can see which devices are using which IRQs.
+
+⚙️ **Options:**
+    🔹 `lsirq` --> 📜 Display the full list of IRQs and devices.
+    🔹 `lsirq <IRQ_number>` --> 👀 Display detailed information for a specific IRQ.
+    🔹 `lsirq -v` --> 💬 Display more verbose information about interrupt controllers.
+
+🛠 **Examples:**
+
+    $ lsirq
+
+    🔹 Show the overall list of IRQs.
+
+    $ lsirq 12
+
+    🔹 Show information for IRQ number 12.
+
+✅ **Simple Example:**
+
+    $ lsirq | grep eth0
+
+    🔹 Find the IRQ used by the network interface 'eth0'.

@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `file` baraye tashkhis noe file estefade mishavad. In dastoor mi-toone beghe che noee file dari (masalan, matni, tasvir, ya barname).
+
+⚙️ **Gozine-ha:**
+    🔹 `file filename`  --> 📄 Tashkhis noe file ba esm `filename`.
+    🔹 `file -b filename` --> 💬 Fagat noe file ra chap mikonad, bedoon esm file.
+    🔹 `file -i filename` --> ℹ️ Namayesh noe MIME file (masalan, text/plain ya image/jpeg).
+
+🛠 **Mesal-ha:**
+
+    $ file myfile.txt
+
+    🔹 Tashkhis noe file `myfile.txt`.
+
+    $ file -b myimage.jpg
+
+    🔹 Fagat noe file `myimage.jpg` ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ file -i myfile.txt
+
+    🔹 Agar `myfile.txt` yek file matni bashad, natije `text/plain` khahad bood.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `file` command is used to determine the file type. It can tell you what kind of file you have (e.g., text, image, or program).
+
+⚙️ **Options:**
+    🔹 `file filename`  --> 📄 Determine the type of the file named `filename`.
+    🔹 `file -b filename` --> 💬 Print only the file type, without the filename.
+    🔹 `file -i filename` --> ℹ️ Display the MIME type of the file (e.g., text/plain or image/jpeg).
+
+🛠 **Examples:**
+
+    $ file myfile.txt
+
+    🔹 Determine the type of the file `myfile.txt`.
+
+    $ file -b myimage.jpg
+
+    🔹 Print only the type of the file `myimage.jpg`.
+
+✅ **Simple Example:**
+
+    $ file -i myfile.txt
+
+    🔹 If `myfile.txt` is a text file, the output will be `text/plain`.
+

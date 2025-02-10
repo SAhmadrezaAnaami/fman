@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dash` yek shell sade va sabok baraye UNIX-like system-ha ast. In shell be onvane `/bin/sh` dar Debian va Ubuntu estefade mishavad va baraye ejraye script-haye shell sari’ va ba masrafe kam memory monaseb ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-c command`  --> 📝 Dastoor ra az string ejra kon. Mesal: `dash -c 'echo Salam Donya'`
+    🔹 `-n`         --> 🔍 Faghat syntax script ra check kon, vali ejra nakon. Mesal: `dash -n script.sh`
+    🔹 `-v`         --> 🗣️ Har command ra ghabl az ejra chap kon (verbose mode). Mesal: `dash -v script.sh`
+    🔹 `-x`         --> ⚙️ Har command va argument-haye aan ra qabl az ejra chap kon (trace mode). Mesal: `dash -x script.sh`
+    🔹 `-s`         --> ⌨️ Command-ha ra az standard input bekhan. Mesal: `dash -s < script.sh`
+
+🛠 **Mesal-ha:**
+
+    $ dash script.sh
+
+    🔹 Script `script.sh` ra ba shell `dash` ejra kon.
+
+    $ dash -c 'echo $PATH'
+
+    🔹 Dastoor `echo $PATH` ra ba `dash` ejra kon.
+
+✅ **Mesal sade:**
+
+    $ dash -n script.sh
+
+    🔹 Syntax `script.sh` ra check mikonad, be sharti ke khataee dar syntax nabashad chizi namayesh nemidahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dash` command is a simple and lightweight shell for UNIX-like systems.  It is often used as `/bin/sh` on Debian and Ubuntu and is suitable for running shell scripts quickly and with low memory usage.
+
+⚙️ **Options:**
+    🔹 `-c command`  --> 📝 Execute the command from a string. Example: `dash -c 'echo Hello World'`
+    🔹 `-n`         --> 🔍 Only check the syntax of the script, but do not execute it. Example: `dash -n script.sh`
+    🔹 `-v`         --> 🗣️ Print each command before executing it (verbose mode). Example: `dash -v script.sh`
+    🔹 `-x`         --> ⚙️ Print each command and its arguments before executing it (trace mode). Example: `dash -x script.sh`
+    🔹 `-s`         --> ⌨️ Read commands from standard input. Example: `dash -s < script.sh`
+
+🛠 **Examples:**
+
+    $ dash script.sh
+
+    🔹 Execute the script `script.sh` with the `dash` shell.
+
+    $ dash -c 'echo $PATH'
+
+    🔹 Execute the command `echo $PATH` with `dash`.
+
+✅ **Simple Example:**
+
+    $ dash -n script.sh
+
+    🔹 Checks the syntax of `script.sh`.  If there are no syntax errors, nothing will be displayed.

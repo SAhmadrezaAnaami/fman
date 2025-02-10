@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbus-cleanup-sockets` baraye paak kardan socket-haye DBus-i estefade mishavad ke digar estefade nemishavand.  In dastoor kheili vaght-ha dar system boot shodan estefade mishavad ta az socket-haye DBus-i ziadi ke system-ra por mikonand jelogiri konad. Agar programi DBus-ra baaz kard va ba'dan an-ra dorost nabast, socket-i be ja migozarad.  In socket-ha baad az chand vaght az system hazf mishavand, vali `dbus-cleanup-sockets` mitavanad anha-ra be soorat fori paak konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--verbose` --> 🗣️ Chap kardan socket-haee ke paak shodeand.
+    🔹 `--dry-run` --> 🧪 Paak nakardan socket-ha, faghat namayesh socket-haee ke paak mishavand.
+    🔹 `--age=SECONDS` --> ⏳ Faghat socket-haee ke az `SECONDS` vaght bishtar gozashte paak shavand.  Agar zikr nashavad, default `3600` (yek saat) ast.
+    🔹 `--systemd-activation` --> ⚙️ Fekr kardan ke dar systemd activation estefade shode ast (mohem nist agar systemd dar vaghe estefade shode bashad ya na).
+
+🛠 **Mesal-ha:**
+
+    $ dbus-cleanup-sockets
+
+    🔹 Socket-haye DBus-i ke az yek saat bishtar estefade nashodeand ra paak mikonad.
+
+    $ dbus-cleanup-sockets --verbose
+
+    🔹 Socket-haye DBus-i ke az yek saat bishtar estefade nashodeand ra paak mikonad va etela'ati darbareye socket-haye paak shode chap mikonad.
+
+    $ sudo dbus-cleanup-sockets --age=300
+
+    🔹 Socket-haye DBus-i ke az 5 daqiqa (300 sanieh) bishtar estefade nashodeand ra paak mikonad (ba dastresi root).
+
+✅ **Mesal sade:**
+
+    $ dbus-cleanup-sockets --dry-run
+
+    🔹 Socket-haye DBus-i ke paak mishavand ra namayesh midahad, vali anha ra paak nemikonad. In yek rah baraye didan an-ast ke che socket-haee paak mishavand be doone paak kardan anha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbus-cleanup-sockets` command is used to remove stale DBus sockets that are no longer in use. It is often used during system startup to prevent the accumulation of excessive DBus sockets. If a program opens a DBus connection but fails to close it properly, it can leave behind a socket. These sockets will eventually be removed by the system, but `dbus-cleanup-sockets` can forcibly remove them immediately.
+
+⚙️ **Options:**
+    🔹 `--verbose` --> 🗣️ Print out the sockets that are being removed.
+    🔹 `--dry-run` --> 🧪 Do not actually remove the sockets, just print out which ones would be removed.
+    🔹 `--age=SECONDS` --> ⏳ Only remove sockets older than `SECONDS` seconds.  If not specified, the default is `3600` (one hour).
+    🔹 `--systemd-activation` --> ⚙️ Assume systemd activation is used (regardless of whether systemd is actually being used).
+
+🛠 **Examples:**
+
+    $ dbus-cleanup-sockets
+
+    🔹 Removes DBus sockets that have not been used in over an hour.
+
+    $ dbus-cleanup-sockets --verbose
+
+    🔹 Removes DBus sockets that have not been used in over an hour and prints information about the sockets being removed.
+
+    $ sudo dbus-cleanup-sockets --age=300
+
+    🔹 Removes DBus sockets that have not been used in over 5 minutes (300 seconds), requiring root privileges.
+
+✅ **Simple Example:**
+
+    $ dbus-cleanup-sockets --dry-run
+
+    🔹 Shows the DBus sockets that would be cleaned up, without actually removing them.  This is a way to see what sockets will be cleaned up without actually cleaning them up.

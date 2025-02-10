@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbus-run-session` baraye ejra kardan yek dastoor dar yek `DBus` session jadid be kar miravad. `DBus` yek rah baraye barname-ha ast ke ba ham digar gap bezanand. In dastoor be shoma komak mikonad ke yek barname ra dar yek mohit izol-shode (isolated) ejra konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`      --> ❓ Namayesh rahnamaye estefade az dastoor.
+    🔹 `--version`   --> ℹ️ Namayesh version e `dbus-run-session`.
+    🔹 `--`          --> 🛑 Tamam kardan gozine-ha va shoru kardan dastoor asli.
+
+🛠 **Mesal-ha:**
+
+    $ dbus-run-session gnome-terminal
+
+    🔹 Baz kardan yek terminal `gnome-terminal` dar yek `DBus` session jadid.
+
+    $ dbus-run-session -- firefox
+
+    🔹 Eejad yek `DBus` session jadid va ejra kardan `firefox` dar an.
+
+✅ **Mesal sade:**
+
+    $ dbus-run-session xeyes
+
+    🔹 `xeyes` dar yek DBus session jadid ejra mishavad. Agar error dad, ya DBus correctly setup nashode ya barname `xeyes` mojood nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbus-run-session` command is used to run a command in a new `DBus` session. `DBus` is a system for applications to communicate with one another. This command helps you run an application in an isolated environment.
+
+⚙️ **Options:**
+    🔹 `--help`      --> ❓ Show help about using the command.
+    🔹 `--version`   --> ℹ️ Show the version of `dbus-run-session`.
+    🔹 `--`          --> 🛑 Signal the end of options and the start of the actual command.
+
+🛠 **Examples:**
+
+    $ dbus-run-session gnome-terminal
+
+    🔹 Open a `gnome-terminal` terminal in a new `DBus` session.
+
+    $ dbus-run-session -- firefox
+
+    🔹 Create a new `DBus` session and run `firefox` within it.
+
+✅ **Simple Example:**
+
+    $ dbus-run-session xeyes
+
+    🔹 `xeyes` runs in a new DBus session. If you get errors, either DBus is not correctly set up, or the `xeyes` program is missing.

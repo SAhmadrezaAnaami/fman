@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gencat` baraye dorost kardane file-haye catalogue message estefade mishavad. In file-ha message-haye moratab shode ra dar khod negah midarand ke barname-ha mitavanand az anha estefade konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `gencat output_file input_file1 input_file2 [...]`  --> 📁 File catalogue jadid misazad ya ezafe mikonad be file mojood.
+    🔹 `-u`  --> 🔄 Update mikonad catalogue message, agar az ghabl voojood dashte bashad. Agar nabashad misazad.
+    🔹 `-v`  --> 🗣️ Namayesh etela'at bishtar dar morede amaleye dorost kardane catalogue.
+
+🛠 **Mesal-ha:**
+
+    $ gencat my_messages.cat my_messages.msg
+
+    🔹 Dorost kardane catalogue message jadid ba estefade az file `my_messages.msg`.
+
+    $ gencat -u existing_messages.cat new_messages.msg
+
+    🔹 Update kardane file catalogue `existing_messages.cat` ba message-haye jadid az file `new_messages.msg`.
+
+✅ **Mesal sade:**
+
+    $ gencat product_messages.cat error_messages.msg warning_messages.msg
+
+    🔹 Dorost kardane file catalogue `product_messages.cat` az do file message `error_messages.msg` va `warning_messages.msg`. Barnameh mitavanad az in file estefade konad baraye namayesh message-haye error va warning be karbaran.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gencat` command is used to create message catalogue files. These files store organized messages that programs can use.
+
+⚙️ **Options:**
+    🔹 `gencat output_file input_file1 input_file2 [...]` --> 📁 Creates a new message catalogue file or appends to an existing one.
+    🔹 `-u` --> 🔄 Updates the message catalogue if it already exists; otherwise, it creates a new one.
+    🔹 `-v` --> 🗣️ Provides more verbose output about the catalogue creation process.
+
+🛠 **Examples:**
+
+    $ gencat my_messages.cat my_messages.msg
+
+    🔹 Creates a new message catalogue file named `my_messages.cat` using the message definitions from `my_messages.msg`.
+
+    $ gencat -u existing_messages.cat new_messages.msg
+
+    🔹 Updates the existing message catalogue file `existing_messages.cat` with new messages from `new_messages.msg`.
+
+✅ **Simple Example:**
+
+    $ gencat product_messages.cat error_messages.msg warning_messages.msg
+
+    🔹 Creates a message catalogue file `product_messages.cat` from the two message definition files `error_messages.msg` and `warning_messages.msg`. A program can use this catalogue to display error and warning messages to users.

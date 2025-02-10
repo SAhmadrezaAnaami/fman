@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cvtsudoers` baraye tabdil kardane file-haye `sudoers.db` be formate matni (text) estefade mishavad. In dastoor be shoma komak mikonad ta betavanid configuration-e `sudo` ra bekhanid va tagheer dahid. Amoman, shoma niazi be ejraye mostaghim eeen dastoor nadarid, chonke dastoorhaye digari mesle `visudo` estefade mishavand ke in kar ra poshte sahne anjam midahand.
+
+⚙️ **Gozine-ha:**
+    🔹 `cvtsudoers -c` --> 🔄 Check mikonad ke aya file `sudoers.db` bayad dobare sakhte shavad ya na. Agar lazem bashad etela'i chap mikonad.
+    🔹 `cvtsudoers -f sudoers.db` --> 📁 Esme file-e database `sudoers.db` ra moshakhas mikonad. Agar esmi dade nashavad, az jaye pishfarz estefade mikonad.
+    🔹 `cvtsudoers -v` --> 📢 Chap mikonad ke chikar darad anjam midahad (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ cvtsudoers
+
+    🔹 Tabdil `sudoers.db` be formate matni dar jaye pishfarz.
+
+    $ cvtsudoers -c
+
+    🔹 Check mikonad aya tabdil kardane database lazem ast ya na.
+
+✅ **Mesal sade:**
+
+    $ cvtsudoers -v
+
+    🔹 Ejraye dastoor ba etela'at bishtar, ta bebinid che etefaghi dar hale oftadan ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cvtsudoers` command is used to convert the `sudoers.db` database file to a plain text format. This allows you to inspect and potentially modify the `sudo` configuration. Typically, you won't run this command directly; tools like `visudo` handle this conversion behind the scenes.
+
+⚙️ **Options:**
+    🔹 `cvtsudoers -c` --> 🔄 Checks if the `sudoers.db` file needs to be rebuilt. Prints a message if a rebuild is necessary.
+    🔹 `cvtsudoers -f sudoers.db` --> 📁 Specifies the name of the `sudoers.db` database file. If not specified, the default location is used.
+    🔹 `cvtsudoers -v` --> 📢 Enables verbose mode, printing what the command is doing.
+
+🛠 **Examples:**
+
+    $ cvtsudoers
+
+    🔹 Converts `sudoers.db` to a text format in the default location.
+
+    $ cvtsudoers -c
+
+    🔹 Checks whether the database needs conversion.
+
+✅ **Simple Example:**
+
+    $ cvtsudoers -v
+
+    🔹 Runs the command in verbose mode, showing more detailed output of what is happening.

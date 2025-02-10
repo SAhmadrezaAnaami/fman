@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `encguess` baraye hads zadan encoding (encode kardane dade ha) file-haie matni estefade mishavad. Yani, komak mikonad ta befahmid ke yek file ba che zabani va che shekl encoding zakhire shode ast. In be vizhe vaghti mohem ast ke file-ha be dorosti namayesh dade nemishavand va bayad encoding anha ra taghir dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `encguess <esm-e-file>` --> 🎯 Hads zadan encoding file ba estefade az analiz-e content
+    🔹 `encguess -f <esm-e-file>` --> 🔍 Force kardane analiz-e content baraye hads zadan encoding
+    🔹 `encguess -r` --> ♻️ Recursive gashtan dar pooshe-ha baraye hads zadan encoding hame file-ha
+    🔹 `encguess -s <encoding-ha>` --> 🎯 Specify kardane list-e encoding-ha baraye hads zadan (ba comma joda konid)
+
+🛠 **Mesal-ha:**
+
+    $ encguess myfile.txt
+
+    🔹 Hads zadan encoding file "myfile.txt"
+
+    $ encguess -f myfile.txt
+
+    🔹 Force kardane hads zadan encoding file "myfile.txt" hata agar encoding awalieh moshakhas bashad.
+
+✅ **Mesal sade:**
+
+    $ encguess mydocument.txt
+    UTF-8
+    $
+
+    🔹 Dastoor `encguess` encoding file "mydocument.txt" ra UTF-8 hads zade ast. In yani file valeh shode ba encoding UTF-8 zakhire shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `encguess` command is used to guess the encoding of text files. It helps determine the character encoding of a file, which is especially useful when files are not displaying correctly and you need to change the encoding.
+
+⚙️ **Options:**
+    🔹 `encguess <filename>` --> 🎯 Guess the encoding of a file using content analysis.
+    🔹 `encguess -f <filename>` --> 🔍 Force content analysis to guess the encoding.
+    🔹 `encguess -r` --> ♻️ Recursively search directories to guess the encoding of all files.
+    🔹 `encguess -s <encodings>` --> 🎯 Specify a list of encodings to guess from (comma-separated).
+
+🛠 **Examples:**
+
+    $ encguess myfile.txt
+
+    🔹 Guess the encoding of the file "myfile.txt".
+
+    $ encguess -f myfile.txt
+
+    🔹 Force the guess of the encoding of the file "myfile.txt", even if an initial encoding is already detected.
+
+✅ **Simple Example:**
+
+    $ encguess mydocument.txt
+    UTF-8
+    $
+
+    🔹 The `encguess` command guessed the encoding of "mydocument.txt" as UTF-8. This means the file is likely saved with UTF-8 encoding.

@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fgconsole` baraye tagheer dadan console fa'al (active console) estefade mishavad.  Console-ha mesle safe-haye karbari motefavet hastand ke mitoonid dar UNIX/Linux bein-e oonha ja-be-ja beshid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `fgconsole [NUMBER]` -->  🔢  Tagheer be console ba shomare moshakhas. Agar shomare dade nashe, shomare console fa'al ra neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ fgconsole 3
+
+    🔹 Tagheer console fa'al be console shomare 3.
+
+    $ fgconsole
+
+    🔹 Neshan dadan shomare console fa'al.
+
+✅ **Mesal sade:**
+
+    $ fgconsole 1
+    $ fgconsole
+    1
+
+    🔹 Ebtedaa console fa'al be console shomare 1 tagheer mikonad, va sepas dastoor `fgconsole` shomare console fa'al (dar inja 1) ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fgconsole` command is used to switch the active console. Consoles are like different virtual screens that you can switch between in UNIX/Linux.
+
+⚙️ **Options:**
+    🔹 `fgconsole [NUMBER]` --> 🔢 Switch to the console with the specified number. If no number is given, it displays the number of the current active console.
+
+🛠 **Examples:**
+
+    $ fgconsole 3
+
+    🔹 Switch the active console to console number 3.
+
+    $ fgconsole
+
+    🔹 Display the number of the current active console.
+
+✅ **Simple Example:**
+
+    $ fgconsole 1
+    $ fgconsole
+    1
+
+    🔹 First, the active console is switched to console number 1, and then the `fgconsole` command prints the number of the active console (which is 1 in this case).
+

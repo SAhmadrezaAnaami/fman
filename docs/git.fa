@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `git` yek dastoor baraye modiriyat taghirat dar file-ha va tracking kardan tarikhcheye project-e shoma ast.  Manzurem az in harakatat save kardan version-haye mokhtalef project-e shoma dar zaman-haye mokhtalef ast, ta betoonid be version-haye ghadimi bargardid ya taghirat ra ba ham merge konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `git init` --> 🚀 Yek repository-e jadid ijad mikonad.  
+    🔹 `git clone <url>` --> ⬇️ Yek repository ra az yek mahale door (remote) copy mikonad.  
+    🔹 `git add <file>` --> ➕ Taghirat ra dar file baraye commit amade mikonad.  
+    🔹 `git commit -m "payam"` --> ✍️ Taghirat amade shode ra ba yek payam save mikonad.  
+    🔹 `git push` --> ⬆️ Taghirat ra be repository-e door (remote) upload mikonad.
+    🔹 `git pull` --> ⬇️ Taghirat ra az repository-e door (remote) download mikonad va ba code shoma merge mikonad.
+    🔹 `git branch` --> 🌿 Shakh-ha (branches) ra list mikonad.
+    🔹 `git checkout <branch>` --> 🔀 Be yek shakh (branch) digar switch mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ git init
+    🔹 Yek git repository dar poosheye jari (current directory) ijad mikonad.
+
+    $ git add .
+    $ git commit -m "Update all files"
+    $ git push origin main
+    🔹  Hameye taghirat be branch "main" be remote repository push mishavand.
+
+✅ **Mesal sade:**
+
+    $ git status
+    🔹 Vaziyate taghirat ra neshon midahad.  File-haye taghir karde, file-haye amade commit shode va file-haye commit nashode ra moshakhas mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `git` is a command-line tool for managing changes to files and tracking the history of your project.  It allows you to save different versions of your project over time, so you can revert to older versions or merge changes together.
+
+⚙️ **Options:**
+    🔹 `git init` --> 🚀 Creates a new Git repository.
+    🔹 `git clone <url>` --> ⬇️ Copies a repository from a remote location.
+    🔹 `git add <file>` --> ➕ Stages changes in a file for commit.
+    🔹 `git commit -m "message"` --> ✍️ Saves the staged changes with a message.
+    🔹 `git push` --> ⬆️ Uploads changes to a remote repository.
+    🔹 `git pull` --> ⬇️ Downloads changes from a remote repository and merges them into your code.
+    🔹 `git branch` --> 🌿 Lists branches.
+    🔹 `git checkout <branch>` --> 🔀 Switches to another branch.
+
+🛠 **Examples:**
+
+    $ git init
+    🔹 Initializes a Git repository in the current directory.
+
+    $ git add .
+    $ git commit -m "Update all files"
+    $ git push origin main
+    🔹 Pushes all the changes to "main" branch in the remote repository.
+
+✅ **Simple Example:**
+
+    $ git status
+    🔹 Shows the status of your changes.  It displays modified files, staged files, and unstaged files.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dir` mesle dastoor `ls` amal mikonad, yani file-ha va pooshe-ha ra dar yek directory namayesh midahad. Dar vaghe, `dir` bishtar dar system-haye Windows estefade mishavad, vali dar UNIX/Linux niz mojud ast va haman kare `ls` ra anjam midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `dir /b`  --> 🍃 Faqat esm-haye file-ha va pooshe-ha ra namayesh midahad (bedune etela'at ezafi).
+    🔹 `dir /a`  --> 👀 Namayesh hameye file-ha, hata anha ke makhfi hastand ya atribute khass darand.
+    🔹 `dir /s`  --> 📂 File-ha ra dar hameye zirpooshe-ha ham search va namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ dir
+
+    🔹 Namayesh file-ha va pooshe-ha dar directory فعلی.
+
+    $ dir /b
+
+    🔹 Namayesh list sade file-ha va pooshe-ha.
+
+✅ **Mesal sade:**
+
+    $ dir /a
+
+    🔹 File-haye makhfi (ke esm-haye aan ba "." shoru mishavad) ham namayesh dade mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dir` command is similar to the `ls` command; it lists files and directories in a specified directory.  `dir` is primarily used in Windows systems, but it also exists in UNIX/Linux and performs the same function as `ls`.
+
+⚙️ **Options:**
+    🔹 `dir /b`  --> 🍃 Displays only the names of files and directories (without extra information).
+    🔹 `dir /a`  --> 👀 Show all files, including hidden ones or those with specific attributes.
+    🔹 `dir /s`  --> 📂 Searches and displays files in all subdirectories as well.
+
+🛠 **Examples:**
+
+    $ dir
+
+    🔹 Displays files and directories in the current directory.
+
+    $ dir /b
+
+    🔹 Displays a simple list of files and directories.
+
+✅ **Simple Example:**
+
+    $ dir /a
+
+    🔹 Hidden files (whose names start with ".") are also displayed.

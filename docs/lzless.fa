@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzless` mesle `less` ast, amma baraye file-haye `gzip` ya `lzma` shode be kar miravad. Yani, file-haye ziad bozorg ra ke ziad shode-and, bedoon baz kardane aanha, mitavanid bebinid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `lzless +F`  --> 👀 Age file tagheer konad, `lzless` automatic update mishavad.
+    🔹 `lzless -N`  --> 🔢 Raftare `less` ra ba file-haye gheyre-ziad shode control mikonad.
+    🔹 `lzless -o file`  --> 💾 Output ra dar yek file save mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ lzless myfile.gz
+
+    🔹 Didane file `gzip` shode `myfile.gz`.
+
+    $ lzless bigfile.lzma
+
+    🔹 Didane file `lzma` shode `bigfile.lzma`.
+
+✅ **Mesal sade:**
+
+    $ lzless logfile.gz | grep error
+
+    🔹 File ziad shode `logfile.gz` ra mibinad va khat-hayi ke `error` darand ra neshan midahad. In kar kheili sari az baz kardane file va grep kardan ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzless` command is similar to `less`, but designed to work with `gzip` or `lzma` compressed files. This allows you to view large compressed files without needing to decompress them first.
+
+⚙️ **Options:**
+    🔹 `lzless +F`  --> 👀 Follow mode; `lzless` will automatically update if the file changes.
+    🔹 `lzless -N`  --> 🔢 Controls how `less` behaves when the input file isn't compressed.
+    🔹 `lzless -o file`  --> 💾 Saves the output to a specified file.
+
+🛠 **Examples:**
+
+    $ lzless myfile.gz
+
+    🔹 View the `gzip` compressed file `myfile.gz`.
+
+    $ lzless bigfile.lzma
+
+    🔹 View the `lzma` compressed file `bigfile.lzma`.
+
+✅ **Simple Example:**
+
+    $ lzless logfile.gz | grep error
+
+    🔹 Views the compressed `logfile.gz` and filters for lines containing `error`.  This is much faster than decompressing and then grepping the file.

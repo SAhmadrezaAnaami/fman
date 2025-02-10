@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gapplication` baraye modiriat barname-haye grafiki (GUI) dar GNOME estefade mishavad. In dastoor be shoma komak mikonad ta yek barname ra ejra konid, an ra geyd konid (register), ya az ejra kardan an jelogiri konid. Asasan, in yek abzar baraye kontorl-e behhtar barname-haye grafiki dar desktop GNOME ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `gapplication launch [شناسه_برنامه]` --> 🚀 Barname ba ID moshakhas shode ra ejra mikonad.
+    🔹 `gapplication register [شناسه_برنامه]` --> 📝 Barname ra be onvane yek barname-ye fa'al dar system geyd mikonad.
+    🔹 `gapplication unregister [شناسه_برنامه]` --> 🚫 Barname ra az system kharej mikonad. (unregisters)
+    🔹 `gapplication list` --> 📋 List-e hame-ye barname-haye fa'al ra neshon midahad.
+    🔹 `gapplication help` --> ℹ️ Rahnamaye komak-e dastoor `gapplication` ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gapplication launch org.gnome.Nautilus
+
+    🔹 Barname-ye Nautilus (file manager) ra ejra mikonad.
+
+    $ gapplication register com.example.MyApp
+
+    🔹 Barname-ye `com.example.MyApp` ra geyd mikonad.
+
+✅ **Mesal sade:**
+
+    $ gapplication list
+
+    🔹 List-e barname-haye fa'al ra neshon midahad. Output shamel `org.gnome.Nautilus` agar Nautilus dar hale ejra bashad, mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gapplication` command is used to manage graphical (GUI) applications in GNOME. This command helps you to launch an application, register it, or prevent it from running. Basically, it's a tool for better control of graphical applications on the GNOME desktop.
+
+⚙️ **Options:**
+    🔹 `gapplication launch [application_id]` --> 🚀 Launches the application with the specified ID.
+    🔹 `gapplication register [application_id]` --> 📝 Registers the application as an active application in the system.
+    🔹 `gapplication unregister [application_id]` --> 🚫 Removes (unregisters) the application from the system.
+    🔹 `gapplication list` --> 📋 Shows a list of all active applications.
+    🔹 `gapplication help` --> ℹ️ Shows the help manual for the `gapplication` command.
+
+🛠 **Examples:**
+
+    $ gapplication launch org.gnome.Nautilus
+
+    🔹 Launches the Nautilus (file manager) application.
+
+    $ gapplication register com.example.MyApp
+
+    🔹 Registers the application `com.example.MyApp`.
+
+✅ **Simple Example:**
+
+    $ gapplication list
+
+    🔹 Shows a list of the active applications. The output will include `org.gnome.Nautilus` if Nautilus is running.

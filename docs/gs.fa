@@ -1,0 +1,76 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gs` yek dastoor alias ast ke obooman baraye ejra kardane `git status` be kar miravad. `git status` vazeyate repository git shoma ra neshon midahad, mesle file-haye taghir karde, file-haye safhe andakhte shode, va branch fa’al.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine moshakhas baraye `gs` nist chon in yek alias ast. Gozine-haye `git status` be kar miravand.
+    🔹 `gs -uno` --> 👀 Neshon nadadane file-haye track nashode.
+    🔹 `gs -b`  --> 🌿 Neshon dadane name branch ba joz’iyate bishtar.
+    🔹 `gs -s`  --> 📜 Neshon dadane vazeyat be soorate kootah (short).
+
+🛠 **Mesal-ha:**
+
+    $ gs
+
+    🔹 Neshon dadane vazeyate repository git shoma.
+
+    $ gs -uno
+
+    🔹 Neshon dadane vazeyat, vali file-haye track nashode ra penhan mikonad.
+
+✅ **Mesal sade:**
+
+    $ gs
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   README.md
+
+    No changes added to commit (use "git add" and/or "git commit -a")
+
+    🔹 In mesal bala, `gs` neshon midahad ke file `README.md` taghir karde va bayad `git add` shavad ta baraye commit amade bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gs` command is typically an alias for `git status`. `git status` displays the state of your git repository, such as modified files, staged files, and the active branch.
+
+⚙️ **Options:**
+    🔹 There are no specific options for `gs` itself, as it's an alias. Options for `git status` apply.
+    🔹 `gs -uno` --> 👀 Do not show untracked files.
+    🔹 `gs -b`  --> 🌿 Show branch name in more detail.
+    🔹 `gs -s`  --> 📜 Show status in short format.
+
+🛠 **Examples:**
+
+    $ gs
+
+    🔹 Shows the status of your git repository.
+
+    $ gs -uno
+
+    🔹 Shows the status, but hides untracked files.
+
+✅ **Simple Example:**
+
+    $ gs
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   README.md
+
+    No changes added to commit (use "git add" and/or "git commit -a")
+
+    🔹 In the example above, `gs` shows that the file `README.md` has been modified and needs to be `git add`ed to be staged for commit.

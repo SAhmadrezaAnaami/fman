@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ispell-wrapper` yek ravesh baraye estefade az `ispell` az dakhel barname-haye digar, mesle `Emacs` ast. In dastoor komak mikonad ta eshtebahat emlaei ra peyda va dorost konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor.
+    🔹 `--version` --> ℹ️ Namayesh version dastoor.
+    🔹 `< file` --> 📝 Check kardane emlaye matne dakhele yek file.
+    🔹 `| ispell-wrapper` --> ✍️ Payvand zadane khorooji yek dastoor digar be ispell-wrapper baraye baresiye emlaei.
+
+🛠 **Mesal-ha:**
+
+    $ ispell-wrapper --help
+
+    🔹 Namayesh rahnamaye dastoor `ispell-wrapper`.
+
+    $ cat myfile.txt | ispell-wrapper
+
+    🔹 Baresiye emlaye matne dakhele `myfile.txt` ba estefade az `ispell-wrapper`.
+
+✅ **Mesal sade:**
+
+    $ echo "in matn eshtbah emlaei darad." | ispell-wrapper
+
+    🔹 Dastoor emlaye matn ra baresi mikonad va eshtebahat ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ispell-wrapper` command provides a way to use `ispell` from within other programs, such as `Emacs`.  It helps to find and correct spelling errors.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Show command help.
+    🔹 `--version` --> ℹ️ Show command version.
+    🔹 `< file` --> 📝 Spell-check the text in a file.
+    🔹 `| ispell-wrapper` --> ✍️ Pipe the output of another command to ispell-wrapper for spell checking.
+
+🛠 **Examples:**
+
+    $ ispell-wrapper --help
+
+    🔹 Show the help message for the `ispell-wrapper` command.
+
+    $ cat myfile.txt | ispell-wrapper
+
+    🔹 Spell-check the text in `myfile.txt` using `ispell-wrapper`.
+
+✅ **Simple Example:**
+
+    $ echo "this sentense has a speling misteke." | ispell-wrapper
+
+    🔹 The command checks the spelling of the text and displays the errors.

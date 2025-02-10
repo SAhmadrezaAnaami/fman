@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dockerd-rootless.sh` baraye ejra kardan Docker daemon (dockerd) bedune dastrasi root (rootless) estefade mishavad. In yani shoma mitavanid Docker ra bedune ejaze administrator ejra konid, ke amniat ra behtar mikonad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `dockerd-rootless.sh install`  --> 📦 Docker ra be soorat rootless nasb mikonad.
+    🔹 `dockerd-rootless.sh uninstall`  --> 🗑️ Nasbe rootless Docker ra hazf mikonad.
+    🔹 `dockerd-rootless.sh start`  --> ▶️ Docker daemon ra be soorat rootless shoru mikonad.
+    🔹 `dockerd-rootless.sh stop`  --> ⏹️ Docker daemon ra be soorat rootless motevaghef mikonad.
+
+🛠 **Mesal-ha:**
+    
+    $ dockerd-rootless.sh install
+    
+    🔹 Docker ra baraye karbar-e konuni be soorat rootless nasb mikonad.
+
+    $ dockerd-rootless.sh start
+    
+    🔹 Docker daemon ra be soorat rootless shoru mikonad.  Age nasb dorost anjam shode bashad, shoma mitavanid az dastoor `docker` estefade konid.
+
+✅ **Mesal sade:**
+    
+    $ dockerd-rootless.sh status
+   
+    🔹 Vaziat (status) Docker daemon rootless ra neshon midahad.  Age ejra shode bashad, "running" neshon midahad.  Dar gheir in soorat, etelaati dar morede chera ejra nashode ast neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dockerd-rootless.sh` script is used to run the Docker daemon (dockerd) without root privileges (rootless). This allows you to run Docker without administrator access, improving security.
+
+⚙️ **Options:**
+    🔹 `dockerd-rootless.sh install`  --> 📦 Installs Docker in rootless mode.
+    🔹 `dockerd-rootless.sh uninstall` --> 🗑️ Removes the rootless Docker installation.
+    🔹 `dockerd-rootless.sh start`    --> ▶️ Starts the Docker daemon in rootless mode.
+    🔹 `dockerd-rootless.sh stop`     --> ⏹️ Stops the Docker daemon in rootless mode.
+
+🛠 **Examples:**
+    
+    $ dockerd-rootless.sh install
+    
+    🔹 Installs Docker in rootless mode for the current user.
+
+    $ dockerd-rootless.sh start
+    
+    🔹 Starts the Docker daemon in rootless mode.  After a successful installation, you should be able to use the `docker` command.
+
+✅ **Simple Example & Explanation:**
+    
+    $ dockerd-rootless.sh status
+    
+    🔹 Shows the status of the rootless Docker daemon. If it's running, it will display "running". Otherwise, it will provide information about why it's not running.

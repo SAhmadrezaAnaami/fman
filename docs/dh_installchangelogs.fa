@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installchangelogs` baraye gozashtan (install) file-haye `changelog` dar jaa-ye dorost dar bast-haye Debian (Debian packages) estefade mishavad. In dastoor otomatik file-haye `changelog` ra peyda mikonad va anha ra be `/usr/share/doc/package-name` enteqal midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name package`  --> 📦 Esme bast-e moshakhas (specific package name). Agar chand bast darid.
+    🔹 `--sourcedir directory` --> 📁 Az in pooshe (directory) file-haye manba (source files) ra bekhahanid.
+    🔹 `--list-missing` --> 📃 List kardan file-haye `changelog` ke peyda nashode and.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installchangelogs
+
+    🔹 File `changelog` ra az pooshe-ye aslye manba gozashtan (install)
+
+    $ dh_installchangelogs --name foo
+   
+    🔹 File `changelog` ra baraye bast-e "foo" gozashtan.
+
+✅ **Mesal sade:**
+   
+    $ dh_installchangelogs --sourcedir debian/source
+
+    🔹 Az pooshe `debian/source` file-haye `changelog` ra peyda mikonad va gozashtan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installchangelogs` command is used to install `changelog` files in the correct location within Debian packages. This command automatically finds `changelog` files and moves them to `/usr/share/doc/package-name`.
+
+⚙️ **Options:**
+    🔹 `--name package`  --> 📦 Specify the package name, if you have multiple packages.
+    🔹 `--sourcedir directory` --> 📁 Look for source files in this directory.
+    🔹 `--list-missing` --> 📃 List the `changelog` files that were not found.
+
+🛠 **Examples:**
+
+    $ dh_installchangelogs
+
+    🔹 Install the `changelog` file from the default source directory.
+
+    $ dh_installchangelogs --name foo
+    
+    🔹 Install the `changelog` file for the "foo" package.
+
+✅ **Simple Example:**
+    
+    $ dh_installchangelogs --sourcedir debian/source
+
+    🔹 Searches for `changelog` files in the `debian/source` directory and installs them.

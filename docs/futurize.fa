@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `futurize` yek abzar baraye tabdil kardan code-haye Python 2 be Python 3 ast.  In dastoor komak mikonad ta code-haye ghadimi ra ba Python 3 compatible konid. Yani, dastoor `futurize` dastoorati ra ke dar Python 2 estefade mishavad va dar Python 3 taghir karde ast, be shekle dorost dar Python 3 tabdil mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `futurize -w myfile.py`  --> ✍️  File `myfile.py` ra taghir midehad va version-e jadid ra zakhire mikonad. (`-w` yani write)
+    🔹 `futurize --nobackup myfile.py` --> 🚫 Az file asli backup nemigirad.
+    🔹 `futurize -0 myfile.py`  --> 🔄  Az `future` imports estefade mikonad (safe tar).
+    🔹 `futurize -1 myfile.py`  --> 🚀  Az `lib2to3` estefade mikonad (sareetar).
+
+🛠 **Mesal-ha:**
+
+    $ futurize -w myscript.py
+
+    🔹 Tabdil file `myscript.py` be version-e compatible ba Python 3.  File-e asli backup gerefte mishavad.
+
+    $ futurize --nobackup -0 another_script.py
+
+    🔹 Tabdil file `another_script.py` be version-e compatible ba Python 3, bedune backup gereftan va ba estefade az `future` imports.
+
+✅ **Mesal sade:**
+
+    $ futurize -w my_old_script.py
+
+    🔹 Agar `my_old_script.py` dastoorati dashte bashad ke dar Python 3 taghir karde and (masalan `print` statement), `futurize` anha ra be shekle Python 3 dorost mikonad (masalan `print()` ).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `futurize` command is a tool for converting Python 2 code to Python 3. It helps to make older code compatible with Python 3 by automatically modifying code that has changed between the two versions.
+
+⚙️ **Options:**
+    🔹 `futurize -w myfile.py`  --> ✍️  Modifies the file `myfile.py` and saves the new version. (`-w` means write)
+    🔹 `futurize --nobackup myfile.py` --> 🚫 Does not create a backup of the original file.
+    🔹 `futurize -0 myfile.py`  --> 🔄 Uses `future` imports (safer).
+    🔹 `futurize -1 myfile.py`  --> 🚀 Uses `lib2to3` (faster).
+
+🛠 **Examples:**
+
+    $ futurize -w myscript.py
+
+    🔹 Converts the file `myscript.py` to a Python 3 compatible version. A backup of the original file is created.
+
+    $ futurize --nobackup -0 another_script.py
+
+    🔹 Converts the file `another_script.py` to a Python 3 compatible version, without creating a backup and using `future` imports.
+
+✅ **Simple Example:**
+
+    $ futurize -w my_old_script.py
+
+    🔹 If `my_old_script.py` contains statements that have changed in Python 3 (for example, the `print` statement), `futurize` will correct them to the Python 3 syntax (for example, `print()`).

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cpio` baraye sakhtan archive az file-ha (mesle zip vali ghadimi tar) ya extract kardan file-ha az archive cpio estefade mishavad. Mitoonid file-haro backup begirid ya az jaee be jaye dige montaghel konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o`  --> 📦 Sakhtan archive cpio az list-e file-ha.  Esmesh az "output" gerefte shode.
+    🔹 `-i`  --> 📥 Extract kardan file-ha az archive cpio. Esmesh az "input" gerefte shode.
+    🔹 `-v`  --> 📢 Namayesh dadan namesh file-ha dar hale sakhtan ya extract kardan (verbose).
+    🔹 `-t`  --> 📝 Namayesh dadan tartib-e file-ha dar archive cpio bedune extract kardaneshun (list).
+    🔹 `-F file` --> 💾 Specify file-e archive cpio. Age file-o specify nakonid az standard input/output estefade mishe.
+
+🛠 **Mesal-ha:**
+
+    $ find . -print | cpio -ov > archive.cpio
+
+    🔹 Sakhtan archive cpio az hameye file-ha va pooshe-ha az directory current va save kardanesh be name `archive.cpio`.
+
+    $ cpio -iv < archive.cpio
+
+    🔹 Extract kardan file-ha az archive `archive.cpio`.
+
+✅ **Mesal sade:**
+
+    $ ls | cpio -ocv > files.cpio
+
+    🔹 File-haye directory current ro archive mikone va etelaate bishtari ro namayesh mide (verbose).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cpio` command is used to create archives of files (similar to zip but older) or to extract files from cpio archives.  It's useful for backing up files or transferring them from one place to another.
+
+⚙️ **Options:**
+    🔹 `-o`  --> 📦 Create a cpio archive from a list of files. Short for "output."
+    🔹 `-i`  --> 📥 Extract files from a cpio archive. Short for "input."
+    🔹 `-v`  --> 📢 Display the names of files as they are being archived or extracted (verbose).
+    🔹 `-t`  --> 📝 List the contents of a cpio archive without extracting them (list).
+    🔹 `-F file` --> 💾 Specify the cpio archive file. If no file is specified, standard input/output is used.
+
+🛠 **Examples:**
+
+    $ find . -print | cpio -ov > archive.cpio
+
+    🔹 Creates a cpio archive of all files and directories in the current directory and saves it as `archive.cpio`.
+
+    $ cpio -iv < archive.cpio
+
+    🔹 Extracts files from the `archive.cpio` archive.
+
+✅ **Simple Example:**
+
+    $ ls | cpio -ocv > files.cpio
+
+    🔹 Archives the files in the current directory and displays more information (verbose).

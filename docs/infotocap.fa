@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `infotocap` file-haye `terminfo` ro mikhoone va information ro dar format `termcap` chap mikone. `Terminfo` database jadidtare, vali `termcap` ghadimitar va baazi barname-ha hanouz azash estefade mikonan.  Basically, `infotocap` `terminfo` ro tabdil mikone be `termcap`.
+
+⚙️ **Gozine-ha:**
+    🔹 `infotocap` --> File `terminfo` default ro estefade mikone (usually `/usr/share/terminfo`).
+    🔹 `infotocap -v` --> Version program ro neshun mide.
+    🔹 `infotocap -d` --> Az `terminfo` directory default estefade nakon, az `$TERMINFO` estefade kon. Agar `$TERMINFO` set nashode bud, az `/usr/lib/terminfo` estefade kon.
+
+🛠 **Mesal-ha:**
+
+    $ infotocap screen.xterm
+    
+    🔹 `terminfo` entry baraye `screen.xterm` ro az database default mikhoone va equivalent `termcap` code ro chap mikone.
+
+    $ infotocap -d ./myterm mytermname
+
+    🔹 `terminfo` entry baraye `mytermname` ro az directory `./myterm` mikhoone va `termcap` code ro chap mikone.
+
+✅ **Mesal sade:**
+
+    $ infotocap xterm-256color | head -n 5
+
+    🔹 `terminfo` entry baraye `xterm-256color` ro peyda mikone, be `termcap` tabdil mikone, va 5 khat aval az output ro chap mikone.  In baraye check kardan khube ke aya conversion dorost kar mikone ya na, bedune inke tamame output ro bebinim.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `infotocap` command reads `terminfo` files and prints the information in `termcap` format. `Terminfo` is a newer terminal database format, while `termcap` is older and still used by some applications. Essentially, `infotocap` converts `terminfo` to `termcap`.
+
+⚙️ **Options:**
+    🔹 `infotocap` --> Uses the default `terminfo` file (usually `/usr/share/terminfo`).
+    🔹 `infotocap -v` --> Shows the program version.
+    🔹 `infotocap -d` --> Don't use the default `terminfo` directory; use `$TERMINFO` instead. If `$TERMINFO` is not set, use `/usr/lib/terminfo`.
+
+🛠 **Examples:**
+
+    $ infotocap screen.xterm
+
+    🔹 Reads the `terminfo` entry for `screen.xterm` from the default database and prints the equivalent `termcap` code.
+
+    $ infotocap -d ./myterm mytermname
+
+    🔹 Reads the `terminfo` entry for `mytermname` from the directory `./myterm` and prints the `termcap` code.
+
+✅ **Simple Example:**
+
+    $ infotocap xterm-256color | head -n 5
+
+    🔹 Finds the `terminfo` entry for `xterm-256color`, converts it to `termcap`, and prints the first 5 lines of the output.  This is useful to quickly verify that the conversion works as expected without viewing the entire output.

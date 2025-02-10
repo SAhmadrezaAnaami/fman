@@ -1,0 +1,59 @@
+Okay, I will create a user-friendly man page for the `link` command following your specifications.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `link` baraye dorost kardane yek esharegar sakht (hard link) be yek file mojood be kar miravad. Yani, yek name digar baraye haman file dar system-e file dorost mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `link file_asli link_jadid` --> 🔗 File asli ra be name jadid link mikonad. Gozine-ye khassi nadarad, faghat name-haye file asli va link jadid ra migirad.
+
+🛠 **Mesal-ha:**
+
+    $ link file_asli.txt file_link.txt
+
+    🔹 Yek hard link ba name file_link.txt be file_asli.txt dorost mikonad. Har taghyiri dar har kodam az in do file, dar digari ham dide mishavad.
+
+    $ ls -i file_asli.txt file_link.txt
+
+    🔹 Ba estefade az `ls -i` shomare inode har do file ra bebinid. Agar hard link dorost shode bashad, har do file shomare inode yeksani khahand dasht.
+
+✅ **Mesal sade:**
+
+    $ echo "Salam Donya" > file_asli.txt
+    $ link file_asli.txt file_link.txt
+    $ cat file_link.txt
+
+    🔹 In mesal yek file ba name `file_asli.txt` dorost mikonad, dar an matni minevisad, va ba `link` yek hard link ba name `file_link.txt` be an dorost mikonad.  `cat file_link.txt` haman matni ra neshan midahad ke dar `file_asli.txt` neveshte shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `link` command is used to create a hard link to an existing file.  This creates another name for the same file in the filesystem.
+
+⚙️ **Options:**
+    🔹 `link existing_file new_link` --> 🔗 Links the existing file to a new name. It doesn’t have specific options, only takes the original file and the new link name.
+
+🛠 **Examples:**
+
+    $ link original_file.txt new_link.txt
+
+    🔹 Creates a hard link named new_link.txt to original_file.txt. Any changes made to either file will be reflected in the other.
+
+    $ ls -i original_file.txt new_link.txt
+
+    🔹 Use `ls -i` to view the inode number of both files. If the hard link was successfully created, both files will have the same inode number.
+
+✅ **Simple Example:**
+
+    $ echo "Hello World" > original_file.txt
+    $ link original_file.txt new_link.txt
+    $ cat new_link.txt
+
+    🔹 This example creates a file named `original_file.txt`, writes some text to it, and then creates a hard link called `new_link.txt` to it using the `link` command.  `cat new_link.txt` shows the same text that was written to `original_file.txt`.
+

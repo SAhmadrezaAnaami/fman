@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-keyring-daemon` yek barname ast ke password-ha, kalid-haye SSH va digar etela'at amniati ra baraye shoma zakhire va modiriat mikonad.  An ra mesle yek sandoghcheye amni dar nazar begirid ke baraye shoma az ramz-haye oboor negahdari mikonad ta shoma niaz nabashid har dafe anha ra vared konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--start`  --> 🚀 Daemon ra shoru mikonad agar ghablan shoru nashode bashad.
+    🔹 `--replace` --> 🔄 Yak instance-e jaryani ra ba yek instance-e tazeh jaygozin mikonad.
+    🔹 `--foreground` --> 🚦 Daemon ra dar foreground ejra mikonad (baraye debug kardan mofid ast).
+    🔹 `--components` --> 🧩 Component-haye mokhtalef-e keyring ra fa'al ya gheyre fa'al mikonad (mesle `pkcs11`, `secrets`, `ssh`).
+
+🛠 **Mesal-ha:**
+
+    $ gnome-keyring-daemon --start
+
+    🔹 Daemon ra shoru mikonad agar ghablan fa'al nabode bashad.
+
+    $ gnome-keyring-daemon --foreground --components=secrets,ssh
+
+    🔹 Daemon ra dar foreground ba component-haye `secrets` va `ssh` ejra mikonad.  Baraye debug kardan estefade mishavad.
+
+✅ **Mesal sade:**
+
+    $ gnome-keyring-daemon --replace --components=pkcs11
+
+    🔹  Agar daemon dar hale ejra bashad, an ra dobare ba component `pkcs11` shoru mikonad.  In mitavanad moshkelati ra hal konad agar component dar hale kaar kardan nabashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-keyring-daemon` is a program that stores and manages passwords, SSH keys, and other security-sensitive information for you.  Think of it as a secure safe that remembers your passwords so you don't have to type them in every time.
+
+⚙️ **Options:**
+    🔹 `--start`  --> 🚀 Starts the daemon if it isn't already running.
+    🔹 `--replace` --> 🔄 Replaces any running instance with a fresh one.
+    🔹 `--foreground` --> 🚦 Runs the daemon in the foreground (useful for debugging).
+    🔹 `--components` --> 🧩 Enables or disables different keyring components (like `pkcs11`, `secrets`, `ssh`).
+
+🛠 **Examples:**
+
+    $ gnome-keyring-daemon --start
+
+    🔹 Starts the daemon if it's not already active.
+
+    $ gnome-keyring-daemon --foreground --components=secrets,ssh
+
+    🔹 Runs the daemon in the foreground with the `secrets` and `ssh` components.  Useful for debugging.
+
+✅ **Simple Example:**
+
+    $ gnome-keyring-daemon --replace --components=pkcs11
+
+    🔹  If the daemon is running, restarts it with the `pkcs11` component.  This can fix issues if the component is not functioning correctly.

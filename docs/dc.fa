@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dc` yek abzar riyazi (calculator) dar khat-e farman (command line) ast. Ba estefade az notation-e postfix (RPN - Reverse Polish Notation), shoma mitavanid amaliyat-e hesab-o-ketab ra anjam dahid. Yani aval adad-ha ra vared mikonid va ba'd amalgargar (operator) ra.
+
+⚙️ **Gozine-ha:**
+    🔹  `dc -e 'expression'` --> 💻 Ejraye yek expression riyazi dar khat-e farman.
+    🔹  `dc -f filename` --> 📑  Ejraye dastoorat az yek file.
+
+🛠 **Mesal-ha:**
+
+    $ dc
+    1
+    2
+    +
+    p
+    q
+
+    🔹 Dar in mesal, aval adad-ha (1 va 2) vared mishavand, sepas amalgargar-e jam (+). Dastoor `p` natije ra chap mikonad (3), va `q` az `dc` kharej mishavad.
+
+    $ dc -e '2 3 + p'
+    5
+
+    🔹 Dar in mesal, yek expression ba notation-e postfix ejra mishavad va natije chap mishavad.
+
+✅ **Mesal sade:**
+
+    $ dc -e '10 2 / p'
+
+    🔹 Natije-ye taghsim-e 10 bar 2 chap mishavad (5).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dc` command is a command-line calculator utility. It uses postfix notation (RPN - Reverse Polish Notation), allowing you to perform arithmetic operations. This means you enter the numbers first, followed by the operator.
+
+⚙️ **Options:**
+    🔹 `dc -e 'expression'` --> 💻 Execute a mathematical expression directly from the command line.
+    🔹 `dc -f filename` --> 📑 Execute commands from a file.
+
+🛠 **Examples:**
+
+    $ dc
+    1
+    2
+    +
+    p
+    q
+
+    🔹 In this example, the numbers (1 and 2) are entered first, followed by the addition operator (+). The `p` command prints the result (3), and `q` exits `dc`.
+
+    $ dc -e '2 3 + p'
+    5
+
+    🔹 In this example, an expression in postfix notation is executed, and the result is printed.
+
+✅ **Simple Example:**
+
+    $ dc -e '10 2 / p'
+
+    🔹 The result of dividing 10 by 2 is printed (5).

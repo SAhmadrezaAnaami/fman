@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzdiff` mesle `diff` amal mikonad, ama baraye file-haye zip shode ba `bzip2` kar mikonad. Yani, tafavot bein do ta file-e `bzip2` shode ra neshon midahad bedune inke aval bazeshon konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `bzdiff file1.bz2 file2.bz2` --> 📝 Tafavot-haye bein `file1.bz2` va `file2.bz2` ra neshon midahad. Haman gozine-haye `diff` ra ham mitavanid estefade konid.
+    🔹 `bzdiff -u file1.bz2 file2.bz2` --> 🔄 Tafavot-ha ra be shekle "unified diff" neshon midahad, ke baraye patch sakhtan kheili mofid ast.
+    🔹 `bzdiff -c file1.bz2 file2.bz2` --> 📄 Tafavot-ha ra be shekle "context diff" neshon midahad, ke chand khat az matn-e ghabl va bad az taghirat ra ham neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ bzdiff file1.bz2 file2.bz2
+
+    🔹 Namayesh tafavot-haye bein `file1.bz2` va `file2.bz2` dar terminal.
+
+    $ bzdiff -u old_version.bz2 new_version.bz2 > patch.txt
+
+    🔹 Yek file `patch.txt` misazad ke tafavot-haye bein `old_version.bz2` va `new_version.bz2` ra be shekle "unified diff" dar khodash zakhire mikonad. In file ra mitavanid baraye taghir dadan `old_version.bz2` be `new_version.bz2` estefade konid.
+
+✅ **Mesal sade:**
+
+    $ bzdiff logfile.1.bz2 logfile.2.bz2 | less
+
+    🔹 Tafavot-haye bein do ta file-e `bzip2` shode ra neshon midahad va natije ra ba `less` safhe be safhe mikonad ta rahattar khande shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzdiff` command works like `diff`, but it is designed to work with files compressed using `bzip2`. It shows the differences between two `bzip2` compressed files without needing to decompress them first.
+
+⚙️ **Options:**
+    🔹 `bzdiff file1.bz2 file2.bz2` --> 📝 Shows the differences between `file1.bz2` and `file2.bz2`. It also supports the same options as the `diff` command.
+    🔹 `bzdiff -u file1.bz2 file2.bz2` --> 🔄 Shows differences in "unified diff" format, which is very useful for creating patches.
+    🔹 `bzdiff -c file1.bz2 file2.bz2` --> 📄 Shows differences in "context diff" format, which includes a few lines of context before and after the changes.
+
+🛠 **Examples:**
+
+    $ bzdiff file1.bz2 file2.bz2
+
+    🔹 Displays the differences between `file1.bz2` and `file2.bz2` in the terminal.
+
+    $ bzdiff -u old_version.bz2 new_version.bz2 > patch.txt
+
+    🔹 Creates a `patch.txt` file that contains the differences between `old_version.bz2` and `new_version.bz2` in "unified diff" format. This file can be used to update `old_version.bz2` to `new_version.bz2`.
+
+✅ **Simple Example:**
+
+    $ bzdiff logfile.1.bz2 logfile.2.bz2 | less
+
+    🔹 Shows the differences between two `bzip2` compressed files and pipes the output to `less` for easier viewing, page by page.

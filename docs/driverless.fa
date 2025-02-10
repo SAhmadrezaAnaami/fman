@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `driverless` baraye config kardan va modiriat chapgarha (printers) bedune niaz be daryaft va nasb driver-haye ekhtesasi az tarighe system-e CUPS (Common Unix Printing System) estefade mishavad. Yani, computer shoma automatic chapgar ra peyda mikonad va setup mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `driverless list`  --> 📃 List kardan chapgarhaye dastres bedune niaz be driver.
+    🔹 `driverless ipp://[IP address printer]`  --> 🌐 Ezafe kardan chapgar ba estefade az address IP.  Jaye [IP address printer], address IP chapgar khod ra benevisid.
+    🔹 `driverless auto` --> 🤖 Peyda kardane automatic chapgarhaye dastres va config kardane anha.
+
+🛠 **Mesal-ha:**
+
+    $ driverless list
+
+    🔹 Namayesh chapgarhaye dastres
+
+    $ driverless ipp://192.168.1.100
+
+    🔹 Config kardan chapgar ba address IP 192.168.1.100.
+
+✅ **Mesal sade:**
+
+    $ driverless auto
+
+    🔹 System automatic chapgarhaye mojood ra peyda mikonad va config mikonad, ke baraye karbar kheili rahat ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `driverless` command is used to configure and manage printers without the need to download and install proprietary drivers, leveraging the CUPS (Common Unix Printing System). It allows your computer to automatically detect and set up printers.
+
+⚙️ **Options:**
+    🔹 `driverless list`  --> 📃 List available printers without requiring drivers.
+    🔹 `driverless ipp://[IP address printer]`  --> 🌐 Add a printer using its IP address. Replace [IP address printer] with the printer's IP address.
+    🔹 `driverless auto` --> 🤖 Automatically detect and configure available printers.
+
+🛠 **Examples:**
+
+    $ driverless list
+
+    🔹 Show available printers.
+
+    $ driverless ipp://192.168.1.100
+
+    🔹 Configure a printer with the IP address 192.168.1.100.
+
+✅ **Simple Example:**
+
+    $ driverless auto
+
+    🔹 The system automatically finds and configures available printers, providing a user-friendly experience.

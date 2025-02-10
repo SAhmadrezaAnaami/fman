@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ipod-read-sysinfo-extended` baraye khandan etela'at bishtar va joz'iyat systemi az yek iPod estefade mishavad. In dastoor etela'ati mesl version firmware, serial number va digar moshakhasat sakht afzari ra namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-haye an.
+    🔹 `--output <file>`  --> 💾 Zakhire kardan etela'at be yek file khass.
+    🔹 `--verbose`  --> 🗣️ Namayesh etela'at bishtar dar morede process.
+
+🛠 **Mesal-ha:**
+
+    $ ipod-read-sysinfo-extended
+
+    🔹 Khandan va namayesh etela'at systemi iPod be soorat standart.
+
+    $ ipod-read-sysinfo-extended --output sysinfo.txt
+
+    🔹 Khandan etela'at systemi iPod va zakhire kardan an dar file `sysinfo.txt`.
+
+✅ **Mesal sade:**
+
+    $ ipod-read-sysinfo-extended --verbose
+
+    🔹 Etela'at systemi iPod ra ba tafsilat bishtar namayesh midahad, shamel message-haye debug va etela'at dar morede har marhale az process.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ipod-read-sysinfo-extended` command is used to read extended system information from an iPod. This command displays information such as the firmware version, serial number, and other hardware specifications.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display the command's help information and options.
+    🔹 `--output <file>`  --> 💾 Save the information to a specific file.
+    🔹 `--verbose`  --> 🗣️ Display more detailed information about the process.
+
+🛠 **Examples:**
+
+    $ ipod-read-sysinfo-extended
+
+    🔹 Read and display the iPod's system information in standard output.
+
+    $ ipod-read-sysinfo-extended --output sysinfo.txt
+
+    🔹 Read the iPod's system information and save it to the `sysinfo.txt` file.
+
+✅ **Simple Example:**
+
+    $ ipod-read-sysinfo-extended --verbose
+
+    🔹 Displays the iPod's system information with more details, including debug messages and information about each step of the process.
+

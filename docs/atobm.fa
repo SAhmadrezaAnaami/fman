@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `atobm` (ASCII to Binary Map) yek barname baraye tabdil kardane file-haye ASCII pixmap (XPM) be formate binary XBM ast. In barname bishtar baraye sakhte tasvirhaye koochak baraye barname-haye GUI estefade mishavad. 🖼️
+
+⚙️ **Gozine-ha:**
+    🔹 `atobm -name <esme_tasvir>` --> 🏷️ Esme tasvir dar file XBM ra moshakhas mikonad. Agar esme tasvir ra moshakhas nakonid, esme file XPM be onvane esme tasvir estefade mishavad.
+    🔹 `atobm -install` --> 💾 File XBM ra dar directory `/usr/include/X11/bitmaps` zakhire mikonad. (be dastresi admin niaz darad)
+    🔹 `atobm -version` --> ℹ️ Nemayeshe versione barname.
+
+🛠 **Mesal-ha:**
+
+    $ atobm logo.xpm > logo.xbm
+
+    🔹 Tabdil kardane file `logo.xpm` be `logo.xbm`.
+
+    $ atobm -name my_icon icon.xpm > my_icon.xbm
+
+    🔹 Tabdil kardane `icon.xpm` be `my_icon.xbm` va esme tasvir ra `my_icon` gharar midehad.
+
+✅ **Mesal sade:**
+
+    $ atobm -name check_mark check.xpm > check_mark.xbm
+
+    🔹 File `check.xpm` ra be formate `check_mark.xbm` tabdil mikonad, va esme tasvir dar file XBM `check_mark` mishavad. In yek tasvir koochak baraye yek dokme ya checkbox misazad. ✔️
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `atobm` (ASCII to Binary Map) command converts ASCII pixmap (XPM) files to binary XBM format. This is commonly used for creating small images for GUI applications. 🖼️
+
+⚙️ **Options:**
+    🔹 `atobm -name <image_name>` --> 🏷️ Specifies the name of the image in the XBM file. If you don't specify the image name, the XPM filename is used as the image name.
+    🔹 `atobm -install` --> 💾 Saves the XBM file to the `/usr/include/X11/bitmaps` directory. (Requires administrative privileges)
+    🔹 `atobm -version` --> ℹ️ Displays the program version.
+
+🛠 **Examples:**
+
+    $ atobm logo.xpm > logo.xbm
+
+    🔹 Converts the `logo.xpm` file to `logo.xbm`.
+
+    $ atobm -name my_icon icon.xpm > my_icon.xbm
+
+    🔹 Converts `icon.xpm` to `my_icon.xbm` and sets the image name to `my_icon`.
+
+✅ **Simple Example:**
+
+    $ atobm -name check_mark check.xpm > check_mark.xbm
+
+    🔹 Converts the `check.xpm` file to `check_mark.xbm`, and the image's name inside the XBM file will be `check_mark`. This creates a small image suitable for a button or checkbox. ✔️

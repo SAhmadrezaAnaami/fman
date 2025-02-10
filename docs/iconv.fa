@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `iconv` baraye tabdil format-e encoding-e file-ha be yek format-e digar be kar miravad. Yani agar yek file ba encoding-e ghadimi mesle "ISO-8859-1" dashte bashid va bekhahid aan ra be "UTF-8" tabdil konid, az `iconv` estefade mikonid.
+
+⚙️ **Gozine-ha:**
+    🔹 `iconv -f ENCODING` -->  🏷️  Encoding-e mabda' (az koja tabdil konim)
+    🔹 `iconv -t ENCODING` -->  🎯  Encoding-e maghsad (be koja tabdil konim)
+    🔹 `iconv -o OUTPUTFILE` --> 📤  Name file jadid baraye save kardane natije
+    🔹 `iconv -l`  --> ℹ️ List hameye encoding-haye dastras
+
+🛠 **Mesal-ha:**
+
+    $ iconv -f ISO-8859-1 -t UTF-8 input.txt > output.txt
+
+    🔹 Tabdil file `input.txt` az encoding `ISO-8859-1` be `UTF-8` va save natije dar `output.txt`.
+
+    $ iconv -f windows-1252 -t UTF-8 file.txt -o file_utf8.txt
+
+    🔹 Tabdil file `file.txt` az `windows-1252` be `UTF-8` va save dar `file_utf8.txt`.
+
+✅ **Mesal sade:**
+
+    $ iconv -f LATIN1 -t UTF8 file.txt > file_utf8.txt
+
+    🔹 Agar file.txt ba LATIN1 encoding bashad, in dastoor aan ra be UTF8 tabdil mikonad va natije ra dar file_utf8.txt zakhire mikonad. Dar natije, character-haye gheyre ASCII be dorosti namayesh dade mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `iconv` command converts the character encoding of a file from one encoding to another.  It's useful when dealing with files encoded in different character sets, ensuring proper display and processing.
+
+⚙️ **Options:**
+    🔹 `iconv -f ENCODING` -->  🏷️  Specify the input encoding (the encoding of the original file).
+    🔹 `iconv -t ENCODING` -->  🎯  Specify the output encoding (the desired encoding).
+    🔹 `iconv -o OUTPUTFILE` --> 📤  Specify the output file to save the converted content.
+    🔹 `iconv -l`  --> ℹ️ List all supported encodings.
+
+🛠 **Examples:**
+
+    $ iconv -f ISO-8859-1 -t UTF-8 input.txt > output.txt
+
+    🔹 Converts the file `input.txt` from `ISO-8859-1` encoding to `UTF-8` and saves the result in `output.txt`.
+
+    $ iconv -f windows-1252 -t UTF-8 file.txt -o file_utf8.txt
+
+    🔹 Converts the file `file.txt` from `windows-1252` to `UTF-8` and saves it as `file_utf8.txt`.
+
+✅ **Simple Example & Explanation:**
+
+    $ iconv -f LATIN1 -t UTF8 file.txt > file_utf8.txt
+
+    🔹 If file.txt is encoded in LATIN1, this command converts it to UTF8 and saves the result in file_utf8.txt. This ensures that non-ASCII characters are displayed correctly.

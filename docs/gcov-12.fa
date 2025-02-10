@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcov-12` yek abzare baraye baresi code (code coverage analysis) dar barname-haye zaban C va C++ hast, ke ba estefade az compiler GCC version 12 sakhte shode.  In abzar neshon mide kodoom khat-ha az code ejra shode va kodoom khat-ha ejra nashode ast.  Baraye behtar fahmidan va optimized kardan code estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcov-12 file.gcda`  --> 📊 Gozaresh code coverage baraye yek file .gcda misazad.
+    🔹 `gcov-12 -b file.gcda` --> 🧱 Gozaresh shakh-ha (branches) ra ham dar nazar migirad.
+    🔹 `gcov-12 -o directory file.gcda` --> 📁 Gozaresh-ha ra dar yek pooshe (directory) khass zakhire mikonad.
+    🔹 `gcov-12 -n file.gcda` --> 🔢 Gozaresh-ha ra bedune shomare khat-ha (line numbers) misazad.
+    🔹 `gcov-12 -a file.gcda` --> 📝 Gozaresh-ha ba joziyat bishtar misazad.
+
+🛠 **Mesal-ha:**
+
+    $ gcov-12 myprogram.gcda
+
+    🔹 Gozaresh code coverage baraye barname "myprogram" misazad.
+
+    $ gcov-12 -b -o coverage_results myprogram.gcda
+
+    🔹 Gozaresh code coverage ba etela'at shakh-ha (branches) ra dar pooshe "coverage_results" zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ gcov-12 myprogram.c.gcov
+
+    🔹 Ba ejraye in dastoor, yek file ba name "myprogram.c.gcov" ijad mishavad ke etela'ati dar morede coverage khat be khat az code "myprogram.c" darad.  Agar yek khat ejra shode bashad, tedad daf'at ejra neshon dade mishavad, dar gheyr in soorat `#####` neshan dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcov-12` command is a code coverage analysis tool for C and C++ programs compiled with GCC version 12. It shows which lines of code were executed and which were not, helping developers understand and optimize their code.
+
+⚙️ **Options:**
+    🔹 `gcov-12 file.gcda`  --> 📊 Generates a code coverage report for a .gcda file.
+    🔹 `gcov-12 -b file.gcda` --> 🧱 Includes branch coverage information in the report.
+    🔹 `gcov-12 -o directory file.gcda` --> 📁 Saves the generated reports to a specified directory.
+    🔹 `gcov-12 -n file.gcda` --> 🔢 Generates reports without line numbers.
+    🔹 `gcov-12 -a file.gcda` --> 📝 Generates more detailed annotated reports.
+
+🛠 **Examples:**
+
+    $ gcov-12 myprogram.gcda
+
+    🔹 Generates code coverage report for the program "myprogram".
+
+    $ gcov-12 -b -o coverage_results myprogram.gcda
+
+    🔹 Generates a code coverage report with branch information and saves it to the "coverage_results" directory.
+
+✅ **Simple Example:**
+
+    $ gcov-12 myprogram.c.gcov
+
+    🔹 Running this command creates a file named "myprogram.c.gcov" that contains line-by-line coverage information for the code in "myprogram.c". If a line has been executed, the number of executions is shown; otherwise, `#####` is displayed.

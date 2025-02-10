@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `containerd-shim-runc-v2` yek barname (process) ast ke `containerd` baraye ejra kardane container-ha ba estefade az `runc` be kar mibare. Yani, `containerd` moshtaghiman container-ha ro ejra nemikone, balke az `containerd-shim-runc-v2` estefade mikone ta in karo bokone. In shim mes'ooliyat-haye mohemmi dare, mesle gereftan etela'at az `containerd` va residan be container.
+
+⚙️ **Gozine-ha:**
+    Az aanjaayi ke `containerd-shim-runc-v2` barnameyi nist ke mostaghel ejra beshe va be soorate mostaghim az taraf `containerd` control mishe, gozine-haye command line ziadi nadare ke baraye karbar mohem bashe.  Magar baraye debug kardan.
+
+🛠 **Mesal-ha:**
+    Ejjra kardan mostaghim `containerd-shim-runc-v2` mamoolan lazim nist.  `containerd` khodesh in barname ro vaghti container-ha ro start mikone ejra mikone.  Baraye didane inke chejuri dare kar mikone, mitunid process-ha ro list konid:
+
+    $ ps aux | grep containerd-shim-runc-v2
+
+    🔹 In dastoor hameye process-ha ro neshoon mide va search mikone baraye `containerd-shim-runc-v2`.
+
+    $ ctr task exec -t --exec-id my-exec-id my-container sh
+
+    🔹 In yek mesal az `ctr`, cli baraye `containerd` ast, ke dar on yek command (`sh`) dar yek container ejra mishe.  `containerd-shim-runc-v2` dar posht sahne baraye in kar estefade mishe.
+
+✅ **Mesal sade:**
+
+    Agar containeri dare ba moshkel ro be roo mishe, log-haye `containerd` va shim ro check konid:
+
+    $ journalctl -u containerd | grep shim
+
+    🔹 In dastoor log-haye `containerd` ro neshoon mide va filter mikone baraye khat-haayi ke esme "shim" daran ta shoma betoonid moshkel ra peyda konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `containerd-shim-runc-v2` is a process that `containerd` uses to run containers using `runc`.  Essentially, `containerd` doesn't directly run containers itself, but relies on `containerd-shim-runc-v2` to do so. This shim is responsible for tasks such as receiving instructions from `containerd` and managing the container's lifecycle.
+
+⚙️ **Options:**
+    Since `containerd-shim-runc-v2` isn't typically run directly and is controlled by `containerd`, it doesn't have many command-line options that are relevant to the average user, except potentially for debugging purposes.
+
+🛠 **Examples:**
+    Directly executing `containerd-shim-runc-v2` is generally not necessary. `containerd` launches this process itself when starting containers. To observe how it's running, you can list processes:
+
+    $ ps aux | grep containerd-shim-runc-v2
+
+    🔹 This command lists all processes and searches for `containerd-shim-runc-v2`.
+
+    $ ctr task exec -t --exec-id my-exec-id my-container sh
+
+    🔹 This is an example using `ctr`, the command-line interface for `containerd`, to execute a command (`sh`) inside a container. `containerd-shim-runc-v2` is used in the background to facilitate this execution.
+
+✅ **Simple Example:**
+
+    If a container is experiencing issues, check the logs of `containerd` and the shim:
+
+    $ journalctl -u containerd | grep shim
+
+    🔹 This command displays the logs of `containerd` and filters for lines containing "shim" to help you troubleshoot problems.

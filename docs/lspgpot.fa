@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lspgpot` (List Package Global Package Output Table) yek dastoor dakheli dar FreeBSD ports system ast. In dastoor listi az hameye package-haye nasb shode va global package output table (PGPOT) ra namayesh midahad. Az aan baraye didan package-haye nasb shode va etela'at rabeteh ba package output table estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v` --> 💬 Namayesh etela’at bishtar dar mored har package, mesle dependencies va file-haye nasb shode.
+    🔹 `-q` --> 🤫 Faghat esm package-ha ra namayesh midahad, bedoone etela’at ezafi.
+    🔹 `-o` --> 📤 Namayesh origin har package, yaani az koja download shode.
+
+🛠 **Mesal-ha:**
+
+    $ lspgpot
+
+    🔹 Namayesh listi az hameye package-haye nasb shode va PGPOT.
+
+    $ lspgpot -v
+
+    🔹 Namayesh etela’at bishtar dar mored har package.
+
+✅ **Mesal sade:**
+
+    $ lspgpot | grep firefox
+
+    🔹 Peyda kardan etela'at dar mored package `firefox`. Agar firefox nasb shode bashad, etela'ate aan namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lspgpot` (List Package Global Package Output Table) command is an internal command within the FreeBSD ports system. This command displays a list of all installed packages and the global package output table (PGPOT). It's used to view installed packages and information related to the package output table.
+
+⚙️ **Options:**
+    🔹 `-v` --> 💬 Show more verbose information about each package, such as dependencies and installed files.
+    🔹 `-q` --> 🤫 Only display the package names, without any extra information.
+    🔹 `-o` --> 📤 Display the origin of each package, meaning where it was downloaded from.
+
+🛠 **Examples:**
+
+    $ lspgpot
+
+    🔹 Display a list of all installed packages and the PGPOT.
+
+    $ lspgpot -v
+
+    🔹 Display more detailed information about each package.
+
+✅ **Simple Example:**
+
+    $ lspgpot | grep firefox
+
+    🔹 Find information about the `firefox` package. If firefox is installed, its information will be displayed.
+

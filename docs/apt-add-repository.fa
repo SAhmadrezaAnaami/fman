@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-add-repository` baraye ezafe kardane yek manba'e software (software source) jadid be list-e manabe'e APT (Advanced Package Tool) estefade mishavad. Ba estefade az in dastoor, shoma mitavanid software-haye bishtari ra az manabe'e mokhtalef daryaft va nasb konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `apt-add-repository <manba>` --> ➕ Ezafe kardane yek manba'e ppa (Personal Package Archive) ya URL
+    🔹 `apt-add-repository -r <manba>` --> ➖ Hazf kardane yek manba'e ppa ya URL
+    🔹 `apt-add-repository --update` --> 🔄 Update kardane list-e package-ha pas az ezafe kardane manba'e jadid
+
+🛠 **Mesal-ha:**
+
+    $ sudo apt-add-repository ppa:ubuntu-toolchain-r/test
+
+    🔹 Ezafe kardane PPA baraye toolchain-haye jadid
+
+    $ sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+
+    🔹 Ezafe kardane repository baraye software-haye canonical
+
+✅ **Mesal sade:**
+
+    $ sudo apt-add-repository ppa:example/ppa && sudo apt update
+
+    🔹 Ezafe kardane PPA "example/ppa" va update kardane list-e package-ha baraye shenasaii package-haye jadid az manba'e ezafe shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-add-repository` command is used to add a new software source to the APT (Advanced Package Tool) sources list. Using this command, you can receive and install more software from various sources.
+
+⚙️ **Options:**
+    🔹 `apt-add-repository <source>` --> ➕ Add a new PPA (Personal Package Archive) or URL
+    🔹 `apt-add-repository -r <source>` --> ➖ Remove a PPA or URL
+    🔹 `apt-add-repository --update` --> 🔄 Update package lists after adding a new source
+
+🛠 **Examples:**
+
+    $ sudo apt-add-repository ppa:ubuntu-toolchain-r/test
+
+    🔹 Adding a PPA for newer toolchains
+
+    $ sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+
+    🔹 Adding a repository for canonical software
+
+✅ **Simple Example:**
+
+    $ sudo apt-add-repository ppa:example/ppa && sudo apt update
+
+    🔹 Adds the "example/ppa" PPA and updates the package list to recognize new packages from the added source.

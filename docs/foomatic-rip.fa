@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foomatic-rip` yek dastoor baraye tabdil dade-haye chap be formate motenaseb ba printer ast, baraye printer-haye ke az system `Foomatic` estefade mikonand. Yani an ra be zabane printer tabdil mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`      --> ℹ️  Namayeshe version e `foomatic-rip` .
+    🔹 `--help`         --> ❓ Rahnamayi dastoor ra neshon midahad.
+    🔹 `-P <esm-e-printer>` --> 🖨️  Esm-e printer ra moshakhas mikonad.  Age moshakhas nakonid, az `POLL_PRINTER` ya printer default estefade mikonad.
+    🔹 `-o <gozine=meghdar>` --> 🛠️  Gozeinehaye printer ra tayin mikonad (mesle rang ya quality).
+
+🛠 **Mesal-ha:**
+
+    $ foomatic-rip input.ps > output.prn
+
+    🔹 Tabdil file `input.ps` be formate printer va zakhireh dar `output.prn`.
+
+    $ foomatic-rip -P HP_LaserJet input.ps | lpr
+
+    🔹 Chap file `input.ps` ba printer `HP_LaserJet` .
+
+✅ **Mesal sade:**
+
+    $ foomatic-rip -P Epson_Stylus -o ColorModel=CMYK input.ps | lp
+
+    🔹 Chap file `input.ps` ba printer `Epson_Stylus` va gozineye `ColorModel` ro `CMYK` gharar mideh.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foomatic-rip` command converts print data into a printer-specific format for printers using the `Foomatic` system.  Essentially, it translates the data into the printer's language.
+
+⚙️ **Options:**
+    🔹 `--version`      --> ℹ️  Displays the version of `foomatic-rip`.
+    🔹 `--help`         --> ❓ Shows the command's help message.
+    🔹 `-P <printer-name>` --> 🖨️  Specifies the printer name. If not specified, it uses `POLL_PRINTER` or the default printer.
+    🔹 `-o <option=value>` --> 🛠️  Sets printer options (like color or quality).
+
+🛠 **Examples:**
+
+    $ foomatic-rip input.ps > output.prn
+
+    🔹 Converts the `input.ps` file to the printer format and saves it in `output.prn`.
+
+    $ foomatic-rip -P HP_LaserJet input.ps | lpr
+
+    🔹 Prints the `input.ps` file using the `HP_LaserJet` printer.
+
+✅ **Simple Example:**
+
+    $ foomatic-rip -P Epson_Stylus -o ColorModel=CMYK input.ps | lp
+
+    🔹 Prints the `input.ps` file using the `Epson_Stylus` printer, setting the `ColorModel` option to `CMYK`.

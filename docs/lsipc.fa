@@ -1,0 +1,69 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsipc` baraye liste kardan manabe IPC (Inter-Process Communication) dar system estefade mishavad.  Manabe IPC shamel message queues, shared memory segments, va semaphore-ha mishavand. Ba estefade az `lsipc`, shoma mitavanid bebined kodam process-ha az che manabe IPC estefade mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `lsipc -m`  --> 📦 Namayesh shared memory segments
+    🔹 `lsipc -q`  --> 📨 Namayesh message queues
+    🔹 `lsipc -s`  --> 🚦 Namayesh semaphore-ha
+    🔹 `lsipc -a`  --> 🔍 Namayesh hameye manabe IPC (message queues, shared memory segments, va semaphore-ha)
+    🔹 `lsipc -i <id>` --> 🆔 Namayesh etela'at makhsoos yek manba IPC ba ID moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ lsipc
+
+    🔹 Namayesh hameye manabe IPC fa'al
+
+    $ lsipc -m
+
+    🔹 Namayesh shared memory segments fa'al
+
+    $ lsipc -i 12345
+
+    🔹 Namayesh etela'at manba IPC ba ID 12345
+
+✅ **Mesal sade:**
+
+    $ lsipc -q
+
+    🔹 Liste queue-haye message ra namayesh midahad, ke shamel ID queue, owner, permission-ha, va size message-ha mishavad.  In mitavanad baraye debug kardan program haye multi-process ke az message queue estefade mikonand mofid bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsipc` command is used to list information about Inter-Process Communication (IPC) resources on the system. These resources include message queues, shared memory segments, and semaphores.  Using `lsipc`, you can see which processes are using which IPC resources.
+
+⚙️ **Options:**
+    🔹 `lsipc -m`  --> 📦 Show shared memory segments
+    🔹 `lsipc -q`  --> 📨 Show message queues
+    🔹 `lsipc -s`  --> 🚦 Show semaphores
+    🔹 `lsipc -a`  --> 🔍 Show all IPC resources (message queues, shared memory segments, and semaphores)
+    🔹 `lsipc -i <id>` --> 🆔 Show details for a specific IPC resource with the given ID.
+
+🛠 **Examples:**
+
+    $ lsipc
+
+    🔹 Show all active IPC resources
+
+    $ lsipc -m
+
+    🔹 Show active shared memory segments
+
+    $ lsipc -i 12345
+
+    🔹 Show information for the IPC resource with ID 12345
+
+✅ **Simple Example:**
+
+    $ lsipc -q
+
+    🔹 Displays a list of message queues, including the queue ID, owner, permissions, and message sizes. This can be helpful for debugging multi-process programs that use message queues.
+

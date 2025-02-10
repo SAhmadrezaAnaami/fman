@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chardetect` baraye tashkhis encode-e yek file matni be kar miravad. Yani moshakhas mikonad ke file shoma az che kode-gozari baraye zakhire-kardan matn estefade karde ast, mesle UTF-8 ya ASCII. In bekhosos vaghti mohem ast ke file-ha dorost namayesh dade nemishavand va bayad encode anha ra dorost kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `chardetect file.txt`  --> 🔍 Encode-e file ra tashkhis midahad. (Mesal: UTF-8, ASCII)
+    🔹 `chardetect --version` --> ℹ️ Version-e `chardetect` ra neshon midahad.
+    🔹 `chardetect --help`    --> ❓ Rahnamaye dastoor ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ chardetect my_document.txt
+
+    🔹 Tashkhis encode-e file "my_document.txt".
+
+    $ chardetect another_file.csv
+
+    🔹  Tashkhis encode-e file "another_file.csv".
+
+✅ **Mesal sade:**
+
+    $ chardetect poem.txt
+    poem.txt: UTF-8 with confidence 1.0
+
+    🔹 `chardetect` dar inja tashkhis dade ke file `poem.txt` ba encode UTF-8 zakhire shode va etminan-e an 1.0 (yani motmaen ast) mibashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chardetect` command is used to detect the character encoding of a text file. It identifies the encoding used to save the text in the file, such as UTF-8 or ASCII. This is particularly important when files are not displayed correctly and you need to correct their encoding.
+
+⚙️ **Options:**
+    🔹 `chardetect file.txt`  --> 🔍 Detect the encoding of the file. (Example: UTF-8, ASCII)
+    🔹 `chardetect --version` --> ℹ️ Show the version of `chardetect`.
+    🔹 `chardetect --help`    --> ❓ Display the command's help information.
+
+🛠 **Examples:**
+
+    $ chardetect my_document.txt
+
+    🔹 Detect the encoding of the file "my_document.txt".
+
+    $ chardetect another_file.csv
+
+    🔹 Detect the encoding of the file "another_file.csv".
+
+✅ **Simple Example:**
+
+    $ chardetect poem.txt
+    poem.txt: UTF-8 with confidence 1.0
+
+    🔹 `chardetect` here detected that the file `poem.txt` is saved with UTF-8 encoding and its confidence is 1.0 (meaning it's certain).

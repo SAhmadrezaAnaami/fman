@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgfilter` baraye filter kardan va dastkari payam-ha (messages) dar yek narm afzar (software) ya system estefade mishavad. In dastoor be shoma komak mikonad ke payam-ha ra bar asase shart-ha va gozine-haye mokhtalef taghyir dahid ya hazf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--verbose`  --> 🗣️ Namayesh etela'ate bishtar dar morede amaliyat filter kardan.
+    🔹 `--config <file>`  --> ⚙️ Estefade az yek file config khass baraye sharthaye filter kardan.
+    🔹 `--remove`  --> 🗑️ Hazf payam-haye motabegh ba shart.
+    🔹 `--replace <old> <new>` --> 🔄 Jayeghozin kardan matn `old` ba matn `new` dar payam-ha.
+    🔹 `--input <file>`  --> 📥 Khondan payam-ha az yek file vared shode.
+    🔹 `--output <file>`  --> 📤 Neveshtan payam-haye filter shode be yek file kharoji.
+
+🛠 **Mesal-ha:**
+
+    $ msgfilter --verbose --config filter.conf --input messages.txt --output filtered.txt
+
+    🔹 Filter kardan payam-ha az file `messages.txt` bar asase `filter.conf` va zakhire dar `filtered.txt` ba namayesh etela'ate bishtar.
+
+    $ msgfilter --remove --input messages.txt
+
+    🔹 Hazf payam-haye motabegh ba shart-haye pishfarz az file `messages.txt`.
+
+    $ msgfilter --replace "badword" "goodword" --input messages.txt --output cleaned.txt
+
+    🔹 Jayeghozin kardan `badword` ba `goodword` dar payam-ha az `messages.txt` va zakhire dar `cleaned.txt`.
+
+✅ **Mesal sade:**
+
+    $ msgfilter --input email.txt --output sanitized_email.txt --replace "http://" "https://"
+
+    🔹 Dar file `email.txt`, hameye `http://` ha ba `https://` jayeghozin mishavand va natije dar `sanitized_email.txt` zakhire mishavad. In kar amaniat email ra behtar mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgfilter` command is used to filter and manipulate messages within a software or system.  It allows you to modify or remove messages based on various criteria and options.
+
+⚙️ **Options:**
+    🔹 `--verbose`  --> 🗣️ Display more detailed information about the filtering operation.
+    🔹 `--config <file>`  --> ⚙️ Use a specific configuration file for filtering rules.
+    🔹 `--remove`  --> 🗑️ Remove messages that match the criteria.
+    🔹 `--replace <old> <new>` --> 🔄 Replace the text `old` with the text `new` in messages.
+    🔹 `--input <file>`  --> 📥 Read messages from an input file.
+    🔹 `--output <file>`  --> 📤 Write filtered messages to an output file.
+
+🛠 **Examples:**
+
+    $ msgfilter --verbose --config filter.conf --input messages.txt --output filtered.txt
+
+    🔹 Filters messages from the file `messages.txt` based on `filter.conf`, saves the result to `filtered.txt`, and displays verbose output.
+
+    $ msgfilter --remove --input messages.txt
+
+    🔹 Removes messages that match the default criteria from the file `messages.txt`.
+
+    $ msgfilter --replace "badword" "goodword" --input messages.txt --output cleaned.txt
+
+    🔹 Replaces `badword` with `goodword` in messages from `messages.txt` and saves the output to `cleaned.txt`.
+
+✅ **Simple Example:**
+
+    $ msgfilter --input email.txt --output sanitized_email.txt --replace "http://" "https://"
+
+    🔹 In the file `email.txt`, all instances of `http://` are replaced with `https://`, and the result is saved to `sanitized_email.txt`. This enhances email security.

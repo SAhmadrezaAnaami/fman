@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_auto_configure` yek ghesmat az majmoo'e `debhelper` ast ke baraye asan kardan amaliat `configure` dar sakht package-haye Debian be kar miravad. In dastoor khodkar mifahmad chegoone barname ra baraye sakht amade konad, be torik khas agar az system-haye sakht mesle `autoconf`, `cmake`, ya `qmake` estefade shode bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--builddirectory dir` --> 📁 Directory ke baraye sakht barname estefade mishavad (agar directory default khasteni nabashad).
+    🔹 `--sourcedirectory dir` --> 📂 Directory ke source code asli barname dar an gharar darad (agar directory default khasteni nabashad).
+    🔹 `-- cmakeargs args` --> 🔧 Ezafe kardan argument-haye khas baraye `cmake`. Be jaye `cmake` har system sakht digar ham mitavanestefade kard.
+    🔹 `--parallel` --> 🚀 Sakht barname be soorat hamzaman baraye sari'tar shodan amaliyat.
+
+🛠 **Mesal-ha:**
+
+    $ dh_auto_configure
+
+    🔹 Estefade az configure pishfarz baraye sakht package.
+
+    $ dh_auto_configure -- cmakeargs "-DCMAKE_INSTALL_PREFIX=/usr"
+
+    🔹 Ezafe kardan argument-haye khas baraye `cmake` baraye ta'yin masir nasb.
+
+✅ **Mesal sade:**
+
+    $ dh_auto_configure --builddirectory build
+
+    🔹  Sakht barname dar pooshe-ye `build`, be jaye sakht dar haman pooshe-ye source code asli. In kar be behtar moratab boodan file-ha komak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_auto_configure` command is part of the `debhelper` suite, designed to simplify the `configure` step when building Debian packages. It automatically determines how to prepare a program for building, especially if it uses build systems like `autoconf`, `cmake`, or `qmake`.
+
+⚙️ **Options:**
+    🔹 `--builddirectory dir` --> 📁 The directory used for building the program (if the default directory is not desired).
+    🔹 `--sourcedirectory dir` --> 📂 The directory containing the original source code of the program (if the default directory is not desired).
+    🔹 `-- cmakeargs args` --> 🔧 Add custom arguments for `cmake`. Other build systems can be specified instead of `cmake`.
+    🔹 `--parallel` --> 🚀 Build the program in parallel to speed up the process.
+
+🛠 **Examples:**
+
+    $ dh_auto_configure
+
+    🔹 Use the default configuration to build the package.
+
+    $ dh_auto_configure -- cmakeargs "-DCMAKE_INSTALL_PREFIX=/usr"
+
+    🔹 Add specific arguments for `cmake` to set the installation path.
+
+✅ **Simple Example:**
+
+    $ dh_auto_configure --builddirectory build
+
+    🔹 Build the program in the `build` directory instead of building in the source code directory. This helps keep the source code files cleaner.

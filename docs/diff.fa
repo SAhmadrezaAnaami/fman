@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `diff` baraye moghayese do ta file va namayesh taghirati ke dar file dovom nesbat be file aval vojood darad, estefade mishavad. Yani fargh-haye bein do file ra neshun midehad.
+
+⚙️ **Gozine-ha:**
+    🔹 `diff -y file1 file2` -->  side by side moghayese mikonad.
+    🔹 `diff -u file1 file2` --> ye outputi mide ke mishe ba `patch` be file aval apply kard ta mesle file dovom beshe. (unified diff)
+    🔹 `diff -i file1 file2` --> be harf koochik ya bozorg (case) hassas nist.
+    🔹 `diff -w file1 file2` --> space-haye ziadi ya tab-ha ro ignore mikone.
+
+🛠 **Mesal-ha:**
+
+    $ diff file1.txt file2.txt
+
+    🔹 Taghirat bein do file ra neshun mide, yek format standart ast.
+
+    $ diff -y file1.txt file2.txt
+
+    🔹 File-ha ra dar kenar ham moghayese mikonad, taghirat asan tar dide mishavad.
+
+✅ **Mesal sade:**
+
+    $ diff file_asli.txt file_taghir_karde.txt
+
+    🔹 Agar file_taghir_karde.txt yek khat jadid dashte bashad ke dar file_asli.txt nist, `diff` on khat jadid ro ba alamat `>` mark mikonad. Agar khat hazf shode bashad, ba alamat `<` mark mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `diff` command compares two files and shows the differences between them. It highlights the changes that need to be made to the first file to make it identical to the second file.
+
+⚙️ **Options:**
+    🔹 `diff -y file1 file2` --> Compares the files side by side.
+    🔹 `diff -u file1 file2` --> Creates an output that can be used with the `patch` command to update the first file to match the second. (unified diff)
+    🔹 `diff -i file1 file2` --> Ignores case differences (upper/lowercase).
+    🔹 `diff -w file1 file2` --> Ignores whitespace differences, such as extra spaces or tabs.
+
+🛠 **Examples:**
+
+    $ diff file1.txt file2.txt
+
+    🔹 Shows the differences between the two files in a standard format.
+
+    $ diff -y file1.txt file2.txt
+
+    🔹 Compares the files side by side, making it easier to see the changes.
+
+✅ **Simple Example:**
+
+    $ diff original_file.txt modified_file.txt
+
+    🔹 If `modified_file.txt` has a new line that is not in `original_file.txt`, `diff` will mark the new line with a `>` character. If a line was deleted, it will be marked with a `<` character.

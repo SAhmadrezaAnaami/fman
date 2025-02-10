@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-plugin-ubuntu` baraye nasb va modiriat plugin-haye HP dar Ubuntu estefade mishavad. In plugin-ha be shoma komak mikonand ta printer-ha va scanner-haye HP ra be rahati setup va estefade konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-plugin-ubuntu`  --> 🚀  Rahandazi barnameye nasb be soorate graphic (GUI)
+    🔹 `hp-plugin-ubuntu -i`  --> 📥  NAsb plugin az file ya URL (masalan az internet)
+    🔹 `hp-plugin-ubuntu -u`  --> 📤  Hazf plugin nasb shode.
+
+🛠 **Mesal-ha:**
+
+    $ hp-plugin-ubuntu
+    
+    🔹 Rahandazi barnameye nasb plugin HP.
+
+    $ hp-plugin-ubuntu -i /tmp/hplip_plugin.run
+   
+    🔹 Nasb plugin az file `/tmp/hplip_plugin.run`.
+
+✅ **Mesal sade:**
+
+    $ hp-plugin-ubuntu -i
+ 
+    🔹 Dastoor, shoma ra be samt yek wizard hadayat mikonad ta plugin ra be rahati download va nasb konid agar hich addressi dade nashavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-plugin-ubuntu` command is used to install and manage HP plugins in Ubuntu.  These plugins help you easily set up and use HP printers and scanners.
+
+⚙️ **Options:**
+    🔹 `hp-plugin-ubuntu`  --> 🚀 Launch the plugin installation program graphically (GUI).
+    🔹 `hp-plugin-ubuntu -i`  --> 📥 Install the plugin from a file or URL (e.g., from the internet).
+    🔹 `hp-plugin-ubuntu -u`  --> 📤 Uninstall a plugin that has already been installed.
+
+🛠 **Examples:**
+
+    $ hp-plugin-ubuntu
+    
+    🔹 Launches the HP plugin installation program.
+
+    $ hp-plugin-ubuntu -i /tmp/hplip_plugin.run
+    
+    🔹 Installs the plugin from the file `/tmp/hplip_plugin.run`.
+
+✅ **Simple Example:**
+
+    $ hp-plugin-ubuntu -i
+    
+    🔹 The command will guide you through a wizard to easily download and install the plugin if no address is specified.

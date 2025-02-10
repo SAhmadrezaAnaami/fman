@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apt-key` baraye modiriat kelid-haye GPG baraye `apt` (Advanced Package Tool) estefade mishavad. In kelid-ha baraye sanjesh dorosti package-ha az manabe motabar (repositories) estefade mishavand. Dar vaghe, `apt-key` komak mikonad ke system shoma motmaen shavad ke package-haye download shode aslan taghir nakarde and va az yek manbae emtebar darand.  
+
+⚙️ **Gozine-ha:**
+    🔹 `apt-key add <file>`  --> 🔑 Ezafe kardane kelid jadid az yek file.
+    🔹 `apt-key del <keyid>` --> 🗑️ Hazf kardane yek kelid ba estefade az ID aan.
+    🔹 `apt-key list`        --> 📜 Namayesh listi az hameye kelid-haye mojood.
+    🔹 `apt-key export <keyid>` --> 📤 Kharooj dadane kelid ba ID moshakhas be soorate ASCII.
+
+🛠 **Mesal-ha:**
+
+    $ apt-key add google.gpg
+    
+    🔹 Ezafe kardane kelide google.gpg baraye repository google.
+
+    $ apt-key list
+    
+    🔹 Namayesh listi az hameye kelid-ha, ID aanha va etela'at digar.
+
+✅ **Mesal sade:**
+
+    $ apt-key del 82B1299274294E3E
+    
+    🔹 Hazf kelidi ba ID `82B1299274294E3E` (agar in ID dar system shoma bashad). Bayad ba etminan kelidi ra hazf konid, chon hazf kelid-ha mohem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apt-key` command is used to manage GPG keys for `apt` (Advanced Package Tool). These keys are used to authenticate packages from trusted repositories. In essence, `apt-key` helps ensure that your system only installs packages that have not been tampered with and come from a legitimate source.
+
+⚙️ **Options:**
+    🔹 `apt-key add <file>`  --> 🔑 Add a new key from a file.
+    🔹 `apt-key del <keyid>` --> 🗑️ Delete a key using its ID.
+    🔹 `apt-key list`        --> 📜 Display a list of all available keys.
+    🔹 `apt-key export <keyid>` --> 📤 Export a key with a specific ID in ASCII format.
+
+🛠 **Examples:**
+
+    $ apt-key add google.gpg
+    
+    🔹 Adds the google.gpg key for the Google repository.
+
+    $ apt-key list
+    
+    🔹 Displays a list of all keys, their IDs, and other information.
+
+✅ **Simple Example:**
+
+    $ apt-key del 82B1299274294E3E
+    
+    🔹 Deletes the key with ID `82B1299274294E3E` (if this ID exists on your system). Be careful when deleting keys, as key management is crucial.

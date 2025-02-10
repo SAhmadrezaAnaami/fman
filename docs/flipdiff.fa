@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `flipdiff` baraye bargardandan (reverse) yek file patch (ya diff) estefade mishavad. Yani, eyn dastoor taghirati ke dar patch tarif shodeand ra barعکس mikonad. In be dard mikhoreh vaghti ke shoma mikhain yek patch ra az code-e khod bargardanid.
+
+⚙️ **Gozine-ha:**
+    🔹 hich gozine-e khas-i nadareh, faghat name file patch ra bayad bedid.
+
+🛠 **Mesal-ha:**
+
+    $ flipdiff input.patch > output.patch
+
+    🔹 In mesal, patch `input.patch` ra bargardan mikonad va natije ra dar `output.patch` zakhire mikonad.
+
+    $ flipdiff original.diff | patch -p1
+
+    🔹 In mesal, natije bargardoon-e `original.diff` ra be tor-e mostaghim ba dastoor `patch` apply mikonad.
+
+✅ **Mesal sade:**
+
+    $ flipdiff my_changes.patch > revert_my_changes.patch
+
+    🔹 Agar shoma file-e patch-i dashte bashid be name `my_changes.patch` ke taghirati ra eemal mikonad, ba in dastoor mitavanid file patch-e jadidi be name `revert_my_changes.patch` dorost konid ke on taghirat ra bargardanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `flipdiff` command is used to reverse a patch (or diff) file. That is, it inverts the changes described in the patch. This is useful when you want to undo a patch from your code.
+
+⚙️ **Options:**
+    🔹  It doesn't have specific options, you just need to provide the patch file name.
+
+🛠 **Examples:**
+
+    $ flipdiff input.patch > output.patch
+
+    🔹 This example reverses the `input.patch` patch and saves the result in `output.patch`.
+
+    $ flipdiff original.diff | patch -p1
+
+    🔹 This example applies the reversed `original.diff` directly with the `patch` command.
+
+✅ **Simple Example:**
+
+    $ flipdiff my_changes.patch > revert_my_changes.patch
+
+    🔹 If you have a patch file called `my_changes.patch` that applies changes, you can use this command to create a new patch file called `revert_my_changes.patch` that undoes those changes.

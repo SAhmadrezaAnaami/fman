@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debchange` baraye tagheer daadan va update kardane file `debian/changelog` dar bastahaye Debian estefade mishavad. In dastoor komak mikonad ke tarikhe tagheerat va version jadid ra sabt konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `debchange -i`  --> ➕ Ezafe kardane yek entry jadid be `changelog`.
+    🔹 `debchange -b`  --> 🐛 Islah kardane bug report ba shomareh.
+    🔹 `debchange -r`  --> ⏪ Afzoodan be reliz ghadimi
+    🔹 `debchange --create` --> 📝 Sakhtane file `changelog` jadid agar vojud nadashte bashad.
+
+🛠 **Mesal-ha:**
+
+    $ debchange -i "Eslah bug #12345: Refactor code baraye beboode performance."
+
+    🔹 Ezafe kardane yek entry jadid be `changelog` ba tozihati dar morede eslah bug.
+
+    $ debchange -b 67890
+
+    🔹 Islah bug report ba shomareh 67890 va ezafe kardane entry be `changelog`.
+
+✅ **Mesal sade:**
+
+    $ debchange --create
+
+    🔹 File `debian/changelog` ra misazad agar nabashad, va yek entry avalieh ezafe mikonad ke shoma betavanid tagheerat ra sabt konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debchange` command is used to modify and update the `debian/changelog` file in Debian packages. This command helps you record the history of changes and the new version.
+
+⚙️ **Options:**
+    🔹 `debchange -i`  --> ➕ Add a new entry to the `changelog`.
+    🔹 `debchange -b`  --> 🐛 Fix a bug report with a number.
+    🔹 `debchange -r`  --> ⏪ Backporting to an old release
+    🔹 `debchange --create` --> 📝 Create a new `changelog` file if it doesn't exist.
+
+🛠 **Examples:**
+
+    $ debchange -i "Fix bug #12345: Refactor code for improved performance."
+
+    🔹 Adds a new entry to the `changelog` with details about the bug fix.
+
+    $ debchange -b 67890
+
+    🔹 Fixes bug report number 67890 and adds an entry to the `changelog`.
+
+✅ **Simple Example:**
+
+    $ debchange --create
+
+    🔹 Creates the `debian/changelog` file if it doesn't exist and adds an initial entry so you can record changes.
+

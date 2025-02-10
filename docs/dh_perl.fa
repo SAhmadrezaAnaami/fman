@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_perl` baraye sakht package-haye Debian az module-haye Perl estefade mishavad. In dastoor dar vaghe yek helper script baraye `debhelper` ast va kar-ha-ye lazem baraye dorost kardan package-haye Debian az Perl module-ha ra asan mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--builddep` --> 📦 Ezafe kardane dependancy-haye sakht be `debian/control`.
+    🔹 `--list-modules` --> 📝 List kardane hameye module-haye Perl peyda shode.
+    🔹 `--create-links` --> 🔗 Dorost kardane link-haye simbolic baraye file-haye man-e Perl.
+
+🛠 **Mesal-ha:**
+
+    $ dh_perl --builddep
+
+    🔹 Ezafe kardane dependancy-haye sakht baraye module-haye Perl dar `debian/control`.
+
+    $ dh_perl --list-modules
+
+    🔹 List kardane hameye module-haye Perl-i ke dar source code mojood hastand.
+
+✅ **Mesal sade:**
+
+    $ dh_perl --builddep --create-links
+
+    🔹 Ezafe kardane dependancy-haye sakht be `debian/control` va dorost kardane link-haye simbolic baraye file-haye man. In command kheili estefade mishavad dar process-e sakht Debian package az Perl module.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_perl` command is used to build Debian packages from Perl modules. This command is a helper script for `debhelper` and simplifies the tasks required to create Debian packages from Perl modules.
+
+⚙️ **Options:**
+    🔹 `--builddep` --> 📦 Add build dependencies to `debian/control`.
+    🔹 `--list-modules` --> 📝 List all Perl modules found.
+    🔹 `--create-links` --> 🔗 Create symbolic links for Perl man pages.
+
+🛠 **Examples:**
+
+    $ dh_perl --builddep
+
+    🔹 Add build dependencies for Perl modules in `debian/control`.
+
+    $ dh_perl --list-modules
+
+    🔹 List all Perl modules present in the source code.
+
+✅ **Simple Example:**
+
+    $ dh_perl --builddep --create-links
+
+    🔹 Add build dependencies to `debian/control` and create symbolic links for the man pages. This command is frequently used during the process of building a Debian package from a Perl module.
+

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzegrep` mesle `zgrep` aml mikonad, vali baraye file-haye zip shode ya gcompressed shode be soorate mostaghim va ba sorat bishtar kar mikonad. Yani, ehtiaj nist ke aval file ra az halat zip dar biavarid. In dastoor dar asl yek script ast ke az dastoor `gzip -cd` ya `zcat` estefade mikonad ta file-ha ra az halat feshrde kharej konad va natije ra be `egrep` bedehed ta daroone anha be donbale matn begardad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzegrep "matn" file.gz` --> 🔍 Ghashtan be donbale "matn" dar file.gz.
+    🔹 `lzegrep -i "matn" file.gz` --> 🙈 Ghashtan be donbale "matn" (bi tavajoh be horoof bozorg va koochak).
+    🔹 `lzegrep -r "matn" directory` --> 📁 Ghashtan tekrar shavande dar directory baraye file-haye zip shode.
+    🔹 `lzegrep -l "matn" *.gz` --> 📃 List kardane name file-hayi ke "matn" ra darand.
+    🔹 `lzegrep -v "matn" file.gz` --> 🚫 Namayesh khat-hayi ke "matn" ra nadarand.
+
+🛠 **Mesal-ha:**
+
+    $ lzegrep "error" logfile.gz
+
+    🔹 Donbale "error" dar file `logfile.gz` migardad.
+
+    $ lzegrep -i "warning" *.gz
+
+    🔹 Donbale "warning" (bi-tavajjoh be horoof bozorg va koochak) dar hameye file-haye `gz` dar directory فعلی migardad.
+
+✅ **Mesal sade:**
+
+    $ lzegrep -l "404 Not Found" access.log.gz
+
+    🔹 Listi az name file-haye `access.log.gz` ke matn "404 Not Found" ra darand chap mikonad. In baraye peyda kardane error-haye marboot be website kheyli mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzegrep` command works similarly to `zgrep`, but it's optimized for searching directly within zip or gzipped files. This means you don't have to unzip the files first. It's essentially a script that uses `gzip -cd` or `zcat` to decompress the files and pipes the output to `egrep` to search for the specified pattern.
+
+⚙️ **Options:**
+    🔹 `lzegrep "pattern" file.gz` --> 🔍 Search for "pattern" in file.gz.
+    🔹 `lzegrep -i "pattern" file.gz` --> 🙈 Search for "pattern" (case-insensitive).
+    🔹 `lzegrep -r "pattern" directory` --> 📁 Recursively search the directory for gzipped files.
+    🔹 `lzegrep -l "pattern" *.gz` --> 📃 List the names of files containing "pattern".
+    🔹 `lzegrep -v "pattern" file.gz` --> 🚫 Show lines that do NOT contain "pattern".
+
+🛠 **Examples:**
+
+    $ lzegrep "error" logfile.gz
+
+    🔹 Searches for "error" in the `logfile.gz` file.
+
+    $ lzegrep -i "warning" *.gz
+
+    🔹 Searches for "warning" (case-insensitive) in all `.gz` files in the current directory.
+
+✅ **Simple Example:**
+
+    $ lzegrep -l "404 Not Found" access.log.gz
+
+    🔹 Prints a list of `access.log.gz` filenames that contain the text "404 Not Found". This is useful for quickly finding website-related errors in compressed logs.

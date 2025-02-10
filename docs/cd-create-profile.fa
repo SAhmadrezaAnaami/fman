@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cd-create-profile` baraye dorost kardane yek profile jadid dar system estefade mishavad. In dastoor be shoma komak mikonad ta yek profile ba setting-haye makhsoos be khodeton ijad konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name <esm>`  -->  🏷️ Esme profile jadid ra moshakhas mikonad.
+    🔹 `--path <masir>` --> 📍 Masire zakhire shodan profile ra tayin mikonad (agar tayin nashavad, be soorate pishfarz zakhire mishavad).
+    🔹 `--default`      -->  ⭐ Profile jadid ra be onvane profile pishfarz gharar midahad.
+
+🛠 **Mesal-ha:**
+
+    $ cd-create-profile --name karbar1
+
+    🔹 Yek profile ba esme "karbar1" misazad.
+
+    $ cd-create-profile --name karbar2 --path /home/karbar2/profile
+
+    🔹 Yek profile ba esme "karbar2" dar masire `/home/karbar2/profile` misazad.
+
+    $ cd-create-profile --name karbar3 --default
+
+    🔹 Yek profile ba esme "karbar3" misazad va aan ra be onvane profile pishfarz tayin mikonad.
+
+✅ **Mesal sade:**
+
+    $ cd-create-profile --name test_profile
+
+    🔹 Ba ejraye in dastoor, yek profile ba esme `test_profile` sakhte mishavad va shoma mitavanid az aan baraye setting-haye khass estefade konid. Agar masir tayin nashavad, profile dar masire pishfarz zakhire khahad shod.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cd-create-profile` command is used to create a new profile on the system. This command helps you to create a profile with your own specific settings.
+
+⚙️ **Options:**
+    🔹 `--name <name>`  --> 🏷️ Specifies the name of the new profile.
+    🔹 `--path <path>` --> 📍 Specifies the path where the profile will be saved (if not specified, it will be saved in the default location).
+    🔹 `--default`      --> ⭐ Sets the new profile as the default profile.
+
+🛠 **Examples:**
+
+    $ cd-create-profile --name user1
+
+    🔹 Creates a profile named "user1".
+
+    $ cd-create-profile --name user2 --path /home/user2/profile
+
+    🔹 Creates a profile named "user2" in the path `/home/user2/profile`.
+
+    $ cd-create-profile --name user3 --default
+
+    🔹 Creates a profile named "user3" and sets it as the default profile.
+
+✅ **Simple Example:**
+
+    $ cd-create-profile --name test_profile
+
+    🔹 By running this command, a profile named `test_profile` will be created and you can use it for custom settings. If the path is not specified, the profile will be saved in the default location.

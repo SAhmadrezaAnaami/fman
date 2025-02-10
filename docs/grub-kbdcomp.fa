@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-kbdcomp` baraye dorost kardane file layout keyboard baraye GRUB estefade mishavad. Yani GRUB mitoonad keyboard shoma ra dorost beshnasad va shoma betoonid password ya dastoor-haye digar ra vared konid, hatta ghabl az inke system-e shoma bala biayad.
+
+⚙️ **Gozine-ha:**
+    🔹 `grub-kbdcomp [file keyboard]`  -->  ⌨️ Layout keyboard ra az file misazad (agar file ra nadeed, az system khodetan mikhonad).
+    🔹 `grub-kbdcomp -o FILE [file keyboard]`  --> 💾 Natije ra dar FILE save mikonad. Agar FILE ra nadeed, dar khroji chap mikonad.
+    🔹 `grub-kbdcomp --help`  -->  ❓ Namayeshe rahnama va gozine-haye bishtar.
+
+🛠 **Mesal-ha:**
+
+    $ grub-kbdcomp /usr/share/keymaps/i386/qwerty/persian.map.gz
+
+    🔹 Layout keyboard persian ra az file misazad va dar terminal chap mikonad.
+
+    $ grub-kbdcomp -o /boot/grub/persian.key /usr/share/keymaps/i386/qwerty/persian.map.gz
+
+    🔹 Layout keyboard persian ra az file misazad va dar `/boot/grub/persian.key` save mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-kbdcomp > mykeyboard.key
+
+    🔹 Layout keyboard default system ra migirad va dar file `mykeyboard.key` zakhire mikonad. Bad az an, shoma mitoonid in file ra dar grub.cfg vared konid ta keyboard shoma dar grub kar konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-kbdcomp` command is used to generate a keyboard layout file for GRUB. This allows GRUB to correctly recognize your keyboard and allows you to enter passwords or other commands, even before your system boots up.
+
+⚙️ **Options:**
+    🔹 `grub-kbdcomp [keyboard layout file]`  --> ⌨️ Generates the keyboard layout from the specified file (if no file is specified, it reads from your system's default).
+    🔹 `grub-kbdcomp -o FILE [keyboard layout file]`  --> 💾 Saves the output to FILE. If FILE is not specified, it prints to standard output.
+    🔹 `grub-kbdcomp --help`  --> ❓ Displays help and more options.
+
+🛠 **Examples:**
+
+    $ grub-kbdcomp /usr/share/keymaps/i386/qwerty/persian.map.gz
+
+    🔹 Generates the GRUB keyboard layout from the `persian` keyboard map and prints it to the terminal.
+
+    $ grub-kbdcomp -o /boot/grub/persian.key /usr/share/keymaps/i386/qwerty/persian.map.gz
+
+    🔹 Generates the GRUB keyboard layout from the `persian` keyboard map and saves it to `/boot/grub/persian.key`.
+
+✅ **Simple Example:**
+
+    $ grub-kbdcomp > mykeyboard.key
+
+    🔹 Takes the default system keyboard layout and saves it to the file `mykeyboard.key`.  You can then include this file in your grub.cfg to enable your keyboard in GRUB.

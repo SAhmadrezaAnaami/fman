@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgcomm` (ya'ni message communicate) baraye ersal va daryaft payam bein process-ha rooye yek system UNIX/Linux estefade mishavad. In kar ba estefade az saf-haye payam (message queues) anjam mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n <esm_saf>` --> 🏷️ Esme saf-e payam ra moshakhas mikonad. Agar esmi dade nashavad, yek esme pishfarz estefade mishavad.
+    🔹 `-s <payam>` --> ✉️ Payami ke bayad ersal shavad ra moshakhas mikonad.
+    🔹 `-r` --> 👂 Montazer mimanad ta yek payam daryaft konad va aan ra chap mikonad.
+    🔹 `-t <no'e_payam>` --> 🔢 No'e payam ra moshakhas mikonad (yek adad sahih). Dar vaghe, filtre mikonad payam-ha ra be asase in no'e.
+
+🛠 **Mesal-ha:**
+
+    $ msgcomm -n chat_room -s "Salam be hame!"
+    
+    🔹 Yek payam ba matne "Salam be hame!" be saf-e payam ba esme "chat_room" ersal mikonad.
+
+    $ msgcomm -n chat_room -r
+    
+    🔹 Montazer mimanad ta yek payam az saf-e payam ba esme "chat_room" daryaft konad va aan ra dar terminal chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ msgcomm -n news -s "Khabar-e jadid: hava barani ast."
+    $ msgcomm -n news -r
+    
+    🔹 Aval yek payam ba matne "Khabar-e jadid: hava barani ast." be saf-e payam ba esme "news" ersal mishavad, va baad dastoor dovvom montazer mimanad ta payam ra daryaft va chap konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgcomm` (message communicate) command is used for sending and receiving messages between processes on a UNIX/Linux system. This is done using message queues.
+
+⚙️ **Options:**
+    🔹 `-n <queue_name>` --> 🏷️ Specifies the name of the message queue. If no name is given, a default name is used.
+    🔹 `-s <message>` --> ✉️ Specifies the message to be sent.
+    🔹 `-r` --> 👂 Waits to receive a message and prints it.
+    🔹 `-t <message_type>` --> 🔢 Specifies the message type (an integer).  Effectively filters messages based on this type.
+
+🛠 **Examples:**
+
+    $ msgcomm -n chat_room -s "Hello everyone!"
+    
+    🔹 Sends a message with the text "Hello everyone!" to the message queue named "chat_room".
+
+    $ msgcomm -n chat_room -r
+    
+    🔹 Waits to receive a message from the message queue named "chat_room" and prints it to the terminal.
+
+✅ **Simple Example:**
+
+    $ msgcomm -n news -s "New update: it's raining."
+    $ msgcomm -n news -r
+    
+    🔹 First, a message with the text "New update: it's raining." is sent to the message queue named "news", and then the second command waits to receive and print the message.

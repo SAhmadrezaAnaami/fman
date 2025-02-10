@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `diff3` baraye moghayese se ta file matni va ersale natije merge shode be stdout estefade mishavad. In dastoor be shoma komak mikonad ta taghirati ke dar version-haye mokhtalef yek file ijad shode and ra be ham beresoonid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-m` -->  ادغام تغییرات: سعی می کند تغییرات همپوشانی نشده را ادغام کند.
+    🔹 `-e` --> اسکریپت ویرایش: اسکریپتی از دستورات `ed` تولید می کند تا فایل اول را با ترکیب تغییرات از دو فایل دیگر به روز کند.
+    🔹 `-x` --> حل تداخل ها: هنگام وجود تداخل، نشانگرهای تداخل را در خروجی قرار می دهد.
+
+🛠 **Mesal-ha:**
+
+    $ diff3 file1 file2 file3
+
+    🔹 مقایسه فایل ها و نمایش تفاوت ها و تداخلات.
+
+    $ diff3 -m file1 file2 file3
+
+    🔹 ادغام تغییرات غیرهمپوشانی در file1.
+
+✅ **Mesal sade:**
+
+    $ diff3 -e file1 file2 file3 > update.ed
+    (ed - update.ed) < file1
+
+    🔹 یک اسکریپت ویرایش برای به روزرسانی file1 با تغییرات file2 و file3 ایجاد می کند و سپس آن را اعمال می کند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `diff3` command is used to compare three text files and output the merged result to stdout. It helps you to reconcile changes made in different versions of a file.
+
+⚙️ **Options:**
+    🔹 `-m` --> Merge changes: Attempts to merge non-overlapping changes.
+    🔹 `-e` --> Ed script: Produces an `ed` script to update the first file with the combined changes from the other two files.
+    🔹 `-x` --> Resolve conflicts: Includes conflict markers in the output when conflicts are found.
+
+🛠 **Examples:**
+
+    $ diff3 file1 file2 file3
+
+    🔹 Compare the files and display differences and conflicts.
+
+    $ diff3 -m file1 file2 file3
+
+    🔹 Merge non-overlapping changes into file1.
+
+✅ **Simple Example:**
+
+    $ diff3 -e file1 file2 file3 > update.ed
+    (ed - update.ed) < file1
+
+    🔹 Creates an edit script to update file1 with the changes from file2 and file3, then applies it.

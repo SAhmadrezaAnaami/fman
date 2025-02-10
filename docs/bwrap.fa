@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bwrap` (bubblewrap) yek barname ast ke be shoma ejaze mide ta barname-haye digar ra dar yek mohit izol shode va aman اجرا konid. In yani ke barname-ha nemitavanand be tamam ghesmat-haye system dastresi dashte bashand, va in amaniat ra behtar mikonad.  Mesle in ast ke har barname dar yek habe-ye izol shode قرار میگیرد.
+
+⚙️ **Gozine-ha:**
+    🔹 `--ro-bind <manba> <maqsad>`  --> 🔒 Yek pooshe ra be surat faghat khandan (read-only) dar habe mount mikonad.  Manba pooshe-ye asli, va maqsad jaye آن dar habe ast.
+    🔹 `--bind <manba> <maqsad>`  --> 🔗 Yek pooshe ra be surat dastresi khandan va neveshtan (read-write) dar habe mount mikonad. Har taghyiri dar maqsad dar manba هم اعمال mishavad.
+    🔹 `--tmpfs <maqsad>` --> 📁 Yek directory-ye temporary (vaghti) dar habe misazad. Vaghti ke barname tamam mishavad, hameye etela'at dar an directory az bein miravad.
+    🔹 `--unshare-all` -->  изоли کردن hameye namespaces (مانند network, PID, و غیره).
+    🔹 `--chdir <path>` --> 📂 Taghir dadan jaye kari (working directory) dar habe.
+
+🛠 **Mesal-ha:**
+
+    $ bwrap --ro-bind /usr /usr -- /usr/bin/firefox
+
+    🔹 اجرا kardan Firefox dar habe-i ke dastresi faghat khandan be `/usr` darad.
+
+    $ bwrap --tmpfs /tmp -- bash
+
+    🔹 Baz kardan yek shell dar habe-i ke directory `/tmp` yek directory temporary ast.
+
+✅ **Mesal sade:**
+
+    $ bwrap --ro-bind /bin /bin -- ls /bin
+
+    🔹 In dastoor `ls` ra dar yek habe اجرا mikonad ke faghat dastresi khandan be directory `/bin` darad. Pas dastoor `ls` mitavanad file-haye dar `/bin` ra bebinad, amma nemitavanad taghyiri ijad konad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bwrap` (bubblewrap) command allows you to run applications in an isolated and secure environment. This means that applications cannot access all parts of the system, improving security. It's like each application runs in an isolated container.
+
+⚙️ **Options:**
+    🔹 `--ro-bind <source> <destination>` --> 🔒 Mount a directory as read-only inside the bubble.  Source is the original directory, and destination is where it's mounted inside the bubble.
+    🔹 `--bind <source> <destination>`  --> 🔗 Mount a directory as read-write inside the bubble.  Any changes in the destination are also applied to the source.
+    🔹 `--tmpfs <destination>` --> 📁 Create a temporary directory inside the bubble. When the application finishes, all data in that directory is lost.
+    🔹 `--unshare-all` -->  Isolate all namespaces (like network, PID, etc.).
+    🔹 `--chdir <path>` --> 📂 Change the working directory inside the bubble.
+
+🛠 **Examples:**
+
+    $ bwrap --ro-bind /usr /usr -- /usr/bin/firefox
+
+    🔹 Run Firefox in a bubble with read-only access to `/usr`.
+
+    $ bwrap --tmpfs /tmp -- bash
+
+    🔹 Open a shell in a bubble where the `/tmp` directory is a temporary directory.
+
+✅ **Simple Example:**
+
+    $ bwrap --ro-bind /bin /bin -- ls /bin
+
+    🔹 This command runs `ls` inside a bubble that has read-only access to the `/bin` directory. So the `ls` command can see the files in `/bin`, but it cannot make any changes.

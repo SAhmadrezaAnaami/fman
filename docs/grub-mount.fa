@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mount` baraye chسبوندن (mount) yek tasvir disk (disk image) ke formatesh GRUB hast, be yek noghte-ye chسبوندن (mount point) estefade می شود. In dastoor معمولا برای دسترسی به فایل ها داخل tasvir disk، مثلا برای ویرایش فایل های boot، کاربرد دارد.
+
+⚙️ **Gozine-ha:**
+    🔹 `grub-mount -v <tasvir-disk> <noghte-ye-choسبوندن>` --> 🗣️ چاپ کردن پیام های verbose (جزئیات بیشتر) در حین chسبوندن.
+    🔹 `grub-mount -t <نوع-فایل-سیستم> <tasvir-disk> <noghte-ye-choسبوندن>` --> 📁 مشخص کردن نوع فایل سیستم در tasvir disk (مثلا ext2, ext3, ext4).
+    🔹 `grub-mount -r <tasvir-disk> <noghte-ye-choسبوندن>` --> 🔒 chسبوندن tasvir disk به صورت فقط خواندنی (read-only).
+
+🛠 **Mesal-ha:**
+
+    $ grub-mount /boot/grub/disk.img /mnt
+
+    🔹 chسبوندن tasvir disk `disk.img` ke dar `boot/grub/` gharar dare, be pooshe-ye `/mnt`.
+
+    $ grub-mount -t ext4 /boot/grub/disk.img /mnt
+
+    🔹 chسبوندn tasvir disk `disk.img` be `/mnt` va مشخص کردن no-e file system be عنوان ext4.
+
+✅ **Mesal sade:**
+
+    $ grub-mount /boot/grub/disk.img /mnt
+    $ ls /mnt
+
+    🔹 ba estefade az dastoor `ls /mnt` می توانید فایل های داخل tasvir disk ra بببینید و dastresi dashte bashid.  In mesal sade neshon mideh chetor میتونید file-haye dakhele tasvir disk GRUB ro dastresi پیدا کنید.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mount` command is used to mount a GRUB disk image to a specified mount point. This is typically used to access files within the disk image, such as for editing boot files.
+
+⚙️ **Options:**
+    🔹 `grub-mount -v <disk-image> <mount-point>` --> 🗣️ Print verbose messages during the mount process.
+    🔹 `grub-mount -t <filesystem-type> <disk-image> <mount-point>` --> 📁 Specify the filesystem type of the disk image (e.g., ext2, ext3, ext4).
+    🔹 `grub-mount -r <disk-image> <mount-point>` --> 🔒 Mount the disk image as read-only.
+
+🛠 **Examples:**
+
+    $ grub-mount /boot/grub/disk.img /mnt
+
+    🔹 Mounts the disk image `disk.img` located in `/boot/grub/` to the directory `/mnt`.
+
+    $ grub-mount -t ext4 /boot/grub/disk.img /mnt
+
+    🔹 Mounts the disk image `disk.img` to `/mnt` and specifies the filesystem type as ext4.
+
+✅ **Simple Example:**
+
+    $ grub-mount /boot/grub/disk.img /mnt
+    $ ls /mnt
+
+    🔹 Using the `ls /mnt` command, you can view and access the files within the disk image. This simple example demonstrates how to access the files inside a GRUB disk image.

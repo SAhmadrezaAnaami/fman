@@ -1,0 +1,82 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `expr` baraye mohasebat riazi va moghayese reshte-ha (string) dar terminal estefade mishavad. In dastoor mitavanad jam’, tafriq, zarb, taqsim va baghimande ra hesab konad. Hamchenin, mitavanad andaze reshte-ha ra bedast avard ya anha ra ba ham moghayese kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `expr ARG`  -->  📐 Hesab ya moghayese yek ya chand argument ra anjam midahad.
+    🔹 `expr LENGTH STRING` --> 📏 Tool (length) reshte-ye `STRING` ra barmigardanad.
+    🔹 `expr INDEX STRING CHAR` --> 📍 Makaan (index) avalin `CHAR` dar `STRING` ra peyda mikonad.
+    🔹 `expr SUBSTRING STRING POSITION LENGTH` --> ✂️ Ghesmati az `STRING` ra az `POSITION` be tool `LENGTH` joda mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ expr 2 + 2
+    4
+    🔹 Jam’ do adad.
+
+    $ expr 5 \* 3
+    15
+    🔹 Zarb do adad (bayad az `\` ghabl az `*` estefade kard).
+
+    $ expr 10 / 2
+    5
+    🔹 Taqsim do adad.
+
+    $ expr "hello" : "h.*o"
+    5
+    🔹 Peyda kardan tool reshte ba estefade az regular expression.
+
+    $ expr length "hello"
+    5
+    🔹 Peyda kardan tool reshte.
+
+✅ **Mesal sade:**
+
+    $ a=5; b=3; result=$(expr $a + $b) ; echo $result
+    8
+    🔹 In mesal jam' adadha ra hesab mikonad va natije ra dar yek motaghayer zakhire mikonad va chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `expr` command is used to perform arithmetic calculations and string comparisons in the terminal. It can calculate addition, subtraction, multiplication, division, and remainder. Also, it can find the length of strings or compare them.
+
+⚙️ **Options:**
+    🔹 `expr ARG` --> 📐 Evaluates an expression consisting of one or more arguments.
+    🔹 `expr LENGTH STRING` --> 📏 Returns the length of `STRING`.
+    🔹 `expr INDEX STRING CHAR` --> 📍 Finds the index of the first occurrence of `CHAR` in `STRING`.
+    🔹 `expr SUBSTRING STRING POSITION LENGTH` --> ✂️ Extracts a substring of `STRING` starting at `POSITION` with length `LENGTH`.
+
+🛠 **Examples:**
+
+    $ expr 2 + 2
+    4
+    🔹 Addition of two numbers.
+
+    $ expr 5 \* 3
+    15
+    🔹 Multiplication of two numbers (must use `\` before `*`).
+
+    $ expr 10 / 2
+    5
+    🔹 Division of two numbers.
+
+    $ expr "hello" : "h.*o"
+    5
+    🔹 Finding the length of a string using regular expression.
+
+    $ expr length "hello"
+    5
+    🔹 Finding the length of a string.
+
+✅ **Simple Example:**
+
+    $ a=5; b=3; result=$(expr $a + $b) ; echo $result
+    8
+    🔹 This example calculates the sum of two numbers, stores the result in a variable, and prints it.

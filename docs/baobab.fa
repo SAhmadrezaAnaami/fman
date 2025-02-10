@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `baobab` (disk usage analyzer) baraye didan va tahlil kardane meghdare fazaye disk-e estefade shode dar system-e shoma be kar miravad. Shoma mitavanid bebinid kodam pooshe-ha va file-ha bishtarin ja ra gerefte-and.
+
+⚙️ **Gozine-ha:**
+    🔹 `baobab` --> 📂 Baz kardane barname baobab dar haman pooshe-ye konooni.
+    🔹 `baobab /path/to/pooshe` --> 📁 Baz kardane baobab va namayeshe estefade az disk dar pooshe-ye morede nazar.
+
+🛠 **Mesal-ha:**
+
+    $ baobab
+
+    🔹 Barname baobab ra baz mikonad va meghdare estefade az disk ra az pooshe-ye konooni neshan midahad.
+
+    $ baobab /home/user/documents
+
+    🔹 Barname baobab ra baz mikonad va meghdare estefade az disk ra az pooshe-ye "documents" neshan midahad.
+
+✅ **Mesal sade:**
+
+    $ baobab
+
+    🔹 Ba ejraye in dastoor, yek safhe grafiki baz mishavad ke neshan midahad kodam pooshe-ha bishtarin ja ra az disk gerefte-and. Shoma mitavanid rooye pooshe-ha click konid ta joziyate bishtari ra bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `baobab` (Disk Usage Analyzer) command is used to visualize and analyze the disk space usage on your system. It allows you to see which folders and files are taking up the most space.
+
+⚙️ **Options:**
+    🔹 `baobab` --> 📂 Opens the Baobab application in the current directory.
+    🔹 `baobab /path/to/directory` --> 📁 Opens Baobab and displays the disk usage of the specified directory.
+
+🛠 **Examples:**
+
+    $ baobab
+
+    🔹 Opens the Baobab application and displays the disk usage starting from the current directory.
+
+    $ baobab /home/user/documents
+
+    🔹 Opens the Baobab application and displays the disk usage of the "documents" directory.
+
+✅ **Simple Example:**
+
+    $ baobab
+
+    🔹 Running this command opens a graphical window that shows which folders are taking up the most disk space. You can click on the folders to see more details.

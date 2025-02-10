@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `axfer` baraye enteghal-e file-ha az tarigh-e protocol-haye mokhtalef mesl-e Kermit ya XMODEM estefade mishavad.  In dastoor bishtar dar terminal-ha ya system-haye ghadimi ke SSH ya FTP nadashtand, be kar miravad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `axfer -r`  --> 📥 Dariaft-e file (Receive file).  
+    🔹 `axfer -s filename`  --> 📤 Eersal-e file ba name `filename` (Send file with name `filename`).
+    🔹 `axfer -k`  --> 🐢 Estefade az protocol Kermit.  
+    🔹 `axfer -x`  --> ❌ Estefade az protocol XMODEM.
+
+🛠 **Mesal-ha:**
+
+    $ axfer -r
+    
+    🔹 Montazer mimanad ta yek file az taraf-e digar enteghal dade shavad.
+
+    $ axfer -s myfile.txt
+   
+    🔹 File ba name `myfile.txt` ra ba estefade az protocol pishfarz eersal mikonad.
+
+✅ **Mesal sade:**
+
+    $ axfer -s important_document.txt
+ 
+    🔹 File ba name `important_document.txt` az terminal shoma be taraf-e digar eersal mishavad (protocol pishfarz).  Az taraf-e digar bayad dastoor `-r` ra ejra konid ta file ra daryaft konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `axfer` command is used to transfer files via various protocols such as Kermit or XMODEM. It is primarily used in older terminals or systems that do not support SSH or FTP.
+
+⚙️ **Options:**
+    🔹 `axfer -r`  --> 📥 Receive a file.
+    🔹 `axfer -s filename`  --> 📤 Send a file named `filename`.
+    🔹 `axfer -k`  --> 🐢 Use the Kermit protocol.
+    🔹 `axfer -x`  --> ❌ Use the XMODEM protocol.
+
+🛠 **Examples:**
+
+    $ axfer -r
+    
+    🔹 Waits for a file to be transferred from the other side.
+
+    $ axfer -s myfile.txt
+    
+    🔹 Sends the file named `myfile.txt` using the default protocol.
+
+✅ **Simple Example:**
+
+    $ axfer -s important_document.txt
+
+    🔹 The file named `important_document.txt` is sent from your terminal to the other side (using the default protocol). The other side must execute the `-r` command to receive the file.

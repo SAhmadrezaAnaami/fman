@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-set-selections` baraye vared kardan javabha be soalaate `debconf` az yek file estefade mishavad. In dastoor be shoma komak mikonad ta be soalaati ke hengame nasbe barname-ha porside mishavad, javab dahid va nasb ra be soorate khodkaar anjam dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-c file`  --> ⚙️ Estefade az yek file takhsis dade shode baraye configuration (`/etc/debconf.conf`)
+    🔹 `-v` --> 👀 Namayesh etela'ate bishtar dar morede amaliyat (verbose mode)
+
+🛠 **Mesal-ha:**
+
+    $ debconf-set-selections < javabha.txt
+
+    🔹 In mesal javabhaye `debconf` ra az file `javabha.txt` mikhanad va apply mikonad.
+
+    $ debconf-set-selections -c /path/to/config < javabha.txt
+
+    🔹 In mesal javabhaye `debconf` ra az file `javabha.txt` mikhanad va configuration file ra az `/path/to/config` estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ cat javabha.txt
+    package_name question_name select value
+
+    $ debconf-set-selections < javabha.txt
+
+    🔹 Ba estefade az in dastoor, javabha be soalaat `debconf` az file `javabha.txt` khande shode va apply mishavand, pas az an vaghti ke shoma `package_name` ra nasb konid, javabha az ghabl vared shode and.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-set-selections` command is used to pre-seed answers to `debconf` questions from a file. It helps you to automatically answer questions asked during package installation.
+
+⚙️ **Options:**
+    🔹 `-c file`  --> ⚙️ Use a specified configuration file (`/etc/debconf.conf`).
+    🔹 `-v`  --> 👀 Provide more verbose output.
+
+🛠 **Examples:**
+
+    $ debconf-set-selections < answers.txt
+
+    🔹 This example reads and applies `debconf` answers from the `answers.txt` file.
+
+    $ debconf-set-selections -c /path/to/config < answers.txt
+
+    🔹 This example reads `debconf` answers from `answers.txt` using the configuration file located at `/path/to/config`.
+
+✅ **Simple Example:**
+
+    $ cat answers.txt
+    package_name question_name select value
+
+    $ debconf-set-selections < answers.txt
+
+    🔹 By using this command, answers to `debconf` questions from `answers.txt` will be read and applied; then, when you install `package_name`, the answers are already pre-filled.

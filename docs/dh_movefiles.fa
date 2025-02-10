@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_movefiles` baraye enteqal dadan file-ha az jaye asli-shun be jaye dorost dar bakhsh `debian/tmp` (directory movaghat) estefade mishavad. In kar baraye dorost kardan package debian lazem ast, chon file-ha bayad dar jaye munasib bashand ta nasb dorost anjam shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--list-missing` --> 🔍 List kardan file-haye gomshode. Age file-i gom shode bashad, `dh_movefiles` be shoma khabar midahad.
+    🔹 `--sourcedir directory` --> 📁 Specify kardan pooshe-ye asli ke file-ha az anja enteqal miyaband. Agar shoma directory asli-ra tagheer dadeid, az in gozine estefade konid.
+    🔹 `--no-automatic` --> 🚫 Disable kardan enteqal-haye khodkar. Ba in gozine, shoma bayad hameye file-ha-ra khodetan specify konid.
+
+🛠 **Mesal-ha:**
+
+    $ dh_movefiles
+
+    🔹 Eterafe sade az dastoor. File-haye tarif shode dar `debian/install` be directory movaghat enteqal miyaband.
+
+    $ dh_movefiles --list-missing
+
+    🔹 Check mikonad ke aya file-haye tarif shode dar `debian/install` dar dastras hastand ya na.
+
+✅ **Mesal sade:**
+
+    $ dh_movefiles
+    
+    🔹 Agar shoma yek file be name "myfile" dar `debian/install` tarif karde bashid, in dastoor an file-ra az jaye asli-ash be `debian/tmp/myfile` enteqal midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_movefiles` command is used to move files from their original locations to the correct locations within the `debian/tmp` directory.  This is essential for building Debian packages, ensuring files are placed in the proper locations for installation.
+
+⚙️ **Options:**
+    🔹 `--list-missing` --> 🔍 List missing files. `dh_movefiles` will report if any files specified are missing.
+    🔹 `--sourcedir directory` --> 📁 Specify the source directory from which to move files. Use this if you've altered the original location of the files.
+    🔹 `--no-automatic` --> 🚫 Disable automatic file moving. With this option, you must specify all files to be moved manually.
+
+🛠 **Examples:**
+
+    $ dh_movefiles
+
+    🔹 Simplest invocation. Moves files specified in `debian/install` to the temporary directory.
+
+    $ dh_movefiles --list-missing
+
+    🔹 Checks if the files listed in `debian/install` are actually available.
+
+✅ **Simple Example:**
+
+    $ dh_movefiles
+    
+    🔹 If you have a file named "myfile" specified in `debian/install`, this command will move it from its original location to `debian/tmp/myfile`.

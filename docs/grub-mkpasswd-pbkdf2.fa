@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mkpasswd-pbkdf2` baraye dorost kardane yek kalameh oboor (password) baraye grub estefade mishavad ke amniyat bootloader ra bala bebarad. In dastoor yek hash amni az kalameh oboor misazad ke mitoonid dar configuration file grub zakhire konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--rounds=N` --> 🔑 Tedade iteration-ha baraye sakhtane hash. Tedade bishtar yani amniyat bishtar, vali sakhtan zaman bishtari mibarad. Meghdare pishfarz 10000 ast.
+    🔹 `--salt=SALT` --> 🧂 Estefade az yek SALT makhsoos. Agar SALT ra tayin nakonid, dastoor be soorate random yek SALT misazad. SALT-e makhsoos amniyat ra kam mikonad.
+    🔹 `--username=USERNAME` --> 👤 Name karbari baraye kalameh oboor (optional).
+
+🛠 **Mesal-ha:**
+
+    $ grub-mkpasswd-pbkdf2
+
+    🔹 Az shoma khasteh mishavad ke yek kalameh oboor vared konid va natije ra chap mikonad.
+
+    $ grub-mkpasswd-pbkdf2 --rounds=4096
+
+    🔹 Mesl mesal bala, vali az 4096 iteration baraye amniyat behtar estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-mkpasswd-pbkdf2
+    Enter password:
+    Reenter password:
+    PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.D8...
+    
+    🔹 Dastoor az shoma mikhad ke kalameh oboor vared konid va natije PBKDF2 hash hast ke mitunid dar `grub.cfg` zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mkpasswd-pbkdf2` command is used to generate a password hash for GRUB to enhance bootloader security. It creates a secure hash of a password that you can store in your GRUB configuration file.
+
+⚙️ **Options:**
+    🔹 `--rounds=N` --> 🔑 The number of iterations to use when generating the hash. Higher numbers increase security but take longer to compute. Default is 10000.
+    🔹 `--salt=SALT` --> 🧂 Use a specific SALT value. If not specified, the command generates a random SALT. Using a specific SALT reduces security.
+    🔹 `--username=USERNAME` --> 👤 Username to associate with the password (optional).
+
+🛠 **Examples:**
+
+    $ grub-mkpasswd-pbkdf2
+
+    🔹 Prompts you to enter a password and then outputs the resulting hash.
+
+    $ grub-mkpasswd-pbkdf2 --rounds=4096
+
+    🔹 Same as above, but uses 4096 iterations for increased security.
+
+✅ **Simple Example:**
+
+    $ grub-mkpasswd-pbkdf2
+    Enter password:
+    Reenter password:
+    PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.D8...
+    
+    🔹 The command prompts you for a password and outputs the PBKDF2 hash, which you can then store in your `grub.cfg`.

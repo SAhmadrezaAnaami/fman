@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mknod` baraye dorost kardane file-haye khas (special files) mesle device file-ha (masalan baraye dastgah-ha mesle USB, disk-ha) be kar miravad. In dastoor be shoma ejaze midahad ke yek node (gere) dar system file ijad konid ke ba yek dastgah sakht afzari (hardware device) rabete dashte bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mknod [NAME] [TYPE] [MAJOR] [MINOR]` --> 📁 Dorost kardane yek file khas ba name, no', shomare asli (major) va shomare fara'i (minor).
+        `[NAME]` --> 🏷️ Esme file ijad shode.
+        `[TYPE]` --> 🚦 No'e file (masalan `b` baraye block device, `c` baraye character device, `p` baraye named pipe).
+        `[MAJOR]` --> 🔢 Shomare asli device (az system gerefte mishavad).
+        `[MINOR]` --> 🔢 Shomare fara'i device (az system gerefte mishavad).
+
+🛠 **Mesal-ha:**
+
+    $ mknod /dev/my_virtual_device c 200 0
+
+    🔹 Ijad yek character device ba name 'my_virtual_device' dar directory '/dev', ba shomare asli 200 va shomare fara'i 0.
+
+    $ mknod /tmp/my_pipe p
+
+    🔹 Ijad yek named pipe (FIFO) ba name 'my_pipe' dar directory '/tmp'.
+
+✅ **Mesal sade:**
+
+    $ mknod /dev/my_led c 250 1
+    $ ls -l /dev/my_led
+
+    🔹 File khas ba name `my_led` dar `/dev` ijad shode, ke yek character device ast.  `ls -l` etela'at file ra neshan midahad va no'e file, dastresi-ha va shomare haye major/minor ra moshakhas mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mknod` command is used to create special files, such as device files (e.g., for devices like USB, disks). This command allows you to create a node in the file system that is associated with a hardware device.
+
+⚙️ **Options:**
+    🔹 `mknod [NAME] [TYPE] [MAJOR] [MINOR]` --> 📁 Create a special file with name, type, major number, and minor number.
+        `[NAME]` --> 🏷️ The name of the file being created.
+        `[TYPE]` --> 🚦 Type of file (e.g., `b` for block device, `c` for character device, `p` for named pipe).
+        `[MAJOR]` --> 🔢 Major number of the device (obtained from the system).
+        `[MINOR]` --> 🔢 Minor number of the device (obtained from the system).
+
+🛠 **Examples:**
+
+    $ mknod /dev/my_virtual_device c 200 0
+
+    🔹 Create a character device named 'my_virtual_device' in the '/dev' directory, with major number 200 and minor number 0.
+
+    $ mknod /tmp/my_pipe p
+
+    🔹 Create a named pipe (FIFO) named 'my_pipe' in the '/tmp' directory.
+
+✅ **Simple Example:**
+
+    $ mknod /dev/my_led c 250 1
+    $ ls -l /dev/my_led
+
+    🔹 Special file named `my_led` is created in `/dev`, which is a character device. `ls -l` shows the file information and specifies the file type, permissions, and major/minor numbers.

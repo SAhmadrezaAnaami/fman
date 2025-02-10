@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_compress` baraye feshoordan (compress) file-ha dar bastahaye Debian (`.deb`) estefade mishavad. In dastoor file-haye bozorg ra koochak mikonad ta fazaye disk kamtari masraf shavad va download-e bastaha sari'tar anjam shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--no-compress`  --> 🚫 Compress nakardan file-ha. Vaghti ke mikhahid az feshoordegi (compression) dastkashi nakonid.
+    🔹 `--compress-options=...`  --> ⚙️ Gozinehaye ezafi baraye dastoor `gzip` (ya dastoor dige-e feshoordegi). Mesal: `--compress-options="-9"` baraye feshoordegi bishtar.
+    🔹 `--exclude=...`  --> ➖ File-ha ya pooshe-ha ra az feshoordegi kharej kardan. Mesal: `--exclude=usr/share/doc/*` hameye file-haye dakhele pooshe `doc` ra kharej mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_compress
+
+    🔹 Compress kardane hameye file-haye ghabel-e-feshoordegi dar bastahaye Debian be soorate pishfarz.
+
+    $ dh_compress --compress-options="-9"
+
+    🔹 Compress kardane file-ha ba estefade az gozine "-9" baraye `gzip` (feshoordegi bishtar).
+
+✅ **Mesal sade:**
+
+    $ dh_compress --exclude=usr/share/man/man3
+
+    🔹 Hameye file-ha compress mishavand, be joz file-haye dakhele `usr/share/man/man3`.  In mozoo be shoma komak mikonad agar bekhahid ba'zi az file-ha ra ke ehtiyaji be feshoordegi nadarand, sarefejooee konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_compress` command is used to compress files in Debian packages (`.deb`). It reduces the size of large files, saving disk space and speeding up package downloads.
+
+⚙️ **Options:**
+    🔹 `--no-compress`  --> 🚫 Do not compress files. Useful when you want to avoid any compression.
+    🔹 `--compress-options=...`  --> ⚙️ Additional options for the `gzip` command (or other compression command). Example: `--compress-options="-9"` for maximum compression.
+    🔹 `--exclude=...`  --> ➖ Exclude files or directories from compression. Example: `--exclude=usr/share/doc/*` excludes all files in the `doc` directory.
+
+🛠 **Examples:**
+
+    $ dh_compress
+
+    🔹 Compresses all compressible files in Debian packages with default settings.
+
+    $ dh_compress --compress-options="-9"
+
+    🔹 Compresses files using the "-9" option for `gzip` (maximum compression).
+
+✅ **Simple Example:**
+
+    $ dh_compress --exclude=usr/share/man/man3
+
+    🔹 Compresses all files except those in `usr/share/man/man3`.  This is useful for saving processing time and space on files that do not benefit much from compression.

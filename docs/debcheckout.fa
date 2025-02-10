@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debcheckout` baraye gereftan (download) source code-e package-haye Debian az VCS (Version Control System), mesle Git ya Subversion, be kar mirevad.  In dastoor kar ra baraye modiriyate code va sakhte package-haye Debian asan mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debcheckout package_name`  --> 📦 Gereftan source code-e package az VCS pishfarz.
+    🔹 `debcheckout -d directory package_name`  --> 📂 Save kardane source code dar yek pooshe-ye moshakhas.
+    🔹 `debcheckout -v`  --> 📢 Namayesh dadane etela'at bishtar dar morede process.
+    🔹 `debcheckout -n`  --> ⛔️ Faghat neshan dadane dastoor-ha, vali anha ra ejra nakardan (dry run).
+
+🛠 **Mesal-ha:**
+
+    $ debcheckout hello
+
+    🔹 Gereftan source code-e package `hello` az VCS.
+
+    $ debcheckout -d my_hello_source hello
+
+    🔹 Gereftan source code-e package `hello` va zakhire kardane an dar pooshe-ye `my_hello_source`.
+
+✅ **Mesal sade:**
+
+    $ debcheckout -n hello
+
+    🔹 Faghat dastoor-haii ke `debcheckout` baraye gereftan source code-e `hello` ejra mikonad ra namayesh midahad, vali hich amali ejra nemishavad.  In baraye check kardane chigonegi-ye kar kardane dastoor mohem ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debcheckout` command is used to fetch (download) the source code of Debian packages from a Version Control System (VCS), such as Git or Subversion. It simplifies the process of code management and building Debian packages.
+
+⚙️ **Options:**
+    🔹 `debcheckout package_name`  --> 📦 Fetch the source code of the package from the default VCS.
+    🔹 `debcheckout -d directory package_name`  --> 📂 Save the source code in a specified directory.
+    🔹 `debcheckout -v`  --> 📢 Show more verbose information about the process.
+    🔹 `debcheckout -n`  --> ⛔️ Only show the commands, but do not execute them (dry run).
+
+🛠 **Examples:**
+
+    $ debcheckout hello
+
+    🔹 Fetch the source code of the `hello` package from VCS.
+
+    $ debcheckout -d my_hello_source hello
+
+    🔹 Fetch the source code of the `hello` package and save it in the `my_hello_source` directory.
+
+✅ **Simple Example:**
+
+    $ debcheckout -n hello
+
+    🔹 Shows the commands that `debcheckout` would execute to fetch the source code for `hello`, without actually executing them. This is useful for checking how the command works before running it.

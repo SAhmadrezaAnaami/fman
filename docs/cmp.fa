@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cmp` baraye moghayese do ta file estefade mishavad. Agar file-ha motefavet bashand, mahale avvalin tafavot ra neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cmp -l file1 file2`  --> 📜 Namayesh byte number va byte-haye motefavet (har byte be soorat octal namayesh dade mishavad).
+    🔹 `cmp -s file1 file2`  --> 🤫 Faghat status code barmigardanad (0 agar yeksan bashand, 1 agar motefavet bashand). Hich chizi dar terminal chap nemishavad.
+
+🛠 **Mesal-ha:**
+
+    $ cmp file1.txt file2.txt
+
+    🔹 Moghayese do ta file va agar tafavoti bashad, neshan midahad.
+
+    $ cmp -l file1.txt file2.txt
+
+    🔹 Namayesh hameye byte-haye motefavet ba shomare byte va meghdar octal.
+
+✅ **Mesal sade:**
+
+    $ cmp -s file1.txt file2.txt; echo $?
+
+    🔹  Ba estefade az `-s`, faghat status code ra barmigardanad. `echo $?` status code akharin dastoor ra chap mikonad. Agar file-ha yeksan bashand, `0` chap mishavad va agar motefavet bashand, `1` chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cmp` command is used to compare two files. If the files differ, it shows the location of the first difference.
+
+⚙️ **Options:**
+    🔹 `cmp -l file1 file2`  --> 📜 Display the byte number and differing bytes (each byte is shown in octal format).
+    🔹 `cmp -s file1 file2`  --> 🤫 Only return a status code (0 if identical, 1 if different).  Nothing is printed to the terminal.
+
+🛠 **Examples:**
+
+    $ cmp file1.txt file2.txt
+
+    🔹 Compare two files and show the first difference, if any.
+
+    $ cmp -l file1.txt file2.txt
+
+    🔹 Show all differing bytes with their byte number and octal value.
+
+✅ **Simple Example:**
+
+    $ cmp -s file1.txt file2.txt; echo $?
+
+    🔹  Using `-s`, only return the status code. `echo $?` prints the status code of the last command. If the files are identical, `0` is printed, and if they are different, `1` is printed.
+

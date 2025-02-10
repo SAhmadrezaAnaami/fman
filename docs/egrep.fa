@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `egrep` (Extended GREP) baraye gashtan dar file-ha baraye khat-haei ke ba yek olgooye khass motabeghat darand estefade mishavad. `egrep` nesbat be `grep` az olgohaye pishraftetari mesle regular expressions hemayat mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `egrep 'olgoo' file.txt` --> 🔍 Gashtan baraye olgoo dar file
+    🔹 `egrep -i 'olgoo' file.txt` --> 🔤 Gashtan baraye olgoo bedune tavajoh be horoof bozorg va koochak
+    🔹 `egrep -v 'olgoo' file.txt` --> 🚫 Namayesh khat-haei ke olgoo ra nadarand
+    🔹 `egrep -r 'olgoo' directory` --> 📁 Gashtan rekursiv dar directory ha va file ha dakhele aan
+    🔹 `egrep -n 'olgoo' file.txt` --> 🔢 Namayesh shomareye khat-haei ke olgoo ra darand
+
+🛠 **Mesal-ha:**
+
+    $ egrep 'word1|word2' file.txt
+
+    🔹 Gashtan baraye khat-haei ke shamel `word1` ya `word2` bashand.
+
+    $ egrep -i 'example' file.txt
+
+    🔹 Gashtan baraye `example` bedune tavajoh be inke `Example` ya `eXaMpLe` bashad.
+
+✅ **Mesal sade:**
+
+    $ egrep -n 'error' logfile.txt
+
+    🔹 Namayesh khat-haei az `logfile.txt` ke kalame `error` ra darand, hamrahe shomareye khat.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `egrep` command (Extended GREP) searches files for lines that match a given pattern. `egrep` supports more advanced patterns like regular expressions, compared to `grep`.
+
+⚙️ **Options:**
+    🔹 `egrep 'pattern' file.txt` --> 🔍 Search for the pattern in the file.
+    🔹 `egrep -i 'pattern' file.txt` --> 🔤 Search for the pattern ignoring case (case-insensitive).
+    🔹 `egrep -v 'pattern' file.txt` --> 🚫 Show lines that do *not* contain the pattern.
+    🔹 `egrep -r 'pattern' directory` --> 📁 Recursively search for the pattern in the directory and its files.
+    🔹 `egrep -n 'pattern' file.txt` --> 🔢 Show the line numbers of the lines that contain the pattern.
+
+🛠 **Examples:**
+
+    $ egrep 'word1|word2' file.txt
+
+    🔹 Search for lines that contain either `word1` or `word2`.
+
+    $ egrep -i 'example' file.txt
+
+    🔹 Search for `example` ignoring case, so it matches `Example`, `eXaMpLe`, etc.
+
+✅ **Simple Example:**
+
+    $ egrep -n 'error' logfile.txt
+
+    🔹 Displays lines from `logfile.txt` that contain the word `error`, along with their line numbers.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cvs-debc` baraye sakhtane package .deb az repository CVS (Concurrent Versions System) estefade mishavad. In dastoor, file-haye CVS ra migirad va az anha yek package Debian misazad ke ghabele nasb ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--cvsroot=PATH` --> 📁 Masiire asli CVS repository ra moshakhas mikonad. Agar moshakhas nashavad, az $CVSROOT estefade mishavad.
+    🔹 `--dest=PATH` --> 📦 Masiiri ke package .deb dar an zakhire mishavad ra moshakhas mikonad.
+    🔹 `--package=NAME` --> 🏷️ Esme package ra moshakhas mikonad. Agar moshakhas nashavad, az directory asli CVS estefade mishavad.
+    🔹 `--revision=REV` --> 🔄 Revision khasi az file-ha dar CVS ra entekhab mikonad. Agar moshakhas nashavad, akharin revision estefade mishavad.
+    🔹 `--tar-option=OPT` --> ⚙️ Gozine-haye ezafi baraye `tar` (tool-e archive-sazi) ra moshakhas mikonad.  Baraye mesal `--tar-option=--gzip` file .tar.gz misazad.
+
+🛠 **Mesal-ha:**
+
+    $ cvs-debc --package=myapp
+
+    🔹 Package .deb ba esme `myapp` az directory CVS asli sakhte mishavad.
+
+    $ cvs-debc --cvsroot=/path/to/cvs --package=myapp --dest=/tmp
+
+    🔹 Package .deb ba esme `myapp` az repository CVS dar `/path/to/cvs` sakhte shode va dar `/tmp` zakhire mishavad.
+
+✅ **Mesal sade:**
+
+    $ cvs-debc --package=myprogram --revision=1.5
+
+    🔹 Package .deb az revision 1.5 file-haye CVS sakhte mishavad va dar directory kari zakhire mishavad. Agar `myprogram` ghablan tashkhis dade shode bashad, in dastoor akharin revision ra sakht mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cvs-debc` command is used to build a .deb package from a CVS (Concurrent Versions System) repository. It takes files from CVS and creates a Debian package that can be installed.
+
+⚙️ **Options:**
+    🔹 `--cvsroot=PATH` --> 📁 Specifies the root path of the CVS repository. If not specified, $CVSROOT is used.
+    🔹 `--dest=PATH` --> 📦 Specifies the destination path where the .deb package will be saved.
+    🔹 `--package=NAME` --> 🏷️ Specifies the name of the package. If not specified, the base CVS directory name is used.
+    🔹 `--revision=REV` --> 🔄 Selects a specific revision of the files in CVS. If not specified, the latest revision is used.
+    🔹 `--tar-option=OPT` --> ⚙️ Specifies additional options for `tar` (the archiving tool). For example, `--tar-option=--gzip` will create a .tar.gz file.
+
+🛠 **Examples:**
+
+    $ cvs-debc --package=myapp
+
+    🔹 Creates a .deb package named `myapp` from the current CVS directory.
+
+    $ cvs-debc --cvsroot=/path/to/cvs --package=myapp --dest=/tmp
+
+    🔹 Creates a .deb package named `myapp` from the CVS repository at `/path/to/cvs` and saves it in `/tmp`.
+
+✅ **Simple Example:**
+
+    $ cvs-debc --package=myprogram --revision=1.5
+
+    🔹 Creates a .deb package from revision 1.5 of the CVS files and saves it in the current working directory.  If `myprogram` has been identified before, this command might attempt to build the latest revision.

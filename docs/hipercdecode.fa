@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hipercdecode` baraye decode kardane payam-haye encode shode ba format hiperc estefade mishavad.  In dastoor bishtar dar barname-haye radioee ke az protocol-haye khas estefade mikonand karbord darad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-i <file>`  --> 📥 Gereftane dade az yek file be jaye voroodi standart.
+    🔹 `-o <file>`  --> 📤 Neveshtane natije decode shode dar yek file be jaye khorooji standart.
+    🔹 `-v`        --> 📢 Namayeshe etela'ate bishtar dar morede decode shodan.
+    🔹 `-h`        --> ℹ️ Namayeshe rahnama va komak.
+
+🛠 **Mesal-ha:**
+
+    $ hipercdecode < input.hiperc
+
+    🔹 Decode kardane dade az `input.hiperc` va chap kardane natije dar terminal.
+
+    $ hipercdecode -i input.hiperc -o output.txt
+
+    🔹 Decode kardane dade az `input.hiperc` va zakhire kardane natije dar `output.txt`.
+
+✅ **Mesal sade:**
+
+    $ hipercdecode -v < sample.hiperc
+
+    🔹 Decode kardane dade az `sample.hiperc` va namayeshe etela'ate bishtar dar morede process decode dar terminal.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hipercdecode` command is used to decode messages encoded in the HiPerC format. This command is often used in radio applications that use specific protocols.
+
+⚙️ **Options:**
+    🔹 `-i <file>`  --> 📥 Take input data from a file instead of standard input.
+    🔹 `-o <file>`  --> 📤 Write the decoded output to a file instead of standard output.
+    🔹 `-v`        --> 📢 Display verbose information about the decoding process.
+    🔹 `-h`        --> ℹ️ Display help and usage information.
+
+🛠 **Examples:**
+
+    $ hipercdecode < input.hiperc
+
+    🔹 Decode data from `input.hiperc` and print the result to the terminal.
+
+    $ hipercdecode -i input.hiperc -o output.txt
+
+    🔹 Decode data from `input.hiperc` and save the result to `output.txt`.
+
+✅ **Simple Example:**
+
+    $ hipercdecode -v < sample.hiperc
+
+    🔹 Decode data from `sample.hiperc` and display verbose information about the decoding process in the terminal.

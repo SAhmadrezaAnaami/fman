@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-ttb` yek dastoor baraye tabdil matn be braille (barjaste nevisi) ast, bejoz braille grade yek va grade doye amrikayi. In dastoor be shoma komak mikonad matn ra be shekle braille dar biarid, keh baraye kasanike binaiee nadarand ya binaiee kam darand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `brltty-ttb -t <table_name> <input_file>` --> 🔣 Estefade az jadvale braille makhsus baraye tabdil. (`table_name` esme jadval va `input_file` esme file morede nazar ast)
+    🔹 `brltty-ttb -o <output_file> <input_file>` --> 📤 Zakhireye natijeye braille dar yek file jadid. (`output_file` esme file jahde zakhire va `input_file` esme file asli ast.)
+    🔹 `brltty-ttb -l` --> 📃 List kardane hameye jadval haye braille dastres پذیر.
+    🔹 `brltty-ttb -v` --> 📢 Chap kardane version brltty-ttb.
+
+🛠 **Mesal-ha:**
+
+    $ brltty-ttb matn.txt
+
+    🔹 Tabdil file `matn.txt` be braille ba estefade az jadvale pishfarz.
+
+    $ brltty-ttb -t persian.ctb matn.txt
+
+    🔹 Tabdil file `matn.txt` be braille ba estefade az jadvale `persian.ctb`.
+
+    $ brltty-ttb -o braille_matn.txt matn.txt
+
+    🔹 Tabdil file `matn.txt` be braille va zakhireye an dar file `braille_matn.txt`.
+
+✅ **Mesal sade:**
+
+    $ brltty-ttb -l
+
+    🔹 List hameye jadval haye braille dastres پذیر ra namayesh midahad. In komak mikonad ta jadval morede niaz ra peyda konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-ttb` command is a tool for converting text into braille (except US Grade 1 and US Grade 2 Braille).  It helps transform text into braille format, which is beneficial for individuals who are blind or visually impaired.
+
+⚙️ **Options:**
+    🔹 `brltty-ttb -t <table_name> <input_file>` --> 🔣 Use a specific braille table for the conversion. (`table_name` is the name of the table, and `input_file` is the name of the file.)
+    🔹 `brltty-ttb -o <output_file> <input_file>` --> 📤 Save the braille output to a new file. (`output_file` is the destination file, and `input_file` is the source file.)
+    🔹 `brltty-ttb -l` --> 📃 List all available braille translation tables.
+    🔹 `brltty-ttb -v` --> 📢 Prints the version of brltty-ttb.
+
+🛠 **Examples:**
+
+    $ brltty-ttb text.txt
+
+    🔹 Convert the file `text.txt` to braille using the default table.
+
+    $ brltty-ttb -t persian.ctb text.txt
+
+    🔹 Convert the file `text.txt` to braille using the `persian.ctb` table.
+
+    $ brltty-ttb -o braille_text.txt text.txt
+
+    🔹 Convert the file `text.txt` to braille and save it in the `braille_text.txt` file.
+
+✅ **Simple Example:**
+
+    $ brltty-ttb -l
+
+    🔹 Displays a list of all available braille translation tables.  This helps you find the correct table to use for your specific needs.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-mergechangelogs` baraye yeki kardan (merge kardan) chand ta file `changelog` estefade mishavad. File-haye `changelog` oboordat (changes) baraye package-haye Debian ro neshoon midan. In dastoor be dard mikhore vaghti ke shoma chand ta oboordat ro az jaye mokhtalef jam kardin va mikhayin hameye inaro yeki konin.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v version`  --> 🏷️  Version jadid ro baraye changelog set mikone.
+    🔹 `-m maintainer` --> 👤 Maintainer jadid ro baraye changelog set mikone.
+    🔹 `-a`          --> ➕  Hameye file-haye changelog ro yeki mikone, hata file-haye khali ro.
+    🔹 `-c`          --> 🧹 File-haye changelog duplicate ro hazf mikone.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-mergechangelogs changelog.part.* > changelog
+
+    🔹 In mesal hameye file-haye ke ba `changelog.part.` shoroo mishan ro yeki mikone va natije ro too file `changelog` save mikone.
+
+    $ dpkg-mergechangelogs -v 1.2-3 changelog.part.* > changelog
+
+    🔹 In mesal hameye file-haye `changelog.part.*` ro yeki mikone va version ro be `1.2-3` taghir mide.
+
+✅ **Mesal sade:**
+
+    $ dpkg-mergechangelogs changelog.head changelog.body > changelog.final
+
+    🔹 In dastoor file-haye `changelog.head` va `changelog.body` ro yeki mikone va natije ro dar `changelog.final` zakhire mikone. In be shoma komak mikone ke etela'at az file-haye mokhtalef ro dar yek file `changelog` jam konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-mergechangelogs` command is used to merge multiple `changelog` files into a single one. Changelog files document changes for Debian packages. This command is useful when you have collected changes from different sources and need to combine them into a single, unified changelog.
+
+⚙️ **Options:**
+    🔹 `-v version`  --> 🏷️ Set the new version for the changelog.
+    🔹 `-m maintainer` --> 👤 Set the new maintainer for the changelog.
+    🔹 `-a`          --> ➕ Merge all changelog files, even empty ones.
+    🔹 `-c`          --> 🧹 Remove duplicate changelog entries.
+
+🛠 **Examples:**
+
+    $ dpkg-mergechangelogs changelog.part.* > changelog
+
+    🔹 This example merges all files starting with `changelog.part.` and saves the result to a file named `changelog`.
+
+    $ dpkg-mergechangelogs -v 1.2-3 changelog.part.* > changelog
+
+    🔹 This example merges all `changelog.part.*` files and changes the version to `1.2-3`.
+
+✅ **Simple Example:**
+
+    $ dpkg-mergechangelogs changelog.head changelog.body > changelog.final
+
+    🔹 This command merges the files `changelog.head` and `changelog.body` and saves the result in `changelog.final`. It helps you consolidate information from different files into a single changelog.

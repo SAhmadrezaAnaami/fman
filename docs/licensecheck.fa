@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `licensecheck` baraye barresi va taeen nooe mojavez (license) file-ha dar yek projeh ya directory estefade mishavad.  In dastoor komak mikonad ta az ehtemal vojood mojavez-haye motenaqez ya gheir motabegh ba siyaasat-haye sherkati agah shavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `licensecheck .`  -->  📂 Barresi hame file-ha dar directory فعلی (fe'li)
+    🔹 `licensecheck -r`  -->  🔄 Barresi rekursiv (recursive) dar hameye زیرپوشه‌ها (zirpooshe-ha)
+    🔹 `licensecheck -f <format>`  -->  📊 Namayesh natije be formathaaye mokhtalef (mesl CSV, JSON)
+    🔹 `licensecheck -n`  --> 🚫 Faghat namayesh file-haee ke mojavez-e moshkel darand.
+
+🛠 **Mesal-ha:**
+
+    $ licensecheck .
+
+    🔹 Barresi mojavez-haye hameye file-ha dar directory فعلی (fe'li).
+
+    $ licensecheck -r
+
+    🔹 Barresi rekursiv (recursive) dar hameye directory-ha va zirpooshe-ha.
+
+✅ **Mesal sade:**
+
+    $ licensecheck -n .
+
+    🔹 Faghat file-haee ra namayesh midahad ke ba mojavez-haye نامشخص (namoshakhas) ya moshkeldar mark shodeand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `licensecheck` command is used to scan files for license information in a project or directory. It helps identify potential licensing conflicts or non-compliant files based on company policies.
+
+⚙️ **Options:**
+    🔹 `licensecheck .`  -->  📂 Scan all files in the current directory.
+    🔹 `licensecheck -r`  -->  🔄 Scan recursively through all subdirectories.
+    🔹 `licensecheck -f <format>`  -->  📊 Output results in different formats (e.g., CSV, JSON).
+    🔹 `licensecheck -n`  --> 🚫 Only show files with problematic licenses.
+
+🛠 **Examples:**
+
+    $ licensecheck .
+
+    🔹 Scan all files in the current directory for licenses.
+
+    $ licensecheck -r
+
+    🔹 Recursively scan all files and subdirectories for licenses.
+
+✅ **Simple Example:**
+
+    $ licensecheck -n .
+
+    🔹 Shows only those files that are flagged as having unclear or problematic licenses.

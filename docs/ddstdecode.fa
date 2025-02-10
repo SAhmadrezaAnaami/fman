@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ddstdecode` baraye baz kardane file-haye `.dds` (DirectDraw Surface) estefade mishavad va anha ra be format-haye dige mesle `.png` ya `.bmp` tabdil mikonad. In dastoor bishtar baraye kasani ke ba grafic va bazi-sazi kar mikonan mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `ddstdecode input.dds output.png` --> 🖼️ Tabdil file `.dds` be `.png`. Agar `output.png` vojood nadashte bashad, yek file jadid dorost mikonad.
+    🔹 `ddstdecode input.dds` --> 🖼️ Tabdil file `.dds` be `.bmp` ba hamin name dar haman directory. Agar name file kharoji ra moshakhas nakonid, be soorate pishfarz be `.bmp` tabdil mishavad.
+    🔹 `ddstdecode -r input.dds` --> 🔄 Bargardandan rang-ha (red and blue channels). In gozine vaghti be kar miayad ke rang-haye tasvir dar format `.dds` ghalat namayesh dade shavand.
+    🔹 `ddstdecode -m` --> ℹ️ Namayesh etela'at bishtar dar morede file `.dds` be jaye tabdil an.
+
+🛠 **Mesal-ha:**
+
+    $ ddstdecode texture.dds texture.png
+
+    🔹 Tabdil `texture.dds` be `texture.png`.
+
+    $ ddstdecode model.dds
+
+    🔹 Tabdil `model.dds` be `model.bmp`.
+
+✅ **Mesal sade:**
+
+    $ ddstdecode icon.dds icon.png
+
+    🔹 File `icon.dds` ra be `icon.png` tabdil mikonad. Agar icon.png dar hale hazer vojood nadashte bashad, dastoor `ddstdecode` yek file jadid ba name `icon.png` misazad va tasvir ra dar an zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ddstdecode` command is used to decode `.dds` (DirectDraw Surface) files and convert them to other image formats like `.png` or `.bmp`. This command is especially useful for those working with graphics and game development.
+
+⚙️ **Options:**
+    🔹 `ddstdecode input.dds output.png` --> 🖼️ Convert the `.dds` file to `.png`.  If `output.png` does not exist, it will create a new file.
+    🔹 `ddstdecode input.dds` --> 🖼️ Convert the `.dds` file to `.bmp` with the same name in the same directory. If you don't specify an output filename, it defaults to `.bmp`.
+    🔹 `ddstdecode -r input.dds` --> 🔄 Reverse the red and blue channels.  This option is useful if the colors in the `.dds` image are displayed incorrectly.
+    🔹 `ddstdecode -m` --> ℹ️ Show more information about the `.dds` file instead of converting it.
+
+🛠 **Examples:**
+
+    $ ddstdecode texture.dds texture.png
+
+    🔹 Converts `texture.dds` to `texture.png`.
+
+    $ ddstdecode model.dds
+
+    🔹 Converts `model.dds` to `model.bmp`.
+
+✅ **Simple Example:**
+
+    $ ddstdecode icon.dds icon.png
+
+    🔹 Converts the file `icon.dds` to `icon.png`. If `icon.png` does not currently exist, the `ddstdecode` command will create a new file named `icon.png` and store the image in it.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dcut` baraye gereftan (extract) ghesmati az khat-ha (lines) dar yek file ya az voroodi (input) estefade mishavad. Manand gereftan chand character az har khat, ya gereftan field-ha (sotoon-ha) be asase joda konandeha (delimiters) mesle `,` ya `tab`.
+
+⚙️ **Gozine-ha:**
+    🔹 `dcut -c LIST`  --> ✂️ Gereftan character-haye moshakhas shode az har khat.  `LIST` mitoone yek adad, yek range (mesle `1-5`), ya yek list az adad-ha ba comma (`,`) bashad.
+    🔹 `dcut -f LIST -d DELIMITER` --> 🗂️ Gereftan field-ha be asase yek joda konande. `DELIMITER` joda konande ra moshakhas mikonad (mesle `,` ya `\t`). `LIST` mesle gozine `-c` ast.
+    🔹 `dcut -d DELIMITER` --> ➗  Moshakhas kardane joda konande (delimeter). agar estefade nashavad, `tab` be onvane joda konande dar nazar gerefte mishavad.
+    🔹 `dcut -s` --> 🤫 Khat-haee ke joda konande (delimeter) ra nadarand, ra namayesh nemidehad (suppress).
+
+🛠 **Mesal-ha:**
+
+    $ echo "Salam,Donya" | dcut -d, -f2
+
+    🔹 Chap kardane field dovom (`Donya`) az reshte "Salam,Donya" ba joda konandeye `,`.
+
+    $ cat file.txt | dcut -c 1-5
+
+    🔹 Gereftan 5 character aval az har khat dar `file.txt`.
+
+✅ **Mesal sade:**
+
+    $ echo "Name:Ali,Age:30" | dcut -d: -f2 | dcut -d, -f1
+
+    🔹 Aval reshte ra ba `:` joda mikonad va `Ali,Age:30` ra barmigardanad, pas az an ba `,` joda mikonad va `Ali` ra barmigardanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dcut` command is used to extract sections from each line of a file or standard input. It allows you to select specific characters or fields based on a delimiter.
+
+⚙️ **Options:**
+    🔹 `dcut -c LIST`  --> ✂️ Extract specified characters from each line. `LIST` can be a single number, a range (e.g., `1-5`), or a comma-separated list of numbers.
+    🔹 `dcut -f LIST -d DELIMITER` --> 🗂️ Extract specified fields based on a delimiter.  `DELIMITER` specifies the delimiter (e.g., `,` or `\t`). `LIST` is the same as in the `-c` option.
+    🔹 `dcut -d DELIMITER` --> ➗  Specify the delimiter character. If not used, `tab` is assumed as the delimiter.
+    🔹 `dcut -s` --> 🤫 Suppress lines that do not contain the delimiter character.
+
+🛠 **Examples:**
+
+    $ echo "Hello,World" | dcut -d, -f2
+
+    🔹 Prints the second field (`World`) from the string "Hello,World" using `,` as the delimiter.
+
+    $ cat file.txt | dcut -c 1-5
+
+    🔹 Extracts the first 5 characters from each line in `file.txt`.
+
+✅ **Simple Example:**
+
+    $ echo "Name:Alice,Age:25" | dcut -d: -f2 | dcut -d, -f1
+
+    🔹 First separates the string by `:`, returning `Alice,Age:25`, then separates that by `,` and returns `Alice`.

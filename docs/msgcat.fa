@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgcat` baraye chasbandan (concatenate) va ya moratab kardan file-haye payam (message files) estefade mishavad. In dastoor be shoma komak mikonad ke file-haye `po` ra ke baraye tarjome hastand, ba ham yekja konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `msgcat --output=FILE ya -o FILE` --> 📤 Natije ra dar yek file zakhire mikonad.
+    🔹 `msgcat --no-location`         --> 📍 Mokaeyyat (location) file-haye asli ra hazf mikonad.
+    🔹 `msgcat --use-first`            --> 🥇 Az avalin file payam baraye etela’at заголовки (header) estefade mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ msgcat file1.po file2.po
+
+    🔹 File-haye `file1.po` va `file2.po` ra be ham michasbanad va dar khروجی standart chap mikonad.
+
+    $ msgcat -o combined.po file1.po file2.po file3.po
+
+    🔹 File-haye `file1.po`, `file2.po`, va `file3.po` ra be ham michasbanad va natije ra dar file `combined.po` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ msgcat --use-first -o newfile.po template.po translations.po
+
+    🔹 `template.po` va `translations.po` ra be ham michasbanad, az etela'at `template.po` baraye header estefade mikonad va natije ra dar `newfile.po` zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgcat` command is used to concatenate and merge message files. This command helps you combine `.po` files, which are used for translations.
+
+⚙️ **Options:**
+    🔹 `msgcat --output=FILE or -o FILE` --> 📤 Saves the output to a specified file.
+    🔹 `msgcat --no-location`         --> 📍 Removes references to the original file locations.
+    🔹 `msgcat --use-first`            --> 🥇 Uses the first message file for the header information.
+
+🛠 **Examples:**
+
+    $ msgcat file1.po file2.po
+
+    🔹 Concatenates `file1.po` and `file2.po` and prints the result to standard output.
+
+    $ msgcat -o combined.po file1.po file2.po file3.po
+
+    🔹 Concatenates `file1.po`, `file2.po`, and `file3.po` and saves the result to the `combined.po` file.
+
+✅ **Simple Example:**
+
+    $ msgcat --use-first -o newfile.po template.po translations.po
+
+    🔹 Concatenates `template.po` and `translations.po`, uses the header information from `template.po`, and saves the result to `newfile.po`.

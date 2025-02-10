@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `checkbashisms` baraye baresi скрипт-haye Bash az nazar estandard-haye POSIX estefade mishavad. In dastoor komak mikonad ta etminan hasel shavad ke скрипт-haye shoma dar system-haye mokhtalef kar mikonand va faghat be khasusiyat-haye Bash motakei nistand.  Be ebarate digar, agar mikhayid скрипт-haye shoma rooye shell-haye digar mesle `dash` ham dorost kar konand, az in dastoor estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `checkbashisms script.sh`  -->  📜 Baresi скрипт baraye estelahat bash-khass.
+    🔹 `checkbashisms -p script.sh` -->  👀 Khatar-haye estefade az `printf` ro ham neshoon mide (chapo konande).
+    🔹 `checkbashisms -d script.sh` -->  🔎 Neshoon dadane etela'at debug bishtar dar morede chegoonegi baresi.
+    🔹 `checkbashisms -q script.sh` -->  🤫 Sedaye kharoji ro kam mikone (faghat khata-ha ro neshoon mide).
+
+🛠 **Mesal-ha:**
+
+    $ checkbashisms myscript.sh
+
+    🔹 Baresi `myscript.sh` baraye khasusiyat-haye Bash.
+
+    $ checkbashisms -p myotherscript.sh
+
+    🔹 Baresi `myotherscript.sh`, shamel khatar-haye `printf`.
+
+✅ **Mesal sade:**
+
+    $ checkbashisms my_simple_script.sh
+    my_simple_script.sh: line 5: warning: using bash-specific feature: arrays
+
+    🔹 In namayesh mide ke line 5 az скрипт `my_simple_script.sh` az array-ha estefade karde ke yek khasusiat-haye bash ast va shell-haye digar shayad dorost kar nakonand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `checkbashisms` command is used to check Bash scripts for POSIX compliance. It helps ensure your scripts are portable across different systems and don't rely solely on Bash-specific features.  In other words, if you want your scripts to work correctly on other shells like `dash`, use this command.
+
+⚙️ **Options:**
+    🔹 `checkbashisms script.sh`  -->  📜 Check the script for Bash-specific constructs.
+    🔹 `checkbashisms -p script.sh` -->  👀 Also warn about the use of `printf`.
+    🔹 `checkbashisms -d script.sh` -->  🔎 Show more debugging information about the checks performed.
+    🔹 `checkbashisms -q script.sh` -->  🤫 Reduce output (only show errors).
+
+🛠 **Examples:**
+
+    $ checkbashisms myscript.sh
+
+    🔹 Checks `myscript.sh` for Bash-specific features.
+
+    $ checkbashisms -p myotherscript.sh
+
+    🔹 Checks `myotherscript.sh`, including warnings about `printf`.
+
+✅ **Simple Example:**
+
+    $ checkbashisms my_simple_script.sh
+    my_simple_script.sh: line 5: warning: using bash-specific feature: arrays
+
+    🔹 This indicates that line 5 of the `my_simple_script.sh` script uses arrays, which is a Bash-specific feature, and other shells may not work correctly.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gettextize` baraye amade sazi-ye yek project baraye tarjome be zaban-haye digar be vasileye gettext estefade mishavad. Yani dastoor file-haye lazem ra misazad ta shoma betavanid matn-haye project-e khod ra tarjome konid. 🌍
+
+⚙️ **Gozine-ha:**
+    🔹 `gettextize --force` --> 💪 Agar file-ha ghablan vojood dashte bashand, anha ra dobare benevisid.  
+    🔹 `gettextize --copy` --> 📝 File-haye standard gettext ra copy konid, be jaye sakhtan link-haye symbolic.  
+    🔹 `gettextize --intl` --> 🌐 Estefade az intltool baraye tarjome, agar project shoma az an estefade mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gettextize
+
+    🔹 Project-e shoma ra baraye tarjome amade mikonad ba estefade az setting-haye pishfarz.
+
+    $ gettextize --force --copy
+
+    🔹 File-haye mojood ra dobare minevisad va az copy be jaye link estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ gettextize
+
+    🔹 Ba ejraye in dastoor, file-haye lazem baraye tarjome dar directory-e project-e shoma sakhte mishavand, shamel `po/` baraye file-haye tarjome shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gettextize` command prepares a project for translation into other languages using gettext.  It sets up the necessary files so you can translate the text in your project. 🌍
+
+⚙️ **Options:**
+    🔹 `gettextize --force` --> 💪 Overwrite existing files if they already exist.
+    🔹 `gettextize --copy` --> 📝 Copy the standard gettext files, rather than creating symbolic links.
+    🔹 `gettextize --intl` --> 🌐 Use intltool for translation, if your project uses it.
+
+🛠 **Examples:**
+
+    $ gettextize
+
+    🔹 Prepares your project for translation using default settings.
+
+    $ gettextize --force --copy
+
+    🔹 Overwrites existing files and uses copy instead of links.
+
+✅ **Simple Example:**
+
+    $ gettextize
+
+    🔹 By running this command, the files necessary for translation are created in your project directory, including `po/` for translated files.

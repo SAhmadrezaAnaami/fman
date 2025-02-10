@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chown` baraye tagheer daaran file-ha va pooshe-ha be kar miravad. Shoma mitavanid daaran ra be yek user ya yek group tagheer dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `chown user file`  --> 👤 Tagheer daaran file be yek user.
+    🔹 `chown user:group file` --> 👥 Tagheer daaran file be yek user va group.
+    🔹 `chown -R user:group directory` --> 📁 Be soorat tekrar shavande (recursive) daaran hameye file-ha va pooshe-ha dakhele directory ra tagheer midahad.
+
+🛠 **Mesal-ha:**
+
+    $ chown ali myfile.txt
+
+    🔹 Daaran file `myfile.txt` ra be user `ali` tagheer midahad.
+
+    $ chown reza:developers mydirectory
+
+    🔹 Daaran pooshe `mydirectory` ra be user `reza` va group `developers` tagheer midahad.
+
+✅ **Mesal sade:**
+
+    $ chown -R webuser:webgroup /var/www/html
+
+    🔹 Be soorat tekrar shavande, daaran hameye file-ha va pooshe-ha dar pooshe `/var/www/html` ra be user `webuser` va group `webgroup` tagheer midahad. In dar website-ha kheili estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chown` command is used to change the owner of files and directories. You can change the owner to a specific user or a specific user and group.
+
+⚙️ **Options:**
+    🔹 `chown user file` --> 👤 Change the owner of the file to the specified user.
+    🔹 `chown user:group file` --> 👥 Change the owner of the file to the specified user and group.
+    🔹 `chown -R user:group directory` --> 📁 Recursively change the owner of all files and directories inside the specified directory.
+
+🛠 **Examples:**
+
+    $ chown ali myfile.txt
+
+    🔹 Changes the owner of the file `myfile.txt` to the user `ali`.
+
+    $ chown reza:developers mydirectory
+
+    🔹 Changes the owner of the directory `mydirectory` to the user `reza` and the group `developers`.
+
+✅ **Simple Example:**
+
+    $ chown -R webuser:webgroup /var/www/html
+
+    🔹 Recursively changes the owner of all files and directories in the `/var/www/html` directory to the user `webuser` and the group `webgroup`. This is very common in web hosting scenarios.

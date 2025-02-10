@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_auto_install` baraye nasb kardan file-ha va pooshe-ha az sakhteman-e yak project (build directory) be directory-e nasb (installation directory) estefade mishavad. In dastoor ghesmati az Debian helper (dh) ast va dar sakht Debian packages karbord darad. Be soorat khodkar (automatically) file-ha ro az directory-e `debian/tmp` be directory-e `debian/install` montaghel mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--destdir pooshe` --> 📁 Moshakhas kardane directory-e maqsad baraye nasb (installation). Agar moshakhas nashavad, `debian/tmp` estefade mishavad.
+    🔹 `--name name_package` --> 📦 Agar chand package sakhte shode bashad, name package ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_auto_install
+
+    🔹 Nasb file-ha az `debian/tmp` be `debian/install`.
+
+    $ dh_auto_install --destdir=tmp/install
+
+    🔹 Nasb file-ha be directory `tmp/install` be jaye `debian/tmp`.
+
+✅ **Mesal sade:**
+
+    $ dh_auto_install --name foo
+
+    🔹 Agar dar `debian/control` chand package tarif shode bashad, in dastoor file-ha ro baraye package ba name `foo` nasb mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_auto_install` command is used to install files and directories from a project's build directory into the installation directory. This command is part of the Debian helper (dh) suite and is used in building Debian packages. It automatically moves files from the `debian/tmp` directory to the `debian/install` directory.
+
+⚙️ **Options:**
+    🔹 `--destdir directory` --> 📁 Specifies the destination directory for the installation. If not specified, `debian/tmp` is used.
+    🔹 `--name package_name` --> 📦 If multiple packages are being built, specifies the name of the package to install.
+
+🛠 **Examples:**
+
+    $ dh_auto_install
+
+    🔹 Installs files from `debian/tmp` to `debian/install`.
+
+    $ dh_auto_install --destdir=tmp/install
+
+    🔹 Installs files to the `tmp/install` directory instead of `debian/tmp`.
+
+✅ **Simple Example:**
+
+    $ dh_auto_install --name foo
+
+    🔹 If multiple packages are defined in `debian/control`, this command installs the files for the package named `foo`.

@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-text-editor` yek barnameye moharrer-e matni (text editor) sade va rahat baraye system-haye Linux ba desktop GNOME ast. Shoma mitavanid az an baraye neveshtan, baz kardan, va zakhire kardane file-haye matni estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-text-editor file_name`  --> 📝 Baz kardane `file_name` baraye virayesh. Agar file vojood nadashte bashad, yek file jadid misazad.
+    🔹 `gnome-text-editor --new-window` --> ➕ Baz kardane yek panjere jadid az moharrer-e matni.
+    🔹 `gnome-text-editor --display=DISPLAY` --> 🖥️ Baz kardane moharrer-e matni dar yek display khass (dar soorati ke chand display darid).
+
+🛠 **Mesal-ha:**
+
+    $ gnome-text-editor myfile.txt
+
+    🔹 Baz kardane file'e `myfile.txt`. Agar file vojood nadashte bashad, yek file jadid ba hamin esm misazad.
+
+    $ gnome-text-editor --new-window
+
+    🔹 Baz kardane yek panjere jadid az moharrer-e matni, dar surati ke mikhahid chand file ra hamzaman baz negah darid.
+
+✅ **Mesal sade:**
+
+    $ gnome-text-editor
+    🔹 Agar hich file'i rooye command line nadehid, moharrer-e matni yek panjereye khali baz mikonad ke shoma mitavanid matn ra vared konid va zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-text-editor` is a simple and user-friendly text editor for Linux systems with the GNOME desktop environment. You can use it to write, open, and save text files.
+
+⚙️ **Options:**
+    🔹 `gnome-text-editor file_name` --> 📝 Opens `file_name` for editing. Creates a new file if it doesn't exist.
+    🔹 `gnome-text-editor --new-window` --> ➕ Opens a new window of the text editor.
+    🔹 `gnome-text-editor --display=DISPLAY` --> 🖥️ Opens the text editor on a specific display (if you have multiple displays).
+
+🛠 **Examples:**
+
+    $ gnome-text-editor myfile.txt
+
+    🔹 Opens the file `myfile.txt`. If the file doesn't exist, it creates a new file with that name.
+
+    $ gnome-text-editor --new-window
+
+    🔹 Opens a new window of the text editor, in case you want to keep multiple files open simultaneously.
+
+✅ **Simple Example:**
+
+    $ gnome-text-editor
+    🔹 If you don't provide any filename on the command line, the text editor opens an empty window where you can enter text and save it.

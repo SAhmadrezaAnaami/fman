@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `captoinfo` baraye tabdil dade-haye `terminfo` be formate `termcap` estefade mishavad. Yani etela'ati ke darbareye terminal dar formate jadidtar `terminfo` zakhire shode ast, be formate ghadimi tar `termcap` tabdil mikonad. In be dard mikhore vaghti barnamehaye ghadimi faghat az formate `termcap` poshtibani mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `-v`  --> 🗣️ Namayesh etela'ate bishtar dar morede chگونگی tabdil.
+    🔹 `-V`  --> 👓️ Namayesh version `captoinfo`.
+    🔹 `filename`  --> 🗂️ Esme file `terminfo` ke mikhahid tabdil konid. Agar esm file ra nadehid, az vorudi standard mikhanad.
+
+🛠 **Mesal-ha:**
+
+    $ captoinfo xterm
+    
+    🔹 Tabdil etela'at `terminfo` baraye terminal `xterm` be formate `termcap` va chap kardane an dar khoruji.
+
+    $ captoinfo -v myterminal.terminfo > myterminal.termcap
+    
+    🔹 Tabdil etela'at `terminfo` az file `myterminal.terminfo` ba etela'ate bishtar (verbose) va zakhire kardane an dar file `myterminal.termcap`.
+
+✅ **Mesal sade:**
+
+    $ captoinfo vt100 | grep bel
+    
+    🔹 Tabdil etela'at `terminfo` baraye terminal `vt100` va peyda kardane ghesmat `bel` (zang). In yek rah baraye didan ast ke aya `termcap` sahih sakhte shode ast ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `captoinfo` command converts `terminfo` data into the `termcap` format. This means it translates terminal information stored in the newer `terminfo` format to the older `termcap` format. This is useful when running older programs that only support `termcap`.
+
+⚙️ **Options:**
+    🔹 `-v`  --> 🗣️  Display verbose information about the conversion process.
+    🔹 `-V`  --> 👓️  Display the version of `captoinfo`.
+    🔹 `filename`  --> 🗂️  The name of the `terminfo` file to convert. If no filename is given, it reads from standard input.
+
+🛠 **Examples:**
+
+    $ captoinfo xterm
+
+    🔹 Converts the `terminfo` data for the `xterm` terminal to the `termcap` format and prints it to the output.
+
+    $ captoinfo -v myterminal.terminfo > myterminal.termcap
+
+    🔹 Converts the `terminfo` data from the file `myterminal.terminfo` with verbose output and saves it to the file `myterminal.termcap`.
+
+✅ **Simple Example:**
+
+    $ captoinfo vt100 | grep bel
+
+    🔹 Converts the `terminfo` data for the `vt100` terminal and searches for the `bel` (bell) capability. This is a way to verify that the `termcap` is being generated correctly.

@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-makeuri` baraye dorost kardane URI (Uniform Resource Identifier) baraye dastgah haye chapgar (printer) HP estefade mishavad. In dastoor komak mikonad ke shoma be chapgar az rah door (az tarigh network) vasl shavid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-t <protocol>` --> 🌐 Noe protocol morede estefade ra moshakhas mikonad (mesl: net, socket, ipp).
+    🔹 `-d <device>`   --> 🖨️ Adres dastgah ya hostname chapgar ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-makeuri -t net -d 192.168.1.100
+
+    🔹 Yek URI baraye chapgari ba adres IP 192.168.1.100 dorost mikonad ke az protocol net estefade mikonad.
+
+    $ hp-makeuri -t socket -d printer.example.com
+
+    🔹 Yek URI baraye chapgari ba hostname printer.example.com dorost mikonad ke az protocol socket estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ hp-makeuri -t ipp -d 192.168.1.100:631
+
+    🔹 URI ipp://192.168.1.100:631 ra barmigardanad, ke neshan midahad chapgar az protocol IPP dar port 631 estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-makeuri` command is used to create a URI (Uniform Resource Identifier) for HP printers. This command helps you connect to a printer remotely (via a network).
+
+⚙️ **Options:**
+    🔹 `-t <protocol>` --> 🌐 Specifies the protocol to be used (e.g., net, socket, ipp).
+    🔹 `-d <device>`   --> 🖨️ Specifies the device address or hostname of the printer.
+
+🛠 **Examples:**
+
+    $ hp-makeuri -t net -d 192.168.1.100
+
+    🔹 Creates a URI for a printer with the IP address 192.168.1.100 using the net protocol.
+
+    $ hp-makeuri -t socket -d printer.example.com
+
+    🔹 Creates a URI for a printer with the hostname printer.example.com using the socket protocol.
+
+✅ **Simple Example:**
+
+    $ hp-makeuri -t ipp -d 192.168.1.100:631
+
+    🔹 Returns the URI ipp://192.168.1.100:631, indicating that the printer uses the IPP protocol on port 631.

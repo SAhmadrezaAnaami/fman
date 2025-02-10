@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lspci` baraye didan etela'at sakht-afzari (hardware) ke be bus PCI moteasel ast estefade mishavad. Yani, mitavanid bebinid che card-ha va device-haye digari rooye madar-bord (motherboard) shoma nasb shode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `lspci`      --> 📜 Namayesh list sade device-ha
+    🔹 `lspci -v`  --> 👀 Namayesh etela'at bishtar (verbose) darbareye har device, mesle driver-ha va setting-ha
+    🔹 `lspci -vv` --> 🔍 Namayesh etela'at kheili bishtar. Ehtemalan etela'ati ke kamtar estefade mishavad.
+    🔹 `lspci -k`  --> 🔗 Namayesh module haye kernel (driver ha) ke ba har device estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ lspci
+
+    🔹 List sade hameye device-ha ra neshan midahad.
+
+    $ lspci -v | less
+
+    🔹 Etela'at bishtar ra namayesh midahad va az `less` estefade mikonad ta natije ha be tartib safhe safhe namayesh dade shavad.
+
+✅ **Mesal sade:**
+
+    $ lspci -k | grep "VGA"
+
+    🔹 List device haye graphic (VGA) ra ba driver haye mored estefade neshan midahad. In mesal az `grep` baraye peyda kardane khat haei ke "VGA" darand estefade mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lspci` command is used to display information about PCI buses in the system and devices connected to them.  It helps you identify hardware components attached to your motherboard.
+
+⚙️ **Options:**
+    🔹 `lspci`      --> 📜 Show a basic list of devices.
+    🔹 `lspci -v`  --> 👀 Show verbose information about each device, like drivers and settings.
+    🔹 `lspci -vv` --> 🔍 Show even more detailed (very verbose) information. Potentially less commonly used data.
+    🔹 `lspci -k`  --> 🔗 Show kernel modules (drivers) used by each device.
+
+🛠 **Examples:**
+
+    $ lspci
+
+    🔹 Displays a simple list of all PCI devices.
+
+    $ lspci -v | less
+
+    🔹 Displays more detailed information and uses `less` to paginate the output.
+
+✅ **Simple Example:**
+
+    $ lspci -k | grep "VGA"
+
+    🔹 Lists graphics devices (VGA) along with the kernel drivers they are using. This example uses `grep` to find lines containing "VGA."

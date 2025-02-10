@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-maintscript-helper` baraye komak be neveshtane script-haye `maintainer` dar package-haye Debian estefade mishavad. In dastoor karhaye tekrari ra sade mikonad, mesle update kardan file-haye configuration ya restart kardane services.
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg-maintscript-helper package command script options...` --> Dastoor ra ejra mikonad.
+    🔹 `supports environment` --> Check mikonad aya yek environment khass support mishavad ya na.
+    🔹 `rm_conffile` -->  Pak kardane conffile-haye ghadeemi.
+    🔹 `symlink_to_dir` -->  Sakhtane symlink baraye directories.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-maintscript-helper purge 'rm_conffile /etc/oldconfig.conf'
+    
+    🔹 Pak kardane yek file configuration ghadeemi dar vaghte `purge` kardane package.
+
+    $ dpkg-maintscript-helper postinst 'symlink_to_dir /usr/share/newdir /usr/share/olddir'
+    
+    🔹 Sakhtane yek symlink az directory jadid be directory ghadimi dar `postinst`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-maintscript-helper postrm 'restart my-service'
+    
+    🔹 Restart kardane service `my-service` dar `postrm`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-maintscript-helper` command is used to help write maintainer scripts in Debian packages. It simplifies common tasks, such as updating configuration files or restarting services.
+
+⚙️ **Options:**
+    🔹 `dpkg-maintscript-helper package command script options...` --> Executes the command.
+    🔹 `supports environment` --> Checks if a specific environment is supported.
+    🔹 `rm_conffile` --> Removes old conffiles.
+    🔹 `symlink_to_dir` --> Creates a symlink to a directory.
+
+🛠 **Examples:**
+
+    $ dpkg-maintscript-helper purge 'rm_conffile /etc/oldconfig.conf'
+    
+    🔹 Removes an old configuration file when the package is purged.
+
+    $ dpkg-maintscript-helper postinst 'symlink_to_dir /usr/share/newdir /usr/share/olddir'
+    
+    🔹 Creates a symlink from the new directory to the old directory in `postinst`.
+
+✅ **Simple Example:**
+
+    $ dpkg-maintscript-helper postrm 'restart my-service'
+    
+    🔹 Restarts the service `my-service` in `postrm`.

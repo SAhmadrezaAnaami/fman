@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installifupdown` baraye nasb-e file-haye interface `ifupdown` dar pakej Debian estefade mishavad. In dastoor be komak file-haye `debian/ifupdown/*` file-haye lazem ra dar jaye sahih dar pakej nasb mikonad. Asasan, baraye tanzeem shabake (network) dar Debian estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 🌐 Az nasb-e script `configure` va `remove` chashm-pooshi kon. Dar vaghe script-haye pishfarz-e `ifupdown` ra estefade nakon.
+    🔹 `-p package`  --> 📦 Faghat file-haye interface ra dar pakej-e moshakhas shode nasb kon. Agar ziad az yek pakej dar destoor bashad, in gozineh kheili mofid ast.
+    🔹 `--no-scripts` --> 🚫 Script-haye `if-up.d` va `if-down.d` ra nasb nakon.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installifupdown
+    
+    🔹 Nasb-e hameye file-haye interface az `debian/ifupdown/` dar jaye sahih dar pakej.
+
+    $ dh_installifupdown -p mypackage
+    
+    🔹 Faghat file-haye interface ra baraye pakej `mypackage` nasb kon.
+
+✅ **Mesal sade:**
+
+    $ dh_installifupdown -n
+    
+    🔹 Az script-haye pishfarz-e `ifupdown` estefade nakon. Agar mikhahid script-haye khod ra be soorat dastoori tanzeem konid, in gozineh mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installifupdown` command is used to install `ifupdown` interface files in a Debian package. This command, with the help of files in `debian/ifupdown/*`, installs the necessary files in the correct location within the package. It's primarily used for network configuration in Debian.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 🌐 Skip installing the `configure` and `remove` scripts. Effectively, do not use the default `ifupdown` scripts.
+    🔹 `-p package`  --> 📦 Only install the interface files in the specified package. Useful when dealing with multiple packages in the same command.
+    🔹 `--no-scripts` --> 🚫 Do not install the `if-up.d` and `if-down.d` scripts.
+
+🛠 **Examples:**
+
+    $ dh_installifupdown
+    
+    🔹 Install all interface files from `debian/ifupdown/` to the correct location in the package.
+
+    $ dh_installifupdown -p mypackage
+    
+    🔹 Install the interface files only for the `mypackage` package.
+
+✅ **Simple Example:**
+
+    $ dh_installifupdown -n
+    
+    🔹 Do not use the default `ifupdown` scripts. Useful if you want to configure your own scripts manually.

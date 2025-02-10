@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `colrm` baraye hazf kardan (remove) sotoon-ha (columns) az voroodi (input) estefade mishavad. Shoma mitavanid yek range az sotoon-ha ra baraye hazf moshakhas konid. Agar shoma faghat yek adad bedahid, `colrm` hameye sotoon-ha az aan adad be baad ra hazf mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `colrm start` --> 🗑️ Hazf hameye sotoon-ha az sotoon `start` ta akhar khat.
+    🔹 `colrm start stop` --> ✂️ Hazf sotoon-ha az sotoon `start` ta sotoon `stop`.
+
+🛠 **Mesal-ha:**
+
+    $ echo "Hello World" | colrm 6
+    Hello
+
+    🔹 In mesal, hameye characters az sotoon 6 (W) be baad hazf mishavand.
+
+    $ echo "1234567890" | colrm 3 7
+    127890
+
+    🔹 In mesal, characters az sotoon 3 ta 7 hazf mishavand.
+
+✅ **Mesal sade:**
+
+    $ echo "abcdefgh" | colrm 4
+    abc
+
+    🔹 Sotoon-ha az 4 be baad hazf shodeh va natijeh namayesh dadeh mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `colrm` command is used to remove columns from input. You can specify a range of columns to remove. If you only provide one number, `colrm` removes all columns from that number onwards.
+
+⚙️ **Options:**
+    🔹 `colrm start` --> 🗑️ Remove all columns from column `start` to the end of the line.
+    🔹 `colrm start stop` --> ✂️ Remove columns from column `start` to column `stop`.
+
+🛠 **Examples:**
+
+    $ echo "Hello World" | colrm 6
+    Hello
+
+    🔹 In this example, all characters from column 6 (W) onwards are removed.
+
+    $ echo "1234567890" | colrm 3 7
+    127890
+
+    🔹 In this example, characters from column 3 to 7 are removed.
+
+✅ **Simple Example:**
+
+    $ echo "abcdefgh" | colrm 4
+    abc
+
+    🔹 Columns from 4 onwards are removed, and the result is displayed.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `diffstat` yek kholase-ye amari az taghirat dar file-ha ra neshan midahad, bar asase khorooji ke dastoor `diff` dorost karde ast. In dastoor be shoma komak mikonad ta bebinid che meghdar khat ezafe shode va che meghdar khat hazf shode ast baraye har file-i ke taghir karde ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `diffstat -n <width>`  --> 🔢  Set kardane arz-e namayesh be <width>. Agar <width> dade nashavad, az arz-e terminal estefade mikonad.
+    🔹 `diffstat -r` --> 🔄  Nemayesh dadane naam-e file nesbat be root directory.
+    🔹 `diffstat -w` --> ⚠️  Khorooji ra be forme 'width, name' chap mikonad, ke baraye sort kardane khorooji ba `sort -n` mofid ast.
+
+🛠 **Mesal-ha:**
+
+    $ diff -u file1.txt file2.txt | diffstat
+
+    🔹  Nemayesh dadane amari az taghirat bein do file.
+
+    $ diff -u directory1 directory2 | diffstat -r
+
+    🔹  Nemayesh dadane amari az taghirat bein directory-ha, ba naam-e file-ha nesbat be root directory.
+
+✅ **Mesal sade:**
+
+    $ diff -u old.txt new.txt | diffstat
+    old.txt | 1 + 1 -
+    new.txt | 1 + 1 -
+
+    🔹  In neshon midahad ke file `old.txt` va `new.txt` har kodam yek khat ezafe shode va yek khat hazf shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `diffstat` command displays a statistical summary of the changes made to files, based on the output of the `diff` command. It helps you see how many lines were added and removed for each file that has been changed.
+
+⚙️ **Options:**
+    🔹 `diffstat -n <width>` --> 🔢 Set the display width to <width>.  If <width> is not given, it uses the terminal width.
+    🔹 `diffstat -r`  --> 🔄 Display filenames relative to the root directory.
+    🔹 `diffstat -w`  --> ⚠️ Output in the form 'width, name', which is useful for sorting the output with `sort -n`.
+
+🛠 **Examples:**
+
+    $ diff -u file1.txt file2.txt | diffstat
+
+    🔹 Display statistics of changes between two files.
+
+    $ diff -u directory1 directory2 | diffstat -r
+
+    🔹 Display statistics of changes between directories, with filenames relative to the root directory.
+
+✅ **Simple Example:**
+
+    $ diff -u old.txt new.txt | diffstat
+    old.txt | 1 + 1 -
+    new.txt | 1 + 1 -
+
+    🔹 This shows that both `old.txt` and `new.txt` each have one line added and one line removed.

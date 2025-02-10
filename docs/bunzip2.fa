@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bunzip2` baraye baz kardane file-haye zip shode ba estefade az raveshe Bzip2 be kar miravad. Yani file-haye `.bz2` ra az halate zipeed dar miavarad va file asli ra dorost mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `bunzip2 -k`  --> 💾 File asli zipeed shode ra hefz mikonad (keep).
+    🔹 `bunzip2 -d`  --> 📤 Hamoon kare asli ro anjam mide, yani unzip mikone (decompress). (default)
+    🔹 `bunzip2 -v`  --> 📢 Etela'at bishtar dar morede amal kardane dastoor namayesh mide (verbose).
+    🔹 `bunzip2 -f`  --> 💪 Age file ghablan baz shode bood, majboor mikone ke dobare baz beshe (force).
+
+🛠 **Mesal-ha:**
+
+    $ bunzip2 myfile.bz2
+
+    🔹 File `myfile.bz2` ra baz mikonad va file `myfile` ra misazad.
+
+    $ bunzip2 -k myfile.bz2
+
+    🔹 File `myfile.bz2` ra baz mikonad va file `myfile` ra misazad, dar hale ke `myfile.bz2` ham hefz mishavad.
+
+✅ **Mesal sade:**
+
+    $ bunzip2 -v archive.bz2
+
+    🔹 File `archive.bz2` baz mishavad, va etela'ati mesle andaze file ghabl va bad az baz shodan namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bunzip2` command is used to decompress files that have been compressed using the Bzip2 algorithm. It essentially extracts `.bz2` files and restores them to their original state.
+
+⚙️ **Options:**
+    🔹 `bunzip2 -k`  --> 💾 Keeps the original compressed file.
+    🔹 `bunzip2 -d`  --> 📤 Decompresses the specified file. (This is the default behavior).
+    🔹 `bunzip2 -v`  --> 📢 Provides more detailed information about the decompression process (verbose).
+    🔹 `bunzip2 -f`  --> 💪 Forces decompression, even if a file with the same name already exists (force).
+
+🛠 **Examples:**
+
+    $ bunzip2 myfile.bz2
+
+    🔹 Decompresses `myfile.bz2`, creating the file `myfile`.
+
+    $ bunzip2 -k myfile.bz2
+
+    🔹 Decompresses `myfile.bz2`, creating the file `myfile`, while also keeping the original `myfile.bz2`.
+
+✅ **Simple Example:**
+
+    $ bunzip2 -v archive.bz2
+
+    🔹 Decompresses the file `archive.bz2`, and shows verbose output, like the original and uncompressed file size.

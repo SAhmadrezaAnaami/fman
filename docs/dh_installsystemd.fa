@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installsystemd` baraye nasb kardan file-haye systemd dar pakej Debian estefade mishavad. Systemd yek system modiriat service va boot dar Linux ast. In dastoor komak mikonad ta service-haye shoma be dorosti dar vaghte boot shoru shavand va modiriat shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name=FILENAME` --> 🏷️ Esme file service ra tayin mikonad. Agar tayin nashavad, az esme pakej estefade mishavad.
+    🔹 `--no-enable` --> 🚫 Az shoru kardan service be soorate automatic dar vaghte nasb jologiri mikonad.
+    🔹 `--error-missing` --> 🚨 Agar file service vojood nadashte bashad, khata midehad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installsystemd --name=myservice
+
+    🔹 In dastoor file `debian/myservice.service` ra nasb mikonad va esme service ra `myservice` gharar midehad.
+
+    $ dh_installsystemd --no-enable
+
+    🔹 In dastoor file service ra nasb mikonad vali service ra be soorate automatic fa'al nemikonad.
+
+✅ **Mesal sade:**
+
+    Agar file `debian/mydaemon.service` dar directory `debian` vojood dashte bashad:
+
+    $ dh_installsystemd
+
+    🔹 In dastoor file `mydaemon.service` ra nasb mikonad va service ra ba esme `mydaemon` fa'al mikonad. Agar file vojood nadashte bashad, khata nemidahad magar `error-missing--` ra estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installsystemd` command is used to install systemd service files in a Debian package. Systemd is a system and service manager for Linux. This command helps ensure your services start correctly at boot time and are properly managed.
+
+⚙️ **Options:**
+    🔹 `--name=FILENAME` --> 🏷️ Specifies the service file name. If not specified, the package name is used.
+    🔹 `--no-enable` --> 🚫 Prevents the service from being automatically enabled on installation.
+    🔹 `--error-missing` --> 🚨 Causes an error if the service file is missing.
+
+🛠 **Examples:**
+
+    $ dh_installsystemd --name=myservice
+
+    🔹 This command installs the `debian/myservice.service` file and sets the service name to `myservice`.
+
+    $ dh_installsystemd --no-enable
+
+    🔹 This command installs the service file but does not automatically enable the service.
+
+✅ **Simple Example:**
+
+    If the file `debian/mydaemon.service` exists in the `debian` directory:
+
+    $ dh_installsystemd
+
+    🔹 This command installs the `mydaemon.service` file and enables the service with the name `mydaemon`. It doesn't give error if the file doesn't exist unless you use `--error-missing`.

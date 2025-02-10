@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpic` baraye sakhtane diagram-ha va nemoode-ha az matn estefade mishavad. In dastoor, matn-ha ra mikhanad va ba estefade az zabane `pic`, diagram-ha ra tarrah mikonad. natije-ye kar, code PostScript ast ke mitavan an ra chap kard ya dar digar barname-ha estefade kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `-t`  --> 🖼️  Natije ra be jaye PostScript be format troff ersal mikonad, baraye estefade dar troff/groff.
+    🔹 `-s`  --> 📐 Size-e nemoode-ha ra baraye chap beینه mikonad.
+    🔹 `-w width` --> ↔️   پهنای diagram را مشخص میکند.
+    🔹 `-g` --> 🐛  Debug mode ra fa'al mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gpic file.pic > file.ps
+
+    🔹 File `file.pic` ra be PostScript tabdil mikonad va dar `file.ps` zakhire mikonad.
+
+    $ gpic -t file.pic | troff -ms
+
+    🔹 File `file.pic` ra be format troff tabdil mikonad va ba `troff` process mikonad.
+
+✅ **Mesal sade:**
+
+    $ gpic input.pic > output.ps
+
+    🔹 Agar `input.pic` shamel dastoorat `pic` baraye tarrahi yek diagram bashad, in dastoor `output.ps` ra ba code PostScript baraye chap ya namayesh diagram misazad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpic` command is used to create diagrams and figures from text descriptions. It reads text files containing descriptions in the `pic` language and generates diagrams.  The output is PostScript code, which can be printed or used in other programs.
+
+⚙️ **Options:**
+    🔹 `-t`  --> 🖼️  Sends the output to troff instead of PostScript, for use with troff/groff.
+    🔹 `-s`  --> 📐 Optimizes figure sizes for printing.
+    🔹 `-w width` --> ↔️ Specifies the width of the diagram.
+    🔹 `-g` --> 🐛 Enables debug mode.
+
+🛠 **Examples:**
+
+    $ gpic file.pic > file.ps
+
+    🔹 Converts `file.pic` to PostScript and saves it as `file.ps`.
+
+    $ gpic -t file.pic | troff -ms
+
+    🔹 Converts `file.pic` to troff format and processes it with `troff`.
+
+✅ **Simple Example:**
+
+    $ gpic input.pic > output.ps
+
+    🔹 If `input.pic` contains `pic` language instructions for drawing a diagram, this command will create `output.ps` with the PostScript code to print or display that diagram.
+

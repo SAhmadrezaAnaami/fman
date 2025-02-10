@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `most` mesle `cat` ya `less` ast, vali ba emkanate bishtar baraye didan file-haye matni (text files). In dastoor file ra safhe-safhe neshon midahad va emkanate josteju va navigat-e asan-tar ra faraham mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `most filename` --> 📄 Namayesh mohtaviate yek file.
+    🔹 `most +/search_term filename` --> 🔎 Josteju dar file az aval ta akhar baraye `search_term`.
+    🔹 `most -d` --> 💡 Estefade az rang-bandi pish فرض (default color scheme) agar rang-bandi gharar dade shode nabashad.
+    🔹 `most -u` --> 📝 Taghir namayesh underlines va bold ha baraye terminal-haee ke az anha poshtibani nemikonand.
+
+🛠 **Mesal-ha:**
+
+    $ most myfile.txt
+
+    🔹 Namayesh mohtaviate file `myfile.txt` ba emkane safhe-safhe didan va josteju.
+
+    $ most +/ERROR logfile.log
+
+    🔹 Baz kardan `logfile.log` va raftan be avalin khatte حاوی `ERROR`.
+
+✅ **Mesal sade:**
+
+    $ most my_script.sh
+
+    🔹 File `my_script.sh` ra baz mikonad, va shoma mitavanid ba estefade az kelid-haye بالا و پایین safhe-ha ra بالا و پایین be روید.  شما میتونید با زدن "/" و نوشتن کلمه، به دنبال اون در متن بگردید.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `most` command is a pager, similar to `cat` or `less`, but with enhanced features for viewing text files.  It displays files page by page and offers easier search and navigation.
+
+⚙️ **Options:**
+    🔹 `most filename` --> 📄 Display the contents of a file.
+    🔹 `most +/search_term filename` --> 🔎 Search the file from the beginning for `search_term`.
+    🔹 `most -d` --> 💡 Use the default color scheme if no color scheme is already specified.
+    🔹 `most -u` --> 📝 Alter the display of underlines and bold characters for terminals that don't support them.
+
+🛠 **Examples:**
+
+    $ most myfile.txt
+
+    🔹 Display the content of the file `myfile.txt` allowing page-by-page viewing and searching.
+
+    $ most +/ERROR logfile.log
+
+    🔹 Open `logfile.log` and navigate to the first line containing `ERROR`.
+
+✅ **Simple Example:**
+
+    $ most my_script.sh
+
+    🔹 Opens the `my_script.sh` file, and you can scroll up and down using the arrow keys. You can also search for a word in the text by pressing "/" and typing the word.

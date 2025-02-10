@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lto-dump-12` baraye didan va analiz kardane etela'at dakhele file-haye LTO (Link-Time Optimization) estefade mishavad. In dastoor be shoma komak mikonad ta bebined che taghirati dar marhale LTO rooye barnametan amal shode ast. In manande yek negah be poshte parde dar optimization ast. Agar shoma yek developer hastid, in dastoor mitavanad be shoma dar fahmidane behtare chonegi behbood bakhshidan be compiler va optimization komak konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version` --> ℹ️ Namayesh version program.
+    🔹 `--help`  --> ❓ Namayesh rahnama va tozihate dastoor.
+    🔹 `--summary` --> 📊 Namayesh kholase-ye etela'at LTO dar file vared shode. (mesle size, name function ha)
+    🔹 `--list-globals` --> 🌍 List kardan symbol-haye global.
+    🔹 `--print-module <module_id>` --> 📦 Print module ba ID moshakhas.
+
+🛠 **Mesal-ha:**
+
+    $ lto-dump-12 myfile.o
+
+    🔹  Namayesh etela'at LTO az file `myfile.o`.
+
+    $ lto-dump-12 --summary myfile.o
+
+    🔹 Namayesh yek kholase az etela'at LTO dakhele file `myfile.o`.
+
+✅ **Mesal sade:**
+
+    $ lto-dump-12 --help
+
+    🔹  Namayesh tozihate kamel va gozine-haye dastoor `lto-dump-12`. Agar shoma motmaen nistid ke dastoor che kar mikonad ya che gozine-hai dar dastras darid, in dastoor komak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lto-dump-12` command is used to view and analyze information within LTO (Link-Time Optimization) files. It helps you understand what transformations have been applied to your program during the LTO stage. It's like a peek behind the scenes of optimization. If you're a developer, this tool can assist you in better understanding how to improve compiler and optimization processes.
+
+⚙️ **Options:**
+    🔹 `--version` --> ℹ️ Show program's version.
+    🔹 `--help`  --> ❓ Show help and command descriptions.
+    🔹 `--summary` --> 📊 Show a summary of the LTO information in the input file (e.g., size, function names).
+    🔹 `--list-globals` --> 🌍 List global symbols.
+    🔹 `--print-module <module_id>` --> 📦 Print module with a specific ID.
+
+🛠 **Examples:**
+
+    $ lto-dump-12 myfile.o
+
+    🔹  Display LTO information from the file `myfile.o`.
+
+    $ lto-dump-12 --summary myfile.o
+
+    🔹 Show a summary of the LTO information within the file `myfile.o`.
+
+✅ **Simple Example:**
+
+    $ lto-dump-12 --help
+
+    🔹  Displays the complete descriptions and options for the `lto-dump-12` command. If you're unsure about what the command does or what options are available, this command helps.

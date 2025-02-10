@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `enc2xs` baraye dorost kardane module-haye Perl baraye encoding-haye jadid estefade mishavad. Yani shoma mitavanid ba estefade az in dastoor, encoding-haye khassi ke Perl be soorat pishfarz poshtibani nemikonad ra be an ezafe konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o <directory>`  --> 📂 Mahal-e zakhire-ye file-haye sakhte shode ra moshakhas mikonad.
+    🔹 `-n <module_name>` --> 🏷️ Name module-e jadid ra tayin mikonad.
+    🔹 `-f <encoding_file>` --> 📄 File-i ke etela'at encoding dar an zakhire shode ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ enc2xs -o Encode::MyEncoding -n MyEncoding my_encoding.enc
+
+    🔹 Module-e Encode::MyEncoding ra ba estefade az etela'at dar file my_encoding.enc dorost mikonad.
+
+    $ enc2xs -o lib -n ShamEncoding sham.enc
+
+    🔹 Module-e ShamEncoding ra dorost mikonad va an ra dar directory 'lib' zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ enc2xs -n FarsiEncoding farsi.enc
+
+    🔹 Module-e FarsiEncoding az file `farsi.enc` sakhte mishavad. File `farsi.enc` bayad format-e munasibi dashte bashad ta `enc2xs` betavanad an ra be dorosti pars konad va module ra besazad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `enc2xs` command is used to build Perl modules for new encodings.  This allows you to add custom encodings that Perl doesn't natively support.
+
+⚙️ **Options:**
+    🔹 `-o <directory>`  --> 📂 Specifies the directory where the generated files will be stored.
+    🔹 `-n <module_name>` --> 🏷️ Sets the name of the new module.
+    🔹 `-f <encoding_file>` --> 📄 Specifies the file containing the encoding information.
+
+🛠 **Examples:**
+
+    $ enc2xs -o Encode::MyEncoding -n MyEncoding my_encoding.enc
+
+    🔹 Creates the Encode::MyEncoding module using the information from the my_encoding.enc file.
+
+    $ enc2xs -o lib -n ShamEncoding sham.enc
+
+    🔹 Creates the ShamEncoding module and stores it in the 'lib' directory.
+
+✅ **Simple Example:**
+
+    $ enc2xs -n FarsiEncoding farsi.enc
+
+    🔹 A module called `FarsiEncoding` is created based on the data from the `farsi.enc` file. The `farsi.enc` file must be in the correct format for `enc2xs` to parse it and create the module properly.

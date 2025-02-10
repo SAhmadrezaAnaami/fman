@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `flock` baraye sakhtan va modiriat ghofr-ha (lock) rooye file-ha estefade mishavad. In dastoor be barname-ha komak mikonad ta az hamzaman ejra shodan va taghayorat ghati patti rooye file-ha jelogiri konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `flock -n file dastoor`  --> ⛔ Agar ghofr dar dastras nabashad, dastoor ejra nemishavad va error midehad.
+    🔹 `flock -w zamane_entzar file dastoor` --> ⏳ Agar ghofr dar dastras nabashad, ta zamane moshakhas entezar mikeshad.
+    🔹 `flock -u file` --> 🔓 Ghofr ra azad mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ flock /tmp/myfile.lock echo "Man darhale neveshtan hastam..." > /tmp/myfile.txt
+
+    🔹 In dastoor yek ghofr rooye `/tmp/myfile.lock` ijad mikonad, va agar ghofr mojud bashad, entezar mikeshad ta azad shavad. Ba'd az an, dastoor `echo` ejra mishavad va matn ra dar file `/tmp/myfile.txt` minevisad.
+
+    $ flock -n /tmp/myfile.lock bash -c 'if [ ! -f /tmp/myfile.txt ]; then touch /tmp/myfile.txt; echo "Avalin neveshte" > /tmp/myfile.txt; else echo "File mojood ast" >> /tmp/myfile.txt; fi'
+
+    🔹 In dastoor check mikonad ke aya file `/tmp/myfile.txt` mojood ast ya na. Agar mojood nabashad, an ra misazad va dar an chizi minevisad; agar mojood bashad, chizi be an ezafe mikonad. `-n` ensure mikonad ke agar ghofr nemitone gerefte beshe, dastoor ejra nashavad.
+
+✅ **Mesal sade:**
+
+    $ flock -w 10 /tmp/myfile.lock echo "Neveshtan..."
+
+    🔹 Agar ghofr rooye `/tmp/myfile.lock` dar عرض 10 ثانيه در دسترس نباشد, از اجرا صرف نظر میکند.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `flock` command is used to manage file locks.  It allows you to create and manage locks on files, preventing multiple processes from accessing and modifying a file simultaneously, thus preventing data corruption.
+
+⚙️ **Options:**
+    🔹 `flock -n file command`  --> ⛔ Fails immediately if the lock is not available.  The command will not execute.
+    🔹 `flock -w timeout file command` --> ⏳ Waits for a specified timeout period if the lock is not available.
+    🔹 `flock -u file` --> 🔓 Releases the lock on the specified file.
+
+🛠 **Examples:**
+
+    $ flock /tmp/myfile.lock echo "I am writing..." > /tmp/myfile.txt
+
+    🔹 This command creates a lock on `/tmp/myfile.lock`, waits for it to become available if another process is holding the lock, and then executes the `echo` command, writing text to `/tmp/myfile.txt`.
+
+    $ flock -n /tmp/myfile.lock bash -c 'if [ ! -f /tmp/myfile.txt ]; then touch /tmp/myfile.txt; echo "First write" > /tmp/myfile.txt; else echo "File exists" >> /tmp/myfile.txt; fi'
+
+    🔹 This command checks if `/tmp/myfile.txt` exists. If it doesn't, it creates the file and writes some text to it; otherwise, it appends to the file.  The `-n` option ensures that the command does not execute if the lock cannot be acquired immediately.
+
+✅ **Simple Example:**
+
+    $ flock -w 10 /tmp/myfile.lock echo "Writing..."
+
+    🔹 If the lock on `/tmp/myfile.lock` cannot be acquired within 10 seconds, the command will exit.

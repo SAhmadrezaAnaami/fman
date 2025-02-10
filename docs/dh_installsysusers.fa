@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installsysusers` baraye sakhtan va nasbe karbar-haye systemi va group-ha dar pakej-haye Debian be kar miravad. In dastoor etela'at karbarha va group-ha ra az file `debian/sysusers` mikhanad va onha ra be system ezafe mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--add-missing` --> ➕ Agar karbar ya groupi mojood nabashad, an ra ezafe kon.
+    🔹 `--create-missing` --> 🛠 Karbar ya group ra agar nabashad, ba estefade az `adduser` ya `addgroup` dorost kon.
+    🔹 `-n` or `--no-scripts` --> 🚫 Script-ha-ye `preinst` va `postinst` ra ejra nakon.
+    🔹 `-p package` or `--package=package` --> 📦 Faghat baraye pakej-haye moshakhas kar kon.
+    🔹 `--name-pattern=pattern` --> 🏷 Estefade az yek pattern baraye name-gozari.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installsysusers
+    🔹 Nasb karbar-ha va group-haye systemi az file `debian/sysusers`.
+
+    $ dh_installsysusers --add-missing
+    🔹 Ezafe kardane karbar-ha va group-haye nabood shode.
+
+✅ **Mesal sade:**
+
+    $ dh_installsysusers -p mypackage --create-missing
+    🔹 Sakhtan karbar-ha va group-ha agar nabashand, faghat baraye pakej `mypackage`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installsysusers` command is used to create and install system users and groups in Debian packages. This command reads user and group information from the `debian/sysusers` file and adds them to the system.
+
+⚙️ **Options:**
+    🔹 `--add-missing` --> ➕ Add the user or group if it doesn't already exist.
+    🔹 `--create-missing` --> 🛠 Create the user or group if it doesn't exist, using `adduser` or `addgroup`.
+    🔹 `-n` or `--no-scripts` --> 🚫 Do not run the `preinst` and `postinst` scripts.
+    🔹 `-p package` or `--package=package` --> 📦 Only operate on the specified package.
+    🔹 `--name-pattern=pattern` --> 🏷 Use a pattern for naming.
+
+🛠 **Examples:**
+
+    $ dh_installsysusers
+    🔹 Install system users and groups from the `debian/sysusers` file.
+
+    $ dh_installsysusers --add-missing
+    🔹 Add missing users and groups.
+
+✅ **Simple Example:**
+
+    $ dh_installsysusers -p mypackage --create-missing
+    🔹 Create users and groups if they don't exist, only for the `mypackage` package.

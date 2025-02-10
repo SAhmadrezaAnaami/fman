@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fonttosfnt` yek dastoor baraye tabdil format-haye font be format SFNT ast. SFNT yek format standard baraye font-ha ast, ke dar system-amel-haye mokhtalef mesle Windows va macOS estefade mishavad. In dastoor bishtar baraye kar ba font-haye ba format-haye ghadimi ya ghair-standard be kar miravad ta anha ra compatible ba system-haye jadid konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-l`  --> 🗂️ List kardane format-haye font-e support shode. Baraye fahmidan che format-haee ghabele tabdil hastand.
+    🔹 `-o <file>`  --> 💾 Specify kardane name file khoruji. Agar in gozine estefade nashavad, file khoruji bar rooye stdout neveshte mishavad.
+    🔹 `-v`  --> 📢 Namayesh etela'at bishtar dar morede process tabdil (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ fonttosfnt input.otf -o output.ttf
+
+    🔹 Tabdil file `input.otf` be file `output.ttf` (OpenType be TrueType).
+
+    $ fonttosfnt -l
+
+    🔹 List kardane hameye format-haye font-e support shode.
+
+✅ **Mesal sade:**
+
+    $ fonttosfnt myfont.pfb -o myfont.ttf
+
+    🔹 Tabdil yek font PostScript Type 1 (PFB) be TrueType (TTF). In kar baraye estefade az font dar system-amel-haee ke faghat TrueType support mikonand mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fonttosfnt` command is used to convert font formats to the SFNT format. SFNT is a standard font format used in various operating systems such as Windows and macOS. This command is primarily used to work with fonts in older or non-standard formats to make them compatible with modern systems.
+
+⚙️ **Options:**
+    🔹 `-l`  --> 🗂️ List supported font formats. Useful for understanding which formats can be converted.
+    🔹 `-o <file>`  --> 💾 Specify the output file name. If this option is not used, the output is written to stdout.
+    🔹 `-v`  --> 📢 Display more information about the conversion process (verbose mode).
+
+🛠 **Examples:**
+
+    $ fonttosfnt input.otf -o output.ttf
+
+    🔹 Convert the `input.otf` file to the `output.ttf` file (OpenType to TrueType).
+
+    $ fonttosfnt -l
+
+    🔹 List all supported font formats.
+
+✅ **Simple Example:**
+
+    $ fonttosfnt myfont.pfb -o myfont.ttf
+
+    🔹 Convert a PostScript Type 1 font (PFB) to TrueType (TTF). This is useful for using the font in operating systems that only support TrueType.

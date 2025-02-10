@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fwupdmgr` baraye modiriat va update kardan firmware device-ha (mesle laptop, mouse, keyboard, etc.) dar Linux estefade mishavad. Firmware mesle barname-haye dakheli device-ha ast ke kar-haye asasi ra anjam midahand. Ba `fwupdmgr` mitoonid firmware-haye jadid ra download va nasb konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fwupdmgr get-devices` --> 💻 Namayesh device-haye ghabele update
+    🔹 `fwupdmgr get-updates` --> 🔍 Check kardan baraye update-haye jadid
+    🔹 `fwupdmgr update`       --> ⬆️ Shoro kardan update firmware
+    🔹 `fwupdmgr refresh`      --> 🔄 Update kardan database firmware az internet
+
+🛠 **Mesal-ha:**
+
+    $ fwupdmgr get-devices
+
+    🔹 Namayesh listi az device-haee ke mitoonand update shavand.
+
+    $ fwupdmgr update
+
+    🔹 Shoro kardan update firmware baraye hame device-haye ghabele update.
+
+✅ **Mesal sade:**
+
+    $ sudo fwupdmgr update
+    [sudo] password for user:
+    Updating…             [***************************************]
+    Restart required: To complete the update, a reboot is required.
+
+    🔹 In dastoor ba estefade az `sudo` ejra mishavad ta dastresi be system ro dashte bashe, firmware ro update mikone va be shoma khabar mide ke system bayad restart beshe ta update takmil beshe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fwupdmgr` command is used to manage and update device firmware (like laptops, mice, keyboards, etc.) on Linux. Firmware is like the internal software of devices that performs basic functions. With `fwupdmgr`, you can download and install new firmware versions.
+
+⚙️ **Options:**
+    🔹 `fwupdmgr get-devices` --> 💻 Show devices that can be updated.
+    🔹 `fwupdmgr get-updates` --> 🔍 Check for available firmware updates.
+    🔹 `fwupdmgr update`       --> ⬆️ Start the firmware update process.
+    🔹 `fwupdmgr refresh`      --> 🔄 Refresh the firmware database from the internet.
+
+🛠 **Examples:**
+
+    $ fwupdmgr get-devices
+
+    🔹 Display a list of devices that can be updated.
+
+    $ fwupdmgr update
+
+    🔹 Start the firmware update for all updatable devices.
+
+✅ **Simple Example:**
+
+    $ sudo fwupdmgr update
+    [sudo] password for user:
+    Updating…             [***************************************]
+    Restart required: To complete the update, a reboot is required.
+
+    🔹 This command is executed with `sudo` to gain system access, updates the firmware, and informs you that a system reboot is required to complete the update.

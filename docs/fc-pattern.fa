@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-pattern` baraye peyda kardan font-ha (fonts) ba توجه به pattern-ha (patterns) است.
+    Shoma mitavanid مشخصات font-ha ra bar اساس name, style ya khososiat-haye digar search konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-pattern [file ya directory]`  --> 📁 File ya pooshe-haye XML font config ra check mikonad. agar address dade nashavad, az config-haye default estefade mikonad.
+    🔹 `fc-pattern font` --> 🔤 Hameye font-haye nasb shode ra list mikonad.
+    🔹 `fc-pattern : family=Arial` --> 🔎 Font-haye family "Arial" ra peyda mikonad.
+    🔹 `fc-pattern : family=Arial:style=Bold` --> 🔎 Font-haye family "Arial" ke style "Bold" daran ra peyda mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ fc-pattern : family=Tahoma
+
+    🔹 List font-haye family Tahoma.
+
+    $ fc-pattern /usr/share/fonts/truetype/arial.ttf : family=Arial
+
+    🔹 Check mikonad ke aya file arial.ttf font-haye family Arial ra darad ya na.
+
+✅ **Mesal sade:**
+
+    $ fc-pattern : hinting=True
+
+    🔹 List font-haye ke hinting enable ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-pattern` command is used to find fonts based on patterns.
+    You can search for font characteristics based on name, style, or other attributes.
+
+⚙️ **Options:**
+    🔹 `fc-pattern [file or directory]`  --> 📁 Checks XML font config files or directories. If no address is given, it uses default configurations.
+    🔹 `fc-pattern font` --> 🔤 Lists all installed fonts.
+    🔹 `fc-pattern : family=Arial` --> 🔎 Finds fonts with the family "Arial".
+    🔹 `fc-pattern : family=Arial:style=Bold` --> 🔎 Finds fonts with the family "Arial" and style "Bold".
+
+🛠 **Examples:**
+
+    $ fc-pattern : family=Tahoma
+
+    🔹 Lists fonts with the family Tahoma.
+
+    $ fc-pattern /usr/share/fonts/truetype/arial.ttf : family=Arial
+
+    🔹 Checks if the file arial.ttf contains fonts with the family Arial.
+
+✅ **Simple Example:**
+
+    $ fc-pattern : hinting=True
+
+    🔹 Lists fonts where hinting is enabled.

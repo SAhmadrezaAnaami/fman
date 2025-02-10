@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzcat` baraye chap kardane file-haye `*.lz` (file-haye zip shode ba estefade az algorithm Lempel-Ziv) be soorate sade (standard output) be kar miravad. Yani file-haye zip shode ra baz mikonad va matne dakhelash ra namayesh midahad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `lzcat file.lz`  --> 📃 Chap kardane obsan e file zip shode.
+    🔹 `lzcat file1.lz file2.lz` --> 📑 Chap kardane chand file zip shode be ham.
+    🔹 `lzcat -d file.lz` --> 🗑️ Decompress (baz kardan) va delete kardane file zip shode.  **Warning: Be khatar**
+
+🛠 **Mesal-ha:**
+
+    $ lzcat file.lz
+
+    🔹 Namayesh mohtaviate file `file.lz` dar terminal.
+
+    $ lzcat file1.lz file2.lz > combined.txt
+
+    🔹 Chap kardane mohtaviate `file1.lz` va `file2.lz` va zakhire kardane an dar `combined.txt`.
+
+✅ **Mesal sade:**
+
+    $ lzcat logfile.lz | grep "error"
+
+    🔹 Baz kardane `logfile.lz` va filter kardane kalamat "error" dar an.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzcat` command is used to print the uncompressed content of `*.lz` files (files compressed using the Lempel-Ziv algorithm) to standard output.  Essentially, it decompresses the compressed file and displays the text contained within.
+
+⚙️ **Options:**
+    🔹 `lzcat file.lz`  --> 📃 Print the decompressed content of the file.
+    🔹 `lzcat file1.lz file2.lz` --> 📑 Concatenate and print multiple compressed files.
+    🔹 `lzcat -d file.lz` --> 🗑️ Decompress and delete the compressed file. **Warning: Potentially dangerous**
+
+🛠 **Examples:**
+
+    $ lzcat file.lz
+
+    🔹 Display the content of `file.lz` in the terminal.
+
+    $ lzcat file1.lz file2.lz > combined.txt
+
+    🔹 Print the content of `file1.lz` and `file2.lz` and save it to `combined.txt`.
+
+✅ **Simple Example:**
+
+    $ lzcat logfile.lz | grep "error"
+
+    🔹 Decompress `logfile.lz` and filter for lines containing the word "error".

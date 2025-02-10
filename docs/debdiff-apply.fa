@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debdiff-apply` baraye e’male tagheerat az yek file `diff.gz` (ke az `debdiff` sakhte shode) rooye source code asli estefade mishavad. Yani tagheerati ke dar file diff hastand, be code asli ezafe mishavand. In dastoor kheyli vaghta baraye apply kardane patch-haye Debian estefade mishe.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p[number]` --> ✂️ Tedade pooshe-ha (directories) ke bayad az path file diff hazf shavand. Masalan, `-p1` yek pooshe ro hazf mikone. Ageh in gozine dade nashe, meghdare pishfarz `-p1` ast.
+    🔹 `--no-backup` --> 🚫 File-haye asli ghabl az tagheer backup nemishavand. Be tor pishfarz, az file-haye asli backup gerefte mishe.
+    🔹 `--version`  --> ℹ️  Namayesh version barname.
+    🔹 `--help` --> ❓ Rahnamaye estefade az dastoor ro namayesh mide.
+
+🛠 **Mesal-ha:**
+
+    $ debdiff-apply patch.diff.gz
+
+    🔹 Apply kardane tagheerat az file `patch.diff.gz` ba estefade az path pishfarz (`-p1`).
+
+    $ debdiff-apply -p0 patch.diff.gz
+
+    🔹 Apply kardane tagheerat az file `patch.diff.gz` bedune hazfe hich pooshe-i az path.
+
+    $ debdiff-apply --no-backup patch.diff.gz
+
+    🔹 Apply kardane tagheerat az file `patch.diff.gz` bedune gereftane backup az file-haye asli.
+
+✅ **Mesal sade:**
+
+    $ debdiff-apply my_changes.diff.gz
+
+    🔹 Ageh file `my_changes.diff.gz` tagheerati baraye file `myfile.txt` dashte bashe, tagheerat be `myfile.txt` ezafe mishavand. Ghabl az apply, az `myfile.txt` yek backup gerefte mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debdiff-apply` command is used to apply changes from a `diff.gz` file (created by `debdiff`) to the original source code. In other words, it adds the changes specified in the diff file to the original code. This command is often used to apply Debian patches.
+
+⚙️ **Options:**
+    🔹 `-p[number]` --> ✂️ The number of directories to strip from the beginning of the file names in the diff file. For example, `-p1` strips one directory. The default value is `-p1` if this option is not given.
+    🔹 `--no-backup` --> 🚫 Do not create backups of the original files before applying the changes. By default, backups are created.
+    🔹 `--version`  --> ℹ️  Display version information.
+    🔹 `--help` --> ❓ Display help information.
+
+🛠 **Examples:**
+
+    $ debdiff-apply patch.diff.gz
+
+    🔹 Apply changes from the `patch.diff.gz` file using the default path stripping (`-p1`).
+
+    $ debdiff-apply -p0 patch.diff.gz
+
+    🔹 Apply changes from the `patch.diff.gz` file without stripping any directories from the path.
+
+    $ debdiff-apply --no-backup patch.diff.gz
+
+    🔹 Apply changes from the `patch.diff.gz` file without creating backups of the original files.
+
+✅ **Simple Example:**
+
+    $ debdiff-apply my_changes.diff.gz
+
+    🔹 If the file `my_changes.diff.gz` contains changes for the file `myfile.txt`, the changes are applied to `myfile.txt`. Before applying, a backup of `myfile.txt` is created.

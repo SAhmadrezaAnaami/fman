@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_autoreconf` baraye update kardane file-haye `configure` va digar file-haye marboot be `autoconf` dar yek package Debian estefade mishavad. In dastoor be tore khodkar `autoreconf` ra ejra mikonad ta az dorost boodane saze va saz compatibility code manba اطمینان حاصل شود.
+
+⚙️ **Gozine-ha:**
+    🔹 `--as-needed` --> 🔄 Faghat zamani `autoreconf` ra ejra kon ke taghirati dar file-haye manba vojood داشته باشد.
+    🔹 `--no-recursive` --> 🚫 `autoreconf` ra به صورت بازگشتی dar زیر پوشه ها اجرا نکن.
+    🔹 `--force-reconfigure` --> ⚠️ Hameshe file `configure` ra dobare ba توجه به taghirat ایجاد کن.
+
+🛠 **Mesal-ha:**
+
+    $ dh_autoreconf
+
+    🔹 اجرا کردن `autoreconf` dar package
+
+    $ dh_autoreconf --as-needed
+
+    🔹 اجرا کردن `autoreconf` faghat dar صورتی که تغییری رخ داده باشد.
+
+✅ **Mesal sade:**
+
+    $ dh_autoreconf --force-reconfigure
+
+    🔹 File `configure` hameshe dobare ایجاد می شود، حتی اگر هیچ تغییری در فایل های منبع نباشد. In baraye اطمینان از این که تنظیمات صحیح هستند مفید است.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_autoreconf` command is used to update the `configure` files and other `autoconf`-related files in a Debian package. It automatically runs `autoreconf` to ensure the build system is up-to-date and the source code maintains compatibility.
+
+⚙️ **Options:**
+    🔹 `--as-needed` --> 🔄 Only run `autoreconf` if there have been changes in the source files.
+    🔹 `--no-recursive` --> 🚫 Do not run `autoreconf` recursively in subdirectories.
+    🔹 `--force-reconfigure` --> ⚠️ Always regenerate the `configure` file, regardless of changes.
+
+🛠 **Examples:**
+
+    $ dh_autoreconf
+
+    🔹 Run `autoreconf` in the package.
+
+    $ dh_autoreconf --as-needed
+
+    🔹 Run `autoreconf` only if changes have been made.
+
+✅ **Simple Example:**
+
+    $ dh_autoreconf --force-reconfigure
+
+    🔹 The `configure` file is always regenerated, even if there are no changes to the source files. This is useful to ensure configurations are correct.

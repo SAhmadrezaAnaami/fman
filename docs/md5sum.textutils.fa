@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `md5sum` baraye mohasebeye yek "hash" ya "fingerprint" az yek file estefade mishavad. In hash yek reshteye bi-manaye az adad va horoof ast ke be tore omoomi baraye check kardane dorosti va daghigh budane file-ha be kar miravad. Age file taghir konad, hash niz avaz mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `md5sum FILE`  --> 🔑 Mohasebeye hash baraye file mored nazar.
+    🔹 `md5sum -c FILE.md5` --> ✅ Check kardane dorosti file ba estefade az file hash (ke ghablan save shode).
+    🔹 `md5sum --binary FILE` --> 💾 Be tore binary file ra bekhan (baraye windows va system-haye mesl-on).
+    🔹 `md5sum --text FILE` --> 📝 Be tore matni file ra bekhan (mode pishfarz).
+
+🛠 **Mesal-ha:**
+
+    $ md5sum myfile.txt
+
+    🔹 Mohasebeye hash file `myfile.txt`.
+
+    $ md5sum anotherfile.iso > checksum.md5
+
+    🔹 Mohasebeye hash `anotherfile.iso` va save kardane an dar file `checksum.md5`.
+
+    $ md5sum -c checksum.md5
+
+    🔹 Check kardane dorosti `anotherfile.iso` ba estefade az hash dar `checksum.md5`.
+
+✅ **Mesal sade:**
+
+    $ md5sum important.pdf
+
+    🔹 Output: `b7d8e7e6e23100e6a17768e6d26a26b7 important.pdf`
+    
+    🔹 In yek hash MD5 baraye `important.pdf` ast. Agar shoma file ra download konid va in dastoor ra dobare ejra konid, agar hash yeksan bashad, yani file dorost download shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `md5sum` command is used to calculate an "hash" or "fingerprint" of a file. This hash is a unique string of numbers and letters that is commonly used to verify the integrity and accuracy of files. If the file changes, the hash will also change.
+
+⚙️ **Options:**
+    🔹 `md5sum FILE`  --> 🔑 Calculate the hash for the specified file.
+    🔹 `md5sum -c FILE.md5` --> ✅ Check the file's integrity using a hash file (previously saved).
+    🔹 `md5sum --binary FILE` --> 💾 Read the file in binary mode (for Windows and similar systems).
+    🔹 `md5sum --text FILE` --> 📝 Read the file in text mode (default mode).
+
+🛠 **Examples:**
+
+    $ md5sum myfile.txt
+
+    🔹 Calculate the hash of the file `myfile.txt`.
+
+    $ md5sum anotherfile.iso > checksum.md5
+
+    🔹 Calculate the hash of `anotherfile.iso` and save it in the file `checksum.md5`.
+
+    $ md5sum -c checksum.md5
+
+    🔹 Check the integrity of `anotherfile.iso` using the hash in `checksum.md5`.
+
+✅ **Simple Example:**
+
+    $ md5sum important.pdf
+
+    🔹 Output: `b7d8e7e6e23100e6a17768e6d26a26b7 important.pdf`
+    
+    🔹 This is the MD5 hash for `important.pdf`. If you download the file and run this command again, and the hash is the same, it means the file was downloaded correctly.

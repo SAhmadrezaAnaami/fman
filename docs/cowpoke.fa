@@ -1,0 +1,61 @@
+Okay, I will create a user-friendly man page for the `cowpoke` command, following all your specifications.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cowpoke` baraye ersal payam be karbar-haye digar dar shabake be kar miravad.  Shoma mitavanid yek payam ra be yek shakhs mokhatab konid ya be hameye karbar-haye fa'al. In dastoor bishtar dar mohit-haye terminali estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cowpoke <username> <payam>`  --> 🗣️ Ersal payam be karbare moshakhas. Bayad username va matn payam ra vared konid.
+    🔹 `cowpoke -a <payam>`       --> 📢 Ersal payam be hameye karbar-haye fa'al dar system.
+    🔹 `cowpoke -n <username>`   --> 👤 E'elam vorood be karbar ba nam <username>.
+    🔹 `cowpoke -q <username>`   --> 👋🏻 E'elam khorooj be karbar ba nam <username>.
+
+🛠 **Mesal-ha:**
+
+    $ cowpoke ali salam ali joon! chetori?
+
+    🔹 Ersal payam "salam ali joon! chetori?" be karbar "ali".
+
+    $ cowpoke -a salam bacheha! sobh bekheyr!
+
+    🔹 Ersal payam "salam bacheha! sobh bekheyr!" be hameye karbar-haye fa'al.
+
+✅ **Mesal sade:**
+
+    $ cowpoke -n nima
+
+    🔹 E'elam vorood be karbar ba username "nima", in karbar motevajeh mishavad ke shoma vared shodeid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cowpoke` command is used to send messages to other users on the network.  You can direct a message to a specific user or broadcast it to all active users. This command is mostly used in terminal environments.
+
+⚙️ **Options:**
+    🔹 `cowpoke <username> <message>` --> 🗣️ Send a message to a specific user.  You must enter the username and the text of the message.
+    🔹 `cowpoke -a <message>`      --> 📢 Send a message to all active users on the system.
+    🔹 `cowpoke -n <username>`  --> 👤 Announce login to user named <username>.
+    🔹 `cowpoke -q <username>`  --> 👋🏻 Announce logout to user named <username>.
+
+🛠 **Examples:**
+
+    $ cowpoke ali hello ali! how are you?
+
+    🔹 Sends the message "hello ali! how are you?" to the user "ali".
+
+    $ cowpoke -a hello everyone! good morning!
+
+    🔹 Sends the message "hello everyone! good morning!" to all active users.
+
+✅ **Simple Example:**
+
+    $ cowpoke -n nima
+
+    🔹 Announce login to user with username "nima", this user will know that you have logged in.
+

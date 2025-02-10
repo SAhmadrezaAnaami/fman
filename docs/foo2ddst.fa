@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2ddst` baraye tabdil dadan file-haye PDF ya PostScript be format-e printer-haye rangy-e arzan gheimat estefade mishavad. In dastoor be shoma komak mikonad ta file-haye khod ra baraye chap ba keyfiyat behtar va rang-haye dorost tar amade konid, bekhosos agar az printer-haye rangy-e gheimat payin estefade mikonid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `-r <dpi>` --> 🎯 Tarahi DPI (Dots Per Inch) ra baraye chap moshakhas mikonad. Meghdare balatar keyfiyat-e behtari darad vali size-e file-haye bozorgtari ham ijad mikonad. (mesal: `-r 600`)
+    🔹 `-p <paper>` --> 📄 Size-e kaghaz ra moshakhas mikonad. (mesal: `-p A4`, `-p Letter`)
+    🔹 `-g` --> 🌈 Rang-ha ra moratab mikonad ta chap-e behtari dashte bashid, bekhosos dar aks-ha.
+    🔹 `-u` --> 💾 File-e output ra zip mikonad ta size-ash kamtar shavad.
+
+🛠 **Mesal-ha:**
+
+    $ foo2ddst -r 600 input.pdf > output.ppm
+
+    🔹 Tabdil file `input.pdf` ba DPI 600 be file PPM.
+
+    $ foo2ddst -p A4 input.ps | gzip > output.gz
+
+    🔹 Tabdil file `input.ps` ba size-e A4 va compress kardan an ba gzip.
+
+✅ **Mesal sade:**
+
+    $ foo2ddst -r 300 document.pdf > document.ppm
+
+    🔹 In dastoor file PDF "document.pdf" ra ba resolution 300 DPI be file PPM tabdil mikonad. Shoma mitavanid in file PPM ra bad be vasile-e barnamehaye digar chap konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2ddst` command is used to convert PDF or PostScript files into a format suitable for low-cost color printers. It helps prepare your files for higher quality printing with accurate colors, especially if you're using inexpensive color printers.
+
+⚙️ **Options:**
+    🔹 `-r <dpi>` --> 🎯 Specifies the DPI (Dots Per Inch) for printing. Higher values result in better quality but also larger file sizes. (e.g., `-r 600`)
+    🔹 `-p <paper>` --> 📄 Specifies the paper size. (e.g., `-p A4`, `-p Letter`)
+    🔹 `-g` --> 🌈 Adjusts colors for better printing, especially in photographs.
+    🔹 `-u` --> 💾 Compresses the output file using gzip to reduce its size.
+
+🛠 **Examples:**
+
+    $ foo2ddst -r 600 input.pdf > output.ppm
+
+    🔹 Converts the `input.pdf` file to a PPM file with 600 DPI.
+
+    $ foo2ddst -p A4 input.ps | gzip > output.gz
+
+    🔹 Converts the `input.ps` file with A4 paper size and compresses it with gzip.
+
+✅ **Simple Example:**
+
+    $ foo2ddst -r 300 document.pdf > document.ppm
+
+    🔹 This command converts the PDF file "document.pdf" to a PPM file at a resolution of 300 DPI. You can then print this PPM file using other printing utilities.

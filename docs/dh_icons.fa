@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_icons` baraye sakhtan va nasbe dastoor-haye icon dar pakage-haye Debian estefade mishavad. In dastoor be shoma komak mikonad ta icon-ha ra be shekl sahih va standart dar narmafzare khod ja bedahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir=directory`  --> 📁  Pooshe-ye asli ke file-haye icon dar aan gharar darand ra moshakhas mikonad.
+    🔹 `--destdir=directory`  --> 🎯  Pooshe-ye maghsad baraye nasbe icon-ha ra tayin mikonad.
+    🔹 `--list-missing`     --> 🔍  Icon-haye gomshode ra list mikonad.
+    🔹 `--name=package_name`  --> 🏷️  Esm pakage-ee ke icon-ha be aan ta'alogh darand ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_icons --sourcedir=src/icons --destdir=/usr/share/icons/hicolor
+    
+    🔹 Icon-ha az pooshe `src/icons` bargozari shode va dar `/usr/share/icons/hicolor` nasb mishavand.
+
+    $ dh_icons --list-missing
+    
+    🔹  List-e icon-haye gomshode ra chap mikonad, agar chizi kam bashad.
+
+✅ **Mesal sade:**
+
+    $ dh_icons --name=myprogram
+    
+    🔹 In dastoor icon-haye pakage `myprogram` ra ba estefade az configuration default sakhte va nasb mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_icons` command is used to create and install icon rules in Debian packages. This command helps you properly and standardly embed icons in your software.
+
+⚙️ **Options:**
+    🔹 `--sourcedir=directory`  --> 📁  Specifies the source directory where the icon files are located.
+    🔹 `--destdir=directory`  --> 🎯  Specifies the destination directory for installing the icons.
+    🔹 `--list-missing`     --> 🔍  Lists any missing icons.
+    🔹 `--name=package_name`  --> 🏷️  Specifies the name of the package to which the icons belong.
+
+🛠 **Examples:**
+
+    $ dh_icons --sourcedir=src/icons --destdir=/usr/share/icons/hicolor
+    
+    🔹 Icons are loaded from the `src/icons` folder and installed in `/usr/share/icons/hicolor`.
+
+    $ dh_icons --list-missing
+    
+    🔹 Prints a list of missing icons, if anything is missing.
+
+✅ **Simple Example:**
+
+    $ dh_icons --name=myprogram
+    
+    🔹 This command creates and installs the icons for the `myprogram` package using the default configuration.

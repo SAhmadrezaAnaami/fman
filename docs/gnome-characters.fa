@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-characters` baraye baz kardane narmafzar-e "Characters" dar GNOME estefade mishavad. Ba in narmafzar, shoma mitavanid har character-e unicode ra peyda konid va dar jaye dige copy/paste konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help` --> ℹ️ Namayeshe rahnamaye dastoor.
+    🔹 `--version` --> 🔢 Namayeshe version-e narmafzar.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-characters
+
+    🔹 Baz kardane narmafzar-e characters.
+
+    $ gnome-characters --help
+
+    🔹 Namayeshe rahnamaye dastoor `gnome-characters`.
+
+✅ **Mesal sade:**
+
+    $ gnome-characters
+
+    🔹 In dastoor, panjereye narmafzar-e Characters ra baz mikonad, ke shoma mitavanid character-haye unicode ra search va copy konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-characters` command is used to open the "Characters" application in GNOME. This application allows you to find and copy/paste any Unicode character.
+
+⚙️ **Options:**
+    🔹 `--help` --> ℹ️ Display the command's help information.
+    🔹 `--version` --> 🔢 Display the application's version.
+
+🛠 **Examples:**
+
+    $ gnome-characters
+
+    🔹 Opens the Characters application.
+
+    $ gnome-characters --help
+
+    🔹 Displays the help information for the `gnome-characters` command.
+
+✅ **Simple Example:**
+
+    $ gnome-characters
+
+    🔹 This command opens the Characters application window, where you can search and copy Unicode characters.
+

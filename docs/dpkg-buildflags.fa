@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-buildflags` baraye gereftan ya taeen kardan flag-haye compiliation (sakht) baraye package-haye Debian estefade mishavad. In flag-ha be compiler (motarjem) gofte mishavand ke chejoori code ra optimize (behsazi) konad ya check-haye bishtari anjam dahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--get` --> 📜 Flag-haye فعلی ra چاپ mikonad. میتونید یک flag-haye خاص ro be اسم مشخص konid.
+    🔹 `--set flag=value` --> 📝 Flag-haye sakht ra taeen mikonad.
+    🔹 `--unset flag` --> 🗑 Flag-haye taeen shode ra hazf mikonad.
+    🔹 `--list` --> 📃 Hameye flag-haye ghabele dastrasi ra list mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-buildflags --get CFLAGS
+
+    🔹 چاپ کردن flag-haye `CFLAGS`
+
+    $ dpkg-buildflags --set CFLAGS="-O3 -march=native"
+
+    🔹 Taeein kardan flag-haye `CFLAGS` ba meghdare jadid.
+
+✅ **Mesal sade:**
+
+    $ dpkg-buildflags --get CPPFLAGS
+
+    🔹 Agar `CPPFLAGS` taeen shode bashad, meghdare aan chap mishavad, dar gheire insorat hich chizi chap nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-buildflags` command is used to get or set compilation flags for Debian packages. These flags tell the compiler how to optimize the code or perform more checks.
+
+⚙️ **Options:**
+    🔹 `--get` --> 📜 Prints the current flags. You can specify a particular flag by name.
+    🔹 `--set flag=value` --> 📝 Sets the build flags.
+    🔹 `--unset flag` --> 🗑 Removes the specified flag.
+    🔹 `--list` --> 📃 Lists all available flags.
+
+🛠 **Examples:**
+
+    $ dpkg-buildflags --get CFLAGS
+
+    🔹 Print the `CFLAGS` flags.
+
+    $ dpkg-buildflags --set CFLAGS="-O3 -march=native"
+
+    🔹 Set the `CFLAGS` flags to a new value.
+
+✅ **Simple Example:**
+
+    $ dpkg-buildflags --get CPPFLAGS
+
+    🔹 If `CPPFLAGS` is set, its value will be printed; otherwise, nothing will be printed.

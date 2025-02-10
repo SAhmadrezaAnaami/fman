@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `amixer` baraye tanzim va kontrole sedaye karthaye sound (sound cards) dar Linux estefade mishavad.  Ba `amixer` shoma mitavanid volume-ha ra tagheer dahid, seda ra mute ya unmute konid, va gozinehaye mokhtalefe karthaye sound ra tanzim konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `amixer sget Master` --> 🔊 Gereftan volume-haye asly.
+    🔹 `amixer sset Master 50%` --> 🎧 Tagheer dadan volume asli be 50 darsad.
+    🔹 `amixer sset Master mute` --> 🔇 Mute kardane sedaye asli.
+    🔹 `amixer sset Master unmute` --> 🔈 Unmute kardane sedaye asli.
+    🔹 `amixer controls` --> 🎛️ List kardane hameye control-haye mojood baraye kart-e seda.
+
+🛠 **Mesal-ha:**
+
+    $ amixer sget Master
+
+    🔹 Namayesh volume-haye asli.
+
+    $ amixer sset Master 75%+
+
+    🔹 Afzayesh volume asli be andazeye 75 darsad az volume-haye konooni.
+
+✅ **Mesal sade:**
+
+    $ amixer sset Master 20%-
+
+    🔹 Kam kardane volume-haye asli be andazeye 20 darsad az volume-haye konooni. Agar volume 30 darsad bood, hala 10 darsad mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `amixer` command is used for managing and controlling sound card settings in Linux.  With `amixer`, you can change volumes, mute or unmute sound, and configure various options for your sound cards.
+
+⚙️ **Options:**
+    🔹 `amixer sget Master` --> 🔊 Get the current master volume levels.
+    🔹 `amixer sset Master 50%` --> 🎧 Set the master volume to 50%.
+    🔹 `amixer sset Master mute` --> 🔇 Mute the master volume.
+    🔹 `amixer sset Master unmute` --> 🔈 Unmute the master volume.
+    🔹 `amixer controls` --> 🎛️ List all available controls for the sound card.
+
+🛠 **Examples:**
+
+    $ amixer sget Master
+
+    🔹 Display the current master volume settings.
+
+    $ amixer sset Master 75%+
+
+    🔹 Increase the master volume by 75% relative to the current volume.
+
+✅ **Simple Example:**
+
+    $ amixer sset Master 20%-
+
+    🔹 Decrease the master volume by 20% relative to the current volume. If the volume was at 30%, it will now be at 10%.
+

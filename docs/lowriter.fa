@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lowriter` baraye baz kardan va virayesh kardan file-haye matni (text documents) ba estefade az barnam-ye LibreOffice Writer be kar miravad. LibreOffice Writer yek barnam-ye raayegaan va open-source baraye kar ba matn haa mesl-e Microsoft Word ast. Ba `lowriter`, shomaa mitoonid matn benevisid, aan raa moratab konid, jadval dorost konid, va bishtar az aan.
+
+⚙️ **Gozine-ha:**
+    🔹 `lowriter` --> 📄 Baz kardan barnam-ye LibreOffice Writer.
+    🔹 `lowriter filename.odt` --> 📂 Baz kardan file-ye `filename.odt` (ya har format-e digar ke Writer poshtibani mikonad).
+    🔹 `lowriter --help` --> ❓ Namayesh rahnamaa va gozine-haye bishtar.
+
+🛠 **Mesal-ha:**
+
+    $ lowriter
+
+    🔹 Baz kardan LibreOffice Writer bedoone baz kardan file-ye khass.
+
+    $ lowriter nameh.docx
+
+    🔹 Baz kardan file-ye `nameh.docx` ba LibreOffice Writer.
+
+✅ **Mesal sade:**
+
+    $ lowriter resume.odt
+
+    🔹 Agar file-ye `resume.odt` voojood dashte bashad, LibreOffice Writer aan raa baz mikonad. Agar voojood nadashte bashad, LibreOffice Writer yek safe-ye jadid baz mikonad va shomaa mitoonid `resume.odt` raa save konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lowriter` command is used to open and edit text documents using the LibreOffice Writer program. LibreOffice Writer is a free and open-source word processor, similar to Microsoft Word. With `lowriter`, you can write text, format it, create tables, and much more.
+
+⚙️ **Options:**
+    🔹 `lowriter` --> 📄 Opens the LibreOffice Writer program.
+    🔹 `lowriter filename.odt` --> 📂 Opens the file `filename.odt` (or any other format supported by Writer).
+    🔹 `lowriter --help` --> ❓ Displays help information and more options.
+
+🛠 **Examples:**
+
+    $ lowriter
+
+    🔹 Opens LibreOffice Writer without opening a specific file.
+
+    $ lowriter letter.docx
+
+    🔹 Opens the file `letter.docx` with LibreOffice Writer.
+
+✅ **Simple Example:**
+
+    $ lowriter resume.odt
+
+    🔹 If the file `resume.odt` exists, LibreOffice Writer will open it. If it doesn't exist, LibreOffice Writer will open a new document, and you can save it as `resume.odt`.
+

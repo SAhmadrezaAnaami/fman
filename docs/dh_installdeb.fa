@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installdeb` baraye nasb kardan file-haye `.deb` dar sakhtare dorosti az directory-ha, ghabl az inke package `.deb` sakhte shavad, estefade mishavad. In dastoor ghesmati az majmooe `debhelper` ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name NAME`  --> 🏷️  Esm-e paye baraye package binary ra tayin mikonad (masalan, `foo` agar package `foo-common`, `foo-dev` va gheyre bashad).
+    🔹 `--sourcedir DIR`  --> 📂  Directory-i ke file-haye nasbi az aanja khande mishavad.  Agar tayin nashavad, `debian/tmp` estefade mishavad.
+    🔹 `--destdir DIR` --> 🎯 Directory-i ke file-ha bayad dar aanja nasb shavand.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installdeb
+
+    🔹 File-haye `.deb` ra az `debian/tmp` nasb mikonad.
+
+    $ dh_installdeb --name libfoo
+
+    🔹 File-haye `.deb` ba esm-e `libfoo` ra nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installdeb --sourcedir=tmp/packages
+
+    🔹 File-haye `.deb` ra az directory `tmp/packages` nasb mikonad.  In mozoo kheili be dard mikhorad agar shoma chandta package dar directory-haye mokhtalef dashte bashid va bekhaid hameye anha ra yekja nasb konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installdeb` command is used to install `.deb` files into the correct directory structure before a `.deb` package is built.  It is part of the `debhelper` suite of tools.
+
+⚙️ **Options:**
+    🔹 `--name NAME`  --> 🏷️  Specifies the base name to use for the binary package(s) to act on (e.g., `foo` if the packages are named `foo-common`, `foo-dev`, etc.).
+    🔹 `--sourcedir DIR`  --> 📂  Specifies the directory from which to read the `.deb` files to install. If not specified, `debian/tmp` is used.
+    🔹 `--destdir DIR` --> 🎯 Specifies the directory to install the files to.
+
+🛠 **Examples:**
+
+    $ dh_installdeb
+
+    🔹 Installs `.deb` files from the default location, `debian/tmp`.
+
+    $ dh_installdeb --name libfoo
+
+    🔹 Installs `.deb` files associated with the `libfoo` package.
+
+✅ **Simple Example:**
+
+    $ dh_installdeb --sourcedir=tmp/packages
+
+    🔹 Installs `.deb` files from the `tmp/packages` directory. This is useful if you have multiple packages in different directories and want to install them all.

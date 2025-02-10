@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `expiry` baraye tayeen ya tagheer tarikh enghezaaye password baraye karbar ha estefade mishavad. Yani, ba in dastoor mitavanid mohlat password-haye karbar-ha ra moratab konid ta amniat behtar shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `expiry username` --> 👤 Namayesh tarikh enghezaaye password baraye username-e moshakhas.
+    🔹 `expiry -d days username` --> 📅 Tayeen tarikh enghezaaye password baraye username bar asase tedad rooz.
+    🔹 `expiry -m months username` --> 🗓️ Tayeen tarikh enghezaaye password baraye username bar asase tedad mah.
+    🔹 `expiry -never username` --> ♾️ Password hich vaght expire nemishavad (tavsiye nemishavad).
+
+🛠 **Mesal-ha:**
+
+    $ expiry john
+
+    🔹 Namayesh tarikh enghezaaye password baraye karbar john.
+
+    $ sudo expiry -d 90 jane
+
+    🔹 Tarikh enghezaaye password karbar jane ra 90 rooz digar tayeen mikonad.
+
+✅ **Mesal sade:**
+
+    $ expiry root
+
+    🔹 Pasokh shamel tarikh va etela'at digar dar morede enghezaye password karbar root ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `expiry` command is used to set or modify the password expiration date for user accounts. This allows you to enforce password policies and improve security.
+
+⚙️ **Options:**
+    🔹 `expiry username` --> 👤 Display the password expiration date for the specified username.
+    🔹 `expiry -d days username` --> 📅 Set the password expiration date for the username based on the number of days.
+    🔹 `expiry -m months username` --> 🗓️ Set the password expiration date for the username based on the number of months.
+    🔹 `expiry -never username` --> ♾️ The password will never expire (not recommended).
+
+🛠 **Examples:**
+
+    $ expiry john
+
+    🔹 Display the password expiration date for the user john.
+
+    $ sudo expiry -d 90 jane
+
+    🔹 Sets the password expiration date for the user jane to 90 days from now.
+
+✅ **Simple Example:**
+
+    $ expiry root
+
+    🔹 The output will include the date and other information regarding the password expiration for the root user.

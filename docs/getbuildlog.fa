@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `getbuildlog` baraye gereftan log-haye sakht (build logs) az yek system sakht (build system) mesle Jenkins ya Travis CI estefade mishavad. In dastoor be shoma komak mikonad ta az etela'ate sakht baraye tashkhis va rafe moshkelat estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `getbuildlog` -->  📜 Chap kardan akharin log-haye sakht (build logs).
+    🔹 `getbuildlog <shomare_sakht>` -->  🔢 Chap kardan log-haye sakht ba shomare moshakhas.
+    🔹 `getbuildlog -f` -->  ⏳ Negah dashtan chap kardan log-haye sakht be soorate online (follow).
+    🔹 `getbuildlog -s <server_address>` --> 🌐 Estefade az server moshakhas baraye gereftan log-ha.
+
+🛠 **Mesal-ha:**
+
+    $ getbuildlog
+
+    🔹 Chap kardan akharin log-haye sakht.
+
+    $ getbuildlog 123
+
+    🔹 Chap kardan log-haye sakht ba shomare 123.
+
+✅ **Mesal sade:**
+
+    $ getbuildlog -f
+
+    🔹 Chap kardan online (real-time) log-haye sakht be soorate daryaft dar terminal. Be shoma ejaze midahad ta az process sakht be soorate lahze-be-lahze agah bashid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `getbuildlog` command is used to retrieve build logs from a build system such as Jenkins or Travis CI. This command helps you use build information to diagnose and fix problems.
+
+⚙️ **Options:**
+    🔹 `getbuildlog` -->  📜 Print the latest build logs.
+    🔹 `getbuildlog <build_number>` -->  🔢 Print the build logs for a specific build number.
+    🔹 `getbuildlog -f` -->  ⏳ Keep printing build logs as they are generated (follow).
+    🔹 `getbuildlog -s <server_address>` --> 🌐 Use a specific server address to retrieve the logs.
+
+🛠 **Examples:**
+
+    $ getbuildlog
+
+    🔹 Print the latest build logs.
+
+    $ getbuildlog 123
+
+    🔹 Print the build logs for build number 123.
+
+✅ **Simple Example:**
+
+    $ getbuildlog -f
+
+    🔹 Prints real-time build logs to the terminal as they are received. This allows you to monitor the build process in real-time.

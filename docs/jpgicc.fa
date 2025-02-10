@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `jpgicc` baraye taghir profile rang (color profile) dar aks-haye JPEG estefade mishavad.  In dastoor be shoma komak mikonad ke aks-ha-ye khod ra ba profile rang-e motenaseb save konid, ta rang-ha dar dastgah-ha va narm-afzarhaye mokhtalef dorost namayesh dade shavand. Agar aks shoma profile rang nadashte bashad, mitavanid yek profile rang be an ezafe konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `jpgicc -a <profile.icc> input.jpg output.jpg`  --> 🎨 Ezafe kardane yek profile rang (agar aks profile nadashte bashad).
+    🔹 `jpgicc -c <profile.icc> input.jpg output.jpg`  --> 🔄 Taghir dadane profile rang-e aks be yek profile jadid.
+    🔹 `jpgicc -d input.jpg output.jpg`  --> 🗑 Hazf kardane profile rang az aks.
+    🔹 `jpgicc -q <quality> input.jpg output.jpg` --> 🖼️ Ta'yin keyfiyat JPEG (az 0 ta 100).
+
+🛠 **Mesal-ha:**
+
+    $ jpgicc -a sRGB.icc aks.jpg aks_sRGB.jpg
+
+    🔹 Ezafe kardane profile rang sRGB be aks.jpg va save kardane an be nam aks_sRGB.jpg.
+
+    $ jpgicc -c AdobeRGB1998.icc aks_sRGB.jpg aks_AdobeRGB.jpg
+
+    🔹 Taghir dadane profile rang aks_sRGB.jpg be AdobeRGB1998 va save kardane an be nam aks_AdobeRGB.jpg.
+
+✅ **Mesal sade:**
+
+    $ jpgicc -d aks_AdobeRGB.jpg aks_bedoon_profile.jpg
+
+    🔹 Hazf profile rang az aks_AdobeRGB.jpg va save kardane an be nam aks_bedoon_profile.jpg.  Dar natije, aks_bedoon_profile.jpg profile rang nakhahad dasht.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `jpgicc` command is used to modify the color profile in JPEG images. It helps you save your images with an appropriate color profile, ensuring accurate color representation across different devices and software. If your image lacks a color profile, you can add one.
+
+⚙️ **Options:**
+    🔹 `jpgicc -a <profile.icc> input.jpg output.jpg`  --> 🎨 Add a color profile (if the image doesn't have one).
+    🔹 `jpgicc -c <profile.icc> input.jpg output.jpg`  --> 🔄 Convert the image's color profile to a new profile.
+    🔹 `jpgicc -d input.jpg output.jpg`  --> 🗑 Remove the color profile from the image.
+    🔹 `jpgicc -q <quality> input.jpg output.jpg` --> 🖼️ Specify the JPEG quality (from 0 to 100).
+
+🛠 **Examples:**
+
+    $ jpgicc -a sRGB.icc image.jpg image_sRGB.jpg
+
+    🔹 Add the sRGB color profile to image.jpg and save it as image_sRGB.jpg.
+
+    $ jpgicc -c AdobeRGB1998.icc image_sRGB.jpg image_AdobeRGB.jpg
+
+    🔹 Convert the color profile of image_sRGB.jpg to AdobeRGB1998 and save it as image_AdobeRGB.jpg.
+
+✅ **Simple Example:**
+
+    $ jpgicc -d image_AdobeRGB.jpg image_no_profile.jpg
+
+    🔹 Remove the color profile from image_AdobeRGB.jpg and save it as image_no_profile.jpg. As a result, image_no_profile.jpg will have no color profile.

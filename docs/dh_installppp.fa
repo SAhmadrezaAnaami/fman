@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installppp` baraye nasb kardan file-haye PPP (Point-to-Point Protocol) dar pakage Debian estefade mishavad. Yani, in dastoor file-haye config-e PPP ra az jaye asli-shoon barmidarad va dar directory-e nasb pakage Debian copy mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n` --> 🚫 Nasb script-haye `disable` va `enable` ra fa'al nakon.
+    🔹 `-p package` --> 📦 File-ha ra faghat dar pakage-i ke moshakhas shode nasb kon.
+    🔹 `--list-missing` --> 🔍 Liste file-haee ke bayad nasb shavand vali peyda nashode-and ra namayesh bede.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installppp
+    🔹 File-haye PPP ra dar hameye package-ha nasb mikonad.
+
+    $ dh_installppp -p mypackage
+    🔹 File-haye PPP ra faghat dar pakage "mypackage" nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installppp -n
+    🔹 File-haye PPP ra nasb mikonad, vali script-haye disable/enable ra nasb nemikonad. In be dard mikhoreh vaghti ke nemikhay script-ha ro tagheer bedi.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installppp` command is used to install PPP (Point-to-Point Protocol) files in a Debian package.  It moves PPP configuration files from their source location to the installation directory of the Debian package.
+
+⚙️ **Options:**
+    🔹 `-n` --> 🚫 Do not install `disable` and `enable` scripts.
+    🔹 `-p package` --> 📦 Install files only in the specified package.
+    🔹 `--list-missing` --> 🔍 List files that should be installed but were not found.
+
+🛠 **Examples:**
+
+    $ dh_installppp
+    🔹 Installs PPP files in all packages.
+
+    $ dh_installppp -p mypackage
+    🔹 Installs PPP files only in the "mypackage" package.
+
+✅ **Simple Example:**
+
+    $ dh_installppp -n
+    🔹 Installs PPP files, but does not install disable/enable scripts. This is useful if you don't want to modify the scripts.

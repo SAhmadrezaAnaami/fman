@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gpg-agent` yek barname ast ke keyhaye shoma ro baraye `gpg` va digar barname ha negah midare va estefade az oonha ro asoon mikone. Be jaye vared kardane har dafe parole passpharse, `gpg-agent` yek bar password ra az shoma miporse va ta chand vaght aan ra be yaad darad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--daemon`  --> 😈 `gpg-agent` ro be عنوان yek daemon dar paszamine ejra mikonad.
+    🔹 `--options filename`  --> ⚙️ Options ha ro az yek file mikhonad.
+    🔹 `--default-cache-ttl seconds` --> ⏳ Zaman-e zendegi default key dar cache ra tayin mikonad. Masalan, `--default-cache-ttl 3600` yani key ta yek saat dar cache mimanad.
+    🔹 `--max-cache-ttl seconds` --> ⏳ حداکثر زمان نگهداری یک کلید در حافظه کش را تعیین می‌کند.
+
+🛠 **Mesal-ha:**
+
+    $ gpg-agent --daemon
+
+    🔹 `gpg-agent` ro be عنوان daemon shoro میکنه.
+
+    $ gpg-agent --options ~/.gnupg/gpg-agent.conf
+
+    🔹 Options ha ro az file `gpg-agent.conf` mikhonad.
+
+✅ **Mesal sade:**
+
+    $ eval $(gpg-agent --daemon)
+
+    🔹  `gpg-agent` ro shoro میکنه و environment variable های lazem ro baraye estefade az gpg set میکone.  Ba in kar, digar niaz nist password khod ra har dafe vared konid ta vaghti ke cache expire shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gpg-agent` is a program that holds your private keys for `gpg` and other programs, making it easier to use them. Instead of entering your passphrase every time, `gpg-agent` asks you for it once and remembers it for a certain period.
+
+⚙️ **Options:**
+    🔹 `--daemon` --> 😈 Runs `gpg-agent` as a daemon in the background.
+    🔹 `--options filename` --> ⚙️ Reads options from a specified file.
+    🔹 `--default-cache-ttl seconds` --> ⏳ Sets the default time-to-live for keys in the cache. For example, `--default-cache-ttl 3600` means the key will stay in the cache for one hour.
+    🔹 `--max-cache-ttl seconds` --> ⏳ Sets the maximum time a key can be kept in the cache.
+
+🛠 **Examples:**
+
+    $ gpg-agent --daemon
+
+    🔹 Starts `gpg-agent` as a daemon.
+
+    $ gpg-agent --options ~/.gnupg/gpg-agent.conf
+
+    🔹 Reads options from the `gpg-agent.conf` file.
+
+✅ **Simple Example:**
+
+    $ eval $(gpg-agent --daemon)
+
+    🔹 Starts the `gpg-agent` and sets the necessary environment variables to use gpg. With this, you don't need to enter your password every time until the cache expires.

@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ipod-time-sync` baraye hamzamani saat iPod ba system Linux estefade mishavad.  In dastoor be shoma komak mikonad ke saat iPod khod ra ba saat Linux computer moratab konid. Agar iPod shoma saat dorosti nadashte bashad, in dastoor kheili mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `ipod-time-sync` --> 🔄 Saat iPod ra ba saat system hamzaman mikonad.  Hich gozineye digari niaz nist.
+    🔹 `-d`  --> 🐞 Namayesh peygham haye debug baraye rafe khata.
+
+🛠 **Mesal-ha:**
+
+    $ ipod-time-sync
+
+    🔹 Saat iPod ra hamzaman mikonad.
+
+    $ sudo ipod-time-sync -d
+
+    🔹  Saat iPod ra hamzaman mikonad va peygham haye debug ra namayesh midahad.  `sudo` lazem ast chon dastresi be device iPod darkar ast.
+
+✅ **Mesal sade:**
+
+    $ ipod-time-sync
+
+    🔹 Agar saat iPod shoma az saat computer aghab oftade bashad, ba ejraye in dastoor saat iPod moratab mishavad. Hich payami namayesh dade nemishavad magar khatai vojood dashte bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ipod-time-sync` command synchronizes the iPod's clock with the Linux system time. This helps you keep your iPod's clock accurate. If your iPod's clock is inaccurate, this command can be very useful.
+
+⚙️ **Options:**
+    🔹 `ipod-time-sync` --> 🔄 Synchronizes the iPod's clock with the system clock. No other options are generally needed.
+    🔹 `-d`  --> 🐞 Show debug messages for troubleshooting.
+
+🛠 **Examples:**
+
+    $ ipod-time-sync
+
+    🔹 Synchronizes the iPod's clock.
+
+    $ sudo ipod-time-sync -d
+
+    🔹 Synchronizes the iPod's clock and displays debug messages. `sudo` is needed because access to the iPod device requires root privileges.
+
+✅ **Simple Example & Explanation:**
+
+    $ ipod-time-sync
+
+    🔹 If your iPod's clock is running behind the computer's clock, running this command will update the iPod's clock. No output is displayed unless there is an error.

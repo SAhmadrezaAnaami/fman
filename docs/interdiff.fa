@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `interdiff` baraye ijad yek patch az tafavot beine do ta patch dige estefade mishe. Yani agar shoma do version az yek patch ro dashte bashid, `interdiff` mitune patch-i ro dorost kone ke tafavot beine in do ta version ro neshun bede. In kheili mofid hast vaghti ke shoma mikhaid taghirati ro ke yeki dige rooye yek patch dade check konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-z`  --> 📦 Baraye patch-haye zip shode (compressed)
+    🔹 `-p<n>`  --> ✂️ Tedad `/` haye ezafe az filename patch ra hazf mikonad (strip path components)
+    🔹 `--help` --> ℹ️ Namayesh rahnamaye dastoor
+
+🛠 **Mesal-ha:**
+
+    $ interdiff patch1.patch patch2.patch > difference.patch
+
+    🔹 Ijad yek patch ke tafavot beine `patch1.patch` va `patch2.patch` ro neshun mide va on ro zakhire mikone dar `difference.patch`.
+
+    $ interdiff -z patch1.patch.gz patch2.patch.gz > difference.patch
+
+    🔹 Baraye patch-haye zip shode estefade mishe.
+
+✅ **Mesal sade:**
+
+    $ interdiff -p1 old.patch new.patch
+
+    🔹 Age `old.patch` va `new.patch` masiran ezafe dashte bashan, `-p1` masire ezafe ro hazf mikone ta patch dorost kar kone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `interdiff` command is used to create a patch representing the differences between two other patches. In essence, if you have two versions of the same patch, `interdiff` generates a patch that highlights the changes between these two versions. This is very useful for reviewing modifications made by someone else to an existing patch.
+
+⚙️ **Options:**
+    🔹 `-z`  --> 📦 Use for compressed (gzip) patches.
+    🔹 `-p<n>`  --> ✂️ Strip <n> leading slashes from filenames in the patch.
+    🔹 `--help` --> ℹ️ Display help information.
+
+🛠 **Examples:**
+
+    $ interdiff patch1.patch patch2.patch > difference.patch
+
+    🔹 Creates a patch that shows the differences between `patch1.patch` and `patch2.patch` and saves it to `difference.patch`.
+
+    $ interdiff -z patch1.patch.gz patch2.patch.gz > difference.patch
+
+    🔹 Used for compressed (gzip) patches.
+
+✅ **Simple Example:**
+
+    $ interdiff -p1 old.patch new.patch
+
+    🔹 If `old.patch` and `new.patch` have extra paths, `-p1` removes the leading path so the patch will apply correctly.

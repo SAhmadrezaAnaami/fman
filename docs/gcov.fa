@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcov` yek barname ast baraye check kardane inke kodom khat-ha az code C ya C++ ejra shode and vaghti barname run shode. Be in kar migan "code coverage". Yani `gcov` neshun mide cheghad az code-e shoma test shode.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcov file.c.gcov` -->  📜 Namayesh meghdare coverage baraye file `file.c`.
+    🔹 `gcov -b file.c.gcov` --> 📈 Namayesh etela'at bishtar dar morede branch-ha (shakhe-ha) dar code. Yani agar code shoma `if` ya `else` dare, `gcov` neshun mide har kodom chand bar ejra shode.
+    🔹 `gcov -o directory file.c.gcov` --> 📁  Estefade az etela'at coverage ke dar directory dige save shode.
+
+🛠 **Mesal-ha:**
+
+    $ g++ -fprofile-arcs -ftest-coverage program.c -o program
+    $ ./program
+    $ gcov program.c
+
+    🔹 Compile va run kardane barname va generate kardane file-haye coverage ba `gcov`.
+
+    $ gcov -b program.c
+
+    🔹 Namayesh etela'at branch coverage.
+
+✅ **Mesal sade:**
+
+    $ gcov program.c
+    File 'program.c'
+    Lines executed:75.00% of 20
+    Branches executed:70.00% of 10
+
+    🔹 In neshun mide ke 75% az khat-haye code va 70% az branch-ha ejra shode and.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcov` command is a tool used to check which lines of C or C++ code have been executed when a program runs. This is known as "code coverage."  `gcov` shows how much of your code has been tested.
+
+⚙️ **Options:**
+    🔹 `gcov file.c.gcov` --> 📜 Display coverage information for the file `file.c`.
+    🔹 `gcov -b file.c.gcov` --> 📈 Display more information about branches in the code.  If your code contains `if` or `else` statements, `gcov` shows how many times each branch was executed.
+    🔹 `gcov -o directory file.c.gcov` --> 📁 Use coverage data saved in another directory.
+
+🛠 **Examples:**
+
+    $ g++ -fprofile-arcs -ftest-coverage program.c -o program
+    $ ./program
+    $ gcov program.c
+
+    🔹 Compile and run the program and generate coverage files with `gcov`.
+
+    $ gcov -b program.c
+
+    🔹 Display branch coverage information.
+
+✅ **Simple Example:**
+
+    $ gcov program.c
+    File 'program.c'
+    Lines executed:75.00% of 20
+    Branches executed:70.00% of 10
+
+    🔹 This shows that 75% of the lines of code and 70% of the branches have been executed.

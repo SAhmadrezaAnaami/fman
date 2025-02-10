@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdk-pixbuf-csource` baraye tabdil kardan aks-ha (image-ha) be code zaban C estefade mishavad. In barname aks-ha ra dar dastoor zaban C embed mikonad, keh baraye estefade dar barname-haee ke nemitavanand aks-ha ra az file load konand mofid ast. Be fekre in bashid keh file khruji bozorg khahad bood.
+
+⚙️ **Gozine-ha:**
+    🔹 `--raw-inline` --> 🖼️ Aks ra be soorat "raw" dar code C embed mikonad.
+    🔹 `--name=esm` --> 🏷️ Esmi baraye array-e aks dar code C entekhab mikonad. Agar esm entekhab nashavad, esm file aks be kar mirevad.
+    🔹 `--static-output` --> 🔒 Code C ra be soorat static generate mikonad. Yani az global variable estefade nemikonad.
+    🔹 `--header` --> 📁 Fagat header file `.h` ra misazad.
+    🔹 `--c` --> 📄 Fagat code file `.c` ra misazad.
+
+🛠 **Mesal-ha:**
+
+    $ gdk-pixbuf-csource aks.png > aks.h
+
+    🔹 Code C baraye aks.png misazad va dar aks.h zakhire mikonad.
+
+    $ gdk-pixbuf-csource --raw-inline --name=aks_data aks.jpg aks.c
+
+    🔹 Aks aks.jpg ra be code C tabdil mikonad, be soorat "raw" dar an embed mikonad, esm array aks_data gozashte va dar aks.c zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ gdk-pixbuf-csource --name=my_image image.png image.c
+
+    🔹 Aks `image.png` be code C tabdil shodeh va ba esm `my_image` dar file `image.c` zakhire mishavad. In code C mitavanad dar barname-haye digar baraye namayesh aks bedun niaz be load az file estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdk-pixbuf-csource` command is used to convert images into C code. This program embeds images directly into C source code, which is useful for programs that cannot load images from files. Be aware that the output file can be quite large.
+
+⚙️ **Options:**
+    🔹 `--raw-inline` --> 🖼️ Embeds the image as raw data directly into the C code.
+    🔹 `--name=name` --> 🏷️ Chooses a name for the image array in the C code. If a name is not provided, the image filename is used.
+    🔹 `--static-output` --> 🔒 Generates static C code. Meaning it does not use global variables.
+    🔹 `--header` --> 📁 Only creates the header file `.h`.
+    🔹 `--c` --> 📄 Only creates the code file `.c`.
+
+🛠 **Examples:**
+
+    $ gdk-pixbuf-csource image.png > image.h
+
+    🔹 Generates C code for image.png and saves it in image.h.
+
+    $ gdk-pixbuf-csource --raw-inline --name=image_data image.jpg image.c
+
+    🔹 Converts the image image.jpg to C code, embeds it as raw data, names the array image_data, and saves it in image.c.
+
+✅ **Simple Example:**
+
+    $ gdk-pixbuf-csource --name=my_image image.png image.c
+
+    🔹 Converts the image `image.png` to C code and saves it with the name `my_image` in the file `image.c`. This C code can then be used in other programs to display the image without needing to load it from a file.

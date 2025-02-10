@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `deb-janitor` yek abzar ast baraye tamiz kardan va beینه sazi narmafzari-ha va pakej-ha dar sisteme `Debian` va `Ubuntu`. In dastoor komak mikonad ta pakej-haye bi estefade va file-haye temporary ra pak konid, va alan sisteme shoma ra behtar konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `deb-janitor --list-obsolete` --> 📜 List kardan pakej-haye ke digar lazem nistand.
+    🔹 `deb-janitor --remove-obsolete` --> 🗑️ Hazf kardan pakej-haye ke digar lazem nistand (ba etela' رسانی).
+    🔹 `deb-janitor --purge-obsolete`  --> 🔥 Hazf kardan pakej-haye bi estefade va config file-haye aan.
+    🔹 `deb-janitor --find-config-files` --> 👀 Peyda kardan config file-haye bi rabt be pakej-haye nasb shode.
+
+🛠 **Mesal-ha:**
+
+    $ deb-janitor --list-obsolete
+
+    🔹 List kardan hameye pakej-haye bi estefade ke mitavan hazf kard.
+
+    $ sudo deb-janitor --remove-obsolete
+
+    🔹 Hazf kardan pakej-haye bi estefade pas az namayesh dadan list.
+
+✅ **Mesal sade:**
+
+    $ sudo deb-janitor --purge-obsolete
+
+    🔹 Hazf kardan pakej-haye bi estefade va file-haye config marbute be anha. Ehtiate ziad ra dar nazar dashte bashid, chon in command file-haye config ra ham pak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `deb-janitor` command is a tool for cleaning and optimizing software packages in `Debian` and `Ubuntu` based systems. It helps remove unnecessary packages and temporary files, improving system performance.
+
+⚙️ **Options:**
+    🔹 `deb-janitor --list-obsolete` --> 📜 List packages that are no longer needed.
+    🔹 `deb-janitor --remove-obsolete` --> 🗑️ Remove obsolete packages (after confirmation).
+    🔹 `deb-janitor --purge-obsolete`  --> 🔥 Remove obsolete packages and their configuration files.
+    🔹 `deb-janitor --find-config-files` --> 👀 Find configuration files not associated with any installed packages.
+
+🛠 **Examples:**
+
+    $ deb-janitor --list-obsolete
+
+    🔹 List all obsolete packages that can be removed.
+
+    $ sudo deb-janitor --remove-obsolete
+
+    🔹 Remove obsolete packages after displaying a list.
+
+✅ **Simple Example:**
+
+    $ sudo deb-janitor --purge-obsolete
+
+    🔹 Remove obsolete packages and their associated configuration files. Use with caution, as this command also deletes configuration files.
+

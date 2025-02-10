@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_strip` baraye hazf (remove) neshane-haye debug (debug symbols) az file-haye executable va library-ha (libraries) ghabl az nasb (installation) estefade mishavad. In kar andazeye file-ha ra kam mikonad va az bazgardani reverse engineering sakhttar mikonad. Oban be tore ootomatik az tarigh dh dastkari mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--dbg-package=package` --> 📦 File-haye debug ra dar yek package joda gharar dahid.
+    🔹 `--no-strip` --> 🚫 Hazf neshane-haye debug ra gheyre fa'al konid (disable).
+    🔹 `-p package` --> 🎯 Faqat file-hayee az in package ra dastkari konid.
+
+🛠 **Mesal-ha:**
+
+    $ dh_strip
+
+    🔹 Hazf neshane-haye debug az hameye file-haye executable va library-ha dar directory-haye debian/tmp.
+
+    $ dh_strip --dbg-package=myapp-dbg
+
+    🔹 Neshane-haye debug ra hazf konid va anha ra dar package-e `myapp-dbg` gharar dahid.
+
+✅ **Mesal sade:**
+
+    $ dh_strip --no-strip
+
+    🔹 Hazf neshane-haye debug ra gheyre fa'al mikonad, be in mani ke neshane-haye debug hazf nemishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_strip` command is used to remove debugging symbols from executables and libraries before installation. This reduces file sizes and makes reverse engineering more difficult. It's automatically handled by dh during the build process.
+
+⚙️ **Options:**
+    🔹 `--dbg-package=package` --> 📦 Place the debug files in a separate debug package.
+    🔹 `--no-strip` --> 🚫 Disable stripping of debugging symbols.
+    🔹 `-p package` --> 🎯 Only process files from the specified package.
+
+🛠 **Examples:**
+
+    $ dh_strip
+
+    🔹 Strip debugging symbols from all executables and libraries in the debian/tmp directories.
+
+    $ dh_strip --dbg-package=myapp-dbg
+
+    🔹 Strip debugging symbols and place them in the `myapp-dbg` package.
+
+✅ **Simple Example:**
+
+    $ dh_strip --no-strip
+
+    🔹 Disables the stripping of debugging symbols, meaning debug symbols will not be removed.

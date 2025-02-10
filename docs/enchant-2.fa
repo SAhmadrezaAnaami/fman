@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `enchant-2` baraye baresi dorosti neveshtari (spell checking) va pishnahad kalamehaye dorost estefade mishavad. In dastoor jozi az ketabkhaneye Enchant ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `enchant-2 -l`  --> 📚 List kardan zabanhaaye dastras baraye spell checking.
+    🔹 `enchant-2 -d <zaban>`  --> 🔍  Entkhab farhang zaban moshakhas baraye spell checking (masalan, `enchant-2 -d en_US` baraye zabaneh English Amricaai).
+    🔹 `enchant-2 -a`  --> ✍️  Namayesh pishnahadha baraye kalamehaye eshtebah.
+
+🛠 **Mesal-ha:**
+
+    $ echo "in matn ashtebah darad" | enchant-2
+
+    🔹 Baresi matn az vorudi va chap kardan natijeh dar khoruji.
+
+    $ enchant-2 -l
+
+    🔹 Namayesh list zabanhaaye poshtibani shodeh.
+
+✅ **Mesal sade:**
+
+    $ echo "yek nemat az rahe ashtebah" | enchant-2 -a -d en_US
+
+    🔹 Spell check va namayesh pishnahadha baraye kalamehaye eshtebah dar matn dadeh shodeh ba estefadeh az farhangzabaneh American English.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `enchant-2` command is used for spell checking and suggesting corrections. It's part of the Enchant library.
+
+⚙️ **Options:**
+    🔹 `enchant-2 -l`  --> 📚 List available languages for spell checking.
+    🔹 `enchant-2 -d <language>`  --> 🔍  Select a specific language dictionary for spell checking (e.g., `enchant-2 -d en_US` for American English).
+    🔹 `enchant-2 -a`  --> ✍️  Display suggestions for misspelled words.
+
+🛠 **Examples:**
+
+    $ echo "this text has miistakes" | enchant-2
+
+    🔹 Checks the text from input and prints the result to output.
+
+    $ enchant-2 -l
+
+    🔹 Displays the list of supported languages.
+
+✅ **Simple Example:**
+
+    $ echo "a blesssing in the skies" | enchant-2 -a -d en_US
+
+    🔹 Spell checks and displays suggestions for misspelled words in the given text using the American English dictionary.

@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `docker-proxy` yek dastoor dakheli Docker ast ke baraye rahbari kardan traffic shabake be containers estefade mishavad.  In dastoor be shoma komak mikonad ta ports-e container-haye khod ra be ports-e meizban (host) etesal dahid.  Shoma oboora az in dastoor ra mostaghiman nakhahid did, chon Docker khodash in ra posht-e parde modiriat mikonad.
+
+⚙️ **Gozine-ha:**
+    (Generally, you don't interact with `docker-proxy` directly, but here's the underlying concept):
+    🔹`--protocol <protocol>`  -->  🌐 Protocol mored estefade (tcp, udp) ra moshakhas mikonad.
+    🔹`--host-ip <ip>`       -->  🏠 IP address-e meizban ra moshakhas mikonad.
+    🔹`--host-port <port>`     -->  🚪 Port-e meizban ra moshakhas mikonad.
+    🔹`--container-ip <ip>`  -->  📦 IP address-e container ra moshakhas mikonad.
+    🔹`--container-port <port>`-->  🔑 Port-e container ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    (You typically don't use `docker-proxy` directly. Docker handles this for you.)
+
+    Misali az tarighe Docker CLI:
+    $ docker run -p 8080:80 nginx
+    🔹 In dastoor port 80 dar dakhele container nginx ra be port 8080 dar meizban etesal midahad.  Docker az `docker-proxy` baraye rahbari traffic estefade mikonad.
+
+    Misali digar:
+    $ docker run -p 5432:5432 postgres
+    🔹 In dastoor port 5432 dar dakhele container postgres ra be port 5432 dar meizban etesal midahad.
+
+✅ **Mesal sade:**
+
+    $ docker run -d -p 80:80 nginx
+    🔹 Docker image `nginx` ra dar background run mikonad va port 80 dar container ra be port 80 dar meizban etesal midahad.  Bade az an shoma mitavanid az tarighe browser be localhost:80 be service nginx dastresi dashte bashid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `docker-proxy` command is an internal Docker command used to proxy network traffic to containers.  It helps map ports from the host to the ports inside the container. You generally won't directly interact with this command, as Docker manages it behind the scenes.
+
+⚙️ **Options:**
+    (Generally, you don't interact with `docker-proxy` directly, but here's the underlying concept):
+    🔹`--protocol <protocol>`  -->  🌐 Specifies the protocol to use (tcp, udp).
+    🔹`--host-ip <ip>`       -->  🏠 Specifies the host IP address.
+    🔹`--host-port <port>`     -->  🚪 Specifies the host port.
+    🔹`--container-ip <ip>`  -->  📦 Specifies the container IP address.
+    🔹`--container-port <port>`-->  🔑 Specifies the container port.
+
+🛠 **Examples:**
+
+    (You typically don't use `docker-proxy` directly. Docker handles this for you.)
+
+    Example using the Docker CLI:
+    $ docker run -p 8080:80 nginx
+    🔹 This command maps port 80 inside the nginx container to port 8080 on the host. Docker uses `docker-proxy` to manage the traffic.
+
+    Another example:
+    $ docker run -p 5432:5432 postgres
+    🔹 This command maps port 5432 inside the postgres container to port 5432 on the host.
+
+✅ **Simple Example:**
+
+    $ docker run -d -p 80:80 nginx
+    🔹 Runs the Docker image `nginx` in the background and maps port 80 in the container to port 80 on the host. After this, you can access the nginx service by visiting localhost:80 in your browser.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debian-distro-info` baraye gereftan etela'at dar bareye version haye mokhtalefe Debian estefade mishavad. In etela'at shamel name version, code name (esme ramezi), va tarikhe release mishavad.  Be karbar komak mikonad ke az version haye dast ras Debian va lifecycle anha agah bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--all`         --> 📜 Namayesh hameye version haye Debian
+    🔹 `--codename`    --> 👀 Fagat code name version ra namayesh midahad (meslan, 'bookworm').
+    🔹 `--version`     --> 📏 Fagat version ra namayesh midahad (meslan, '12').
+    🔹 `--latest`      --> 🆕 Akharin version-e stable ra neshon midahad.
+    🔹 `--release`     --> 📅 Tarikhe release ra neshon midahad.
+
+🛠 **Mesal-ha:**
+
+    $ debian-distro-info --all
+
+    🔹 Namayesh list-e kameli az hameye version haye Debian.
+
+    $ debian-distro-info --codename --latest
+
+    🔹 Namayesh codename akharin version-e Debian.
+
+✅ **Mesal sade:**
+
+    $ debian-distro-info --version --latest
+
+    🔹 Fagat version-e akharin release Debian ra neshon midahad.  Agar akharin version 12 bashad, khروجی "12" khahad bood.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debian-distro-info` command retrieves information about different Debian releases. This includes release names, codenames, and release dates.  It helps users stay informed about available Debian versions and their lifecycles.
+
+⚙️ **Options:**
+    🔹 `--all`         --> 📜 Display all Debian releases
+    🔹 `--codename`    --> 👀 Show only the codename of the release (e.g., 'bookworm').
+    🔹 `--version`     --> 📏 Show only the version number (e.g., '12').
+    🔹 `--latest`      --> 🆕 Show the latest stable release.
+    🔹 `--release`     --> 📅 Show the release date.
+
+🛠 **Examples:**
+
+    $ debian-distro-info --all
+
+    🔹 Display a complete list of all Debian releases.
+
+    $ debian-distro-info --codename --latest
+
+    🔹 Display the codename of the latest Debian release.
+
+✅ **Simple Example:**
+
+    $ debian-distro-info --version --latest
+
+    🔹 Shows just the version number of the latest Debian release.  If the latest version is 12, the output will be "12".

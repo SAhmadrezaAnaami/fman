@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `eog` (Eye of GNOME) yek barnamaye sade baraye didan tasvir-ha dar Linux ast. Ba in dastoor mitoonid tasvir-ha ro baz konid, zoom konid, va tasvir-ha ro moroor konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `eog file.jpg`        --> 🖼️ Baz kardane yek tasvir khass.
+    🔹 `eog pooshe/`          --> 📂 Baz kardane hameye tasvir-ha dar yek pooshe.
+    🔹 `eog -f`            --> 🖥️ Baz kardane EOG dar halat tamame sahne (fullscreen).
+    🔹 `eog --slide-show`   --> 🎞️ Baz kardane tasvir-ha be soorate slide show.
+
+🛠 **Mesal-ha:**
+
+    $ eog aks.png
+
+    🔹 Baz kardane tasvir "aks.png".
+
+    $ eog /home/user/tasvir-ha/
+
+    🔹 Baz kardane hameye tasvir-ha dar pooshe "tasvir-ha".
+
+✅ **Mesal sade:**
+
+    $ eog -f aks.jpg
+
+    🔹 Tasvir "aks.jpg" dar halat tamame sahne baz mishe, ke behtarin halat baraye didane aks be soorate bozorg ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `eog` (Eye of GNOME) command is a simple image viewer for Linux.  You can use this command to open, zoom, and browse images.
+
+⚙️ **Options:**
+    🔹 `eog file.jpg`        --> 🖼️ Opens a specific image.
+    🔹 `eog directory/`    --> 📂 Opens all images in a directory.
+    🔹 `eog -f`            --> 🖥️ Opens EOG in fullscreen mode.
+    🔹 `eog --slide-show`   --> 🎞️ Opens images in a slideshow.
+
+🛠 **Examples:**
+
+    $ eog image.png
+
+    🔹 Opens the image "image.png".
+
+    $ eog /home/user/images/
+
+    🔹 Opens all images in the "images" directory.
+
+✅ **Simple Example:**
+
+    $ eog -f image.jpg
+
+    🔹 Opens the "image.jpg" in fullscreen mode, which is ideal for viewing images in a larger format.

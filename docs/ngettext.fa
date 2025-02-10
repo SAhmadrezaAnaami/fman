@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ngettext` baraye tarjomeh matn-ha be zaban-haye mokhtalef estefade mishavad, vaghti ke tedad az yek had bishtar bashad. Yani agar matn bishtar az yekbar tekrar shavad, form-haye mokhtalef zaban ra dar nazar migirad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-d, --domain=NAME`  --> 🌍 Name domain file tarjomeh ra moshakhas mikonad.
+    🔹 `-p, --directory=DIR`  --> 📁 Directory ke file-haye tarjomeh dar anja hastand ra moshakhas mikonad.
+    🔹 `-s, --string=STRING`  --> 📝 String ke bayad tarjomeh shavad ra moshakhas mikonad. Agar STRING chand khat bashad bayad be ham chasbande shavand (concatenated).
+    🔹 `-n, --number=NUMBER` --> 🔢  Adad ra baraye entekhab form sahih dar zaban moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ ngettext -d myapp -n 2 "There is %d file" "There are %d files"
+
+    🔹 In dastoor, agar `myapp.mo` file tarjomeh vojood dashte bashad va tarjomeh baraye `2` file vojood dashte bashad, matn tarjomeh shodeh ra chap mikonad.
+
+    $ ngettext --domain=messages --number=1 --string="One apple" --string="Many apples"
+
+    🔹 Tarjomeh ra az domain `messages` ba adad `1` chap mikonad.  Agar tarjomeh vojood dashte bashad.
+
+✅ **Mesal sade:**
+
+    $ ngettext -n 5 "apple" "apples"
+
+    🔹 Agar file tarjomeh vojood dashte bashad va tarjomeh baraye 5 ta apple vojood dashte bashad matne tarjomeh shode ra namayesh midahad, dar gheir in soorat `apples` ra chap mikonad. chon tedad bishtar az 1 ast. Agar adad 1 bood, `apple` ra chap mikard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ngettext` command is used for translating text into different languages, especially when dealing with plural forms. It takes into account the different pluralization rules of various languages.
+
+⚙️ **Options:**
+    🔹 `-d, --domain=NAME`  --> 🌍 Specifies the name of the translation file domain.
+    🔹 `-p, --directory=DIR`  --> 📁 Specifies the directory where the translation files are located.
+    🔹 `-s, --string=STRING`  --> 📝 Specifies the string to be translated. If STRING is multi-line, it must be concatenated.
+    🔹 `-n, --number=NUMBER` --> 🔢 Specifies the number to select the correct plural form in the target language.
+
+🛠 **Examples:**
+
+    $ ngettext -d myapp -n 2 "There is %d file" "There are %d files"
+
+    🔹 If the translation file `myapp.mo` exists and a translation for `2` files is available, this command will print the translated text.
+
+    $ ngettext --domain=messages --number=1 --string="One apple" --string="Many apples"
+
+    🔹 Prints the translation from the `messages` domain with the number `1`, if a translation exists.
+
+✅ **Simple Example:**
+
+    $ ngettext -n 5 "apple" "apples"
+
+    🔹 If a translation file exists and a translation for 5 apples is available, this will display the translated text. Otherwise it prints `apples`, because the number is greater than 1. If the number was 1, it would print `apple`.

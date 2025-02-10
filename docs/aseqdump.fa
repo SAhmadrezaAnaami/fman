@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `aseqdump` baraye zabt va namayesh dadane etela'at MIDI az ALSA (Advanced Linux Sound Architecture) estefade mishavad. Yani shoma mitavanid har chizi ke az tarighe port-haye MIDI vorud va kharej mishavad ra bebinnid va zakhire konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `aseqdump -p [port]` --> 📍 Montakhab kardane yek port-e khass baraye zabt. Be jaye `[port]` , shomare ya name port-e MIDI ra benevisid.
+    🔹 `aseqdump -n` --> 🚫 Namayesh nadadane header-haye zamani.
+    🔹 `aseqdump -o [file]` --> 💾 Zakhire kardane etela'at dar yek file. Be jaye `[file]` , name file-e khod ra benevisid.
+    🔹 `aseqdump -d` --> ⏳ Namayesh dadane delta time, yani fazele zamani bein har event MIDI.
+
+🛠 **Mesal-ha:**
+
+    $ aseqdump -p 24:0
+
+    🔹 Zabt az port-e 24:0
+
+    $ aseqdump -o output.midi
+
+    🔹 Zakhire kardane etela'at MIDI dar file-e `output.midi`
+
+✅ **Mesal sade:**
+
+    $ aseqdump -p "TiMidity port 0" | grep Note
+
+    🔹 In dastoor faghat event-haye Note ra az port-e "TiMidity port 0" namayesh midahad. In yek rahe asan baraye filter kardane etela'ate MIDI ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `aseqdump` command is used to record and display MIDI data from the ALSA (Advanced Linux Sound Architecture) sequencer. This allows you to monitor and capture MIDI input and output from various ports.
+
+⚙️ **Options:**
+    🔹 `aseqdump -p [port]` --> 📍 Select a specific port for recording. Replace `[port]` with the port number or name.
+    🔹 `aseqdump -n` --> 🚫 Suppress printing of time stamps.
+    🔹 `aseqdump -o [file]` --> 💾 Save the MIDI data to a file. Replace `[file]` with your desired filename.
+    🔹 `aseqdump -d` --> ⏳ Display delta time, which is the time difference between MIDI events.
+
+🛠 **Examples:**
+
+    $ aseqdump -p 24:0
+
+    🔹 Capture MIDI data from port 24:0
+
+    $ aseqdump -o output.midi
+
+    🔹 Save the captured MIDI data to the file `output.midi`
+
+✅ **Simple Example:**
+
+    $ aseqdump -p "TiMidity port 0" | grep Note
+
+    🔹 This command displays only the Note events from the "TiMidity port 0". This is an easy way to filter MIDI data.

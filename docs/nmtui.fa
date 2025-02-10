@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nmtui` yek ravesh asan baraye modiriyat network dar terminal Linux ast. Ba `nmtui` mitoonid connection-haye network-etoon ro tagheer bedid, vasl beshid ya ghatan konid, va settings-haye IP ro moratab konid, hame az dakhele terminal.
+
+⚙️ **Gozine-ha:**
+    🔹 Bedoone gozine:  `nmtui` --> Interface-e asli ro baz mikone.
+    🔹 `nmtui connect` --> 📶 Baraye vasl shodan be yek shabake.
+    🔹 `nmtui edit` --> 📝 Baraye tagheer dadane connection-haye shabake.
+    🔹 `nmtui hostname` --> 💻 Baraye tagheer dadane name computer (hostname).
+
+🛠 **Mesal-ha:**
+
+    $ nmtui
+
+    🔹 Interface `nmtui` ro baz mikone.
+
+    $ nmtui edit
+
+    🔹 Baraye tagheer dadane yek connection shabake.
+
+✅ **Mesal sade:**
+
+    $ sudo nmtui
+
+    🔹 Ba ejraye in dastoor ba `sudo`, shoma mitoonid settings-haye network ra tagheer dahid.  In dastoor interface ra baz mikone va shoma mitoonid connection-haye network-etoon ro entekhab va tagheer bedid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nmtui` command provides a text-based user interface (TUI) for managing network connections in Linux. It allows you to easily connect to networks, edit existing connections, and configure IP settings directly from the terminal.
+
+⚙️ **Options:**
+    🔹 No option: `nmtui` --> Opens the main nmtui interface.
+    🔹 `nmtui connect` --> 📶 Used to connect to a network.
+    🔹 `nmtui edit` --> 📝 Used to edit network connections.
+    🔹 `nmtui hostname` --> 💻 Used to set the system's hostname.
+
+🛠 **Examples:**
+
+    $ nmtui
+
+    🔹 Opens the `nmtui` interface.
+
+    $ nmtui edit
+
+    🔹 Used to edit an existing network connection.
+
+✅ **Simple Example:**
+
+    $ sudo nmtui
+
+    🔹 By running this command with `sudo`, you can modify network settings. This opens the interface, allowing you to select and modify your network connections.
+

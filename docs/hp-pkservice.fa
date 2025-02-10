@@ -1,0 +1,61 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-pkservice` baraye modiriyat va kar ba Printer Key Service (PKS) dar system-haye HP estefade mishavad. PKS yek rahe hal baraye amniat printer ast ke estefade az printer-ha ra ba password ya credential-haye amne moratab mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-pkservice --enable`  --> ✅ PKS ra fa'al mikonad.
+    🔹 `hp-pkservice --disable` --> ⛔️ PKS ra gheyre fa'al mikonad.
+    🔹 `hp-pkservice --status`  --> ℹ️ Vaziyat (status) PKS ra neshon midahad (fa'al ya gheyre fa'al).
+    🔹 `hp-pkservice --configure` --> ⚙️ Peykare-bandi (configure) PKS ra rah andazi mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-pkservice --status
+
+    🔹 Vaziyat PKS ra neshon midahad.
+
+    $ sudo hp-pkservice --enable
+
+    🔹 PKS ra fa'al mikonad (be dastresi root niaz darad).
+
+✅ **Mesal sade:**
+
+    $ hp-pkservice --status
+    PKS is currently: Enabled
+
+    🔹  In mesal neshon midahad ke PKS dar hal hazer fa'al ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-pkservice` command is used to manage and interact with the Printer Key Service (PKS) on HP systems. PKS is a printer security solution that controls access to printers using passwords or secure credentials.
+
+⚙️ **Options:**
+    🔹 `hp-pkservice --enable`  --> ✅ Enables PKS.
+    🔹 `hp-pkservice --disable` --> ⛔️ Disables PKS.
+    🔹 `hp-pkservice --status`  --> ℹ️ Shows the status of PKS (enabled or disabled).
+    🔹 `hp-pkservice --configure` --> ⚙️ Launches the PKS configuration utility.
+
+🛠 **Examples:**
+
+    $ hp-pkservice --status
+
+    🔹 Shows the current status of PKS.
+
+    $ sudo hp-pkservice --enable
+
+    🔹 Enables PKS (requires root privileges).
+
+✅ **Simple Example:**
+
+    $ hp-pkservice --status
+    PKS is currently: Enabled
+
+    🔹 This example shows that PKS is currently enabled.
+

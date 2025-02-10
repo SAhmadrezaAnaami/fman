@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `linux32` baraye ejra kardan yek barname 32-biti dar yek system 64-biti estefade mishavad. In be karbar ijaze mide barname haye ghadeemi ro ke faghat baraye architecture 32-bit neveshte shode and, ejra kone.
+
+⚙️ **Gozine-ha:**
+    🔹 `linux32 bash`  --> 💻 Terminal bash ra dar mode 32-bit baz mikonad.
+    🔹 `linux32 ./my_program` --> 🚀 Barname "my_program" ra dar mode 32-bit ejra mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ linux32 uname -m
+
+    🔹 Namayesh memari system dar mode 32-bit (bayad i686 ya chizi shabihe oon neshun bede).
+
+    $ linux32 file /bin/ls
+
+    🔹 Check mikonad ke aya /bin/ls yek file 32-biti hast ya na. Agar 32-biti bashad, etelaati dar in mored neshun mide.
+
+✅ **Mesal sade:**
+
+    $ linux32 bash
+    $ uname -m
+    i686
+
+    🔹 In mesal terminal bash ra dar mode 32-bit baz mikonad va ba estefade az `uname -m`, memari system ra check mikonad. Agar `i686` neshun dade shavad, yani shoma dar hale ejra dar mode 32-bit hastid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `linux32` command is used to execute a 32-bit program on a 64-bit system.  It allows users to run older applications that were designed only for a 32-bit architecture.
+
+⚙️ **Options:**
+    🔹 `linux32 bash`  --> 💻 Opens a bash terminal in 32-bit mode.
+    🔹 `linux32 ./my_program` --> 🚀 Executes the program "my_program" in 32-bit mode.
+
+🛠 **Examples:**
+
+    $ linux32 uname -m
+
+    🔹 Shows the system architecture in 32-bit mode (should display i686 or similar).
+
+    $ linux32 file /bin/ls
+
+    🔹 Checks if /bin/ls is a 32-bit file. If it is, information about it is displayed.
+
+✅ **Simple Example:**
+
+    $ linux32 bash
+    $ uname -m
+    i686
+
+    🔹 This example opens a bash terminal in 32-bit mode and then uses `uname -m` to check the system architecture. If `i686` is displayed, it means you are running in 32-bit mode.

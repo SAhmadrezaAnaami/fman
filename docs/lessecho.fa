@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lessecho` baraye chap kardan (print) matn ba escape sequence-haye kamtar estefade mishavad.
+    In dastoor baraye script-nevisi va zamani ke nemikhahid escape sequence-ha ejra shavand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n` --> 🚫 Jelvegiri az chap shodane khatte jadid (newline) dar akhar.
+    🔹 `-E` --> ✅ (Default) Disable kardan interpret kardan escape character-ha.
+    🔹 `-r` --> 🔄 Chap kardan exact argument-ha, hata agar escape sequence bashand.
+
+🛠 **Mesal-ha:**
+
+    $ lessecho "Salam\nDonya"
+
+    🔹 Chap kardan matn ba \n be onvane matn na khatte jadid.
+
+    $ lessecho -n "Salam"
+
+    🔹 Chap kardan "Salam" bedune khatte jadid dar akhar.
+
+✅ **Mesal sade:**
+
+    $ lessecho -E "In yek teste ba \\n"
+
+    🔹 In dastoor escape character-ha ro interpret nemikone va exact matn ro chap mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lessecho` command is used to display text with fewer escape sequence interpretations.
+    It is useful for scripting and situations where you don't want escape sequences to be executed.
+
+⚙️ **Options:**
+    🔹 `-n` --> 🚫 Suppress the trailing newline character.
+    🔹 `-E` --> ✅ (Default) Disable interpretation of escape characters.
+    🔹 `-r` --> 🔄 Print arguments exactly as given, even if they contain escape sequences.
+
+🛠 **Examples:**
+
+    $ lessecho "Hello\nWorld"
+
+    🔹 Prints the text with \n as a literal string, not a newline.
+
+    $ lessecho -n "Hello"
+
+    🔹 Prints "Hello" without a newline at the end.
+
+✅ **Simple Example:**
+
+    $ lessecho -E "This is a test with \\n"
+
+    🔹 This command does not interpret escape characters and prints the exact string.

@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apropos` baraye peyda kardan dastoor-ha (commands) bar asase kalame-haye kelidi (keywords) estefade mishavad. Agar esme yek dastoor ra be doursti nedaaneed, az `apropos` estefade konid ta dastoor-haye mortabet ra peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `apropos [kalame kelidi]` --> 🔍 Peyda kardan dastoor-ha ba kalame kelidi morede nazar.
+    🔹 `apropos -b [kalame kelidi]` --> 📚 Justojo-ye exact kalame kelidi (matn-e kamel).
+
+🛠 **Mesal-ha:**
+
+    $ apropos password
+
+    🔹 List kardan hameye dastoor-haee ke be "password" rabt daarand.
+
+    $ apropos -b editor
+
+    🔹 List kardan dastoor-haee ke tozihaat-eshon exactan "editor" ra daaran.
+
+✅ **Mesal sade:**
+
+    $ apropos printer
+
+    🔹 Agar yadeton nist chejoori chiz-e ra chap (print) konid, `apropos printer` be shoma dastoor-haye mortabet ba printer ra neshon mide, masalan `lpr` ya `lpq`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apropos` command searches the manual page descriptions for keyword(s).  It is useful when you don't know the exact name of a command but have an idea of what it does.
+
+⚙️ **Options:**
+    🔹 `apropos [keyword]` --> 🔍 Find commands related to the specified keyword.
+    🔹 `apropos -b [keyword]` --> 📚 Search for an exact keyword match in the manual descriptions.
+
+🛠 **Examples:**
+
+    $ apropos password
+
+    🔹 List all commands related to "password".
+
+    $ apropos -b editor
+
+    🔹 List commands whose descriptions contain the exact word "editor".
+
+✅ **Simple Example:**
+
+    $ apropos printer
+
+    🔹 If you don't remember how to print something, `apropos printer` will show you commands related to printing, such as `lpr` or `lpq`.

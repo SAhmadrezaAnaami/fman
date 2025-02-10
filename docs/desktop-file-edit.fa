@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `desktop-file-edit` baraye tagheer dadan file-haye `.desktop` be kar miravad. File-haye `.desktop` baraye ijad launcher-ha (icon-ha) dar menu-ha va rooye safe desktop estefade mishavand. Ba in dastoor mitoonid nam, dastoor, va icon-haye launcher-ha ro tagheer bedid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--create` --> ✨ Yek file `.desktop` jadid misazad.
+    🔹 `--desktop-file NAME` --> 📂 Esme file `.desktop` ke mikhahid tagheer bedid ro moshakhas mikonad.
+    🔹 `--set-name VALUE` --> 🏷️ Name launcher ro tagheer mide.
+    🔹 `--set-icon VALUE` --> 🖼️ Icon launcher ro tagheer mide.
+    🔹 `--set-exec VALUE` --> 🚀 Dastoori ke ba ejraye launcher ejra mishe ro tagheer mide.
+
+🛠 **Mesal-ha:**
+
+    $ desktop-file-edit --desktop-file myapp.desktop --set-name "My Application"
+
+    🔹 Name launcher "myapp.desktop" ra be "My Application" tagheer midahad.
+
+    $ desktop-file-edit --desktop-file myapp.desktop --set-icon /path/to/icon.png
+
+    🔹 Icon launcher "myapp.desktop" ra tagheer midahad.
+
+✅ **Mesal sade:**
+
+    $ desktop-file-edit --desktop-file myapp.desktop --set-exec "my_application_script.sh"
+
+    🔹  Dastoori ke ba click rooye launcher "myapp.desktop" ejra mishe, be "my_application_script.sh" tagheer peyda mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `desktop-file-edit` command is used to modify `.desktop` files.  `.desktop` files are used to create launchers (icons) in menus and on the desktop.  With this command, you can change the name, execution command, and icons of launchers.
+
+⚙️ **Options:**
+    🔹 `--create` --> ✨ Creates a new `.desktop` file.
+    🔹 `--desktop-file NAME` --> 📂 Specifies the name of the `.desktop` file you want to modify.
+    🔹 `--set-name VALUE` --> 🏷️ Changes the name of the launcher.
+    🔹 `--set-icon VALUE` --> 🖼️ Changes the icon of the launcher.
+    🔹 `--set-exec VALUE` --> 🚀 Changes the command that is executed when the launcher is run.
+
+🛠 **Examples:**
+
+    $ desktop-file-edit --desktop-file myapp.desktop --set-name "My Application"
+
+    🔹 Changes the name of the "myapp.desktop" launcher to "My Application".
+
+    $ desktop-file-edit --desktop-file myapp.desktop --set-icon /path/to/icon.png
+
+    🔹 Changes the icon of the "myapp.desktop" launcher.
+
+✅ **Simple Example:**
+
+    $ desktop-file-edit --desktop-file myapp.desktop --set-exec "my_application_script.sh"
+
+    🔹 The command that is executed when clicking the "myapp.desktop" launcher is changed to "my_application_script.sh".

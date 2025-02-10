@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mech-dump` baraye gereftan va namayesh dadan etela'at az yek mahale az hafeze (memory) estefade mishavad. In etela'at mitavanad shamel maghadir moteghayer-ha, dastoor-ol-amal-ha va digar dadeh-ha bashad. Bishtar vaghta baraye tashkhis khata va baresi raftar-e barnameh estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mech-dump <address>`  --> 📍 Adres-e mahale-ye hafeze-ye mored nazar ra moshakhas mikonad.
+    🔹 `mech-dump -s <size> <address>` --> 📦 Andaze-ye dade-haie ke bayad gerefte shavad ra moshakhas mikonad.
+    🔹 `mech-dump -n <count> <address>` --> 🔢 Tedad-e byte-ha ya item-haie ke bayad gerefte shavad ra moshakhas mikonad.
+    🔹 `mech-dump -t <type> <address>` --> 🏷️ Noe-e dadeh-haie ke bayad khande shavad ra moshakhas mikonad (masalan: int, float, char).
+
+🛠 **Mesal-ha:**
+
+    $ mech-dump 0x4000
+    
+    🔹 Namayesh dadeh-ha dar adres-e hafeze 0x4000.
+
+    $ mech-dump -s 16 0x4000
+
+    🔹 Gereftan 16 byte az adres-e 0x4000.
+
+    $ mech-dump -t int 0x4000
+
+    🔹 Khandan maghadir integer az adres-e 0x4000.
+
+✅ **Mesal sade:**
+
+    $ mech-dump -n 4 -t int 0x7ffc8e9a6000
+
+    🔹 Khandan 4 maghadir integer az adres-e 0x7ffc8e9a6000 va namayesh anha. Baraye baresi maghadir yek array be kar miravad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mech-dump` command is used to retrieve and display information from a specific memory location. This information can include variable values, instructions, and other data. It is often used for debugging and analyzing program behavior.
+
+⚙️ **Options:**
+    🔹 `mech-dump <address>`  --> 📍 Specifies the memory address to dump.
+    🔹 `mech-dump -s <size> <address>` --> 📦 Specifies the size of the data to retrieve in bytes.
+    🔹 `mech-dump -n <count> <address>` --> 🔢 Specifies the number of bytes or items to retrieve.
+    🔹 `mech-dump -t <type> <address>` --> 🏷️ Specifies the data type to interpret the memory as (e.g., int, float, char).
+
+🛠 **Examples:**
+
+    $ mech-dump 0x4000
+
+    🔹 Display data at memory address 0x4000.
+
+    $ mech-dump -s 16 0x4000
+
+    🔹 Retrieve 16 bytes from address 0x4000.
+
+    $ mech-dump -t int 0x4000
+
+    🔹 Read integer values from address 0x4000.
+
+✅ **Simple Example:**
+
+    $ mech-dump -n 4 -t int 0x7ffc8e9a6000
+
+    🔹 Reads 4 integer values from memory address 0x7ffc8e9a6000 and displays them. Useful for inspecting the values of an array.

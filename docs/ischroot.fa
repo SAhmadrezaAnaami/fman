@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ischroot` baraye check kardan inke aya yek process dar yek `chroot` jail ejra mishavad ya na, estefade mishavad. `chroot` jail yek rahe amniati ast ke yek process ra mahdood mikonad be yek ghesmat khasi az system file.  Age process dar `chroot` bashad, dastoor `ischroot` status code 0 barmigardanad, va dar gheire in soorat status code 1.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khasi nadarad. Faghat khod dastoor `ischroot` ra ejra mikonid.
+
+🛠 **Mesal-ha:**
+
+    $ ischroot
+
+    🔹 Agar dar `chroot` bashid, hich chizi chap nemishavad va status code 0 barmigardad. Agar nabashid, status code 1 barmigardad.
+    
+    $ echo $?
+
+    🔹 Baraye didan status code barmigashte az dastoor `ischroot`, az in dastoor estefade konid. Agar 0 bashad, yani dar `chroot` hastid.
+
+✅ **Mesal sade:**
+
+    $ ischroot && echo "Dar chroot hastid" || echo "Dar chroot nistid"
+
+    🔹 In dastoor status `chroot` ra check mikonad va yek payam neshan midahad ke aya dar `chroot` hastid ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ischroot` command is used to check whether a process is running in a `chroot` jail. A `chroot` jail is a security measure that restricts a process to a specific part of the file system.  If the process is in a `chroot`, the `ischroot` command returns a status code of 0; otherwise, it returns a status code of 1.
+
+⚙️ **Options:**
+    🔹 It doesn't have any specific options. You simply execute the `ischroot` command itself.
+
+🛠 **Examples:**
+
+    $ ischroot
+
+    🔹 If you are in a `chroot`, nothing is printed and the status code 0 is returned. If not, the status code 1 is returned.
+
+    $ echo $?
+
+    🔹 To see the return status code from the `ischroot` command, use this command. If it's 0, it means you're in a `chroot`.
+
+✅ **Simple Example:**
+
+    $ ischroot && echo "You are in a chroot" || echo "You are not in a chroot"
+
+    🔹 This command checks the `chroot` status and displays a message indicating whether you are in a `chroot` or not.

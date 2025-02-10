@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `apg` (Automated Password Generator) baraye dorost kardane password-haye ghavi va tasadofi (random) estefade mishavad.  In dastoor be shoma komak mikonad ta password-haye amni dorost konid ke haminjoori hads zadan anha sakht bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `apg -n 10`  --> 🔢 Dorost kardane 10 ta password
+    🔹 `apg -m 16`  --> 🔒 Password-haye 16 character-i dorost mikonad
+    🔹 `apg -a 0`   --> 🚫 Password-ha faghat shamel character haye alfanumeric mishavand(bedune symbole digar)
+
+🛠 **Mesal-ha:**
+
+    $ apg
+
+    🔹 Dorost kardane yek password tasadofi ba etela'ate pishfarz
+
+    $ apg -n 5 -m 12
+
+    🔹 Dorost kardane 5 ta password ba drazaye 12 character
+
+✅ **Mesal sade:**
+
+    $ apg -n 3 -m 8 -a 0
+
+    🔹 In dastoor 3 ta password-e 8 character-i dorost mikonad ke faghat az horoof va adad tashkil shode ast, bedune hich symbole digar.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `apg` (Automated Password Generator) command is used to generate strong, random passwords. It helps you create secure passwords that are difficult to guess.
+
+⚙️ **Options:**
+    🔹 `apg -n 10`  --> 🔢 Generate 10 passwords
+    🔹 `apg -m 16`  --> 🔒 Generate 16-character passwords
+    🔹 `apg -a 0`   --> 🚫 Passwords will only contain alphanumeric characters (no other symbols)
+
+🛠 **Examples:**
+
+    $ apg
+
+    🔹 Generate a single random password using default settings.
+
+    $ apg -n 5 -m 12
+
+    🔹 Generate 5 passwords with a length of 12 characters.
+
+✅ **Simple Example:**
+
+    $ apg -n 3 -m 8 -a 0
+
+    🔹 This command generates 3 passwords, each 8 characters long, using only alphanumeric characters (no symbols).

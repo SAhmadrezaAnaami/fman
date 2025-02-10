@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fold` baraye shikastan khat-ha-ye toolani dar file-ha be khat-ha-ye kootahtar estefade mishavad. In be dard mikhore vaghti dar terminal kar mikonid va mikhaid matn-ha be khoobi namayesh dade shavand va az hade safhe birun nazanad.
+
+⚙️ **Gozine-ha:**
+    🔹 `fold -w <tedad>` --> 📏 Ta'yin tool-e har khat (be harf). Masalan, `fold -w 70` har khat ra ba'd az 70 harf mishkanad.
+    🔹 `fold -s`        --> ✂️ Khat-ha ra faghat az fasele-ha (space) beborid. In behtar az shekastane vasat-e kalame ast.
+    🔹 `fold -b`        --> 🧮 Har byte ra hesab konid, na faghat harf.  In baraye file-ha-ye UTF-8 ke harf-ha-ye farsi daran mohem ast.
+
+🛠 **Mesal-ha:**
+
+    $ fold -w 40 file.txt
+
+    🔹 Har khat az file.txt ra ba'd az 40 harf mishkanad.
+
+    $ fold -s -w 70 file.txt
+
+    🔹 Har khat ra ta 70 harf mishkanad, vali faghat az fasele-ha.
+
+✅ **Mesal sade:**
+
+    $ echo "in yek matn-e kheili toolani hast ke bayad shikaste shavad" | fold -w 10
+
+    🔹 In dastoor matn ra be khat-ha-ye 10 harfi taqsim mikonad va dar terminal namayesh midahad. Har kalame ke bozorgtar az 10 harf bashad, baz ham mishkanad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fold` command is used to wrap long lines in a file into shorter lines. This is useful when working in the terminal and you want text to be displayed properly and not extend beyond the screen width.
+
+⚙️ **Options:**
+    🔹 `fold -w <width>` --> 📏 Set the width of each line (in characters). For example, `fold -w 70` will wrap each line after 70 characters.
+    🔹 `fold -s`        --> ✂️ Break lines only at spaces. This is better than breaking in the middle of a word.
+    🔹 `fold -b`        --> 🧮 Count each byte, not just each character. This is important for UTF-8 files that contain Persian characters or other multi-byte characters.
+
+🛠 **Examples:**
+
+    $ fold -w 40 file.txt
+
+    🔹 Wraps each line of file.txt after 40 characters.
+
+    $ fold -s -w 70 file.txt
+
+    🔹 Wraps each line up to 70 characters, but only at spaces.
+
+✅ **Simple Example:**
+
+    $ echo "this is a very long text that needs to be wrapped" | fold -w 10
+
+    🔹 This command divides the text into lines of 10 characters and displays them in the terminal. Any word longer than 10 characters will still be broken.

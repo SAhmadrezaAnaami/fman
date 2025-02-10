@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-setup` baraye rahandazi va tanzeem-e printer-haye HP dar Linux estefade mishavad. Ba in dastoor, mitoonid printer jadid ra ezafe konid, driver-haye lazem ra nasb konid va printer ra baraye estefade amade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-setup` --> 🧙‍♂️ Rahandazi dastgah be soorat Wizard (rahnamayi shodeh)
+    🔹 `hp-setup <IP address>` --> 🌐 Rahandazi printer az tarigh IP address (dar shabake)
+    🔹 `hp-setup -i` --> ℹ️ Eetela'at raje be dastgah-haye HP nasb shodeh ra namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-setup
+
+    🔹 Dastoor rahandazi wizard-ra baz mikonad.
+
+    $ hp-setup 192.168.1.10
+
+    🔹 Printer-i ke IP address-ash 192.168.1.10 ast ra rahandazi mikonad.
+
+✅ **Mesal sade:**
+
+    $ hp-setup
+
+    🔹 Ba ejraye in dastoor, yek safhe grafik dar system shoma baz mishavad ke shoma ra dar marhale-ye nasb printer HP rahnamayi mikonad. Be soorat automatic driver-haye mored niaz ra peyda va nasb mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-setup` command is used to configure and set up HP printers in Linux. It allows you to add new printers, install necessary drivers, and prepare the printer for use.
+
+⚙️ **Options:**
+    🔹 `hp-setup` --> 🧙‍♂️ Launch the device setup wizard
+    🔹 `hp-setup <IP address>` --> 🌐 Set up printer via IP address (on the network)
+    🔹 `hp-setup -i` --> ℹ️ Display information about installed HP devices
+
+🛠 **Examples:**
+
+    $ hp-setup
+
+    🔹 Opens the setup wizard.
+
+    $ hp-setup 192.168.1.10
+
+    🔹 Sets up the printer with the IP address 192.168.1.10.
+
+✅ **Simple Example:**
+
+    $ hp-setup
+
+    🔹 Running this command opens a graphical interface on your system that guides you through the HP printer installation process. It automatically finds and installs the necessary drivers.
+

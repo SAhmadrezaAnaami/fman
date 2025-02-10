@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-hid` baraye estefade az dastgah haye HID (Human Interface Device) mesle keyboard haye braille ba Brltty (yek barname screen reader baraye linux) estefade mishavad. In dastoor komak mikonad ke Brltty betavanad ba in dastgah ha ertebat bargharar konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-b <driver>`  --> 💻  Driver-e mored nazar ro moshakhas mikonad baraye dastgah HID.
+    🔹 `-d <device>` --> 📍  Address-e dastgah HID ro moshakhas mikonad. Agar address dade nashavad, khodash search mikonad.
+    🔹 `-n <name>`   --> 🏷️  Name baraye dastgah HID moshakhas mikonad.
+    🔹 `-v`          --> 📣  Namayeshe etela'at bishtar dar morede kar kardane barnameh.
+    🔹 `-q`          --> 🤫  Saket kardan out put e barnameh.
+
+🛠 **Mesal-ha:**
+
+    $ brltty-hid -b opendot -d /dev/hidraw0
+
+    🔹 Brltty ra ba dastgah HID e Opendot va address hidraw0 run mikonad.
+
+    $ brltty-hid -b keybraille -n "Braille Keyboard"
+
+    🔹  Brltty ra ba keyboard braille ba name "Braille Keyboard" run mikonad.
+
+✅ **Mesal sade:**
+
+    $ brltty-hid -b auto
+
+    🔹  In dastoor otomatik driver e appropriate ro baraye dastgah haye HID peyda mikonad va Brltty ra ba an run mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-hid` command is used to enable HID (Human Interface Device) devices, such as braille keyboards, to work with Brltty (a screen reader program for Linux). This command helps Brltty interface with these devices.
+
+⚙️ **Options:**
+    🔹 `-b <driver>`  --> 💻  Specifies the driver to use for the HID device.
+    🔹 `-d <device>` --> 📍  Specifies the device address of the HID. If no address is given, it will search.
+    🔹 `-n <name>`   --> 🏷️  Specifies a name for the HID device.
+    🔹 `-v`          --> 📣  Verbose mode: displays more information about the program's operation.
+    🔹 `-q`          --> 🤫  Quiet mode: suppresses the program's output.
+
+🛠 **Examples:**
+
+    $ brltty-hid -b opendot -d /dev/hidraw0
+
+    🔹 Runs Brltty with the Opendot HID device at address hidraw0.
+
+    $ brltty-hid -b keybraille -n "Braille Keyboard"
+
+    🔹 Runs Brltty with a braille keyboard named "Braille Keyboard".
+
+✅ **Simple Example:**
+
+    $ brltty-hid -b auto
+
+    🔹 This command automatically finds the appropriate driver for HID devices and runs Brltty with it.

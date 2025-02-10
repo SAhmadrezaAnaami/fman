@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ln` baraye sakhtan yek link (payvand) be file-ha ya pooshe-ha estefade mishavad. Do noe link darim: soft link va hard link. Soft link mesle yek shortcut amal mikonad, vali hard link mesle yek name digar baraye haman file ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `ln -s target link_name`  --> 🔗 Sakhtan soft link. `target` file asli va `link_name` name shortcut hast.
+    🔹 `ln target link_name`   --> 🧱 Sakhtan hard link.  Faghat baraye file-ha kar mikonad, na pooshe-ha.
+    🔹 `ln -f target link_name`  --> ⚠️ Age `link_name` ghablan vojood dashte bashad, override mikonad (be khatar andakhtan etela'at).
+
+🛠 **Mesal-ha:**
+
+    $ ln -s file.txt link_to_file
+
+    🔹 Yek soft link ba name `link_to_file` be `file.txt` misazad.
+
+    $ ln document.pdf my_document.pdf
+
+    🔹 Yek hard link ba name `my_document.pdf` be `document.pdf` misazad.
+
+✅ **Mesal sade:**
+
+    $ ln -s important_file.txt shortcut
+
+    $ ls -l shortcut
+
+    lrwxrwxrwx 1 user user 18 Oct 26 10:00 shortcut -> important_file.txt
+
+    🔹 Soft link `shortcut` be `important_file.txt` eshare mikonad. Agar `important_file.txt` hazf shavad, `shortcut` digar kar nemikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ln` command is used to create links to files or directories. There are two types of links: soft links (symbolic links) and hard links. A soft link acts like a shortcut, while a hard link is like another name for the same file.
+
+⚙️ **Options:**
+    🔹 `ln -s target link_name`  --> 🔗 Create a soft link. `target` is the original file and `link_name` is the shortcut name.
+    🔹 `ln target link_name`   --> 🧱 Create a hard link.  Works only for files, not directories.
+    🔹 `ln -f target link_name`  --> ⚠️ If `link_name` already exists, it will be overwritten (potential data loss).
+
+🛠 **Examples:**
+
+    $ ln -s file.txt link_to_file
+
+    🔹 Creates a soft link named `link_to_file` to `file.txt`.
+
+    $ ln document.pdf my_document.pdf
+
+    🔹 Creates a hard link named `my_document.pdf` to `document.pdf`.
+
+✅ **Simple Example:**
+
+    $ ln -s important_file.txt shortcut
+
+    $ ls -l shortcut
+
+    lrwxrwxrwx 1 user user 18 Oct 26 10:00 shortcut -> important_file.txt
+
+    🔹 The soft link `shortcut` points to `important_file.txt`. If `important_file.txt` is deleted, `shortcut` will no longer work.

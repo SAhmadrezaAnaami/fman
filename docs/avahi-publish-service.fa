@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `avahi-publish-service` baraye pakhsh kardan (publish) khedmat-ha (services) az tarigh Avahi (yek framework baraye service discovery dar shabake-haye mahali) estefade mishavad. Yani digar dastgah-ha mitavanand in khedmat-ha ra dar shabake peyda konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `-h`  --> ❓ Namayesh rahnama (help) va tamam gozine-ha.
+    🔹 `-v`  --> 📢 Afzayesh detaile log baraaye debug kardan.
+    🔹 `<service_type>`  --> 🏷️ No’e khedmat (mesal: `_http._tcp`, `_ssh._tcp`).
+    🔹 `<port>`  --> 🚪 Shomareye porti ke khedmat dar aan goosh mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ avahi-publish-service my-http _http._tcp 80
+
+    🔹 Pakhsh khedmat HTTP ba name "my-http" dar port 80.
+
+    $ avahi-publish-service printer _printer._tcp 9100 "product=MyPrinter" "usb_MFG=Acme"
+
+    🔹 Pakhsh khedmat chapgar (printer) ba name "printer" dar port 9100, ba etela’at ezafe.
+
+✅ **Mesal sade:**
+
+    $ avahi-publish-service my-ssh _ssh._tcp 22
+
+    🔹 In dastoor khedmat SSH ra ba name "my-ssh" dar port 22 pakhsh mikonad.  Digar dastgah-ha mitavanand az tarigh Avahi, SSH server ra peyda konand va be aan vasl shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `avahi-publish-service` command is used to publish services via Avahi, which is a service discovery framework for local networks. This allows other devices on the network to discover these services.
+
+⚙️ **Options:**
+    🔹 `-h`  --> ❓ Show help and all options.
+    🔹 `-v`  --> 📢 Increase logging verbosity for debugging.
+    🔹 `<service_type>`  --> 🏷️ The service type (e.g., `_http._tcp`, `_ssh._tcp`).
+    🔹 `<port>`  --> 🚪 The port number the service is listening on.
+
+🛠 **Examples:**
+
+    $ avahi-publish-service my-http _http._tcp 80
+
+    🔹 Publish an HTTP service named "my-http" on port 80.
+
+    $ avahi-publish-service printer _printer._tcp 9100 "product=MyPrinter" "usb_MFG=Acme"
+
+    🔹 Publish a printer service named "printer" on port 9100, with extra information.
+
+✅ **Simple Example & Explanation:**
+
+    $ avahi-publish-service my-ssh _ssh._tcp 22
+
+    🔹 This command publishes an SSH service named "my-ssh" on port 22. Other devices can then discover the SSH server via Avahi and connect to it.

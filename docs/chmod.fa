@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chmod` baraye tagheer dadan dastresi-ha (permissions) file-ha va pooshe-ha be kar miravad. Yani shoma mitavanid moshakhas konid ke che kasi (sahheb file, grooh, ya hame) che noe amali (khandan, neveshtan, ejra kardan) ra rooye file ya pooshe anjam dahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `chmod +x <filename>` --> ➕ Ezafe kardan ejra shodan (execute) be file baraye hame.
+    🔹 `chmod u+rwx <filename>` --> 👤 Dadane hameye dastresi-ha (read, write, execute) be sahheb file (user).
+    🔹 `chmod g-w <filename>` --> ➖ Bardashtane dastresi neveshtan (write) az grooh.
+    🔹 `chmod 755 <filename>` --> 🔢 Estefade az adad baraye set kardane dastresi-ha (sahheb: read, write, execute; grooh: read, execute; digaran: read, execute).
+        →  7 = rwx (4+2+1), 5 = r-x (4+0+1).
+
+🛠 **Mesal-ha:**
+
+    $ chmod +x myscript.sh
+
+    🔹 In dastoor be file "myscript.sh" ejaze ejra shodan midahad.
+
+    $ chmod 777 myfolder
+
+    🔹 In dastoor be hame dastresi kamel (read, write, execute) be pooshe "myfolder" midahad. (Ehtiat konid! Obuman astefade nakonid).
+
+✅ **Mesal sade:**
+
+    $ chmod u+x program.py
+
+    🔹 Be sahheb file "program.py" ejaze ejra shodan dade mishavad, pas mitavan be soorate `./program.py` ejra kard.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chmod` command is used to change the permissions of files and directories. This allows you to specify who (the file owner, the group, or others) can perform what actions (read, write, execute) on a file or directory.
+
+⚙️ **Options:**
+    🔹 `chmod +x <filename>` --> ➕ Add execute permission to the file for everyone.
+    🔹 `chmod u+rwx <filename>` --> 👤 Give all permissions (read, write, execute) to the file owner (user).
+    🔹 `chmod g-w <filename>` --> ➖ Remove write permission from the group.
+    🔹 `chmod 755 <filename>` --> 🔢 Use numbers to set permissions (owner: read, write, execute; group: read, execute; others: read, execute).
+        →  7 = rwx (4+2+1), 5 = r-x (4+0+1).
+
+🛠 **Examples:**
+
+    $ chmod +x myscript.sh
+
+    🔹 This command gives execute permission to the file "myscript.sh".
+
+    $ chmod 777 myfolder
+
+    🔹 This command gives full permissions (read, write, execute) to everyone for the directory "myfolder". (Use with caution! Avoid excessive use).
+
+✅ **Simple Example:**
+
+    $ chmod u+x program.py
+
+    🔹 Gives the owner of the file "program.py" execute permissions, so it can be run with `./program.py`.

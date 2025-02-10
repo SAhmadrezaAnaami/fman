@@ -1,0 +1,69 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-plugin` baraye modiriyat ezafeh-ha (plugins) dar system-haye chapgar (printer) HP estefade mishavad. In dastoor be shoma komak mikonad ke plugin-haye jadid ra nasb konid, plugin-haye mojood ra update konid, va moshkelat ra dar plugin-ha bartaraf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-plugin -i`  --> 📦 Nasb yek plugin jadid az yek file.
+    🔹 `hp-plugin -u`  --> ⬆️ Update kardan hameye plugin-haye nasb shode.
+    🔹 `hp-plugin -r`  --> 🗑️ Hazf kardan (remove) yek plugin az system.
+    🔹 `hp-plugin -v`  --> 🔍 Namayesh version va etela'at digar dar mored plugin.
+    🔹 `hp-plugin -p`  --> 📄 List kardan hameye plugin-haye nasb shode.
+
+🛠 **Mesal-ha:**
+
+    $ hp-plugin -i /path/be/plugin.ppd
+
+    🔹 Nasb plugin az file PPD.
+
+    $ hp-plugin -u
+
+    🔹 Update hameye plugin-ha.
+
+    $ hp-plugin -r plugin_name
+
+    🔹 Hazf plugin ba name "plugin_name".
+
+✅ **Mesal sade:**
+
+    $ hp-plugin -p
+
+    🔹 List hameye plugin-ha, va shoma mitavanid bebinid ke kodam plugin-ha dar system shoma nasb shodeand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-plugin` command is used to manage plugins in HP printer systems. It helps you install new plugins, update existing ones, and troubleshoot plugin issues.
+
+⚙️ **Options:**
+    🔹 `hp-plugin -i`  --> 📦 Install a new plugin from a file.
+    🔹 `hp-plugin -u`  --> ⬆️ Update all installed plugins.
+    🔹 `hp-plugin -r`  --> 🗑️ Remove a plugin from the system.
+    🔹 `hp-plugin -v`  --> 🔍 Show version and other information about a plugin.
+    🔹 `hp-plugin -p`  --> 📄 List all installed plugins.
+
+🛠 **Examples:**
+
+    $ hp-plugin -i /path/to/plugin.ppd
+
+    🔹 Install plugin from a PPD file.
+
+    $ hp-plugin -u
+
+    🔹 Update all plugins.
+
+    $ hp-plugin -r plugin_name
+
+    🔹 Remove plugin with the name "plugin_name".
+
+✅ **Simple Example:**
+
+    $ hp-plugin -p
+
+    🔹 List all plugins, and you can see which plugins are installed on your system.
+

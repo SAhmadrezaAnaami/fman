@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-logs` baraye didan va barrasi log-haye system dar environment GNOME be kar miravad. Ba in dastoor shoma mitoonid error-ha, warning-ha va etela'at dige ke system sabt karde ro bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-logs` --> 🖥️ Baz kardan barnameye gnome-logs ba GUI (Graphical User Interface).
+    🔹 `gnome-logs --since today` --> 📅 Namayesh log-ha az emrooz be baad.
+    🔹 `gnome-logs --follow` --> 🔄 Namayesh log-ha be soorate real-time (yani har chizi ezafe mishe, foran bebinid).
+    🔹 `gnome-logs --level=error` --> 🚨 Namayesh log-ha faghat ba level "error".
+
+🛠 **Mesal-ha:**
+
+    $ gnome-logs
+
+    🔹 Barnameye gnome-logs ro baz mikone ke shoma mitoonid log-ha ro az oonja bebinid.
+
+    $ gnome-logs --since yesterday
+
+    🔹 Log-ha ro az dirooz ta hala namayesh mide.
+
+✅ **Mesal sade:**
+
+    $ gnome-logs --level=warning --follow
+
+    🔹 Log-ha ro be soorate real-time faghat baraye warning-ha namayesh mide. In kheili mohemme vaghti mikhayd faqat warning-ha ro doroste koonid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-logs` command is used to view and analyze system logs in the GNOME environment.  With this command you can inspect errors, warnings, and other information recorded by the system.
+
+⚙️ **Options:**
+    🔹 `gnome-logs` --> 🖥️ Opens the gnome-logs application with a GUI (Graphical User Interface).
+    🔹 `gnome-logs --since today` --> 📅 Show logs from today onwards.
+    🔹 `gnome-logs --follow` --> 🔄 Show logs in real-time (i.e., see new entries as they are added).
+    🔹 `gnome-logs --level=error` --> 🚨 Show logs only with the "error" level.
+
+🛠 **Examples:**
+
+    $ gnome-logs
+
+    🔹 Opens the gnome-logs application where you can view logs.
+
+    $ gnome-logs --since yesterday
+
+    🔹 Displays logs from yesterday until now.
+
+✅ **Simple Example:**
+
+    $ gnome-logs --level=warning --follow
+
+    🔹 Shows logs in real-time, but only for warnings.  This is very useful when you want to address warnings specifically.

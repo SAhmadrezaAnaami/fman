@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installwm` baraye nasb kardan file-haye vaseteh karbari (window manager files) dar بسته های Debian estefade mishavad. In dastoor اطمینان حاصل میکند که file-haye مربت به vaseteh karbari در جای درست خود قرار میگیرند وقتی که بسته نصب میشود.
+    
+⚙️ **Gozine-ha:**
+    🔹 `-n`  --> 🚫 Nasb file-haye manfi را az vaseteh karbari hazf kon.
+    🔹 `-p package` --> 📦 Faghat file-haye vaseteh karbari ra baraye بسته معین نصب kon. agar in gozineh estefade nashavad, file-ha baraye hameye بسته ها نصب mishavad.
+    🔹 `--name имя` --> 🏷️ Estefade az имя be عنوان name vaseteh karbari be جای name پیش فرض.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installwm
+
+    🔹 Nasb hameye file-haye vaseteh karbari az directory `debian/package/usr/share/xsessions/` baraye hameye بسته ها.
+
+    $ dh_installwm -p mypackage
+
+    🔹 Faghat nasb file-haye vaseteh karbari baraye بسته `mypackage`.
+
+✅ **Mesal sade:**
+
+    $ dh_installwm --name Awesome
+
+    🔹 Nasb file-haye vaseteh karbari va taghir name an be `Awesome`. Agar file ba in name vojud dashteh bashad update mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installwm` command is used to install window manager files in Debian packages.  It ensures that the files related to the window manager are placed in the correct locations when the package is installed.
+
+⚙️ **Options:**
+    🔹 `-n`  --> 🚫 Uninstall window manager files.
+    🔹 `-p package` --> 📦 Only install window manager files for the specified package. If this option is not used, the files are installed for all packages.
+    🔹 `--name name` --> 🏷️ Use name as the window manager name instead of the default name.
+
+🛠 **Examples:**
+
+    $ dh_installwm
+
+    🔹 Install all window manager files from the `debian/package/usr/share/xsessions/` directory for all packages.
+
+    $ dh_installwm -p mypackage
+
+    🔹 Only install window manager files for the `mypackage` package.
+
+✅ **Simple Example:**
+
+    $ dh_installwm --name Awesome
+
+    🔹 Install window manager files and rename it to `Awesome`. If a file with this name exists, it is updated.

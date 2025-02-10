@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gp-collect-app` baraye jam'avari etela'at az application-ha va dastgah haye Google Play estefade mishavad. In etela'at mitavanad dar mored crash-ha, bug-ha, va performance app bashad.  In dastoor obzar-haye komaki baraye developers ast ta app khod ra behtar konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--package-name <esm-baste>`  --> 📦 Esme package app mored nazar ra moshakhas mikonad.
+    🔹 `--start-date <tarikh>`  --> 🗓️ Tarikhi ke az aan etela'at jam'avari shavad (formate: YYYY-MM-DD).
+    🔹 `--end-date <tarikh>`  --> 🗓️ Tarikhi ke ta aan etela'at jam'avari shavad (formate: YYYY-MM-DD).
+    🔹 `--output-dir <masir>`   --> 📂 Masiri ke file-haye natije dar aan zakhire mishavand.
+    🔹 `--credential-path <masir>` --> 🔑 Masir be file credential Google Cloud (JSON format).
+
+🛠 **Mesal-ha:**
+
+    $ gp-collect-app --package-name com.example.myapp --start-date 2024-01-01 --end-date 2024-01-31 --output-dir /tmp/app_data
+
+    🔹 Jam'avari etela'at baraye app "com.example.myapp" az tarikhe 2024-01-01 ta 2024-01-31 va zakhire dar "/tmp/app_data".
+
+    $ gp-collect-app --package-name com.example.game --start-date 2024-02-15 --end-date 2024-03-15 --output-dir ~/game_stats --credential-path /path/to/credentials.json
+
+    🔹 Jam'avari etela'at baraye app "com.example.game" az tarikhe 2024-02-15 ta 2024-03-15 va zakhire dar "~/game_stats" ba estefade az credential file.
+
+✅ **Mesal sade:**
+
+    $ gp-collect-app --package-name com.mygreatapp --start-date 2024-10-26 --end-date 2024-10-27 --output-dir ./data
+
+    🔹 In dastoor etela'at application "com.mygreatapp" ra baraye tarikhe 2024-10-26 va 2024-10-27 az Google Play jam'avari mikonad va an ra dar pooshe `./data` dar haman directory zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gp-collect-app` command is used to collect data from Google Play applications and devices. This data can include information about crashes, bugs, and app performance.  It's a tool that helps developers improve their apps.
+
+⚙️ **Options:**
+    🔹 `--package-name <package-name>` --> 📦 Specifies the package name of the application to collect data for.
+    🔹 `--start-date <date>`       --> 🗓️ The date from which to start collecting data (format: YYYY-MM-DD).
+    🔹 `--end-date <date>`         --> 🗓️ The date until which to collect data (format: YYYY-MM-DD).
+    🔹 `--output-dir <directory>`  --> 📂 The directory where the resulting files will be saved.
+    🔹 `--credential-path <path>`  --> 🔑 Path to Google Cloud credential file (JSON format).
+
+🛠 **Examples:**
+
+    $ gp-collect-app --package-name com.example.myapp --start-date 2024-01-01 --end-date 2024-01-31 --output-dir /tmp/app_data
+
+    🔹 Collect data for the app "com.example.myapp" from 2024-01-01 to 2024-01-31 and save it in "/tmp/app_data".
+
+    $ gp-collect-app --package-name com.example.game --start-date 2024-02-15 --end-date 2024-03-15 --output-dir ~/game_stats --credential-path /path/to/credentials.json
+
+    🔹 Collect data for the app "com.example.game" from 2024-02-15 to 2024-03-15 and save it in "~/game_stats" using the provided credential file.
+
+✅ **Simple Example:**
+
+    $ gp-collect-app --package-name com.mygreatapp --start-date 2024-10-26 --end-date 2024-10-27 --output-dir ./data
+
+    🔹 This command collects data for the application "com.mygreatapp" for the dates 2024-10-26 and 2024-10-27 from Google Play and saves it in the `./data` folder in the current directory.

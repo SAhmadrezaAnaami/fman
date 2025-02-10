@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-play-1.0` baraye pakhsh file-haye multimedia (video va audio) az terminal estefade mishavad.  In dastoor az GStreamer baraye decode va play kardane format-haye mokhtalef estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `gst-play-1.0 <file>` --> 🎵 Pakhsh file-e multimedia.
+    🔹 `gst-play-1.0 --fullscreen <file>` --> 📺 Pakhsh file be soorate tamam safhe.
+    🔹 `gst-play-1.0 --volume=<value>` --> 🔊 Tanzim sedaye pakhsh (az 0 ta 1).
+    🔹 `gst-play-1.0 --subtitles=<file>` --> 💬 Namayesh zirnevis az file-e joda.
+
+🛠 **Mesal-ha:**
+
+    $ gst-play-1.0 video.mp4
+
+    🔹 Pakhsh file video ba name `video.mp4`.
+
+    $ gst-play-1.0 --fullscreen music.mp3
+
+    🔹 Pakhsh file audio ba name `music.mp3` be soorate tamam safhe (agar support shavad).
+
+✅ **Mesal sade:**
+
+    $ gst-play-1.0 --volume=0.5 movie.mkv
+
+    🔹 Pakhsh file `movie.mkv` ba sedaye 50%.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-play-1.0` command is used to play multimedia files (video and audio) from the terminal. This command uses GStreamer to decode and play various formats.
+
+⚙️ **Options:**
+    🔹 `gst-play-1.0 <file>` --> 🎵 Play the multimedia file.
+    🔹 `gst-play-1.0 --fullscreen <file>` --> 📺 Play the file in fullscreen mode.
+    🔹 `gst-play-1.0 --volume=<value>` --> 🔊 Adjust the playback volume (from 0 to 1).
+    🔹 `gst-play-1.0 --subtitles=<file>` --> 💬 Display subtitles from a separate file.
+
+🛠 **Examples:**
+
+    $ gst-play-1.0 video.mp4
+
+    🔹 Play the video file named `video.mp4`.
+
+    $ gst-play-1.0 --fullscreen music.mp3
+
+    🔹 Play the audio file named `music.mp3` in fullscreen mode (if supported).
+
+✅ **Simple Example:**
+
+    $ gst-play-1.0 --volume=0.5 movie.mkv
+
+    🔹 Play the file `movie.mkv` with the volume set to 50%.

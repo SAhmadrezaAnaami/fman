@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-tester-1.0` yek barname ast baraye test kardane element-ha va pipeline-haye GStreamer.  GStreamer yek framework baraye sakhtane application-haye multimedia mesle video player-ha va editor-haye video ast. Ba `gst-tester-1.0`, mitoonid element-ha va pipeline-haye GStreamer ro test konid ta az dorost kar kardan-e oonha motmaen beshid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayeshe rahnamaye dastoor va gozine-haye mojood.
+    🔹 `--version`  --> ℹ️ Namayeshe version-e `gst-tester-1.0`.
+    🔹 `<test-case>` --> 🧪 Esme test-case-i ke mikhayid ejra konid. Test case-ha obiatan file-haye python hastand.
+
+🛠 **Mesal-ha:**
+
+    $ gst-tester-1.0 --help
+
+    🔹 Namayeshe rahnamaye dastoor.
+
+    $ gst-tester-1.0 my_test.py
+
+    🔹 Ejdraye test-case `my_test.py`.
+
+✅ **Mesal sade:**
+
+    $ gst-tester-1.0 my_test.py
+
+    🔹 Agar `my_test.py` yek test-case dorost baraye GStreamer bashad, ejra mishavad va natije-ye test namayesh dade mishavad. Agar test khata dashte bashad, peyghame khata namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-tester-1.0` command is a program for testing GStreamer elements and pipelines. GStreamer is a framework for building multimedia applications like video players and video editors. With `gst-tester-1.0`, you can test GStreamer elements and pipelines to ensure they are working correctly.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display the command's help message and available options.
+    🔹 `--version`  --> ℹ️ Display the version of `gst-tester-1.0`.
+    🔹 `<test-case>` --> 🧪 The name of the test case to execute. Test cases are usually Python files.
+
+🛠 **Examples:**
+
+    $ gst-tester-1.0 --help
+
+    🔹 Display the command's help message.
+
+    $ gst-tester-1.0 my_test.py
+
+    🔹 Execute the test case `my_test.py`.
+
+✅ **Simple Example:**
+
+    $ gst-tester-1.0 my_test.py
+
+    🔹 If `my_test.py` is a valid GStreamer test case, it will be executed, and the test result will be displayed. If the test fails, an error message will be shown.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep-dctrl` baraye jostojo dar file-haye `debian/control` (ya file-haye mesle aan) ke format-e `Debian Control File` ra darand, be kar miravad. In dastoor be shoma komak mikonad etela'at moshakhas ra az in file-ha be asani peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-s`  --> 🤫 Faghat name package-ha ra namayesh midahad.
+    🔹 `-v`  --> 🔄 Nataayej ra varoone mikonad (yani anhaaye ra ke shabih nistand, namayesh midahad).
+    🔹 `-n`  --> 🔢 Shomare khat-ha ra hamrah nataayej namayesh midahad.
+    🔹 `-i`  --> 🧐 Be bozorgi va kochiki horoof hasaas nist.
+
+🛠 **Mesal-ha:**
+
+    $ grep-dctrl -s Priority important debian/control
+
+    🔹 Name package-haaye ba `Priority important` ra namayesh midahad.
+
+    $ grep-dctrl -n '^Package:' debian/control
+
+    🔹 Khat-haaye shomare shode ra ke ba `Package:` shoroo mishavand, namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ grep-dctrl -i Version 2.0 debian/control
+
+    🔹 Hameye package-haaye dar `debian/control` ke version-e aanha shaamel `2.0` ast, ra namayesh midahad (be bozorgi va kochiki horoof hasaas nist).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep-dctrl` command is used to search through `debian/control` files (or similar files) which are in the `Debian Control File` format. It helps you to easily find specific information from these files.
+
+⚙️ **Options:**
+    🔹 `-s`  --> 🤫 Display only the package names.
+    🔹 `-v`  --> 🔄 Invert the results (i.e., show the ones that don't match).
+    🔹 `-n`  --> 🔢 Show the line numbers along with the results.
+    🔹 `-i`  --> 🧐 Ignore case sensitivity.
+
+🛠 **Examples:**
+
+    $ grep-dctrl -s Priority important debian/control
+
+    🔹 Displays the package names that have `Priority important`.
+
+    $ grep-dctrl -n '^Package:' debian/control
+
+    🔹 Displays the line numbers where lines start with `Package:`.
+
+✅ **Simple Example:**
+
+    $ grep-dctrl -i Version 2.0 debian/control
+
+    🔹 Displays all packages in `debian/control` whose version includes `2.0` (case-insensitive).

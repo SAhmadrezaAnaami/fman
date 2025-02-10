@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-genbuilddeps` baraye dorost kardane yek control file baraye build dependency-ha az yek package estefade mishavad. Yani dependency-haye lazem baraye compile ya build kardan yek barname ra generate mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-f` `file` --> 📄 Estefade az `file` be عنوان dpkg.shlibdeps file.
+    🔹 `-s` --> 🤫 Faghat dependency-haye اساسی را namayesh midehad.
+    🔹 `-d` `dependency` --> ➕ Ezafe kardane yek dependency ezafe be file output.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-genbuilddeps -f debian/control
+
+    🔹 Dependency-haye build ra az file `debian/control` generate mikonad va chap mikonad.
+
+    $ dpkg-genbuilddeps -f debian/control -d "libfoo-dev"
+
+    🔹 Dependency-haye build ra az `debian/control` generate mikonad va dependency "libfoo-dev" ra ham ezafe mikonad.
+
+✅ **Mesal sade:**
+
+    $ dpkg-genbuilddeps debian/control
+    
+    🔹 Ba ejra kardane in dastoor dependency-haye lazem baraye build kardane package az file `debian/control` khande va list mishavad. In command baraye automate kardane farayand build estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-genbuilddeps` command is used to generate a control file for build dependencies from a package. That is, it generates the dependencies required to compile or build a program.
+
+⚙️ **Options:**
+    🔹 `-f` `file` --> 📄 Use `file` as the dpkg.shlibdeps file.
+    🔹 `-s` --> 🤫 Only show essential dependencies.
+    🔹 `-d` `dependency` --> ➕ Add an extra dependency to the output file.
+
+🛠 **Examples:**
+
+    $ dpkg-genbuilddeps -f debian/control
+
+    🔹 Generates and prints the build dependencies from the `debian/control` file.
+
+    $ dpkg-genbuilddeps -f debian/control -d "libfoo-dev"
+
+    🔹 Generates the build dependencies from `debian/control` and adds the "libfoo-dev" dependency.
+
+✅ **Simple Example:**
+
+    $ dpkg-genbuilddeps debian/control
+
+    🔹 By executing this command, the necessary dependencies to build the package are read from the `debian/control` file and listed. This command is used to automate the build process.

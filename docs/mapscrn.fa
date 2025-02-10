@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mapscrn` baraye dastkari va tagheer dadane mapping (rabete) bein ketabkhanehaye console va characterehaye fonts estefade mishavad. Yani ba estefade az in dastoor, mitoonid tagheer bedid ke har character dar console che shekli namayesh dade beshe.
+
+⚙️ **Gozine-ha:**
+    🔹 `mapscrn -v`  --> 📢 Namayesh etela'ate version va copyright.
+    🔹 `mapscrn -o <file>` --> 💾 Zakhireye mapping فعلی be yek file.
+    🔹 `mapscrn <file>`   --> 📤 Barkhariyek mapping az yek file.
+    🔹 `mapscrn consolemap` --> 🔄 Bazgardandan console be halate pishfarz.
+
+🛠 **Mesal-ha:**
+
+    $ mapscrn -v
+
+    🔹 Namayesh etela'at version dastoor `mapscrn`.
+
+    $ mapscrn mymap.map
+
+    🔹 Barkharieyek mapping az file `mymap.map` dar console.
+
+✅ **Mesal sade:**
+
+    $ mapscrn consolemap
+
+    🔹 Bazgardandan mapping console be halate pishfarz. In command khaily mofid ast agar shoma mapping ra tagheer dadeid va mikhahid aan ra be halate avalie bar gardaned.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mapscrn` command is used for manipulating and changing the mapping between the console and font character sets.  It allows you to redefine how each character is displayed on the console.
+
+⚙️ **Options:**
+    🔹 `mapscrn -v`  --> 📢 Display version and copyright information.
+    🔹 `mapscrn -o <file>` --> 💾 Save the current mapping to a file.
+    🔹 `mapscrn <file>`   --> 📤 Load a mapping from a file.
+    🔹 `mapscrn consolemap` --> 🔄 Restore the console to the default mapping.
+
+🛠 **Examples:**
+
+    $ mapscrn -v
+
+    🔹 Display version information for the `mapscrn` command.
+
+    $ mapscrn mymap.map
+
+    🔹 Load the mapping from the file `mymap.map` into the console.
+
+✅ **Simple Example:**
+
+    $ mapscrn consolemap
+
+    🔹 Restore the console mapping to its default state. This command is very useful if you have modified the mapping and want to revert to the original settings.

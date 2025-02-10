@@ -1,0 +1,74 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `delv` baraye hazf kardan yek version az go estefade mishavad. In dastoor be shoma komak mikonad version-haye go ke digar niaz nadarid ra az system khod hazf konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `delv list` --> 📜 List kardan hameye version-haye nasb shode Go.
+    🔹 `delv <version>` --> 🔥 Hazf kardan yek version moshakhas az Go (masalan, `delv 1.16`).
+    🔹 `delv help` --> ❓ Namayesh dastoor-e rahnama baraye `delv`.
+
+🛠 **Mesal-ha:**
+
+    $ delv list
+
+    🔹 List kardan hameye version-haye nasb shode Go.
+
+    $ delv 1.17
+
+    🔹 Hazf kardan version 1.17 az Go.
+
+✅ **Mesal sade:**
+
+    $ delv list
+    go1.16
+    go1.17
+    go1.18
+    $ delv 1.17
+    Removing go1.17...
+    Done.
+    $ delv list
+    go1.16
+    go1.18
+
+    🔹 Avval hameye version-ha list mishavand, sepas version 1.17 hazf shode va dobare list mishavad ta natije namayesh dade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `delv` command is used to remove a Go version. It helps you uninstall Go versions that are no longer needed from your system.
+
+⚙️ **Options:**
+    🔹 `delv list` --> 📜 List all installed Go versions.
+    🔹 `delv <version>` --> 🔥 Remove a specific Go version (e.g., `delv 1.16`).
+    🔹 `delv help` --> ❓ Display help information for `delv`.
+
+🛠 **Examples:**
+
+    $ delv list
+
+    🔹 List all installed Go versions.
+
+    $ delv 1.17
+
+    🔹 Remove Go version 1.17.
+
+✅ **Simple Example:**
+
+    $ delv list
+    go1.16
+    go1.17
+    go1.18
+    $ delv 1.17
+    Removing go1.17...
+    Done.
+    $ delv list
+    go1.16
+    go1.18
+
+    🔹 First, all installed versions are listed, then version 1.17 is removed, and the list is displayed again to show the result.

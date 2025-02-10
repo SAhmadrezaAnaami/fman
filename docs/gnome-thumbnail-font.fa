@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-thumbnail-font` baraye dorost kardane thumbnail az font-ha (khat-ha) dar GNOME estefade mishavad. Yani yek tasvir kuchik az har font dorost mikonad ta shoma behtar betoonid font-haye mokhtalef ra bebinid va entekhab konid. In dastoor obiatan (usually) be soorat mostaghim az taraf karbar run nemishavad, balke az taraf system be soorat automatic vaghti ke font jadid nasb mishavad ya vaghti ke thumbnail-haye font niaz be update darand seda zade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--size=<andaze>` --> 📐 Andazeye thumbnail ra moshakhas mikonad.  Misal: `--size=128`
+    🔹 `--output=<masir>` --> 📤 Masir va name file-i ke thumbnail bayad save shavad ra moshakhas mikonad. Misal: `--output=/tmp/thumbnail.png`
+    🔹 `--font=<name-font>` --> 🖋️ Name font-i ke az aan thumbnail bayad dorost shavad ra moshakhas mikonad. Misal: `--font="Arial"`
+
+🛠 **Mesal-ha:**
+
+    $ gnome-thumbnail-font --size=64 --output=/tmp/arial_thumbnail.png --font="Arial"
+
+    🔹 Dorost kardane yek thumbnail ba andazeye 64 pixel az font "Arial" va save kardane aan dar masir "/tmp/arial_thumbnail.png".
+
+    $ gnome-thumbnail-font --font="MyCustomFont" --output="$HOME/.thumbnails/normal/custom_font.png"
+
+    🔹 Dorost kardane thumbnail az font "MyCustomFont" va save kardane aan dar pooshe thumbnail-haye karbar.
+
+✅ **Mesal sade:**
+
+    $ gnome-thumbnail-font --font="Ubuntu" --size=32 --output=/tmp/ubuntu_font.png
+
+    🔹 Dar in mesal, command yek thumbnail ba andazeye 32 pixel az font "Ubuntu" dorost mikonad va aan ra ba name "ubuntu_font.png" dar pooshe /tmp save mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-thumbnail-font` command is used to generate thumbnails for fonts in the GNOME desktop environment. It creates a small image representation of a font, allowing users to preview and select fonts more easily.  This command is typically not run directly by the user but is invoked automatically by the system when new fonts are installed or when font thumbnails need to be updated.
+
+⚙️ **Options:**
+    🔹 `--size=<size>` --> 📐 Specifies the size of the thumbnail in pixels. Example: `--size=128`
+    🔹 `--output=<path>` --> 📤 Specifies the path and filename where the thumbnail should be saved. Example: `--output=/tmp/thumbnail.png`
+    🔹 `--font=<font-name>` --> 🖋️ Specifies the name of the font for which the thumbnail should be created. Example: `--font="Arial"`
+
+🛠 **Examples:**
+
+    $ gnome-thumbnail-font --size=64 --output=/tmp/arial_thumbnail.png --font="Arial"
+
+    🔹 Creates a thumbnail with a size of 64 pixels for the "Arial" font and saves it to "/tmp/arial_thumbnail.png".
+
+    $ gnome-thumbnail-font --font="MyCustomFont" --output="$HOME/.thumbnails/normal/custom_font.png"
+
+    🔹 Creates a thumbnail of the "MyCustomFont" font and saves it to the user's thumbnail directory.
+
+✅ **Simple Example:**
+
+    $ gnome-thumbnail-font --font="Ubuntu" --size=32 --output=/tmp/ubuntu_font.png
+
+    🔹 In this example, the command generates a thumbnail with a size of 32 pixels for the "Ubuntu" font and saves it as "ubuntu_font.png" in the /tmp directory.

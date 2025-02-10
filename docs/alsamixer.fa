@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `alsamixer` yek barnameh ast baraye kontrol va tanzeem kardan sedaye kart-e-seda (sound card) dar Linux. Ba estefade az in dastoor, mitoonid volume-ha ro tagheer bedid, channels ro mute konid ya unmute konid, va tanzeemate dige ro anjam bedid. `alsamixer` az ALSA (Advanced Linux Sound Architecture) estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `alsamixer` --> 🔊 Baz kardan barnameh ba kart-e-sedaye pishfarz.
+    🔹 `alsamixer -c <cardnumber>` --> 🔢 Baz kardan barnameh ba kart-e-sedaye moshakhas (cardnumber ra جایگزین konid).
+    🔹 `alsamixer -V all` --> 👓 Namayesh hameye control-ha, hata control-haye pishرفته.
+    🔹 `alsamixer -g` --> 📊 Namayesh grafik-e-seda dar terminal (age terminal support kone).
+
+🛠 **Mesal-ha:**
+
+    $ alsamixer
+
+    🔹 Baz kardan `alsamixer` ba kart-e-sedaye pishfarz.
+
+    $ alsamixer -c 1
+
+    🔹 Baz kardan `alsamixer` ba kart-e-sedaye shomare 1.  Agar chand kart-e-seda darid, mitoonid ba estefade az in dastoor kart-e-sedaye mored nazaretoon ro entekhab konid.
+
+✅ **Mesal sade:**
+
+    $ alsamixer
+
+    🔹 Ba baz kardan `alsamixer`, mitoonid volume-haye mokhtalef ro ba estefade az arrow keys (chap va rast) va `+` va `-` tanzeem konid.  Dokme `M` channel ro mute ya unmute mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `alsamixer` command is a program used to control and configure sound card settings in Linux.  Using this command, you can adjust volumes, mute or unmute channels, and perform other audio settings. `alsamixer` uses ALSA (Advanced Linux Sound Architecture).
+
+⚙️ **Options:**
+    🔹 `alsamixer` --> 🔊 Open the program with the default sound card.
+    🔹 `alsamixer -c <cardnumber>` --> 🔢 Open the program with a specific sound card (replace <cardnumber>).
+    🔹 `alsamixer -V all` --> 👓 Show all controls, including advanced ones.
+    🔹 `alsamixer -g` --> 📊 Display audio levels graphically in the terminal (if supported).
+
+🛠 **Examples:**
+
+    $ alsamixer
+
+    🔹 Open `alsamixer` with the default sound card.
+
+    $ alsamixer -c 1
+
+    🔹 Open `alsamixer` with sound card number 1. If you have multiple sound cards, you can use this to select the desired card.
+
+✅ **Simple Example & Explanation:**
+
+    $ alsamixer
+
+    🔹 By opening `alsamixer`, you can adjust different volume levels using the arrow keys (left and right) and `+` and `-`. The `M` key mutes or unmutes the channel.

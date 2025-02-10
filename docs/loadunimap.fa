@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `loadunimap` baraye bargozari yek table Unimap (Unicode Map) be console estefade mishavad. In dastoor be shoma komak mikonad ta namayesh character-haye Unicode ra dar terminal-e khod moratab konid.  Agar console-e shoma az Unicode poshtibani nemikonad, `loadunimap` yek payame khata neshon midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `loadunimap <file>` --> 📂 File Unimap ra bargozari mikonad.
+    🔹 `loadunimap -v <file>` --> 💬 File Unimap ra bargozari mikonad va etela'ate bishtar neshon midahad (verbose).
+    🔹 `loadunimap -C <console>` --> 🖥️ Console ra moshakhas mikonad (agar bishtar az yek console darid).
+
+🛠 **Mesal-ha:**
+
+    $ loadunimap /usr/share/consolefonts/iso02r.uni
+
+    🔹 Table Unimap ra az file `iso02r.uni` bargozari mikonad.
+
+    $ loadunimap -v /usr/share/consolefonts/iso02r.uni
+
+    🔹 Table Unimap ra az file `iso02r.uni` bargozari mikonad va payam-haye afzudeyi neshon midahad.
+
+✅ **Mesal sade:**
+
+    $ loadunimap /usr/share/consolefonts/def.uni
+    Loading unimap
+
+    🔹 Dastoor bala table Unimap pishfarz ra bargozari mikonad, va terminal shoma be dorosti character-haye Unicode ra namayesh khahad dad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `loadunimap` command is used to load a Unimap (Unicode Map) table into the console. This command helps you configure the display of Unicode characters in your terminal. If your console does not support Unicode, `loadunimap` will display an error message.
+
+⚙️ **Options:**
+    🔹 `loadunimap <file>` --> 📂 Loads the Unimap file.
+    🔹 `loadunimap -v <file>` --> 💬 Loads the Unimap file and displays more information (verbose).
+    🔹 `loadunimap -C <console>` --> 🖥️ Specifies the console to load the Unimap into (if you have multiple consoles).
+
+🛠 **Examples:**
+
+    $ loadunimap /usr/share/consolefonts/iso02r.uni
+
+    🔹 Loads the Unimap table from the `iso02r.uni` file.
+
+    $ loadunimap -v /usr/share/consolefonts/iso02r.uni
+
+    🔹 Loads the Unimap table from the `iso02r.uni` file and displays additional messages.
+
+✅ **Simple Example:**
+
+    $ loadunimap /usr/share/consolefonts/def.uni
+    Loading unimap
+
+    🔹 The above command loads the default Unimap table, and your terminal should correctly display Unicode characters.

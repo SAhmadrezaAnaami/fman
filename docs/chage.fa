@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chage` baraye tagheer daadan etela'at-e asasi-ye yek hesab-e karbari (user account) estefade mishavad, mesle tarikhe akharin tagheer parol va zamane majaz baraye tagheer parol.
+
+⚙️ **Gozine-ha:**
+    🔹 `chage -l username` --> 📜 Namayesh etela'at hesab-e karbari (tarikh akharin tagheer parol, etc.)
+    🔹 `chage -m minimum_rooz username` --> ⏳ Ta'een kamtarin zaman (be rooz) beine tagheer parol.
+    🔹 `chage -M maximum_rooz username` --> 🗓️ Ta'een bishtarin zaman (be rooz) ghabl az inke parol bayad tagheer konad.
+    🔹 `chage -d tarikhe_akharin_tagheer username` --> 📅 Tagheer tarikhe akharin tagheer parol hesab.
+    🔹 `chage -E tarikhe_expayri username` --> 🛑 Zamane expire shodan account ra moshakhas mikonad.
+    🔹 `chage -W warn_rooz username` --> ⚠️ Ta'een zaman (be rooz) ghabl az expire shodan parol baraye namayesh etela'ie aghushdar konande.
+
+🛠 **Mesal-ha:**
+
+    $ chage -l jafar
+
+    🔹 Namayesh etela'at hesab-e karbari ba name "jafar".
+
+    $ sudo chage -m 7 -M 90 jafar
+
+    🔹 Ta'een kamtarin zaman 7 rooz va bishtarin zaman 90 rooz baraye tagheer parol baraye hesab jafar.  Estefade az `sudo` lazem ast chon tagheer etela'at karbar digari dar hale anjam ast.
+
+✅ **Mesal sade:**
+
+    $ chage -d 2024-01-01 ali
+
+    🔹 Tarikhe akharin tagheer parol hesab "ali" ra be 2024-01-01 tagheer midahad. in karo be admin niaz dare!
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chage` command is used to change the password aging information for a user account, such as the last password change date and the allowed time for password changes.
+
+⚙️ **Options:**
+    🔹 `chage -l username` --> 📜 Display account aging information (last password change date, etc.).
+    🔹 `chage -m minimum_days username` --> ⏳ Set the minimum number of days between password changes.
+    🔹 `chage -M maximum_days username` --> 🗓️ Set the maximum number of days before a password must be changed.
+    🔹 `chage -d last_change_date username` --> 📅 Change the date of the last password change.
+    🔹 `chage -E expiry_date username` --> 🛑 Sets the account expiry date.
+    🔹 `chage -W warn_days username` --> ⚠️ Set the number of days before password expiration that the user will be warned.
+
+🛠 **Examples:**
+
+    $ chage -l john
+
+    🔹 Display account aging information for the user "john".
+
+    $ sudo chage -m 7 -M 90 john
+
+    🔹 Set the minimum time to 7 days and the maximum time to 90 days for password changes for the john account. `sudo` is needed as you are changing another user's data.
+
+✅ **Simple Example:**
+
+    $ chage -d 2024-01-01 sarah
+
+    🔹 Changes the last password change date for the "sarah" account to 2024-01-01. This will require administrative privileges!

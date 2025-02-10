@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk-encode-symbolic-svg` baraye tabdil dadan file-haye SVG be format-i ke GTK (ye toolkit baraye sakhtane GUI) mitoone estefade kone be kar mire.  SVG-haye symbolic baraye icon-ha va UI elements be kar miran ke mitoonan rangi beshan.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayeshe rahnamaye dastoor
+    🔹 `--version`  --> ℹ️ Namayeshe version-e `gtk-encode-symbolic-svg`
+    🔹 `--base-color=COLOR` --> 🎨 Set kardane range aslie icon. Bayad be soorate hex (#rrggbb) ya az name rang estefade beshe.
+    🔹 `--output=FILE`     --> 📤 Mahale zakhire kardane natije (output). Agar zakhire nashode bashe dar stdout chap mishe.
+
+🛠 **Mesal-ha:**
+
+    $ gtk-encode-symbolic-svg input.svg > output.svg
+
+    🔹 Tabdile file `input.svg` be format-e symbolic va zakhire dar `output.svg`
+
+    $ gtk-encode-symbolic-svg --base-color=#3498db input.svg > output.svg
+
+    🔹 Tabdile file `input.svg` ba range aslie abi (#3498db) va zakhire dar `output.svg`
+
+✅ **Mesal sade:**
+
+    $ gtk-encode-symbolic-svg --base-color=red input.svg
+
+    🔹 File `input.svg` ro ba range aslie ghermez tabdil mikone va dar terminal chap mikone.  Az `>` estefade konid ta dar file zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk-encode-symbolic-svg` command is used to convert SVG files into a format that GTK (a toolkit for creating GUIs) can use. Symbolic SVGs are used for icons and UI elements that can be recolored.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display command help
+    🔹 `--version`  --> ℹ️ Display `gtk-encode-symbolic-svg` version
+    🔹 `--base-color=COLOR` --> 🎨 Set the base color of the icon. Should be in hex format (#rrggbb) or a color name.
+    🔹 `--output=FILE`     --> 📤 Location to save the output. If not specified, output is printed to stdout.
+
+🛠 **Examples:**
+
+    $ gtk-encode-symbolic-svg input.svg > output.svg
+
+    🔹 Converts the file `input.svg` to symbolic format and saves it to `output.svg`
+
+    $ gtk-encode-symbolic-svg --base-color=#3498db input.svg > output.svg
+
+    🔹 Converts the file `input.svg` with the base color blue (#3498db) and saves it to `output.svg`
+
+✅ **Simple Example:**
+
+    $ gtk-encode-symbolic-svg --base-color=red input.svg
+
+    🔹 Converts the file `input.svg` with the base color red and prints it to the terminal. Use `>` to save it to a file.

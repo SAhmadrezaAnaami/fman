@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-clean` baraye pak kardan va moratab kardane cartridge-haye printer-haye HP estefade mishavad. In dastoor be shoma komak mikonad ta keyfiyat chap ra behtar konid agar rang-ha kharab chap mishavand ya khotooti dar chap dide mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-clean -i`  --> 🖥️ Namayesh dastgah-haye (devices) HP-ye mojood va entekhab yek device baraye tamiz kardan.
+    🔹 `hp-clean -g`  --> 🧹 Tamiz kardane cartridge ba estefade az gozine-haye pishfarz (default).
+    🔹 `hp-clean -l<level>`  --> 🧼 Set kardane sathe tamizkari. `<level>` mitavanad `basic`, `normal` ya `thorough` bashad.
+
+🛠 **Mesal-ha:**
+
+    $ hp-clean -i
+
+    🔹 List kardane printer-haye HP va entekhab printeri ke mikhahid tamiz konid.
+
+    $ hp-clean -g
+
+    🔹 Shoro kardane tamizkari ba gozine-haye pishfarz.
+
+✅ **Mesal sade:**
+
+    $ hp-clean -lthorough -i
+
+    🔹  In dastoor printer ra ba sathe "thorough" tamiz mikonad, bad az entekhab device az liste namayesh dade shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-clean` command is used to clean and maintain the print cartridges of HP printers. It helps to improve print quality when colors are printing poorly, or lines appear in the printouts.
+
+⚙️ **Options:**
+    🔹 `hp-clean -i`  --> 🖥️ Display available HP devices and select one to clean.
+    🔹 `hp-clean -g`  --> 🧹 Clean the cartridge using default options.
+    🔹 `hp-clean -l<level>`  --> 🧼 Set the cleaning level.  `<level>` can be `basic`, `normal`, or `thorough`.
+
+🛠 **Examples:**
+
+    $ hp-clean -i
+
+    🔹 List HP printers and select the printer you want to clean.
+
+    $ hp-clean -g
+
+    🔹 Start cleaning with default options.
+
+✅ **Simple Example:**
+
+    $ hp-clean -lthorough -i
+
+    🔹 This command cleans the printer at the "thorough" level, after selecting the device from the displayed list.
+

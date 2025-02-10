@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `eps2eps` yek file EPS (Encapsulated PostScript) ra migirad va aan ra be yek file EPS-e digar tabdil mikonad. In kar baraye behtar kardan sazegari (compatibility) ya taghir daadane andaze safhe anjam mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o <file>`  --> 📤  Esme file khorooji ra moshakhas mikonad. Agar in gozine nabaashad, file asli jaigozin mishavad.
+    🔹 `-sPAPERSIZE=<size>`  --> 📄  Andazeye kaaghaz ra baraye file jadid moshakhas mikonad (masalan, `letter`, `a4`).
+    🔹 `-dCompressPages=true|false` --> 🗜️  File EPS ra compress mikonad ya na.  `true` baraye compress kardan va `false` baraye compress nakardan.
+
+🛠 **Mesal-ha:**
+
+    $ eps2eps input.eps output.eps
+
+    🔹 File `input.eps` ra be `output.eps` tabdil mikonad.
+
+    $ eps2eps -sPAPERSIZE=a4 input.eps output.eps
+
+    🔹 File `input.eps` ra be `output.eps` tabdil mikonad va andazeye aan ra be A4 taghir midahad.
+
+✅ **Mesal sade:**
+
+    $ eps2eps -o output.eps input.eps
+
+    🔹 File `input.eps` ra be `output.eps` tabdil mikonad. Agar file `output.eps` ghablan voojood dashte bashad, jaigozin mishavad.  Agar `-o` estefade nashavad, `input.eps` jaigozin mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `eps2eps` command converts an EPS (Encapsulated PostScript) file to another EPS file. This is often done to improve compatibility or change the page size.
+
+⚙️ **Options:**
+    🔹 `-o <file>`  --> 📤 Specifies the output file name.  If this option is omitted, the original file is overwritten.
+    🔹 `-sPAPERSIZE=<size>`  --> 📄 Specifies the paper size for the new file (e.g., `letter`, `a4`).
+    🔹 `-dCompressPages=true|false` --> 🗜️  Compresses the EPS file or not. `true` to compress, and `false` to not compress.
+
+🛠 **Examples:**
+
+    $ eps2eps input.eps output.eps
+
+    🔹 Converts the file `input.eps` to `output.eps`.
+
+    $ eps2eps -sPAPERSIZE=a4 input.eps output.eps
+
+    🔹 Converts the file `input.eps` to `output.eps` and changes its page size to A4.
+
+✅ **Simple Example:**
+
+    $ eps2eps -o output.eps input.eps
+
+    🔹 Converts `input.eps` to `output.eps`. If `output.eps` already exists, it will be overwritten.  If `-o` isn't used, `input.eps` itself is overwritten.

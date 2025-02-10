@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-distaddfile` baraye ezafe kardane file-ha be file `debian/files` dar package Debian estefade mishavad. In file moshakhas mikonad che file-haee bayad dar package Debian shamel shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--root=directory` --> 📁 Root directory ra baraye search kardan file-ha moshakhas mikonad. Agar estefade nashavad, az directory-e konooni estefade mishavad.
+    🔹 `--add-missing`   --> ➕ File-haee ke dar file `debian/files` nistand ra ezafe mikonad.
+    🔹 `--no-sort`       --> 🔄 File-ha ra moratab nemikonad (be tartibi ke peyda mishavand ezafe mikonad). Be soorat pishfarz, file-ha moratab mishavand.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-distaddfile
+
+    🔹 File-haee ke dar directory-e konooni dar file `debian/files` nistand ra ezafe mikonad.
+
+    $ dpkg-distaddfile --root=tmp/install --add-missing
+
+    🔹 File-haee ke dar directory `tmp/install` dar file `debian/files` nistand ra ezafe mikonad.
+
+✅ **Mesal sade:**
+
+    $ dpkg-distaddfile --add-missing
+    
+    🔹 Agar file-haee dar directory-e package vojood dashte bashand ke dar `debian/files` sabt nashode bashand, in dastoor anha ra ezafe mikonad ta dar sakht package shamel shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-distaddfile` command is used to add files to the `debian/files` file in a Debian package. This file specifies which files should be included in the Debian package.
+
+⚙️ **Options:**
+    🔹 `--root=directory` --> 📁 Specifies the root directory to search for files. If not used, the current directory is used.
+    🔹 `--add-missing`   --> ➕ Adds files that are not already present in the `debian/files` file.
+    🔹 `--no-sort`       --> 🔄 Does not sort the files (adds them in the order they are found). By default, the files are sorted.
+
+🛠 **Examples:**
+
+    $ dpkg-distaddfile
+
+    🔹 Adds files in the current directory that are not in the `debian/files` file.
+
+    $ dpkg-distaddfile --root=tmp/install --add-missing
+
+    🔹 Adds files in the `tmp/install` directory that are not in the `debian/files` file.
+
+✅ **Simple Example:**
+
+    $ dpkg-distaddfile --add-missing
+
+    🔹 If there are files in the package directory that are not listed in `debian/files`, this command will add them so that they are included when the package is built.

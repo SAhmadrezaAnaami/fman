@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fusermount` baraye nasb kardan (mount) ya bardashtan (unmount) system-haye file FUSE (Filesystem in Userspace) estefade mishavad. Ba in dastoor, shoma mitavanid system-haye file ra bedune niaz be dastresi root nasb ya bardarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fusermount -u <pooshe>`  --> 📤 Bardashtan (unmount) yek system file nasb shode.
+    🔹 `fusermount -q <pooshe>`  --> 🤫 Saket bash, agar nasb nashode chizi chap nakon.
+    🔹 `fusermount -z <pooshe>`  --> 🛡️ Emniyat bishtar, ejaze nade digaran be system file dastresi dashte bashand.
+
+🛠 **Mesal-ha:**
+
+    $ fusermount -u /home/user/mnt
+
+    🔹 Bardashtan system file az pooshe `/home/user/mnt`.
+
+    $ fusermount -q /home/user/mnt
+
+    🔹 Agar `/home/user/mnt` nasb nashode bashad, hich payami namayesh dade nemishavad.
+
+✅ **Mesal sade:**
+
+    $ fusermount -u /home/user/mnt && rmdir /home/user/mnt
+
+    🔹 Aval system file az `/home/user/mnt` bardashte mishavad, va agar movafagh bashad, pooshe `/home/user/mnt` hazf mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fusermount` command is used to mount or unmount FUSE (Filesystem in Userspace) file systems.  It allows you to mount and unmount file systems without requiring root privileges.
+
+⚙️ **Options:**
+    🔹 `fusermount -u <directory>` --> 📤 Unmount a mounted file system.
+    🔹 `fusermount -q <directory>` --> 🤫 Be quiet; don't print anything if not mounted.
+    🔹 `fusermount -z <directory>` --> 🛡️ Enhanced security; prevent other users from accessing the file system.
+
+🛠 **Examples:**
+
+    $ fusermount -u /home/user/mnt
+
+    🔹 Unmounts the file system from the directory `/home/user/mnt`.
+
+    $ fusermount -q /home/user/mnt
+
+    🔹 If `/home/user/mnt` is not a mount point, no message will be displayed.
+
+✅ **Simple Example:**
+
+    $ fusermount -u /home/user/mnt && rmdir /home/user/mnt
+
+    🔹 First, the file system is unmounted from `/home/user/mnt`, and if successful, the directory `/home/user/mnt` is removed.
+

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fusermount3` baraye mont kardane (mount) system-haye file-e user-space ba estefade az FUSE (Filesystem in Userspace) be kar miravad. Yani, shoma mitavanid yek system file ra bedune niaze be dastresi root mont konid. 🔑
+
+⚙️ **Gozine-ha:**
+    🔹 `fusermount3 -u <mountpoint>` --> 📤 Baraye unmount kardane (umount) yek system file-e mont shode.
+    🔹 `fusermount3 -o <options> <mountpoint>` --> 🛠️ Baraye dadane gozine-haye mokhtalef be system file hangame mont kardan (mount options). Mesle `ro` (read-only) ya `allow_other`.
+    🔹 `fusermount3 --version` --> ℹ️ Namayeshe version-e `fusermount3`.
+
+🛠 **Mesal-ha:**
+
+    $ fusermount3 /path/to/mountpoint
+
+    🔹 Mount kardane yek system file FUSE dar `path/to/mountpoint`. Agar ghablan ba FUSE mont nashode bashad, error midehad.
+
+    $ fusermount3 -u /path/to/mountpoint
+
+    🔹 Unmount kardane system file az `path/to/mountpoint`.
+
+    $ fusermount3 -o ro,allow_other /path/to/mountpoint
+
+    🔹 Mount kardane system file be soorate read-only va ejaze dadan be digar user-ha baraye dastresi be aan.
+
+✅ **Mesal sade:**
+
+    $ fusermount3 -u /mnt/myfuse
+    $ ls /mnt/myfuse
+
+    🔹 Aval system file mont shode ra unmount mikonim, va baad check mikonim ke digar dar dastres nist. Dar natije, `ls` error midehad chon digar vojud nadarad. ❌
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fusermount3` command is used to mount user-space file systems using FUSE (Filesystem in Userspace). This allows you to mount a file system without requiring root privileges. 🔑
+
+⚙️ **Options:**
+    🔹 `fusermount3 -u <mountpoint>` --> 📤 Used to unmount a mounted file system.
+    🔹 `fusermount3 -o <options> <mountpoint>` --> 🛠️ Used to provide different options to the file system during mounting (mount options).  Examples include `ro` (read-only) or `allow_other`.
+    🔹 `fusermount3 --version` --> ℹ️ Displays the version of `fusermount3`.
+
+🛠 **Examples:**
+
+    $ fusermount3 /path/to/mountpoint
+
+    🔹 Mounts a FUSE file system at `/path/to/mountpoint`. If it's not already mounted via FUSE, it will give an error.
+
+    $ fusermount3 -u /path/to/mountpoint
+
+    🔹 Unmounts the file system from `/path/to/mountpoint`.
+
+    $ fusermount3 -o ro,allow_other /path/to/mountpoint
+
+    🔹 Mounts the file system as read-only and allows other users to access it.
+
+✅ **Simple Example:**
+
+    $ fusermount3 -u /mnt/myfuse
+    $ ls /mnt/myfuse
+
+    🔹 First, we unmount the mounted file system, and then we check if it is still accessible. As a result, `ls` gives an error because it no longer exists. ❌

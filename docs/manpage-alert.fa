@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `alert` yek payam ro dar vasete command line neshoon mide. Mesle ye notification sade mimune ke behet etela mide ye kari tamam shode ya ye itefaghi oftade.
+
+⚙️ **Gozine-ha:**
+    🔹 `alert "matn"`  --> 💬 Neshoon dadane matn mored nazar.
+    🔹 `alert -t zaman "matn"` --> ⏰ Neshoon dadane payam baraye yek zamane moshakhas (be saniye).
+    🔹 `alert -b "ahang" "matn"` --> 🎵 Play kardane yek ahang (be jaye payame beep defult) vaghti ke payam neshoon dade mishe. (Niayz be nasb dashtane `beep` dare.)
+
+🛠 **Mesal-ha:**
+
+    $ alert "Kar tamam shod!"
+
+    🔹 Neshoon dadane payame "Kar tamam shod!".
+
+    $ alert -t 5 "5 saniye dige tamame!"
+
+    🔹 Neshoon dadane payame "5 saniye dige tamame!" be modate 5 saniye.
+
+    $ alert -b "sms-received2.wav" "Payame jadid daryaft shod!"
+
+    🔹 Play kardane ahange "sms-received2.wav" va neshoon dadane payame "Payame jadid daryaft shod!". (File ahang bayad vojood dashte bashe.)
+
+✅ **Mesal sade:**
+
+    $ alert "Backup ba movafaghiyat anjam shod."
+
+    🔹 Vaqti backup anjam mishe, in dastoor ye etela behet mide ke backup ba movafaghiyat anjam shode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `alert` command displays a message in the command line. It's like a simple notification to inform you that a task has finished or an event has occurred.
+
+⚙️ **Options:**
+    🔹 `alert "text"`  --> 💬 Display the specified text message.
+    🔹 `alert -t time "text"` --> ⏰ Display the message for a specific duration (in seconds).
+    🔹 `alert -b "sound" "text"` --> 🎵 Play a sound (instead of the default beep) when the message is displayed. (Requires `beep` to be installed.)
+
+🛠 **Examples:**
+
+    $ alert "Task completed!"
+
+    🔹 Displays the message "Task completed!".
+
+    $ alert -t 5 "Finished in 5 seconds!"
+
+    🔹 Displays the message "Finished in 5 seconds!" for 5 seconds.
+
+    $ alert -b "sms-received2.wav" "New message received!"
+
+    🔹 Plays the sound "sms-received2.wav" and displays the message "New message received!". (The sound file must exist.)
+
+✅ **Simple Example:**
+
+    $ alert "Backup completed successfully."
+
+    🔹 After a backup is completed, this command notifies you that the backup was successful.

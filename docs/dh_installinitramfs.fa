@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installinitramfs` baraye sabt-e hook-haye initramfs estefade mishavad. In dastoor be soorat khodkar (otomatik) file-haye hook ra dar jaaye monaseb dar package-e Debian zakhire mikonad taa vaghti ke initramfs dorost mishavad, hook-ha ejraa shavand.  Be zabane sade tar, in dastoor komak mikonad ke shoma script-ha ya dastoorat khassi ra hengam-e dorost kardane initramfs (image-e avaliye system) ejraa konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name`  --> 🏷️  Esm-e service ra tayin mikonad. Agar tayin nashavad, esm az filename gerefte mishavad.
+    🔹 `--priority`  --> 🥇  Avaliyat-e hook ra tayin mikonad. Hook-ha ba tavajjoh be avaliyat-e anha ejraa mishavand. Adad-e kamtar yani avaliyat bishtar.
+    🔹 `--no-enable` --> ⛔  Az fa’al kardane otomatike service dar hengam-e nasb jelogiri mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installinitramfs
+    
+    🔹 Script-haye hook-e initramfs ra az `debian/package/etc/initramfs/post-update.d` (ya directory-haye digar-e monaseb) nasb mikonad.
+
+    $ dh_installinitramfs --name foobar --priority 50
+    
+    🔹 Script-e hook-e initramfs ra ba esm `foobar` va avaliyat `50` nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installinitramfs --no-enable
+
+    🔹 Script-haye hook ra nasb mikonad vali az fa’al kardane otomatike anha jelogiri mikonad.  Shoma bayad service ra be soorat dasti fa’al konid agar lazem bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installinitramfs` command is used to register initramfs hooks. This command automatically saves hook files in the appropriate location in the Debian package so that the hooks are executed when the initramfs is created.  Simply put, this command helps you run specific scripts or commands when creating the initramfs (initial system image).
+
+⚙️ **Options:**
+    🔹 `--name`  --> 🏷️  Specifies the name of the service. If not specified, the name is taken from the filename.
+    🔹 `--priority`  --> 🥇  Specifies the priority of the hook. Hooks are executed based on their priority. A lower number means higher priority.
+    🔹 `--no-enable` --> ⛔  Prevents automatic enabling of the service during installation.
+
+🛠 **Examples:**
+
+    $ dh_installinitramfs
+    
+    🔹 Installs initramfs hook scripts from `debian/package/etc/initramfs/post-update.d` (or other appropriate directories).
+
+    $ dh_installinitramfs --name foobar --priority 50
+    
+    🔹 Installs the initramfs hook script with the name `foobar` and priority `50`.
+
+✅ **Simple Example:**
+
+    $ dh_installinitramfs --no-enable
+
+    🔹 Installs hook scripts but prevents their automatic enabling.  You must manually enable the service if needed.

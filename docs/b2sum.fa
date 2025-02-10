@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `b2sum` baraye mohasebeye hash file-ha ba estefade az algorithm BLAKE2b estefade mishavad. Hash yek stringe kootah ast ke be soorate benzary be har file dade mishavad va baraye check kardane dorosti va tagheer nakardane file be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `b2sum FILE` --> 📁 Mohasebeye hash file morede nazar.
+    🔹 `b2sum -b FILE` --> 💾 Khoondan file be soorate binary. In gozine baraye file-haie ke shamel data binary hastand estefade mishavad.
+    🔹 `b2sum -t` --> ⏱️ Check kardane zaman gerefte shode baraye mohasebe.
+    🔹 `b2sum -c` --> 📝 Check kardane hash az yek file list shode.
+
+🛠 **Mesal-ha:**
+
+    $ b2sum myfile.txt
+
+    🔹 Chap kardane hash file "myfile.txt" dar terminal.
+
+    $ b2sum -b image.jpg
+
+    🔹 Mohasebeye hash file binary "image.jpg".
+
+✅ **Mesal sade:**
+
+    $ b2sum -c checksums.txt
+
+    🔹 Check kardane hash file-ha ba estefade az file "checksums.txt". Format dar file checksums.txt bayad mesle format khروجی dastoor b2sum bashad. Agar hashi ba file motabeghat dashte bashad, OK chap mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `b2sum` command calculates the BLAKE2b hash of files. A hash is a short string that uniquely represents a file and is used to verify the integrity and authenticity of the file.
+
+⚙️ **Options:**
+    🔹 `b2sum FILE` --> 📁 Calculate the hash of the specified file.
+    🔹 `b2sum -b FILE` --> 💾 Read the file in binary mode. This option is useful for files containing binary data.
+    🔹 `b2sum -t` --> ⏱️ Measure the time taken to compute the hash.
+    🔹 `b2sum -c` --> 📝 Check hashes from a list file.
+
+🛠 **Examples:**
+
+    $ b2sum myfile.txt
+
+    🔹 Print the hash of the file "myfile.txt" to the terminal.
+
+    $ b2sum -b image.jpg
+
+    🔹 Calculate the hash of the binary file "image.jpg".
+
+✅ **Simple Example:**
+
+    $ b2sum -c checksums.txt
+
+    🔹 Verify file hashes using the checksums listed in the "checksums.txt" file. The format in checksums.txt should match the b2sum output format. If a hash matches the file, OK is printed.

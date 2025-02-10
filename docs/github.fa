@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `github` yek platforme online baraye negahdari va hamkari dar projhe-haye code-nevisi ast. Shoma mitoonid code-haye khod ra upload konid, taghirat ra nyz moratab konid va ba digaran hamkari konid. 
+
+⚙️ **Gozine-ha (related commands):**
+    🔹 `git clone <URL>` --> ⬇️ Download kardane yek repository az github be computer shoma.
+    🔹 `git push` --> ⬆️ Upload kardane taghirat az computer shoma be github.
+    🔹 `git pull` --> 🔄 Gereftane akharin taghirat az github be computer shoma.
+    🔹 `git branch` --> 🌿 Sakhtane branch jadid.
+    🔹 `git merge` --> 🤝 Yeki kardane taghirat az branch haye mokhtalef.
+
+🛠 **Mesal-ha:**
+
+    $ git clone https://github.com/username/repositoryname.git
+
+    🔹 Download kardane code az yek repository khass.
+
+    $ git push origin main
+
+    🔹 Upload kardane taghirat az branch `main` be repository github.
+
+✅ **Mesal sade:**
+
+    $ git pull origin main
+
+    🔹 Gereftane akharin taghirat az branch `main` va update kardane local repository.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `github` is an online platform for storing and collaborating on coding projects. You can upload your code, track changes, and collaborate with others. It's not a command itself, but rather a website/service that works with Git. These examples focus on `git`, the command line tool that interacts with GitHub.
+
+⚙️ **Options (related commands):**
+    🔹 `git clone <URL>` --> ⬇️ Download a repository from GitHub to your computer.
+    🔹 `git push` --> ⬆️ Upload changes from your computer to GitHub.
+    🔹 `git pull` --> 🔄 Fetch the latest changes from GitHub to your computer.
+    🔹 `git branch` --> 🌿 Create a new branch.
+    🔹 `git merge` --> 🤝 Combine changes from different branches.
+
+🛠 **Examples:**
+
+    $ git clone https://github.com/username/repositoryname.git
+
+    🔹 Download code from a specific repository.
+
+    $ git push origin main
+
+    🔹 Upload changes from the `main` branch to the GitHub repository.
+
+✅ **Simple Example:**
+
+    $ git pull origin main
+
+    🔹 Fetch the latest changes from the `main` branch and update the local repository.

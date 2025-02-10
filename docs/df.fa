@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `df` baraye didane fazaye disk-e estefade shode va baghi mande dar system shoma be kar miravad. Yani, disk free ro neshun mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `df -h` --> 📏 Namayeshe hajme disk be surate ghabele khandan baraye ensan (kilobyte, megabyte, gigabyte).
+    🔹 `df -T` --> ℹ️ Namayeshe no'e filesystem (ext4, tmpfs, etc.).
+    🔹 `df -i` --> 🔢 Namayeshe tedade inode-haye estefade shode va baghi mande.
+
+🛠 **Mesal-ha:**
+
+    $ df
+
+    🔹 Namayeshe estandarde fazaye disk.
+
+    $ df -h
+
+    🔹 Namayeshe fazaye disk be surate ghabele khandan.
+
+✅ **Mesal sade:**
+
+    $ df -h /home
+
+    🔹 Namayeshe estefade az disk dar directory `/home` be surate ghabele khandan. In dastoor be shoma komak mikone ke bedunid cheghadr fazaye disk dar pooshe-ye `home` baghi munde.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `df` command is used to display the amount of disk space available and used on your system. Essentially, it shows disk free space.
+
+⚙️ **Options:**
+    🔹 `df -h` --> 📏 Display disk space in a human-readable format (kilobytes, megabytes, gigabytes).
+    🔹 `df -T` --> ℹ️ Display the filesystem type (ext4, tmpfs, etc.).
+    🔹 `df -i` --> 🔢 Display the number of inodes used and available.
+
+🛠 **Examples:**
+
+    $ df
+
+    🔹 Standard display of disk space usage.
+
+    $ df -h
+
+    🔹 Display disk space in human-readable format.
+
+✅ **Simple Example:**
+
+    $ df -h /home
+
+    🔹 Display disk usage for the `/home` directory in a human-readable format.  This command helps you quickly see how much disk space is remaining in your `home` folder.

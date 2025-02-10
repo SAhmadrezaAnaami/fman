@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `desktop-file-install` baraye nasb kardan file-haye `.desktop` (ke baraye dastrasi asan be barname-ha dar environment-haye desktopi estefade mishavand) be soorat dorost va ba e'tebar sanji (validation) estefade mishavad. Yani chek mikonad ke file `.desktop` eshkali nadashte bashad ghabl az inke nasb shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--dir`  --> 📁 Moshakhas kardane directory ke file `.desktop` bayad dar an nasb shavad. Agar moshakhas nashavad, directory pishfarz estefade mishavad.
+    🔹 `--mode user | system` --> 💻 Tarze nasb ra moshakhas mikonad. `user` baraye nasb baraye karbar-e فعلی (fa'ali) va `system` baraye nasb baraye hame karbaran (ba dastrasi admin) ast.
+    🔹 `--novendor` --> 🚫 Az ezafe kardane vendor prefix be esm file jologiri mikonad. oboort az prefix vendor.
+
+🛠 **Mesal-ha:**
+
+    $ desktop-file-install myapp.desktop
+
+    🔹 File `myapp.desktop` ra dar directory pishfarz baraye karbar-e فعلی (fa'ali) nasb mikonad ba e'tebar sanji.
+
+    $ sudo desktop-file-install --mode system myapp.desktop
+
+    🔹 File `myapp.desktop` ra baraye hameye karbaran nasb mikonad (ba dastrasi admin) pas az e'tebar sanji.
+
+    $ desktop-file-install --dir ~/.local/share/applications myapp.desktop
+
+    🔹 File `myapp.desktop` ra dar directory `~/.local/share/applications` baraye karbar-e فعلی (fa'ali) nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ desktop-file-install mygame.desktop
+
+    🔹 Agar file `mygame.desktop` dorost bashad, ehtemalan yek shortcut baraye bazi shoma dar menu application-ha ezafe mishavad. Agar eshkali dashte bashad, khata neshan midahad va nasb anjam nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `desktop-file-install` command is used to install `.desktop` files (which provide easy access to applications in desktop environments) correctly and with validation.  It checks the `.desktop` file for errors before installation.
+
+⚙️ **Options:**
+    🔹 `--dir`  --> 📁 Specifies the directory where the `.desktop` file should be installed. If not specified, the default directory is used.
+    🔹 `--mode user | system` --> 💻 Specifies the installation mode. `user` installs it for the current user, and `system` installs it for all users (requires admin access).
+    🔹 `--novendor` --> 🚫 Prevents the addition of a vendor prefix to the filename; bypass vendor prefixing.
+
+🛠 **Examples:**
+
+    $ desktop-file-install myapp.desktop
+
+    🔹 Installs the `myapp.desktop` file in the default directory for the current user, validating it first.
+
+    $ sudo desktop-file-install --mode system myapp.desktop
+
+    🔹 Installs the `myapp.desktop` file for all users (requires admin access) after validation.
+
+    $ desktop-file-install --dir ~/.local/share/applications myapp.desktop
+
+    🔹 Installs the `myapp.desktop` file in the `~/.local/share/applications` directory for the current user.
+
+✅ **Simple Example:**
+
+    $ desktop-file-install mygame.desktop
+
+    🔹 If the `mygame.desktop` file is valid, it will likely add a shortcut for your game in the applications menu. If there are errors, it will display an error message, and the installation will not proceed.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fakeroot-tcp` yek rahe hal baraye ejraye dastoor ha ba dastresi-haye `root` vali bedune dastresi vaghei be `root` ast. In barname az yek TCP socket baraye modiriyat dastresi-ha estefade mikonad. In be shoma ejazeh mideh barname-ha ro ba karebar-haye digar run konid ke niaz be dastresi-haye `root` darand, bedune inke karebar `root` bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p <port>` --> 🚪 Port-i ra moshakhas mikonad ke `fakeroot-tcp` bayad be an gosh dahad. Agar moshakhas nashavad, yek porte random entekhab mishavad.
+    🔹 `-s` --> 🤫 `fakeroot-tcp` ra dar pas zamine (background) run mikonad.
+    🔹 `-v` --> 📢 Eetela'at bishtari darbareye chiguneh kare fakeroot chap mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ fakeroot-tcp -p 9000  
+    
+    🔹 Barname-ye `fakeroot-tcp` ra ba porte 9000 run mikonad.
+
+    $ fakeroot-tcp -s  
+    
+    🔹 `fakeroot-tcp` ra dar background run mikonad.
+
+✅ **Mesal sade:**
+
+    $ fakeroot-tcp -p 9000 &
+    $ fakeroot  -s 127.0.0.1:9000 tar -czvf package.tar.gz *
+    
+    🔹 Dar in mesal, `fakeroot-tcp` ro ba porte 9000 run mikonim. Ba'd az an, dastoor `tar` ra ba `fakeroot` run mikonim ta yek file archive ba dastresi-haye `root` dorost konim, bedune inke vaghean karebar `root` bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fakeroot-tcp` command provides a way to execute commands with `root` privileges without actually having `root` access. This program uses a TCP socket to manage permissions. It allows you to run applications with other users that require `root` privileges, without the user actually being `root`.
+
+⚙️ **Options:**
+    🔹 `-p <port>` --> 🚪 Specifies the port that `fakeroot-tcp` should listen on. If not specified, a random port is chosen.
+    🔹 `-s` --> 🤫 Runs `fakeroot-tcp` in the background.
+    🔹 `-v` --> 📢 Prints more information about how fakeroot is working.
+
+🛠 **Examples:**
+
+    $ fakeroot-tcp -p 9000
+    
+    🔹 Runs `fakeroot-tcp` on port 9000.
+
+    $ fakeroot-tcp -s
+    
+    🔹 Runs `fakeroot-tcp` in the background.
+
+✅ **Simple Example:**
+
+    $ fakeroot-tcp -p 9000 &
+    $ fakeroot -s 127.0.0.1:9000 tar -czvf package.tar.gz *
+    
+    🔹 In this example, we run `fakeroot-tcp` on port 9000. After that, we run the `tar` command with `fakeroot` to create an archive file with `root` permissions, without actually being the `root` user.

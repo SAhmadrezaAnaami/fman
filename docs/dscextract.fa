@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dscextract` baraye gereftan (extract) va be dast avardane etela'at az file-haye DSC (Desktop Services Command) estefade mishavad. In file-ha dar macOS baraye negahdari etela'at metadata file-ha, mesle thumbnail-ha va comment-ha be kar miravand. Ba `dscextract`, shoma mitoonid in etela'at ro be dast biarid va estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dscextract -a`  --> 📦 Gereftane hameye etela'at metadata mojood.
+    🔹 `dscextract -t type file.dsc` --> 🖼️ Gereftane yek no'e khass az metadata (meslan, thumbnail). Type bayad thumbnail ya comment bashad.
+    🔹 `dscextract -o output_folder file.dsc` --> 📂 Specify a directory to store the extracted files
+
+🛠 **Mesal-ha:**
+
+    $ dscextract -a example.dsc
+
+    🔹 Gereftane hameye etela'at az file example.dsc va zakhire dar directory jari.
+
+    $ dscextract -t thumbnail image.dsc
+
+    🔹 Gereftane thumbnail az file image.dsc va zakhire dar directory jari.
+
+✅ **Mesal sade:**
+
+    $ dscextract -t thumbnail myimage.dsc
+
+    🔹 In dastoor thumbnail az file `myimage.dsc` ra gerefte va an ra dar directory jari zakhire mikonad. Agar thumbnail mojood nabashad, hich chizi zakhire nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dscextract` command is used to extract information from DSC (Desktop Services Command) files. These files are used on macOS to store metadata about files, such as thumbnails and comments. With `dscextract`, you can retrieve and use this information.
+
+⚙️ **Options:**
+    🔹 `dscextract -a`  --> 📦 Extract all available metadata.
+    🔹 `dscextract -t type file.dsc` --> 🖼️ Extract a specific type of metadata (e.g., thumbnail). Type must be thumbnail or comment.
+    🔹 `dscextract -o output_folder file.dsc` --> 📂 Specify a directory to store the extracted files
+
+🛠 **Examples:**
+
+    $ dscextract -a example.dsc
+
+    🔹 Extracts all information from the file example.dsc and saves it in the current directory.
+
+    $ dscextract -t thumbnail image.dsc
+
+    🔹 Extracts the thumbnail from the file image.dsc and saves it in the current directory.
+
+✅ **Simple Example:**
+
+    $ dscextract -t thumbnail myimage.dsc
+
+    🔹 This command extracts the thumbnail from the file `myimage.dsc` and saves it to the current directory. If no thumbnail exists, nothing will be saved.

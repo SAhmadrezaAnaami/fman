@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `appres` baraye gereftan va namayesh dadan resoure haye yek barnameye X Window System estefade mishavad. Yani, meghdar haye default baraye setting haye mokhtalef yek application ra neshon midahad. In dastoor be developer ha komak mikonad ta setting haye default ra baraye barnamehaye X Window System bebinand va taghir dahand.
+
+⚙️ **Gozine-ha:**
+    🔹 `appres application_name` --> 🔍 Namayesh hameye resoure haye `application_name`.
+    🔹 `appres application_name resource_name` --> 🎯 Namayesh faghat resoure `resource_name` az `application_name`.
+
+🛠 **Mesal-ha:**
+
+    $ appres XTerm
+
+    🔹 Namayesh hameye resoure haye default baraye barnameye XTerm.
+
+    $ appres XTerm *background
+
+    🔹 Namayesh meghdare resoure `background` az barnameye XTerm.
+
+✅ **Mesal sade:**
+
+    $ appres XClock *geometry
+    XClock.geometry: 100x100
+
+    🔹 In dastoor andazeye default panjereye barnameye XClock ra neshon midahad, ke dar in mesal 100x100 pixel ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `appres` command is used to retrieve and display resources of an X Window System application. It shows the default values for various settings of an application. This command helps developers view and modify default settings for X Window System applications.
+
+⚙️ **Options:**
+    🔹 `appres application_name` --> 🔍 Display all resources of `application_name`.
+    🔹 `appres application_name resource_name` --> 🎯 Display only the `resource_name` resource from `application_name`.
+
+🛠 **Examples:**
+
+    $ appres XTerm
+
+    🔹 Display all default resources for the XTerm application.
+
+    $ appres XTerm *background
+
+    🔹 Display the value of the `background` resource from the XTerm application.
+
+✅ **Simple Example:**
+
+    $ appres XClock *geometry
+    XClock.geometry: 100x100
+
+    🔹 This command shows the default size of the XClock application window, which is 100x100 pixels in this example.

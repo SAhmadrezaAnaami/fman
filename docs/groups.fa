@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `groups` baraye neshan dadaneh grooh-haayi ke yek karbar ozv-e aan ast estefadeh mishavad. Agar esm-e karbar dadeh nashavad, grooh-haaye karbar-e fa'aal neshan dadeh mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `groups [USERNAME]` --> 👤 Grooh-haaye karbar-e moshakhas ra neshan midahad. Agar esm-e karbar dadeh nashavad, grooh-haaye karbar-e fa'aal neshan dadeh mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ groups
+
+    🔹 Neshan dadaneh grooh-haaye karbar-e fa'aal.
+
+    $ groups ali
+
+    🔹 Neshan dadaneh grooh-haaye karbari baa name "ali".
+
+✅ **Mesal sade:**
+
+    $ groups username
+    username : group1 group2 group3
+
+    🔹  Dar in mesal, karbar "username" ozv-e grooh-haaye "group1", "group2", va "group3" ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `groups` command is used to display the groups a user belongs to. If no username is provided, it shows the groups for the current user.
+
+⚙️ **Options:**
+    🔹 `groups [USERNAME]` --> 👤 Shows the groups for a specified user. If no username is provided, shows the groups for the current user.
+
+🛠 **Examples:**
+
+    $ groups
+
+    🔹 Shows the groups of the current user.
+
+    $ groups alice
+
+    🔹 Shows the groups of the user named "alice".
+
+✅ **Simple Example:**
+
+    $ groups user1
+    user1 : groupA groupB groupC
+
+    🔹 In this example, the user "user1" belongs to the groups "groupA", "groupB", and "groupC".

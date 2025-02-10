@@ -1,0 +1,52 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cvt` baraye hesab kardane `VESA CVT (Coordinated Video Timing)` mode be kar miravad.  In dastoor be shoma komak mikonad ta timing-haye monaseb baraye display-haye LCD va CRT ra baraye xrandr (extension X Window System) hesab konid. Asasan, `cvt` etela'ate lazem baraye configuration-e monitor ra baraye shoma generate mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cvt [width] [height] [framerate]` --> 🖼️ Width, Height, va framerate-e monitor ra vared konid ta timing-haye mored nazar hesab shavad.
+
+🛠 **Mesal-ha:**
+
+    $ cvt 1920 1080 60
+
+    🔹 In dastoor timing-haye CVT baraye resolushn 1920x1080 ba framerate 60 FPS ra hesab mikonad.
+
+    $ cvt 1280 720 75
+
+    🔹 In dastoor timing-haye CVT baraye resolushn 1280x720 ba framerate 75 FPS ra hesab mikonad.
+
+✅ **Mesal sade:**
+
+    $ cvt 1366 768 60
+
+    🔹 Ba ejra kardane in dastoor, shoma timing-haye CVT ra baraye yek monitor ba resolushn 1366x768 va framerate 60 FPS daryaft mikonid, ke mitoonid dar configuration-e Xorg estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cvt` command is used to calculate VESA CVT (Coordinated Video Timing) mode lines. It helps you calculate appropriate modelines for LCD and CRT displays for use with xrandr (the X Window System extension). Basically, `cvt` generates the necessary information for monitor configuration.
+
+⚙️ **Options:**
+    🔹 `cvt [width] [height] [framerate]` --> 🖼️ Specify the width, height, and framerate of the monitor to calculate the corresponding timings.
+
+🛠 **Examples:**
+
+    $ cvt 1920 1080 60
+
+    🔹 This command calculates the CVT timings for a resolution of 1920x1080 with a framerate of 60 FPS.
+
+    $ cvt 1280 720 75
+
+    🔹 This command calculates the CVT timings for a resolution of 1280x720 with a framerate of 75 FPS.
+
+✅ **Simple Example & Explanation:**
+
+    $ cvt 1366 768 60
+
+    🔹 By running this command, you will receive the CVT timings for a monitor with a resolution of 1366x768 and a framerate of 60 FPS, which you can then use in your Xorg configuration.

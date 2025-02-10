@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2xqx-wrapper` yek vasete (wrapper) baraye drajvar haye printere `foo2xqx` ast.  In dastoor be shoma komak mikonad ta ba printer haye ghadimi (legacy) ke az in drajver estefade mikonand, az tarigh ghabliat haye jadidtar e chap (printing) dar UNIX/Linux mesle CUPS estefade konid.  Be zaban sade, in yek tabdil konandeh ast baraye chap kardane chapaee ke printere shoma mifahmad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayeshe rahnamaye dastoor va gozine-ha.
+    🔹 `-z<level>` --> 🗜️  Sathe fishorde sazi (compression level). `0` yani hich fishordegi va `9` yani bishtarin sathe fishordegi.  Be tor mamool, az in gozine estefade nemishavad magar dar halat haye khass.
+
+🛠 **Mesal-ha:**
+
+    $ foo2xqx-wrapper
+
+    🔹 Dar aksar mavaghe, in dastoor be tor mostaghim az tarighe systeme chap (mesle CUPS) seda zade mishavad va niazi nist shoma an ra mostaghiman ejra konid.
+
+    $ foo2xqx-wrapper --help
+
+    🔹 Namayeshe rahnamaye dastoor.
+
+✅ **Mesal sade:**
+
+    Agar systeme chape shoma (CUPS) printere shoma ra be dorosti shenasaee nemikonad, shoma mitavanid drajvare `foo2xqx` ra dastooran nasb konid va `foo2xqx-wrapper` be CUPS komak mikonad ta ba printere shoma ertebat bargharar konad.  In vasete (wrapper) file-haye chap ra be format monaseb baraye printere shoma tabdil mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2xqx-wrapper` command is a wrapper for the `foo2xqx` printer drivers. It allows you to use older (legacy) printers that use these drivers with newer printing systems in UNIX/Linux, such as CUPS. In simple terms, it's a translator for printing jobs that your printer understands.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display command help and options.
+    🔹 `-z<level>` --> 🗜️ Compression level. `0` means no compression, and `9` means the highest level of compression.  This option is usually not used unless in specific circumstances.
+
+🛠 **Examples:**
+
+    $ foo2xqx-wrapper
+
+    🔹 In most cases, this command is called directly by the printing system (like CUPS) and does not need to be executed directly by you.
+
+    $ foo2xqx-wrapper --help
+
+    🔹 Display the command help.
+
+✅ **Simple Example:**
+
+    If your printing system (CUPS) is not correctly recognizing your printer, you can manually install the `foo2xqx` driver, and `foo2xqx-wrapper` helps CUPS communicate with your printer. This wrapper converts print files into a format suitable for your printer.

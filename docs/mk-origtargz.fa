@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mk-origtargz` baraye dorost kardane yek file .orig.tar.gz az rooye manba’ asli (source code) baraye package-haye Debian estefade mishavad. In dastoor kheili vaghta dar zaman sakhtane package-haye jadid az manba’ asli be kar miravad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--version`  --> ℹ️ Namayesh dādan version-e dastoor.
+    🔹 `--help`     --> 🆘 Namayesh dādan rāhnemāye estefāde az dastoor.
+    🔹 `<directory>` --> 📁 Esme directory ke file manba’ asli (source) dar ān gharār dārad. Agar directory zekr nashavad, directory hāzer (current) estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ mk-origtargz /path/be/manba
+
+    🔹 In dastoor yek file .orig.tar.gz az manba’ dar /path/be/manba dorost mikonad.
+
+    $ mk-origtargz
+
+    🔹 Agar hich directory zekr nashavad, dastoor dar directory hāzer ejrā mishavad va file .orig.tar.gz dorost mikonad.
+
+✅ **Mesal sade:**
+
+    $ mk-origtargz my-source-1.0
+
+    🔹 Agar directory bā esme `my-source-1.0` mojood bāshad, yek file bā esme `my-source-1.0.orig.tar.gz` dorost mikonad ke shāmel manba’ asli mishe. In file baraye sakhtane package Debian estefade mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mk-origtargz` command is used to create an .orig.tar.gz file from the original source code for Debian packages. It is often used when building new packages from upstream sources.
+
+⚙️ **Options:**
+    🔹 `--version`  --> ℹ️ Display the version of the command.
+    🔹 `--help`     --> 🆘 Display help information about how to use the command.
+    🔹 `<directory>` --> 📁 The name of the directory where the original source file is located. If no directory is specified, the current directory is used.
+
+🛠 **Examples:**
+
+    $ mk-origtargz /path/to/source
+
+    🔹 This command creates an .orig.tar.gz file from the source located in /path/to/source.
+
+    $ mk-origtargz
+
+    🔹 If no directory is specified, the command runs in the current directory and creates an .orig.tar.gz file.
+
+✅ **Simple Example:**
+
+    $ mk-origtargz my-source-1.0
+
+    🔹 If a directory named `my-source-1.0` exists, it creates a file named `my-source-1.0.orig.tar.gz` containing the original source code.  This file is used for building the Debian package.

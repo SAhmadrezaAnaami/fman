@@ -1,0 +1,44 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fprintd-enroll` baraye sabt angosht baraye estefade az fingerprint scanner (angosht n نگار خوان) dar Linux estefade mishavad. In dastoor be shoma komak mikonad ke angosht khod ra baraye vorood be system ya anjam karhaye amniati sabt konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fprintd-enroll` -->  👣 Angosht ra sabt mikonad.  Shoma bayad etela'at lazem ra be dastoor bedahid.
+
+🛠 **Mesal-ha:**
+
+    $ fprintd-enroll username
+
+    🔹 Angosht ra baraye karbar ba username 'username' sabt mikonad. Az shoma khaste mishavad ke angosht khod ra chand bar baraye scanner bezarid.
+
+✅ **Mesal sade:**
+
+    $ fprintd-enroll ali
+
+    🔹 Angosht ali ra sabt mikonad.  Dar hale sabt, system az ali mikahad ke angosht khod ra chand bar baraye scanner bezarad ta اطمینان حاصل شود ke tasvir dorost ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fprintd-enroll` command is used to enroll your fingerprint for use with fingerprint scanners in Linux. This command helps you register your fingerprint for system login or other security-related tasks.
+
+⚙️ **Options:**
+    🔹 `fprintd-enroll` --> 👣 Enrolls a fingerprint. You need to provide the necessary information to the command.
+
+🛠 **Examples:**
+
+    $ fprintd-enroll username
+
+    🔹 Enrolls a fingerprint for the user with the username 'username'. You will be prompted to scan your finger multiple times.
+
+✅ **Simple Example:**
+
+    $ fprintd-enroll ali
+
+    🔹 Enrolls Ali's fingerprint. During enrollment, the system will prompt Ali to place their finger on the scanner several times to ensure a good image is captured.

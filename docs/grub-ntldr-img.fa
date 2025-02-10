@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-ntldr-img` baraye sakhtane yek image file baraye chain-loading Windows NT/2000/XP az GRUB estefade mishavad. Chain-loading yani GRUB yek bootloader digar ra load mikonad.  In be shoma ejaze midahad ke az GRUB baraye boot kardan Windows estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--drive-number=adad` --> 🔢 Shomareye drive-i ke Windows rooye aan nasb shode ra moshakhas mikonad.  Oboolan 0x80 avalin hard drive HDD, va 0x81 dovomin HDD ast.
+    🔹 `--target=file`      --> 🎯 Esme file-i ke image dar aan zakhire mishavad ra moshakhas mikonad.
+    🔹 `--force-lba`        --> 💪 Majbur mikonad az LBA (Logical Block Addressing) baraye adress-dehi estefade shavad. (dar sorati ke lazeme.)
+
+🛠 **Mesal-ha:**
+
+    $ grub-ntldr-img --target=ntldr.img
+
+    🔹 Image-e pishfarz ba esme `ntldr.img` ra misazad. Agar disk-e aval Windows bashad.
+
+    $ grub-ntldr-img --target=/boot/windows.img --drive-number=0x81
+
+    🔹  yek image ba esme `windows.img` dar `/boot` misazad va shomareye disk ra 0x81 (disk dovom) moshakhas mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-ntldr-img --target=windows.img && sudo cp windows.img /boot/
+
+    🔹 Image ra misazad va sepas an ra be pooshe `/boot` copy mikonad.  In kheili vaghta baraye dorost kardan image va gozashtanesh dar jaye dorost baraye GRUB estefade mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-ntldr-img` command is used to create an image file for chain-loading Windows NT/2000/XP from GRUB. Chain-loading means GRUB loads another bootloader.  This allows you to use GRUB to boot into Windows.
+
+⚙️ **Options:**
+    🔹 `--drive-number=number` --> 🔢 Specifies the drive number where Windows is installed.  Typically, 0x80 is the first HDD, and 0x81 is the second HDD.
+    🔹 `--target=file`      --> 🎯 Specifies the name of the file where the image will be saved.
+    🔹 `--force-lba`        --> 💪 Forces the use of LBA (Logical Block Addressing) for addressing. (If necessary.)
+
+🛠 **Examples:**
+
+    $ grub-ntldr-img --target=ntldr.img
+
+    🔹 Creates a default image named `ntldr.img`. If Windows is on the first disk.
+
+    $ grub-ntldr-img --target=/boot/windows.img --drive-number=0x81
+
+    🔹 Creates an image named `windows.img` in `/boot` and specifies the drive number as 0x81 (second disk).
+
+✅ **Simple Example:**
+
+    $ grub-ntldr-img --target=windows.img && sudo cp windows.img /boot/
+
+    🔹 Creates the image and then copies it to the `/boot` directory. This is often used to create the image and place it in the correct location for GRUB to use.
+

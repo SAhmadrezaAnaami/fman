@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbus-uuidgen` baraye dorost kardane yek UUID (Universally Unique Identifier) jadid baraye estefade dar DBus (Desktop Bus) be kar miravad. UUID yek code unique ast ke baraye shenasayi kardane service-ha va object-ha dar DBus estefade mishavad.  
+
+⚙️ **Gozine-ha:**
+    🔹 `dbus-uuidgen` --> 🗝️ Dorost kardane yek UUID jadid va chap kardane aan dar terminal.
+    🔹 `dbus-uuidgen --ensure` --> 🔒 Agar file UUID mojood nabashad, yek file jadid misazad va UUID ra dar aan zakhire mikonad. Agar mojood bashad, UUID ra az file mikhanad.
+
+🛠 **Mesal-ha:**
+
+    $ dbus-uuidgen
+
+    🔹 UUID jadid dorost mikonad va chap mikonad.
+
+    $ dbus-uuidgen --ensure
+
+    🔹 Motmaen mishavad ke yek file UUID vojood darad va UUID ra az aan mikhanad ya dar aan zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ dbus-uuidgen > my_uuid.txt
+
+    🔹 Yek UUID jadid dorost mikonad va aan ra dar yek file be name `my_uuid.txt` zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbus-uuidgen` command is used to generate a new UUID (Universally Unique Identifier) for use with D-Bus (Desktop Bus). A UUID is a unique code used to identify services and objects in D-Bus.
+
+⚙️ **Options:**
+    🔹 `dbus-uuidgen` --> 🗝️ Generate a new UUID and print it to the terminal.
+    🔹 `dbus-uuidgen --ensure` --> 🔒 If a UUID file doesn't exist, create a new file and store the UUID in it. If it exists, read the UUID from the file.
+
+🛠 **Examples:**
+
+    $ dbus-uuidgen
+
+    🔹 Generates and prints a new UUID.
+
+    $ dbus-uuidgen --ensure
+
+    🔹 Ensures that a UUID file exists and either reads the UUID from it or stores a new one in it.
+
+✅ **Simple Example:**
+
+    $ dbus-uuidgen > my_uuid.txt
+
+    🔹 Generates a new UUID and stores it in a file named `my_uuid.txt`.
+

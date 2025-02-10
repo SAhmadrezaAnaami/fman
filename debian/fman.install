@@ -1,0 +1,2 @@
+bin/fman usr/bin
+docs/* usr/share/fman/docs

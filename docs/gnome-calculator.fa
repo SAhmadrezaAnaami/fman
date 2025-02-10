@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-calculator` yek narm afzar hesabdari graphical ast ke dar mohite GNOME baraye mohasebat riazi estefade mishavad. Mitavanad amaliat haye sade va pishrafte riazi ra anjam dahad. 🧮
+
+⚙️ **Gozine-ha:**
+    🔹 `--version` --> ℹ️ Namayesh version-e narm afzar.
+    🔹 `--help`    --> ❓ Namayesh rahnama (help) darbare dastoor va gozine-ha.
+    🔹 Nadashtane gozine --> 🚀 Ba ejraye sade, narm afzar baaz mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-calculator
+
+    🔹 Baaz kardane narm afzar hesabdari GNOME ba interface graphical.
+
+    $ gnome-calculator --version
+
+    🔹 Namayesh version-e narm afzar hesabdari.
+
+✅ **Mesal sade:**
+
+    $ gnome-calculator &
+
+    🔹 Narm afzar hesabdari ra dar background ejra mikonad va terminal ra azad mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-calculator` is a graphical calculator application used in the GNOME environment for mathematical calculations. It can perform simple and advanced mathematical operations. 🧮
+
+⚙️ **Options:**
+    🔹 `--version` --> ℹ️ Display the software version.
+    🔹 `--help`    --> ❓ Display help information about the command and options.
+    🔹 No options  --> 🚀 Running it without options opens the calculator application.
+
+🛠 **Examples:**
+
+    $ gnome-calculator
+
+    🔹 Opens the GNOME calculator application with the graphical interface.
+
+    $ gnome-calculator --version
+
+    🔹 Displays the version of the calculator application.
+
+✅ **Simple Example:**
+
+    $ gnome-calculator &
+
+    🔹 Runs the calculator application in the background, freeing up the terminal.
+

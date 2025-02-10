@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_testroot` baraye dorost kardan yek directory-e test root dar pakage-haye Debian estefade mishavad. In directory baraye ejra kardan test-ha ghabl az nasb-e pakage rooye system-e asli be kar miravad.  yani "root" asli dast nakhordeh mimanad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--list-missing` --> 👀 List kardan hameye file-haye mokhtalefi ke dar directory-e testroot nistand.
+    🔹 `--verbose` --> 🗣️ Namayesh dadan peygham-haye bishtar dar mored-e chigonegi-e ejra shodan-e dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ dh_testroot
+    
+    🔹 Directory testroot ra dar directory build pakage dorost mikonad.
+
+    $ dh_testroot --list-missing
+    
+    🔹 List file-hayi ke az system-e shoma dar testroot directory nistand.
+
+✅ **Mesal sade:**
+
+    $ dh_testroot
+    $ find debian/testroot -type f
+    
+    🔹 Dastoor `dh_testroot` directory `debian/testroot` ra dorost mikonad (age vojood nadasht) va bad az aan, `find` hameye file-haye daroon-e aan directory ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_testroot` command is used to create a test root directory in Debian packages. This directory is used for running tests before installing the package on the real system, ensuring the main "root" remains untouched.
+
+⚙️ **Options:**
+    🔹 `--list-missing` --> 👀 List all the different files which are missing from the testroot directory.
+    🔹 `--verbose` --> 🗣️ Show more information about the execution of the command.
+
+🛠 **Examples:**
+
+    $ dh_testroot
+    
+    🔹 Creates the testroot directory within the package build directory.
+
+    $ dh_testroot --list-missing
+    
+    🔹 Lists files from your system that are missing from the testroot directory.
+
+✅ **Simple Example:**
+
+    $ dh_testroot
+    $ find debian/testroot -type f
+    
+    🔹 The `dh_testroot` command creates the `debian/testroot` directory (if it doesn't exist), and then `find` displays all the files within that directory.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `logger` baraye ezafe kardan payam be log file system estefade mishavad. In dastoor bishtar baraye sabte etela'at dar morede rooydad-ha, khata-ha, ya digar payam-haye mohem be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `logger "payam"` --> 💬 Sabte yek payam sade dar log file.
+    🔹 `logger -p priority "payam"` --> 🚨 Sabte payam ba ahamiyat moshakhas (mesle error, warning).  Ahamiyat-ha mesle `emerg`, `alert`, `crit`, `err`, `warning`, `notice`, `info`, `debug` hastand.
+    🔹 `logger -t tag "payam"` --> 🏷️ Ezafe kardane yek tag be payam log shode.  In tag baraye peygiri va joda kardane payam-ha az manba' haye mokhtalef mofeed ast.
+    🔹 `logger -f file` --> 📁 Sabte matn az yek file be log.
+
+🛠 **Mesal-ha:**
+
+    $ logger "Salam donya!"
+
+    🔹 Sabte payam "Salam donya!" dar log file system.
+
+    $ logger -p err -t myscript "Yek khata rokh dad!"
+
+    🔹 Sabte payam "Yek khata rokh dad!" ba ahamiyat 'error' va tag 'myscript' dar log.
+
+✅ **Mesal sade:**
+
+    $ logger -p warning "Faza-ye disk kam ast."
+
+    🔹 Sabte payam "Faza-ye disk kam ast." ba daraje ahamiyat 'warning' dar log file.  In komak mikonad ke masoolan system az mozo' agah shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `logger` command is used to make entries in the system log file. It is primarily used to record information about events, errors, or other important messages.
+
+⚙️ **Options:**
+    🔹 `logger "message"` --> 💬 Logs a simple message to the log file.
+    🔹 `logger -p priority "message"` --> 🚨 Logs a message with a specified priority level (e.g., error, warning).  Priority levels include `emerg`, `alert`, `crit`, `err`, `warning`, `notice`, `info`, `debug`.
+    🔹 `logger -t tag "message"` --> 🏷️ Adds a tag to the logged message. This tag is useful for tracking and distinguishing messages from different sources.
+    🔹 `logger -f file` --> 📁 Logs the content of a file to the log.
+
+🛠 **Examples:**
+
+    $ logger "Hello world!"
+
+    🔹 Logs the message "Hello world!" to the system log file.
+
+    $ logger -p err -t myscript "An error occurred!"
+
+    🔹 Logs the message "An error occurred!" with the 'error' priority and the 'myscript' tag.
+
+✅ **Simple Example:**
+
+    $ logger -p warning "Disk space is low."
+
+    🔹 Logs the message "Disk space is low." with a 'warning' priority to the log file. This helps system administrators become aware of the issue.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `as` (assembler) baraye tabdil dastoorat zaban assembly be code machine ghabele ejra (executable) estefade mishavad. Yani code assembly shoma ro migire va baraye computer ghabele fahm mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `as -o <file_khorooji>`  --> 💾 Esme file khorooji ro moshakhas mikonad. Age in gozine nabashe, `as` file khorooji ro `a.out` misaze.
+    🔹 `as -g`  --> 🐛 Ezafe kardane etela'ate debug baraie estefade ba debugger (mesle gdb). Kheyli baraye peida kardane error-ha komak mikone.
+    🔹 `as --32` / `--64` --> 💻 Moshakhas kardane arshitekture CPU (32-bit ya 64-bit). Age moshakhas nakonid, `as` az arshitektur systemeton estefade mikone.
+    🔹 `as -I <masir>` --> 📁 Ezafe kardane masir baraie gashtan donbale file-haye include.
+
+🛠 **Mesal-ha:**
+
+    $ as -g -o program.o program.s
+
+    🔹 Tabdil file assembly `program.s` be file object `program.o` ba etela'ate debug.
+
+    $ as --64 -o program.o program.s
+
+    🔹 Tabdil file assembly `program.s` be file object `program.o` baraye arshitektur 64-bit.
+
+✅ **Mesal sade:**
+
+    $ as -o hello.o hello.s
+
+    🔹 File assembly `hello.s` be file object `hello.o` tabdil mishe. Dar in halat, code `hello.o` baraye ejra niaz be link shodan dare (ba estefade az `ld` ya compiler mesle `gcc`).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `as` (assembler) command is used to translate assembly language instructions into executable machine code. It takes your assembly code and makes it understandable for the computer.
+
+⚙️ **Options:**
+    🔹 `as -o <output_file>`  --> 💾 Specifies the output file name. If this option is not used, `as` creates an output file named `a.out`.
+    🔹 `as -g`  --> 🐛 Adds debugging information for use with a debugger (like gdb). Very helpful for finding errors.
+    🔹 `as --32` / `--64` --> 💻 Specifies the CPU architecture (32-bit or 64-bit). If you don't specify, `as` uses your system's architecture.
+    🔹 `as -I <path>` --> 📁 Adds a path to search for include files.
+
+🛠 **Examples:**
+
+    $ as -g -o program.o program.s
+
+    🔹 Converts the assembly file `program.s` to the object file `program.o` with debugging information.
+
+    $ as --64 -o program.o program.s
+
+    🔹 Converts the assembly file `program.s` to the object file `program.o` for a 64-bit architecture.
+
+✅ **Simple Example:**
+
+    $ as -o hello.o hello.s
+
+    🔹 The assembly file `hello.s` is converted to the object file `hello.o`. In this state, the code in `hello.o` needs to be linked (using `ld` or a compiler like `gcc`) to be executable.

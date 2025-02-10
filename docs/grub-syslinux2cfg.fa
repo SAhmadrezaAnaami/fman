@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-syslinux2cfg` baraye tabdil file-haye configuration `syslinux` be file-haye configuration `GRUB` be kar miravad. Ba estefade az in dastoor, shoma mitavanid configuration-haye system-haye boot-e ghadimi ra be configuration-haye `GRUB` tabdil konid ta system-e shoma ba GRUB boot shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnama (help) baraye dastoor.
+    🔹 `--syslinux-cfg FILE` --> ⚙️ Moshakhas kardane masire file configuration `syslinux`.
+    🔹 `--grub-cfg FILE` --> ⚙️ Moshakhas kardane masire file configuration `GRUB` ke bayad ejad shavad.
+    🔹 `--verbose` --> 📢 Namayesh etela'ate bishtar dar morede amaliyat.
+
+🛠 **Mesal-ha:**
+
+    $ grub-syslinux2cfg --syslinux-cfg /boot/syslinux/syslinux.cfg --grub-cfg /boot/grub/grub.cfg
+
+    🔹 Tabdil file configuration `syslinux.cfg` be file `grub.cfg`.
+
+    $ grub-syslinux2cfg --syslinux-cfg /mnt/usb/syslinux.cfg --grub-cfg /boot/grub/grub.cfg --verbose
+
+    🔹 Tabdil file configuration `syslinux.cfg` az yeke usb be file `grub.cfg` va namayesh etela'ate bishtar.
+
+✅ **Mesal sade:**
+
+    $ grub-syslinux2cfg --syslinux-cfg syslinux.cfg --grub-cfg grub.cfg
+    Generating grub.cfg...
+    Done!
+
+    🔹 In dastoor file `syslinux.cfg` ra mikhanad va file `grub.cfg` ra ba configuration equivalent ejad mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-syslinux2cfg` command is used to convert `syslinux` configuration files to `GRUB` configuration files.  By using this command, you can convert legacy boot system configurations to `GRUB` configurations so that your system boots with GRUB.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display help information for the command.
+    🔹 `--syslinux-cfg FILE` --> ⚙️ Specify the path to the `syslinux` configuration file.
+    🔹 `--grub-cfg FILE` --> ⚙️ Specify the path to the `GRUB` configuration file to be created.
+    🔹 `--verbose` --> 📢 Display more information about the operation.
+
+🛠 **Examples:**
+
+    $ grub-syslinux2cfg --syslinux-cfg /boot/syslinux/syslinux.cfg --grub-cfg /boot/grub/grub.cfg
+
+    🔹 Convert the `syslinux.cfg` configuration file to `grub.cfg`.
+
+    $ grub-syslinux2cfg --syslinux-cfg /mnt/usb/syslinux.cfg --grub-cfg /boot/grub/grub.cfg --verbose
+
+    🔹 Convert the `syslinux.cfg` configuration file from a USB drive to `grub.cfg` and display more information.
+
+✅ **Simple Example:**
+
+    $ grub-syslinux2cfg --syslinux-cfg syslinux.cfg --grub-cfg grub.cfg
+    Generating grub.cfg...
+    Done!
+
+    🔹 This command reads the `syslinux.cfg` file and creates a `grub.cfg` file with equivalent configurations.

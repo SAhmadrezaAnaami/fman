@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk4-broadwayd` yek server baraye namayesh dadan application-haye GTK dar browser-e shoma ast.  Be jaye namayesh application rooye desktop, in dastoor application ra dar yek safhe web namayesh midahad.  In baraye vaghti ke shoma mikhaeed application-i ra az rahe door ejra konid mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--port=NUM`  --> 🚪  Port-e ra ke `broadwayd` rooye an goosh mikonad ra tayin mikonad.  Agar tayin nashavad, yek port-e khali be soorat random entekhab mishavad.
+    🔹 `--address=ADDRESS` --> 🌐  Address-e ra ke `broadwayd` rooye an goosh mikonad ra tayin mikonad. Be soorat pishfarz bar rooye hameye address-ha goosh mikonad.
+    🔹 `--unixsocket=FILENAME` --> 🛤️  Be jaye TCP socket, az yek UNIX domain socket estefade kon.
+    🔹 `--display=DISPLAY` --> 🖥️  DISPLAY-e ra ke `broadwayd` bayad be an vasl shavad ra tayin mikonad. Agar tayin nashavad, DISPLAY az environment variable `DISPLAY` gerefte mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ gtk4-broadwayd --port=8080
+
+    🔹  Broadwayd ra ba port 8080 ejra mikonad.  Shoma mitavanid be application GTK dar browser ba address `http://localhost:8080` vasl shavid.
+
+    $ gtk4-broadwayd --address=192.168.1.100
+
+    🔹  Broadwayd ra ba address 192.168.1.100 ejra mikonad.
+
+✅ **Mesal sade:**
+
+    $ gtk4-broadwayd :5
+
+    🔹 In command yek instance az broadwayd ra bar rooye display :5 shoru mikonad.  Shoma bayad environment variable `DISPLAY=:5` ra tayin konid gabl az ejra kardan application-haye GTK.  Pas az an, application-haye GTK rooye browser namayesh dade mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk4-broadwayd` command is a server for displaying GTK applications in your web browser. Instead of rendering the application on a desktop, this command displays the application in a web page. This is useful for running applications remotely.
+
+⚙️ **Options:**
+    🔹 `--port=NUM`  --> 🚪 Specifies the port number that `broadwayd` will listen on. If not specified, a random free port is chosen.
+    🔹 `--address=ADDRESS` --> 🌐 Specifies the address that `broadwayd` will listen on. By default it listens on all addresses.
+    🔹 `--unixsocket=FILENAME` --> 🛤️ Use a UNIX domain socket instead of a TCP socket.
+    🔹 `--display=DISPLAY` --> 🖥️ Specifies the DISPLAY that `broadwayd` should connect to. If not specified, the DISPLAY is taken from the `DISPLAY` environment variable.
+
+🛠 **Examples:**
+
+    $ gtk4-broadwayd --port=8080
+
+    🔹 Runs broadwayd on port 8080. You can then connect to the GTK application in a browser at address `http://localhost:8080`.
+
+    $ gtk4-broadwayd --address=192.168.1.100
+
+    🔹 Runs broadwayd on address 192.168.1.100.
+
+✅ **Simple Example:**
+
+    $ gtk4-broadwayd :5
+
+    🔹 This command starts an instance of broadwayd on display :5. You must set the `DISPLAY=:5` environment variable before running GTK applications.  After that, GTK applications will be displayed in the browser.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installman` baraye nasb safahaye rahnamaye dastoorha (man pages) dar pakej Debian estefade mishavad. In dastoor file-haye .1, .2, .3, .4, .5, .6, .7, .8, ya .9 ra az jaye asli be directory nasb-e `usr/share/man` dar directory pakej copy mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p PACKAGE` --> 📦 Specify mikonad ke man page bayad dar kodoom pakej nasb shavad (agar chand pakej darim).
+    🔹 `-N` --> 🚫 Man page ra nasb nemikonad, faghat simlink misazad (dar sorati ke man page ghablan nasb shode bashad).
+    🔹 `--sourcedir DIR` --> 📂 Directory asli ke man page az anja copy mishavad ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installman
+
+    🔹 Tamame man page-haye mojud dar directory `debian/man` ra nasb mikonad.
+
+    $ dh_installman -p mypackage foo.1 bar.5
+
+    🔹 Man page-haye `foo.1` va `bar.5` ra dar pakej `mypackage` nasb mikonad.
+
+✅ **Mesal sade:**
+
+    $ dh_installman -N
+
+    🔹 Dar hale sakhtan pakej Debian, `dh_installman -N` estefade mishavad ta az nasb dobare man page-ha jelogiri shavad agar ghablan nasb shode bashand, va faghat simlink sakhte shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installman` command is used to install manual pages (man pages) in a Debian package. It copies .1, .2, .3, .4, .5, .6, .7, .8, or .9 files from a source location to the `usr/share/man` installation directory within the package build directory.
+
+⚙️ **Options:**
+    🔹 `-p PACKAGE` --> 📦 Specifies the package where the man page should be installed (if there are multiple packages).
+    🔹 `-N` --> 🚫 Does not install the man page but creates a symlink (if the man page is already installed).
+    🔹 `--sourcedir DIR` --> 📂 Specifies the source directory from which to copy the man page.
+
+🛠 **Examples:**
+
+    $ dh_installman
+
+    🔹 Installs all man pages found in the `debian/man` directory.
+
+    $ dh_installman -p mypackage foo.1 bar.5
+
+    🔹 Installs the `foo.1` and `bar.5` man pages into the `mypackage` package.
+
+✅ **Simple Example:**
+
+    $ dh_installman -N
+
+    🔹 When building a Debian package, `dh_installman -N` is used to prevent reinstalling man pages if they are already installed, and only creates symlinks.

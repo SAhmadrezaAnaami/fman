@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gdk-pixbuf-pixdata` baraye tabdil dadan aks-ha be format `pixdata` baraye estefade dar barname-haye GTK+ va GDK estefade mishavad. In dastoor aks-ha ra be code zaban C tabdil mikonad ke dar barname-haye shoma ganjande shavand. Be zabane sade, aks-haye shoma ra "code" mikonad ta dar barname-haye grafiki be rahati estefade shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--name <esm>`  --> 🏷️ Esme variable-i ke aks dar code C zakhire mishavad ra moshakhas mikonad. Agar esmi dade nashavad, barname yek esm pishfarz entekhab mikonad.
+    🔹 `--nocompress`     --> 💨 File pixdata ra compress (feshorde) nemikonad. Compress nakardan size file ra bozorgtar mikonad ama proces tabdil ra sari'tar mikonad.
+    🔹 `--format <format>` --> 🖼️ Formate file aks ra moshakhas mikonad (manande png, jpeg, gif). Agar format moshakhas nashavad, barname khodash format ra tashkhis midahad.
+    🔹 `--mask`          --> 🎭 Yek mask baraye shaffafiat aks (transparency) dorost mikonad. In gozine baraye aks-haii ke shaffafiat darand mofid ast.
+
+🛠 **Mesal-ha:**
+
+    $ gdk-pixbuf-pixdata image.png > image.c
+
+    🔹 Aks `image.png` ra be format pixdata tabdil mikonad va code C ra dar file `image.c` zakhire mikonad.
+
+    $ gdk-pixbuf-pixdata --name my_image --format jpeg image.jpg > image.c
+
+    🔹 Aks `image.jpg` ra ba formate jpeg be pixdata tabdil mikonad, esme variable ra `my_image` gharar midahad, va code C ra dar file `image.c` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ gdk-pixbuf-pixdata --nocompress logo.png > logo.c
+
+    🔹 Aks `logo.png` ra bedune compress kardan be pixdata tabdil mikonad va code C ra dar `logo.c` zakhire mikonad. In kar proces ra sari'tar mikonad vali size file `logo.c` bozorgtar khahad bud.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gdk-pixbuf-pixdata` command is used to convert images into the `pixdata` format for use in GTK+ and GDK applications. This command converts images into C code that can be embedded directly into your applications. Simply put, it "encodes" your images so they can be easily used in graphical programs.
+
+⚙️ **Options:**
+    🔹 `--name <name>`   --> 🏷️ Specifies the variable name under which the image will be stored in the generated C code. If no name is given, the program will choose a default name.
+    🔹 `--nocompress`    --> 💨 Does not compress the pixdata file. Not compressing the file will result in a larger file size, but will make the conversion process faster.
+    🔹 `--format <format>`--> 🖼️ Specifies the image file format (e.g., png, jpeg, gif). If the format is not specified, the program will attempt to detect the format automatically.
+    🔹 `--mask`         --> 🎭 Creates a mask for image transparency. This option is useful for images that have transparency.
+
+🛠 **Examples:**
+
+    $ gdk-pixbuf-pixdata image.png > image.c
+
+    🔹 Converts the `image.png` image to the pixdata format and saves the generated C code to the `image.c` file.
+
+    $ gdk-pixbuf-pixdata --name my_image --format jpeg image.jpg > image.c
+
+    🔹 Converts the `image.jpg` image with the jpeg format to pixdata, sets the variable name to `my_image`, and saves the C code to the `image.c` file.
+
+✅ **Simple Example:**
+
+    $ gdk-pixbuf-pixdata --nocompress logo.png > logo.c
+
+    🔹 Converts the `logo.png` image without compression to pixdata and saves the C code to `logo.c`. This makes the process faster, but the size of the `logo.c` file will be larger.

@@ -1,0 +1,76 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lpoptions` baraye modiriyat gozine-haye chapgar (printer) estefade mishavad. Ba in dastoor, mitoonid gozine-haye pishfarz chapgar ra tagheer bedahid ya gozine-haye jadid ezafe konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-l`  --> 📜 Namayesh hameye gozine-hayee ke ghabele tanzim hastand baraye chapgare pishfarz.
+    🔹 `-p <name>`  --> 🖨️  Entkhab yek chapgare khass baraye tanzim gozine-ha. Agar entkhab nakonid, az chapgare pishfarz estefade mishavad.
+    🔹 `-o <option=value>`  --> ⚙️  Tanzim yek gozineye khass ba meghdar morede nazar. Meslan, "sides=two-sided-long-edge" baraye chap do roo az kenar boland.
+    🔹 `-x <option>`  --> ❌ Hazf yek gozineye khass az tanzimat chapgar.
+    🔹 `-d <printer>` --> 🎯 Set kardane chapgar pishfarz.
+
+🛠 **Mesal-ha:**
+
+    $ lpoptions -l
+
+    🔹 Namayesh hameye gozine-haye ghabele tanzim baraye chapgare pishfarz.
+
+    $ lpoptions -p EpsonStylus -o resolution=600dpi
+
+    🔹 Tanzim deghat (resolution) chapgar EpsonStylus be 600dpi.
+
+    $ lpoptions -x resolution -p EpsonStylus
+
+    🔹 Hazf gozineye "resolution" az chapgar EpsonStylus.
+
+    $ lpoptions -d BrotherLaser
+
+    🔹 chapgare BrotherLaser be onvane chapgare pishfarz entekhab shavad.
+
+✅ **Mesal sade:**
+
+    $ lpoptions -p HPDeskJet -o media=A4
+
+    🔹  Kaaghaz ra andazeye A4 baraye chapgar HPDeskJet tanzim mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lpoptions` command is used to manage printer options.  You can use it to modify default printer options or add new ones.
+
+⚙️ **Options:**
+    🔹 `-l`  --> 📜 List all configurable options for the default printer.
+    🔹 `-p <name>`  --> 🖨️ Select a specific printer to configure options for. If not specified, the default printer is used.
+    🔹 `-o <option=value>`  --> ⚙️ Set a specific option to the desired value. For example, "sides=two-sided-long-edge" for double-sided printing along the long edge.
+    🔹 `-x <option>`  --> ❌ Remove a specific option from the printer settings.
+    🔹 `-d <printer>` --> 🎯 Set the default printer.
+
+🛠 **Examples:**
+
+    $ lpoptions -l
+
+    🔹 List all configurable options for the default printer.
+
+    $ lpoptions -p EpsonStylus -o resolution=600dpi
+
+    🔹 Set the resolution of the EpsonStylus printer to 600dpi.
+
+    $ lpoptions -x resolution -p EpsonStylus
+
+    🔹 Remove the "resolution" option from the EpsonStylus printer.
+
+    $ lpoptions -d BrotherLaser
+
+    🔹 Make BrotherLaser the default printer.
+
+✅ **Simple Example:**
+
+    $ lpoptions -p HPDeskJet -o media=A4
+
+    🔹 Sets the media size to A4 for the HPDeskJet printer.

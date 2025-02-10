@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-script-check` baraye baresi va dorost boodan dastoorat (script) grub dar linux estefade mishavad. In dastoor komak mikonad ta az dorost ejra shodan file-haye config grub motmaen shavid va az moshkelati ke dar boot system momken ast rokh dahad jelogiri konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `grub-script-check file` --> 📁 Baresi yek file config khass grub.
+    🔹 `grub-script-check --help` --> ❓ Namayesh rahnamayi dastoor va gozine haye aan.
+    🔹 `grub-script-check --version` --> ℹ️ Namayesh version grub-script-check.
+
+🛠 **Mesal-ha:**
+
+    $ grub-script-check /boot/grub/grub.cfg
+
+    🔹 Baresi file asli configuration grub.
+
+    $ grub-script-check /etc/grub.d/10_linux
+
+    🔹 Baresi yek script grub dar directory configuration.
+
+✅ **Mesal sade:**
+
+    $ grub-script-check /boot/grub/grub.cfg
+    syntax error at line 123
+
+    🔹 Agar khataii vojood dashte bashad, `grub-script-check` line-i ke khata dar aan vojood darad ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-script-check` command is used to check GRUB script files for syntax errors. This tool helps ensure that your GRUB configuration files are valid and will execute correctly during the boot process, preventing potential booting issues.
+
+⚙️ **Options:**
+    🔹 `grub-script-check file` --> 📁 Check a specific GRUB configuration file.
+    🔹 `grub-script-check --help` --> ❓ Display help information about the command and its options.
+    🔹 `grub-script-check --version` --> ℹ️ Display the version of grub-script-check.
+
+🛠 **Examples:**
+
+    $ grub-script-check /boot/grub/grub.cfg
+
+    🔹 Check the main GRUB configuration file.
+
+    $ grub-script-check /etc/grub.d/10_linux
+
+    🔹 Check a GRUB script file in the configuration directory.
+
+✅ **Simple Example:**
+
+    $ grub-script-check /boot/grub/grub.cfg
+    syntax error at line 123
+
+    🔹 If there is an error, `grub-script-check` will indicate the line number where the error occurs.

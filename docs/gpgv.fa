@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgv` baraye check kardane signature-haye cryptographic rooye file-ha estefade mishavad. Yani motmaen shavid ke file tagheer nakarde va az taraf kasi ke gofte shodeh, ferestade shodeh ast.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--keyring <file>`  --> 🔑 Estefade az keyring makhsoos baraye peyda kardane clave omumi (public key).
+    🔹 `--status-fd <n>` --> 📢 Ferestadan status be descriptor file shomareye `n`. Baraye barname-haye dige ke be natijeye check ehtiaj darand mofid ast.
+    🔹 `--dry-run` --> 🧪 Faghat check kon, vali hich tagheeri ijad nakon.
+
+🛠 **Mesal-ha:**
+
+    $ gpgv imzaye_file file_asli
+
+    🔹 Check kardane signature `imzaye_file` rooye `file_asli` ba estefade az clave omumi (public key) dar keyring default.
+
+    $ gpgv --keyring keyring_khososi imzaye_file file_asli
+
+    🔹 Check kardane signature ba estefade az `keyring_khososi`.
+
+✅ **Mesal sade:**
+
+    $ gpgv file.sig file.txt
+    gpgv: Signature made 07/07/24 14:30:00 Iran Standard Time
+    gpgv:                using RSA key ID ABCDEF1234567890
+    gpgv: Good signature from "Name Shakhs <email@example.com>"
+
+    🔹 Agar signature dorost bashad, payam "Good signature" ra neshan midahad. Agar signature ghalat bashad, khata neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgv` command is used to verify cryptographic signatures on files. It ensures that the file has not been tampered with and was sent by the claimed sender.
+
+⚙️ **Options:**
+    🔹 `--keyring <file>` --> 🔑 Use the specified keyring file to find the public key.
+    🔹 `--status-fd <n>` --> 📢 Send status output to file descriptor `n`. Useful for other programs that need the verification result.
+    🔹 `--dry-run` --> 🧪 Only check, but do not make any changes.
+
+🛠 **Examples:**
+
+    $ gpgv signature_file original_file
+
+    🔹 Verify the signature `signature_file` on `original_file` using the public key from the default keyring.
+
+    $ gpgv --keyring custom_keyring signature_file original_file
+
+    🔹 Verify the signature using the `custom_keyring`.
+
+✅ **Simple Example:**
+
+    $ gpgv file.sig file.txt
+    gpgv: Signature made 07/07/24 14:30:00 Iran Standard Time
+    gpgv:                using RSA key ID ABCDEF1234567890
+    gpgv: Good signature from "Person Name <email@example.com>"
+
+    🔹 If the signature is valid, it displays the "Good signature" message. If the signature is invalid, it shows an error message.

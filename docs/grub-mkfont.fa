@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mkfont` baraye dorost kardane font-haye GRUB az font-haye TTF (TrueType Font) ya otf (OpenType Font) estefade mishavad.  GRUB az in font-ha baraye namayesh matn dar menu-ye boot estefade mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-o, --output=FILE` --> 💾 Esme file-e khorooji (font GRUB). Agar zekr nashavad, be stdout miravad.
+    🔹 `-s, --size=SIZE` --> ✒️ Size (اندازه) font ra moshakhas mikonad. Be pixel hast.
+    🔹 `-n, --name=NAME` --> 🏷️ Esme font ra moshakhas mikonad.
+    🔹 `--force` --> ⚠️ Age file-e khorooji ghablan vojud dashte bashad, an ra overwrite mikonad ( جایگزین میکند).
+
+🛠 **Mesal-ha:**
+
+    $ grub-mkfont -o /boot/grub/fonts/unicode.pf2 -s 16 /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+    🔹 In dastoor font "DejaVuSans.ttf" ra ba size 16 be file "/boot/grub/fonts/unicode.pf2" tabdil mikonad.
+
+    $ grub-mkfont -s 14 /usr/share/fonts/truetype/ubuntu/Ubuntu-Regular.ttf > ubuntu.pf2
+
+    🔹 Font "Ubuntu-Regular.ttf" ra ba size 14 be file "ubuntu.pf2" tabdil mikonad va an ra dar directory-e jari zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ grub-mkfont -s 12 arial.ttf | gzip > arial.pf2.gz
+
+    🔹 In dastoor font "arial.ttf" ra ba size 12 misazad, ba dastoor `gzip` compress mikonad, va ba esme "arial.pf2.gz" zakhire mikonad.  In kar andazeye file font ra kam mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mkfont` command is used to create GRUB fonts from TTF (TrueType Font) or OTF (OpenType Font) files. GRUB uses these fonts to display text in the boot menu.
+
+⚙️ **Options:**
+    🔹 `-o, --output=FILE` --> 💾 Specifies the output file name (GRUB font). If not specified, it goes to stdout.
+    🔹 `-s, --size=SIZE` --> ✒️ Specifies the font size in pixels.
+    🔹 `-n, --name=NAME` --> 🏷️ Specifies the font name.
+    🔹 `--force` --> ⚠️ Overwrites the output file if it already exists.
+
+🛠 **Examples:**
+
+    $ grub-mkfont -o /boot/grub/fonts/unicode.pf2 -s 16 /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+    🔹 Converts the "DejaVuSans.ttf" font with size 16 to the file "/boot/grub/fonts/unicode.pf2".
+
+    $ grub-mkfont -s 14 /usr/share/fonts/truetype/ubuntu/Ubuntu-Regular.ttf > ubuntu.pf2
+
+    🔹 Converts the "Ubuntu-Regular.ttf" font with size 14 to the file "ubuntu.pf2" and saves it in the current directory.
+
+✅ **Simple Example:**
+
+    $ grub-mkfont -s 12 arial.ttf | gzip > arial.pf2.gz
+
+    🔹 This command creates the "arial.ttf" font with size 12, compresses it with the `gzip` command, and saves it as "arial.pf2.gz". This reduces the font file size.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debuild` baraye sakhtane package Debian az source code estefade mishavad. In dastoor barname-haye lazem baraye compilation va build kardan ra faraham mikonad va package .deb ra tolid mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `debuild -us`  --> 🔑 Package ra bedune sign kardan source files misazad.
+    🔹 `debuild -uc`  --> 📦 Package ra bedune sign kardan .changes file misazad.
+    🔹 `debuild -b`   --> 🏗 Faghat binary package-ha ra misazad (source package nemisazad).
+    🔹 `debuild -S`   --> 🧩 Faghat source package ra misazad (binary package nemisazad).
+
+🛠 **Mesal-ha:**
+
+    $ debuild
+
+    🔹 Sakhte package Debian ba estefade az setting-haye default.
+
+    $ debuild -us -uc
+
+    🔹 Sakhte package Debian bedune sign kardan source files va .changes file.
+
+✅ **Mesal sade:**
+
+    $ debuild -b
+
+    🔹 Faghat binary package-ha sakhte mishavand, agar shirkat dar sakhtane source package nadashte bashid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debuild` command is used to build a Debian package from source code. This command sets up the necessary environment for compilation and building, and it produces a .deb package.
+
+⚙️ **Options:**
+    🔹 `debuild -us`  --> 🔑 Build the package without signing the source files.
+    🔹 `debuild -uc`  --> 📦 Build the package without signing the .changes file.
+    🔹 `debuild -b`   --> 🏗 Build only the binary packages (does not build the source package).
+    🔹 `debuild -S`   --> 🧩 Build only the source package (does not build the binary packages).
+
+🛠 **Examples:**
+
+    $ debuild
+
+    🔹 Build the Debian package using default settings.
+
+    $ debuild -us -uc
+
+    🔹 Build the Debian package without signing the source files and .changes file.
+
+✅ **Simple Example:**
+
+    $ debuild -b
+
+    🔹 Only the binary packages are built, useful if you are not involved in building the source package.

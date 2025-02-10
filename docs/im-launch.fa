@@ -1,0 +1,45 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `im-launch` baraye ejra kardane method-haye voroodi (input methods) dar Linux estefade mishavad. Yani be shoma komak mikonad ta betavanid zaban-haye mokhtalef ra type konid, mesle Farsi, Arabi, ya Chinese. ⌨️ In dastoor bishtar dar system-haye graphiki mesle X Window System karbord darad.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine-ye khas-i nadarad.  Vaghti ke `im-launch` ra ejra mikonid, system khodash method-e voroodi ra shoru mikonad. 🚀
+
+🛠 **Mesal-ha:**
+
+    $ im-launch
+
+    🔹 Ba ejra kardane in dastoor, method-e voroodi shoru mishavad.  Agar motmaen nistid koja method-e voroodi ra bebinid, be donbale yek neshane dar system tray (kenar-e saat) begardid. 🔎
+
+✅ **Mesal sade:**
+
+    $ im-launch
+
+    🔹 Ba ejraye in dastoor, shoma mitavanid bad az restart kardane computer, method-e voroodi ra dorost ejra konid. Agar zaban-e shoma dorost namayesh dade nemishavad, in dastoor mitavanad moshkel ra hal konad. 👍
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `im-launch` command is used to launch input methods in Linux. This allows you to type in different languages, such as Farsi, Arabic, or Chinese. ⌨️  This command is primarily used in graphical systems like the X Window System.
+
+⚙️ **Options:**
+    🔹  It doesn't have any specific options. 🚀 When you run `im-launch`, the system automatically starts the input method.
+
+🛠 **Examples:**
+
+    $ im-launch
+
+    🔹  Running this command starts the input method. If you're unsure where to see the input method, look for an icon in the system tray (near the clock). 🔎
+
+✅ **Simple Example:**
+
+    $ im-launch
+
+    🔹  By running this command, you can ensure the input method starts correctly after a computer restart. If your language isn't displayed correctly, this command can resolve the issue. 👍
+

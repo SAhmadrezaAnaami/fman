@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbus-monitor` baraye didan va zabt kardane peygham haye DBus (Desktop Bus) be kar mirevad. DBus yek system baraye ertebat bein process-ha dar Linux va system-haye amale digar ast. In dastoor be shoma komak mikonad ta bebini che process-ha’ee ba ham sohbat mikonand va che etela’ati mobadele mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--system` --> 🖥️ Peygham haye system-wide DBus ra monitor mikonad.
+    🔹 `--session` --> 👤 Peygham haye session-specific DBus ra monitor mikonad (default).
+    🔹 `--profile` --> ⏱️ Baz kardane yek profile baraye analysis behtare performance.
+    🔹 `--address ADDRESS` --> 📍 Montor kardane yek address DBus khass.
+
+🛠 **Mesal-ha:**
+
+    $ dbus-monitor
+
+    🔹 Monitor kardane hameye peygham haye DBus dar session-e shakhsi.
+
+    $ dbus-monitor --system
+
+    🔹 Monitor kardane hameye peygham haye DBus dar system.
+
+✅ **Mesal sade:**
+
+    $ dbus-monitor | grep "org.kde.screensaver"
+
+    🔹 Monitor kardane hameye peygham hayi ke shamel "org.kde.screensaver" hastand, ke be shoma komak mikonad bebini screensaver che joor kar mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbus-monitor` command is used to observe and record D-Bus (Desktop Bus) messages. D-Bus is a system for inter-process communication on Linux and other operating systems.  This command helps you see which processes are communicating with each other and what information is being exchanged.
+
+⚙️ **Options:**
+    🔹 `--system` --> 🖥️ Monitor system-wide D-Bus messages.
+    🔹 `--session` --> 👤 Monitor session-specific D-Bus messages (default).
+    🔹 `--profile` --> ⏱️ Open a profile for better performance analysis.
+    🔹 `--address ADDRESS` --> 📍 Monitor a specific D-Bus address.
+
+🛠 **Examples:**
+
+    $ dbus-monitor
+
+    🔹 Monitor all D-Bus messages in your personal session.
+
+    $ dbus-monitor --system
+
+    🔹 Monitor all D-Bus messages on the system.
+
+✅ **Simple Example:**
+
+    $ dbus-monitor | grep "org.kde.screensaver"
+
+    🔹 Monitor all messages that include "org.kde.screensaver," which helps you see how the screensaver is working.

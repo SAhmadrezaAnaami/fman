@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dget` baraye gereftan (download) package-haye Debian az repository-haye Debian estefade mishavad. In dastoor package-ha ra az manabe online download mikonad, vali anha ra نصب (install) nemikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `dget -d` --> 📦 Faghat download kon, nasb nakon.
+    🔹 `dget -u` --> ⬆️ Update kardan list package-ha az repository ghabl az download.
+    🔹 `dget -x` --> 📂 Extract kardan source code package bad az download (agar dastras bashad).
+
+🛠 **Mesal-ha:**
+
+    $ dget package_name.dsc
+
+    🔹 Download package ba name `package_name.dsc` az default repository.
+
+    $ dget -d package_name.dsc
+
+    🔹 Faghat package ra download kon, va an ra extract ya install nakon.
+
+✅ **Mesal sade:**
+
+    $ dget -x package_name.dsc
+
+    🔹 Package ra download mikonad va source code an ra extract mikonad agar dastras bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dget` command is used to download Debian packages from Debian repositories. It downloads packages from online sources, but does not install them.
+
+⚙️ **Options:**
+    🔹 `dget -d` --> 📦 Only download the package, do not install it.
+    🔹 `dget -u` --> ⬆️ Update the package list from the repository before downloading.
+    🔹 `dget -x` --> 📂 Extract the source code of the package after downloading (if available).
+
+🛠 **Examples:**
+
+    $ dget package_name.dsc
+
+    🔹 Download the package with the name `package_name.dsc` from the default repository.
+
+    $ dget -d package_name.dsc
+
+    🔹 Only download the package, and do not extract or install it.
+
+✅ **Simple Example:**
+
+    $ dget -x package_name.dsc
+
+    🔹 Downloads the package and extracts its source code if available.

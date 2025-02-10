@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `info` baraye dastresi be rahnama-ye kamel va tafsili barname-ha va dastoor-ha dar system-e Unix/Linux be kar miravad. `info` az `man` bishtar etela'at dar morede har dastoor darad va format-e behtari baraye khandane rahnamaha darad. 
+
+⚙️ **Gozine-ha:**
+    🔹 `info command_name` --> ℹ️ Namayesh rahnamaye dastoor morede nazar.
+    🔹 `info` --> 🏠 Baz kardane safhe asliye `info` baraye gashtan dar rahnamaha.
+    🔹 `info --apropos keyword` --> 🔍 Jostojo kardane dastoor-ha dar rahnamaha ba estefade az kelame kelidi.
+    🔹 `info --help` --> 🆘 Namayesh dastoor-ha va gozine-haie `info`.
+
+🛠 **Mesal-ha:**
+
+    $ info ls
+
+    🔹 Namayesh etela'at rahnamaye dastoor `ls`.
+
+    $ info --apropos directory
+
+    🔹 Jostojo kardane dastoor-haie marboot be kelame kelidi `directory` dar rahnamaha.
+
+✅ **Mesal sade:**
+
+    $ info find
+
+    🔹 Ba ejraye in dastoor, rahnamaye tafsili dastoor `find` namayesh dade mishavad ke shamel etela'at bishtar az `man find` ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `info` command is used to access comprehensive and detailed documentation for programs and commands in Unix/Linux systems. `info` provides more extensive information about each command compared to `man`, and offers a better format for reading documentation.
+
+⚙️ **Options:**
+    🔹 `info command_name` --> ℹ️ Display the documentation for the specified command.
+    🔹 `info` --> 🏠 Open the main `info` page to browse through the documentation.
+    🔹 `info --apropos keyword` --> 🔍 Search for commands in the documentation using a keyword.
+    🔹 `info --help` --> 🆘 Display the `info` command's usage and options.
+
+🛠 **Examples:**
+
+    $ info ls
+
+    🔹 Display the documentation for the `ls` command.
+
+    $ info --apropos directory
+
+    🔹 Search for commands related to the keyword `directory` in the documentation.
+
+✅ **Simple Example:**
+
+    $ info find
+
+    🔹 Executing this command will display the detailed documentation for the `find` command, which includes more information than `man find`.

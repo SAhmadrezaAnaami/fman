@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg` baraye modiriat bastahaye Debian (*.deb) estefade mishavad. Ba an shoma mitavanid barname-ha ra nasb, hazf va etela'at ra darbare anha be dast avarid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg -i <baste.deb>` --> 📦 Nasb yek baste az file .deb  
+    🔹 `dpkg -r <name-baste>` --> 🗑️ Hazf yek baste (ama file-haye config nemimanad)  
+    🔹 `dpkg -P <name-baste>` --> 🧹 Hazf yek baste va hameye file-haye config an  
+    🔹 `dpkg -l <name-baste>` --> 🔍 List kardan etela'at darbare yek baste nasb shode  
+    🔹 `dpkg -L <name-baste>` --> 📂 List kardan hameye file-ha ke yek baste nasb karde  
+
+🛠 **Mesal-ha:**
+    
+    $ dpkg -i google-chrome.deb
+    
+    🔹 Nasb baste google-chrome az file .deb
+    
+    $ dpkg -r google-chrome-stable
+    
+    🔹 Hazf baste google-chrome (ama config file-ha mimanad)
+
+✅ **Mesal sade:**
+    
+    $ dpkg -l | grep chrome
+    
+    🔹 List kardan hameye baste-ha ke "chrome" dar name anha hast va namayesh anha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg` command is used to manage Debian packages (*.deb).  It allows you to install, remove, and obtain information about software packages.
+
+⚙️ **Options:**
+    🔹 `dpkg -i <package.deb>` --> 📦 Install a package from a .deb file
+    🔹 `dpkg -r <package-name>` --> 🗑️ Remove a package (but configuration files remain)
+    🔹 `dpkg -P <package-name>` --> 🧹 Purge a package and all its configuration files
+    🔹 `dpkg -l <package-name>` --> 🔍 List information about an installed package
+    🔹 `dpkg -L <package-name>` --> 📂 List all files installed by a package
+
+🛠 **Examples:**
+    
+    $ dpkg -i google-chrome.deb
+    
+    🔹 Install the google-chrome package from the .deb file
+    
+    $ dpkg -r google-chrome-stable
+    
+    🔹 Remove the google-chrome package (but keeps config files)
+
+✅ **Simple Example:**
+    
+    $ dpkg -l | grep chrome
+    
+    🔹 List all packages that have "chrome" in their name and display them.

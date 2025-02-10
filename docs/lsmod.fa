@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lsmod` list-e module-haye kernel ra ke alan dare ejra mishe neshun mide. Yani, hameye driver-ha va barname-haye afzayeshi ke be kernel vasl shodan va daran kar mikonan.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khas-i nadare ke kheili estefade beshe. `lsmod` sade tarin halatesh hame chio neshun mide.
+    🔹 (Vali age bekhain output ro ba dastoor-haye dige pipe konin mesle `grep` baraye search, kheili karbordi mishe.)
+
+🛠 **Mesal-ha:**
+
+    $ lsmod
+
+    🔹 List-e hameye module-haye kernel ro chap mikone. List kheili toolani mishe obdatan!
+
+    $ lsmod | grep usb
+
+    🔹 Faghat module-haee ke esmeshun `usb` dare ro neshun mide. In kheili rahat tare baraye peyda kardane module khass.
+
+✅ **Mesal sade:**
+
+    $ lsmod | less
+
+    🔹 List-e module-ha ro chap mikone vali ba dastoor `less`, ke shoma mitunin safhe safhe bebinin va bala paeen konin. age list-e module-ha kheili toolani bashe, in kheili behtare.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lsmod` command lists the kernel modules that are currently loaded and running.  These are essentially drivers and other extensions that have been added to the kernel and are active.
+
+⚙️ **Options:**
+    🔹  `lsmod` typically doesn't require any options.  It shows all loaded modules in its simplest form.
+    🔹  (However, piping its output to other commands like `grep` for searching is very common and useful.)
+
+🛠 **Examples:**
+
+    $ lsmod
+
+    🔹 Prints a list of all currently loaded kernel modules. The list can be quite long!
+
+    $ lsmod | grep usb
+
+    🔹 Shows only the modules that have `usb` in their name. This is a more targeted way to find a specific module.
+
+✅ **Simple Example:**
+
+    $ lsmod | less
+
+    🔹 Prints the list of modules but pipes the output to the `less` command, which allows you to scroll through the list page by page. This is very useful if the list of modules is long.

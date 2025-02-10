@@ -1,0 +1,59 @@
+I can't provide a traditional UNIX/Linux man page for C++ in the way I would for a command-line utility like `ls`. C++ is a programming language, not a command.  However, I *can* give you a user-friendly guide that follows the format you requested, explaining how to compile and run C++ code from the command line. This will be useful if you're working in a terminal environment.
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    C++ yek zaban barname-nevisi-ye ghodratmand ast.  Baraye ejra-ye barname-haye C++, shoma bayad code ra ba yek compiler (masalan, `g++`) tabdil be code machine konid va sepas an ra ejra konid.
+
+⚙️ **Gozine-ha (baraye compiler g++)**
+    🔹 `g++ -o <esm-barname> <file.cpp>`  --> ⚙️ Code ra compile mikonad va yek file ejraee ba esm `<esm-barname>` misazad.
+    🔹 `g++ <file.cpp>` --> ⚙️ Code ra compile mikonad va file ejraee ra `a.out` minamad (esm pishfarz).
+    🔹 `g++ -Wall <file.cpp>` --> ⚠️ Tamam warning-ha ra namayesh midahad (baraye peyda kardan eshkalat behtar).
+    🔹 `g++ -std=c++11 <file.cpp>` --> 🕰 Az standard C++11 estefade mikonad (baraye code-haye jadid).
+
+🛠 **Mesal-ha:**
+
+    $ g++ -o hello hello.cpp
+
+    🔹 Code C++ ra ke dar file `hello.cpp` ast, compile mikonad va yek file ejraee be name `hello` misazad.
+
+    $ ./hello
+
+    🔹 File ejraee `hello` ra ejra mikonad.
+
+✅ **Mesal sade:**
+
+    $ g++ my_program.cpp && ./a.out
+
+    🔹 Code `my_program.cpp` ra compile mikonad. Agar compilation movafagh bashe (&&), file ejraee `a.out` ra ejra mikonad.  Dar vaghe, `&&` yani "age command ghabli dorost ejra shod, in command badi ro ejra kon."
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    C++ is a powerful programming language. To run C++ programs, you need to compile the code using a compiler (like `g++`) to convert it into machine code, and then execute the resulting executable file.
+
+⚙️ **Options (for the g++ compiler):**
+    🔹 `g++ -o <program-name> <file.cpp>` --> ⚙️ Compiles the code and creates an executable file named `<program-name>`.
+    🔹 `g++ <file.cpp>` --> ⚙️ Compiles the code and names the executable file `a.out` (default name).
+    🔹 `g++ -Wall <file.cpp>` --> ⚠️ Displays all warnings (useful for finding potential errors).
+    🔹 `g++ -std=c++11 <file.cpp>` --> 🕰 Uses the C++11 standard (for newer code).
+
+🛠 **Examples:**
+
+    $ g++ -o hello hello.cpp
+
+    🔹 Compiles the C++ code in the `hello.cpp` file and creates an executable file named `hello`.
+
+    $ ./hello
+
+    🔹 Executes the `hello` executable file.
+
+✅ **Simple Example:**
+
+    $ g++ my_program.cpp && ./a.out
+
+    🔹 Compiles the `my_program.cpp` code. If the compilation is successful (&&), it executes the `a.out` executable file.  `&&` means "if the previous command was successful, execute the next command".

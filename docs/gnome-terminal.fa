@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gnome-terminal` yek barnamast baraye baz kardane terminal dar muhite grafiki GNOME. Ba estefade az in barnam, mitavanid dastoorat UNIX/Linux ra be soorate grafiki ejra konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--tab`     --> ➕ Yek tabe jadid baz mikonad.
+    🔹 `--window`  --> 🖼  Yek panjere jadid baz mikonad.
+    🔹 `-e, --command=COMMAND` --> 🚀 Dastoor ra dar terminal ejra mikonad.
+    🔹 `--title=TITLE`       --> 🏷  Unvane panjere ra taeen mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-terminal
+    
+    🔹 Baz kardane yek terminal sade.
+
+    $ gnome-terminal --tab --title="Python" -e "python3"
+
+    🔹 Baz kardane yek tab jadid ba unvane "Python" va ejra kardane dastoor "python3".
+
+✅ **Mesal sade:**
+
+    $ gnome-terminal -e "top"
+
+    🔹 Baz kardane terminal va ejra kardane dastoor `top`. Ba in dastoor mitavanid resourse-haye CPU va memory ra dar lahze bebinid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gnome-terminal` is a terminal emulator for the GNOME desktop environment. It allows you to run UNIX/Linux commands in a graphical window.
+
+⚙️ **Options:**
+    🔹 `--tab`     --> ➕ Opens a new tab.
+    🔹 `--window`  --> 🖼  Opens a new window.
+    🔹 `-e, --command=COMMAND` --> 🚀 Executes a command in the terminal.
+    🔹 `--title=TITLE`       --> 🏷  Sets the window title.
+
+🛠 **Examples:**
+
+    $ gnome-terminal
+    
+    🔹 Opens a basic terminal window.
+
+    $ gnome-terminal --tab --title="Python" -e "python3"
+
+    🔹 Opens a new tab with the title "Python" and executes the "python3" command.
+
+✅ **Simple Example:**
+
+    $ gnome-terminal -e "top"
+
+    🔹 Opens a terminal and runs the `top` command. This command allows you to see real-time CPU and memory resource usage.

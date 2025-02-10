@@ -1,0 +1,46 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `brltty-lscmds` baraye list kardane hameye dastoorhaye `BrlAPI` ke dastras hastand estefade mishavad. `BrlAPI` yek interface baraye rabete ba braille display-ha ast. Ba estefade az in dastoor, mitavanid bebiniid che dastoorhayei baraye kontrol va modiriyat display braille mojood hast.
+
+⚙️ **Gozine-ha:**
+    In dastoor gozinehaye ziadi nadarad, chon karash sade ast va list kardane dastoorha ast.
+    🔹 Heech gozinehyeh khasii niaz nist --> Dastoor be soorat pishfarz hameye dastoorha ra neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ brltty-lscmds
+
+    🔹 List kardane hameye dastoorhaye `BrlAPI`.
+
+✅ **Mesal sade:**
+
+    $ brltty-lscmds | grep keyboard
+
+    🔹 List kardane hameye dastoorhaei ke dar an kalameh "keyboard" vojood darad.  In mesal baraye peyda kardane dastoorhaye marboote be keyboard display braille mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `brltty-lscmds` command is used to list all the available `BrlAPI` commands. `BrlAPI` is an interface for communicating with braille displays.  Using this command, you can see what commands are available for controlling and managing the braille display.
+
+⚙️ **Options:**
+    This command doesn't have many options because its purpose is simple: to list commands.
+    🔹 No specific options are usually needed --> The command displays all commands by default.
+
+🛠 **Examples:**
+
+    $ brltty-lscmds
+
+    🔹 List all available `BrlAPI` commands.
+
+✅ **Simple Example & Explanation:**
+
+    $ brltty-lscmds | grep keyboard
+
+    🔹 List all commands that contain the word "keyboard". This example is useful for finding commands related to the braille display keyboard.

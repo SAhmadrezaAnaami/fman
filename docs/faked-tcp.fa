@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `faked-tcp` baraye ijad ittela'at TCP (Transmission Control Protocol) ya paket-haye TCP-e fake estefade mishavad. In dastoor be shoma komak mikonad ke amaliyat shabihesazi shabake ya test amniyati ra anjam dahid bedune inke dar vaghe ittela'ati ra ersal konid. Mesle inke yek bare TCP ro ba dastooye khodet dorost mikoni.
+
+⚙️ **Gozine-ha:**
+    🔹 `-s <IP>`  --> 🌐 IP mabda' (source). Address IP-e fake ke packet az aanja omade.
+    🔹 `-d <IP>`  --> 🎯 IP maqsad (destination). Address IP-e fake ke packet be aanja mirese.
+    🔹 `-p <port>`  --> 🚪 Shomare port. Porte mabda' va maqsad.
+    🔹 `-f <flag>` --> 🚩 Flag-haye TCP. Mesle SYN, ACK, FIN (baraye moshahede dastoorhaye TCP).
+    🔹 `-n <tedad>` --> 🔢 Tedad paket-ha. Chand packet fake bayad sakhte beshe.
+
+🛠 **Mesal-ha:**
+
+    $ faked-tcp -s 192.168.1.10 -d 8.8.8.8 -p 80 -f SYN -n 1
+
+    🔹 Ijad yek packet SYN TCP fake az IP 192.168.1.10 be IP 8.8.8.8 ba port 80 va ersal yek packet.
+
+    $ faked-tcp -s 10.0.0.1 -d 192.168.1.100 -p 21 -f ACK -n 5
+
+    🔹 Ijad 5 packet ACK TCP fake az IP 10.0.0.1 be IP 192.168.1.100 ba port 21.
+
+✅ **Mesal sade:**
+
+    $ faked-tcp -s 127.0.0.1 -d 127.0.0.1 -p 12345 -f SYN -n 1
+
+    🔹 In dastoor yek paket SYN TCP fake az localhost (127.0.0.1) be localhost ba port 12345 ijad mikonad. Baraye test kardan service-haye shabake rooye masine khodet karbord dare.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `faked-tcp` command is used to generate fake TCP (Transmission Control Protocol) data or packets. This command helps you perform network simulation or security testing without actually transmitting real data. It's like creating a custom TCP message.
+
+⚙️ **Options:**
+    🔹 `-s <IP>`  --> 🌐 Source IP. The fake IP address that the packet appears to originate from.
+    🔹 `-d <IP>`  --> 🎯 Destination IP. The fake IP address that the packet is sent to.
+    🔹 `-p <port>`  --> 🚪 Port number. The source and destination port.
+    🔹 `-f <flag>` --> 🚩 TCP Flags. Like SYN, ACK, FIN (to observe TCP handshakes).
+    🔹 `-n <number>` --> 🔢 Number of packets. How many fake packets to create.
+
+🛠 **Examples:**
+
+    $ faked-tcp -s 192.168.1.10 -d 8.8.8.8 -p 80 -f SYN -n 1
+
+    🔹 Creates a fake SYN TCP packet from IP 192.168.1.10 to IP 8.8.8.8 with port 80 and sends one packet.
+
+    $ faked-tcp -s 10.0.0.1 -d 192.168.1.100 -p 21 -f ACK -n 5
+
+    🔹 Creates 5 fake ACK TCP packets from IP 10.0.0.1 to IP 192.168.1.100 with port 21.
+
+✅ **Simple Example:**
+
+    $ faked-tcp -s 127.0.0.1 -d 127.0.0.1 -p 12345 -f SYN -n 1
+
+    🔹 This command creates a fake SYN TCP packet from localhost (127.0.0.1) to localhost with port 12345. Useful for testing network services on your machine.

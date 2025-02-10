@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installexamples` baraye kopi kardan file-haye mesal (example files) az dakhel source package be jaye-e nasb (installation location) baraye package Debian estefade mishavad. In dastoor obdatan baraye package-haee ke mesal-haye amade darand be kar miravad ta rahattar nasb shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir=pooshe` --> 📁  Az in gozine baraye moshakhas kardan pooshe-ye asli ke file-haye mesal dar an gharar darand estefade konid. Agar moshakhas nashavad, `dh_installexamples` be soorate pishfarz az pooshe-ye `examples/` estefade mikonad.
+    🔹 `--list-missing` --> ❓ Agar file-haye mesali ke dar `debian/install` zekr shodeand vojud nadashte bashand, khatayi nemayesh dade nemishavad; faghat list mishavand.
+    🔹 `-X item` --> 🚫 File-haee ya pooshe-haee ke ba in gozine moshakhas shodeand az kopi shodan mahfooz mimanand (exclude mishavand).
+
+🛠 **Mesal-ha:**
+
+    $ dh_installexamples
+
+    🔹 File-haye mesal az pooshe-ye pishfarz `examples/` kopi mishavand.
+
+    $ dh_installexamples --sourcedir=doc/examples
+
+    🔹 File-haye mesal az pooshe-ye `doc/examples` kopi mishavand.
+
+✅ **Mesal sade:**
+
+    $ dh_installexamples -X README
+
+    🔹 Hameye file-haye mesal kopi mishavand be joz file-i be name `README`.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installexamples` command is used to copy example files from within the source package to the installation location for a Debian package. It's primarily used for packages that have ready-made examples to facilitate their installation.
+
+⚙️ **Options:**
+    🔹 `--sourcedir=directory` --> 📁 Use this option to specify the source directory where the example files are located. If not specified, `dh_installexamples` defaults to the `examples/` directory.
+    🔹 `--list-missing` --> ❓ If example files mentioned in `debian/install` are missing, no error is displayed; they are just listed.
+    🔹 `-X item` --> 🚫 Files or directories specified with this option are excluded from being copied.
+
+🛠 **Examples:**
+
+    $ dh_installexamples
+
+    🔹 Example files are copied from the default `examples/` directory.
+
+    $ dh_installexamples --sourcedir=doc/examples
+
+    🔹 Example files are copied from the `doc/examples` directory.
+
+✅ **Simple Example:**
+
+    $ dh_installexamples -X README
+
+    🔹 All example files are copied except for a file named `README`.

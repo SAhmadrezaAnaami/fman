@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debrelease` baraye sakhtan va montasher kardan package-haye Debian (`.deb`) estefade mishavad. In dastoor asasan baraye enteshar version-haye jadid package-haye Debian be repositories estefade mishavad.
+
+⚙️ **Gozine-ha:**
+
+    🔹 `debrelease [gozine-ha] <file.changes>` --> 📦 Enteshar yek files changes be archive.
+    🔹 `-n` / `--new-version` --> 🆕 Agar version jadid dar archive naboode bashad, ehtmalan etelaati baraye update nadarad.
+
+🛠 **Mesal-ha:**
+
+    $ debrelease mypackage_1.0-1_amd64.changes
+
+    🔹 Enteshar yek package Debian ba file changes esm-gozari shode.
+
+    $ debrelease -n mypackage_1.0-1_amd64.changes
+
+    🔹 Enteshar package-e jadid ba etela'at kamel agar ghablan vojood nadashte bashad.
+
+✅ **Mesal sade:**
+
+    $ debrelease mypackage_1.2-1_amd64.changes
+
+    🔹 In dastoor package `mypackage_1.2-1_amd64.deb` ra az tarigh file `mypackage_1.2-1_amd64.changes` enteshar midahad, va etela'at enteshar dar repository update mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debrelease` command is used for building and releasing Debian packages (`.deb`).  It primarily serves to publish new versions of Debian packages to repositories.
+
+⚙️ **Options:**
+
+    🔹 `debrelease [options] <file.changes>` --> 📦 Release a changes file to the archive.
+    🔹 `-n` / `--new-version` --> 🆕 If a new version is not in the archive, it may not have information to update.
+
+🛠 **Examples:**
+
+    $ debrelease mypackage_1.0-1_amd64.changes
+
+    🔹 Release a Debian package with the specified changes file.
+
+    $ debrelease -n mypackage_1.0-1_amd64.changes
+
+    🔹 Release a new package completely if it was not already released.
+
+✅ **Simple Example:**
+
+    $ debrelease mypackage_1.2-1_amd64.changes
+
+    🔹 This command releases the `mypackage_1.2-1_amd64.deb` package through the changes file `mypackage_1.2-1_amd64.changes`, and the release information is updated in the repository.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-gensymbols` baraye dorost kardane file-haye `symbols` baraye package-haye Debian estefade mishavad. In file-ha listi az symbol-haye shared library dar package ra dar bar migirad va baraye compatible boodan package dar version-haye mokhtalef zarori ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`       --> ❓ Namayesh rahnamaye dastoor.
+    🔹 `--version`    --> ℹ️ Namayesh version-e `dpkg-gensymbols`.
+    🔹 `-p package`   --> 📦 Specify esm-e package baraye dorost kardane file `symbols`.
+    🔹 `-v version`   --> 🔢 Specify version-e package.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-gensymbols -p mypackage
+
+    🔹 Dorost kardane file `symbols` baraye package `mypackage`.
+
+    $ dpkg-gensymbols -p mypackage -v 1.2.3
+
+    🔹 Dorost kardane file `symbols` baraye package `mypackage` ba version `1.2.3`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-gensymbols -p libexample
+
+    🔹 In dastoor file `symbols` ra baraye `libexample` dorost mikonad, ke shamel listi az function-ha va variable-haye library ast. In komak mikonad ta package-haye digar ke be in library eteka mikonand, dar version-haye ayande ham kar konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-gensymbols` command is used to generate `symbols` files for Debian packages. These files contain a list of symbols from shared libraries within the package and are essential for ensuring package compatibility across different versions.
+
+⚙️ **Options:**
+    🔹 `--help`       --> ❓ Display the command's help information.
+    🔹 `--version`    --> ℹ️ Display the version of `dpkg-gensymbols`.
+    🔹 `-p package`   --> 📦 Specify the package name for which to generate the `symbols` file.
+    🔹 `-v version`   --> 🔢 Specify the package version.
+
+🛠 **Examples:**
+
+    $ dpkg-gensymbols -p mypackage
+
+    🔹 Generate the `symbols` file for the `mypackage` package.
+
+    $ dpkg-gensymbols -p mypackage -v 1.2.3
+
+    🔹 Generate the `symbols` file for the `mypackage` package with version `1.2.3`.
+
+✅ **Simple Example:**
+
+    $ dpkg-gensymbols -p libexample
+
+    🔹 This command generates a `symbols` file for `libexample`, which contains a list of the library's functions and variables. This helps ensure that other packages that depend on this library will continue to work in future versions.

@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dbxtool` yek abzar (tool) baraye kar kardan ba Databricks az khat-e farman (command line) ast. Ba in abzar, mitoonid cluster-ha ro modiriat konid, job-ha ro ejra konid va file-ha ro upload va download konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dbxtool configure` --> ⚙️ Paygiry (configure) etela'at Databricks (URL, token)
+    🔹 `dbxtool clusters list` --> 📜 List kardan cluster-haye mojood
+    🔹 `dbxtool jobs run --job <id>` --> 🚀 Ejraye yek job ba ID moshakhas
+    🔹 `dbxtool fs cp <manba> <maghsad>` --> 📂 Copy kardan file-ha bein mahale mahalliy va DBFS
+
+🛠 **Mesal-ha:**
+
+    $ dbxtool configure
+
+    🔹 Ra's andazi etela'at vared shodeh (username, password, host).
+
+    $ dbxtool clusters list
+
+    🔹 Namayesh listi az cluster-ha.
+
+    $ dbxtool jobs run --job 1234
+
+    🔹 Ejraye job ba ID 1234.
+
+✅ **Mesal sade:**
+
+    $ dbxtool fs cp localfile.txt dbfs:/tmp/
+
+    🔹 Copy kardan file `localfile.txt` az mahalle mahalli be pooshe `/tmp/` dar DBFS.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dbxtool` command is a command-line tool for interacting with Databricks.  It allows you to manage clusters, run jobs, and upload/download files.
+
+⚙️ **Options:**
+    🔹 `dbxtool configure` --> ⚙️ Configure Databricks connection details (URL, token)
+    🔹 `dbxtool clusters list` --> 📜 List available clusters
+    🔹 `dbxtool jobs run --job <id>` --> 🚀 Run a job with the specified ID
+    🔹 `dbxtool fs cp <source> <destination>` --> 📂 Copy files between local machine and DBFS
+
+🛠 **Examples:**
+
+    $ dbxtool configure
+
+    🔹 Prompts for Databricks connection information (username, password, host).
+
+    $ dbxtool clusters list
+
+    🔹 Displays a list of clusters.
+
+    $ dbxtool jobs run --job 1234
+
+    🔹 Runs the job with ID 1234.
+
+✅ **Simple Example:**
+
+    $ dbxtool fs cp localfile.txt dbfs:/tmp/
+
+    🔹 Copies the file `localfile.txt` from the local directory to the `/tmp/` directory in DBFS.

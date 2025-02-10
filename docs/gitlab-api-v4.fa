@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gitlab-api-v4` yek abzar command-line ast baraye kar kardan ba API version 4-e Gitlab. Ba estefade az in abzar, shoma mitavanid karhaye mokhtalefi mesle gereftan etela'at proj-e-ha, ejad issue-ha, anjam dade pull request-ha, va bishtar az inha ra anjam dahid, hame az tarighe terminal-e khodetan. In abzar be shoma komak mikonad ke karhaye Gitlab-e khodetan ra asan va khodkar konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--url <URL>`  --> 🌐 Address-e Gitlab server-e shoma. Agar set nashode bashad, az environment variable `GITLAB_URL` estefade mikonad.
+    🔹 `--token <TOKEN>`  --> 🔑 Token-e shakhsi shoma baraye dastresi be Gitlab API. Agar set nashode bashad, az environment variable `GITLAB_TOKEN` estefade mikonad.
+    🔹 `--method <METHOD>` --> 📡 Type-e request (GET, POST, PUT, DELETE). Befarze GET ast.
+    🔹 `--path <PATH>`   --> 📍 Endpoint-e API ke mikhaid call konid. Mesal: `/projects`, `/issues`.
+    🔹 `--data <DATA>`   --> 💾 Data'ee ke baraye request-haye POST/PUT bayad befrestid. Formate JSON bayad bashad.
+    🔹 `--params <PARAMS>` --> ❓ Parametrhaye URL baraye request. Formate URL encoded bayad bashad.
+    🔹 `--help`          --> ℹ️ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ gitlab-api-v4 --path /projects --token YOUR_GITLAB_TOKEN --url https://gitlab.example.com
+
+    🔹 Gereftan list-e hameye project-ha.
+
+    $ gitlab-api-v4 --method POST --path /projects --data '{"name": "My New Project", "namespace_id": "42"}' --token YOUR_GITLAB_TOKEN --url https://gitlab.example.com
+
+    🔹 Ejad yek project jadid ba name "My New Project" va namespace ID "42".
+
+✅ **Mesal sade:**
+
+    $ gitlab-api-v4 --path /user --token YOUR_GITLAB_TOKEN --url https://gitlab.example.com | jq
+
+    🔹 Gereftan etela'at profile user-e shoma va namayeshe an ba formati ziba be vasileye `jq`. (Bayad `jq` ro nasb dashte bashid).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gitlab-api-v4` command is a command-line tool for interacting with the Gitlab API version 4. Using this tool, you can perform various tasks such as retrieving project information, creating issues, performing pull requests, and much more, all from your terminal. This tool helps you automate and simplify your Gitlab tasks.
+
+⚙️ **Options:**
+    🔹 `--url <URL>`  --> 🌐 The address of your Gitlab server. If not set, it uses the environment variable `GITLAB_URL`.
+    🔹 `--token <TOKEN>`  --> 🔑 Your personal token for accessing the Gitlab API. If not set, it uses the environment variable `GITLAB_TOKEN`.
+    🔹 `--method <METHOD>` --> 📡 The type of request (GET, POST, PUT, DELETE). Defaults to GET.
+    🔹 `--path <PATH>`   --> 📍 The API endpoint you want to call. Example: `/projects`, `/issues`.
+    🔹 `--data <DATA>`   --> 💾 The data to send for POST/PUT requests. Must be in JSON format.
+    🔹 `--params <PARAMS>` --> ❓ URL parameters for the request. Must be URL encoded.
+    🔹 `--help`          --> ℹ️ Display the command help.
+
+🛠 **Examples:**
+
+    $ gitlab-api-v4 --path /projects --token YOUR_GITLAB_TOKEN --url https://gitlab.example.com
+
+    🔹 Get a list of all projects.
+
+    $ gitlab-api-v4 --method POST --path /projects --data '{"name": "My New Project", "namespace_id": "42"}' --token YOUR_GITLAB_TOKEN --url https://gitlab.example.com
+
+    🔹 Create a new project named "My New Project" with namespace ID "42".
+
+✅ **Simple Example:**
+
+    $ gitlab-api-v4 --path /user --token YOUR_GITLAB_TOKEN --url https://gitlab.example.com | jq
+
+    🔹 Get your user profile information and display it in a pretty format using `jq`. (You need to have `jq` installed).

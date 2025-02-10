@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cvs-debuild` baraye sakhtane package Debian az yek respository CVS estefade mishavad.  In kar be shoma komak mikonad ta az code CVS khod package .deb dorost konid ke ghabele nasb va pakhsh bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--rebuild`  --> 🔄 Baz-sakhtan package az aval, hatta agar ghablesh sakhte shode bashad.
+    🔹 `--no-sign`  --> 🚫 Package ra ba signature Amniati signe nakon.
+    🔹 `--no-tar`   --> 📦  Az sakhtane file tarball (az code manba) chashm pooshi kon.
+    🔹 `--use-schroot` --> 🚀  Baraye sakhtane package az schroot estefade kon (baraye environment control shode).
+
+🛠 **Mesal-ha:**
+
+    $ cvs-debuild
+
+    🔹 Package Debian ra az CVS repository sakhtan.
+
+    $ cvs-debuild --rebuild --no-sign
+
+    🔹 Package ra az aval baz-sakhtan va signe Amniati nakardan.
+
+✅ **Mesal sade:**
+
+    $ cvs-debuild
+
+    🔹 Agar dar yek directory CVS bashid, in dastoor package .deb ra az code CVS mojood misazad.  Dar vaghe, yek package nasb shodanist ke mitavanad be asani pakhsh va estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cvs-debuild` command is used to build a Debian package from a CVS repository. It allows you to create a .deb package from your CVS code, which can then be installed and distributed.
+
+⚙️ **Options:**
+    🔹 `--rebuild`  --> 🔄 Rebuild the package from scratch, even if it has been built before.
+    🔹 `--no-sign`  --> 🚫 Do not sign the resulting package.
+    🔹 `--no-tar`   --> 📦 Skip the creation of a source tarball.
+    🔹 `--use-schroot` --> 🚀 Use schroot to build the package (for a controlled build environment).
+
+🛠 **Examples:**
+
+    $ cvs-debuild
+
+    🔹 Build the Debian package from the CVS repository.
+
+    $ cvs-debuild --rebuild --no-sign
+
+    🔹 Rebuild the package from scratch and do not sign it.
+
+✅ **Simple Example:**
+
+    $ cvs-debuild
+
+    🔹 If you are in a CVS directory, this command will build a .deb package from the current CVS code. It's essentially creating an installable package that can easily be distributed and used.

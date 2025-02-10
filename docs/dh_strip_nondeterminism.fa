@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_strip_nondeterminism` baraye hazfe etela'at gheir-motmaeen dar file-haye ELF (Executable and Linkable Format) estefade mishavad.  In etela'at gheir-motmaeen mitoonand mesle timestamp ha va ID-haye sakh bashand, ke baes mishavand file-ha ba haman code manba dar zamanhaye mokhtalef ya dar system-haye mokhtalef binary-haye yeksaan tolid nakonan.  Ba hazfe in etela'at, shoma mitoonid binary-haye *deterministic* dashte bashid, yani binary-haye yeksaan az code manba-ye yeksaan.
+
+⚙️ **Gozine-ha:**
+    🔹 `--list`  --> 📜 List file-haye ELF ke tagheer dade khahand shod, vali tagheer dadan anha ra anjam nadehid.
+    🔹 `--only-compress` --> 📦 Faghat file-haye compressed ra check va strip kon.
+    🔹 `--fail-if-changed` --> 🚨 Agar file-i tagheer kard, ba khata az barnamyeh bereoon biaeed.
+    🔹 `--exclude *file*` --> 🚫 In file ya fileha ra strip nakon. Mitoonid az wildcard estefade konid.
+
+🛠 **Mesal-ha:**
+
+    $ dh_strip_nondeterminism
+    🔹 Hazfe etela'at gheir-motmaeen az hameye file-haye ELF dar pooshe-ye build.
+
+    $ dh_strip_nondeterminism --list
+    🔹 List file-haye ELF ke tagheer dade khahand shod.
+
+    $ dh_strip_nondeterminism --exclude usr/bin/foo --exclude usr/bin/bar
+    🔹 Hazfe etela'at gheir-motmaeen az hameye file-ha joz usr/bin/foo va usr/bin/bar
+
+✅ **Mesal sade:**
+
+    $ dh_strip_nondeterminism
+    🔹 Bad az sakhtane yek package Debian, in dastoor ra ejra konid ta etela'at gheir-motmaeen az binary-ha hazf shavad.  In baes mishavad ke agar shoma dobare package ra az haman code manba besazid, binary-haye yeksaani dashte bashid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_strip_nondeterminism` command is used to remove non-deterministic information from ELF (Executable and Linkable Format) files. This non-deterministic information can include things like timestamps and build IDs, which can cause the same source code to produce different binaries when compiled at different times or on different systems. By removing this information, you can ensure that your binaries are *deterministic*, meaning that the same source code will always produce the same binary. This is important for reproducibility and security.
+
+⚙️ **Options:**
+    🔹 `--list`  --> 📜 List the ELF files that would be modified, but do not actually modify them.
+    🔹 `--only-compress` --> 📦 Only check and strip compressed files.
+    🔹 `--fail-if-changed` --> 🚨 Fail the build if any files were changed.
+    🔹 `--exclude *file*` --> 🚫 Exclude this file or files from stripping. Wildcards can be used.
+
+🛠 **Examples:**
+
+    $ dh_strip_nondeterminism
+    🔹 Strip non-deterministic information from all ELF files in the build directory.
+
+    $ dh_strip_nondeterminism --list
+    🔹 List the ELF files that would be modified.
+
+    $ dh_strip_nondeterminism --exclude usr/bin/foo --exclude usr/bin/bar
+    🔹 Strip non-deterministic information from all files except usr/bin/foo and usr/bin/bar.
+
+✅ **Simple Example:**
+
+    $ dh_strip_nondeterminism
+    🔹 After building a Debian package, run this command to strip non-deterministic information from the binaries. This ensures that if you rebuild the package from the same source code, you will get identical binaries.

@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ghostscript` (ya `gs`) yek barname-ye ghavi baraye kar ba file-haye PostScript va PDF ast.  Mishe azash baraye namayesh dadan, tabdil kardan, ya dastkari kardan in no' file-ha estefade kard.
+
+⚙️ **Gozine-ha:**
+    🔹 `gs -sDEVICE=pdfwrite -o output.pdf input.ps`  --> 📄 Tabdil file PostScript be PDF.
+    🔹 `gs -sDEVICE=jpeg -o output.jpg input.pdf`  --> 🖼️ Tabdil file PDF be tasvir JPEG.
+    🔹 `gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=output.pdf input1.pdf input2.pdf` --> 🪢 Mojtama' kardan chand file PDF ba ham.
+    🔹 `gs -dSAFER -dBATCH -dNOPAUSE -sDEVICE=display input.pdf` --> 🖥️ Namayesh file PDF (ghayr-e mo'tamad) be soorate amni.
+
+🛠 **Mesal-ha:**
+
+    $ gs input.ps
+
+    🔹 Namayesh file PostScript ba estefade az namayeshgar pishfarz.
+
+    $ gs -sDEVICE=png16m -r300 -o output.png input.pdf
+
+    🔹 Tabdil file PDF be tasvir PNG ba keyfiyate bala (300 dpi).
+
+✅ **Mesal sade:**
+
+    $ gs -sDEVICE=pdfwrite -o output.pdf input.eps
+
+    🔹 Tabdil file EPS (Encapsulated PostScript) be PDF. `sDEVICE=pdfwrite` format khorooji ro moshakhas mikone, va `-o output.pdf` name file khorooji ro tayin mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ghostscript` command (or `gs`) is a powerful tool for working with PostScript and PDF files. It can be used to display, convert, or manipulate these file types.
+
+⚙️ **Options:**
+    🔹 `gs -sDEVICE=pdfwrite -o output.pdf input.ps`  --> 📄 Convert a PostScript file to PDF.
+    🔹 `gs -sDEVICE=jpeg -o output.jpg input.pdf`  --> 🖼️ Convert a PDF file to a JPEG image.
+    🔹 `gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=output.pdf input1.pdf input2.pdf` --> 🪢 Combine multiple PDF files into one.
+    🔹 `gs -dSAFER -dBATCH -dNOPAUSE -sDEVICE=display input.pdf` --> 🖥️ Safely display an untrusted PDF file.
+
+🛠 **Examples:**
+
+    $ gs input.ps
+
+    🔹 Display the PostScript file using the default viewer.
+
+    $ gs -sDEVICE=png16m -r300 -o output.png input.pdf
+
+    🔹 Convert the PDF file to a high-quality PNG image (300 dpi).
+
+✅ **Simple Example:**
+
+    $ gs -sDEVICE=pdfwrite -o output.pdf input.eps
+
+    🔹 Convert an EPS (Encapsulated PostScript) file to PDF. `sDEVICE=pdfwrite` specifies the output format, and `-o output.pdf` sets the output file name.

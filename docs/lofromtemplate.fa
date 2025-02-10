@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lofromtemplate` baraye sakhtan (create) yek file az rooye yek template (olgoo) estefade mishavad. In dastoor tool-haye mokhtalefi ra baraye por kardan (fill) template ba data-ye shakhsi shoma faraham mikonad. Be fekre in bashid ke az in dastoor baraye sakhtan file-haye config, code boilerplate va chiz-haye digar estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--template <path>`  --> 🗂️ Mosafer template ke bayad estefade shavad.
+    🔹 `--output <path>`  --> 📤 Jaayee ke file-e jadid save mishavad.
+    🔹 `--data <key=value>` --> 🔢 Data-ee ke bayad dar template replace shavad (chandta az in gozine-ha mitavanad estefade shavad).
+    🔹 `--interactive`     --> 🙋 Az shoma soal mikonad data-ye lazem ro.
+    🔹 `--dry-run`         --> 🧪 File sakhte nemishavad, faghat neshun mide chi mishe.
+
+🛠 **Mesal-ha:**
+
+    $ lofromtemplate --template config.tmpl --output config.ini --data username=johndoe --data server=example.com
+
+    🔹 Sakhtan `config.ini` az `config.tmpl` va جایگزینی username va server.
+
+    $ lofromtemplate --template mycode.tmpl --output MyCode.java --interactive
+
+    🔹 Sakhtan `MyCode.java` az `mycode.tmpl` ba data-ee ke az shoma soal mishavad.
+
+✅ **Mesal sade:**
+
+    $ lofromtemplate --template Dockerfile.tmpl --output Dockerfile --data APP_NAME=myapp
+
+    🔹 Az template `Dockerfile.tmpl` yek file Dockerfile sakhte shode, va APP_NAME ba `myapp` جایگزین shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lofromtemplate` command is used to create a file from a template. It provides flexible tools for populating the template with your specific data. Think of it as a way to easily generate configuration files, code boilerplate, and other similar things.
+
+⚙️ **Options:**
+    🔹 `--template <path>`  --> 🗂️  The path to the template file to use.
+    🔹 `--output <path>`  --> 📤  The path where the new file will be saved.
+    🔹 `--data <key=value>` --> 🔢 Data to be replaced in the template (multiple instances of this option can be used).
+    🔹 `--interactive`     --> 🙋 Prompts you to enter the required data.
+    🔹 `--dry-run`         --> 🧪 Doesn't create the file, just shows what would happen.
+
+🛠 **Examples:**
+
+    $ lofromtemplate --template config.tmpl --output config.ini --data username=johndoe --data server=example.com
+
+    🔹 Creates `config.ini` from `config.tmpl`, replacing username and server.
+
+    $ lofromtemplate --template mycode.tmpl --output MyCode.java --interactive
+
+    🔹 Creates `MyCode.java` from `mycode.tmpl`, prompting you for data.
+
+✅ **Simple Example:**
+
+    $ lofromtemplate --template Dockerfile.tmpl --output Dockerfile --data APP_NAME=myapp
+
+    🔹 Creates a Dockerfile from the template `Dockerfile.tmpl`, replacing the APP_NAME with `myapp`.

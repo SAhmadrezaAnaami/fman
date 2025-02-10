@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fgrep` mesle `grep` ast, vali faghat donbale matn-haye exact migardad. Yani, pattern-haye khass ra bedune estefade az regular expressions peyda mikonad.  Be tore kholase, `fgrep` baraye jostojuye asan va sari' dar file-ha bar asase matn-haye sade va bedune niyaz be regular expressions be kar miravad.
+
+⚙️ **Gozine-ha:**
+    🔹 `fgrep -i "matn"` --> 🧐 Jostojo ba bi-tafavoati be horoof bozorg va koochak (case-insensitive).
+    🔹 `fgrep -w "matn"` --> 🌐 Faghat kalame-ye kamel "matn" ra peyda kon.
+    🔹 `fgrep -l "matn" file-ha` --> 📃 Namayesh name file-haii ke "matn" dar anha vojood darad.
+    🔹 `fgrep -n "matn" file` --> 🔢 Namayesh shomare khat-haii ke "matn" dar anha peyda shode ast.
+
+🛠 **Mesal-ha:**
+
+    $ fgrep "hello world" file.txt
+
+    🔹 Peyda kardan khat-haii az file.txt ke exactan "hello world" ra darand.
+
+    $ fgrep -i "ERROR" logfile.log
+
+    🔹 Peyda kardan khat-haii az logfile.log ke "error" (ba horoof bozorg ya koochak) ra darand.
+
+✅ **Mesal sade:**
+
+    $ fgrep -w "code" script.py
+
+    🔹 Agar file script.py shamel khat "my code is here" bashad, in khat namayesh dade mishavad. Vali agar khat "coding" bashad, namayesh dade nemishavad, chon "code" be tore kamel vojood nadarad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fgrep` command is similar to `grep`, but it searches for exact string matches only.  It finds specific patterns without using regular expressions.  In short, `fgrep` is used for simple and fast searching in files based on plain text without the need for regular expressions.
+
+⚙️ **Options:**
+    🔹 `fgrep -i "text"` --> 🧐 Case-insensitive search for "text".
+    🔹 `fgrep -w "text"` --> 🌐 Find only the whole word "text".
+    🔹 `fgrep -l "text" files` --> 📃 Display the names of files containing "text".
+    🔹 `fgrep -n "text" file` --> 🔢 Display line numbers where "text" is found.
+
+🛠 **Examples:**
+
+    $ fgrep "hello world" file.txt
+
+    🔹 Find lines in file.txt that contain exactly "hello world".
+
+    $ fgrep -i "ERROR" logfile.log
+
+    🔹 Find lines in logfile.log that contain "error" (case-insensitive).
+
+✅ **Simple Example:**
+
+    $ fgrep -w "code" script.py
+
+    🔹 If the file script.py contains the line "my code is here", this line is displayed.  However, if the line contains "coding", it is not displayed, because "code" does not exist as a whole word.

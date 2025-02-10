@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mesg` baraye kontrol kardane ghabliat-e terminal shoma baraye daryaft-e peygham az digar karbaran estefade mishavad. Yani aya digaran mitavanand ba shoma az tarigh dastoor `write` ya `talk` ertebat bargharar konand ya na.
+
+⚙️ **Gozine-ha:**
+    🔹 `mesg` --> ❓ Agar bedune hich gozinei ejra shavad, vaziyat-e konuni ra neshan midahad (aya daryaft-e peyghamha ejaze dade shode ast ya na).
+    🔹 `mesg y` --> ✅ Ejaze midahad ta digar karbaran baraye shoma peygham beferestand.
+    🔹 `mesg n` --> 🚫 Az daryaft-e peygham az digar karbaran jelogiri mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ mesg
+
+    🔹 Neshan dadane vaziyat-e konuni. Momken ast chizi mesle "is y" ya "is n" chap shavad.
+
+    $ mesg n
+
+    🔹 Ghayefal kardane ghabliat-e daryaft-e peygham. Digar karbaran nemitavanand az tarigh `write` ya `talk` baraye shoma peygham beferestand.
+
+✅ **Mesal sade:**
+
+    $ mesg y
+    $ mesg
+
+    🔹 Aval ejaze daryaft-e peygham dade mishavad, va bad vaziyat namayesh dade mishavad ta etminan hasel shavad ke dorost kar mikonad. Agar `mesg` "is y" chap konad, yani hame chiz dorost ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mesg` command is used to control whether your terminal accepts messages from other users. This determines if other users can communicate with you using commands like `write` or `talk`.
+
+⚙️ **Options:**
+    🔹 `mesg` --> ❓ If executed without any options, it displays the current status (whether receiving messages is allowed or not).
+    🔹 `mesg y` --> ✅ Allows other users to send messages to you.
+    🔹 `mesg n` --> 🚫 Prevents receiving messages from other users.
+
+🛠 **Examples:**
+
+    $ mesg
+
+    🔹 Shows the current status. It might print something like "is y" or "is n".
+
+    $ mesg n
+
+    🔹 Disables the ability to receive messages. Other users will not be able to send you messages via `write` or `talk`.
+
+✅ **Simple Example:**
+
+    $ mesg y
+    $ mesg
+
+    🔹 First, receiving messages is enabled, and then the status is displayed to ensure it is working correctly. If `mesg` prints "is y", it means everything is okay.

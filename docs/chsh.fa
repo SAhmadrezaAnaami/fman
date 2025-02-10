@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chsh` baraye ta'yine скорлупа (shell) voroodi baraye karbarha estefade mishavad. Ba estefade az in dastoor, karbar mitavanad скорлупа (shell) پیشفرض khod ra taghyir dahad. Agar shoma administrator hastid, mitavanid скорлупа (shell) voroodi karbarane digar ra ham taghyir dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `chsh -l`  --> 📜 List kardane скорлупа (shell) haye dastres dar system.
+    🔹 `chsh`      --> ⌨️ Taghyir dadane скорлупа (shell) voroodi khodetan. Az shoma darkhast mishavad ke скорлупа (shell) jadid ra vared konid.
+    🔹 `chsh -s <shell>` --> 🎯 Taghyir dadane скорлупа (shell) be shekle mostaghim ba specify kardane masir скорлупа (shell). Faghat az taraf root ghabele estefade ast baraye taghyire скорлупа (shell) digaran.
+
+🛠 **Mesal-ha:**
+
+    $ chsh -l
+
+    🔹 List kardane hameye скорлупа (shell) haye dastres.
+
+    $ chsh
+
+    🔹 Taghyir dadane скорлупа (shell) voroodi khodetoon ba darkhaste vared kardane скорлупа (shell) jadid.
+
+    $ sudo chsh -s /bin/zsh username
+
+    🔹 Taghyir dadane скорлупа (shell) karbare `username` be `/bin/zsh` (faghat az taraf root).
+
+✅ **Mesal sade:**
+
+    $ chsh
+    Changing shell for user username.
+    New shell: /bin/zsh
+    Shell changed.
+
+    🔹 In mesal neshan midahad ke скорлупа (shell) voroodi be `/bin/zsh` taghyir karde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chsh` command is used to change the login shell for users. Using this command, a user can change their default login shell. If you are an administrator, you can also change the login shell of other users.
+
+⚙️ **Options:**
+    🔹 `chsh -l`  --> 📜 List available shells on the system.
+    🔹 `chsh`      --> ⌨️ Change your own login shell. You will be prompted to enter the new shell.
+    🔹 `chsh -s <shell>` --> 🎯 Change the shell directly by specifying the path to the shell. Only usable by root to change other users' shells.
+
+🛠 **Examples:**
+
+    $ chsh -l
+
+    🔹 List all available shells.
+
+    $ chsh
+
+    🔹 Change your own login shell by prompting for a new shell.
+
+    $ sudo chsh -s /bin/zsh username
+
+    🔹 Change the shell of user `username` to `/bin/zsh` (only usable by root).
+
+✅ **Simple Example:**
+
+    $ chsh
+    Changing shell for user username.
+    New shell: /bin/zsh
+    Shell changed.
+
+    🔹 This example shows that the login shell has been changed to `/bin/zsh`.

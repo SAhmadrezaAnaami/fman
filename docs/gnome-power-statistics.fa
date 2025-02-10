@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-power-statistics` baraye didane etela'at dar morede masrafe bargh va battery dar system-haye Linux ke az GNOME estefade mikonand be kar miravad. Ba estefade az in dastoor, mitoonid bebinid kodam barname-ha bishtarin masraf bargh ra darand va vaziyate battery ra check konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-power-statistics` --> 📊 Namayesh etela'ate omumi masrafe bargh va battery dar GUI.
+    🔹 `gnome-power-statistics --dump` --> 📝 Chap kardan etela'ate tafsili masrafe bargh be soorate matni.
+    🔹 `gnome-power-statistics --history` --> 🕰️ Namayesh tarikhe masrafe bargh.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-power-statistics
+
+    🔹 In dastoor barname-ye graphical ra baz mikonad ke etela'ate masrafe bargh ra namayesh midahad.
+
+    $ gnome-power-statistics --dump
+
+    🔹 In dastoor etela'ate tafsili masrafe bargh ra dar terminal chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ gnome-power-statistics --dump | grep "battery"
+
+    🔹 In dastoor etela'ate battery ra az khorooji `gnome-power-statistics --dump` estekhraj mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-power-statistics` command is used to view power consumption and battery information on Linux systems using GNOME.  Using this command, you can see which applications are consuming the most power and check battery status.
+
+⚙️ **Options:**
+    🔹 `gnome-power-statistics` --> 📊 Displays general power and battery information in a GUI.
+    🔹 `gnome-power-statistics --dump` --> 📝 Prints detailed power consumption information in text format.
+    🔹 `gnome-power-statistics --history` --> 🕰️ Displays power consumption history.
+
+🛠 **Examples:**
+
+    $ gnome-power-statistics
+
+    🔹 This command opens a graphical program displaying power consumption information.
+
+    $ gnome-power-statistics --dump
+
+    🔹 This command prints detailed power information to the terminal.
+
+✅ **Simple Example:**
+
+    $ gnome-power-statistics --dump | grep "battery"
+
+    🔹 This command extracts battery information from the output of `gnome-power-statistics --dump`.

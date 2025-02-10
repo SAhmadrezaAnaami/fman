@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chfn` baraye tagheer dadan etela'at karbari (user information) mesle name kamele karbar, shomare otagh, telephone kar va manzel be kar miravad. In etela'at dar file `/etc/passwd` zakhire mishavad va barnamehaye digar mesle `finger` az an estefade mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `chfn` --> 💬 Be soorate interactive az shoma soal mikonad ke etela'at ra vared konid.
+    🔹 `chfn username` --> 👤 Etela'at karbare morede nazar ra tagheer midahad (niaz be dastresi admin darid).
+    🔹 `chfn -f "Full Name" username` --> ✏️ Faqat name kamel ra tagheer midahad.
+
+🛠 **Mesal-ha:**
+
+    $ sudo chfn
+    
+    🔹 Shoru kardan tagheer etela'at karbari be soorate interactive baraye khodetan (niaz be dastresi admin baraye karbarhaye digar).
+
+    $ sudo chfn user1
+    
+    🔹 Tagheer etela'at karbar ba name "user1" (niaz be dastresi admin).
+
+✅ **Mesal sade:**
+
+    $ sudo chfn -f "Ali Rezaei" user1
+    
+    🔹 Faghat name kamel karbar "user1" ra be "Ali Rezaei" tagheer midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chfn` command is used to change a user's information, such as their full name, room number, work phone, and home phone. This information is stored in the `/etc/passwd` file and used by other programs like `finger`.
+
+⚙️ **Options:**
+    🔹 `chfn` --> 💬 Interactively prompts you to enter the information.
+    🔹 `chfn username` --> 👤 Changes the information of the specified user (requires admin access).
+    🔹 `chfn -f "Full Name" username` --> ✏️ Changes only the full name.
+
+🛠 **Examples:**
+
+    $ sudo chfn
+    
+    🔹 Starts an interactive session to change your own user information (requires admin access for other users).
+
+    $ sudo chfn user1
+    
+    🔹 Changes the information for the user named "user1" (requires admin access).
+
+✅ **Simple Example:**
+
+    $ sudo chfn -f "Ali Rezaei" user1
+    
+    🔹 Changes only the full name of the user "user1" to "Ali Rezaei".
+

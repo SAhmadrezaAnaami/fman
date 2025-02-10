@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-communicate` baraye ertebat ba `debconf` be kar miravad, baraye tagheer ya khoondan etela'at e package-ha dar database `debconf`. In dastoor tool-haye script-nevisi ro baraye dastresi be backend `debconf` asan mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `--frontend=frontend` --> 🖥️  Moshakhas kardane `frontend` baraye namayeshe soalat (masalan, `noninteractive`, `dialog`). Age moshakhas nashe, az `debconf.conf` estefade mishe.
+    🔹 `--template=template` --> 🎨  Moshakhas kardane `template` baraye namayeshe soalat.
+    🔹 `-- default-priority=priority` --> 🚦  Moshakhas kardane `priority` pishfarz baraye soalat.
+    🔹 `COMMAND [arguments]` --> 🚀  Ejra kardane yek ya chand command `debconf`.
+
+🛠 **Mesal-ha:**
+
+    $ debconf-communicate --frontend=noninteractive GET package/question
+
+    🔹 Gereftan javabe yek soal az database `debconf` dar hale ke interaction namayesh dade nemishe.
+
+    $ debconf-communicate SET package/question value
+    
+    🔹  Tagheer dadane javabe yek soal dar database `debconf`.
+
+✅ **Mesal sade:**
+
+    $ debconf-communicate INPUT shared/mysql_password seen=false
+
+    🔹 Ba in dastoor mishe yek soalo dobare neshoon dad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-communicate` command is used to communicate with `debconf`, allowing you to modify or query package information in the `debconf` database.  This tool simplifies scripting access to the `debconf` backend.
+
+⚙️ **Options:**
+    🔹 `--frontend=frontend` --> 🖥️  Specifies the `frontend` to be used for displaying questions (e.g., `noninteractive`, `dialog`). If not specified, it defaults to `debconf.conf`.
+    🔹 `--template=template` --> 🎨  Specifies the `template` to be used for displaying questions.
+    🔹 `--default-priority=priority` --> 🚦  Specifies the default `priority` for questions.
+    🔹 `COMMAND [arguments]` --> 🚀  Executes one or more `debconf` commands.
+
+🛠 **Examples:**
+
+    $ debconf-communicate --frontend=noninteractive GET package/question
+
+    🔹 Retrieves the answer to a question from the `debconf` database without any interactive prompts.
+
+    $ debconf-communicate SET package/question value
+
+    🔹 Changes the answer to a question in the `debconf` database.
+
+✅ **Simple Example:**
+
+    $ debconf-communicate INPUT shared/mysql_password seen=false
+
+    🔹  This command makes a previously answered question reappear for the user to answer again.

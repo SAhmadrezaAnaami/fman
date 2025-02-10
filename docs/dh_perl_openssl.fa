@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_perl_openssl` baraye sakhtane `dhparams.pem` file, ke baraye secure kardan service-haye web ya server-haye digar ke az SSL/TLS estefade mikonan, be kar mire. In dastoor be komake Perl va OpenSSL parametrhaye Diffie-Hellman ro generate mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `--default_bits <tedad_bit>` --> 🔢 Set kardane tedad bit-ha baraye key-haye Diffie-Hellman. Defaulte an 2048 hast.  Har che tedad bishtar bashad, amniat bishtar ast, ama sakhtan an zaman bishtari mibarad.
+    🔹 `--tmpdir <masir>` --> 📁 Specify kardane directory-e movaghat baraye zakhire-ye file-haye movaghat. Agar specify nashavad, az `/tmp` estefade mishavad.
+    🔹 `--openssl-options <gozine>` --> 🛠️ Dadane gozine-haye ezafe be OpenSSL. Misalan, baraye generate kardane parametrhaye Diffie-Hellman ba curve-e Elliptic be jaye prime number-e standard.
+
+🛠 **Mesal-ha:**
+
+    $ dh_perl_openssl --default_bits 4096
+
+    🔹 Sakhtane `dhparams.pem` ba 4096 bit dar directory-e `debian/ssl/`.
+
+    $ dh_perl_openssl --tmpdir /tmp/my_temp_dir
+
+    🔹 Sakhtane `dhparams.pem` ba estefade az `/tmp/my_temp_dir` be onvane directory-e movaghat.
+
+✅ **Mesal sade:**
+
+    $ dh_perl_openssl
+
+    🔹 In dastoor `dhparams.pem` ba tedad bit-haye default (2048) ra dar directory-e `debian/ssl/` misazad. Agar in directory vojood nadashte bashad, khata midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_perl_openssl` command is used to generate a `dhparams.pem` file, which is used to secure web services or other servers that use SSL/TLS. This command uses Perl and OpenSSL to generate Diffie-Hellman parameters.
+
+⚙️ **Options:**
+    🔹 `--default_bits <number_of_bits>` --> 🔢 Set the number of bits for the Diffie-Hellman keys. The default is 2048. A higher number increases security but takes longer to generate.
+    🔹 `--tmpdir <path>` --> 📁 Specify a temporary directory to store temporary files. If not specified, `/tmp` is used.
+    🔹 `--openssl-options <option>` --> 🛠️ Pass extra options to OpenSSL. For example, to generate Diffie-Hellman parameters with an Elliptic curve instead of the standard prime number.
+
+🛠 **Examples:**
+
+    $ dh_perl_openssl --default_bits 4096
+
+    🔹 Creates `dhparams.pem` with 4096 bits in the `debian/ssl/` directory.
+
+    $ dh_perl_openssl --tmpdir /tmp/my_temp_dir
+
+    🔹 Creates `dhparams.pem` using `/tmp/my_temp_dir` as the temporary directory.
+
+✅ **Simple Example:**
+
+    $ dh_perl_openssl
+
+    🔹 This command creates `dhparams.pem` with the default number of bits (2048) in the `debian/ssl/` directory. If this directory does not exist, it will return an error.

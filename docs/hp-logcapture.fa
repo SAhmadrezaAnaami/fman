@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-logcapture` baraye gereftan va zakhire kardane log az dastgah haye HP (mesle printer-ha) estefade mishavad.  In dastoor be shoma komak mikonad moshkelate dastgah ra peygiri va debug konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh rahnamaye dastoor va gozine-haye mojud.
+    🔹 `--debug` --> 🐞  Ezafe kardane etela'at debug be log-ha baraye tahlil bishtar.
+    🔹 `--file=<filename>` --> 💾 Zakhire kardane log-ha dar yek file ba name `<filename>`. Agar esm file ra nadehid, be soorate pishfarz dar terminal chap mishavad.
+    🔹 `--duration=<seconds>` --> ⏱️  Modat zamani ke log-ha gerefte mishavand (be saniye).
+
+🛠 **Mesal-ha:**
+
+    $ hp-logcapture
+
+    🔹 Gereftan log az dastgah pishfarz HP va chap kardane an dar terminal.
+
+    $ hp-logcapture --file=myprinter.log --duration=60
+
+    🔹 Gereftan log az dastgah pishfarz HP be modat 60 saniye va zakhire kardane an dar file "myprinter.log".
+
+✅ **Mesal sade:**
+
+    $ hp-logcapture --help
+
+    🔹 Namayesh rahnamaye dastoor `hp-logcapture`, ke hameye gozine-ha va tarze estefade az an ra neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-logcapture` command is used to capture and save logs from HP devices (such as printers). It helps you track and debug device problems.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display the command's help message and available options.
+    🔹 `--debug` --> 🐞 Add debugging information to the logs for more detailed analysis.
+    🔹 `--file=<filename>` --> 💾 Save the logs to a file named `<filename>`. If no filename is provided, the logs are printed to the terminal by default.
+    🔹 `--duration=<seconds>` --> ⏱️ The duration for which logs are captured (in seconds).
+
+🛠 **Examples:**
+
+    $ hp-logcapture
+
+    🔹 Capture logs from the default HP device and print them to the terminal.
+
+    $ hp-logcapture --file=myprinter.log --duration=60
+
+    🔹 Capture logs from the default HP device for 60 seconds and save them to the file "myprinter.log".
+
+✅ **Simple Example:**
+
+    $ hp-logcapture --help
+
+    🔹 Displays the help message for the `hp-logcapture` command, showing all available options and how to use them.
+

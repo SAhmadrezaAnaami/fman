@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgmerge` baraye yakja kardane file-haye tarjome shode (.po) ba file-haye asli (.pot) be kar miravad. In dastoor be shoma komak mikonad ta tarjome-haye khod ra ba akharin taghirat dar matn asli update konid. Agar matn asli taghir karde bashad, `msgmerge` matn-haye jadid ya taghir karde ra dar file tarjome shode neshān midahad va shoma mitavanid anha ra tarjome konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `msgmerge -o output.po input.po template.pot`  --> 📤 File tarjome shode jadid (output.po) ba estefade az file tarjome shode ghadimi (input.po) va template (.pot) misazad.
+    🔹 `msgmerge --update input.po template.pot`  --> 🔄 File tarjome shode (input.po) ra update mikonad.
+    🔹 `msgmerge --backup=numbered ...` --> 💾 Az file tarjome shode ghabli backup migirad.
+    🔹 `msgmerge -n input.po template.pot` --> 📝 Matn-haye ghadimi tarjome shode ra ke digar dar file template nistand hazf mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ msgmerge -o farsi.po farsi.po.old app.pot
+
+    🔹 File `farsi.po.old` ra ba file `app.pot` merge mikonad va natije ra dar file `farsi.po` zakhire mikonad.
+
+    $ msgmerge --update farsi.po app.pot
+
+    🔹 File `farsi.po` ra ba taghirat az file `app.pot` update mikonad.
+
+✅ **Mesal sade:**
+
+    $ msgmerge --update fa.po app.pot
+    Updating 'fa.po' from 'app.pot'...
+    4 translated messages, 1 fuzzy message, 2 untranslated messages.
+
+    🔹 In mesal neshān midahad ke file `fa.po` ba file `app.pot` update shode ast. Dar natije, 4 matn tarjome shode, 1 matn ba tarjome gheyre-motmaen va 2 matn tarjome nashode vojood darad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgmerge` command is used to merge translated message files (.po) with the original template files (.pot). This command helps you update your translations with the latest changes in the source text. If the source text has changed, `msgmerge` identifies the new or modified strings in the translation file, allowing you to translate them.
+
+⚙️ **Options:**
+    🔹 `msgmerge -o output.po input.po template.pot`  --> 📤 Creates a new translated file (output.po) using the old translated file (input.po) and the template (.pot).
+    🔹 `msgmerge --update input.po template.pot`  --> 🔄 Updates the translated file (input.po) in place.
+    🔹 `msgmerge --backup=numbered ...` --> 💾 Creates a numbered backup of the original translation file before updating.
+    🔹 `msgmerge -n input.po template.pot` --> 📝 Removes obsolete translated entries (those no longer present in the template file).
+
+🛠 **Examples:**
+
+    $ msgmerge -o french.po french.po.old app.pot
+
+    🔹 Merges `french.po.old` with `app.pot` and saves the result in `french.po`.
+
+    $ msgmerge --update french.po app.pot
+
+    🔹 Updates `french.po` with changes from `app.pot`.
+
+✅ **Simple Example:**
+
+    $ msgmerge --update en.po app.pot
+    Updating 'en.po' from 'app.pot'...
+    4 translated messages, 1 fuzzy message, 2 untranslated messages.
+
+    🔹 This example shows that the `en.po` file has been updated with `app.pot`.  The output indicates 4 translated messages, 1 message marked as "fuzzy" (meaning it might need review after the merge), and 2 messages that still need translation.

@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lwp-request` yek abzar command-line baraye ersal darkhaste-haye HTTP/HTTPS be yek server web ast.  In dastoor be shoma komak mikonad ta etela'at az safahat web begirid ya darkhaste-haye API ra test konid. Be zaban sade, shoma mitavanid az in dastoor estefade konid ta mesle browser-e khod darkhast be yek website beferestid, amma natije ra dar terminal-e khod bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--method=METHOD` --> 📡 Type darkhast ra moshakhas mikonad (GET, POST, HEAD, PUT, DELETE).  Agar moshakhas nashavad, `GET` pishfarz ast.
+    🔹 `--header='Name: Value'` --> 📝 Header-haye HTTP ezafe mikonad.  Baraye ezafe kardane chand header, az in gozine chand bar estefade konid.
+    🔹 `--post FILE` --> 📤 Mohtaviate yek file ra be عنوان body darkhast POST mifrestad.
+    🔹 `--quiet` --> 🤫 Hich payami dar terminal chap nemishavad, faghat javabe darkhast.
+    🔹 `--timeout=SECONDS` --> ⏱️ Zaman entezar baraye javab dadane server ra moshakhas mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ lwp-request http://www.example.com
+
+    🔹 Gereftane HTML az yek website ba darkhast GET.
+
+    $ lwp-request --method=POST --post data.txt http://www.example.com/api
+
+    🔹 Efsale data az file `data.txt` be address API ba darkhast POST.
+
+    $ lwp-request --header='Content-Type: application/json' http://www.example.com/api
+
+    🔹 Ezafe kardane header `Content-Type` baraye darkhast.
+
+✅ **Mesal sade:**
+
+    $ lwp-request --quiet http://www.example.com > output.html
+
+    🔹 Gereftan HTML az website va zakhire kardane an dar file `output.html` bedune chap kardane hich payami dar terminal.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lwp-request` command is a command-line tool for sending HTTP/HTTPS requests to a web server. It helps you retrieve information from web pages or test API requests. Simply put, you can use this command to send a request to a website, like your browser, but view the result in your terminal.
+
+⚙️ **Options:**
+    🔹 `--method=METHOD` --> 📡 Specifies the request type (GET, POST, HEAD, PUT, DELETE). If not specified, `GET` is the default.
+    🔹 `--header='Name: Value'` --> 📝 Adds HTTP headers. Use this option multiple times to add multiple headers.
+    🔹 `--post FILE` --> 📤 Sends the content of a file as the POST request body.
+    🔹 `--quiet` --> 🤫 Suppresses all output to the terminal, only displaying the response.
+    🔹 `--timeout=SECONDS` --> ⏱️ Specifies the timeout duration for the server to respond.
+
+🛠 **Examples:**
+
+    $ lwp-request http://www.example.com
+
+    🔹 Retrieves the HTML from a website using a GET request.
+
+    $ lwp-request --method=POST --post data.txt http://www.example.com/api
+
+    🔹 Sends data from the `data.txt` file to the API address using a POST request.
+
+    $ lwp-request --header='Content-Type: application/json' http://www.example.com/api
+
+    🔹 Adds the `Content-Type` header to the request.
+
+✅ **Simple Example:**
+
+    $ lwp-request --quiet http://www.example.com > output.html
+
+    🔹 Retrieves HTML from the website and saves it to the `output.html` file without printing any messages to the terminal.

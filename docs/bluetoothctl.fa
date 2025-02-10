@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bluetoothctl` yek barname-ye command-line ast baraye modiriyat dastgah haye Bluetooth dar Linux. Ba in dastoor mitoonid dastgah ha ro peyda konid, vasl shid, gheyre fa'al konid va etela'at dige ro ham be dast biarid.
+
+⚙️ **Gozine-ha:**
+    🔹 `bluetoothctl` --> 🚀 Ra'andazi barname va vorood be hale command-line
+    🔹 `help`  --> ❓ Namayesh rahnamaye dastoorha
+    🔹 `devices` --> 📱 List kardan dastgah haye Bluetooth peyda shode
+    🔹 `scan on` --> 📡 Shoro kardan jostojoo baraye dastgah haye Bluetooth jadid
+    🔹 `connect <mac address>` --> 🔗 Ete-sal be yek dastgah khas ba estefade az MAC address
+
+🛠 **Mesal-ha:**
+
+    $ bluetoothctl
+    [bluetooth]# devices
+
+    🔹 List kardan hame dastgah haye bluetooth peyda shode
+
+    $ bluetoothctl
+    [bluetooth]# scan on
+    [bluetooth]# connect XX:XX:XX:XX:XX:XX
+
+    🔹 Jostojoo baraye dastgah ha va motevasel shodan be yek dastgah ba MAC address moshakhas
+
+✅ **Mesal sade:**
+
+    $ bluetoothctl
+    [bluetooth]# power on
+
+    🔹 Roshan kardan Bluetooth adapter.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bluetoothctl` command is a command-line utility for managing Bluetooth devices in Linux. It allows you to discover, connect, disconnect, and obtain information about Bluetooth devices.
+
+⚙️ **Options:**
+    🔹 `bluetoothctl` --> 🚀 Launch the program and enter command-line mode
+    🔹 `help`  --> ❓ Show command help
+    🔹 `devices` --> 📱 List discovered Bluetooth devices
+    🔹 `scan on` --> 📡 Start searching for new Bluetooth devices
+    🔹 `connect <mac address>` --> 🔗 Connect to a specific device using its MAC address
+
+🛠 **Examples:**
+
+    $ bluetoothctl
+    [bluetooth]# devices
+
+    🔹 List all discovered Bluetooth devices
+
+    $ bluetoothctl
+    [bluetooth]# scan on
+    [bluetooth]# connect XX:XX:XX:XX:XX:XX
+
+    🔹 Search for devices and connect to a device with the specified MAC address
+
+✅ **Simple Example:**
+
+    $ bluetoothctl
+    [bluetooth]# power on
+
+    🔹 Turns on the Bluetooth adapter.

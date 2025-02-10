@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ctstat` baraye didan amalkarde container-ha (mesle Docker ya LXC) dar system shoma be kar mirevad. In dastoor be shoma etela'ati dar morede estefade az CPU, memory, va i/o disk container-ha midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `ctstat` --> 📊 Namayesh amalkarde hameye container-ha.
+    🔹 `ctstat -n [tedad]` --> 🔢 Namayesh `tedad` az container-haie ke bishtarin resource ra estefade mikonand.
+    🔹 `ctstat -i [interval]` --> ⏱ Update kardane etela'at har `interval` saniye.
+    🔹 `ctstat -d` --> 💽 Namayesh etela'ate disk i/o.
+
+🛠 **Mesal-ha:**
+
+    $ ctstat
+
+    🔹 Namayesh amalkarde hameye container-ha.
+
+    $ ctstat -n 5
+
+    🔹 Namayesh 5 container-haie ke bishtarin CPU ra estefade mikonand.
+
+✅ **Mesal sade:**
+
+    $ ctstat -i 2
+
+    🔹 Har 2 saniye etela'ate amalkarde container-ha update mishavad. In be shoma komak mikonad ta be tore real-time estefade az resource-ha ra moshahede konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ctstat` command is used to monitor the performance of containers (like Docker or LXC) on your system. It provides information about CPU usage, memory usage, and disk I/O of the containers.
+
+⚙️ **Options:**
+    🔹 `ctstat` --> 📊 Display the performance of all containers.
+    🔹 `ctstat -n [number]` --> 🔢 Display the top `number` of containers using the most resources.
+    🔹 `ctstat -i [interval]` --> ⏱ Update the information every `interval` seconds.
+    🔹 `ctstat -d` --> 💽 Display disk I/O information.
+
+🛠 **Examples:**
+
+    $ ctstat
+
+    🔹 Display the performance of all containers.
+
+    $ ctstat -n 5
+
+    🔹 Display the top 5 containers using the most CPU.
+
+✅ **Simple Example:**
+
+    $ ctstat -i 2
+
+    🔹 Update the container performance information every 2 seconds. This helps you to monitor resource usage in real-time.

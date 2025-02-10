@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mandb` database-haye `man` page ra update mikonad. Yani, index-e `man` page-ha ra tazeh mikonad ta vaghti ke shoma `man [dastoor]` ra mizani, `man` betoone page-e mored nazar ro peyda kone.
+
+⚙️ **Gozine-ha:**
+    🔹 `mandb -c`  --> 🔄 Database-haye ghabli ro pak mikone va az aval misaze. Age moshkeli darid, az in estefade konid.
+    🔹 `mandb -q`  --> 🤫 Hich peyghami namayesh nade, yani "quiet" bashe.
+    🔹 `mandb -d`  --> 🔍 Faghat debug kone va database ro update nakone.
+
+🛠 **Mesal-ha:**
+
+    $ sudo mandb
+
+    🔹 Database-e `man` page-ha ro update mikone ba dastresi admin.
+
+    $ sudo mandb -c
+
+    🔹 Database ro az aval misaze, baraye halle moshkelat.
+
+✅ **Mesal sade:**
+
+    $ mandb
+ 
+    🔹  Agar page man ha dorost kar nemikonad, `mandb` database ha ra update mikonad va problem ra fix mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mandb` command updates the `man` page databases. This means it refreshes the index of `man` pages so that when you type `man [command]`, `man` can find the appropriate page.
+
+⚙️ **Options:**
+    🔹 `mandb -c`  --> 🔄 Clears existing databases and recreates them from scratch. Use this if you encounter issues.
+    🔹 `mandb -q`  --> 🤫 Doesn't display any messages; operates in "quiet" mode.
+    🔹 `mandb -d`  --> 🔍 Only debugs and doesn't update the database.
+
+🛠 **Examples:**
+
+    $ sudo mandb
+
+    🔹 Updates the `man` page databases with administrator privileges.
+
+    $ sudo mandb -c
+
+    🔹 Rebuilds the databases from scratch, useful for resolving errors.
+
+✅ **Simple Example:**
+
+    $ mandb
+
+    🔹 If the man pages are not working correctly, `mandb` updates the databases and fixes the problem.

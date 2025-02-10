@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgen` (Message Generate) baraye dorost kardane payam-haye khabar dar email ya system-haye payam-resani digar be kar miravad. In dastoor be shoma komak mikonad ta payam-haye standard va yekdasti ra ba estefade az template-ha va variable-ha dorost konid.  
+
+⚙️ **Gozine-ha:**
+    🔹 `msgen -t <template_file>`  --> 📄 Estefade az yek template baraye dorost kardane payam. File template bayad format-e munasib dashte bashad.
+    🔹 `msgen -d <data_file>`  --> 💾 Daryaft-e data az file baraye por kardane variable-ha dar template. Format data bayad munasib bashad (JSON, CSV, etc.).
+    🔹 `msgen -o <output_file>` --> 📤 Save kardane payam dorost shode dar yek file. Agar in gozine estefade nashavad, payam dar terminal namayesh dade mishavad.
+    🔹 `msgen -v <variable=value>` --> 🖋️ Ta'een kardane yek variable va meghdar an dar command line. In gozine baraye por kardane variable-ha dar template be kar miravad.
+
+🛠 **Mesal-ha:**
+
+    $ msgen -t email_template.txt -d user_data.json -o welcome_email.txt
+
+    🔹 Dorost kardane yek email az template "email_template.txt" ba estefade az data dar "user_data.json" va save kardane an dar "welcome_email.txt".
+
+    $ msgen -t report_template.txt -v date=2024-01-01 -v status=complete
+
+    🔹 Dorost kardane yek report az template "report_template.txt" ba ta'een kardane meghdar variable-haye "date" va "status" az command line.
+
+✅ **Mesal sade:**
+
+    $ msgen -t hello.txt -v name=Ali
+
+    hello.txt:
+    Hello, {name}!
+
+    Output:
+    Hello, Ali!
+
+    🔹 Dar in mesal, payam "Hello, Ali!" az template "hello.txt" ba por kardane variable "name" dorost shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgen` (Message Generate) command is used to generate messages for email or other messaging systems. It helps you create standardized and consistent messages by using templates and variables.
+
+⚙️ **Options:**
+    🔹 `msgen -t <template_file>`  --> 📄 Use a template to generate the message. The template file must be in a suitable format.
+    🔹 `msgen -d <data_file>`  --> 💾 Retrieve data from a file to populate variables in the template. The data format must be suitable (JSON, CSV, etc.).
+    🔹 `msgen -o <output_file>` --> 📤 Save the generated message to a file. If this option is not used, the message is displayed in the terminal.
+    🔹 `msgen -v <variable=value>` --> 🖋️ Define a variable and its value in the command line. This option is used to populate variables in the template.
+
+🛠 **Examples:**
+
+    $ msgen -t email_template.txt -d user_data.json -o welcome_email.txt
+
+    🔹 Generate an email from the "email_template.txt" template using data from "user_data.json" and save it to "welcome_email.txt".
+
+    $ msgen -t report_template.txt -v date=2024-01-01 -v status=complete
+
+    🔹 Generate a report from the "report_template.txt" template by defining the values of the "date" and "status" variables from the command line.
+
+✅ **Simple Example:**
+
+    $ msgen -t hello.txt -v name=Ali
+
+    hello.txt:
+    Hello, {name}!
+
+    Output:
+    Hello, Ali!
+
+    🔹 In this example, the message "Hello, Ali!" is generated from the "hello.txt" template by populating the "name" variable.

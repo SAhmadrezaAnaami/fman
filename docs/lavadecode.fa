@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lavadecode` baraye bazkardan va khandan file-haye encode shode ba formate lava estefade mishavad. In dastoor be shoma komak mikonad ta etela'ate encode shode ra be halate ghabli bargardanid va be راحتی  آن را bekhanid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lavadecode <file>`  --> 🔓 File-e encode shode ra baz mikonad va neshan midahad. Agar file zyad bozorg bashad, safehe safehe neshan midahad.
+    🔹 `lavadecode -o <output_file> <input_file>`  --> 💾  File-e baz shode ra dar yek file digar zakhire mikonad.
+    🔹 `lavadecode -h`  --> ℹ️ Komak ra neshan midahad va rahnamayi mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ lavadecode file_encode_shode.lava
+
+    🔹 File-e `file_encode_shode.lava` ra baz mikonad va etela'at ra dar terminal neshan midahad.
+
+    $ lavadecode -o file_baz_shode.txt file_encode_shode.lava
+
+    🔹 File-e `file_encode_shode.lava` ra baz mikonad va etela'at ra dar file-e `file_baz_shode.txt` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ lavadecode salam.lava
+
+    🔹 Agar file-e `salam.lava` encode shode bashad va etela'at آن "Hello, World!" bashad, dastoor  "Hello, World!" ra dar terminal neshan midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lavadecode` command is used to decode and read files encoded in the Lava format. This command helps you to revert encoded information to its original state and easily read it.
+
+⚙️ **Options:**
+    🔹 `lavadecode <file>`  --> 🔓 Opens and displays the encoded file. If the file is very large, it displays it page by page.
+    🔹 `lavadecode -o <output_file> <input_file>`  --> 💾 Saves the decoded file to another file.
+    🔹 `lavadecode -h`  --> ℹ️ Displays help information and provides guidance.
+
+🛠 **Examples:**
+
+    $ lavadecode encoded_file.lava
+
+    🔹 Opens the `encoded_file.lava` file and displays the information in the terminal.
+
+    $ lavadecode -o decoded_file.txt encoded_file.lava
+
+    🔹 Opens the `encoded_file.lava` file and saves the information to the `decoded_file.txt` file.
+
+✅ **Simple Example:**
+
+    $ lavadecode hello.lava
+
+    🔹 If the file `hello.lava` is encoded and its content is "Hello, World!", the command will display "Hello, World!" in the terminal.

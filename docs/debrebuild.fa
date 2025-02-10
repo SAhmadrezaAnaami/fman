@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debrebuild` baraye bazsaazi ya dobare compile kardan yek source package Debian estefade mishavad. In dastoor be shoma ejazeh midahad ke yek .deb file az source package asli besazid, baraye tagheer dadan option-haye compile ya debug kardan.
+
+⚙️ **Gozine-ha:**
+    🔹 `debrebuild fele_package.dsc` --> 📦 Bazsaazi package az file .dsc.
+    🔹 `debrebuild -uc fele_package.dsc` --> 🚫 Impure build (az etefaghat gheyre ghabele pishbini jelogiri mikonad).
+    🔹 `debrebuild -b` --> 🔨 Bazsaazi binary package, na source package.
+
+🛠 **Mesal-ha:**
+
+    $ debrebuild hello_1.0-1.dsc
+
+    🔹 Bazsaazi package "hello" az file descriptor.
+
+    $ debrebuild -uc hello_1.0-1.dsc
+
+    🔹 Bazsaazi impure package "hello" .
+
+✅ **Mesal sade:**
+
+    $ debrebuild mypackage_1.2.3.dsc
+
+    🔹 Dastoor `debrebuild` package "mypackage" ra az file .dsc dobare misazad va .deb file jadid ra dar directory jelen میگذارad. Agar tagheerati dar source code dade bashid, in tagheerat dar .deb file jadid انعکاس مییابد.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debrebuild` command is used to rebuild or recompile a Debian source package. It allows you to create a .deb file from the original source package, often to modify compilation options or for debugging purposes.
+
+⚙️ **Options:**
+    🔹 `debrebuild package_name.dsc` --> 📦 Rebuild the package from the .dsc file.
+    🔹 `debrebuild -uc package_name.dsc` --> 🚫 Perform an "unclean" build (avoids unpredictable behavior).
+    🔹 `debrebuild -b` --> 🔨 Build a binary package, not the source package.
+
+🛠 **Examples:**
+
+    $ debrebuild hello_1.0-1.dsc
+
+    🔹 Rebuilds the "hello" package from its descriptor file.
+
+    $ debrebuild -uc hello_1.0-1.dsc
+
+    🔹 Rebuilds the "hello" package performing unclean build.
+
+✅ **Simple Example:**
+
+    $ debrebuild mypackage_1.2.3.dsc
+
+    🔹 The `debrebuild` command rebuilds the "mypackage" package from its .dsc file and places the newly built .deb file in the current directory. If you have made changes to the source code, these changes will be reflected in the new .deb file.
+

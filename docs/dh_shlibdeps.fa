@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_shlibdeps` baraye sakhtan dependency-haye shared library (shlib) dar pakage Debian estefade mishavad. Yani in dastoor dependencies lazem baraye ejraye dorost library-haye share shoma ro moshakhas mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `-L directory` --> 📁 Ezafe kardane yek directory be list-e search baraye library-ha.
+    🔹 `-X item`      --> 🚫 Item-haye khas ra az process dependency gereftan exclude mikonad. Item mitavanad filename ya path bashad.
+    🔹 `--dpkg-shlibdeps-options=options` --> ⚙️ Gozine-ha ra mostaghiman be `dpkg-shlibdeps` pass midahad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_shlibdeps
+
+    🔹 Run kardan dastoor be soorate default baraye sakhte dependency-haye library-ha.
+
+    $ dh_shlibdeps -L /opt/my-libs
+
+    🔹  Ezafe kardane `/opt/my-libs` be list-e search baraye peyda kardane library-ha.
+
+✅ **Mesal sade:**
+
+    $ dh_shlibdeps -X libfoo.so.1
+
+    🔹 Az dependency gereftan file `libfoo.so.1` exclude mikonad. In dar vaghti ke lib shoma be soorate khassi handle shode estefade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_shlibdeps` command is used to generate shared library (shlib) dependencies for Debian packages.  It identifies the dependencies required for your shared libraries to function correctly.
+
+⚙️ **Options:**
+    🔹 `-L directory` --> 📁 Add a directory to the library search path.
+    🔹 `-X item`      --> 🚫 Exclude specific items from dependency generation. The item can be a filename or path.
+    🔹 `--dpkg-shlibdeps-options=options` --> ⚙️ Pass options directly to `dpkg-shlibdeps`.
+
+🛠 **Examples:**
+
+    $ dh_shlibdeps
+
+    🔹 Run the command with default settings to generate library dependencies.
+
+    $ dh_shlibdeps -L /opt/my-libs
+
+    🔹 Add `/opt/my-libs` to the library search path when looking for dependencies.
+
+✅ **Simple Example:**
+
+    $ dh_shlibdeps -X libfoo.so.1
+
+    🔹 Exclude the file `libfoo.so.1` from dependency generation. This is useful when your library is handled in a special way.

@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `espdiff` baraye moghayese kardan file-haye ESP (Electronic System Protection) estefade mishavad. In dastoor be shoma komak mikonad ta tafavot-ha ra dar configuration-ha ya dastoorat be kar rafte dar system-haye ESP peyda konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `espdiff file1 file2` --> 📂 Moghayese do file ESP va namayesh tafavot-ha.
+    🔹 `espdiff -i file1 file2` --> 👓 Ignore kardan fargh-haye case (bozorgi va kuchiki horoof) dar moghayese.
+    🔹 `espdiff -w file1 file2` --> 🗑 Ignore kardan space-haye zaed (whitespace) dar moghayese.
+    🔹 `espdiff -s file1 file2` --> 🤫 Namayesh faghat resume moghayese bedune etela’at tafsili.
+
+🛠 **Mesal-ha:**
+
+    $ espdiff config1.esp config2.esp
+
+    🔹 Moghayese file-haye `config1.esp` va `config2.esp` va namayesh tafavot-ha.
+
+    $ espdiff -i settings.esp new_settings.esp
+
+    🔹 Moghayese `settings.esp` va `new_settings.esp` ba ignore kardan fargh-haye case.
+
+✅ **Mesal sade:**
+
+    $ espdiff -s old.esp current.esp
+
+    🔹 Namayesh faghat resume moghayese file-haye `old.esp` va `current.esp`, baraye didan chand ta fargh asasi vojood dare.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `espdiff` command is used to compare ESP (Electronic System Protection) files. This command helps you find differences in configurations or commands used in ESP systems.
+
+⚙️ **Options:**
+    🔹 `espdiff file1 file2` --> 📂 Compare two ESP files and display the differences.
+    🔹 `espdiff -i file1 file2` --> 👓 Ignore case differences during comparison.
+    🔹 `espdiff -w file1 file2` --> 🗑 Ignore whitespace differences during comparison.
+    🔹 `espdiff -s file1 file2` --> 🤫 Show only the summary of the comparison without detailed information.
+
+🛠 **Examples:**
+
+    $ espdiff config1.esp config2.esp
+
+    🔹 Compare the files `config1.esp` and `config2.esp` and display the differences.
+
+    $ espdiff -i settings.esp new_settings.esp
+
+    🔹 Compare `settings.esp` and `new_settings.esp` ignoring case differences.
+
+✅ **Simple Example:**
+
+    $ espdiff -s old.esp current.esp
+
+    🔹 Display only the summary of the comparison between `old.esp` and `current.esp` files, to quickly see how many significant differences exist.
+

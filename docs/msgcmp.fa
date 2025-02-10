@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `msgcmp` do ta file `.po` ra ba ham moghayese mikonad va check mikonad aya hameye string haye `msgid` dar har do file yeksan hastand ya na. In dastoor be khusus baraye check kardane tarjome ha (translations) dar project haye software estefade mishavad. Age file-ha fargh dashte bashand, `msgcmp` error mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `--verbose` --> 🗣️ Namayeshe etela'ate bishtar dar morede natije moghayese.
+    🔹 `--quiet`   --> 🤫 Namayesh nadadane payam-haye khata (error messages), faghat natije final.
+    🔹 `--ignore-case` --> 🔡 Horoofe bozorg va koochak ra dar moghayese nadeede gereftan.
+
+🛠 **Mesal-ha:**
+
+    $ msgcmp file1.po file2.po
+
+    🔹 Moghayese do file `file1.po` va `file2.po`. Age farghi nabashe, chizi namayesh dade nemishavad.
+
+    $ msgcmp --verbose file_farsi.po file_english.po
+
+    🔹 Moghayese ba etela'ate bishtar dar morede har fargh.
+
+✅ **Mesal sade:**
+
+    $ msgcmp myapp_fa.po myapp_en.po
+
+    🔹 Age `myapp_fa.po` tarjome farsi bashe va `myapp_en.po` file asli bashe, in dastoor check mikonad ke hameye string haye asli dar file farsi ham bashand. Age nabashe, error mide va esme string-haee ke vojood nadaran ro namayesh mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `msgcmp` command compares two `.po` files to verify if all `msgid` strings are identical in both files. It is commonly used to check translations in software projects. If the files differ, `msgcmp` reports an error.
+
+⚙️ **Options:**
+    🔹 `--verbose` --> 🗣️ Display more detailed information about the comparison result.
+    🔹 `--quiet`   --> 🤫 Suppress error messages, showing only the final result.
+    🔹 `--ignore-case` --> 🔡 Ignore case differences during comparison.
+
+🛠 **Examples:**
+
+    $ msgcmp file1.po file2.po
+
+    🔹 Compare the two files `file1.po` and `file2.po`. If they are identical, nothing is displayed.
+
+    $ msgcmp --verbose myapp_fa.po myapp_en.po
+
+    🔹 Compare with more detailed information about any differences.
+
+✅ **Simple Example:**
+
+    $ msgcmp myapp_fa.po myapp_en.po
+
+    🔹 If `myapp_fa.po` is the Persian translation and `myapp_en.po` is the original file, this command checks if all original strings are present in the Persian translation file. It reports an error and lists the missing strings if there are any.

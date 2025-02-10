@@ -1,0 +1,64 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_install` baraye copy kardan file-ha be jaye dorost dar build directory estefade mishavad. In dastoor qesmati az `debhelper` ast ke dar dorost kardan package-haye Debian komak mikonad.  `dh_install` be shoma ejaze midahad file-ha ra az source directory be directory ke package shoma dar an sakhte mishavad (staged install directory) move konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `-p PACKAGE` --> 📦  Moshakhas kardane package-i ke file-ha bayad dar an install shavand. Agar shoma chand package binary dorost mikonid, in kheili mohem ast.
+    🔹 `-XITEM` --> 🚫  Exclude kardane file-ha ya pooshe-hai ke nemikhahid install shavand.  `ITEM` mitavanad yek pattern bashad.
+    🔹 `--list-missing` --> 🔍  Namayesh dadane error agar hich file-i install nashavad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_install
+    
+    🔹 Copy kardane file-hai ke name anha ba "install" dar akhar tamom mishavad (masalan `debian/install`), va file-ha ra be jaye monaseb copy mikonad.
+
+    $ dh_install -p mypackage
+    
+    🔹  File-ha ra faghat dar package binary `mypackage` install mikonad.
+
+    $ dh_install -X README
+    
+    🔹 Harchizi ra install mikonad joz file-i ba name README.
+
+✅ **Mesal sade:**
+
+    $ dh_install -p mypackage doc/mypackage.txt /usr/share/doc/mypackage/
+    
+    🔹  File `doc/mypackage.txt` ra az source tree be `/usr/share/doc/mypackage/` dar package `mypackage` copy mikonad.  Bayad hatman ghabl az `dh_install` directory `/usr/share/doc/mypackage/` sakhte shode bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_install` command is used to copy files to the correct locations in the build directory. It is part of `debhelper`, which assists in building Debian packages. `dh_install` allows you to move files from your source directory to the directory where your package is being built (the staged install directory).
+
+⚙️ **Options:**
+    🔹 `-p PACKAGE` --> 📦  Specifies the package in which the files should be installed. This is important if you are building multiple binary packages.
+    🔹 `-XITEM` --> 🚫  Excludes files or directories that you do not want to install. `ITEM` can be a pattern.
+    🔹 `--list-missing` --> 🔍  Show an error if no files are installed.
+
+🛠 **Examples:**
+
+    $ dh_install
+    
+    🔹 Copies files whose names end in "install" (e.g., `debian/install`), and copies the files to their appropriate locations.
+
+    $ dh_install -p mypackage
+    
+    🔹  Installs files only in the binary package `mypackage`.
+
+    $ dh_install -X README
+    
+    🔹 Installs everything except the file named README.
+
+✅ **Simple Example:**
+
+    $ dh_install -p mypackage doc/mypackage.txt /usr/share/doc/mypackage/
+    
+    🔹 Copies the file `doc/mypackage.txt` from the source tree to `/usr/share/doc/mypackage/` within the `mypackage` package. Note that the directory `/usr/share/doc/mypackage/` must already exist before running `dh_install`.

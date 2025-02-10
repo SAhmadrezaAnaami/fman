@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lzmainfo` baraye gereftan etela'at az file-haye lzma (LZMA) estefade mishavad. In dastoor be shoma komak mikonad ta bedanid file cheghadr feshorse shode, va digar moshakhasat file ra bebinid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lzmainfo <file.lzma>` --> ℹ️ Namayesh etela'ate asasi darbareye file.
+    🔹 `lzmainfo -v <file.lzma>` --> 🗣️ Namayesh etela'ate bishtar va tafsilitar.
+
+🛠 **Mesal-ha:**
+
+    $ lzmainfo myfile.lzma
+
+    🔹 Namayesh etela'at darbareye file `myfile.lzma`.
+
+    $ lzmainfo -v archive.lzma
+
+    🔹 Namayesh etela'ate tafsilitar darbareye `archive.lzma`.
+
+✅ **Mesal sade:**
+
+    $ lzmainfo compressed.lzma
+    compressed.lzma: LZMA compressed data, properties 0x5d, dictionary size 8388608 bytes, EOI marker
+
+    🔹 In mesal neshon midahad ke file `compressed.lzma` ba format LZMA feshorse shode ast, va moshakhasati mesle size dictionary va EOI marker ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lzmainfo` command is used to extract information from LZMA (Lempel-Ziv-Markov chain Algorithm) compressed files. It helps you determine compression details and other file characteristics.
+
+⚙️ **Options:**
+    🔹 `lzmainfo <file.lzma>` --> ℹ️ Display basic information about the file.
+    🔹 `lzmainfo -v <file.lzma>` --> 🗣️ Display more detailed and verbose information.
+
+🛠 **Examples:**
+
+    $ lzmainfo myfile.lzma
+
+    🔹 Show information about the file `myfile.lzma`.
+
+    $ lzmainfo -v archive.lzma
+
+    🔹 Show more detailed information about the `archive.lzma` archive.
+
+✅ **Simple Example:**
+
+    $ lzmainfo compressed.lzma
+    compressed.lzma: LZMA compressed data, properties 0x5d, dictionary size 8388608 bytes, EOI marker
+
+    🔹 This example shows that the file `compressed.lzma` is compressed using the LZMA format, displaying properties such as the dictionary size and End-of-Input (EOI) marker.

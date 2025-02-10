@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_installemacsen` baraye nasb-e file-haye `*.el` (Emacs Lisp) dar pakej-haye Debian estefade mishavad. In dastoor etminan hosel mikonad ke file-ha be dorosti dar jaye monaseb copy shode va compile mishavand. Dar vaghe `dh_installemacsen` joz'i az majmooe dastoorhaye `debhelper` baraye sakht-e pakej-haye Debian ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--sourcedir dir` --> 📁 Directory ke file-haye manba `*.el` dar an gharar darand. Agar zekr nashavad, az `debian/tmp` estefade mikonad.
+    🔹 `--destdir dir` --> 🎯 Directory ke file-haye Emacs Lisp dar an copy mishavand. Be soorat pishfarz, `/usr/share/emacs/site-lisp/package-name` ast.
+    🔹 `--package package` --> 📦 Esme pakeji ke file-haye Emacs Lisp be an ta'alogh darand. Agar zekr nashavad, az esme pakeji ke `debian/control` darad estefade mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ dh_installemacsen --sourcedir=emacs/my-package --package=my-package
+
+    🔹 In dastoor file-haye `*.el` ra az directory `emacs/my-package` copy va compile mikonad va dar directory `/usr/share/emacs/site-lisp/my-package` gharar midahad.
+
+    $ dh_installemacsen --destdir=/usr/local/share/emacs/site-lisp
+
+    🔹 In dastoor file-haye `*.el` ra dar directory `/usr/local/share/emacs/site-lisp` copy va compile mikonad. Esme pakej az `debian/control` khande mishavad.
+
+✅ **Mesal sade:**
+
+    $ dh_installemacsen
+
+    🔹 Agar hich gozine-i zekr nashavad, file-haye `*.el` az `debian/tmp` copy va compile mishavand va be soorat pishfarz dar directory `/usr/share/emacs/site-lisp/package-name` (esme pakej az `debian/control` gerefte mishavad) gharar migirand. Agar dar hal sakht-e yek pakej Emacs bashid, `dh_installemacsen` be shoma komak mikonad ke file-haye mored niaz ra be dorosti dar jaye monaseb gharar dahid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_installemacsen` command is used to install `*.el` (Emacs Lisp) files in Debian packages. This command ensures that the files are properly copied to the appropriate location and compiled.  It is part of the `debhelper` suite for building Debian packages.
+
+⚙️ **Options:**
+    🔹 `--sourcedir dir` --> 📁 The directory where the source `*.el` files are located. If not specified, it uses `debian/tmp`.
+    🔹 `--destdir dir` --> 🎯 The directory where the Emacs Lisp files will be copied. By default, it's `/usr/share/emacs/site-lisp/package-name`.
+    🔹 `--package package` --> 📦 The name of the package to which the Emacs Lisp files belong. If not specified, it uses the package name from `debian/control`.
+
+🛠 **Examples:**
+
+    $ dh_installemacsen --sourcedir=emacs/my-package --package=my-package
+
+    🔹 This command copies and compiles the `*.el` files from the `emacs/my-package` directory and places them in the `/usr/share/emacs/site-lisp/my-package` directory.
+
+    $ dh_installemacsen --destdir=/usr/local/share/emacs/site-lisp
+
+    🔹 This command copies and compiles the `*.el` files into the `/usr/local/share/emacs/site-lisp` directory. The package name is read from `debian/control`.
+
+✅ **Simple Example & Explanation:**
+
+    $ dh_installemacsen
+
+    🔹 If no options are specified, the `*.el` files are copied and compiled from `debian/tmp` and placed by default in the `/usr/share/emacs/site-lisp/package-name` directory (the package name is taken from `debian/control`). If you are building an Emacs package, `dh_installemacsen` helps you properly install the required files in the right place.

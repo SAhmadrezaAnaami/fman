@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `basenc` baraye encode ya decode kardan data az base16, base32, ya base64 estefade mishavad. Yani mitavanid data ra be shekli tabdil konid ke safe bashad baraye enteqal dar internet ya negahdari.
+
+⚙️ **Gozine-ha:**
+    🔹 `basenc -e`  --> ➡️ Encode kardan data.
+    🔹 `basenc -d`  --> ⬅️ Decode kardan data.
+    🔹 `basenc -w[length]` --> 📦 Har chand karakter yek line jadid bezar (wraps). masalan `basenc -w76`.
+    🔹 `basenc -b[bits]` --> 🔢 Bits per symbol ra moshakhas mikonad.  Agar moshakhas nashavad az default estefade mishavad (8 bits baraye base64).
+
+🛠 **Mesal-ha:**
+
+    $ echo "Salam Donya" | basenc -e
+
+    🔹 "Salam Donya" ra encode mikonad be shekle base64.
+
+    $ echo "U2FsYW0gRG9ueWEK" | basenc -d
+
+    🔹  String-e base64 shode ra decode mikonad va natije asli ra chap mikonad.
+
+✅ **Mesal sade:**
+
+    $ echo "Hello" | basenc -e | basenc -d
+
+    🔹 "Hello" ra encode mikonad va badash decode mikonad, dar natije dobare "Hello" chap mishavad.  In mesal neshon midahad encode va decode chetor kar mikonand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `basenc` command is used to encode or decode data using base16, base32, or base64 encoding schemes. This allows you to convert data into a safe format for transmission over the internet or for storage.
+
+⚙️ **Options:**
+    🔹 `basenc -e`  --> ➡️ Encode data.
+    🔹 `basenc -d`  --> ⬅️ Decode data.
+    🔹 `basenc -w[length]` --> 📦 Wrap encoded output after a specified number of characters, e.g., `basenc -w76`.
+    🔹 `basenc -b[bits]` --> 🔢 Specifies the number of bits per symbol.  If unspecified, it uses the default (8 bits for base64).
+
+🛠 **Examples:**
+
+    $ echo "Hello World" | basenc -e
+
+    🔹 Encodes "Hello World" into base64.
+
+    $ echo "SGVsbG8gV29ybGQK" | basenc -d
+
+    🔹 Decodes the base64 string and prints the original string.
+
+✅ **Simple Example:**
+
+    $ echo "Hello" | basenc -e | basenc -d
+
+    🔹 Encodes "Hello" and then immediately decodes it, resulting in "Hello" being printed. This demonstrates a simple encode/decode cycle.

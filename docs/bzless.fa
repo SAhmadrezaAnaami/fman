@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `bzless` mesle `less` amal mikonad, amma baraye file-haye `bzip2` shode (compressed) be kar miravad. Yani file-haye ba پسوند `.bz2` ra bedune inke az halate فشردگی kharej konid, mitavanid bebinid va dakhele anha جستجو konid.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khas nadarad va az haman gozine-haye `less` estefade mikonad. Masalan:
+        🔸 `bzless +F filename.bz2`  -->  🔄 File ra baz negah midarad va agar e تغییر kone, be rooz mishavad (mesle `tail -f`).
+        🔸 `bzless -N filename.bz2`  -->  🔢 Shomare khat-ha ra namayesh midahad.
+        🔸 `bzless /search_term filename.bz2` -->  🔍 Dar file دنبال `search_term` migardad.
+
+🛠 **Mesal-ha:**
+
+    $ bzless myfile.bz2
+
+    🔹  File `myfile.bz2` ra baz mikonad va shoma mitavanid an ra bebinid va بالا و پایین beravid.
+
+    $ bzless logfile.log.bz2 | grep error
+
+    🔹  File `logfile.log.bz2` ra baz mikonad, va khat-hayi ke `error` darand ra filter mikonad va namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ bzless my_archive.tar.bz2
+
+    🔹 Agar file `my_archive.tar.bz2` ra baz konid, content-haye dakhele an ra mesle yek file matni khahید did, va mitavanid dar an جستجو konid, bedune inke نیاز bashad az halate فشردگی kharejash konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `bzless` command works like `less`, but it's designed for `bzip2` compressed files. This means you can view and search inside files with the `.bz2` extension without having to decompress them first.
+
+⚙️ **Options:**
+    🔹 It doesn't have specific options and uses the same options as `less`. For example:
+        🔸 `bzless +F filename.bz2`  -->  🔄 Keeps the file open and updates if it changes (like `tail -f`).
+        🔸 `bzless -N filename.bz2`  -->  🔢 Displays line numbers.
+        🔸 `bzless /search_term filename.bz2` -->  🔍 Searches for `search_term` within the file.
+
+🛠 **Examples:**
+
+    $ bzless myfile.bz2
+
+    🔹 Opens the `myfile.bz2` file and allows you to view and navigate through it.
+
+    $ bzless logfile.log.bz2 | grep error
+
+    🔹 Opens the `logfile.log.bz2` file, filters the lines that contain `error`, and displays them.
+
+✅ **Simple Example:**
+
+    $ bzless my_archive.tar.bz2
+
+    🔹 If you open the `my_archive.tar.bz2` file, you will see its contents as if it were a text file, and you can search within it without needing to decompress it.

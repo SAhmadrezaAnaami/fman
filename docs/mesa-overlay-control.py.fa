@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mesa-overlay-control.py` baraye tagheer dadan (change) ya kontorol kardan (control) overlay-haye Mesa estefade mishavad. Overlay-ha etela'at (information) rooye bazi (game) ya barname (application) namayesh midahand, mesle frame rate (me'dadel frame) ya estefade az GPU (GPU usage). In dastoor be shoma komak mikonad ta in etela'at ra fa'al ya gheyr fa'al konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--toggle-fps` --> 🔄 Namayesh ya panhan kardan me'dadel frame (FPS). Har bar ejra konid, vaz'iyat FPS avaz mishavad.
+    🔹 `--toggle-gpu-load` --> 📊 Namayesh ya panhan kardan darsad estefade az GPU.
+    🔹 `--show-fps` --> ✅ FPS ra namayesh midahad.
+    🔹 `--hide-fps` --> 🚫 FPS ra panhan mikonad.
+    🔹 `--show-gpu-load` --> ✅ Darsad estefade az GPU ra namayesh midahad.
+    🔹 `--hide-gpu-load` --> 🚫 Darsad estefade az GPU ra panhan mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ mesa-overlay-control.py --toggle-fps
+
+    🔹 FPS Overlay ra fa'al ya gheyr fa'al mikonad.
+
+    $ mesa-overlay-control.py --show-gpu-load
+
+    🔹 Darsad estefade az GPU ra namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ mesa-overlay-control.py --toggle-fps --toggle-gpu-load
+
+    🔹 Ham FPS va ham darsad estefade az GPU ra fa'al ya gheyr fa'al mikonad. Agar FPS namayesh dade mishavad, panhan mishavad, va agar panhan ast, namayesh dade mishavad. Hamintor baraye darsad estefade az GPU.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mesa-overlay-control.py` command is used to change or control Mesa overlays. Overlays display information on top of a game or application, such as frame rate (FPS) or GPU usage. This command allows you to enable or disable these overlays.
+
+⚙️ **Options:**
+    🔹 `--toggle-fps` --> 🔄 Toggle the display of frames per second (FPS). Each execution switches the FPS status.
+    🔹 `--toggle-gpu-load` --> 📊 Toggle the display of GPU usage percentage.
+    🔹 `--show-fps` --> ✅ Show the FPS overlay.
+    🔹 `--hide-fps` --> 🚫 Hide the FPS overlay.
+    🔹 `--show-gpu-load` --> ✅ Show the GPU usage percentage overlay.
+    🔹 `--hide-gpu-load` --> 🚫 Hide the GPU usage percentage overlay.
+
+🛠 **Examples:**
+
+    $ mesa-overlay-control.py --toggle-fps
+
+    🔹 Toggles the FPS overlay on or off.
+
+    $ mesa-overlay-control.py --show-gpu-load
+
+    🔹 Shows the GPU usage percentage overlay.
+
+✅ **Simple Example:**
+
+    $ mesa-overlay-control.py --toggle-fps --toggle-gpu-load
+
+    🔹 Toggles both the FPS and GPU usage overlays. If FPS is currently shown, it will be hidden, and vice versa.  The same applies to GPU usage.

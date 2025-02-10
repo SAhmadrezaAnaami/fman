@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `edit` (ya `nano`, `vim`, etc.) baraye baz kardan va tagheer dadan file-ha-ye matni (text files) estefade mishavad.  Agar dastoor `edit` be tore mostaghim kar nakard, az `nano`, `vim`, ya `emacs` estefade konid. In dastoor-ha ham kargar hastand vali shayad dastoor-ha-ye bishtari dashte bashand.
+
+⚙️ **Gozine-ha:**
+    🔹 `edit filename` --> 📝 Baz kardane file ba name `filename`.
+    🔹 `nano filename` --> 🚀 Baz kardane file ba estefade az `nano`, yek virayeshgar-e sade.
+    🔹 `vim filename` --> 🛠️ Baz kardane file ba estefade az `vim`, yek virayeshgar-e pishrafte (advanced).
+
+🛠 **Mesal-ha:**
+
+    $ edit myfile.txt
+
+    🔹 Baz kardane file-e `myfile.txt` baraye virayesh.
+
+    $ nano newfile.txt
+
+    🔹 Baz kardane file-e jadid `newfile.txt` baraye virayesh ba `nano`. Agar file vojood nadashte bashad, `nano` aan ra misazad.
+
+✅ **Mesal sade:**
+
+    $ edit config.txt
+    (ya $ nano config.txt)
+
+    🔹 Baz kardane file-e `config.txt` baraye tagheer dadane tanzeemaat (settings).  Pas az virayesh, tagheerat ra zakhire (save) va az virayeshgar kharej shavid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `edit` command (or `nano`, `vim`, etc.) is used to open and modify text files. If the `edit` command doesn't work directly, use `nano`, `vim`, or `emacs`. These are editors that accomplish the same task but might have more features.
+
+⚙️ **Options:**
+    🔹 `edit filename` --> 📝 Open the file named `filename`.
+    🔹 `nano filename` --> 🚀 Open the file using `nano`, a simple editor.
+    🔹 `vim filename` --> 🛠️ Open the file using `vim`, an advanced editor.
+
+🛠 **Examples:**
+
+    $ edit myfile.txt
+
+    🔹 Open the file `myfile.txt` for editing.
+
+    $ nano newfile.txt
+
+    🔹 Open a new file `newfile.txt` for editing using `nano`. If the file doesn't exist, `nano` will create it.
+
+✅ **Simple Example:**
+
+    $ edit config.txt
+    (or $ nano config.txt)
+
+    🔹 Open the file `config.txt` to change the settings. After editing, save the changes and exit the editor.
+

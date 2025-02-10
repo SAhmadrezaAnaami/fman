@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fincore` baraye didan page cache file-ha estefade mishavad. Yani neshon mideh ke cheghadr az yek file dar memory RAM cache shode ast. In dastoor be shoma komak mikoneh ta dark konid kodoom file-ha bishtar estefade mishavand va performance system-ra behbood bebakhshid.
+
+⚙️ **Gozine-ha:**
+    🔹 `fincore FILE`  --> 📄 Check kardan cache status yek file khas.
+    🔹 `fincore -p PID FILE` --> 🔎 Check kardan cache status file'haei ke yek process (ba ID PID) estefade mikonad.
+    🔹 `fincore -n`      --> 🚫 Neshon nadadan filename dar output.
+    🔹 `fincore -z`      --> 📊 Neshon dadan statistiki az cache dar akhar kar.
+
+🛠 **Mesal-ha:**
+
+    $ fincore my_large_file.dat
+
+    🔹 Neshon dadan block-haei az `my_large_file.dat` ke dar page cache hastand.
+
+    $ fincore -p 1234 /path/to/file
+
+    🔹 Check kardan cache status file `/path/to/file` ke process ba PID 1234 estefade mikonad.
+
+✅ **Mesal sade:**
+
+    $ fincore small.txt
+    small.txt: 0/1 pages cached, 0 bytes cached
+
+    🔹 In yani az file `small.txt`, ke 1 page (block) dare, hich kodoom dar cache nistand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fincore` command is used to check the page cache usage of files.  It shows how much of a file is currently cached in RAM. This command helps you understand which files are frequently accessed and optimize system performance.
+
+⚙️ **Options:**
+    🔹 `fincore FILE`  --> 📄 Check the cache status of a specific file.
+    🔹 `fincore -p PID FILE` --> 🔎 Check the cache status of a file used by a process (with ID PID).
+    🔹 `fincore -n`      --> 🚫 Suppress printing the filename in the output.
+    🔹 `fincore -z`      --> 📊 Show summary statistics of cache usage at the end.
+
+🛠 **Examples:**
+
+    $ fincore my_large_file.dat
+
+    🔹 Show which blocks of `my_large_file.dat` are in the page cache.
+
+    $ fincore -p 1234 /path/to/file
+
+    🔹 Check the cache status of `/path/to/file` being used by process with PID 1234.
+
+✅ **Simple Example:**
+
+    $ fincore small.txt
+    small.txt: 0/1 pages cached, 0 bytes cached
+
+    🔹 This means that out of the file `small.txt`, which has 1 page (block), none of them are currently cached.

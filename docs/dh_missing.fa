@@ -1,0 +1,68 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dh_missing` yek dastoor dar sakht package-haye Debian ast. In dastoor check mikonad aya file-haye mored niaz baraye package dar jay-e khod hastand ya na. Agar file-i kam bashad, khatayi neshan midahad ta shoma an ra dorost konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--list-missing` --> 📜 List-e hameye file-haye kam shode ra namayesh midahad vali package ra nemishkanad (fail nemikonad).
+    🔹 `--fail-missing`  --> 👀 Agar file-i kam bashad, sakht package ra motavaqef mikonad ba error.  In halat pishfarz ast.
+    🔹 `--exclude file`  --> 🚫 File ya directory ra az check kardan kenar migozarad.  Mishe chand bar estefade kard.
+
+🛠 **Mesal-ha:**
+
+    $ dh_missing
+
+    🔹 Run shodan `dh_missing` ba gozine haye pishfarz. Agar file-i kam bashad, error midehad va sakht package ra motavaqef mikonad.
+
+    $ dh_missing --list-missing
+
+    🔹 List file-haye kam shode ra namayesh midahad ama package ra nemishkanad.
+
+    $ dh_missing --exclude usr/share/doc/mypackage/TODO
+
+    🔹 File "usr/share/doc/mypackage/TODO" ra az check kardan kenar migozarad.
+
+✅ **Mesal sade:**
+
+    $ dh_missing
+    dh_missing: Missing the following files:
+        debian/mypackage.install
+
+    🔹 In peyghom neshan midahad ke file "debian/mypackage.install" vojod nadarad va bayad sakhte shavad ya ezafe shavad ta package dorost sakhte shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dh_missing` command is a Debian package building tool that checks for missing files required by the package. If a required file is missing, it will report an error to ensure that you fix it.
+
+⚙️ **Options:**
+    🔹 `--list-missing` --> 📜 Lists all missing files but does not cause the package build to fail.
+    🔹 `--fail-missing`  --> 👀 If a file is missing, halts the package build with an error. This is the default behavior.
+    🔹 `--exclude file`  --> 🚫 Excludes a file or directory from being checked. Can be used multiple times.
+
+🛠 **Examples:**
+
+    $ dh_missing
+
+    🔹 Runs `dh_missing` with default options.  If any files are missing, it will return an error and halt the package build.
+
+    $ dh_missing --list-missing
+
+    🔹 Lists the missing files but does not cause the package build to fail.
+
+    $ dh_missing --exclude usr/share/doc/mypackage/TODO
+
+    🔹 Excludes the file "usr/share/doc/mypackage/TODO" from being checked.
+
+✅ **Simple Example:**
+
+    $ dh_missing
+    dh_missing: Missing the following files:
+        debian/mypackage.install
+
+    🔹 This message indicates that the file "debian/mypackage.install" is missing and needs to be created or added for the package to build successfully.

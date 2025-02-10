@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lowntfs-3g` baraye nasb kardan (mount) partition-haye NTFS (file system-e Windows) ba estefade az NTFS-3G driver be kar miravad. Ba in dastoor, shoma mitavanid file-ha va pooshe-haye mojood dar partition-haye Windows ra dar Linux dastresi dashte bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 `lowntfs-3g /dev/sda1 /mnt/windows`  --> 📁 Nasb partition-e `sda1` dar directory `/mnt/windows`.
+    🔹 `lowntfs-3g -o ro /dev/sda1 /mnt/windows` --> 🔒 Nasb partition be soorat faghat khandan (read-only).
+    🔹 `lowntfs-3g -o uid=1000 /dev/sda1 /mnt/windows` --> 👤 Tagheer daadan ezaf kardan user ID baraye dastresi be file ha.
+
+🛠 **Mesal-ha:**
+
+    $ sudo lowntfs-3g /dev/sda1 /mnt/windows
+
+    🔹 Nasb partition-e NTFS az `sda1` dar `/mnt/windows`.
+
+    $ sudo lowntfs-3g -o ro /dev/sdb2 /mnt/data
+
+    🔹 Nasb partition-e NTFS az `sdb2` be soorat faghat khandan dar `/mnt/data`.
+
+✅ **Mesal sade:**
+
+    $ sudo lowntfs-3g /dev/sda1 /mnt/win && ls /mnt/win
+
+    🔹 Nasb partition va namayeshe file-haye dakhel an. Agar dastoor `ls` file-ha ra namayesh dahad, yani nasb ba movafaghiat anjam shode ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lowntfs-3g` command is used to mount NTFS partitions (Windows file system) using the NTFS-3G driver.  With this command, you can access files and directories located on Windows partitions in Linux.
+
+⚙️ **Options:**
+    🔹 `lowntfs-3g /dev/sda1 /mnt/windows` --> 📁 Mount the `sda1` partition to the `/mnt/windows` directory.
+    🔹 `lowntfs-3g -o ro /dev/sda1 /mnt/windows` --> 🔒 Mount the partition as read-only.
+    🔹 `lowntfs-3g -o uid=1000 /dev/sda1 /mnt/windows` --> 👤 Change the user ID for file access.
+
+🛠 **Examples:**
+
+    $ sudo lowntfs-3g /dev/sda1 /mnt/windows
+
+    🔹 Mounts the NTFS partition from `sda1` to `/mnt/windows`.
+
+    $ sudo lowntfs-3g -o ro /dev/sdb2 /mnt/data
+
+    🔹 Mounts the NTFS partition from `sdb2` in read-only mode to `/mnt/data`.
+
+✅ **Simple Example:**
+
+    $ sudo lowntfs-3g /dev/sda1 /mnt/win && ls /mnt/win
+
+    🔹 Mounts the partition and displays files within it. If the `ls` command shows the files, the mount was successful.

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ar` baraye sakhtan, tagheer dadan, va estخراج (extract) kardan az archive-ha (file-haye jam' shode) estefade mishavad. In archive-ha baraye negahdari library-haye code estefade mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `ar -t archive.a` --> 📜 List kardan content-haye archive.
+    🔹 `ar -x archive.a file1.o file2.o` --> 📦 Extract kardan `file1.o` va `file2.o` az archive.
+    🔹 `ar -v` --> 👀 Verbose mode (namayesh etela'at bishtar dar morede amal).
+    🔹 `ar -r archive.a file3.o` --> ➕ Replace (ya ezafe kardan) `file3.o` be archive.
+    🔹 `ar -d archive.a file1.o` --> 🗑️ Delete kardan `file1.o` az archive.
+    🔹 `ar -c archive.a file4.o` --> 🔨 Sakhtan archive agar vojood nadashte bashad.
+
+🛠 **Mesal-ha:**
+
+    $ ar -tv archive.a
+
+    🔹 Namayesh verbose (detailed) listing az archive.
+
+    $ ar -x archive.a
+
+    🔹 Extract kardan hameye file-ha az archive.
+
+✅ **Mesal sade:**
+
+    $ ar -r libmath.a add.o multiply.o
+
+    🔹 Replace ya ezafe kardan `add.o` va `multiply.o` be archive `libmath.a`. Agar `libmath.a` vojood nadashte bashad, sakhte mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ar` command is used to create, modify, and extract from archives (collections of files). These archives are commonly used for storing object code libraries.
+
+⚙️ **Options:**
+    🔹 `ar -t archive.a` --> 📜 List the contents of the archive.
+    🔹 `ar -x archive.a file1.o file2.o` --> 📦 Extract `file1.o` and `file2.o` from the archive.
+    🔹 `ar -v` --> 👀 Verbose mode (show more information about the operation).
+    🔹 `ar -r archive.a file3.o` --> ➕ Replace (or add) `file3.o` to the archive.
+    🔹 `ar -d archive.a file1.o` --> 🗑️ Delete `file1.o` from the archive.
+    🔹 `ar -c archive.a file4.o` --> 🔨 Create the archive if it doesn't already exist.
+
+🛠 **Examples:**
+
+    $ ar -tv archive.a
+
+    🔹 Shows a verbose (detailed) listing of the archive.
+
+    $ ar -x archive.a
+
+    🔹 Extracts all files from the archive.
+
+✅ **Simple Example:**
+
+    $ ar -r libmath.a add.o multiply.o
+
+    🔹 Replaces or adds `add.o` and `multiply.o` to the archive `libmath.a`. If `libmath.a` does not exist, it will be created.

@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `col` baraye tabdil stream-haye matni ke dar anha backspace, tab, va khat-e-jadid estefade shode ast, be yek format sade tar estefade mishavad. In dastoor be vizhe baraye file-haye man (man pages) ya output-haye formate shode ke ehtiaj be sade sazi darand mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `col -x` --> ↔️ Tab-ha ra ba space-haye motenaseb jaigozin mikonad (space).
+    🔹 `col -b` --> 🔙 Hameye backspace ha ra hazf mikonad, va faghat matn-e nahaii ra negah midarad.
+    🔹 `col -f` --> 🔽 Faghat forward half-line feeds ra tahammol mikonad. Obor az reverse half-line feeds.
+    🔹 `col -l <number>` --> 🔢 Buffer-e `col` ra be andaze-ye `number` khat mahdood mikonad.
+    🔹 `col -h` --> ❓ Namayesh dastoor-e komaki (help).
+    🔹 `col -V` --> ℹ️ Namayesh version-e dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ man ls | col -bx > ls.txt
+
+    🔹 Output-e `man ls` ra az tab-ha va backspace-ha pak mikonad va dar file `ls.txt` zakhire mikonad.
+
+    $ cat file_ba_format_khass | col -x | less
+
+    🔹 File-e ba format khass ra sade mikonad (tab ha tabdil mishavand) va az tarigh `less` namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ echo -e "hello\bworld" | col -b
+
+    🔹  Dastoor `echo -e "hello\bworld"` matn "hello" ra chap mikonad, sepas yek backspace (\b) ke harf "o" ra hazf mikonad, va sepas "world" ra chap mikonad.  `col -b` backspace ra hazf mikonad va faghat "hellworld" ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `col` command is used to filter text streams that contain reverse line feeds, by allowing you to convert them into a more simplified format.  It's particularly useful for processing man pages or formatted output that needs to be cleaned up for easier viewing.
+
+⚙️ **Options:**
+    🔹 `col -x` --> ↔️ Replace tab characters with equivalent spaces.
+    🔹 `col -b` --> 🔙 Remove all backspace characters, keeping only the final rendered text.
+    🔹 `col -f` --> 🔽 Only process forward half-line feeds. Ignores reverse half-line feeds.
+    🔹 `col -l <number>` --> 🔢 Limit `col`'s buffer to `number` lines.
+    🔹 `col -h` --> ❓ Display help information.
+    🔹 `col -V` --> ℹ️ Display the command's version.
+
+🛠 **Examples:**
+
+    $ man ls | col -bx > ls.txt
+
+    🔹 Removes tabs and backspaces from the `man ls` output and saves it to the `ls.txt` file.
+
+    $ cat formatted_file | col -x | less
+
+    🔹 Simplifies the formatted file (converting tabs to spaces) and displays it using `less`.
+
+✅ **Simple Example:**
+
+    $ echo -e "hello\bworld" | col -b
+
+    🔹 The command `echo -e "hello\bworld"` prints "hello", then a backspace (\b) which removes the "o", and then "world". `col -b` removes the backspace character, displaying "hellworld".

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lnstat` baraye didan etela'at darbareye rabete-haye shabake-ye Linux (Linux Networking) estefade mishavad. In dastoor be shoma komak mikonad ta etela'ati mesle tedad packet-haye ersal shode va daryaft shode, vaziyat rabete-ha, va address-haye IP ra bebined. Be zaban sade, `lnstat` mesle yek otobos metr baraye shabake-ye shoma amal mikonad! 🚌
+
+⚙️ **Gozine-ha:**
+    🔹 `lnstat` --> Namayesh etela'at kole rabete-ha.
+    🔹 `lnstat -s` --> 📊 Namayesh etela'at statistik-ha (statistics) be soorat kholase.
+    🔹 `lnstat -t` --> ⏱️ Namayesh timer-ha va vaziyat rabete-ha be soorat zaman-bandi shode.
+    🔹 `lnstat -i` --> 🌐 Namayesh etela'at rabete-haye IP.
+    🔹 `lnstat -d` --> 🔍 Namayesh detail-haye rabete-ha.
+
+🛠 **Mesal-ha:**
+
+    $ lnstat
+
+    🔹 Namayesh etela'at hameye rabete-ha.
+
+    $ lnstat -s
+
+    🔹 Namayesh statistik-haye kholase az rabete-ha.
+
+✅ **Mesal sade:**
+
+    $ lnstat -i
+
+    🔹 Namayesh etela'at rabete-haye IP, mesle address-haye IP va vaziyat rabete-ha.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lnstat` command is used to display information about Linux networking connections. It helps you see details like the number of packets sent and received, the status of connections, and IP addresses. In simple terms, `lnstat` acts like a network traffic monitor for your system! 🚌
+
+⚙️ **Options:**
+    🔹 `lnstat` --> Show information about all connections.
+    🔹 `lnstat -s` --> 📊 Show summary statistics of connections.
+    🔹 `lnstat -t` --> ⏱️ Show timers and connection states in a timed manner.
+    🔹 `lnstat -i` --> 🌐 Show information about IP connections.
+    🔹 `lnstat -d` --> 🔍 Show detailed information about connections.
+
+🛠 **Examples:**
+
+    $ lnstat
+
+    🔹 Display information about all connections.
+
+    $ lnstat -s
+
+    🔹 Display summary statistics of connections.
+
+✅ **Simple Example:**
+
+    $ lnstat -i
+
+    🔹 Display information about IP connections, such as IP addresses and connection states.

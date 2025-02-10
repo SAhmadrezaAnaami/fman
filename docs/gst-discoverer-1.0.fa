@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gst-discoverer-1.0` baraye kashf va namayeshe etela'at darbareye file-haye multimedia (mesle video va audio) estefade mishavad. In dastoor be shoma komak mikonad ta format, codec-ha, va etela'ate digar raje' be media-ye khod ra bedanid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--version` --> ℹ️ Namayesh version-e `gst-discoverer-1.0`
+    🔹 `--help`    --> ❓ Namayesh rahnamaye estefade az dastoor
+    🔹 `<URI>`       --> 🔗 Address-e file ya stream-e multimedia baraye kashf
+
+🛠 **Mesal-ha:**
+
+    $ gst-discoverer-1.0 file:///path/to/your/video.mp4
+
+    🔹 Keshf va namayeshe etela'at darbareye yek file video-ye mahali.
+
+    $ gst-discoverer-1.0 https://example.com/your/audio.mp3
+
+    🔹 Keshf va namayeshe etela'at darbareye yek stream audio az yek URL.
+
+✅ **Mesal sade:**
+
+    $ gst-discoverer-1.0 file:///home/user/myvideo.avi
+
+    🔹 Ba ejraye in dastoor, etela'ati mesle format, codec-haye estefade shode, tool va arz video, va etela'ate audio namayesh dade mishavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gst-discoverer-1.0` command is used to discover and display information about multimedia files (like video and audio). This command helps you find out the format, codecs, and other information about your media.
+
+⚙️ **Options:**
+    🔹 `--version` --> ℹ️ Display the version of `gst-discoverer-1.0`
+    🔹 `--help`    --> ❓ Display help information for the command
+    🔹 `<URI>`       --> 🔗 The address of the multimedia file or stream to discover
+
+🛠 **Examples:**
+
+    $ gst-discoverer-1.0 file:///path/to/your/video.mp4
+
+    🔹 Discover and display information about a local video file.
+
+    $ gst-discoverer-1.0 https://example.com/your/audio.mp3
+
+    🔹 Discover and display information about an audio stream from a URL.
+
+✅ **Simple Example & Explanation:**
+
+    $ gst-discoverer-1.0 file:///home/user/myvideo.avi
+
+    🔹 By running this command, information such as the format, codecs used, video width and height, and audio information will be displayed.

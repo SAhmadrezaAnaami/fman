@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-depcheck` baraye check kardane dependency (vabastegi) haye package haye `*.deb` estefade mishavad. Yani, moshakhas mikonad aya hameye chizhai ke yek barname baraye dorost kar kardan niaz darad, mojood hastand ya na. In be shoma komak mikonad ta az dorost nasb shodan va kar kardane barname ha etminan hasil konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg-depcheck <package.deb>`  --> 📦 Check kardan dependency haye yek package khas.
+    🔹 `dpkg-depcheck -e <executable>` --> 🔎 Check kardan dependency haye yek file ejraee (executable).
+    🔹 `dpkg-depcheck -l <library>`  --> 📚 Check kardan dependency haye yek library (ketabkhane).
+    🔹 `dpkg-depcheck -v` --> 📢 Namayesh dadane etela'at bishtar (verbose mode).
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-depcheck mypackage.deb
+
+    🔹 Check kardan hameye dependency haye package `mypackage.deb`.
+
+    $ dpkg-depcheck -e /usr/bin/myprogram
+
+    🔹 Check kardan dependency haye file ejraee `/usr/bin/myprogram`.
+
+✅ **Mesal sade:**
+
+    $ dpkg-depcheck ./example.deb
+
+    🔹 Agar hameye dependency ha dorost bashand, chizi namayesh dade nemishavad. Agar moshkeli bashad, listi az dependency haye gomshode ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-depcheck` command is used to check the dependencies of `*.deb` packages. That is, it determines whether everything that a program needs to function correctly is available. This helps you ensure that programs are installed and working correctly.
+
+⚙️ **Options:**
+    🔹 `dpkg-depcheck <package.deb>`  --> 📦 Check dependencies of a specific package.
+    🔹 `dpkg-depcheck -e <executable>` --> 🔎 Check dependencies of an executable file.
+    🔹 `dpkg-depcheck -l <library>`  --> 📚 Check dependencies of a library.
+    🔹 `dpkg-depcheck -v` --> 📢 Display more information (verbose mode).
+
+🛠 **Examples:**
+
+    $ dpkg-depcheck mypackage.deb
+
+    🔹 Check all dependencies of the `mypackage.deb` package.
+
+    $ dpkg-depcheck -e /usr/bin/myprogram
+
+    🔹 Check dependencies of the executable file `/usr/bin/myprogram`.
+
+✅ **Simple Example:**
+
+    $ dpkg-depcheck ./example.deb
+
+    🔹 If all dependencies are correct, nothing is displayed. If there is a problem, it displays a list of missing dependencies.

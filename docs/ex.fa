@@ -1,0 +1,61 @@
+Okay, I will generate a man page for the `ex` command according to your specifications.
+
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ex` yek virayeshgare matni (text editor) khati (line-oriented) ast. In dastoor ghadimi ast vali dar script-ha va barname-nevisi automatik besiar mofid ast.  `ex` aslan `vi` bood, ghabl az inke `vi` full-screen beshe.
+
+⚙️ **Gozine-ha:**
+    🔹 `ex file`  --> 📁 Baz kardane file baraye virayesh.
+    🔹 `ex -s file` --> 🤫 Run kardane `ex` dar halate silent (bi seda), baraye script-ha. Hich payami chap nemishe.
+    🔹 `ex +command file` --> 🚀 Ejra kardane yek dastoor `ex` dar zamane baz kardane file. Mesl (`+10` mire satre 10, `+$` mire akhar).
+    🔹 `ex -v file` --> 💻 Raftar kardan mesle `vi` (baz kardane `ex` ba raftar `vi` full screen).
+
+🛠 **Mesal-ha:**
+
+    $ ex myfile.txt
+
+    🔹 Baz kardane file `myfile.txt` baraye virayesh ba dastoorat `ex`.
+
+    $ ex -s -c '%s/old/new/g' -c wq myfile.txt
+
+    🔹 Dar script-ha, jagozin kardane `old` ba `new` dar `myfile.txt` va save kardane file (silent).
+
+✅ **Mesal sade:**
+
+    $ ex +5 myfile.txt
+
+    🔹 Baz kardane `myfile.txt` dar `ex` va raftan be khatte 5.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ex` command is a line-oriented text editor. It is an older editor but still useful in scripting and automated tasks. `ex` was essentially the predecessor to `vi`, before `vi` became a full-screen editor.
+
+⚙️ **Options:**
+    🔹 `ex file`  --> 📁 Open a file for editing.
+    🔹 `ex -s file` --> 🤫 Run `ex` in silent mode, suitable for scripts. Suppresses all output.
+    🔹 `ex +command file` --> 🚀 Execute an `ex` command upon opening the file. E.g. (`+10` goes to line 10, `+$` goes to the end).
+    🔹 `ex -v file` --> 💻 Behave like `vi` (opens `ex` with `vi`'s full-screen behavior).
+
+🛠 **Examples:**
+
+    $ ex myfile.txt
+
+    🔹 Open the file `myfile.txt` for editing using `ex` commands.
+
+    $ ex -s -c '%s/old/new/g' -c wq myfile.txt
+
+    🔹 In scripts, replace `old` with `new` globally in `myfile.txt` and save the file (silently).
+
+✅ **Simple Example:**
+
+    $ ex +5 myfile.txt
+
+    🔹 Open `myfile.txt` in `ex` and jump to line 5.
+

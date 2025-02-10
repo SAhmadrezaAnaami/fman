@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `getopt` baraye parse kardan gozine-ha (options) va argument-ha az command line estefade mishavad. In dastoor be barname-ha komak mikonad ta vared-ha-ye command line ra be shekle standard va dorost dor-avari konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `getopt -o <shortopts> -- <command line>`  --> 🎫 `-o` baraye tarif kardan gozine-ha-ye kootah (yek harfi) estefade mishavad. Masalan, `-o ab:c::` yani `-a`, `-b` (ke yek argument darad), va `-c` (ke argument optional darad) gozine-haye mored nazar hastand.
+    🔹 `getopt -l <longopts> -- <command line>`  --> 🏷️ `-l` baraye tarif kardan gozine-ha-ye boland (chand harfi) estefade mishavad. Masalan, `--long options,other-option:,another-option::`.
+    🔹 `getopt -n <name>` --> 📛 `-n` baraye set kardan name program estefade mishavad. In name dar error message-ha neshan dade mishavad.
+    🔹 `--` --> ⛔ Vaghti ke gozine-ha tamam mishavand va faghat argument-ha baghi mimanand, az `--` estefade mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ getopt -o ab:c:: -- 'script.sh' -a -b 'value' -c 'another value' argument1 argument2
+
+    🔹 Parse kardan gozine-ha-ye `-a`, `-b` (ba argument), va `-c` (ba argument optional) az command line.
+
+    $ getopt -l 'long-option,other-option:,another-option::' -- 'script.sh' --long-option --other-option 'value' --another-option argument1 argument2
+
+    🔹 Parse kardan gozine-ha-ye boland mesl `--long-option`, `--other-option` (ba argument), va `--another-option` (ba argument optional).
+
+✅ **Mesal sade:**
+
+    $ getopt -o a:b -- -a "hello world" -b
+
+    🔹 In mesal, `getopt` gozine-haye `-a` (ba argument) va `-b` ra parse mikonad. Agar argument `-a` "hello world" bashad va `-b` ham bashad, `getopt` inha ra be sorat dorost dor-avari mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `getopt` command is used to parse command line options and arguments.  It helps scripts and programs process command-line input in a standardized and correct way.
+
+⚙️ **Options:**
+    🔹 `getopt -o <shortopts> -- <command line>`  --> 🎫 `-o` is used to define short (single character) options. For example, `-o ab:c::` means that `-a`, `-b` (which requires an argument), and `-c` (which takes an optional argument) are valid options.
+    🔹 `getopt -l <longopts> -- <command line>`  --> 🏷️ `-l` is used to define long (multi-character) options. For example, `--long options,other-option:,another-option::`.
+    🔹 `getopt -n <name>` --> 📛 `-n` is used to set the program name. This name is used in error messages.
+    🔹 `--` --> ⛔ Indicates the end of options; anything after `--` is treated as a non-option argument.
+
+🛠 **Examples:**
+
+    $ getopt -o ab:c:: -- 'script.sh' -a -b 'value' -c 'another value' argument1 argument2
+
+    🔹 Parses options `-a`, `-b` (with argument), and `-c` (with optional argument) from the command line.
+
+    $ getopt -l 'long-option,other-option:,another-option::' -- 'script.sh' --long-option --other-option 'value' --another-option argument1 argument2
+
+    🔹 Parses long options such as `--long-option`, `--other-option` (with argument), and `--another-option` (with optional argument).
+
+✅ **Simple Example:**
+
+    $ getopt -o a:b -- -a "hello world" -b
+
+    🔹 In this example, `getopt` parses the options `-a` (with an argument) and `-b`. If the argument for `-a` is "hello world" and `-b` is also present, `getopt` processes them correctly.

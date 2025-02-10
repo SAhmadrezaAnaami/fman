@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grepdiff` be shoma komak mikonad ta taghirati ke dar yek file diff (ke az `diff` gerefte shode) vojood darad ra, bar asase yek pattern khass, jostejoo konid. Yani shoma mitavanid be donbale khat-haee begardid ke ezafe ya kam shode and va dar anha kelame ya dastoor-e khassi vojood darad. In baraye peyda kardan taghirat-e marboote dar patch-haye bozorg kheili mofeed ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `--text`  --> 📄 Hatta file-haye binary ra ham be onvane text barkhord kon va jostejoo kon.
+    🔹 `-p`  --> 🔍 Faghat khat-haee az diff ra namayesh bede ke pattern ra dar file-haye ezafe ya hazf shode dashte bashand.
+    🔹 `-i`  --> 🔤 Be bozorgi va koochiki horoof hassas nabash (case-insensitive).
+    🔹 `-n`  --> 🔢 Shomare-ye khat-ha ra hamrah ba natije namayesh bede.
+
+🛠 **Mesal-ha:**
+
+    $ grepdiff -p 'function my_function' mypatch.diff
+
+    🔹 In dastoor tamami taghirati ke khat-e 'function my_function' dar anha ezafe ya hazf shode ra az file `mypatch.diff` namayesh midahad.
+
+    $ grepdiff -i 'error message' mypatch.diff
+
+    🔹 In dastoor be donbale 'error message' dar taghirat migardad, vali be bozorgi va koochiki horoof tavajjoh nemikonad.
+
+✅ **Mesal sade:**
+
+    $ grepdiff -p -n 'TODO' mypatch.diff
+
+    🔹 In dastoor hameye khat-haee ra ke kalame `TODO` dar taghirat ezafe ya hazf shode dashte bashand namayesh midahad va shomare-ye khat-ha ra ham chap mikonad. In baraye peyda kardan jay-haee ke bayad revis shavand ya karhayee ke bayad anjam shavand mofeed ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grepdiff` command helps you search through the changes in a diff file (created by `diff`) based on a specific pattern.  It allows you to find lines that have been added or removed that contain a specific word or statement. This is very useful for finding relevant changes in large patches.
+
+⚙️ **Options:**
+    🔹 `--text`  --> 📄 Treat all files as text, even binary files, and search them.
+    🔹 `-p`  --> 🔍 Only show diff lines that match the pattern in added or removed files.
+    🔹 `-i`  --> 🔤 Ignore case distinctions (case-insensitive).
+    🔹 `-n`  --> 🔢 Show line numbers with the results.
+
+🛠 **Examples:**
+
+    $ grepdiff -p 'function my_function' mypatch.diff
+
+    🔹 This command displays all changes that add or remove the line 'function my_function' from the `mypatch.diff` file.
+
+    $ grepdiff -i 'error message' mypatch.diff
+
+    🔹 This command searches for 'error message' in the changes, ignoring case.
+
+✅ **Simple Example:**
+
+    $ grepdiff -p -n 'TODO' mypatch.diff
+
+    🔹 This command displays all lines containing the word `TODO` that have been added or removed and prints the line numbers. This is useful for finding places that need review or tasks that need to be done.

@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `gdk-pixbuf-thumbnailer` barnamei ast ke baraye dorost kardane aks-haye koochak (thumbnails) az aks-ha va file-haye digar estefade mishavad. In barname ba Gnome estefade mishavad va aks-haye koochak ra baraye namayesh sari’tar dar file manager-ha dorost mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--size=SIZE` --> 🖼️ Size aks koochak ra moshakhas mikonad (masalan, 128x128).  
+    🔹 `--mode=MODE` --> ⚙️ Tarze dorost kardane aks koochak ra moshakhas mikonad (masalan, `fixed-aspect`).  
+    🔹 `--help`       --> ❓ Rahnamayi estefade az dastoor ra neshon midahad.  
+
+🛠 **Mesal-ha:**
+
+    $ gdk-pixbuf-thumbnailer --size=64x64 input.png output.png
+
+    🔹 Aks koochake 64x64 pixel az `input.png` dorost mikonad va dar `output.png` zakhire mikonad.
+
+    $ gdk-pixbuf-thumbnailer --size=128x128 --mode=fixed-aspect input.jpg output.jpg
+
+    🔹 Aks koochake 128x128 pixel ba hefz nesbat az `input.jpg` dorost mikonad va dar `output.jpg` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ gdk-pixbuf-thumbnailer --size=128x128 image.jpg thumbnail.png
+
+    🔹 Aks koochake 128x128 pixel az `image.jpg` dorost mishavad va be onvane `thumbnail.png` zakhire mishavad. In aks koochak mitavanad baraye namayesh sari’tar dar file manager estefade shavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `gdk-pixbuf-thumbnailer` is a program used to generate thumbnails from images and other files. It is typically used with Gnome to create thumbnails for faster display in file managers.
+
+⚙️ **Options:**
+    🔹 `--size=SIZE` --> 🖼️ Specifies the size of the thumbnail (e.g., 128x128).
+    🔹 `--mode=MODE` --> ⚙️ Specifies the thumbnail generation mode (e.g., `fixed-aspect`).
+    🔹 `--help`       --> ❓ Shows the usage help for the command.
+
+🛠 **Examples:**
+
+    $ gdk-pixbuf-thumbnailer --size=64x64 input.png output.png
+
+    🔹 Creates a 64x64 pixel thumbnail of `input.png` and saves it to `output.png`.
+
+    $ gdk-pixbuf-thumbnailer --size=128x128 --mode=fixed-aspect input.jpg output.jpg
+
+    🔹 Creates a 128x128 pixel thumbnail of `input.jpg`, preserving the aspect ratio, and saves it to `output.jpg`.
+
+✅ **Simple Example:**
+
+    $ gdk-pixbuf-thumbnailer --size=128x128 image.jpg thumbnail.png
+
+    🔹 A 128x128 pixel thumbnail is generated from `image.jpg` and saved as `thumbnail.png`. This thumbnail can be used for faster display in file managers.

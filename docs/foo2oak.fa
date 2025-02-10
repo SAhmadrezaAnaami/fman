@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2oak` baraye tabdil dadan file-haye foo2zjs be file-haye build.ninja baraye estefade ba system-e build-e Oak estefade mishavad. Basically, in dastoor file-haye configuration ro mikhoone va file-haye build ro baraye Oak misaze ta Oak befahme chejuri project-e shoma ro build kone.
+
+⚙️ **Gozine-ha:**
+    🔹 `-I <path>`  --> 📂 Ezafe kardane yek directory be masir-e search baraye file-haye include.
+    🔹 `-o <file>`  --> ✏️ Specify name file khorooji build.ninja. Agar specify nashode bashe stdout estefade mishavad.
+    🔹 `-d <flags>`  --> 🚩 Flag-haye debug ro baraye bazresi-e bishtar ezafe mikone.
+
+🛠 **Mesal-ha:**
+
+    $ foo2oak foo.foo2zjs -o build.ninja
+
+    🔹 Tabdil file foo.foo2zjs be file build.ninja.
+
+    $ foo2oak -I include_dir main.foo2zjs
+
+    🔹 Tabdil file main.foo2zjs va ezafe kardane directory `include_dir` baraye search kardane file-haye include.
+
+✅ **Mesal sade:**
+
+    $ foo2oak project.foo2zjs > build.ninja
+
+    🔹 Tabdil file `project.foo2zjs` be file build.ninja va save kardane natije dar file build.ninja.  In ravesh monaseb ast agar shoma name file khorooji ro be soorat explicit specify nakonid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2oak` command is used to convert foo2zjs files into build.ninja files for use with the Oak build system. Basically, this command reads configuration files and generates build files for Oak so Oak knows how to build your project.
+
+⚙️ **Options:**
+    🔹 `-I <path>`  --> 📂 Adds a directory to the search path for include files.
+    🔹 `-o <file>`  --> ✏️ Specifies the output build.ninja file name. If unspecified, stdout is used.
+    🔹 `-d <flags>`  --> 🚩 Adds debug flags for increased verbosity.
+
+🛠 **Examples:**
+
+    $ foo2oak foo.foo2zjs -o build.ninja
+
+    🔹 Converts the foo.foo2zjs file to a build.ninja file.
+
+    $ foo2oak -I include_dir main.foo2zjs
+
+    🔹 Converts the main.foo2zjs file and adds the `include_dir` directory for searching include files.
+
+✅ **Simple Example:**
+
+    $ foo2oak project.foo2zjs > build.ninja
+
+    🔹 Converts the `project.foo2zjs` file to a build.ninja file and saves the result in the build.ninja file. This method is suitable if you do not explicitly specify the output file name with `-o`.

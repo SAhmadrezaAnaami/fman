@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `dpkg-source` baraye unpack kardan (baz kardan) ya build kardan (sakhtan) source package-haye Debian estefade mishavad. Yani, agar shoma yek source code baraye barname-ye Debian darid, mitoonid az in dastoor baraye extract kardan an ya sakhtan yek .deb package az an estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `dpkg-source -x <file.dsc>`  --> 📦 Unpack kardan source package. File.dsc file control az source package ast.
+    🔹 `dpkg-source -b <directory>`  --> 🔨 Build kardan yek source package az directory ke source code va control file-ha dar an hastand.
+    🔹 `dpkg-source --commit`  --> 📝 Commit tagheerat (changes) dar source package.
+
+🛠 **Mesal-ha:**
+
+    $ dpkg-source -x mypackage.dsc
+
+    🔹 Extract kardan source package "mypackage".
+
+    $ dpkg-source -b mypackage-directory
+
+    🔹 Sakhtan source package az directory "mypackage-directory".
+
+✅ **Mesal sade:**
+
+    $ dpkg-source -x myapp_1.0-1.dsc
+
+    🔹 Dastoor bala source code va control file-haye package "myapp" version 1.0-1 ra az file "myapp_1.0-1.dsc" extract mikonad va dar yek directory ba hamin name gharar midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `dpkg-source` command is used to unpack or build Debian source packages.  In other words, if you have the source code for a Debian program, you can use this command to extract it or build a .deb package from it.
+
+⚙️ **Options:**
+    🔹 `dpkg-source -x <file.dsc>`  --> 📦 Unpack a source package.  The .dsc file is the control file from the source package.
+    🔹 `dpkg-source -b <directory>`  --> 🔨 Build a source package from the directory containing the source code and control files.
+    🔹 `dpkg-source --commit`  --> 📝 Commit changes in the source package.
+
+🛠 **Examples:**
+
+    $ dpkg-source -x mypackage.dsc
+
+    🔹 Extract the source package "mypackage".
+
+    $ dpkg-source -b mypackage-directory
+
+    🔹 Build a source package from the "mypackage-directory" directory.
+
+✅ **Simple Example:**
+
+    $ dpkg-source -x myapp_1.0-1.dsc
+
+    🔹 This command extracts the source code and control files of the "myapp" package, version 1.0-1, from the "myapp_1.0-1.dsc" file and places them in a directory with the same name.

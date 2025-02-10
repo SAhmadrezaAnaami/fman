@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fc-query` baraye peyda kardan font-ha dar system estefade mishavad. In dastoor mitavanad etela'ati dar morede font-ha, mesle name font, style, va file font ra namayesh dahad. Az in dastoor baraye gereftan etela'at az fontconfig cache estefade mishavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `fc-query <file_font>`  --> 🔍 Namayesh etela'at morede font-e moshakhas shode az file
+    🔹 `fc-query -v <file_font>`  --> 📜 Namayesh hameye etela'at ba detail ziad
+    🔹 `fc-query -f "%{family}\n" <file_font>` --> 🎯 Namayesh yek etela'at moshakhas (dar inja family) az font. Shoma mitavanid family ra ba field-haye digar avaz konid mesle style ya file.
+    🔹 `fc-query -X` --> ➕ Namayesh XML output
+
+🛠 **Mesal-ha:**
+
+    $ fc-query "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
+    🔹 Namayesh etela'at dar morede font file DejaVuSans.ttf
+
+    $ fc-query -f "%{family} %{style}\n" "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
+    🔹 Namayesh name family va style font DejaVuSans.
+
+✅ **Mesal sade:**
+
+    $ fc-query -v "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf" | grep family
+
+    🔹 Namayesh hameye etela'at ba detail dar morede font DejaVuSans va ba estefade az `grep` family ra filter mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fc-query` command is used to query fonts on the system.  It can display information about fonts, such as font name, style, and font file.  This command retrieves information from the fontconfig cache.
+
+⚙️ **Options:**
+    🔹 `fc-query <font_file>`  --> 🔍 Display information about a specified font file.
+    🔹 `fc-query -v <font_file>`  --> 📜 Display all font information in verbose mode.
+    🔹 `fc-query -f "%{family}\n" <font_file>` --> 🎯 Display a specific field (in this case, family) from the font. You can replace family with other fields like style or file.
+    🔹 `fc-query -X` --> ➕ Display XML output
+
+🛠 **Examples:**
+
+    $ fc-query "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
+    🔹 Display information about the DejaVuSans.ttf font file.
+
+    $ fc-query -f "%{family} %{style}\n" "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
+    🔹 Display the family name and style of the DejaVuSans font.
+
+✅ **Simple Example:**
+
+    $ fc-query -v "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf" | grep family
+
+    🔹 Display all details about the DejaVuSans font and then filters the output to show only the family information using `grep`.

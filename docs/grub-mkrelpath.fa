@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-mkrelpath` baraye tabdil kardan yek masir (path) be yek masir nesbi (relative path) estefade mishavad.  yani, yek masir ra migirad va masir ra be shekli nesbi nesbat be yek masire digar moratab mikonad. In be khusus dar file-haye config Grub mohem ast, dar jayike masir-haye nesbi bishtar az masir-haye kamel tarjih dade mishavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--directory=DIR`  --> 📁 Directory-e paye ra baraye mohasebeye masir-e nesbi moshakhas mikonad. Agar in gozine dade nashavad, az pooshe-ye konuni (current directory) estefade mishavad.
+    🔹 `--help`  --> ℹ️ Namayesh rahnamaye dastoor.
+    🔹 `--version` --> ℹ️ Namayesh version-e barname.
+
+🛠 **Mesal-ha:**
+
+    $ grub-mkrelpath /boot/grub/fonts/unicode.pf2
+    
+    🔹 Agar shoma dar directory `/` bashid, natije `boot/grub/fonts/unicode.pf2` khahad bood.
+
+    $ grub-mkrelpath --directory=/boot/grub /boot/grub/fonts/unicode.pf2
+    
+    🔹 Natije `fonts/unicode.pf2` khahad bood, chon masir nesbat be `/boot/grub` hesab mishavad.
+
+✅ **Mesal sade:**
+
+    $ cd /home/user
+    $ grub-mkrelpath /home/user/documents/myfile.txt
+    documents/myfile.txt
+    
+    🔹 Agar shoma dar `/home/user` bashid, `grub-mkrelpath /home/user/documents/myfile.txt` `documents/myfile.txt` ra bar migardanad, chon masir nesbi az directory-e konuni hesab mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-mkrelpath` command is used to convert a given path to a relative path. That is, it takes a path as input and computes the path relative to another directory. This is particularly useful in Grub configuration files, where relative paths are often preferred over absolute paths.
+
+⚙️ **Options:**
+    🔹 `--directory=DIR`  --> 📁 Specifies the base directory for calculating the relative path. If this option is not provided, the current directory is used as the base.
+    🔹 `--help`  --> ℹ️ Displays the command help.
+    🔹 `--version` --> ℹ️ Displays the program version.
+
+🛠 **Examples:**
+
+    $ grub-mkrelpath /boot/grub/fonts/unicode.pf2
+    
+    🔹 If you are in the `/` directory, the result will be `boot/grub/fonts/unicode.pf2`.
+
+    $ grub-mkrelpath --directory=/boot/grub /boot/grub/fonts/unicode.pf2
+    
+    🔹 The result will be `fonts/unicode.pf2`, because the path is calculated relative to `/boot/grub`.
+
+✅ **Simple Example:**
+
+    $ cd /home/user
+    $ grub-mkrelpath /home/user/documents/myfile.txt
+    documents/myfile.txt
+    
+    🔹 If you are in `/home/user`, `grub-mkrelpath /home/user/documents/myfile.txt` returns `documents/myfile.txt`, because the relative path is calculated from the current directory.

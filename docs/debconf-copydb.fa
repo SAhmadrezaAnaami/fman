@@ -1,0 +1,62 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debconf-copydb` baraye kopy kardane etela'ate `debconf` az yek database be database digar be kar mirevad. `debconf` yek system baraye config kardane package-ha dar system-haye Debian va Ubuntu ast. In dastoor baraye enteqal dadan etela'ate config package-ha az yek system be system digar ya backup gereftan az database `debconf` mofid ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `-f file` --> 💾 Az file-e dad-e shode be عنوان database ورودی estefade kon. Agar in gozine dad-e nashe, az database default `debconf` estefade mishavad.
+    🔹 `-t type` --> 🗄️ Type database kopy shodeh ra moshakhas kon. Type-haye mohem shamel `File`, `MySQL`, va `PGSQL` hastand.
+    🔹 `-h host` --> 🌐 Agar database az noe server ast, address host ra moshakhas kon.
+    🔹 `-u user` --> 👤 Username baraye اتصال به database ra moshakhas kon.
+    🔹 `-p password` --> 🔑 Password baraye اتصال به database ra moshakhas kon.
+    🔹 `-n dbname` --> 📁 Name database ra moshakhas kon.
+
+🛠 **Mesal-ha:**
+
+    $ debconf-copydb -t File -f /tmp/debconf.dat
+
+    🔹 Etela'ate database default `debconf` ra be file `/tmp/debconf.dat` kopy mikonad.
+
+    $ debconf-copydb -t MySQL -h localhost -u user -p pass -n debconf | mysql -u root -p debconf_backup
+
+    🔹 Etela'ate database `debconf` ra az MySQL be database `debconf_backup` kopy mikonad.
+
+✅ **Mesal sade:**
+
+    $ debconf-copydb -f /path/to/debconf.dat
+    
+    🔹 In dastoor etela'ate `debconf` ra az database default be file `/path/to/debconf.dat` kopy mikonad, ke baraye backup ya enteqal be system digar be kar mirevad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debconf-copydb` command is used to copy `debconf` data from one database to another. `debconf` is a system for configuring packages on Debian and Ubuntu systems. This command is useful for transferring package configuration data from one system to another or for backing up the `debconf` database.
+
+⚙️ **Options:**
+    🔹 `-f file` --> 💾 Use the specified file as the input database. If not specified, the default `debconf` database is used.
+    🔹 `-t type` --> 🗄️ Specify the type of database being copied. Common types include `File`, `MySQL`, and `PGSQL`.
+    🔹 `-h host` --> 🌐 Specify the host address if the database is a server type.
+    🔹 `-u user` --> 👤 Specify the username for connecting to the database.
+    🔹 `-p password` --> 🔑 Specify the password for connecting to the database.
+    🔹 `-n dbname` --> 📁 Specify the database name.
+
+🛠 **Examples:**
+
+    $ debconf-copydb -t File -f /tmp/debconf.dat
+
+    🔹 Copies the default `debconf` database data to the file `/tmp/debconf.dat`.
+
+    $ debconf-copydb -t MySQL -h localhost -u user -p pass -n debconf | mysql -u root -p debconf_backup
+
+    🔹 Copies the `debconf` database data from MySQL to the `debconf_backup` database.
+
+✅ **Simple Example:**
+
+    $ debconf-copydb -f /path/to/debconf.dat
+    
+    🔹 This command copies the `debconf` data from the default database to the file `/path/to/debconf.dat`, which can be used for backup or transfer to another system.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ginstall-info` baraye sabte dastoorat dar `info` system estefade mishavad. In dastoor baraye ezafe kardane etela'at dastoor be systeme `info` va dastrasi asan be rahnama baraye karbaran be kar miravad. Asasan, `ginstall-info` file-haye `info` ra be directory-haye monaseb copy mikonad va anha ra update mikonad ta be dorosti kar konand.
+
+⚙️ **Gozine-ha:**
+    🔹 `--dir-file=FILENAME` --> 📁 Specify filename baraye directory file (usually 'dir').  Agar zekr nashavad az directory default estefade mishavad.
+    🔹 `--section=SECTION` --> 🧩 Specify section baraye directory file. In section moshakhas mikonad ke etela'at dar koja dar directory `info` zakhire shavad.
+    🔹 `--quiet` --> 🤫 Sedaye kharoji ra kam mikonad. Faghat peygham-haye khatti ra namayesh midahad.
+    🔹 `--help` --> ℹ️ Namayesh rahnama baraye dastoor.
+    🔹 `--version` --> 版本 Namayesh version barname.
+
+🛠 **Mesal-ha:**
+
+    $ ginstall-info mycommand.info /usr/share/info
+
+    🔹 File `mycommand.info` ra dar directory `/usr/share/info` sabt mikonad.
+
+    $ ginstall-info --dir-file=/etc/info/dir mycommand.info
+
+    🔹 File `mycommand.info` ra ba estefade az file directory `/etc/info/dir` sabt mikonad.
+
+✅ **Mesal sade:**
+
+    $ ginstall-info --section="My Programs" mycommand.info
+
+    🔹 File `mycommand.info` ra dar section "My Programs" dar directory `info` sabt mikonad, ke karbar mitavanad ba dastoor `info "My Programs"` be an dastresi dashte bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ginstall-info` command is used to register commands in the `info` system. This command is used to add command information to the `info` system, allowing users to easily access the manual. Basically, `ginstall-info` copies the `info` files to the appropriate directories and updates them to work correctly.
+
+⚙️ **Options:**
+    🔹 `--dir-file=FILENAME` --> 📁 Specify the filename for the directory file (usually 'dir'). If not specified, the default directory is used.
+    🔹 `--section=SECTION` --> 🧩 Specify the section for the directory file. This section determines where the information will be stored in the `info` directory.
+    🔹 `--quiet` --> 🤫 Reduces output noise. Only displays error messages.
+    🔹 `--help` --> ℹ️ Display help for the command.
+    🔹 `--version` --> 🔢 Display program version.
+
+🛠 **Examples:**
+
+    $ ginstall-info mycommand.info /usr/share/info
+
+    🔹 Registers the file `mycommand.info` in the `/usr/share/info` directory.
+
+    $ ginstall-info --dir-file=/etc/info/dir mycommand.info
+
+    🔹 Registers the file `mycommand.info` using the directory file `/etc/info/dir`.
+
+✅ **Simple Example:**
+
+    $ ginstall-info --section="My Programs" mycommand.info
+
+    🔹 Registers the file `mycommand.info` in the "My Programs" section in the `info` directory, which the user can access using the command `info "My Programs"`.

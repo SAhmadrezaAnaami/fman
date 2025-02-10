@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grub-editenv` baraye tagheer daadan variable-haye environment GRUB (GRand Unified Bootloader) be kar mirevad. GRUB roo bootloader-e ke baraye load kardane system-amel estefade mishe, va in dastoor be shoma komak mikone ke settings-e GRUB ro, mesle default system-amel, tagheer bedid. In dastoor taghirat ro too file-e environment GRUB zakhire mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `--boot-device=DEVICE` --> 💾 Device-i ke bayad azash boot kone ro moshakhas mikone.
+    🔹 `--envfile=FILE` --> 📁 File-i ke variable-haye environment GRUB toosh zakhire shode ro moshakhas mikone (default: `/boot/grub/grubenv`).
+    🔹 `VARIABLE=VALUE` --> 📝 Variable va meghdar-i ke mikhaid tagheer bedid ya ezafe konid ro moshakhas mikone.  Baraye hazf kardan yek variable, meghdar-esh ro khali bezarid (`VARIABLE=`).
+
+🛠 **Mesal-ha:**
+
+    $ grub-editenv set next_entry=Windows
+
+    🔹 In dastoor variable `next_entry` ro ba meghdar `Windows` set mikone. Dafeye ba'd ke system boot mishe, `Windows` ro be عنوان default boot entry estefade mikone.
+
+    $ grub-editenv unset next_entry
+
+    🔹 In dastoor variable `next_entry` ro az file environment hazf mikone.
+
+✅ **Mesal sade:**
+
+    $ grub-editenv list
+
+    🔹 List kardan hameye variable-haye environment GRUB dar file `/boot/grub/grubenv`. In dastoor be shoma komak mikone ke bebinid che variable-hayee mojood hastand va che meghdari daran.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grub-editenv` command is used to modify GRUB (GRand Unified Bootloader) environment variables. GRUB is a bootloader used to load the operating system, and this command helps you change GRUB settings, such as the default operating system.  This command saves changes to the GRUB environment file.
+
+⚙️ **Options:**
+    🔹 `--boot-device=DEVICE` --> 💾 Specifies the device from which to boot.
+    🔹 `--envfile=FILE` --> 📁 Specifies the file where GRUB environment variables are stored (default: `/boot/grub/grubenv`).
+    🔹 `VARIABLE=VALUE` --> 📝 Specifies the variable and value to change or add. To remove a variable, leave its value empty (`VARIABLE=`).
+
+🛠 **Examples:**
+
+    $ grub-editenv set next_entry=Windows
+
+    🔹 This command sets the `next_entry` variable to `Windows`.  The next time the system boots, it will use `Windows` as the default boot entry.
+
+    $ grub-editenv unset next_entry
+
+    🔹 This command removes the `next_entry` variable from the environment file.
+
+✅ **Simple Example:**
+
+    $ grub-editenv list
+
+    🔹 Lists all GRUB environment variables in the `/boot/grub/grubenv` file. This command helps you see what variables exist and what their values are.

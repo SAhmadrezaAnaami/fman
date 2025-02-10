@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ionice` baraye ta'een kardan bartari (priority) baraye process-ha dar system-haie ke az disk I/O estefade mikonand, be kar miravad. Yani shoma mitavanid beguid ke yek barname ba che andazeyi az disk estefade konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `ionice -c class -n priority command`  --> 🚦 Ta'een class va priority. Class mitoone `realtime`, `best-effort` ya `idle` bashad. Priority beyne 0 ta 7 ast (0 balatarin).
+    🔹 `ionice -p PID`  --> 🆔 Ta'een ya namayesh priority baraye yek process ba ID moshakhas.
+    🔹 `ionice -N` --> 😴 Process ra be class 'idle' mibarad.
+
+🛠 **Mesal-ha:**
+
+    $ ionice -c best-effort -n 4 tar -cf backup.tar /data
+
+    🔹 Az barname `tar` ba class `best-effort` va priority 4 estefade konid baraye backup gereftan.
+
+    $ ionice -p 1234
+
+    🔹 Namayesh priority I/O baraye process ba ID 1234.
+
+✅ **Mesal sade:**
+
+    $ ionice -N dd if=/dev/sda of=/dev/sdb bs=4k
+    
+    🔹 Dastoor `dd` ro ba class 'idle' ejra mikonad, yani kamtarin bartari behesh dade mishe, va kamtarin ta'sir ro ruye system dare.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ionice` command is used to set the I/O scheduling class and priority for a process. This allows you to control how much disk I/O a program is allowed to use.
+
+⚙️ **Options:**
+    🔹 `ionice -c class -n priority command`  --> 🚦 Set the scheduling class and priority. Class can be `realtime`, `best-effort`, or `idle`. Priority is between 0 and 7 (0 is highest).
+    🔹 `ionice -p PID`  --> 🆔 Set or display the I/O priority for a process with a specific ID.
+    🔹 `ionice -N` --> 😴 Move a process to the 'idle' class.
+
+🛠 **Examples:**
+
+    $ ionice -c best-effort -n 4 tar -cf backup.tar /data
+
+    🔹 Run the `tar` command with the `best-effort` class and priority 4 for creating a backup.
+
+    $ ionice -p 1234
+
+    🔹 Display the I/O priority for process ID 1234.
+
+✅ **Simple Example:**
+
+    $ ionice -N dd if=/dev/sda of=/dev/sdb bs=4k
+    
+    🔹 Runs the `dd` command with the 'idle' class, giving it the lowest possible I/O priority, minimizing its impact on the system.

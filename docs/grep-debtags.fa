@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep-debtags` baraye jostojo kardan (search) dar tag-haye Debian package (debtags) estefade mishavad. In dastoor be shoma komak mikonad package-haee ro peyda konid ke tag-haye moshakhasi ro daran.  
+
+⚙️ **Gozine-ha:**
+    🔹 `--and`  -->  ➕ Tag-ha bayad ba ham sadeg bashand (AND operation).  
+    🔹 `--or`   -->  | Tag-ha ya bayad sadeg bashand (OR operation, default).
+    🔹 `--not`  -->  ⛔ Tag-ha nabayad mojood bashand.  
+    🔹 `--help` -->  ❓ Namayesh rahnama (help) dastoor.
+    🔹 `--version` --> ℹ️ Namayesh version dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ grep-debtags network::server
+    
+    🔹 List kardan hameye package-haee ke tag `network::server` ro daran.
+
+    $ grep-debtags --and network::server role::service
+    
+    🔹 List kardan package-haee ke ham `network::server` va ham `role::service` ro daran.
+
+✅ **Mesal sade:**
+
+    $ grep-debtags --not use::web-server
+    
+    🔹 Namayesh package-haee ke az `use::web-server` estefade nemikonan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep-debtags` command is used to search Debian package tags (debtags). This tool helps you find packages that have specific tags.
+
+⚙️ **Options:**
+    🔹 `--and`  -->  ➕ Tags must all be matched (AND operation).
+    🔹 `--or`   -->  | Tags must match at least one (OR operation, default).
+    🔹 `--not`  -->  ⛔ Tags must not be present.
+    🔹 `--help` -->  ❓ Show command help.
+    🔹 `--version` --> ℹ️ Show command version.
+
+🛠 **Examples:**
+
+    $ grep-debtags network::server
+
+    🔹 List all packages that have the `network::server` tag.
+
+    $ grep-debtags --and network::server role::service
+
+    🔹 List packages that have both `network::server` and `role::service` tags.
+
+✅ **Simple Example:**
+
+    $ grep-debtags --not use::web-server
+
+    🔹 Show packages that do not use `use::web-server`.

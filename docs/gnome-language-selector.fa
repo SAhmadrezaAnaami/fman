@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-language-selector` baraye taeen zaban-e default (pishfarz) dar system-e amale GNOME estefade mishavad. Ba in dastoor mitoonid zaban-e system, format-haye tarikh va adad, va keyboard layout ra tagheer dahid. 🌐
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-language-selector` --> 🚀 Baz kardan barname-ye entekhab zaban ba GUI (Graphical User Interface).
+    🔹 `gnome-language-selector --help` --> ❓ Namayesh rahnamaye dastoor va gozine-ha.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-language-selector
+
+    🔹 Barname-ye entekhab zaban ra baz mikonad ke shoma mitoonid zaban-e system ra az aanjaa tagheer dahid.
+
+    $ gnome-language-selector --help
+
+    🔹 Rahnamaye dastoor ra dar terminal namayesh midahad.
+
+✅ **Mesal sade:**
+
+    $ gnome-language-selector
+
+    🔹 Ba ejraye in dastoor, yek panjare baz mishavad ke shoma mitoonid zaban-e system ra be zaban-e farsi ya har zaban-e digar tagheer dahid. ⌨️
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-language-selector` command is used to set the default language in the GNOME operating system.  With this command, you can change the system language, date and number formats, and keyboard layout. 🌐
+
+⚙️ **Options:**
+    🔹 `gnome-language-selector` --> 🚀 Opens the language selection program with a GUI (Graphical User Interface).
+    🔹 `gnome-language-selector --help` --> ❓ Displays the command help and options.
+
+🛠 **Examples:**
+
+    $ gnome-language-selector
+
+    🔹 Opens the language selection program, from where you can change the system language.
+
+    $ gnome-language-selector --help
+
+    🔹 Displays the command help in the terminal.
+
+✅ **Simple Example:**
+
+    $ gnome-language-selector
+
+    🔹 By running this command, a window opens where you can change the system language to Persian or any other language. ⌨️
+

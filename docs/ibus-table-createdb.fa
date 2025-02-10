@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ibus-table-createdb` baraye dorost kardane yek database az yek file matni (text file) baraye estefade dar engine vared kardane matn (input method engine) ibus-table be kar miravad. In dastoor file matni ra mikhwanad va az an yek database binary misazad ke ibus-table mitavanad baraye vared kardane asan-tar matn az rooye jadval estefade konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `--table=FILENAME` --> 🗄️ Esme file jadvali ke bayad be database tabdil shavad ra moshakhas mikonad.
+    🔹 `--output=FILENAME` --> 💾 Esme file database kharoji ra moshakhas mikonad. Agar in gozine dade nashavad, esme database az esme file jadval gerefte mishavad.
+    🔹 `--merge=FILENAME` --> ➕ Database jadid ra ba yek database mojood edgham mikonad.
+    🔹 `--sort` --> 🧮 Jadval vared shode ra moratab mikonad (sort mikonad) ghabl az sakhtane database.
+    🔹 `--selkey=KEY` --> 🔑 Kelid entekhab ra baraye har satr moshakhas mikonad. (Default: Space)
+
+🛠 **Mesal-ha:**
+
+    $ ibus-table-createdb --table=my_table.txt
+
+    🔹 Yek database az file `my_table.txt` misazad va an ra ba name `my_table.db` zakhire mikonad.
+
+    $ ibus-table-createdb --table=my_table.txt --output=new_table.db
+
+    🔹 Yek database az file `my_table.txt` misazad va an ra ba name `new_table.db` zakhire mikonad.
+
+✅ **Mesal sade:**
+
+    $ ibus-table-createdb --table=persian_keyboard.txt --sort
+
+    🔹 Yek database az file `persian_keyboard.txt` misazad, aval jadval ra moratab mikonad va bad an ra zakhire mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ibus-table-createdb` command is used to create a database from a text file for use with the ibus-table input method engine. This command reads a text file and creates a binary database that ibus-table can use for easier text input based on a table.
+
+⚙️ **Options:**
+    🔹 `--table=FILENAME` --> 🗄️ Specifies the table file that should be converted to a database.
+    🔹 `--output=FILENAME` --> 💾 Specifies the output database file name. If not given, the database name is derived from the table file name.
+    🔹 `--merge=FILENAME` --> ➕ Merges the new database with an existing database.
+    🔹 `--sort` --> 🧮 Sorts the input table before creating the database.
+    🔹 `--selkey=KEY` --> 🔑 Specifies the selection key for each entry. (Default: Space)
+
+🛠 **Examples:**
+
+    $ ibus-table-createdb --table=my_table.txt
+
+    🔹 Creates a database from the file `my_table.txt` and saves it as `my_table.db`.
+
+    $ ibus-table-createdb --table=my_table.txt --output=new_table.db
+
+    🔹 Creates a database from the file `my_table.txt` and saves it as `new_table.db`.
+
+✅ **Simple Example:**
+
+    $ ibus-table-createdb --table=persian_keyboard.txt --sort
+
+    🔹 Creates a database from the file `persian_keyboard.txt`, sorts the table first, and then saves it.

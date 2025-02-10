@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-ar-12` yek etela'iye az barname `ar` az majmooe abzarhaye GNU baraye zaban C va C++ ast. In barname baraye ijade, taghire va estekhraje file-haye archive estefade mishavad. File-haye archive, majmooee az file-haye digar hastand ke ba ham yekja shodeand. `gcc-ar-12` be tore khas baraye compatible shodan ba version 12 compiler gcc tarrahi shode ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `gcc-ar-12 -t archive.a`  --> 📜 List kardane obsject haye dakhel archive
+    🔹 `gcc-ar-12 -x archive.a`  --> 📦 Estekhraje hameye file-ha az archive
+    🔹 `gcc-ar-12 -v`         --> 👀 Namayeshe verbose output (etela'ate bishtar)
+    🔹 `gcc-ar-12 -r archive.a file1.o file2.o` --> ➕ Ezafe kardane ya replace kardane file-ha dar archive
+
+🛠 **Mesal-ha:**
+
+    $ gcc-ar-12 -t my_library.a
+
+    🔹 List kardane obsject haye dakhel archive `my_library.a`.
+
+    $ gcc-ar-12 -x my_library.a
+
+    🔹 Estekhraje hameye file-ha az archive `my_library.a`.
+
+✅ **Mesal sade:**
+
+    $ gcc-ar-12 -r my_library.a file1.o
+
+    🔹 File `file1.o` ra ezafe mikonad be archive `my_library.a`. Agar `my_library.a` vojod nadashte bashad, sakhte mishavad. Agar file `file1.o` ghablan dar archive bashad, replace mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-ar-12` command is a variant of the GNU `ar` archiver, specifically built and/or configured to work with the GCC (GNU Compiler Collection) version 12. It is used to create, modify, and extract from archives. An archive is a collection of files bundled together into a single file.  This is particularly useful for creating libraries.
+
+⚙️ **Options:**
+    🔹 `gcc-ar-12 -t archive.a`  --> 📜 List the table of contents of the archive.
+    🔹 `gcc-ar-12 -x archive.a`  --> 📦 Extract all files from the archive.
+    🔹 `gcc-ar-12 -v`         --> 👀 Enable verbose output (more information).
+    🔹 `gcc-ar-12 -r archive.a file1.o file2.o` --> ➕ Replace or add files to the archive.
+
+🛠 **Examples:**
+
+    $ gcc-ar-12 -t my_library.a
+
+    🔹 Lists the object files contained within the archive `my_library.a`.
+
+    $ gcc-ar-12 -x my_library.a
+
+    🔹 Extracts all files from the archive `my_library.a`.
+
+✅ **Simple Example:**
+
+    $ gcc-ar-12 -r my_library.a file1.o
+
+    🔹 Adds the `file1.o` object file to the `my_library.a` archive. If `my_library.a` does not exist, it will be created. If `file1.o` already exists in the archive, it will be replaced.

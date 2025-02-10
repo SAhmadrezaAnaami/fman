@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gcc-ranlib` baraye dorost kardan ya update kardane index dar archive library-ha (file-haye `.a`) estefade mishavad. In index baraye zoodtar peyda kardane symbol-ha dar library estefade mishavad, va vaghti ke linkar library-ha ro estefade mikone karash sari’tar anjam mishe. In dastoor kheili vaghta ba dastoor `gcc-ar` estefade mishe. Agar az `gcc` baraye compile kardane code estefade mikonid, `gcc-ranlib` haman `ranlib` ast ke baraye GCC setup shode.
+
+⚙️ **Gozine-ha:**
+    🔹 Hich gozine khassi nadare ke kheili estefade beshe chon kar-e asli ro automatic anjam mide.
+    🔹 `gcc-ranlib library.a` --> 📚 Sakhtan ya update kardane index baraye file `library.a`. Agar index nabashe misaze, agar bashe update mikone.
+    🔹 `-v` ya `--verbose` --> 📢 Namayesh etela’at bishtar dar morede chikar dare mikone.
+
+🛠 **Mesal-ha:**
+
+    $ gcc-ranlib libMyMath.a
+
+    🔹 Sakhtan index baraye `libMyMath.a`.
+
+    $ gcc-ranlib -v libMyMath.a
+
+    🔹 Sakhtan index baraye `libMyMath.a` ba etela’at bishtar.
+
+✅ **Mesal sade:**
+
+    $ gcc-ranlib libstringutils.a
+
+    🔹 File library `libstringutils.a` ro moratab (index) mikone ta linkar betoone sari’tar function-haye dakhelesh ro peyda kone. Bad az ejraye in dastoor, process link kardan sari’tar mishe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gcc-ranlib` command is used to create or update the index of archive libraries ('.a' files). This index is used for faster symbol lookup within the library, which speeds up the linking process. It is often used in conjunction with the `gcc-ar` command. If you're using `gcc` to compile your code, `gcc-ranlib` is essentially `ranlib` configured specifically for GCC.
+
+⚙️ **Options:**
+    🔹 It doesn't have many specific options because it mainly performs its core task automatically.
+    🔹 `gcc-ranlib library.a` --> 📚 Create or update the index for the file `library.a`. If the index doesn't exist, it creates it; if it exists, it updates it.
+    🔹 `-v` or `--verbose` --> 📢 Show more information about what it's doing.
+
+🛠 **Examples:**
+
+    $ gcc-ranlib libMyMath.a
+
+    🔹 Create an index for `libMyMath.a`.
+
+    $ gcc-ranlib -v libMyMath.a
+
+    🔹 Create an index for `libMyMath.a` with more verbose output.
+
+✅ **Simple Example:**
+
+    $ gcc-ranlib libstringutils.a
+
+    🔹 Indexes the `libstringutils.a` library file, allowing the linker to find functions inside it more quickly. After running this command, the linking process becomes faster.

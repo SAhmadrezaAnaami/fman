@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lodraw` baraye ejra kardane LibreOffice Draw az tarighe khatte farman (command line) estefade mishavad. LibreOffice Draw yek narmafzar baraye tarahi va naghshekeshi vectori ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `lodraw` --> 🚀 Ejra kardan LibreOffice Draw ba safhe asli.
+    🔹 `lodraw <filename>` --> 📂 Baz kardane yek file Draw khass.  Masalan: `lodraw diagram.odg`
+    🔹 `lodraw --help` --> ℹ️ Namayesh rahnamaye dastoor.
+
+🛠 **Mesal-ha:**
+
+    $ lodraw
+
+    🔹 Ejra kardan LibreOffice Draw.
+
+    $ lodraw document.odg
+
+    🔹 Baz kardane file "document.odg" ba LibreOffice Draw.
+
+✅ **Mesal sade:**
+
+    $ lodraw my_drawing.odg
+
+    🔹 Agar file "my_drawing.odg" vojood dashte bashad, ba LibreOffice Draw baz mishavad.  Agar vojood nadashte bashad, LibreOffice Draw baz mishavad va shoma mitavanid yek naghshe jadid ijad konid va an ra ba in name zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lodraw` command is used to launch LibreOffice Draw from the command line.  LibreOffice Draw is a vector graphics editor similar to CorelDRAW.
+
+⚙️ **Options:**
+    🔹 `lodraw` --> 🚀 Launch LibreOffice Draw with the main window.
+    🔹 `lodraw <filename>` --> 📂 Open a specific Draw file. For example: `lodraw diagram.odg`
+    🔹 `lodraw --help` --> ℹ️ Display command line help information.
+
+🛠 **Examples:**
+
+    $ lodraw
+
+    🔹 Launch LibreOffice Draw.
+
+    $ lodraw document.odg
+
+    🔹 Open the file "document.odg" with LibreOffice Draw.
+
+✅ **Simple Example:**
+
+    $ lodraw my_drawing.odg
+
+    🔹 If the file "my_drawing.odg" exists, it will open with LibreOffice Draw. If it does not exist, LibreOffice Draw will still launch, allowing you to create a new drawing and save it with this name.

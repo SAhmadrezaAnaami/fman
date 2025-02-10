@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2ddst-wrapper` yek ravesh asan baraye estefade az driver-haye `foo2zjs` baraye printer-haye rangie ke az format DST estefade mikonand, ast.  Be zabane sade, in dastoor komak mikone ke computer shoma ba printer behtar ertebat bargharar koneh, bekhosos agar printer shoma az yek zabane khasi estefade koneh.
+
+⚙️ **Gozine-ha:**
+    🔹 `foo2ddst-wrapper -z[ad]` --> 🖨️ Entekhab resolooshn chap (resolution), `a` baraye alie va `d` baraye paeen.
+    🔹 `foo2ddst-wrapper -r`   --> 🌈 Chap ba rang-haaye asli (red, green, blue). Agar in gozineh estefadeh nashavad, chap sefid va siyah khahad bood.
+    🔹 `foo2ddst-wrapper -g`   --> ✨ Tahdid meghdare gamma baraye behtar kardan rang-ha. oboor dadane adad be onvane argoman.
+    🔹 `foo2ddst-wrapper -n <te'dad>` --> 🔢 Chap kardane chand copy az safheh.
+
+🛠 **Mesal-ha:**
+
+    $ foo2ddst-wrapper -z -r file.ps
+    
+    🔹 Chap file `file.ps` ba resolooshn pishfarz va ba rang.
+
+    $ foo2ddst-wrapper -za -g 1.8 file.ps
+    
+    🔹 Chap file `file.ps` ba resolooshn alie (za) va gamma 1.8.
+
+✅ **Mesal sade:**
+
+    $ foo2ddst-wrapper -n 2 myfile.ps > /dev/usb/lp0
+
+    🔹 In dastoor 2 copy az `myfile.ps` chap mikonad va an ra be printer usb mifrestad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2ddst-wrapper` command provides a simple way to use `foo2zjs` drivers for color printers that use the DST format. In simple terms, this command helps your computer communicate better with the printer, especially if your printer uses a specific language.
+
+⚙️ **Options:**
+    🔹 `foo2ddst-wrapper -z[ad]` --> 🖨️ Select print resolution, `a` for high and `d` for draft.
+    🔹 `foo2ddst-wrapper -r`   --> 🌈 Print in color (red, green, blue). If this option is not used, printing will be in grayscale.
+    🔹 `foo2ddst-wrapper -g`   --> ✨ Adjust gamma value to improve color. Pass a number as an argument.
+    🔹 `foo2ddst-wrapper -n <number>` --> 🔢 Print multiple copies of the page.
+
+🛠 **Examples:**
+
+    $ foo2ddst-wrapper -z -r file.ps
+
+    🔹 Print the `file.ps` file with the default resolution and in color.
+
+    $ foo2ddst-wrapper -za -g 1.8 file.ps
+
+    🔹 Print the `file.ps` file with high resolution (za) and gamma 1.8.
+
+✅ **Simple Example:**
+
+    $ foo2ddst-wrapper -n 2 myfile.ps > /dev/usb/lp0
+
+    🔹 This command prints 2 copies of `myfile.ps` and sends it to the USB printer.
+

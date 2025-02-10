@@ -1,0 +1,14 @@
+Source: fman
+Section: utils
+Priority: optional
+Maintainer: Ahmadreza Anaami <sky.lighthouse.me@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/SAhmadrezaAnaami/fman
+
+Package: fman
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Farsi manual pages viewer
+ A simple manual page viewer for the Persian language, designed as an independent
+ alternative to the system's man command. It supports RTL text for Farsi.

@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gpgtar` baraye sakhtan archive-haye `tar` ba amniyat bala ba estefade az `GnuPG` be kar miravad. Yani file-ha ra ghabl az archive kardan, sifrmikone (encrypt) va ba’desh archive mikone, ke amniyat file-ha kheili bala mire. Agar kasi be file archive shode dastresi peyda kone, nemitoone file-ha ro beboone (decrypt) magar inke kalide dorost ro dashte bashe.
+
+⚙️ **Gozine-ha:**
+    🔹 `--encrypt`  --> 🔒 File-ha ro sifrmikone (encrypt) ba estefade az kalide mo’ayyan shode.
+    🔹 `--recipient` --> 🙋‍♂️ Kalidi ke file-ha ba oon sifrmishe (encrypt). Bayad ID ya email sahibi kalid ro bedid.
+    🔹 `--output`    --> 📤 Esme file archive shode (tar) ro moshakhas mikone.
+    🔹 `--decrypt`  --> 🔓 File archive shode ro beboone (decrypt) va az halate archive darare (extract).
+    🔹 `--verify`   --> ✅ Check mikone ke file archive shode dastkari nashode bashe va az tarafe kasi ke fekr mikonim ferestade shode bashe.
+
+🛠 **Mesal-ha:**
+
+    $ gpgtar --encrypt --recipient "shakhs@example.com" --output backup.tar.gpg pooshe_morhem
+
+    🔹 Pooshe "pooshe_morhem" ro sifrmikone (encrypt) baraye "shakhs@example.com" va save mikone be esme "backup.tar.gpg".
+
+    $ gpgtar --decrypt --output backup pooshe_sifreh.tar.gpg
+
+    🔹 File "pooshe_sifreh.tar.gpg" ro beboone (decrypt) va dar pooshe "backup" extract mikone.
+
+✅ **Mesal sade:**
+
+    $ gpgtar --verify backup.tar.gpg
+
+    🔹 Check mikone ke file "backup.tar.gpg" taghir nakarde bashe az zamani ke sakhte shode. Agar sahih bashe, etela’ati dar morede signature neshon mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gpgtar` command creates secure `tar` archives using `GnuPG`. It encrypts files before archiving them, enhancing data security. Even if the archive is compromised, the files remain protected unless the correct key is used to decrypt them.
+
+⚙️ **Options:**
+    🔹 `--encrypt`  --> 🔒 Encrypts files using the specified key.
+    🔹 `--recipient` --> 🙋‍♂️ Specifies the key to use for encryption. Provide the key ID or email address of the key owner.
+    🔹 `--output`    --> 📤 Sets the name of the output archive (tar) file.
+    🔹 `--decrypt`  --> 🔓 Decrypts the archive and extracts the files.
+    🔹 `--verify`   --> ✅ Verifies that the archive has not been tampered with and confirms it originates from the expected source.
+
+🛠 **Examples:**
+
+    $ gpgtar --encrypt --recipient "person@example.com" --output backup.tar.gpg important_folder
+
+    🔹 Encrypts the "important_folder" for "person@example.com" and saves it as "backup.tar.gpg".
+
+    $ gpgtar --decrypt --output backup encrypted_folder.tar.gpg
+
+    🔹 Decrypts the "encrypted_folder.tar.gpg" archive and extracts its contents to the "backup" folder.
+
+✅ **Simple Example:**
+
+    $ gpgtar --verify backup.tar.gpg
+
+    🔹 Verifies that the "backup.tar.gpg" file has not been modified since it was created. If valid, it will display information about the signature.

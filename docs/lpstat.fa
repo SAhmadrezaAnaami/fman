@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lpstat` baraye didan vaziyat e chapgar-ha (printers) va darkhast-haye chape shoma (print jobs) estefade mishavad. Yani shoma mitoonid bebini kodoom chapgar haa fa'al hastan, kodoom yeki dare chap mikone va darkhast haye chape shoma che vaziyati daran.
+
+⚙️ **Gozine-ha:**
+    🔹 `lpstat -t`  --> ℹ️ Namayesh etela'ate kamele vaziyat e chapgar va darkhast-ha.
+    🔹 `lpstat -p [name chapgar]` --> 🖨️ Namayesh vaziyat yek chapgar khass (be jaye `[name chapgar]` esme chapgar ra benevisid).
+    🔹 `lpstat -a` --> ✅ Namayesh hameye chapgarhaye fa'al va darkhast-ha.
+    🔹 `lpstat -d` --> 📍 Namayesh chapgare pishfarz (default).
+    🔹 `lpstat -o` --> 📄 Namayesh darkhast-haye chap dar safe entezar.
+
+🛠 **Mesal-ha:**
+
+    $ lpstat -t
+
+    🔹 Namayesh etela'ate kamel dar morede chapgar-ha va darkhast-ha.
+
+    $ lpstat -p EpsonStylus
+
+    🔹 Namayesh vaziyat chapgare EpsonStylus.
+
+✅ **Mesal sade:**
+
+    $ lpstat -d
+
+    🔹 Chapgare pishfarz ro namayesh mide. Agar natije begid `system default destination: HL-2270DW` yani chapgare pishfarz shoma HL-2270DW hast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lpstat` command is used to display the status of printers and print jobs.  It allows you to see which printers are available, which one is currently printing, and the status of your print requests.
+
+⚙️ **Options:**
+    🔹 `lpstat -t`  --> ℹ️ Show complete status information about printers and print jobs.
+    🔹 `lpstat -p [printer name]` --> 🖨️ Show the status of a specific printer (replace `[printer name]` with the actual printer name).
+    🔹 `lpstat -a` --> ✅ Show all active printers and print jobs.
+    🔹 `lpstat -d` --> 📍 Show the default printer.
+    🔹 `lpstat -o` --> 📄 Show print jobs in the queue.
+
+🛠 **Examples:**
+
+    $ lpstat -t
+
+    🔹 Show complete information about printers and print jobs.
+
+    $ lpstat -p EpsonStylus
+
+    🔹 Show the status of the EpsonStylus printer.
+
+✅ **Simple Example:**
+
+    $ lpstat -d
+
+    🔹 Displays the default printer. If the output is `system default destination: HL-2270DW`, it means your default printer is HL-2270DW.

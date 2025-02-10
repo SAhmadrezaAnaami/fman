@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-extensions` baraye modiriyat extension-haye Gnome shell estefade mishavad.  Ba in dastoor mitoonid extension-ha ra fa'al ya gheyre fa'al konid, list konid va settings aanha ra tagheer dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-extensions enable ID`  --> ✅ Extension ba ID moshakhas ra fa'al mikonad.
+    🔹 `gnome-extensions disable ID` --> ❌ Extension ba ID moshakhas ra gheyre fa'al mikonad.
+    🔹 `gnome-extensions list`    --> 📃 Listi az hameye extension-haye nasb shode ra namayesh midahad.
+    🔹 `gnome-extensions show ID`    --> ℹ️ Etela'at kameli dar morede extension ba ID moshakhas namayesh midahad.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-extensions enable my-awesome-extension@me.com
+
+    🔹 Extension ba ID `my-awesome-extension@me.com` fa'al mishavad.
+
+    $ gnome-extensions disable my-awesome-extension@me.com
+
+    🔹 Extension ba ID `my-awesome-extension@me.com` gheyre fa'al mishavad.
+
+✅ **Mesal sade:**
+
+    $ gnome-extensions list
+
+    🔹 Listi az hameye extension-haye nasb shode be hamrahe ID aanha namayesh dade mishavad.  Az ID mitoonid baraye fa'al ya gheyre fa'al kardan extension-ha estefade konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-extensions` command is used to manage Gnome shell extensions. You can use this command to enable, disable, list, and configure the settings of extensions.
+
+⚙️ **Options:**
+    🔹 `gnome-extensions enable ID`  --> ✅ Enables the extension with the specified ID.
+    🔹 `gnome-extensions disable ID` --> ❌ Disables the extension with the specified ID.
+    🔹 `gnome-extensions list`    --> 📃 Displays a list of all installed extensions.
+    🔹 `gnome-extensions show ID`    --> ℹ️ Displays detailed information about the extension with the specified ID.
+
+🛠 **Examples:**
+
+    $ gnome-extensions enable my-awesome-extension@me.com
+
+    🔹 Enables the extension with the ID `my-awesome-extension@me.com`.
+
+    $ gnome-extensions disable my-awesome-extension@me.com
+
+    🔹 Disables the extension with the ID `my-awesome-extension@me.com`.
+
+✅ **Simple Example:**
+
+    $ gnome-extensions list
+
+    🔹 Displays a list of all installed extensions along with their IDs. You can use the ID to enable or disable extensions.

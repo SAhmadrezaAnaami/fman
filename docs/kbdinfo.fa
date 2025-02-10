@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `kbdinfo` etela'ati dar bareye keyboard-e shoma neshan midahad, mesle layout, model, va digar config-ha. Dar vaghe, yek negahe sari' be vaz'iyat-e keyboard-e shomaast. ⌨️
+
+⚙️ **Gozine-ha:**
+    🔹 `-v`  --> 🗣️ Namayesh etela'ate bishtar va tafsili (verbose). Be dard-e debuging mikhore.
+    🔹 `-s`  --> 💾 Zakhire-ye output dar yek file. Baraye negahdari ya share kardan information keyboard be dard mikhore.
+
+🛠 **Mesal-ha:**
+
+    $ kbdinfo
+
+    🔹 Namayesh etela'ate paye dar bareye keyboard.
+
+    $ kbdinfo -v
+
+    🔹 Namayesh etela'ate bishtar va tafsili.
+
+✅ **Mesal sade:**
+
+    $ kbdinfo
+    layout: us
+    variant:
+    options:
+
+    🔹 Neshun mide ke layout-e keyboard "us" hast va variant va option khasi set nashode.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `kbdinfo` command displays information about your keyboard, such as layout, model, and other configurations. It gives you a quick overview of your current keyboard setup. ⌨️
+
+⚙️ **Options:**
+    🔹 `-v`  --> 🗣️ Show more detailed (verbose) information.  Useful for debugging.
+    🔹 `-s`  --> 💾 Save the output to a file.  Useful for storing or sharing keyboard information.
+
+🛠 **Examples:**
+
+    $ kbdinfo
+
+    🔹 Show basic keyboard information.
+
+    $ kbdinfo -v
+
+    🔹 Show more verbose and detailed information.
+
+✅ **Simple Example:**
+
+    $ kbdinfo
+    layout: us
+    variant:
+    options:
+
+    🔹 Indicates that the keyboard layout is "us" and no specific variant or options are set.

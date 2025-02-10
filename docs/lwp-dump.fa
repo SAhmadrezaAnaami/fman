@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `lwp-dump` baraye didan va tahlil kardane etela'ate HTTP az yek URL estefade mishavad. In dastoor mitavanad header-ha, content, va digar etela'ate marboot be request va response-haye HTTP ra neshan dahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `lwp-dump -d`  --> 🐞 Debug mode ra fa'al mikonad, va etela'ate bishtari dar morede process neshan midahad.
+    🔹 `lwp-dump -v`  --> 📢 Verbose mode ra fa'al mikonad, va detail-haye bishtari ra neshan midahad.
+    🔹 `lwp-dump -h`  --> ℹ️ Header-haye HTTP ra faghat neshan midahad va content-ha ra skip mikonad.
+    🔹 `lwp-dump -t <timeout>` --> ⏳ Zamane timeout baraye request ra moshakhas mikonad (be saniye).
+
+🛠 **Mesal-ha:**
+
+    $ lwp-dump http://www.example.com
+
+    🔹 Namayesh hameye etela'ate HTTP (header va content) az website example.com.
+
+    $ lwp-dump -h http://www.example.com
+
+    🔹 Faghat header-haye HTTP az website example.com ra neshan midahad.
+
+✅ **Mesal sade:**
+
+    $ lwp-dump -d http://www.example.com
+
+    🔹 Debug mode ra fa'al mikonad va etela'ate bishtari ra dar morede process namayesh midahad, ke baraye troubleshoot kardan mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `lwp-dump` command is used to view and analyze HTTP information from a URL. This command can display headers, content, and other information related to HTTP requests and responses.
+
+⚙️ **Options:**
+    🔹 `lwp-dump -d`  --> 🐞 Enables debug mode, showing more information about the process.
+    🔹 `lwp-dump -v`  --> 📢 Enables verbose mode, showing more details.
+    🔹 `lwp-dump -h`  --> ℹ️ Shows only the HTTP headers and skips the content.
+    🔹 `lwp-dump -t <timeout>` --> ⏳ Specifies the timeout for the request (in seconds).
+
+🛠 **Examples:**
+
+    $ lwp-dump http://www.example.com
+
+    🔹 Displays all HTTP information (headers and content) from the website example.com.
+
+    $ lwp-dump -h http://www.example.com
+
+    🔹 Shows only the HTTP headers from the website example.com.
+
+✅ **Simple Example:**
+
+    $ lwp-dump -d http://www.example.com
+
+    🔹 Enables debug mode and displays more information about the process, which is useful for troubleshooting.
+

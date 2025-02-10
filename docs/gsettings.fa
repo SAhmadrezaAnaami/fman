@@ -1,0 +1,66 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gsettings` baraye khandan, neveshtan, va reset kardan setting-haye desktop dar GNOME estefade mishavad. In dastoor be shoma komak mikonad ta tarze kar va shekle zohure barname-ha va mahite GNOME ra tagheer dahid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gsettings list-schemas` --> 📚 List kardane hameye schema-haye mojood.
+    🔹 `gsettings get SCHEMA KEY` --> 🔍 Khondan gheymate yek setting khas. Be jaye SCHEMA va KEY, nameye schema va key ra benevisid.
+    🔹 `gsettings set SCHEMA KEY VALUE` --> ✍️ Tagheer dadane gheymate yek setting khas.  Be jaye SCHEMA, KEY va VALUE, nameye schema, key va gheymate jadid ra benevisid.
+    🔹 `gsettings reset SCHEMA KEY` --> 🔄 Reset kardane yek setting be halate pishfarz.
+
+🛠 **Mesal-ha:**
+
+    $ gsettings list-schemas
+
+    🔹 Namayeshe listi az hameye schema-haye ghabele dastrasi.
+
+    $ gsettings get org.gnome.desktop.interface gtk-theme
+
+    🔹 Namayeshe nameye theme-ye estefade shode dar GNOME.
+
+    $ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+
+    🔹 Tagheer dadane theme-ye GNOME be 'Adwaita-dark'.
+
+✅ **Mesal sade:**
+
+    $ gsettings get org.gnome.desktop.background picture-uri
+
+    🔹 Nashan dadane address-e tasvire zaminezamineye desktop. Agar tasviri baraye zaminezamine entekhab nashode bashad, natije momken ast 'nothing' bashad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gsettings` command is used to read, write, and reset desktop settings in GNOME. It allows you to customize the behavior and appearance of applications and the GNOME environment itself.
+
+⚙️ **Options:**
+    🔹 `gsettings list-schemas` --> 📚 Lists all available schemas.
+    🔹 `gsettings get SCHEMA KEY` --> 🔍 Reads the value of a specific setting. Replace SCHEMA and KEY with the schema name and key, respectively.
+    🔹 `gsettings set SCHEMA KEY VALUE` --> ✍️ Changes the value of a specific setting. Replace SCHEMA, KEY, and VALUE with the schema name, key, and the new value.
+    🔹 `gsettings reset SCHEMA KEY` --> 🔄 Resets a setting to its default value.
+
+🛠 **Examples:**
+
+    $ gsettings list-schemas
+
+    🔹 Displays a list of all accessible schemas.
+
+    $ gsettings get org.gnome.desktop.interface gtk-theme
+
+    🔹 Displays the name of the currently used GTK theme in GNOME.
+
+    $ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+
+    🔹 Changes the GNOME theme to 'Adwaita-dark'.
+
+✅ **Simple Example:**
+
+    $ gsettings get org.gnome.desktop.background picture-uri
+
+    🔹 Shows the URI (address) of the desktop background image. If no image is set, the output may be 'nothing'.

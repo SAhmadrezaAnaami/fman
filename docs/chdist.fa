@@ -1,0 +1,70 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `chdist` yek dastoor (command) baraye tagheer dadane etela'at version-e tozi (distribution) Linux ast. In dastoor be shoma komak meekonad ta etela'at namayeshi ra dar file `/etc/os-release` va digar file-haye systemi tagheer bedahid. In kar mitoonad baraye sazmane system ya test kardane barname-ha bar rooye version-haye mokhtalef mofeed bashad.
+
+⚙️ **Gozine-ha:**
+    🔹 `chdist --name "Tozi Jadid"`  --> ✍️ Tagheer dadan name tozi.
+    🔹 `chdist --version "Version Jadid"`  --> 🔢 Tagheer dadan shomare version.
+    🔹 `chdist --id "tozi-jadid"`  --> 🆔 Tagheer dadan ID-e tozi.
+    🔹 `chdist --pretty-name "Tozi Jadid Va Ziba"` --> ✨ Tagheer dadan name zibaye tozi.
+    🔹 `chdist --all`  --> 🔄 Namayesh hameye etela'ate mojud ra namayesh midahad.
+    🔹 `chdist --reset` --> 💣 Bazgardandan file-haye configuration be halate pishfarz.
+
+🛠 **Mesal-ha:**
+
+    $ sudo chdist --name "MyCustomDistro" --version "1.0"
+
+    🔹 Tagheer dadan name va version-e tozi be "MyCustomDistro" va "1.0".
+
+    $ sudo chdist --pretty-name "My Custom Distro"
+
+    🔹 Tagheer dadan name zibaye tozi.
+
+✅ **Mesal sade:**
+
+    $ cat /etc/os-release | grep NAME=
+
+    🔹 Ghabl az ejraye dastoor, name tozi ra bebinid.
+    $ sudo chdist --name "MyNewDistro"
+    $ cat /etc/os-release | grep NAME=
+
+    🔹 Ba'd az ejraye dastoor, motmaen shavid ke name tagheer karde ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `chdist` command is used to modify Linux distribution information. This command allows you to change the displayed information in the `/etc/os-release` file and other system files. This can be useful for customizing your system or testing applications on different distribution versions.
+
+⚙️ **Options:**
+    🔹 `chdist --name "NewDistro"` --> ✍️ Change the distribution name.
+    🔹 `chdist --version "NewVersion"` --> 🔢 Change the version number.
+    🔹 `chdist --id "new-distro"` --> 🆔 Change the distribution ID.
+    🔹 `chdist --pretty-name "New and Beautiful Distro"` --> ✨ Change the pretty name of the distribution.
+    🔹 `chdist --all` --> 🔄 Display all existing distribution information.
+    🔹 `chdist --reset` --> 💣 Restore configuration files to their default state.
+
+🛠 **Examples:**
+
+    $ sudo chdist --name "MyCustomDistro" --version "1.0"
+
+    🔹 Change the distribution name and version to "MyCustomDistro" and "1.0".
+
+    $ sudo chdist --pretty-name "My Custom Distro"
+
+    🔹 Change the pretty name of the distribution.
+
+✅ **Simple Example:**
+
+    $ cat /etc/os-release | grep NAME=
+
+    🔹 Check the distribution name before running the command.
+    $ sudo chdist --name "MyNewDistro"
+    $ cat /etc/os-release | grep NAME=
+
+    🔹 After running the command, verify that the name has been changed.

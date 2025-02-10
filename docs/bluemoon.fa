@@ -1,0 +1,46 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    `bluemoon` yek dastoor nist ke be soorat pishfarz dar system-haye UNIX/Linux voojood dashte bashad. Momken ast yek barname ya script bashad ke shoma khodetoon sakhte bashid ya az jaye dige gerefte bashid. Baraye fahmidane karhayi ke anjam mide, bayad be dakhele code-esh negah konid. Agar `bluemoon` yek file executable bashad, an moghe mitavanid an ra ejra konid.
+
+⚙️ **Gozine-ha:**
+    Az aanjaee ke `bluemoon` yek dastoor standard nist, gozine-haye khassi nadarad. Gozine-ha va argument-haye aan be code-i ke developer neveshte bastegi darad.
+
+🛠 **Mesal-ha:**
+
+    $ bluemoon
+    🔹 Eejra kardane dastoor `bluemoon` agar dar path system bashad.
+
+    $ ./bluemoon
+    🔹 Eejra kardane dastoor `bluemoon` az directory-e فعلی agar dar path system nabashad.
+
+✅ **Mesal sade:**
+
+    $ bluemoon --help
+    🔹 Agar `bluemoon` ra shoma neveshte bashid, mitavanid gozine `--help` ra ezafe konid ta rahnamayee baraye estefade az aan neshan dahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    `bluemoon` is not a standard UNIX/Linux command. It is likely a custom program or script that you or someone else created. To understand what it does, you need to examine its code. If `bluemoon` is an executable file, you can run it.
+
+⚙️ **Options:**
+    Since `bluemoon` is not a standard command, it has no default options. The available options and arguments depend on the code written by the developer.
+
+🛠 **Examples:**
+
+    $ bluemoon
+    🔹 Executes the `bluemoon` command if it is in the system's PATH.
+
+    $ ./bluemoon
+    🔹 Executes the `bluemoon` command from the current directory if it's not in the system's PATH.
+
+✅ **Simple Example:**
+
+    $ bluemoon --help
+    🔹 If you wrote `bluemoon`, you can add a `--help` option to display usage instructions.

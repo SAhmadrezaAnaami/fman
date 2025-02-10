@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cd-fix-profile` baraye dorost kardan moshkelati ke dar profile shell (bash, zsh, etc.) ijad shode ast estefade mishavad. Agar terminal-e shoma be dorosti kar nemikonad ya moshkelati dar environment variable-ha darid, az in dastoor estefade konid ta profile shoma moratab shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cd-fix-profile` --> 🔨 Aghaz process tamir profile ba soalehaye interactive.
+    🔹 `cd-fix-profile --force` --> ⚠️ Tamir profile ra be soorate automatic va bedune soal porsidan anjam midahad (ehtiyat konid!).
+    🔹 `cd-fix-profile --dry-run` --> 🔍 Faghat neshun midahad che taghirati ijad mishavad, vali taghiri ijad nemikonad.
+
+🛠 **Mesal-ha:**
+
+    $ cd-fix-profile
+
+    🔹 Aghaz tamir profile ba porsesh az shoma dar mored har marhale.
+
+    $ cd-fix-profile --force
+
+    🔹 Tamir profile be soorate automatic va bedune soale zyad.
+
+✅ **Mesal sade:**
+
+    $ cd-fix-profile
+
+    🔹 Ba ejraye in dastoor, script tamam file haye configuration profile (mesle .bashrc, .zshrc) ra check mikonad va az shoma miporsad agar mikhahid khataha ra dorost konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cd-fix-profile` command is used to fix issues within your shell profile (bash, zsh, etc.).  If your terminal is behaving unexpectedly or you're experiencing issues with environment variables, this command can help to tidy up your profile.
+
+⚙️ **Options:**
+    🔹 `cd-fix-profile` --> 🔨 Starts the profile repair process with interactive prompts.
+    🔹 `cd-fix-profile --force` --> ⚠️  Performs a profile repair automatically without prompting (use with caution!).
+    🔹 `cd-fix-profile --dry-run` --> 🔍  Only shows what changes would be made, without actually applying them.
+
+🛠 **Examples:**
+
+    $ cd-fix-profile
+
+    🔹 Begins profile repair, prompting you at each stage.
+
+    $ cd-fix-profile --force
+
+    🔹 Repairs the profile automatically without requiring much user input.
+
+✅ **Simple Example:**
+
+    $ cd-fix-profile
+
+    🔹  By running this command, the script will check all profile configuration files (like .bashrc, .zshrc) and prompt you to fix errors if you choose to.

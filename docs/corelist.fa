@@ -1,0 +1,57 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `corelist` baraye fahmidane inke aya yek module Perl ba version-e asli Perl hamrah ast ya na, estefade mishavad.  Be zabane sade, be shoma miguyad aya niaz hast yek module ra nasb konid ya an dar hale hazer dar Perl-e shoma vojud darad.
+
+⚙️ **Gozine-ha:**
+    🔹 `corelist MojulName` -->  📃 Check mikonad aya MojulName dar version-e asli Perl vojud darad.
+    🔹 `corelist -v 5.10 MojulName` --> 🔍 Check mikonad aya MojulName dar version-e moshakhas-e Perl (dar inja, 5.10) vojud darad.
+    🔹 `corelist -a MojulName` --> 📊 Hameye version-haye Perl ra neshon midahad ke MojulName dar anha vojud dashte ast.
+
+🛠 **Mesal-ha:**
+
+    $ corelist Module::Name
+
+    🔹 Check mikonad aya Module::Name dar version-e asli Perl shoma vojud darad.
+
+    $ corelist -v 5.26 JSON
+
+    🔹 Check mikonad aya mojule JSON dar version-e 5.26 Perl vojud dashte ast.
+
+✅ **Mesal sade:**
+
+    $ corelist Time::Piece
+
+    🔹 Agar `Time::Piece` ba Perl shoma hamrah bashad, version-e Perl ra neshon midahad. Agar hamrah nabashad, peyghami ra neshon midahad ke an module dar version-e asli nist.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `corelist` command is used to determine if a Perl module is bundled with a standard Perl distribution.  Simply put, it tells you whether you need to install a module, or if it's already included with your Perl installation.
+
+⚙️ **Options:**
+    🔹 `corelist ModuleName` --> 📃 Checks if ModuleName is included in the default Perl version.
+    🔹 `corelist -v 5.10 ModuleName` --> 🔍 Checks if ModuleName was included in a specific Perl version (here, 5.10).
+    🔹 `corelist -a ModuleName` --> 📊 Shows all Perl versions in which ModuleName was included.
+
+🛠 **Examples:**
+
+    $ corelist Module::Name
+
+    🔹 Checks if Module::Name is included in your default Perl version.
+
+    $ corelist -v 5.26 JSON
+
+    🔹 Checks if the JSON module was included in Perl version 5.26.
+
+✅ **Simple Example:**
+
+    $ corelist Time::Piece
+
+    🔹 If `Time::Piece` is bundled with your Perl, it will output the Perl version number. Otherwise, it will output a message indicating that the module is not core.
+

@@ -1,0 +1,55 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `logname` esme karbar-e fa'al ra chap mikonad. Yani, esme shakhsi ke dar hale hazer be computer log-in karde ast ra neshon midehad.
+
+⚙️ **Gozine-ha:**
+    🔹 Dastoor `logname` gozine khasi nadarad. Azash sade estefade mishe.
+
+🛠 **Mesal-ha:**
+
+    $ logname
+
+    🔹 Esme karbari ke log-in karde namayesh dade mishavad.
+
+    $ whoami
+    
+    🔹 Dastoor `whoami` ham esme karbar-e fa'al ro neshon mide. Ba `logname` karayishoon ta ghariibeeh yeksane.
+
+✅ **Mesal sade:**
+
+    $ logname
+    ali
+
+    🔹 Agar karbari ba esme "ali" be system log-in karde bashad, dastoor `logname` "ali" ra chap mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `logname` command prints the name of the current user. It displays the username associated with the current login session.
+
+⚙️ **Options:**
+    🔹 The `logname` command doesn't have specific options. It's used in its simplest form.
+
+🛠 **Examples:**
+
+    $ logname
+
+    🔹 Displays the username of the currently logged-in user.
+
+    $ whoami
+
+    🔹 The `whoami` command also displays the current username. Its functionality is similar to `logname`.
+
+✅ **Simple Example:**
+
+    $ logname
+    alice
+
+    🔹 If a user with the username "alice" is logged into the system, the `logname` command will print "alice".
+

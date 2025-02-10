@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `arecordmidi` baraye sabt kardan dade-haye MIDI az yek vorudi (input) MIDI be yek file estefade mishavad. MIDI yek protocol digital baraye music va sound effects ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `arecordmidi -l`  --> 🎧 List kardan dastgah-haye vorudi MIDI dastrasi pazir.
+    🔹 `arecordmidi -p [port]`  --> 🔌 Entakhab port MIDI baraye sabt kardan.  Misal: `arecordmidi -p 24:0 file.midi`
+    🔹 `arecordmidi -d [seconds]` --> ⏳  Moshakhas kardan zaman sabt be sanieh.
+    🔹 `arecordmidi -f` --> 덮 Navishte shodan (overwrite) file agar ghablan vojood dashte bashad.
+
+🛠 **Mesal-ha:**
+
+    $ arecordmidi file.midi
+
+    🔹 Sabt kardan az dastgah-e pishfarz (default) MIDI be file-e "file.midi".
+
+    $ arecordmidi -p 20:0 track.midi
+
+    🔹 Sabt kardan az port MIDI 20:0 be file-e "track.midi".
+
+✅ **Mesal sade:**
+
+    $ arecordmidi -d 10 test.midi
+
+    🔹  Sabt kardan dade-haye MIDI be mudate 10 sanieh va zakhire an be file-e "test.midi".
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `arecordmidi` command is used to record MIDI data from a MIDI input device into a file. MIDI is a digital protocol for music and sound effects.
+
+⚙️ **Options:**
+    🔹 `arecordmidi -l`  --> 🎧 List available MIDI input devices.
+    🔹 `arecordmidi -p [port]` --> 🔌 Select the MIDI port to record from.  Example: `arecordmidi -p 24:0 file.midi`
+    🔹 `arecordmidi -d [seconds]` --> ⏳ Specify the recording duration in seconds.
+    🔹 `arecordmidi -f` --> 덮 Overwrite the file if it already exists.
+
+🛠 **Examples:**
+
+    $ arecordmidi file.midi
+
+    🔹 Record from the default MIDI device into the file "file.midi".
+
+    $ arecordmidi -p 20:0 track.midi
+
+    🔹 Record from MIDI port 20:0 into the file "track.midi".
+
+✅ **Simple Example:**
+
+    $ arecordmidi -d 10 test.midi
+
+    🔹 Record MIDI data for 10 seconds and save it to the file "test.midi".

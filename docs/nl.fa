@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nl` baraye shomareh gozari kardan khatt-ha (lines) dar yek file matni (text file) be kar miravad. Har khatt ra ba shomareh aan dar avale khatt chap mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `nl -b a file.txt`  --> 🔢 Shomare gozari hameye khatt-ha, hata khatt-haye khali.
+    🔹 `nl -b t file.txt`  --> 📝 Shomare gozari khatt-haei ke matn darand (khatt-haye khali shomare gozari nemishavand).
+    🔹 `nl -n rz file.txt` --> 0️⃣ Shomare gozari ba sefr-haye aval (leading zeros) baraye moratab be nazar residan.
+    🔹 `nl -w 3 file.txt`  --> ↔️  Ta'een tool shomareh (number width) be tore mesal 3 character.
+    🔹 `nl -s ": " file.txt` --> 🔗  Ta'een fasel (separator) bein shomareh va matn.
+
+🛠 **Mesal-ha:**
+
+    $ nl file.txt
+
+    🔹 Shomare gozari khatt-haei ke matn darand, khatt-haye khali shomare gozari nemishavand.
+
+    $ nl -b a file.txt
+
+    🔹 Shomare gozari hameye khatt-ha, hata khatt-haye khali.
+
+✅ **Mesal sade:**
+
+    $ nl -b a -n rz file.txt
+
+    🔹 Hameye khatt-ha shomare gozari mishavand (hata khali ha) va shomare-ha ba sefr shoru mishavand (ba farz inke tool shomareh kamtar az tedade sefr-ha + adad bashad).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nl` command is used to number the lines of a text file. It prints each line with its line number at the beginning.
+
+⚙️ **Options:**
+    🔹 `nl -b a file.txt`  --> 🔢 Number all lines, including blank lines.
+    🔹 `nl -b t file.txt`  --> 📝 Number only lines with text (blank lines are not numbered).
+    🔹 `nl -n rz file.txt` --> 0️⃣ Number with leading zeros for better alignment.
+    🔹 `nl -w 3 file.txt`  --> ↔️  Set the number width to, for example, 3 characters.
+    🔹 `nl -s ": " file.txt` --> 🔗  Set the separator between the number and the text.
+
+🛠 **Examples:**
+
+    $ nl file.txt
+
+    🔹 Number lines with text; blank lines are not numbered.
+
+    $ nl -b a file.txt
+
+    🔹 Number all lines, including blank lines.
+
+✅ **Simple Example:**
+
+    $ nl -b a -n rz file.txt
+
+    🔹 All lines are numbered (including blank lines), and numbers start with leading zeros (assuming the number width is sufficient).

@@ -1,0 +1,50 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-session-properties` baraye modiriyat barname-haee ke be soorate khodkaar vaghti ke shoma vared mishavid (login) ejraa mishavand, estefade mishavad. Ba in dastoor, mitoonid barname-haa ro ezafe, hazf, ya tagheer bedid.
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-session-properties` --> 🚀 Baz kardane panjereye modiriyat barname-haee ke dar hengame vared shodan ejraa mishavand.  
+    🔹 *Gozine-ye digari nist vali az dakhel panjere mitoonid barname-haa ro ezafe ya hazf konid.*
+
+🛠 **Mesal-ha:**
+
+    $ gnome-session-properties
+
+    🔹 In dastoor panjereye "Startup Applications Preferences" ra baz mikonad.
+
+    *Dar terminal natijei namayesh dade nemishavad, faghat panjere baz mishavad.*
+
+✅ **Mesal sade:**
+
+    $ gnome-session-properties
+
+    🔹 Ba ejraaye in dastoor, panjerei baz mishavad ke mitoonid barname-haee ra ke mikhayid be soorate khodkaar dar hengame login ejraa shavand, ezafe konid (masalan barnameye telegram ya discord).
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-session-properties` command is used to manage applications that automatically start when you log in to your GNOME desktop environment. It allows you to add, remove, or modify startup applications.
+
+⚙️ **Options:**
+    🔹 `gnome-session-properties` --> 🚀 Opens the "Startup Applications Preferences" window for managing startup applications.
+    🔹 *There are no command-line options, but you can add or remove applications through the graphical interface.*
+
+🛠 **Examples:**
+
+    $ gnome-session-properties
+
+    🔹 This command opens the "Startup Applications Preferences" window.
+
+    *There is typically no output in the terminal; instead, the graphical window appears.*
+
+✅ **Simple Example:**
+
+    $ gnome-session-properties
+
+    🔹 Running this command opens a window where you can add applications to automatically launch upon login (e.g., Telegram or Discord).

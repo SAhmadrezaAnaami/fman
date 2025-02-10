@@ -1,0 +1,54 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gkbd-keyboard-display` baraye namayesh dadane layout keyboard fa'al dar system shoma be kar miravad. In dastoor yek panjere grafiky ra baz mikonad ke layout-e keyboardi ke alan dar hal estefade hastid ra neshon midahad.  In be shoma komak mikonad ta bedanid alan dar hale estefade az kodam layout keyboard hastid, makhsusan agar chand layout mokhtalef dashte bashid.
+
+⚙️ **Gozine-ha:**
+    🔹 `--help`  --> ❓ Namayesh dadane rahnamaye dastoor va option-haye mojud.
+    🔹 `--version` --> ℹ️ Namayesh dadane version barnam-e `gkbd-keyboard-display`.
+
+🛠 **Mesal-ha:**
+
+    $ gkbd-keyboard-display
+
+    🔹 Ejraye dastoor `gkbd-keyboard-display` panjereii ra baz mikonad ke layout keyboard fa'al ra neshon midahad.
+
+    $ gkbd-keyboard-display --help
+
+    🔹 Namayesh dadane etela'at darbare option-haye mojud baraye dastoor `gkbd-keyboard-display`.
+
+✅ **Mesal sade:**
+
+    $ gkbd-keyboard-display
+
+    🔹 Ba ejraye in dastoor, yek panjere ba layout keyboard current shoma baz mishavad. Agar shoma keyboard-e farsi ra entekhab karde bashid, layout farsi ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gkbd-keyboard-display` command is used to display the current active keyboard layout on your system.  It opens a graphical window showing the keyboard layout that you are currently using. This helps you to know which keyboard layout is currently active, especially if you use multiple layouts.
+
+⚙️ **Options:**
+    🔹 `--help`  --> ❓ Display command help and available options.
+    🔹 `--version` --> ℹ️ Display the version of `gkbd-keyboard-display` program.
+
+🛠 **Examples:**
+
+    $ gkbd-keyboard-display
+
+    🔹 Running `gkbd-keyboard-display` opens a window showing the current keyboard layout.
+
+    $ gkbd-keyboard-display --help
+
+    🔹 Displays information about the available options for the `gkbd-keyboard-display` command.
+
+✅ **Simple Example:**
+
+    $ gkbd-keyboard-display
+
+    🔹 By running this command, a window opens displaying your current keyboard layout. If you have selected the Persian keyboard, it will show the Persian layout.

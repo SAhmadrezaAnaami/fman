@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `debrsign` baraye emzaa kardan (sign) file-haye `.deb` (Debian package) estefade mishavad. In emzaa baraye etminan az sahih boodan va tagheer nakardan file az zamani ke sakhte shode ast, be kar miravad.  Agar shoma yek package `.deb` darid va mikhahid aan ra emzaa konid ta digaran betavanand az sahih boodanash etminan hasil konand, az in dastoor estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `debrsign -k <key-id> <package.deb>` --> 🔑 Emzaa kardan package ba estefade az yek key moshakhas.  Shoma bayad `key-id` ra ba ID key PGPe khod avaz konid.
+    🔹 `debrsign -p <passphrase> <package.deb>` --> 🔐 Emzaa kardan package ba estefade az yek passphrase (ramez oboor).  Agar key shoma ramez oboor dashte bashad, az in gozine estefade konid.
+    🔹 `debrsign -r` --> 🔄 Bazsazi emzaa. Agar yek package ghablan emzaa shode bashad, in gozine emzaa ra az no emzaa mikonad.
+
+🛠 **Mesal-ha:**
+
+    $ debrsign -k F0F0F0F0 package.deb
+
+    🔹 Emzaa kardan `package.deb` ba estefade az key ID `F0F0F0F0`.
+
+    $ debrsign -p 'mysecretpassphrase' package.deb
+
+    🔹 Emzaa kardan `package.deb` ba estefade az passphrase `'mysecretpassphrase'`.
+
+✅ **Mesal sade:**
+
+    $ debrsign -k ABC1234 package.deb
+
+    🔹 Dastoor `debrsign` package `package.deb` ra ba key ID `ABC1234` emzaa mikonad. Bad az ejra, file `package.deb` emzaa mishavad va digaran mitavanand az sahih boodanash etminan hasil konand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `debrsign` command is used to sign `.deb` (Debian package) files. This signature is used to ensure the authenticity and integrity of the file since it was created.  If you have a `.deb` package and want to sign it so that others can verify its authenticity, use this command.
+
+⚙️ **Options:**
+    🔹 `debrsign -k <key-id> <package.deb>` --> 🔑 Sign the package using a specific key.  You must replace `<key-id>` with your PGP key ID.
+    🔹 `debrsign -p <passphrase> <package.deb>` --> 🔐 Sign the package using a passphrase.  If your key is passphrase protected, use this option.
+    🔹 `debrsign -r` --> 🔄 Re-sign. If a package is already signed, this option re-signs it.
+
+🛠 **Examples:**
+
+    $ debrsign -k F0F0F0F0 package.deb
+
+    🔹 Sign `package.deb` using the key ID `F0F0F0F0`.
+
+    $ debrsign -p 'mysecretpassphrase' package.deb
+
+    🔹 Sign `package.deb` using the passphrase `'mysecretpassphrase'`.
+
+✅ **Simple Example:**
+
+    $ debrsign -k ABC1234 package.deb
+
+    🔹 The `debrsign` command signs the `package.deb` package with the key ID `ABC1234`. After execution, the `package.deb` file is signed, and others can verify its authenticity.

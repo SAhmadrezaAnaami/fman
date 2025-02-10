@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `i386` (ya `uname -m`) baraye neshon dadan architecture (memari) system shoma estefade mishavad, be vizhe vaghti ke ba system-haye 32-bit kar mikonid. Dar zamane jadid, aksar system-ha 64-bit hastand, vali baz ham danestan in mozoe mohem ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `uname -m` --> 🖥️  Namayesh memari machine (meslan, i386, x86_64). In dastoor hamon kar `i386` ro anjam mide.
+    🔹 `uname -a` --> ℹ️  Namayesh etela'at kamel system, shamel memari.
+
+🛠 **Mesal-ha:**
+
+    $ i386
+
+    🔹 Agar system shoma 32-bit bashe, "i386" chap mishe.
+
+    $ uname -m
+
+    🔹 Hamun natije ro mide, shayad rosh haye dige ham bashan (masalan x86_64 baraye system-haye 64-bit).
+
+✅ **Mesal sade:**
+
+    $ uname -m
+    i686
+
+    🔹 In yani system shoma yek variant pishrafteh az memari i386 dare, vali baz ham 32-bit ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `i386` command (or more commonly, `uname -m`) is used to display the system's architecture, especially relevant when dealing with 32-bit systems. While most modern systems are 64-bit, understanding this remains important.
+
+⚙️ **Options:**
+    🔹 `uname -m` --> 🖥️ Display the machine architecture (e.g., i386, x86_64). This essentially replicates the function of `i386`.
+    🔹 `uname -a` --> ℹ️ Display complete system information, including the architecture.
+
+🛠 **Examples:**
+
+    $ i386
+
+    🔹 If your system is 32-bit, it will typically print "i386".  Note this command may not exist on all systems.
+
+    $ uname -m
+
+    🔹  Provides the same result, potentially with more modern architecture identifiers (e.g., x86_64 for 64-bit systems).
+
+✅ **Simple Example:**
+
+    $ uname -m
+    i686
+
+    🔹  This indicates that the system has an advanced variant of the i386 architecture, but it's still 32-bit.

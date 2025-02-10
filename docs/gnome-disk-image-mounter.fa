@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gnome-disk-image-mounter` yek barname ast baraye chaspandan (mount) file-haye image disk mesle ISO ya IMG dar GNOME. Ba estefade az in dastoor, shoma mitavanid dakhele yek file image disk ra be onvane yek vahed disk (drive) bebinid va file-haye an ra estefade konid bedune inke lazem bashad an ra rooye disk benevisid (burn).
+
+⚙️ **Gozine-ha:**
+    🔹 `gnome-disk-image-mounter <file.iso>` --> 💿 Chaspandan yek file image ISO.
+    🔹 `gnome-disk-image-mounter -d <mount point>` --> 📤 Joda kardan (unmount) yek image disk az yek noghte chasp.
+    🔹 `gnome-disk-image-mounter -l` --> 📋 List kardan hameye image disk-haye chaspide shode.
+
+🛠 **Mesal-ha:**
+
+    $ gnome-disk-image-mounter ubuntu.iso
+
+    🔹 File image `ubuntu.iso` ra chaspande mikonad.
+
+    $ gnome-disk-image-mounter -d /media/ubuntu
+
+    🔹 Image disk chaspide shode ra az noghte `‎/media/ubuntu` joda mikonad.
+
+✅ **Mesal sade:**
+
+    $ gnome-disk-image-mounter my_game.iso
+
+    🔹 Ba ejraye in dastoor, yek panjere baz mishavad ke shoma mitavanid file-haye dakhele `my_game.iso` ra bebinid va estefade konid, mesle inke yek CD ya DVD vared kardeed.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gnome-disk-image-mounter` command is a utility for mounting disk image files such as ISO or IMG in GNOME. It allows you to access the contents of a disk image file as if it were a regular drive, without needing to burn it to a physical disc.
+
+⚙️ **Options:**
+    🔹 `gnome-disk-image-mounter <file.iso>` --> 💿 Mount an ISO image file.
+    🔹 `gnome-disk-image-mounter -d <mount point>` --> 📤 Unmount a mounted disk image from a specific mount point.
+    🔹 `gnome-disk-image-mounter -l` --> 📋 List all currently mounted disk images.
+
+🛠 **Examples:**
+
+    $ gnome-disk-image-mounter ubuntu.iso
+
+    🔹 Mounts the `ubuntu.iso` image file.
+
+    $ gnome-disk-image-mounter -d /media/ubuntu
+
+    🔹 Unmounts the mounted disk image from the `/media/ubuntu` mount point.
+
+✅ **Simple Example:**
+
+    $ gnome-disk-image-mounter my_game.iso
+
+    🔹 Running this command opens a window that allows you to browse and access the files within `my_game.iso`, as if you had inserted a CD or DVD.

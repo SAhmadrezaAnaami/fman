@@ -1,0 +1,59 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `foo2zjs-icc2ps` baraye tabdil dade-haye rang az profile ICC be dade-haye PostScript estefade mishavad. In dastoor be shoma komak mikonad ta rang-ha ra be dorosti dar chapgar-haye PostScript neshan dahid. Baraye mesal, agar shoma yek tasvir ba profile ICC darid, mitavanid az in dastoor estefade konid ta tasvir ba rang-haye dorost chap shavad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-i <file.icc>`  --> 🌈 Profile ICC voroodi ra moshakhas mikonad.
+    🔹 `-o <file.ps>`   --> 💾 File PostScript khorooji ra moshakhas mikonad.
+    🔹 `-r <resolution>` --> 🎯 Resolution (dpi) ra baraye tasvir chap shode moshakhas mikonad.
+    🔹 `-n`            --> 🚫 Profile ICC Embed nashavad (sarefe jooyee dar size file).
+
+🛠 **Mesal-ha:**
+
+    $ foo2zjs-icc2ps -i input.icc -o output.ps
+
+    🔹 Tabdil file ICC `input.icc` be file PostScript `output.ps` ba estefade az default settings.
+
+    $ foo2zjs-icc2ps -i input.icc -o output.ps -r 300
+
+    🔹 Tabdil file ICC `input.icc` be file PostScript `output.ps` ba resolution 300 dpi.
+
+✅ **Mesal sade:**
+
+    $ foo2zjs-icc2ps -i myimage.icc -o myimage.ps
+
+    🔹 In dastoor file ICC `myimage.icc` ra be file PostScript `myimage.ps` tabdil mikonad. File `myimage.ps` ra mitavanid baraye chap ba chapgar-haye PostScript estefade konid ta rang-ha be shekle dorost chap shavand.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `foo2zjs-icc2ps` command is used to convert color data from an ICC profile to PostScript data. This helps you to accurately represent colors in PostScript printers. For example, if you have an image with an ICC profile, you can use this command to ensure the image prints with the correct colors.
+
+⚙️ **Options:**
+    🔹 `-i <file.icc>`  --> 🌈 Specifies the input ICC profile.
+    🔹 `-o <file.ps>`   --> 💾 Specifies the output PostScript file.
+    🔹 `-r <resolution>` --> 🎯 Specifies the resolution (dpi) for the printed image.
+    🔹 `-n`            --> 🚫 Do not embed the ICC profile (save file size).
+
+🛠 **Examples:**
+
+    $ foo2zjs-icc2ps -i input.icc -o output.ps
+
+    🔹 Converts the ICC file `input.icc` to the PostScript file `output.ps` using default settings.
+
+    $ foo2zjs-icc2ps -i input.icc -o output.ps -r 300
+
+    🔹 Converts the ICC file `input.icc` to the PostScript file `output.ps` with a resolution of 300 dpi.
+
+✅ **Simple Example:**
+
+    $ foo2zjs-icc2ps -i myimage.icc -o myimage.ps
+
+    🔹 This command converts the ICC file `myimage.icc` to the PostScript file `myimage.ps`. You can then use `myimage.ps` for printing with PostScript printers to ensure accurate color representation.
+

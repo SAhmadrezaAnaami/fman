@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hp-doctor` yek abzar baraye diagnos va halle moshkelat dar dastgah-ha-ye HP (printer-ha, scanner-ha, va digar dastgah-ha) ast. In abzar be shoma komak mikonad ta moshkelat ra peyda konid va rah hal-ha-ye pishnahadi ra estefade konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `hp-doctor` --> 🩺 Shoru' kardane abzar ba GUI (graphical user interface).
+    🔹 `hp-doctor scan` --> 🔍 Scan kardane dastgah baraye moshkelat.
+    🔹 `hp-doctor troubleshoot` --> 🛠️ Dastoor halle moshkelat ra ejra mikonad.
+    🔹 `hp-doctor update` --> ⬆️ Update kardane hp-doctor be akharin version.
+
+🛠 **Mesal-ha:**
+
+    $ hp-doctor
+
+    🔹 Run kardane abzar ba GUI baraye diagnos va halle moshkelat.
+
+    $ hp-doctor scan
+
+    🔹 Scan kardane dastgah-ha-ye motasel baraye moshkelat.
+
+✅ **Mesal sade:**
+
+    $ hp-doctor troubleshoot printer
+
+    🔹 Hal kardane moshkelat printer be soorat khodkar ba estefade az pishnahadat hp-doctor.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hp-doctor` command is a tool for diagnosing and troubleshooting issues with HP devices (printers, scanners, etc.). It helps you identify problems and apply suggested solutions.
+
+⚙️ **Options:**
+    🔹 `hp-doctor` --> 🩺 Starts the tool with a GUI (graphical user interface).
+    🔹 `hp-doctor scan` --> 🔍 Scans the device for problems.
+    🔹 `hp-doctor troubleshoot` --> 🛠️ Runs the troubleshooting routine.
+    🔹 `hp-doctor update` --> ⬆️ Updates hp-doctor to the latest version.
+
+🛠 **Examples:**
+
+    $ hp-doctor
+
+    🔹 Runs the tool with a GUI to diagnose and troubleshoot issues.
+
+    $ hp-doctor scan
+
+    🔹 Scans connected devices for problems.
+
+✅ **Simple Example:**
+
+    $ hp-doctor troubleshoot printer
+
+    🔹 Automatically troubleshoot printer problems using hp-doctor's suggestions.

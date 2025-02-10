@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `arm2hpdl` baraye tabdil filehaye ARM assembly be formati ke baraye dastgah haye chapgar (printer) HP printer-ha ghabele fahm bashad estefade mishavad. Be ebarate digar, in dastoor komak mikonad code assembly ro chap konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `arm2hpdl file.s`  --> 📄 Tabdil file assembly `file.s` be formati ke baraye chap monaseb bashad.
+    🔹 `arm2hpdl -o output.hpdl file.s` --> 💾 Save kardan natijeh tabdil shode dar file `output.hpdl`.
+    🔹 `arm2hpdl -landscape file.s` --> 🔄 Chap kardan be soorate ofoghi (landscape).
+    🔹 `arm2hpdl -portrait file.s` --> 🧍 Chap kardan be soorate amoodi (portrait).
+
+🛠 **Mesal-ha:**
+
+    $ arm2hpdl code.s
+
+    🔹 Tabdil file assembly `code.s` va namayesh natijeh dar terminal.
+
+    $ arm2hpdl -o output.hpdl code.s
+
+    🔹 Tabdil file assembly `code.s` va zakhireh natijeh dar file `output.hpdl`.  In file mishe be printer HP ferestade she.
+
+✅ **Mesal sade:**
+
+    $ arm2hpdl -landscape code.s > print.hpdl
+
+    🔹 Tabdil file assembly `code.s` be soorate ofoghi va zakhireh natijeh dar file `print.hpdl`.  Badesh file `print.hpdl` mitoone chap beshe.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `arm2hpdl` command converts ARM assembly files into a format suitable for HP printers (HP Printer Description Language). In essence, it helps you print your assembly code.
+
+⚙️ **Options:**
+    🔹 `arm2hpdl file.s`  --> 📄 Convert the assembly file `file.s` to a printable format.
+    🔹 `arm2hpdl -o output.hpdl file.s` --> 💾 Save the converted output to the file `output.hpdl`.
+    🔹 `arm2hpdl -landscape file.s` --> 🔄 Print in landscape orientation.
+    🔹 `arm2hpdl -portrait file.s` --> 🧍 Print in portrait orientation.
+
+🛠 **Examples:**
+
+    $ arm2hpdl code.s
+
+    🔹 Converts the assembly file `code.s` and displays the output in the terminal.
+
+    $ arm2hpdl -o output.hpdl code.s
+
+    🔹 Converts the assembly file `code.s` and saves the output to the file `output.hpdl`. This file can then be sent to an HP printer.
+
+✅ **Simple Example:**
+
+    $ arm2hpdl -landscape code.s > print.hpdl
+
+    🔹 Converts the assembly file `code.s` to landscape orientation and saves the output to the file `print.hpdl`. The `print.hpdl` file can then be printed.

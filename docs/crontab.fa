@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `crontab` baraye moratab kardan karha (jobs) be soorate khodkar dar zaman-haye moshakhas estefade mishavad.  Shoma mitavanid ba estefade az `crontab` dastoor-ha ya script-ha ra be soorate daurei (masalan har rooz, har hafte ya har mah) ejra konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `crontab -e`  --> 📝 Baz kardan file `crontab` baraye virayesh (edit)  
+    🔹 `crontab -l`  --> 📜 Namayesh dadan list karha (jobs) dar `crontab`  
+    🔹 `crontab -r`  --> 🗑️ Pak kardan (remove) hameye karha az `crontab` (ba ehtiyat estefade shavad!)  
+
+🛠 **Mesal-ha:**
+    
+    $ crontab -e
+    
+    🔹 Baz kardan file `crontab` ba estefade az virayeshgar pishfarz (default editor).  Shoma mitavanid karha ra ezafe, tagheer, ya hazf konid.
+
+    $ crontab -l
+    
+    🔹 Namayesh dadan list karha-ye fa'al dar file `crontab`.
+
+✅ **Mesal sade:**
+
+    $ crontab -l
+    
+    🔹 Agar hich karhi (job) ta'arif nashode bashad, hich chizi namayesh dade nemishavad ya payame "no crontab for user" neshan dade mishavad.  Agar kar ta'arif shode bashad, format har khat be soorat zir ast:
+    `minute hour day_of_month month day_of_week command`
+    Masalan: `0 0 * * * /path/to/script.sh` (har rooz saat 12 sobh script ra ejra kon)
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `crontab` command is used to schedule jobs to be executed automatically at specific times.  You can use `crontab` to run commands or scripts periodically (e.g., every day, every week, or every month).
+
+⚙️ **Options:**
+    🔹 `crontab -e`  --> 📝 Open the `crontab` file for editing
+    🔹 `crontab -l`  --> 📜 Display the list of jobs in the `crontab`
+    🔹 `crontab -r`  --> 🗑️ Remove all jobs from the `crontab` (use with caution!)
+
+🛠 **Examples:**
+
+    $ crontab -e
+    
+    🔹 Open the `crontab` file using the default editor. You can add, modify, or delete jobs.
+
+    $ crontab -l
+    
+    🔹 Display the list of active jobs in the `crontab` file.
+
+✅ **Simple Example:**
+
+    $ crontab -l
+
+    🔹 If no jobs are defined, nothing will be displayed, or the message "no crontab for user" will be shown. If jobs are defined, each line follows this format:
+    `minute hour day_of_month month day_of_week command`
+    For example: `0 0 * * * /path/to/script.sh` (run the script every day at midnight)

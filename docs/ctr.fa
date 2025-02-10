@@ -1,0 +1,75 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ctr` yek command-line client baraye container runtime interface (CRI) ast.
+    In dastoor be shoma komak mikonad ta container-ha ra modiriyat konid, image-ha ra pull konid,
+    va etela'at darbareye container runtime ra be dast avarid.
+    `ctr` obzari ghodratmand baraye karbarane pishrafte ast ke be control kamele container runtime niaz darand.
+
+⚙️ **Gozine-ha:**
+    🔹 `ctr images pull <image_name>`  --> ⬇️ Gereftan (pull) yek tasvir (image) az repository.
+    🔹 `ctr run <image_name> <container_name>` --> 🚀 Ejra kardane yek container az yek tasvir.
+    🔹 `ctr containers list` --> 📝 List kardane container-haye fa'al.
+    🔹 `ctr task kill <container_name>` --> 🛑 Kills yek container.
+    🔹 `ctr image ls` --> 📦 List kardane image-haye mojood dar system.
+
+🛠 **Mesal-ha:**
+
+    $ ctr images pull docker.io/library/nginx:latest
+
+    🔹 Gereftane image Nginx az Docker Hub.
+
+    $ ctr run docker.io/library/nginx:latest my-nginx
+
+    🔹 Ejra kardane container ba name "my-nginx" az image Nginx.
+
+    $ ctr containers list
+
+    🔹 Namayesh listi az container-haye dar hale ejra.
+
+✅ **Mesal sade:**
+
+    $ ctr images pull alpine:latest && ctr run alpine:latest my-alpine sh
+
+    🔹 Gereftane image Alpine va ejraye yek shell dar dakhele container.
+    🔹 Pas az ejra, shoma mitavanid dastoorat Linux ra dar dakhele container Alpine ejra konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ctr` command is a command-line client for the container runtime interface (CRI).
+    It helps you manage containers, pull images, and get information about the container runtime.
+    `ctr` is a powerful tool for advanced users who need complete control over the container runtime.
+
+⚙️ **Options:**
+    🔹 `ctr images pull <image_name>` --> ⬇️ Pull an image from a repository.
+    🔹 `ctr run <image_name> <container_name>` --> 🚀 Run a container from an image.
+    🔹 `ctr containers list` --> 📝 List active containers.
+    🔹 `ctr task kill <container_name>` --> 🛑 Kills a container.
+    🔹 `ctr image ls` --> 📦 List images available in the system.
+
+🛠 **Examples:**
+
+    $ ctr images pull docker.io/library/nginx:latest
+
+    🔹 Pull the Nginx image from Docker Hub.
+
+    $ ctr run docker.io/library/nginx:latest my-nginx
+
+    🔹 Run a container named "my-nginx" from the Nginx image.
+
+    $ ctr containers list
+
+    🔹 Display a list of running containers.
+
+✅ **Simple Example:**
+
+    $ ctr images pull alpine:latest && ctr run alpine:latest my-alpine sh
+
+    🔹 Pull the Alpine image and run a shell inside the container.
+    🔹 After execution, you can run Linux commands inside the Alpine container.

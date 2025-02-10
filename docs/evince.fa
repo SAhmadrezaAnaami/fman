@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `evince` baraye baz kardan va didan file-haye PDF, PostScript, va format-haye digar estefade mishavad. In yek barnam-ye namayesh-dehandeye asnade grafiki ast ke besiar rahat va sade ast.
+
+⚙️ **Gozine-ha:**
+    🔹 `evince filename.pdf`  --> 📄 Baz kardane yek file PDF khass.
+    🔹 `evince`  --> 💻 Baz kardane barnam-ye evince be soorate mostaghel (bedune file khass).
+    🔹 `evince -w`  --> 👓 Baz kardan dar panjere-ye jadid.
+    🔹 `evince --presentation` --> 🎬 Baz kardan file be soorate namayesh (presentation mode).
+
+🛠 **Mesal-ha:**
+
+    $ evince ketab.pdf
+
+    🔹 Baz kardane file PDF "ketab.pdf" ba estefade az barnam-ye evince.
+
+    $ evince report.ps
+
+    🔹 Baz kardane file PostScript "report.ps".
+
+✅ **Mesal sade:**
+
+    $ evince maghale.pdf &
+
+    🔹 Baz kardane file "maghale.pdf" dar pas-zamine (background) ta shoma betavanid karhaye digar ra anjam dahid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `evince` command is used to open and view PDF files, PostScript files, and other document formats. It's a user-friendly document viewer known for its simplicity.
+
+⚙️ **Options:**
+    🔹 `evince filename.pdf`  --> 📄 Open a specific PDF file.
+    🔹 `evince`  --> 💻 Launch the Evince application independently (without a specific file).
+    🔹 `evince -w`  --> 👓 Open in a new window.
+    🔹 `evince --presentation` --> 🎬 Open the file in presentation mode.
+
+🛠 **Examples:**
+
+    $ evince book.pdf
+
+    🔹 Open the PDF file "book.pdf" using the Evince application.
+
+    $ evince report.ps
+
+    🔹 Open the PostScript file "report.ps".
+
+✅ **Simple Example:**
+
+    $ evince article.pdf &
+
+    🔹 Open the file "article.pdf" in the background so you can continue with other tasks.

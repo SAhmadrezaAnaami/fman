@@ -1,0 +1,60 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `fuser` baraye peyda kardan process-haee ke az file-ha ya socket-ha estefade mikonand be kar miravad.  Be zabane sade, neshun mideh kodum barname ha daran az kodum file-ha ya ertebat-ha (connections) estefade mikonand.
+
+⚙️ **Gozine-ha:**
+    🔹 `fuser -k filename` --> 🔪 Kills process-haee ke az filename estefade mikonan.  ⚠️ Ehtiat konid!
+    🔹 `fuser -u filename` --> 👤 Neshun mide user-i ke process ro run karde.
+    🔹 `fuser -v filename` --> 📜 Neshun mide etela'ate bishtari dar morede process haa.
+    🔹 `fuser -n space filename` --> 🌐 Specify name space: file, udp, tcp.
+
+🛠 **Mesal-ha:**
+
+    $ fuser /mnt/disk1
+
+    🔹 Neshun mide kodum process ha daran az `/mnt/disk1` estefade mikonan.
+
+    $ fuser -k /var/log/mylog.txt
+
+    🔹 Hameye process haee ke daran az `/var/log/mylog.txt` estefade mikonan ro mikoshe.  ⚠️ Ehtiat konid!
+
+✅ **Mesal sade:**
+
+    $ fuser myfile.txt
+    myfile.txt:            1234
+
+    🔹 Neshan mide process ba ID 1234 dare az `myfile.txt` estefade mikone.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `fuser` command identifies processes using specified files or sockets. Simply put, it shows which programs are using which files or connections.
+
+⚙️ **Options:**
+    🔹 `fuser -k filename` --> 🔪 Kills the processes using the specified filename. ⚠️ Be careful!
+    🔹 `fuser -u filename` --> 👤 Shows the user who started the process.
+    🔹 `fuser -v filename` --> 📜 Shows more detailed information about the processes.
+    🔹 `fuser -n space filename` --> 🌐 Specify name space: file, udp, tcp.
+
+🛠 **Examples:**
+
+    $ fuser /mnt/disk1
+
+    🔹 Shows which processes are using `/mnt/disk1`.
+
+    $ fuser -k /var/log/mylog.txt
+
+    🔹 Kills all processes using `/var/log/mylog.txt`. ⚠️ Be careful!
+
+✅ **Simple Example:**
+
+    $ fuser myfile.txt
+    myfile.txt:            1234
+
+    🔹 Indicates that process with ID 1234 is using `myfile.txt`.

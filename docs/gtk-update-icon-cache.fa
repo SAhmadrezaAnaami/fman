@@ -1,0 +1,56 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `gtk-update-icon-cache` baraye dorost kardan (create) ya update kardan cache-haye icon baraye theme-haye GTK estefade mishavad. Yani baraye inke icon-ha be tore dorost dar barname-ha namayesh dade shavand.
+
+⚙️ **Gozine-ha:**
+    🔹 `gtk-update-icon-cache --force`  --> 🔄 Majboor mikonad cache ra update konad, hata age taghirati ehsas nashavad.
+    🔹 `gtk-update-icon-cache --ignore-errors`  --> ⚠️ Agar khataei dar hengam dorost kardan cache rokh bedahad, az an gozashteh va edame midahad.
+    🔹 `gtk-update-icon-cache --quiet`  --> 🤫 Hich payami dar terminal namayesh nemidahad.
+
+🛠 **Mesal-ha:**
+
+    $ gtk-update-icon-cache /usr/share/icons/hicolor
+
+    🔹 Icon cache ra baraye theme "hicolor" update mikonad.
+
+    $ sudo gtk-update-icon-cache --force /usr/share/icons/mytheme
+
+    🔹 Icon cache ra baraye theme "mytheme" ba majbur kardan update mikonad (ba dastresi root).
+
+✅ **Mesal sade:**
+
+    $ gtk-update-icon-cache --quiet /usr/share/icons/mytheme
+
+    🔹 Icon cache ra baraye theme "mytheme" update mikonad va hich payami namayesh nemidahad. In baraye script-ha mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `gtk-update-icon-cache` command is used to create or update the icon cache for GTK themes. This ensures that icons are displayed correctly in applications.
+
+⚙️ **Options:**
+    🔹 `gtk-update-icon-cache --force`  --> 🔄 Forces the cache to be updated, even if no changes are detected.
+    🔹 `gtk-update-icon-cache --ignore-errors`  --> ⚠️ Ignores errors that occur during cache creation and continues.
+    🔹 `gtk-update-icon-cache --quiet`  --> 🤫 Suppresses all output messages to the terminal.
+
+🛠 **Examples:**
+
+    $ gtk-update-icon-cache /usr/share/icons/hicolor
+
+    🔹 Updates the icon cache for the "hicolor" theme.
+
+    $ sudo gtk-update-icon-cache --force /usr/share/icons/mytheme
+
+    🔹 Forces the icon cache to be updated for the "mytheme" theme (using root privileges).
+
+✅ **Simple Example:**
+
+    $ gtk-update-icon-cache --quiet /usr/share/icons/mytheme
+
+    🔹 Updates the icon cache for the "mytheme" theme without displaying any output. This is useful for scripts.

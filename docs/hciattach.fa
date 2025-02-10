@@ -1,0 +1,58 @@
+
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `hciattach` baraye vasl kardane yek device Bluetooth serial (mesle modem) be system Linux estefade mishavad. In dastoor baraye setup kardane port serial be عنوان yek HCI (Host Controller Interface) transport layer baraye Bluetooth stack be kar mirevad. Asasan, in dastoor به Bluetooth stack اجازه mide ta az device Bluetooth ke be port serial vasl ast estefade konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `-n` --> 🚫 اجرایی نکردن (Don't execute). فقط نشون میده چیکار میکنه.
+    🔹 `-p TYPE` --> 🗄️ نوع پروتکل (Protocol type). نوع پروتکل HCI رو مشخص میکنه (مثل sergola, bcm43xx, digianswer).
+    🔹 `device` --> 📍 اسم device serial (Serial device name). اسم فایل device serial رو مشخص میکنه (مثلا /dev/ttyS1).
+    🔹 `baudrate` --> 📶 سرعت baude (Baud rate). سرعت baude رو برای ارتباط serial مشخص میکنه (مثلا 115200).
+
+🛠 **Mesal-ha:**
+
+    $ sudo hciattach /dev/ttyS1 sergola 115200
+    
+    🔹 Port serial /dev/ttyS1 رو با پروتکل sergola و سرعت 115200 bauds به Bluetooth vasl میکنه.
+
+    $ sudo hciattach -n /dev/ttyS0 bcm43xx 921600
+    
+    🔹 نشون میده اگه دستور اجرا بشه چه کاری انجام میده، بدون اینکه واقعا /dev/ttyS0 رو وصل کنه.
+
+✅ **Mesal sade:**
+
+    $ sudo hciattach /dev/rfcomm0 any 115200
+    
+    🔹 Device Bluetooth رو ke az طریق rfcomm (Bluetooth serial port emulation) vasl شده رو به system motasel میکنه. "any" auto-detect میکنه نوع HCI رو.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `hciattach` command is used to attach a Bluetooth serial device (like a modem) to a Linux system. It sets up the serial port as an HCI (Host Controller Interface) transport layer for the Bluetooth stack. Essentially, it allows the Bluetooth stack to use a Bluetooth device connected to a serial port.
+
+⚙️ **Options:**
+    🔹 `-n` --> 🚫 Don't execute. Just show what would be done.
+    🔹 `-p TYPE` --> 🗄️ Protocol type. Specifies the HCI protocol type (e.g., sergola, bcm43xx, digianswer).
+    🔹 `device` --> 📍 Serial device name. Specifies the serial device file (e.g., /dev/ttyS1).
+    🔹 `baudrate` --> 📶 Baud rate. Specifies the baud rate for the serial communication (e.g., 115200).
+
+🛠 **Examples:**
+
+    $ sudo hciattach /dev/ttyS1 sergola 115200
+    
+    🔹 Attaches the serial port /dev/ttyS1 to Bluetooth using the sergola protocol at 115200 bauds.
+
+    $ sudo hciattach -n /dev/ttyS0 bcm43xx 921600
+    
+    🔹 Shows what would happen if the command were executed, without actually attaching /dev/ttyS0.
+
+✅ **Simple Example:**
+
+    $ sudo hciattach /dev/rfcomm0 any 115200
+    
+    🔹 Attaches a Bluetooth device connected via rfcomm (Bluetooth serial port emulation) to the system. "any" auto-detects the HCI type.
