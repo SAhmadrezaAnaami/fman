@@ -1,0 +1,55 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `less` baraye baz kardane file-ha va didane matn dakhele anha, safhe be safhe, estefade mishavad.  Shoma mitoonid be asooni bala va paeen berid.
+
+⚙️ **Gozine-ha:**
+    🔹 `less +F filename` -->  📡 Donbale tagheerat real-time file bash (mesle `tail -f`)
+    🔹 `less -N filename` -->  🔢 Namayesh shomare khat-ha
+    🔹 `less -S filename` -->  ✂️  Khat-haye toolani ro ghat kone va be baghie khat nare (chop mikone).
+
+🛠 **Mesal-ha:**
+
+    $ less myfile.txt
+
+    🔹 Baz kardane `myfile.txt` ba `less`.
+
+    $ less logfile.log +F
+
+    🔹 Didane logfile be soorate real-time.
+
+✅ **Mesal sade:**
+
+    $ less -N myfile.txt
+
+    🔹 File `myfile.txt` ro baz mikone va shomare khat-ha ro ham namayesh mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `less` command is used to view the contents of a file, one page at a time.  It allows you to easily navigate up and down.
+
+⚙️ **Options:**
+    🔹 `less +F filename` --> 📡 Follow changes to the file in real-time (like `tail -f`)
+    🔹 `less -N filename` --> 🔢 Display line numbers
+    🔹 `less -S filename` --> ✂️ Chop long lines instead of wrapping them.
+
+🛠 **Examples:**
+
+    $ less myfile.txt
+
+    🔹 Open `myfile.txt` with `less`.
+
+    $ less logfile.log +F
+
+    🔹 View the logfile in real-time.
+
+✅ **Simple Example:**
+
+    $ less -N myfile.txt
+
+    🔹 Opens the file `myfile.txt` and displays line numbers.

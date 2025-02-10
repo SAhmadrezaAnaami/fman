@@ -1,0 +1,57 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `grep` baraye jostojoo kardane yek matn ya pattern khass dar file-ha estefade mishavad.  Be zaban sade tar, age bekhayid yek kalame ya jomle-ye khassi ro dar yek ya chand file peyda konid, `grep` be shoma komak mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `grep -i "kalame"`  --> 🧐 Jostojoo be soorate bi-tafavot be case (bozorg ya koochak boodan horoof mohem nist).
+    🔹 `grep -n "kalame" file.txt`  --> 🔢 Namayesh shomareye khat-haee ke "kalame" dar anha peyda shode.
+    🔹 `grep -v "kalame" file.txt`  --> 🚫 Namayesh khat-haee ke "kalame" dar anha nist.
+    🔹 `grep -r "kalame" pooshe`  --> 📁 Jostojoo dar hameye file-haye dakhele yek pooshe be soorate tekrar shavande (recursive).
+
+🛠 **Mesal-ha:**
+
+    $ grep "linux" file.txt
+
+    🔹 Jostojoooye kalameye "linux" dar file-e `file.txt`.
+
+    $ grep -i "LINUX" file.txt
+
+    🔹 Jostojoooye kalameye "LINUX" (ya linux, Linux, LINuX, ...) dar `file.txt` (bi-tafavot be case).
+
+✅ **Mesal sade:**
+
+    $ grep -n "error" log.txt
+
+    🔹 Namayesh hameye khat-haee az file `log.txt` ke dar anha kalameye "error" vojood dare, hamra ba shomareye khat.  In be shoma komak mikone ke be soorat asan error-ha ro dar log file peyda konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `grep` command is used to search for a specific text or pattern within files.  In simpler terms, if you want to find a particular word or phrase in one or more files, `grep` helps you.
+
+⚙️ **Options:**
+    🔹 `grep -i "word"`  --> 🧐 Case-insensitive search (uppercase or lowercase letters don't matter).
+    🔹 `grep -n "word" file.txt`  --> 🔢 Show the line numbers where "word" is found.
+    🔹 `grep -v "word" file.txt`  --> 🚫 Show lines that do *not* contain "word".
+    🔹 `grep -r "word" directory`  --> 📁 Search recursively through all files within a directory.
+
+🛠 **Examples:**
+
+    $ grep "linux" file.txt
+
+    🔹 Search for the word "linux" in the file `file.txt`.
+
+    $ grep -i "LINUX" file.txt
+
+    🔹 Search for the word "LINUX" (or linux, Linux, LINuX, ...) in `file.txt` (case-insensitive).
+
+✅ **Simple Example:**
+
+    $ grep -n "error" log.txt
+
+    🔹 Displays all lines from the `log.txt` file that contain the word "error," along with the line number. This helps you easily find errors in the log file.

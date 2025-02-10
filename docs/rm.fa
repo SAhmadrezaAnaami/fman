@@ -1,0 +1,59 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `rm` baraye pak kardan (hazf kardan) file-ha va ya pooshe-ha (ba gozine-haye khass) estefade mishavad.  Ehtiat konid, chon file-haye pak shode ghabel bazgasht nistand! ⚠️
+
+⚙️ **Gozine-ha:**
+    🔹 `rm file.txt` --> 🗑️ Pak kardan yek file be name "file.txt".
+    🔹 `rm -r pooshe`  --> 📂 Pak kardan yek pooshe be name "pooshe" va hameye chiz-ha dakhelesh (recursive).
+    🔹 `rm -i file.txt` --> 🤔 Ghabl az pak kardan, soal mikonad aya motmaen hastid ya na. (Interactive mode)
+    🔹 `rm -f file.txt` --> 💨 File ra be zor pak mikonad, hata agar dastresi nadashte bashid. (Force)
+
+🛠 **Mesal-ha:**
+
+    $ rm document.pdf
+
+    🔹 Pak kardan file-e "document.pdf".
+
+    $ rm -r pooshe/
+
+    🔹 Pak kardan pooshe-e "pooshe" va hameye file-ha va pooshe-haye dakhele an.
+
+✅ **Mesal sade:**
+
+    $ rm -i important.txt
+
+    🤔 Terminal soal mikonad: "remove important.txt? (y/n)"
+    🔹 Agar "y" ra vared konid, file pak mishavad; agar "n" ra vared konid, hich kari anjam nemishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `rm` command is used to remove (delete) files and, with specific options, directories.  Be careful, as deleted files are typically unrecoverable! ⚠️
+
+⚙️ **Options:**
+    🔹 `rm file.txt` --> 🗑️ Delete a file named "file.txt".
+    🔹 `rm -r directory` --> 📂 Delete a directory named "directory" and all its contents (recursive).
+    🔹 `rm -i file.txt` --> 🤔  Prompts for confirmation before deleting each file. (Interactive mode)
+    🔹 `rm -f file.txt` --> 💨 Force removal, even if you don't have write permissions. (Force)
+
+🛠 **Examples:**
+
+    $ rm document.pdf
+
+    🔹 Delete the file "document.pdf".
+
+    $ rm -r directory/
+
+    🔹 Delete the directory "directory" and all the files and subdirectories within it.
+
+✅ **Simple Example:**
+
+    $ rm -i important.txt
+
+    🤔 The terminal prompts: "remove important.txt? (y/n)"
+    🔹 If you enter "y", the file is deleted; if you enter "n", nothing happens.

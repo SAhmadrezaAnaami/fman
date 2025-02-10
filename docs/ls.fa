@@ -1,0 +1,79 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `ls` baraye namayesh-e list-e file-ha va directory-ha (pooshe-ha) dar mahall-e konuni (current location) estefade mishavad. Be zabane sade, yani file-ha va pooshe-hayi ke dar oonja hastand ro neshun mide.
+
+⚙️ **Gozine-ha:**
+    🔹 `ls -l`  --> 📜 Namayesh-e etela'at-e bishtar (permission-ha, tedad-e link-ha, owner, size, tarikhe sakht) be surat-e list-e tafsili.
+    🔹 `ls -a`  --> 👀 Namayesh-e hame-ye file-ha, hata file-haye makhfi (file-hayi ke ba "." shoru mishavand).
+    🔹 `ls -t`  --> ⏱️ Moratab sazi bar asase tarikhe akharin taghir.
+    🔹 `ls -h`  --> 📏 Namayesh-e size-e file-ha be surate ghabele khandan baraye ensan (human-readable: K, M, G).
+    🔹 `ls -R`  --> 🔄️ Namayesh-e recursive-e directory-ha va file-haye dakhele anha.
+
+🛠 **Mesal-ha:**
+
+    $ ls
+
+    🔹 List-e sadeye file-ha va directory-ha dar mahall-e konuni.
+
+    $ ls -l
+
+    🔹 Namayesh-e etela'at-e kamel dar morede file-ha va directory-ha.
+
+    $ ls -a
+
+    🔹 Namayesh-e hame-ye file-ha, hata file-haye makhfi ke ba "." shoru mishavand.
+
+    $ ls -lah
+
+    🔹 Combination-i az option-haye -l, -a, va -h: etela'at-e kamel, hameye file-ha, va size-ha be surate ghabele khandan.
+
+✅ **Mesal sade:**
+
+    $ ls -lt
+
+    🔹 List-e file-ha va pooshe-ha ba etela'ate kamel, moratab shode bar asase tarikhe akharin dastkari (modification). Akharin file-e dastkari shode dar aval neshan dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `ls` command is used to list files and directories in the current location. Simply put, it shows the files and folders present in that directory.
+
+⚙️ **Options:**
+    🔹 `ls -l`  --> 📜 Show more detailed information (permissions, number of links, owner, size, modification date) in a long listing format.
+    🔹 `ls -a`  --> 👀 Show all files, including hidden files (files that start with ".").
+    🔹 `ls -t`  --> ⏱️ Sort by modification time (most recently modified first).
+    🔹 `ls -h`  --> 📏 Display file sizes in a human-readable format (K, M, G).
+    🔹 `ls -R`  --> 🔄️ Recursively list subdirectories encountered.
+
+🛠 **Examples:**
+
+    $ ls
+
+    🔹 Simple list of files and directories in the current directory.
+
+    $ ls -l
+
+    🔹 Display complete information about files and directories.
+
+    $ ls -a
+
+    🔹 Display all files, even hidden ones that start with ".".
+
+    $ ls -lah
+
+    🔹 Combination of -l, -a, and -h options: detailed information, all files, and human-readable sizes.
+
+✅ **Simple Example:**
+
+    $ ls -lt
+
+    🔹 List files and folders with detailed information, sorted by modification time. The most recently modified file will be displayed first.
+content_copy
+download
+Use code with caution.
+Text

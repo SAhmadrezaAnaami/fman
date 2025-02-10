@@ -1,0 +1,55 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mkdir` baraye dorost kardane yek pooshe-ye jadid (directory) estefade mishavad. Shoma mitavanid ba estefade az in dastoor, ja-ye jadidi baraye negahdari file-ha va pooshe-haye digar ijad konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `mkdir pooshe-jadid` --> 📂 Dorost kardane yek pooshe ba name "pooshe-jadid" dar masir-e konooni.
+    🔹 `mkdir -p pooshe1/pooshe2/pooshe3` --> 🌳 Dorost kardane pooshe-ha be soorate zanjirei. Agar "pooshe1" vojood nadashte bashad, an ra ham dorost mikonad.
+    🔹 `mkdir -v pooshe-jadid` --> 📣 Namayesh peyghami baraye har pooshe ke dorost mishavad.
+
+🛠 **Mesal-ha:**
+
+    $ mkdir documents
+
+    🔹 Yek pooshe be name "documents" dorost mikonad dar masir-e konooni.
+
+    $ mkdir -p project/images/thumbnails
+
+    🔹 Yek sakhtar az pooshe-ha dorost mikonad: "project", dar dakhel an "images", va dar dakhel "images", "thumbnails".
+
+✅ **Mesal sade:**
+
+    $ mkdir -v new_folder
+
+    🔹 Pooshe-ye "new_folder" dorost mishavad va peyghami mesl "mkdir: created directory 'new_folder'" namayesh dade mishavad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mkdir` command is used to create a new directory (folder). You can use this command to create a new place to store files and other directories.
+
+⚙️ **Options:**
+    🔹 `mkdir new_folder` --> 📂 Create a directory named "new_folder" in the current path.
+    🔹 `mkdir -p folder1/folder2/folder3` --> 🌳 Create directories in a hierarchical manner. If "folder1" does not exist, it will create it as well.
+    🔹 `mkdir -v new_folder` --> 📣 Display a message for each directory created.
+
+🛠 **Examples:**
+
+    $ mkdir documents
+
+    🔹 Creates a folder named "documents" in the current directory.
+
+    $ mkdir -p project/images/thumbnails
+
+    🔹 Creates a directory structure: "project", inside it "images", and inside "images", "thumbnails".
+
+✅ **Simple Example:**
+
+    $ mkdir -v new_folder
+
+    🔹 The "new_folder" directory is created, and a message like "mkdir: created directory 'new_folder'" is displayed.

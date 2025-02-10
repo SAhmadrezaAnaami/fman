@@ -1,0 +1,55 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `head` baraye namayesh khat-haye avaliye yek file estefade mishavad. Be soorate pishfarz, `head` dah khat aval را namayesh midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `head -n [tedad]` --> 🔢 Namayesh [tedad] khat az aval file. Masalan `head -n 20 file.txt` 20 khat aval ra namayesh midahad.
+    🔹 `head -c [byte]` --> 🗜️ Namayesh [byte] byte aval file. Masalan `head -c 100 file.txt` 100 byte aval ra namayesh midahad.
+    🔹 `head -q [file]` --> 🤫 Agar chand file dade shavad, заголовки har file ra namayesh nadahad.
+
+🛠 **Mesal-ha:**
+
+    $ head file.txt
+
+    🔹 Namayesh 10 khat aval file.txt.
+
+    $ head -n 5 file.txt
+
+    🔹 Namayesh 5 khat aval file.txt.
+
+✅ **Mesal sade:**
+
+    $ head -n 1 file.txt
+
+    🔹 Faghat khat aval file.txt ra namayesh midahad. In command baraye didane unvane yek file CSV ya Excel kheili mofid ast.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `head` command is used to display the beginning lines of a file. By default, `head` displays the first ten lines of a file.
+
+⚙️ **Options:**
+    🔹 `head -n [number]` --> 🔢 Display the first [number] lines of the file. For example, `head -n 20 file.txt` will display the first 20 lines.
+    🔹 `head -c [bytes]` --> 🗜️ Display the first [bytes] bytes of the file. For example, `head -c 100 file.txt` will display the first 100 bytes.
+    🔹 `head -q [file]` --> 🤫 Suppress headers when multiple files are given.
+
+🛠 **Examples:**
+
+    $ head file.txt
+
+    🔹 Display the first 10 lines of file.txt.
+
+    $ head -n 5 file.txt
+
+    🔹 Display the first 5 lines of file.txt.
+
+✅ **Simple Example:**
+
+    $ head -n 1 file.txt
+
+    🔹 Displays only the first line of file.txt. This is often useful for quickly viewing the header of a CSV or Excel file.

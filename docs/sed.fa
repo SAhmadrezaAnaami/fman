@@ -1,0 +1,57 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `sed` yek dastoor ghavi baraye dastkari va tagheer matn dar file-ha ast. Ba `sed` mitoonid joosteju konid, jaigozin konid, hazf konid, ya ezafe konid kalamat va khat-ha ra.
+
+⚙️ **Gozine-ha:**
+    🔹 `sed 's/old/new/g' file.txt`  --> 🔄 Jaigozini hameye "old" ba "new" dar file.txt
+    🔹 `sed -i 's/old/new/g' file.txt` --> 💾 Tagheer mostaghim dar file.txt
+    🔹 `sed '/pattern/d' file.txt` --> 🗑 Hazf khat-hayi ke "pattern" dar anha vojood darad.
+    🔹 `sed -n '2p' file.txt` --> 🔢 Chap khat dovom az file.txt.
+
+🛠 **Mesal-ha:**
+
+    $ sed 's/apple/orange/g' fruits.txt
+
+    🔹 Jaigozini hameye kalame "apple" ba "orange" dar file `fruits.txt` va chap natije dar terminal.
+
+    $ sed -i 's/red/blue/g' colors.txt
+
+    🔹 Jaigozini hameye kalame "red" ba "blue" dar file `colors.txt` va zakhire tagheerat dar hamin file.
+
+✅ **Mesal sade:**
+
+    $ sed 's/cat/dog/g' pet.txt
+
+    🔹 Agar `pet.txt` shamel "The cat is sleeping" bashad, natije chap shode "The dog is sleeping" khahad bood.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `sed` command is a powerful stream editor used for manipulating text in files.  With `sed`, you can search, replace, delete, or insert words and lines.
+
+⚙️ **Options:**
+    🔹 `sed 's/old/new/g' file.txt`  --> 🔄 Replace all occurrences of "old" with "new" in file.txt
+    🔹 `sed -i 's/old/new/g' file.txt` --> 💾 Directly modify the file.txt
+    🔹 `sed '/pattern/d' file.txt` --> 🗑 Delete lines containing "pattern".
+    🔹 `sed -n '2p' file.txt` --> 🔢 Print the second line from file.txt.
+
+🛠 **Examples:**
+
+    $ sed 's/apple/orange/g' fruits.txt
+
+    🔹 Replaces all occurrences of the word "apple" with "orange" in the file `fruits.txt` and prints the result to the terminal.
+
+    $ sed -i 's/red/blue/g' colors.txt
+
+    🔹 Replaces all occurrences of the word "red" with "blue" in the file `colors.txt` and saves the changes directly to the file.
+
+✅ **Simple Example:**
+
+    $ sed 's/cat/dog/g' pet.txt
+
+    🔹 If `pet.txt` contains "The cat is sleeping", the printed result will be "The dog is sleeping".

@@ -1,0 +1,59 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `touch` baraye dorost kardane yek file khali (empty file) ya update kardane tarikhe dastresi (access) va taghire (modification) yek file mojood estefade mishavad. Age file nabashe, misazesh; age bashe, faghat tarikhasho update mikone.
+
+⚙️ **Gozine-ha:**
+    🔹 `touch file.txt`   --> 📝 Sakhtane yek file jadid ba name "file.txt" ya update kardane tarikhash agar vojood dashte bashe.
+    🔹 `touch -a file.txt` --> 🕰️ Faghat tarikhe dastresi (access time) ro update mikone.
+    🔹 `touch -m file.txt` --> ✍️ Faghat tarikhe taghir (modification time) ro update mikone.
+    🔹 `touch -t STAMP file.txt` --> 🗓️ Tarikhe dastresi va taghiro be STAMP (meslan: 202401011200) taghir mide.
+
+🛠 **Mesal-ha:**
+
+    $ touch myfile.txt
+
+    🔹 Yek file khali be name `myfile.txt` dorost mikone. Agar file vojood dashte bashe, tarikhhasho update mikone.
+
+    $ touch -t 202410261530 file.txt
+
+    🔹 Tarikhe dastresi va taghire `file.txt` ro be October 26, 2024, 15:30 (3:30 PM) taghir mide.
+
+✅ **Mesal sade:**
+
+    $ touch newfile.txt
+    $ ls -l newfile.txt
+
+    🔹 Aval yek file khali ba name `newfile.txt` misaze, bad ba `ls -l` etela'at file (shamel tarikhe sakht/taghir) ro neshon mide.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `touch` command is used to create an empty file or update the access and modification times of an existing file. If the file does not exist, it creates it; if it exists, it only updates its timestamps.
+
+⚙️ **Options:**
+    🔹 `touch file.txt`   --> 📝 Create a new file named "file.txt" or update its timestamp if it already exists.
+    🔹 `touch -a file.txt` --> 🕰️ Update only the access time.
+    🔹 `touch -m file.txt` --> ✍️ Update only the modification time.
+    🔹 `touch -t STAMP file.txt` --> 🗓️ Change the access and modification times to STAMP (e.g., 202401011200).
+
+🛠 **Examples:**
+
+    $ touch myfile.txt
+
+    🔹 Creates an empty file named `myfile.txt`. If the file exists, it updates its timestamps.
+
+    $ touch -t 202410261530 file.txt
+
+    🔹 Changes the access and modification times of `file.txt` to October 26, 2024, 15:30 (3:30 PM).
+
+✅ **Simple Example:**
+
+    $ touch newfile.txt
+    $ ls -l newfile.txt
+
+    🔹 First creates an empty file named `newfile.txt`, then `ls -l` shows the file information (including creation/modification date).

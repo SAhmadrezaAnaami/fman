@@ -1,0 +1,61 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Vim yek moten-virayeshgar (text editor) ghavi va chand-manzoore ast baraye sakhtan va dastkari file-haye matni (text files).  Dar terminal kar mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `vim filename` --> 📝 Baz kardan ya sakhtan yek file ba name `filename`.
+    🔹 `vim +n filename` --> 🔢 Baz kardan file va raftan be khatte `n`.
+    🔹 `vim -o file1 file2` --> ↔️ Baz kardan chand file be soorate ofoghi (horizontally).
+    🔹 `vim -O file1 file2` --> ↕️ Baz kardan chand file be soorate amoodi (vertically).
+
+🛠 **Mesal-ha:**
+
+    $ vim myfile.txt
+
+    🔹 Baz kardan ya sakhtan file-e `myfile.txt`.
+
+    $ vim +10 mylog.log
+
+    🔹 Baz kardan file `mylog.log` va raftan be khatte 10.
+
+✅ **Mesal sade:**
+
+    $ vim
+
+    🔹 Baz kardan Vim bedoon file-e khass.  Az inja mitoonid file jadid besazid ya file-haye dige ro baz konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    Vim is a powerful and versatile text editor used for creating and manipulating text files. It operates within the terminal.
+
+⚙️ **Options:**
+    🔹 `vim filename` --> 📝 Open or create a file named `filename`.
+    🔹 `vim +n filename` --> 🔢 Open the file and go to line `n`.
+    🔹 `vim -o file1 file2` --> ↔️ Open multiple files horizontally.
+    🔹 `vim -O file1 file2` --> ↕️ Open multiple files vertically.
+
+🛠 **Examples:**
+
+    $ vim myfile.txt
+
+    🔹 Open or create the file `myfile.txt`.
+
+    $ vim +10 mylog.log
+
+    🔹 Open the file `mylog.log` and go to line 10.
+
+✅ **Simple Example & Explanation:**
+
+    $ vim
+
+    🔹 Opens Vim without a specific file. From here you can create new files or open existing ones.
+content_copy
+download
+Use code with caution.
+Text

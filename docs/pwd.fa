@@ -1,0 +1,55 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `pwd` yani "print working directory," baraye namayesh daadan address-e (masir-e)  pooshe-i ke dar aan gharar darid, be kar miravad. Yani be shoma miguyad koja hastid dar system-e file.
+
+⚙️ **Gozine-ha:**
+    🔹 `pwd -L`  --> 🔗 Agar shoma az yek symlink estefade mikonid, address-e manteghi (logical path) ra neshon midahad, na address-e asli.
+    🔹 `pwd -P`  --> 📍 Address-e file-ha ro az rah-e asli (physical path) neshon mide, hatta agar az symlink estefade karde bashid.
+
+🛠 **Mesal-ha:**
+
+    $ pwd
+
+    🔹 Namayesh address-e pooshe-ye فعلی
+
+    $ pwd -P
+
+    🔹 Agar az symlink estefade shode bashad, address-e asli ra neshon midahad.
+
+✅ **Mesal sade:**
+
+    $ cd /usr/local/bin
+    $ pwd
+
+    🔹 Agar shoma be pooshe /usr/local/bin rafteh bashid, natijeh mesir ra neshon midahad, mesl: /usr/local/bin.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `pwd` command, short for "print working directory," is used to display the path of the current directory you are in.  It essentially tells you where you are located within the file system.
+
+⚙️ **Options:**
+    🔹 `pwd -L`  --> 🔗 If you are using a symbolic link (symlink), it will show the logical path (the path you used to get there), not the physical location.
+    🔹 `pwd -P`  --> 📍 Displays the physical path of the current directory, resolving any symbolic links.
+
+🛠 **Examples:**
+
+    $ pwd
+
+    🔹 Show the path of the current directory.
+
+    $ pwd -P
+
+    🔹 If a symlink is involved, this will show the real/physical path.
+
+✅ **Simple Example & Explanation:**
+
+    $ cd /usr/local/bin
+    $ pwd
+
+    🔹 If you have navigated to the `/usr/local/bin` directory, the output will show this path: `/usr/local/bin`.

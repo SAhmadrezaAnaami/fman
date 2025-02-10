@@ -1,0 +1,59 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `man` baraye didane rahnamaye dastoor-haye digar dar terminal estefade mishavad.  
+    In dastoor etela'ati dar morede gozine-ha, tarze estefade va karbord-haye har dastoor faraham mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `man [dastoor]`  --> ❓ Rahnamaye dastoor morede nazar ra neshan midahad.
+    🔹 `man -k [kalameh kelidi]` --> 🔎 Dastoor-haye marbut be kalameh kelidi ra peyda mikonad.
+    🔹 `man -f [dastoor]`  --> 📄 Tafsilati sade dar morede dastoor neshan midahad (hammanند whatis).
+    🔹 `man -a [dastoor]` --> 📚 Agar barnameh chand bakhsh rahnama dashteh bashad, hameye anha ra neshan midahad.
+
+🛠 **Mesal-ha:**
+
+    $ man ls
+
+    🔹 Rahnamaye dastoor `ls` ra neshan midahad.
+
+    $ man -k file
+
+    🔹 Dastoor-haye marbut be kalameh "file" ra peyda mikonad.
+
+✅ **Mesal sade:**
+
+    $ man pwd
+
+    🔹  Rahnamaye kamel dastoor `pwd` ra neshan midahad, ke tozihat dar morede karbord va gozine-haye an ra dar bar migirad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `man` command is used to display the manual pages for other commands in the terminal.
+    It provides information about options, usage, and functionality of each command.
+
+⚙️ **Options:**
+    🔹 `man [command]` --> ❓ Displays the manual page for the specified command.
+    🔹 `man -k [keyword]` --> 🔎 Searches for commands related to the keyword.
+    🔹 `man -f [command]` --> 📄 Shows a brief description of the command (similar to whatis).
+    🔹 `man -a [command]` --> 📚 If a program has multiple manual sections, shows all of them.
+
+🛠 **Examples:**
+
+    $ man ls
+
+    🔹 Displays the manual page for the `ls` command.
+
+    $ man -k file
+
+    🔹 Searches for commands related to the keyword "file".
+
+✅ **Simple Example & Explanation:**
+
+    $ man pwd
+
+    🔹  Displays the complete manual page for the `pwd` command, including explanations of its usage and options.

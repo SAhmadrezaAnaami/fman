@@ -1,0 +1,57 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `more` baraye namayesh matn-haye toolani dar safhe-ye terminal estefade mishavad. In dastoor be shoma komak mikonad ke matn ra safhe be safhe bebinid va control konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `more +<line_number> <file_name>`  --> 📍 Shoru' az khat-e moshakhas shode.
+    🔹 `more -d <file_name>`  --> 📣 Namayesh "Press space to continue, 'q' to quit" be jaye bell sound.
+    🔹 `more -c <file_name>`  --> 🧹 Tamiz kardan safhe ghabl az namayesh har safhe jadid.
+    🔹 `more -p <file_name>`  --> 📄 Hamishe az avval safhe shoru' kon.
+
+🛠 **Mesal-ha:**
+
+    $ more file.txt
+
+    🔹 Namayesh `file.txt` safhe be safhe.
+
+    $ more +10 file.txt
+
+    🔹 Namayesh `file.txt` az khat-e dahom.
+
+✅ **Mesal sade:**
+
+    $ more -d logfile.log
+
+    🔹 Agar file toolani bood, be shoma etela' mide ke baraye edame space ra bezanid ya ba 'q' kharej shavid, be jaye sedaye bell annoying.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `more` command is used to view long text files one screen at a time in the terminal. It allows you to control the pace at which the text is displayed.
+
+⚙️ **Options:**
+    🔹 `more +<line_number> <file_name>`  --> 📍 Start displaying from the specified line number.
+    🔹 `more -d <file_name>`  --> 📣 Display "Press space to continue, 'q' to quit" instead of the bell sound.
+    🔹 `more -c <file_name>`  --> 🧹 Clear the screen before displaying each new page.
+    🔹 `more -p <file_name>`  --> 📄 Always start at the top of the file.
+
+🛠 **Examples:**
+
+    $ more file.txt
+
+    🔹 Display `file.txt` one screen at a time.
+
+    $ more +10 file.txt
+
+    🔹 Display `file.txt` starting from line 10.
+
+✅ **Simple Example:**
+
+    $ more -d logfile.log
+
+    🔹 If the file is long, it informs you to press space to continue or quit with 'q', instead of an annoying bell sound.

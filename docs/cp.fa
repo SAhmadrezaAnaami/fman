@@ -1,0 +1,57 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cp` baraye kopy kardan (copy) file-ha va pooshe-ha az yek ja be jaye digar estefade mishavad. Yani yek copy az file ya pooshe dorost mikonad va dar maghsad mizarad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cp file1 file2`   -->  📑 Kopy kardan file1 be file2 (agar file2 vojood nadashte bashad, dorost mishavad)
+    🔹 `cp -r pooshe1 pooshe2` --> 📂 Kopy kardan recursive pooshe1 be pooshe2 (baraye kopy kardan pooshe-ha lazem ast)
+    🔹 `cp -i file1 file2`   -->  ❓ Agar file2 vojood dashte bashad, pish az kopy soal mikonad (interactive)
+    🔹 `cp -v file1 file2`   -->  📢 Namayesh dadan etela'at bishtar dar morede kopy (verbose)
+
+🛠 **Mesal-ha:**
+
+    $ cp file.txt /tmp/
+    
+    🔹  Kopy kardan file `file.txt` be pooshe `/tmp/`.
+
+    $ cp -r pooshe1 pooshe2
+    
+    🔹  Kopy kardan pooshe `pooshe1` be pooshe `pooshe2` (ba hameye file-ha va zir pooshe-hash).
+
+✅ **Mesal sade:**
+    
+    $ cp -i myfile.txt existingfile.txt
+    
+    🔹 Agar `existingfile.txt` vojood dashte bashad, dastoor `cp` soal mikonad ke aya mikhahid an ra overwrite konid ya na, gabl az kopy kardan.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cp` command is used to copy files and directories from one location to another. It creates a copy of the file or directory and places it in the destination.
+
+⚙️ **Options:**
+    🔹 `cp file1 file2`   -->  📑 Copy file1 to file2 (if file2 does not exist, it will be created)
+    🔹 `cp -r directory1 directory2` --> 📂 Copy directory1 recursively to directory2 (required for copying directories)
+    🔹 `cp -i file1 file2`   -->  ❓ Prompts before overwriting if file2 exists (interactive)
+    🔹 `cp -v file1 file2`   -->  📢 Show more information about the copy process (verbose)
+
+🛠 **Examples:**
+
+    $ cp file.txt /tmp/
+    
+    🔹  Copy the file `file.txt` to the `/tmp/` directory.
+
+    $ cp -r directory1 directory2
+    
+    🔹  Copy the directory `directory1` to the directory `directory2` (with all its files and subdirectories).
+
+✅ **Simple Example:**
+    
+    $ cp -i myfile.txt existingfile.txt
+    
+    🔹 If `existingfile.txt` exists, the `cp` command will ask whether you want to overwrite it before copying.

@@ -1,0 +1,61 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `find` baraye peyda kardan file-ha va pooshe-ha dar yek directory ya zir-directory-ha estefade mishavad. Shoma mitoonid bar asase name, size, tarikhe tagheer va khosusiate digar file-ha ra search konid.
+
+⚙️ **Gozine-ha:**
+    🔹 `find . -name "esm-file.txt"`  --> 🔍 Peyda kardan file ba esm دقیق
+    🔹 `find . -name "*esm-file*"`  --> 🎯 Peyda kardan file-haye ke esm-file dar esm-eshon bashe
+    🔹 `find . -type f`  --> 📄 Peyda kardan faghat file-ha
+    🔹 `find . -type d`  --> 📁 Peyda kardan faghat pooshe-ha
+    🔹 `find . -size +10M` --> 📦 Peyda kardan file-haye bozorgtar az 10MB
+    🔹 `find . -mtime -7` --> 📅 Peyda kardan file-haye ke dar 7 rooz gozashte tagheer karde and
+
+🛠 **Mesal-ha:**
+
+    $ find . -name "report.pdf"
+
+    🔹 Peyda kardan file ba name `report.pdf` dar directory فعلی va zir-directory-ها
+
+    $ find /home/user -size +50M -type f
+
+    🔹 Peyda kardan file-haye bozorgtar az 50MB dar directory `/home/user` va zir-directory-ها
+
+✅ **Mesal sade:**
+
+    $ find . -name "*.jpg" -print
+
+    🔹 Peyda kardan hameye file-haye JPG dar directory فعلی va chap kardan path اونها.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `find` command is used to locate files and directories within a directory hierarchy. You can search based on filename, size, modification time, and other file attributes.
+
+⚙️ **Options:**
+    🔹 `find . -name "filename.txt"`  --> 🔍 Find file with exact name
+    🔹 `find . -name "*filename*"`  --> 🎯 Find files containing "filename" in their name
+    🔹 `find . -type f`  --> 📄 Find only files
+    🔹 `find . -type d`  --> 📁 Find only directories
+    🔹 `find . -size +10M` --> 📦 Find files larger than 10MB
+    🔹 `find . -mtime -7` --> 📅 Find files modified within the last 7 days
+
+🛠 **Examples:**
+
+    $ find . -name "report.pdf"
+
+    🔹 Find a file named `report.pdf` in the current directory and its subdirectories.
+
+    $ find /home/user -size +50M -type f
+
+    🔹 Find files larger than 50MB in the `/home/user` directory and its subdirectories.
+
+✅ **Simple Example:**
+
+    $ find . -name "*.jpg" -print
+
+    🔹 Find all JPG files in the current directory and print their paths.

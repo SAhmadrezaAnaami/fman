@@ -1,0 +1,67 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cd` baraye tagheer dadan `pooshe` (directory) kari estefade mishavad. Yani, shoma ba in dastoor mitoonid az yek `pooshe` be `pooshe` dige berid. 🚶‍♀️🚶‍♂️
+
+⚙️ **Gozine-ha:**
+    🔹 `cd`       --> 🏠 Bargashtan be `pooshe` asli (home directory).
+    🔹 `cd ..`    --> ⬆️ Raftan be `pooshe` baladasti (parent directory).
+    🔹 `cd -`     --> ↩️ Raftan be `pooshe` ghabli ke dar an boodid.
+
+🛠 **Mesal-ha:**
+
+    $ cd Documents
+
+    🔹 Rafdan be `pooshe` "Documents".
+
+    $ cd /home/user/Downloads
+
+    🔹 Raftan be `pooshe` "Downloads" ba address kamil.
+
+✅ **Mesal sade:**
+
+    $ pwd
+    /home/user
+
+    $ cd Documents
+
+    $ pwd
+    /home/user/Documents
+
+    🔹 Dastoor `pwd` neshon mide ke shoma kojayid. `cd Documents` shoma ra be `pooshe` Documents bord, va `pwd` address jadid ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cd` command is used to change the working directory. It allows you to navigate between different directories. 🚶‍♀️🚶‍♂️
+
+⚙️ **Options:**
+    🔹 `cd`       --> 🏠 Return to the home directory.
+    🔹 `cd ..`    --> ⬆️ Go to the parent directory.
+    🔹 `cd -`     --> ↩️ Go to the previous directory.
+
+🛠 **Examples:**
+
+    $ cd Documents
+
+    🔹 Navigate to the "Documents" directory.
+
+    $ cd /home/user/Downloads
+
+    🔹 Navigate to the "Downloads" directory using the absolute path.
+
+✅ **Simple Example:**
+
+    $ pwd
+    /home/user
+
+    $ cd Documents
+
+    $ pwd
+    /home/user/Documents
+
+    🔹 The `pwd` command shows your current location. `cd Documents` moves you to the Documents directory, and `pwd` shows the new location.

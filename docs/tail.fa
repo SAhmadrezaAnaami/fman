@@ -1,0 +1,55 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `tail` baraye namayesh dadane akharin khat-ha-ye yek file estefade mishavad. Be tore pishfarz, 10 khat az akhar file ra neshan midahad.
+
+⚙️ **Gozine-ha:**
+    🔹 `tail -n <tedad>` --> 🔢  Namayesh dadane `tedad` khat az akhar file. Misal: `tail -n 20 file.txt` 20 khat akhar file.txt ra neshon midahad.
+    🔹 `tail -f file`    --> 🔄  Negah dashtane baz boodane file va namayesh dadane har taghirati ke dar file ijad shavad. Baraye monitor kardane log file-ha mofid ast.
+    🔹 `tail +<shomare>` --> ➕  Namayesh dadane file az khat-e `shomare` be baad.
+
+🛠 **Mesal-ha:**
+
+    $ tail myfile.txt
+
+    🔹 Namayesh 10 khat akhar file `myfile.txt`.
+
+    $ tail -f logfile.log
+
+    🔹 Monitor kardane taghirat dar file `logfile.log` be tore real-time.
+
+✅ **Mesal sade:**
+
+    $ tail -n 5 data.txt
+
+    🔹 Faghat 5 khat akhar file `data.txt` ra neshon midahad. Agar `data.txt` kamtar az 5 khat dashte bashad, hameye khat-ha ra neshon midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `tail` command displays the last lines of a file. By default, it shows the last 10 lines.
+
+⚙️ **Options:**
+    🔹 `tail -n <number>` --> 🔢 Display `number` lines from the end of the file.  Example: `tail -n 20 file.txt` shows the last 20 lines of file.txt.
+    🔹 `tail -f file`    --> 🔄 Keep the file open and display any changes made to it. Useful for monitoring log files.
+    🔹 `tail +<number>` --> ➕ Display the file from line `number` onwards.
+
+🛠 **Examples:**
+
+    $ tail myfile.txt
+
+    🔹 Display the last 10 lines of the file `myfile.txt`.
+
+    $ tail -f logfile.log
+
+    🔹 Monitor changes in the file `logfile.log` in real-time.
+
+✅ **Simple Example:**
+
+    $ tail -n 5 data.txt
+
+    🔹 Only the last 5 lines of the `data.txt` file are shown. If `data.txt` has fewer than 5 lines, it shows all the lines.

@@ -1,0 +1,67 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `cat` baraye namayesh mohtaviate yek file rooye safe namayesh (terminal) estefade mishavad. Hamchenin mitavanad file-ha ra be ham chasband va natije ra dar yek file jadid zakhire konad.
+
+⚙️ **Gozine-ha:**
+    🔹 `cat filename`  --> 📜 Namayesh mohtaviate file.
+    🔹 `cat file1 file2`  --> 👀 Namayesh mohtaviate file1 va file2 be tartib.
+    🔹 `cat > filename`  --> ➕ Ijad yek file jadid va gereftane voroodi az karbar ta zamani ke Ctrl+D زده شود.
+    🔹 `cat file1 >> file2` --> 📏 Ezafe kardane mohtaviate file1 be entehaaye file2.
+
+🛠 **Mesal-ha:**
+
+    $ cat example.txt
+
+    🔹 Namayesh mohtaviate file "example.txt".
+
+    $ cat file1.txt file2.txt
+
+    🔹 Namayesh mohtaviate file1.txt va file2.txt dar edameye ham.
+
+✅ **Mesal sade:**
+
+    $ cat > newfile.txt
+    Hello, World!
+    (Ctrl+D)
+
+    $ cat newfile.txt
+    Hello, World!
+
+    🔹 Ijad yek file ba name "newfile.txt" va neveshtane "Hello, World!" dar aan. Dastoor `cat newfile.txt` mohtava ra namayesh midahad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `cat` command displays the contents of a file on the terminal. It can also concatenate multiple files and redirect the output to a new file.
+
+⚙️ **Options:**
+    🔹 `cat filename`  --> 📜 Display the contents of the file.
+    🔹 `cat file1 file2`  --> 👀 Display the contents of file1 and file2 sequentially.
+    🔹 `cat > filename`  --> ➕ Create a new file and take input from the user until Ctrl+D is pressed.
+    🔹 `cat file1 >> file2` --> 📏 Append the contents of file1 to the end of file2.
+
+🛠 **Examples:**
+
+    $ cat example.txt
+
+    🔹 Display the contents of the file "example.txt".
+
+    $ cat file1.txt file2.txt
+
+    🔹 Display the contents of file1.txt and file2.txt concatenated together.
+
+✅ **Simple Example:**
+
+    $ cat > newfile.txt
+    Hello, World!
+    (Ctrl+D)
+
+    $ cat newfile.txt
+    Hello, World!
+
+    🔹 Creates a file named "newfile.txt" and writes "Hello, World!" to it. The `cat newfile.txt` command then displays the contents.

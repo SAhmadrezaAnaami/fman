@@ -1,0 +1,63 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `mv` baraye tagheer-e naam (rename) ya enteqal-e file-ha va pooshe-ha (folders) az yek ja be jaye digar estefade mishavad.  Agar file ya folder dar haman pooshe (directory) enteqal dade shavad, dastoor `mv` file ya folder ra rename mikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `mv -i` --> 💬 Agar file-e maqsad (destination) vojood dashte bashad, ghabl az jaygozini (overwrite) soal mikonad.
+    🔹 `mv -f` --> 🚀 File-e maqsad ra be zor jaygozin mikonad (force overwrite), hata agar dastresi nadashte bashid.
+    🔹 `mv -v` --> 🗣️ Har kare ke anjam mishavad ra namayesh midahad (verbose).
+
+🛠 **Mesal-ha:**
+
+    $ mv file1.txt file2.txt
+
+    🔹  Naam-e file `file1.txt` ra be `file2.txt` tagheer midahad (rename).
+
+    $ mv file.txt /home/user/documents/
+
+    🔹 File `file.txt` ra be pooshe (directory) `documents` enteqal midahad.
+
+    $ mv dir1/ file2/
+
+    🔹 Pooshe (directory) `dir1` ra be daakhel pooshe `dir2` enteqal midahad.
+
+✅ **Mesal sade:**
+
+    $ mv -i important.txt backup.txt
+
+    💬 Agar file-e `backup.txt` ghablan vojood dashte bashad, dastoor soal mikonad ke aya mikhahid an ra jaygozin konid ya na.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `mv` command is used to rename or move files and directories from one location to another. If the file or directory is moved within the same directory, the `mv` command renames it.
+
+⚙️ **Options:**
+    🔹 `mv -i` --> 💬 If the destination file exists, prompts before overwriting.
+    🔹 `mv -f` --> 🚀 Forces the overwrite of the destination file, even if you don't have write permissions.
+    🔹 `mv -v` --> 🗣️ Shows what is being done (verbose).
+
+🛠 **Examples:**
+
+    $ mv file1.txt file2.txt
+
+    🔹 Renames the file `file1.txt` to `file2.txt`.
+
+    $ mv file.txt /home/user/documents/
+
+    🔹 Moves the file `file.txt` to the `documents` directory.
+
+    $ mv dir1/ dir2/
+
+    🔹 Moves the directory `dir1` into the directory `dir2`.
+
+✅ **Simple Example:**
+
+    $ mv -i important.txt backup.txt
+
+    💬 If the file `backup.txt` already exists, the command prompts you whether you want to overwrite it.

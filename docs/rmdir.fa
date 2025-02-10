@@ -1,0 +1,53 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `rmdir` baraye pak kardan (remove) pooshe-haye khali (empty directories) estefade mishavad. Agar pooshe file ya pooshe digari daroonash bashad, `rmdir` kar nemikonad.
+
+⚙️ **Gozine-ha:**
+    🔹 `rmdir --ignore-fail-on-non-empty` --> ⚠️ Agar pooshe khali nabood, error nade va be raftaresh edame bede. (Besyar kam estefade mishavad)
+    🔹 `rmdir --parents directory` --> 👪 Agar `directory` khali shod, pooshe haye pedarash ra ham pak kon.
+
+🛠 **Mesal-ha:**
+
+    $ rmdir pooshe_khali
+
+    🔹 Pak kardane pooshe-ye `pooshe_khali` agar khali bashad.
+
+    $ rmdir --parents a/b/c
+
+    🔹 Agar `c` khali bashad, `c` ra pak mikonad, agar `b` khali bashad, `b` ra pak mikonad, agar `a` khali bashad, `a` ra pak mikonad.
+
+✅ **Mesal sade:**
+
+    $ mkdir test_dir && rmdir test_dir
+
+    🔹 Aval yek pooshe ba name `test_dir` dorost mikonad, va bade an, chun khali ast, an ra pak mikonad.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `rmdir` command is used to remove empty directories. If a directory contains files or other directories, `rmdir` will not work.
+
+⚙️ **Options:**
+    🔹 `rmdir --ignore-fail-on-non-empty` --> ⚠️ Ignore errors if the directory is not empty and continue execution (Rarely used).
+    🔹 `rmdir --parents directory` --> 👪 Remove parent directories as well if they become empty.
+
+🛠 **Examples:**
+
+    $ rmdir empty_directory
+
+    🔹 Removes the directory `empty_directory` if it is empty.
+
+    $ rmdir --parents a/b/c
+
+    🔹 If `c` is empty, remove `c`; if `b` is empty after removing `c`, remove `b`; if `a` is empty after removing `b`, remove `a`.
+
+✅ **Simple Example:**
+
+    $ mkdir test_dir && rmdir test_dir
+
+    🔹 First creates a directory named `test_dir`, and then removes it because it is empty.

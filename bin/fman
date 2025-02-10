@@ -1,0 +1,28 @@
+#!/bin/bash
+
+DOC_DIR="/usr/share/fman/docs"
+
+PAGE="$1"
+
+if [ -z "$PAGE" ]; then
+    echo "Usage: fman <page>"
+    echo "Example: fman test"
+    exit 1
+fi
+
+PAGE_PATH="$DOC_DIR/$PAGE.fa"
+
+if [ ! -f "$PAGE_PATH" ]; then
+    echo "fman: No manual entry for $PAGE"
+    exit 1
+fi
+
+# Get terminal width dynamically
+TERM_WIDTH=$(tput cols)
+
+# Wrap content according to the terminal width
+wrapped_content=$(fold -s -w "$TERM_WIDTH" "$PAGE_PATH")
+
+cat <<< "$wrapped_content"
+
+exit 0

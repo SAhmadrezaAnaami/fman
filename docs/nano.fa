@@ -1,0 +1,57 @@
+===================================
+📌 1. Finglish Version (Persian Latin Script)
+===================================
+
+📖 **Tashrih:**
+    Dastoor `nano` yek virayeshgar matni (text editor) sade va rahat baraye kar dar terminal ast. Ba `nano`, mitoonid file-ha-ye matni ro baz konid, tagheer bedid va zakhire konid. 📝
+
+⚙️ **Gozine-ha:**
+    🔹 `nano filename` --> 📂 Baz kardane yek file ba name `filename`. Agar file vojood nadashte bashe, yek file jadid misazad.
+    🔹 `nano +line,character filename` --> 📍 Baz kardane file va raftan be khat va character moshakhas.
+    🔹 `nano -w filename` --> 🚫 Baz kardane file bedoon-e fa'al kardane wraproo-ye kalamat (word wrap).
+    🔹 `nano -R filename` --> 🔓 Baz kardane file be soorate "read-only" (faghat khandan).
+
+🛠 **Mesal-ha:**
+
+    $ nano myfile.txt
+
+    🔹 Baz kardane file-e `myfile.txt` baraye virayesh.
+
+    $ nano +10,5 myfile.txt
+
+    🔹 Baz kardane file-e `myfile.txt` va raftan be khat-e 10-om va character-e 5-om.
+
+✅ **Mesal sade:**
+
+    $ nano newfile.txt
+
+    🔹 Agar file-e `newfile.txt` vojood nadashte bashe, `nano` yek file jadid ba hamin name misazad va shoma mitoonid matn ro vared konid va zakhire konid.
+
+===================================
+📌 2. English Version
+===================================
+
+📖 **Description:**
+    The `nano` command is a simple and user-friendly text editor for the terminal. With `nano`, you can open, edit, and save text files. 📝
+
+⚙️ **Options:**
+    🔹 `nano filename` --> 📂 Opens a file named `filename`. If the file doesn't exist, it creates a new one.
+    🔹 `nano +line,character filename` --> 📍 Opens the file and moves the cursor to the specified line and character.
+    🔹 `nano -w filename` --> 🚫 Opens the file without enabling word wrap.
+    🔹 `nano -R filename` --> 🔓 Opens the file in read-only mode.
+
+🛠 **Examples:**
+
+    $ nano myfile.txt
+
+    🔹 Opens the file `myfile.txt` for editing.
+
+    $ nano +10,5 myfile.txt
+
+    🔹 Opens the file `myfile.txt` and moves the cursor to line 10, character 5.
+
+✅ **Simple Example:**
+
+    $ nano newfile.txt
+
+    🔹 If the file `newfile.txt` doesn't exist, `nano` will create a new file with that name, allowing you to enter text and save it.

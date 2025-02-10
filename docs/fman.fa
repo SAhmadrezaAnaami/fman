@@ -1,0 +1,35 @@
+  
+  
+  FFFFFFF  MM      MM   AAAA   NN    NN
+  FF       M  M  M  M  AA  AA  N N   NN
+  FFFFFFF  M   MM   M  AAAAAA  N  N  NN
+  FF       M        M  AA  AA  N   N NN
+  FF       M        M  AA  AA  N    NNN
+
+      .---.
+     / O O \
+    |   ^   |   <-- "FMAN, my beloved fellow!"
+    \  \_/  /
+     `.   .'
+       ~~~
+     (  _  )  <-- Scholar Juan    
+      `---'
+
+📖 **Description:**  
+fman is a simple, user-friendly tool to access **man pages** in **Finglish** and **English** versions. It is designed to provide **easy-to-understand**, **terminal-friendly** man pages with clear examples and explanations.  
+
+⚙️ **Usage:**  
+
+fman <command>
+
+💡 **Example:**  
+
+fman ls
+
+🔹 Displays the **Finglish** and **English** versions of the `ls` command, with practical examples.
+
+---
+
+📧 **Author:**  
+S Ahmad Reza Anaami  
+sky.lighthouse.me@gmail.com
